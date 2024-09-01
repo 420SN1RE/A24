@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Base de connaissances :: My New Hugo Site</title>
-    <link>http://localhost:1313/bases/index.html</link>
+    <link>https://example.org/bases/index.html</link>
     <description>Ici se trouve quelques informations pouvant vous être utile pour votre session. En autre:&#xA;Les erreurs communes et des astuces pour les éviter et les détecter L’utilisation de bloc-notes Jupyter Le Markdown et la programmation lettrée D’autres méthodes (obsolètes) de formatage des chaînes de caractères La régression linéaire et Python</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/bases/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/bases/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Formatage des chaines (obsolètes)</title>
-      <link>http://localhost:1313/bases/chaines-caracteres/index.html</link>
+      <link>https://example.org/bases/chaines-caracteres/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bases/chaines-caracteres/index.html</guid>
+      <guid>https://example.org/bases/chaines-caracteres/index.html</guid>
       <description>La méthode str.format() nom = &#34;Philippe&#34; age = 30 print(&#34;Je m&#39;appelle {} et j&#39;ai {} ans.&#34;.format(nom, age))Explication:&#xA;{} est un espace réservé pour une valeur qui sera insérée dans la chaîne de caractères. La méthode format(nom, age) remplace les accolades {} par les valeurs des variables nom et age respectivement. Donc, lorsque ce code est exécuté, il affiche :&#xA;Je m&#39;appelle Philippe et j&#39;ai 30 ans. Cette méthode est très flexible et permet d’insérer plusieurs variables dans une chaîne de caractères de manière claire et lisible.</description>
     </item>
     <item>
       <title>Techniques de débogage</title>
-      <link>http://localhost:1313/bases/debogage/index.html</link>
+      <link>https://example.org/bases/debogage/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bases/debogage/index.html</guid>
+      <guid>https://example.org/bases/debogage/index.html</guid>
       <description>.&#xA;Techniques utilisant la méthode print() Gestion des exceptions Python permet de gérer les exceptions à l’aide des blocs try-except. Cela permet d’attraper les erreurs et de les traiter de manière appropriée sans interrompre l’exécution du programme.&#xA;try: resultat = 10 / 0 except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;)Il est également possible de gérer plusieurs types d’exceptions dans un même bloc try-except.&#xA;try: ma_liste = [1, 2, 3] print(ma_liste[5]) except IndexError: print(&#34;Erreur : index de liste incorrect&#34;) except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;)Suivi du flux d’exécution En ajoutant des instructions print à différents endroits du programme, vous pouvez suivre le flux d’exécution et voir quelles parties du code sont exécutées.</description>
     </item>
     <item>
       <title>Erreurs communes</title>
-      <link>http://localhost:1313/bases/erreurs/index.html</link>
+      <link>https://example.org/bases/erreurs/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bases/erreurs/index.html</guid>
+      <guid>https://example.org/bases/erreurs/index.html</guid>
       <description>Au fil des semaines nous aurons l’occasion de localiser et de corriger différentes erreurs (ou bogues). Dans cette section “Erreurs et débogage”, vous trouverez des techniques qui permettent de déboguer vos programmes.&#xA;La méthode Print et le débogage Une erreur de syntaxe signifie que le code n’est pas conforme aux règles de syntaxe du langage. Cela est habituellement détecté immédiatement.&#xA;Par exemple, si on oublie d’indenter correctement le code, ou une parenthèse dans une fonction, cela génère une erreur de syntaxe.</description>
     </item>
     <item>
       <title>Jupyter</title>
-      <link>http://localhost:1313/bases/jupyter/index.html</link>
+      <link>https://example.org/bases/jupyter/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bases/jupyter/index.html</guid>
+      <guid>https://example.org/bases/jupyter/index.html</guid>
       <description>Blocs-notes Jupyter dans VS Code Jupyter (anciennement IPython Notebook) est un projet open source qui vous permet de combiner facilement du texte Markdown et du code source Python exécutable sur un canevas appelé notebook.&#xA;Visual Studio Code prend en charge l’utilisation des blocs-notes Jupyter en mode natif et via des fichiers de code Python.&#xA;Créer, ouvrir et enregistrer des blocs-notes Jupyter Utiliser des cellules de code Jupyter Afficher, inspecter et filtrer les variables à l’aide de l’Explorateur de variables et de la visionneuse de données Se connecter à un serveur Jupyter distant Déboguer un bloc-notes Jupyter Configuration de votre environnement Pour utiliser Python dans Jupyter Notebooks, vous devez activer un environnement Anaconda dans VS Code ou un autre environnement Python dans lequel vous avez installé le package Jupyter.</description>
     </item>
     <item>
       <title>Markdown</title>
-      <link>http://localhost:1313/bases/markdown/index.html</link>
+      <link>https://example.org/bases/markdown/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bases/markdown/index.html</guid>
+      <guid>https://example.org/bases/markdown/index.html</guid>
       <description>Introduction au Markdown dans Jupyter Notebook Markdown est un langage de balisage léger qui vous permet de formater du texte en utilisant une syntaxe simple. Dans Jupyter Notebook, vous pouvez utiliser des cellules Markdown pour ajouter des titres, des listes, des liens, des images, et bien plus encore.&#xA;Comment créer une cellule Markdown Créer une nouvelle cellule : Cliquez sur le bouton “+” dans la barre d’outils pour ajouter une nouvelle cellule.</description>
     </item>
     <item>
       <title>Match Case</title>
-      <link>http://localhost:1313/bases/match-case/index.html</link>
+      <link>https://example.org/bases/match-case/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bases/match-case/index.html</guid>
+      <guid>https://example.org/bases/match-case/index.html</guid>
       <description>L’instruction MATCH-CASE L’instruction match-case est inspirée des structures de correspondance de motifs (switch-case) présentes dans d’autres langages de programmation. Elle permet généralement de simplifier le traitement de différentes conditions en rendant le code plus lisible et plus structuré. Syntaxe de base Astuce La syntaxe de l’instruction match-case est similaire à celle d’une série de conditions if-elif-else, mais elle est souvent plus concise et expressive.&#xA;Syntaxe générale:&#xA;def action(commande): match commande: case &#34;demarre&#34;: print(&#34;Démarrage.</description>
     </item>
     <item>
       <title>Régression Linéaire</title>
-      <link>http://localhost:1313/bases/reg-lineaire/index.html</link>
+      <link>https://example.org/bases/reg-lineaire/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bases/reg-lineaire/index.html</guid>
+      <guid>https://example.org/bases/reg-lineaire/index.html</guid>
       <description>Le concept de la régression linéaire La régression linéaire est une méthode statistique utilisée pour comprendre la relation entre deux variables. Imagine que tu veux savoir si la température extérieure influence la consommation d’électricité. Voici comment ça fonctionne, de manière simple :&#xA;Deux variables : La température extérieure (variable indépendante) et la consommation d’électricité (variable dépendante). Tracer les points : On collecte des données sur la température et la consommation d’électricité sur plusieurs jours et on trace ces points sur un graphique.</description>
     </item>
     <item>
       <title>Structures conditionnelles imbriquées</title>
-      <link>http://localhost:1313/bases/structures-cond-imbriquees/index.html</link>
+      <link>https://example.org/bases/structures-cond-imbriquees/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/bases/structures-cond-imbriquees/index.html</guid>
+      <guid>https://example.org/bases/structures-cond-imbriquees/index.html</guid>
       <description>Les structures conditionnelles imbriquées Les tests peuvent être imbriquées, c’est-à-dire qu’on peut mettre un IF dans une autre.&#xA;La syntaxe générale Exemple&#xA;score = 75 if score &gt; 50: if score &gt; 70: print(&#34;Bien joué !&#34;) else: print(&#34;Pas mal, mais peut mieux faire.&#34;) else: print(&#34;Il faut travailler davantage.&#34;)Dans ce cas, comme score est 75, le programme affichera “Bien joué !”.&#xA;Explication:&#xA;Définition de la variable : score est défini avec une valeur de 75.</description>
     </item>
   </channel>

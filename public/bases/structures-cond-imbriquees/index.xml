@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Structures conditionnelles imbriquées :: My New Hugo Site</title>
-    <link>http://localhost:1313/bases/structures-cond-imbriquees/index.html</link>
+    <link>https://example.org/bases/structures-cond-imbriquees/index.html</link>
     <description>Les structures conditionnelles imbriquées Les tests peuvent être imbriquées, c’est-à-dire qu’on peut mettre un IF dans une autre.&#xA;La syntaxe générale Exemple&#xA;score = 75 if score &gt; 50: if score &gt; 70: print(&#34;Bien joué !&#34;) else: print(&#34;Pas mal, mais peut mieux faire.&#34;) else: print(&#34;Il faut travailler davantage.&#34;)Dans ce cas, comme score est 75, le programme affichera “Bien joué !”.&#xA;Explication:&#xA;Définition de la variable : score est défini avec une valeur de 75.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/bases/structures-cond-imbriquees/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/bases/structures-cond-imbriquees/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

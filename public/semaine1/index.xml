@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Présentations et introduction à la programmation :: My New Hugo Site</title>
-    <link>http://localhost:1313/semaine1/index.html</link>
+    <link>https://example.org/semaine1/index.html</link>
     <description>Objectifs de la leçon Comprendre quels sont les objectifs du cours 420-SN1-RE. Connaitre les responsabilités de l’enseignante et celles des étudiants Comprendre les éléments de base de la programmation. Se familiariser à l’environnement de travail. Savoir déterminer les données en entrée, en sortie et leurs traitements dans des problèmes scientifique simples. Plan de la leçon Connexion à Moodle et présentation du site du cours ~15 mins. Présentation de votre enseignante ~5 mins.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/semaine1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/semaine1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Présentation de l&#39;enseignante</title>
-      <link>http://localhost:1313/semaine1/pr%C3%A9sentation-de-lenseignante/index.html</link>
+      <link>https://example.org/semaine1/pr%C3%A9sentation-de-lenseignante/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine1/pr%C3%A9sentation-de-lenseignante/index.html</guid>
+      <guid>https://example.org/semaine1/pr%C3%A9sentation-de-lenseignante/index.html</guid>
       <description>L’enseignante Nathalie Desmangles&#xA;Pour me rejoindre Bureau : B-3320 Courriel : via ColNet Messagerie : via Teams Formation académique Baccalauréat en chimie, Université de Montréal Maîtrise en chimie, Université d’Ottawa Baccalauréat en informatique, Université de Sherbrooke D.E.S.S. en enseignement supérieur, Université de Montréal Expériences professionnelles Enseignement en informatique Analyste-programmeur en entreprise Collège Montmorency (2022-) Conseillers en Informatique d’Affaires Inc. (CIA), Montréal Collège André-Laurendeau (2015-2022) Sapphire Technologies Canada , Montréal Cégep de St-Jérôme (2014-2015) Cognicase (CGI), Montréal Cégep de Rosemont (2014) FinRAD Inc.</description>
     </item>
     <item>
       <title>Présentation du cours</title>
-      <link>http://localhost:1313/semaine1/pr%C3%A9sentation-du-cours/index.html</link>
+      <link>https://example.org/semaine1/pr%C3%A9sentation-du-cours/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine1/pr%C3%A9sentation-du-cours/index.html</guid>
+      <guid>https://example.org/semaine1/pr%C3%A9sentation-du-cours/index.html</guid>
       <description>Le plan et la vue synoptique du cours Note Vous trouverez l’intégralité du plan de cours sur Moodle. C’est cette version que vous devrez consulter au cours de la session. Sur Moodle, vous trouverez également la vue synoptique du cours, qui permet d’avoir une vue d’ensemble des étapes de la session.&#xA;La pondération 1-2-3 La pondération d’un cours, le nombre d’heures en moyenne par semaine qu’un.e élève doit effectuer pour réussir le cours.</description>
     </item>
     <item>
       <title>Introduction à la programmation</title>
-      <link>http://localhost:1313/semaine1/introduction-la-programmation/index.html</link>
+      <link>https://example.org/semaine1/introduction-la-programmation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine1/introduction-la-programmation/index.html</guid>
+      <guid>https://example.org/semaine1/introduction-la-programmation/index.html</guid>
       <description>.&#xA;Qu’est-ce qu’un programme ? Un programme, ou une application, ou encore un logiciel, est un outil permettant la réalisation de tâches.&#xA;Traitement de texte Envois de messages Prévision météorologique Gestion de stock Montage vidéo Pour réaliser ces tâches, un programme va implémenter un ou plusieurs algorithmes dans un langage de programmation.&#xA;Qu’est-ce qu’un algorithme ? Un algorithme est une suite d’actions qui suivent un ordre précis. Cette suite d’actions représente les traitements sur les données.</description>
     </item>
     <item>
       <title>Du problème à l&#39;algorithme au programme</title>
-      <link>http://localhost:1313/semaine1/analyse-de-probl%C3%A8mes/index.html</link>
+      <link>https://example.org/semaine1/analyse-de-probl%C3%A8mes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine1/analyse-de-probl%C3%A8mes/index.html</guid>
+      <guid>https://example.org/semaine1/analyse-de-probl%C3%A8mes/index.html</guid>
       <description>.&#xA;L’importance de l’analyse de problèmes Attention Avant de commencer à coder, il est fortement recommandé de décortiquer le problème. C’est plus efficace de créer un algorithme (une série d’étapes logiques) pour résoudre un problème, avant de se lancer dans l’écriture du code.&#xA;En quoi consiste l’analyse d’un problème ? À ce stade, ce n’est pas nécessaire de connaitre la syntaxe du langage de programmation.&#xA;L’objectif est d’identifier :</description>
     </item>
     <item>
       <title>Pour le prochain cours</title>
-      <link>http://localhost:1313/semaine1/pour-le-prochain-cours/index.html</link>
+      <link>https://example.org/semaine1/pour-le-prochain-cours/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/semaine1/pour-le-prochain-cours/index.html</guid>
+      <guid>https://example.org/semaine1/pour-le-prochain-cours/index.html</guid>
       <description>Pour augmenter vos chances de réussite Terminer et soumettre l’atelier #1. Réviser la matière vue cette semaine, en vue du quiz qui aura lieu au début du prochain cours (arrivez à l’heure) Lire les notes de cours sur la matière du cours de la semaine 2. Note Si vous étiez présent au cours, posez moi des questions lorsque vous avez de la difficulté. N’attendez pas que la matière se complique.</description>
     </item>
   </channel>
