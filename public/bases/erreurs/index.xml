@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Erreurs communes :: My New Hugo Site</title>
+    <link>http://localhost:1313/bases/erreurs/index.html</link>
+    <description>Au fil des semaines nous aurons l’occasion de localiser et de corriger différentes erreurs (ou bogues). Dans cette section “Erreurs et débogage”, vous trouverez des techniques qui permettent de déboguer vos programmes.&#xA;La méthode Print et le débogage Une erreur de syntaxe signifie que le code n’est pas conforme aux règles de syntaxe du langage. Cela est habituellement détecté immédiatement.&#xA;Par exemple, si on oublie d’indenter correctement le code, ou une parenthèse dans une fonction, cela génère une erreur de syntaxe.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/bases/erreurs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Erreurs avec les noms des variables</title>
+      <link>http://localhost:1313/bases/erreurs/nomenclature-variables/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bases/erreurs/nomenclature-variables/index.html</guid>
+      <description>Pourquoi bien nommer les choses ? La raison est simple, on passe plus de temps a lire du code qu’a l’écrire, donc pour se simplifier la tâche de lecture du code, quel que soit le langage de programmation, il est important de bien nommer les différentes variables, méthodes etc.&#xA;Conventions de nommage en python En plus des règles liées au langage qui mèneront à un problème d’exécution (par exemple, un nom de variable ne doit pas commencer par des chiffres), il existe un nombre de convention concernant le nommage en python.</description>
+    </item>
+    <item>
+      <title>Erreurs avec les opérateurs</title>
+      <link>http://localhost:1313/bases/erreurs/operateurs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bases/erreurs/operateurs/index.html</guid>
+      <description>Les erreurs communes avec les opérateurs Les erreurs avec les opérateurs en Python peuvent être frustrantes, mais avec une attention aux détails et l’utilisation des bonnes pratiques, elles peuvent être évitées. En suivant les astuces mentionnées, vous pouvez écrire du code plus robuste et plus facile à déboguer.&#xA;En Python, les opérateurs arithmétiques, de comparaison et logiques sont essentiels pour manipuler les données et contrôler le flux du programme. Cependant, des erreurs peuvent survenir, surtout pour les débutants.</description>
+    </item>
+    <item>
+      <title>Erreurs lors de la lecture de données au clavier</title>
+      <link>http://localhost:1313/bases/erreurs/lecture-donnees/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bases/erreurs/lecture-donnees/index.html</guid>
+      <description>Les erreurs communes lors de la lecture de données au clavier La lecture de données au clavier en Python peut être source d’erreurs, mais en suivant les bonnes pratiques et en utilisant les astuces mentionnées, vous pouvez éviter ces erreurs et rendre votre code plus robuste.&#xA;La lecture de données au clavier est une tâche courante en Python, souvent réalisée avec la fonction input(). Cependant, des erreurs peuvent survenir, surtout pour les débutants.</description>
+    </item>
+    <item>
+      <title>Erreurs avec if elif et else</title>
+      <link>http://localhost:1313/bases/erreurs/if-else-elif/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bases/erreurs/if-else-elif/index.html</guid>
+      <description>Les erreurs communes avec les structures if, elif et else Les structures conditionnelles if, elif et else sont fondamentales en programmation pour contrôler le flux d’exécution du programme. Cependant, des erreurs peuvent survenir, surtout pour les débutants. Voici les erreurs courantes et des astuces pour les éviter et les détecter facilement.&#xA;1. Erreurs de syntaxe Erreurs courantes :&#xA;Oublier les deux-points (:) : Chaque condition if, elif et else doit se terminer par un deux-points.</description>
+    </item>
+    <item>
+      <title>Erreurs avec la boucle while</title>
+      <link>http://localhost:1313/bases/erreurs/while/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bases/erreurs/while/index.html</guid>
+      <description>Les erreurs communes avec la boucle while La boucle while est une structure de contrôle essentielle en Python, permettant d’exécuter un bloc de code tant qu’une condition est vraie. Cependant, des erreurs peuvent survenir, surtout pour les débutants. Voyons les erreurs courantes et des astuces pour les éviter et les détecter facilement.&#xA;1. Boucles infinies Erreurs courantes :&#xA;Condition toujours vraie : Si la condition de la boucle while reste toujours vraie, la boucle ne se termine jamais, créant une boucle infinie.</description>
+    </item>
+    <item>
+      <title>Erreurs avec la boucle for et la fonction range</title>
+      <link>http://localhost:1313/bases/erreurs/for-range/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bases/erreurs/for-range/index.html</guid>
+      <description>Les erreurs communes avec la boucle for et la fonction range() La boucle for et la fonction range() sont des outils puissants en Python pour itérer sur des séquences. Cependant, des erreurs peuvent survenir, surtout pour les débutants. Explorons les erreurs courantes et des astuces pour les éviter et les détecter facilement.&#xA;1. Erreurs de syntaxe avec range() Erreurs courantes :&#xA;Oublier les parenthèses : La fonction range() nécessite des parenthèses pour fonctionner correctement.</description>
+    </item>
+    <item>
+      <title>Erreurs avec les listes</title>
+      <link>http://localhost:1313/bases/erreurs/listes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bases/erreurs/listes/index.html</guid>
+      <description>Les erreurs communes avec les listes Les listes sont l’une des structures de données les plus utilisées en Python. Cependant, leur utilisation peut parfois mener à des erreurs courantes. Voici un aperçu de ces erreurs et des astuces pour les éviter ou les détecter facilement.&#xA;1. IndexError : Liste hors limites Erreur :&#xA;my_list = [1, 2, 3] print(my_list[3]) # IndexError: list index out of rangeAstuce : Toujours vérifier la longueur de la liste avant d’accéder à un index.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>420-SN1-RE  Programmation en sciences :: My New Hugo Site</title>
+    <link>http://localhost:1313/index.html</link>
+    <description>Chers élèves,&#xA;Nous vous rappelons que dans le cadre de ce cours, il est impératif d’utiliser seulement les notions, fonctions et concepts qui ont été abordés en classe. Cela garantit une compréhension solide et progressive des sujets traités.&#xA;Note importante : L’utilisation d’outils d’intelligence artificielle pour générer du code, peut parfois fournir du code qui dépassent le cadre des notions étudiées.&#xA;Attention Si vous soumettez du code contenant des éléments avancés qui n’ont pas été vus dans le cours, vous recevrez une note de 0 pour l’évaluation.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Semaine2</title>
+      <link>http://localhost:1313/semaine2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine2/index.html</guid>
+      <description>This is a new chapter.</description>
+    </item>
+    <item>
+      <title>Semaine3</title>
+      <link>http://localhost:1313/semaine3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine3/index.html</guid>
+      <description>This is a new chapter.</description>
+    </item>
+    <item>
+      <title>Semaine4</title>
+      <link>http://localhost:1313/semaine4/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine4/index.html</guid>
+      <description>This is a new chapter.</description>
+    </item>
+    <item>
+      <title>Semaine5</title>
+      <link>http://localhost:1313/semaine5/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine5/index.html</guid>
+      <description>This is a new chapter.</description>
+    </item>
+    <item>
+      <title>Présentations et introduction à la programmation</title>
+      <link>http://localhost:1313/semaine1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine1/index.html</guid>
+      <description>Objectifs de la leçon Comprendre quels sont les objectifs du cours 420-SN1-RE. Connaitre les responsabilités de l’enseignante et celles des étudiants Comprendre les éléments de base de la programmation. Se familiariser à l’environnement de travail. Savoir déterminer les données en entrée, en sortie et leurs traitements dans des problèmes scientifique simples. Plan de la leçon Connexion à Moodle et présentation du site du cours ~15 mins. Présentation de votre enseignante ~5 mins.</description>
+    </item>
+    <item>
+      <title>Projet Fil Rouge</title>
+      <link>http://localhost:1313/projet-fil-rouge/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projet-fil-rouge/index.html</guid>
+      <description>Le projet fil rouge est l’activité permettant d’évaluer l’atteinte de l’objectif intégrateur du cours. Il se déroulera sur les 5 dernières semaines de la session. Au cours des 4 premières semaines du projet, nous développerons un programme permettant d’explorer, analyser et visualiser des données scientifiques.&#xA;Lors de la 5e semaine du projet (dernier cours de la session), vous serez évalués. Votre programme devra être terminé et fonctionnel avant la dernière séance de cours.</description>
+    </item>
+    <item>
+      <title>Solutions de ateliers</title>
+      <link>http://localhost:1313/solutions-ateliers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/solutions-ateliers/index.html</guid>
+      <description>Semaine 1 - Analyse de problèmes</description>
+    </item>
+    <item>
+      <title>Base de connaissances</title>
+      <link>http://localhost:1313/bases/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bases/index.html</guid>
+      <description>Ici se trouve quelques informations pouvant vous être utile pour votre session. En autre:&#xA;Les erreurs communes et des astuces pour les éviter et les détecter L’utilisation de bloc-notes Jupyter Le Markdown et la programmation lettrée D’autres méthodes (obsolètes) de formatage des chaînes de caractères La régression linéaire et Python</description>
+    </item>
+    <item>
+      <title>Outils</title>
+      <link>http://localhost:1313/outils/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/outils/index.html</guid>
+      <description>Ici se trouve des informations sur les outils utilisés dans ce cours, pouvant vous être utiles pour votre session.</description>
+    </item>
+  </channel>
+</rss>

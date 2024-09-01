@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projet - Partie 1 :: My New Hugo Site</title>
+    <link>http://localhost:1313/projet-fil-rouge/partie-1/index.html</link>
+    <description>Objectif Lorsque les données sont collectées, elles sont entreposées dans un certain format. Par la suite, ces données devront être analysées avec des outils qui ne sont pas nécessairement compatibles avec le format d’entreposage.&#xA;Il est donc primordial d’être capable de passer d’un format à un autre.&#xA;Extraction des données [ICI ON POURRAIT METTRE LA THÉORIE QU’ILS ONT BESOIN]&#xA;[LES ÉTAPES À FAIRE DANS LE PROJET SERONT DANS LE .</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/projet-fil-rouge/partie-1/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
