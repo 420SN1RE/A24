@@ -1,0 +1,42 @@
+====
+
+Ordre
+   Projet # 160 OK
+   Solutionnaires # 170 OK
+   Base de connaissance # 180 OK
+	Erreurs et débogage 181 OK
+		sous branches ?1-7
+	Jupyter 182
+	Markdown 183
+	Chaines de caractères 184
+   Outils #190 OK
+
+
+===
+
+images Erreurs communes
+ - erreurs-operateurs.jpeg OK
+ - erreur-input.jpeg OK
+ - erreur-if.jpeg OK
+ - erreur-while.jpeg OK
+ - erreur-for-range.jpeg OK
+ - erreur-listes.jpeg OK
+ - erreur-variables.jpeg OK
+
+=====
+
+Error: error building site: process: readAndProcessContent: "C:\Users\NatDe\OneDrive - Collège Montmorency\_Automne2024\A24\content\base de connaissances\MarkDown\_index.md:2:18": unmarshal failed: toml: basic strings cannot have new lines
+
+voici ce que j'ai:
+1. l'image logoSN.png est dans static/images
+2. dans logo.html
+<a href="/">
+	<img src="images/logoSN.png">
+</a>
+
+3. dans hugo.toml
+baseURL = 'https://github.com/420SN1RE/A24.git'
+logo = "/images/logoSN.png"
+
+
+disableLandingPageButton = true

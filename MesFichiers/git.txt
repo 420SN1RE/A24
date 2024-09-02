@@ -1,0 +1,24 @@
+
+
+
+1. git add content/base de connaissances
+2. git add content/cours/Intéragir avec le programme
+3. git add content/cours/La portée des variables
+4. git add content/cours/Les Sous-programmes
+5. git add content/cours/MatplotLib
+6. git add content/cours/Pandas
+7. git commit -m "Mise à jour bla blabla"
+
+8. git checkout main
+9. git fetch
+10. git pull -> maintenant ta branche local main est synchronisée avec origin
+11 git checkout nathalie
+12. git rebase main -> tu rebase sur ta branche main local
+13. git log tree -> pour verifier que tout est beau
+14. git push --force
+
+
+
+git pull = fetch + merge
+
+http://localhost:1313/ 

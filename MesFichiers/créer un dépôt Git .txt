@@ -1,0 +1,102 @@
+## créer un dépôt Git :
+
+1. **Créer un dossier pour votre projet** :
+   ```bash
+   mkdir mon_projet
+   cd mon_projet
+   ```
+
+2. **Initialiser le dépôt Git** :
+   ```bash
+   git init
+   ```
+
+3. **Ajouter des fichiers au dépôt** :
+   ```bash
+   git add .
+   ```
+
+4. **Faire un premier commit** :
+   ```bash
+   git commit -m "Premier commit"
+   ```
+
+5. **Ajouter un dépôt distant (par exemple, sur GitHub)** :
+   ```bash
+   git remote add origin https://github.com/420SN1RE/python-ninjas.git
+
+   ```
+
+6. **Pousser les modifications vers le dépôt distant** :
+   ```bash
+   git push -u origin master
+   ```
+==
+
+## modifier remote repo
+
+Pour changer le dépôt distant (remote repository) dans Git, vous pouvez utiliser la commande `git remote set-url`. Voici les étapes à suivre :
+
+1. **Vérifiez l'URL actuelle du dépôt distant** :
+   ```bash
+   git remote -v
+   ```
+
+2. **Changez l'URL du dépôt distant** :
+   ```bash
+   git remote set-url origin nouvelle_url
+   ```
+
+   Par exemple, si votre nouvelle URL est `https://github.com/votre-utilisateur/nouveau-repo.git`, la commande serait :
+   ```bash
+   git remote set-url origin https://github.com/votre-utilisateur/nouveau-repo.git
+   ```
+
+3. **Vérifiez que l'URL a bien été modifiée** :
+   ```bash
+   git remote -v
+   ```
+===
+# Associer repertoire à repo GIT
+
+git remote add origin https://github.com/420SN1RE/aut24.git
+git branch -M main
+git push -u origin main
+
+
+
+HUGO
+
+Création d'un chapitre
+hugo new --kind chapter outils/_index.md
+
+
+Création d'un sous-chapitre
+
+
+===
+
+L'erreur que vous voyez signifie que la branche `main` n'existe pas dans votre dépôt local. Voici quelques étapes pour résoudre ce problème :
+
+1. **Vérifiez les branches locales** :
+   ```bash
+   git branch
+   ```
+   Assurez-vous que la branche `main` existe. Si ce n'est pas le cas, vous devrez peut-être créer ou renommer une branche.
+
+2. **Créer ou renommer la branche** :
+   - Si vous souhaitez renommer la branche actuelle en `main` :
+     ```bash
+     git branch -m main
+     ```
+   - Si vous devez créer une nouvelle branche `main` :
+     ```bash
+     git checkout -b main
+     ```
+
+3. **Poussez la branche vers le dépôt distant** :
+   ```bash
+   git push -u origin main
+   ```
+
+Essayez ces étapes et dites-moi si cela résout votre problème ! 😊

@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://example.org/base-de-connaissances/erreurs/nomenclature-variables/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/erreurs/nomenclature-variables/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/projet-fil-rouge/partie-1/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine2/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine3/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine4/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine5/index.html</loc>
+    <loc>https://example.org/base-de-connaissances/erreurs/operateurs/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/erreurs/operateurs/index.html</loc>
@@ -25,10 +19,16 @@
     <loc>https://example.org/projet-fil-rouge/partie-2/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/base-de-connaissances/erreurs/lecture-donnees/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/erreurs/lecture-donnees/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/projet-fil-rouge/partie-3/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/base-de-connaissances/erreurs/if-else-elif/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/erreurs/if-else-elif/index.html</loc>
@@ -37,10 +37,19 @@
     <loc>https://example.org/projet-fil-rouge/partie-4/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/base-de-connaissances/erreurs/while/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/erreurs/while/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/base-de-connaissances/erreurs/for-range/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/erreurs/for-range/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/base-de-connaissances/erreurs/listes/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/erreurs/listes/index.html</loc>
@@ -64,7 +73,97 @@
     <loc>https://example.org/semaine1/pour-le-prochain-cours/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/projet-fil-rouge/index.html</loc>
+    <loc>https://example.org/semaine2/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine2/ordinogramme/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine2/variables-et-types-de-donn%C3%A9es/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine2/operateurs-arithm-affichage/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine2/erreurs-arrondi/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine2/pour-le-prochain-cours/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine3/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine3/lecture-et-affichage-de-donn%C3%A9es/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine3/documentation/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine3/erreurs-syntaxe/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine3/pour-le-prochain-cours/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine4/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine4/expressions-booleennes/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine4/les-structures-conditionnelles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine4/tests-flottants/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine5/boucles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine5/while/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine5/for/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine5/controle/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine6/listes/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine6/chaines_caracteres/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine6/structures_donnees/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine7/librairies-systemes/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine7/objets/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine8/les-sous-programmes/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine8/la-portee-des-variables/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine9/trace/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine11/pandas/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine11/projet/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine12/matplotlib/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine13/numpy/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions-ateliers/index.html</loc>
@@ -76,7 +175,16 @@
     <loc>https://example.org/bases/chaines-caracteres/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/base-de-connaissances/chainesdecaracteres/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/base-de-connaissances/debogage/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/debogage/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/base-de-connaissances/erreurs/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/erreurs/index.html</loc>
@@ -85,13 +193,31 @@
     <loc>https://example.org/bases/jupyter/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/base-de-connaissances/jupyter/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/markdown/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/base-de-connaissances/markdown/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/base-de-connaissances/matchcase/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/base-de-connaissances/regressionlineaire/scikit-learn/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/match-case/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/base-de-connaissances/regressionlineaire/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/reg-lineaire/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/base-de-connaissances/stucturescondimbriquees/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/structures-cond-imbriquees/index.html</loc>
@@ -101,6 +227,9 @@
   </url>
   <url>
     <loc>https://example.org/outils/vs-code-jupyter/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/outils/vscode-jupyter/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/index.html</loc>

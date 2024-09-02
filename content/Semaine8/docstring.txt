@@ -1,0 +1,41 @@
+
++++
+title =  "Documentation de sous-programme (Docstrings)"
+weight =  1
++++
+
+## Les Docstrings
+
+Les docstrings sont des chaînes de caractères utilisées pour documenter les modules, classes et fonctions. Elles sont placées juste après la définition de la fonction ou de la classe.
+
+**Exemple en Python :**
+```python
+def addition(a, b):
+    """
+    Calcule la somme de deux nombres.
+
+    Paramètres:
+    a (int, float): Le premier nombre.
+    b (int, float): Le deuxième nombre.
+
+    Retourne:
+    int, float: La somme des deux nombres.
+    """
+    return a + b
+```
+
+### Documentation des modules
+Chaque module peut avoir une docstring en haut du fichier pour expliquer son but et son utilisation.
+
+**Exemple en Python :**
+```python
+"""
+Ce module contient des fonctions mathématiques de base.
+"""
+
+def addition(a, b):
+    """
+    Calcule la somme de deux nombres.
+    """
+    return a + b
+```

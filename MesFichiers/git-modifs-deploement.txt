@@ -1,0 +1,27 @@
+Oui, si vous utilisez Hugo pour générer votre site statique, vous devez d'abord exécuter la commande Hugo pour générer les fichiers de votre site avant de les pousser vers GitHub. Voici les étapes complètes :
+
+1. **Générez votre site avec Hugo** :
+   ```bash
+   hugo
+   ```
+   Cela créera les fichiers statiques dans le dossier `public`.
+
+2. **Ajoutez les modifications** :
+   ```bash
+   git add .
+   ```
+
+3. **Commitez les modifications** :
+   ```bash
+   git commit -m "Votre message de commit"
+   ```
+
+4. **Poussez les modifications vers GitHub** :
+   ```bash
+   git push origin master
+   ```
+   (ou la branche que vous utilisez pour GitHub Pages, souvent `gh-pages`)
+
+En résumé, exécutez `hugo` avant d'ajouter, de committer et de pousser vos modifications. Cela garantit que votre site est à jour avec les dernières modifications.
+
+Besoin d'aide pour une étape spécifique? 😊

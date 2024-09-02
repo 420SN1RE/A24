@@ -1,0 +1,109 @@
+### Exercice 1 : Création et manipulation de tableaux
+
+1. Créez un tableau NumPy contenant les nombres de 1 à 10.
+2. Reshapez ce tableau en une matrice 2x5.
+3. Multipliez chaque élément de la matrice par 3.
+
+### Exercice 2 : Opérations sur les tableaux
+
+1. Créez deux tableaux NumPy de taille 3x3 contenant des nombres aléatoires.
+2. Calculez la somme et le produit matriciel de ces deux tableaux.
+
+### Réponses des exercices
+
+#### Exercice 1
+
+```python
+# 1. Créer un tableau NumPy contenant les nombres de 1 à 10
+arr = np.arange(1, 11)
+print(arr)  # [ 1  2  3  4  5  6  7  8  9 10]
+
+# 2. Reshaper ce tableau en une matrice 2x5
+matrix = arr.reshape(2, 5)
+print(matrix)  # [[ 1  2  3  4  5]
+               #  [ 6  7  8  9 10]]
+
+# 3. Multiplier chaque élément de la matrice par 3
+result = matrix * 3
+print(result)  # [[ 3  6  9 12 15]
+               #  [18 21 24 27 30]]
+```
+
+#### Exercice 2
+
+```python
+# 1. Créer deux tableaux NumPy de taille 3x3 contenant des nombres aléatoires
+arr1 = np.random.rand(3, 3)
+arr2 = np.random.rand(3, 3)
+print(arr1)
+print(arr2)
+
+# 2. Calculer la somme et le produit matriciel de ces deux tableaux
+sum_result = arr1 + arr2
+product_result = np.dot(arr1, arr2)
+print(sum_result)
+print(product_result)
+```
+
+
+1. **Création d'un Tableau** :
+   - Créez un tableau NumPy contenant les nombres de 0 à 9.
+
+2. **Opérations de Base** :
+   - Multipliez chaque élément du tableau par 2.
+
+3. **Indexation et Slicing** :
+   - Extrayez les éléments de la position 2 à 5 du tableau.
+
+4. **Reshape et Flatten** :
+   - Transformez le tableau en une matrice de 2x5 et applatissez-la ensuite.
+
+5. **Calculs** :
+   - Calculez la somme, le minimum et le maximum du tableau.
+
+##### Solutions
+
+1. **Création d'un Tableau** :
+   ```python
+   import numpy as np
+   ex1 = np.arange(10)
+   print(ex1)
+   # Output: [0 1 2 3 4 5 6 7 8 9]
+   ```
+
+2. **Opérations de Base** :
+   ```python
+   ex2 = ex1 * 2
+   print(ex2)
+   # Output: [ 0  2  4  6  8 10 12 14 16 18]
+   ```
+
+3. **Indexation et Slicing** :
+   ```python
+   ex3 = ex1[2:6]
+   print(ex3)
+   # Output: [2 3 4 5]
+   ```
+
+4. **Reshape et Flatten** :
+   ```python
+   ex4 = ex1.reshape((2, 5))
+   print(ex4)
+   # Output: 
+   # [[0 1 2 3 4]
+   #  [5 6 7 8 9]]
+   ex4_flattened = ex4.flatten()
+   print(ex4_flattened)
+   # Output: [0 1 2 3 4 5 6 7 8 9]
+   ```
+
+5. **Calculs** :
+   ```python
+   ex5_sum = np.sum(ex1)
+   ex5_min = np.min(ex1)
+   ex5_max = np.max(ex1)
+   print(ex5_sum)  # Output: 45
+   print(ex5_min)  # Output: 0
+   print(ex5_max)  # Output: 9
+   ```
+

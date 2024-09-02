@@ -1,0 +1,148 @@
++++
+title = 'Pseudo-code'
+draft = true
+weight = 28
++++
+
+![Pseudocode](../assets/images/algo-pseudo.jpg?width=30vw "Pseudocode").
+
+**Rappel**: Un algorithme est une suite d'instructions claires et précises pour résoudre un problème donné. Il peut être représenté de plusieurs façons, notamment par du pseudo-code ou un ordinogramme.
+
+## Qu'est-ce que le pseudo-code ?
+
+- Le **pseudo-code** est une manière simplifiée d'écrire un algorithme.
+- Le **pseudocode** est une description textuelle d'un algorithme qui **utilise un langage naturel structuré**. 
+- Il est conçu pour être facilement compréhensible par les humains tout en étant **suffisamment précis pour être traduit en code de programmation**.
+- Il n'est pas destiné à être exécuté sur un ordinateur, mais à être compris par un humain. 
+- Il n'a pas de syntaxe stricte et peut être écrit dans n'importe quelle langue.
+
+### Exemples de pseudo-code
+
+### 1er exemple
+
+- Le pseudo-code pour l’algorithme qui calcule la moyenne de deux nombres a et b:
+
+````
+ALGORITHME Moyenne
+VARIABLES
+   a, b TYPE NUMÉRIQUE
+DÉBUT
+   LIRE le premier nombre (a)
+   LIRE le deuxième nombre (b)
+   Calculer la moyenne : Moyenne = (a + b) / 2
+   AFFICHER la moyenne
+FIN
+````
+
+#### Explication du 1er pseudo-code
+
+1. **ALGORITHME Moyenne**
+   - Le terme ALGORITHME permet de nommer l'algorithme en fonction de ce qu'il fait.
+
+2. **VARIABLES :**
+   - Liste des données (et leur type) qui seront utilisées.
+
+3. **DÉBUT :**
+   - Indique le début de l'algorithme.
+
+4. **LIRE le premier nombre (a) :**
+   - L'algorithme demande à l'utilisateur d'entrer le premier nombre, qui sera stocké dans la **variable** `a`.
+
+5. **LIRE le deuxième nombre (b) :**
+   - L'algorithme demande à l'utilisateur d'entrer le deuxième nombre, qui sera stocké dans la **variable** `b`.
+
+6. **Calculer la moyenne : Moyenne = (a + b) / 2 :**
+   - L'algorithme calcule la moyenne des deux nombres en ajoutant `a` et `b`, puis en divisant le résultat par 2. 
+   - Le résultat est stocké dans la **variable** `Moyenne`.
+
+7. **AFFICHER la moyenne :**
+   - L'algorithme affiche la valeur de la moyenne calculée.
+
+8. **FIN :**
+   - La fin de l'algorithme.
+
+### Exemple
+
+- Supposons que l'utilisateur entre les nombres 4 et 8.
+
+	1. LIRE le premier nombre (a) : `a = 4`
+	2. LIRE le deuxième nombre (b) : `b = 8`
+	3. Calculer la moyenne : `Moyenne = (4 + 8) / 2 = 12 / 2 = 6`
+	4. AFFICHER la moyenne : `6`
+
+- L'algorithme affichera donc `6` comme résultat.
+
+### 2e exemple
+
+- Le pseudo-code pour l’algorithme qui calcule le coût d’un produit, incluant les taxes (TPS et TVQ):
+
+````
+ALGORITHME CalculFacture
+VARIABLES
+   total, totalProduit, prixProduit, quantiteProduit TYPE NUMÉRIQUE
+   TPS = 5%
+   TVQ = 9,975%
+DÉBUT
+   AFFICHER("Entrez le prix du produit")
+   LIRE(prixProduit)
+   AFFICHER("Entrez la quantité achetée")
+   LIRE(quantiteProduit)
+   totalProduit ← prixProduit * quantiteProduit
+   total ← totalProduit
+   total ← total + totalProduit * TPS
+   total ← total + totalProduit * TVQ
+   AFFICHER("Le total de la facture est ", total)
+FIN
+````
+
+#### Explication du 2e pseudo-code
+
+1. **ALGORITHME CalculFacture**
+   - Le terme ALGORITHME permet de nommer l'algorithme en fonction de ce qu'il fait.
+
+2. **VARIABLES :**
+   - Liste des données (et leur type) qui seront utilisées. TPS et TVQ sont des données fixes (constantes), on les initialise (assigne leur valeur)
+
+3. **DÉBUT :**
+   - Indique le début de l'algorithme.
+
+4. **AFFICHER("Entrez le prix du produit") :**
+   - L'algorithme affiche à l'écran ou Terminal la phrase "Entrez le prix du produit" pour demander à l'utilisateur d'entrer le prix du produit.
+   
+5. **LIRE(prixProduit) :**
+   - L'algorithme stock le prix entré dans la **variable** `prixProduit`.
+
+6. **AFFICHER("Entrez la quantité achetée") :**
+   - L'algorithme affiche à l'écran ou Terminal la phrase "Entrez la quantité achetée" pour demander à l'utilisateur d'entrer la quantité du produit achetée.
+
+7. **LIRE(quantiteProduit) :**
+   - L'algorithme stock la quantité entrée dans la **variable** `quantiteProduit`.
+
+8. **Étapes du calcul du prix final**
+   - L'algorithme calcul le prix total pour la quantité de produit achetée.
+     `totalProduit ← prixProduit * quantiteProduit`
+   - L'algorithme stocke le prix total calculé précédemment dans la variable `total`.
+     `total ← totalProduit`
+   - L'algorithme calcul le montant le la TPS et l'ajoute au prix total, puis stocke le prix TPS incluse dans la variable `total`.
+     `total ← total + totalProduit * TPS`
+   - L'algorithme calcul le montant le la TVQ et l'ajoute au prix total, puis stocke le prix TVQ incluse dans la variable `total`.
+     `total ← total + totalProduit * TVQ`
+   
+9. **AFFICHER("Le total de la facture est ", total) :**
+ - L'algorithme affiche la valeur du prix final calculé accompagnée de la phrase "Le total de la facture est". 
+
+10. **FIN :**
+   - La fin de l'algorithme.
+
+- Les mots **MAJUSCULES** représentent des mots clés du langage de programmation qui sera utilisé pour traduire le pseudo-code.
+
+## Écrire un pseudo-code
+
+- Le pseudo-code doit être écrit dans un langage **simple** et **compréhensible**, en **évitant la complexité des syntaxes de programmation**.
+- Utilisez des **indentations**[^1] pour montrer la hiérarchie et le flux de contrôle.
+- Commencez chaque nouvelle instruction sur une nouvelle ligne.
+- Utilisez des **majuscules** pour les mots-clés importants comme ALGORITHME, VARIABLES, TYPE NUMÉRIQUE, LIRE, AFFICHER, ÉCRIRE, SI, ALORS, SINON, POUR CHAQUE, TANT QUE, etc.
+
+
+[^1]: **Indentation** : C’est l’ajout d’espaces ou de tabulations au début des lignes de code pour montrer la structure et les niveaux de bloc du programme. Elle aide à organiser le code et à indiquer quelles lignes de code appartiennent à quelles parties du programme. **En Python, l’indentation est très importante** car elle détermine la structure et la logique du code.
+

@@ -8,34 +8,6 @@
     <language>en-us</language>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Semaine2</title>
-      <link>https://example.org/semaine2/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine2/index.html</guid>
-      <description>This is a new chapter.</description>
-    </item>
-    <item>
-      <title>Semaine3</title>
-      <link>https://example.org/semaine3/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine3/index.html</guid>
-      <description>This is a new chapter.</description>
-    </item>
-    <item>
-      <title>Semaine4</title>
-      <link>https://example.org/semaine4/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine4/index.html</guid>
-      <description>This is a new chapter.</description>
-    </item>
-    <item>
-      <title>Semaine5</title>
-      <link>https://example.org/semaine5/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine5/index.html</guid>
-      <description>This is a new chapter.</description>
-    </item>
-    <item>
       <title>Présentations et introduction à la programmation</title>
       <link>https://example.org/semaine1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -43,11 +15,25 @@
       <description>Objectifs de la leçon Comprendre quels sont les objectifs du cours 420-SN1-RE. Connaitre les responsabilités de l’enseignante et celles des étudiants Comprendre les éléments de base de la programmation. Se familiariser à l’environnement de travail. Savoir déterminer les données en entrée, en sortie et leurs traitements dans des problèmes scientifique simples. Plan de la leçon Connexion à Moodle et présentation du site du cours ~15 mins. Présentation de votre enseignante ~5 mins.</description>
     </item>
     <item>
-      <title>Projet Fil Rouge</title>
-      <link>https://example.org/projet-fil-rouge/index.html</link>
+      <title>Ordinogramme et introduction à Python</title>
+      <link>https://example.org/semaine2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/projet-fil-rouge/index.html</guid>
-      <description>Le projet fil rouge est l’activité permettant d’évaluer l’atteinte de l’objectif intégrateur du cours. Il se déroulera sur les 5 dernières semaines de la session. Au cours des 4 premières semaines du projet, nous développerons un programme permettant d’explorer, analyser et visualiser des données scientifiques.&#xA;Lors de la 5e semaine du projet (dernier cours de la session), vous serez évalués. Votre programme devra être terminé et fonctionnel avant la dernière séance de cours.</description>
+      <guid>https://example.org/semaine2/index.html</guid>
+      <description>Objectifs de la leçon Comprendre les rôles du pseudo-code et de l’ordinogramme. Savoir comment créer un ordinogramme. Écrire un premier script Python. Savoir déclarer et initialiser des variables de différents types. Utiliser des variables dans des opérations simples en respectant les priorités des opérateurs. Plan de la leçon Mini-quiz #1: Introduction à la programmation et analyse de problèmes (10 mins). Algorithme en ordinogramme ~15 mins. Atelier #2 - Ordinogramme ­~35 mins.</description>
+    </item>
+    <item>
+      <title>Interagir avec le programme</title>
+      <link>https://example.org/semaine3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine3/index.html</guid>
+      <description>Objectifs de la leçon Lire des données saisies au clavier par l’utilisateur. Afficher des données dans le terminal. Comprendre les avantages de la documentation du code. Connaitre et comprendre les différentes sources d’erreurs de syntaxe. Commencer à déboguer un programme à l’aide de la méthode print(). Plan de la leçon Mini-quiz #2: Ordinogrammes et base de Python (10 mins) Lecture de données et affichage textuel des résultats ~15mins Documentation du code ~5mins Atelier: Lecture et affichage de données ~20mins Pause 5 mins La syntaxe est les erreurs ~10mins La vérification du bon fonctionnement d’un programme ~5mins Atelier: Déboguer des programmes simples ~20mins Pause 5 mins Révision pour le minitest (10%) de la semaine prochaine ~30mins Pour la semaine prochaine</description>
+    </item>
+    <item>
+      <title>Structures conditionnelles</title>
+      <link>https://example.org/semaine4/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/index.html</guid>
+      <description>Objectifs de la leçon Comprendre la base des expressions booléennes. comprendre les structures conditionnelles if, elif et else. Savoir représenter les structures conditionnelles dans un ordinogramme. Utiliser les instructions if, elif et else. Écrire des conditions utilisant les opérateurs logiques (and, or, not). Savoir tester des nombres à virgule. Implémenter des structures conditionnelles imbriquées. Appliquer les structures conditionnelles dans des cas pratiques. Plan de la leçon Mini-test (40 mins) Les opérateurs et les expressions booléennes.</description>
     </item>
     <item>
       <title>Solutions de ateliers</title>

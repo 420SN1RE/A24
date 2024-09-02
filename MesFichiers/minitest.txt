@@ -1,0 +1,30 @@
+Complétez le programme ci-dessous qui demande à l’utilisateur son prénom et son taux horaire (réel), puis affiche calcule le salaire correspondant à 40h de travail et affiche le résultat dans un message personnalisé.
+
+heures_travaillees = 40
+
+prenom = [[1]]( "Entrez votre prénom: "))
+
+taux_horaire = [[2]]( [[3]]( "Entrez votre taux horaire, un nombre à virgule: "))
+
+salaire = [[4]] * heures_travaillees
+
+[[5]]("Votre salaire est de : ", [[6]])
+
+
+===============
+
+
+WARN  deprecated: .Site.IsMultiLingual was deprecated in Hugo v0.124.0 and will be removed in a future release. Use hugo.IsMultilingual instead.
+
+===============
+
+écrit 4 phrases courtes qui contiennent 1 apostrophe
+
+print("Il a dit : "Bonjour, tout le monde!"")
+Ce code génère une erreur. Quelle est le code qui permet de corriger l'erreur et d'afficher la phrase Il a dit : "Bonjour tout le monde!"
+
+
+L’été est ma saison préférée.
+J’aime beaucoup l’art moderne.
+C’est un très bon livre.
+L’école commence demain.

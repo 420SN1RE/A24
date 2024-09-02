@@ -1,0 +1,19 @@
+Image
+
+![Où Qui Comment](../assets/images/analyse.jpg?width=25vw "Analyse de problèmes").
+
+video
+
+{{< youtube Ql2ni66uXRc >}}
+
+PDF
+
+lien
+
+[Comment utiliser Jupyter Notebook dans Visual Studio Code](https://learn.microsoft.com/fr-fr/shows/ai-show/jupyter-notebooks-in-visual-studio-code)
+
+Question (pour le 8 juillet) 
+: On a mit "
+Traduction de l'algorithme en code" à la semaine 4. Je trouve que les contenus des semaines 2 et 3 (variables, opérateurs, input, print) se prête bien pour commencer à coder. Qu'en pensez-vous?
+
+

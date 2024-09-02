@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Semaine4 :: My New Hugo Site</title>
+    <title>Structures conditionnelles :: My New Hugo Site</title>
     <link>https://example.org/semaine4/index.html</link>
-    <description>This is a new chapter.</description>
+    <description>Objectifs de la leçon Comprendre la base des expressions booléennes. comprendre les structures conditionnelles if, elif et else. Savoir représenter les structures conditionnelles dans un ordinogramme. Utiliser les instructions if, elif et else. Écrire des conditions utilisant les opérateurs logiques (and, or, not). Savoir tester des nombres à virgule. Implémenter des structures conditionnelles imbriquées. Appliquer les structures conditionnelles dans des cas pratiques. Plan de la leçon Mini-test (40 mins) Les opérateurs et les expressions booléennes.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://example.org/semaine4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Les opérateurs et les expressions booléennes</title>
+      <link>https://example.org/semaine4/expressions-booleennes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/expressions-booleennes/index.html</guid>
+      <description>Les opérateurs de comparaison Les opérateurs de comparaison permettent de comparer des valeurs et de déterminer si une condition est vraie ou fausse.&#xA;Soient a = 10 et b = 3&#xA;Opération (opérateur) Exemple Égalité (==) a == b donne faux (False) Inégalité (!=) a != b donne vrai (True) Supérieur â (&gt;) a &gt; b donne vrai (True) Inférieur à (&lt;) a &lt; b donne faux (False) Supérieur ou égal â (&gt;=) a &gt;= b donne vrai (True) Inférieur ou égal à (&lt;=) a &lt;= b donne faux (False) Les opérateurs logiques Les opérateurs logiques permettent de combiner des expressions booléennes.</description>
+    </item>
+    <item>
+      <title>Les instructions if else elif</title>
+      <link>https://example.org/semaine4/les-structures-conditionnelles/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/les-structures-conditionnelles/index.html</guid>
+      <description>Les tests Definition Les tests sont très importants en programmation car ils permettent à l’ordinateur de prendre des décisions. Pour coder des tests, on utilise des structures conditionnelles.&#xA;Les structures conditionnelles Les structures conditionnelles sont essentielles pour la logique d’un programme. Elles permettent d’exécuter différentes actions en fonction de la valeur de certaines variables ou expressions. En Python, les structures conditionnelles sont if (Si), elif (Sinon Si), et else (Sinon).</description>
+    </item>
+    <item>
+      <title>Tester des nombres flottants</title>
+      <link>https://example.org/semaine4/tests-flottants/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/tests-flottants/index.html</guid>
+      <description>Les bases des nombres à virgule flottante (floats) Rappel: Les nombres à virgule flottante sont des nombres avec des décimales, comme 0.1, 2.5, ou 3.14.&#xA;Attention En Python, ces nombres peuvent parfois être un peu imprécis à cause de la façon dont les ordinateurs les stockent.&#xA;Exemple:&#xA;Imaginez que vous additionnez 0.1 et 0.2. Vous attendez que le résultat soit 0.3, mais en Python, cela peut donner un résultat très légèrement différent, comme 0.</description>
+    </item>
   </channel>
 </rss>

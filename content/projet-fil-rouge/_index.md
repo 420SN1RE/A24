@@ -2,6 +2,7 @@
 archetype = "chapter"
 title = "Projet Fil Rouge"
 weight = 160
+draft = true
 +++
 
 ![Profil rouge](./images/projetFilRouge.png?width=25vw)

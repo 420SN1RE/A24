@@ -1,0 +1,55 @@
+**~
+---
+Bleu
+
+{{% notice note %}}
+A notice disclaimer
+{{% /notice %}}
+
+---
+Orange Note
+
+{{% notice info %}}
+An information disclaimer
+{{% /notice %}}
+
+---
+vert Astuce
+
+{{% notice style=tip title=Astuce %}}
+A tip disclaimer
+{{% /notice %}}
+
+---
+rouge
+
+{{% notice warning %}}
+A warning disclaimer
+{{% /notice %}}
+
+
+URL interne
+
+[liste](../../Semaine6/_index.md)
+
+[test](../base-de-connaissances/MarkDown/_index.md)
+
+
+https://gentle-bay-07dd22510.5.azurestaticapps.net/
+
+
+```python {style=witchhazel}
+{'site_1': {'Chêne': 30,
+            'Sapin': 15,
+            'Érable': 25,
+            'Pin': {
+                'Grandeur': [3, 8, 12],
+                'Quantité': 125,
+                'Rangée': 'A'
+            },
+ 'site_2': {'Bouleau': 42,
+            'Chêne': 7,
+            'Érable': 25
+            }
+}
+```

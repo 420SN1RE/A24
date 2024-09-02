@@ -1,0 +1,3 @@
+COMMENTAIRES SUGGESTIONS
+
+- Interagir avec le programme et Base de Python (parties redondante: input, casting, commentaires)

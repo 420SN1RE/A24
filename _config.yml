@@ -1,0 +1,15 @@
+title: Mon Site Jekyll
+description: >- # Ce signe permet de continuer la description sur plusieurs lignes
+  Une description de mon site Jekyll.
+baseurl: "" # Laissez vide si vous déployez à la racine du domaine
+url: "https://votresite.github.io" # Remplacez par l'URL de votre site
+theme: jekyll-theme-primer # Remplacez par le thème que vous utilisez
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings

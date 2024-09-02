@@ -1,0 +1,74 @@
+SN1 A24
+
+0 *** Base de connaissance
+- Erreurs et débogage
+  - Laisser dans cours erreurs courante, débogage print
+  - Pour chaque notions faire résumé du livre
+- Erreur et débogage et sous sections
+
+1 *** VÉRIFIER TOUS LES LIENS INTERNES ***
+Semaine 1 : DONE
+Semaine 2 : DONE
+Semaine 3 : DONE
+Semaine 4 : DONE
+Semaine 5 : 
+
+
+2 *** Compléter les Semaines
+
+Semaine 1
+- Intro à la prog vidéo Utiliser Jupyter pas en français
+
+Semaine 2 : 
+- ordinos plus clairs
+
+Semaine 3 : DONE
+- livre : erreurs p. 25,26 + exos p. 27-26
+
+Semaine 4 : DONE
+
+Semaine 5:
+- Ordinogramme WHILE
+- Ordinogramme FOR
+- Ateliers: while, for, break, continue
+
+https://python.sdv.u-paris.fr/05_boucles_comparaisons/
+
+Semaine 6: listes- string- https://python.sdv.u-paris.fr/04_listes/
+
+Semaine 7: librairies système, fonctions prédéfinies, manipulation types prédéfinis https://python.sdv.u-paris.fr/09_modules/
+
+Semaine 8: fonctions, portée- mise en page (notice, pause, plan) https://python.sdv.u-paris.fr/10_fonctions/
+
+Semaine 9: trace débogage (popAI + Livre Cheneliere)
+
+Semaine 10: examen
+
+Semaine 11: https://python.sdv.u-paris.fr/22_module_pandas/
+https://python.sdv.u-paris.fr/07_fichiers/
+
+Semaine 12: https://python.sdv.u-paris.fr/21_module_matplotlib/
+
+Semaine 13: https://python.sdv.u-paris.fr/20_module_numpy/
+
+Semaine 14: Markdown et jupyter
+
+Semaine 15: eval projet
+
+Grille criteriee (popAI)
+
+3 *** MAJ des pages _index
+
+Semaine 2: 
+Semaine 2: 
+
+
+100 *** METTRE DES LIENS (icone flèches) vers suivant et précédent)
+
+
+
+écrit un chapitre détaillé sur Numpy Python. Explique simplement les concepts.
+
+Ecrit un atelier avec des exercices. Donne les réponses des exercices.
+
+Ch3n3l13re@3du

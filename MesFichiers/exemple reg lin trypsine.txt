@@ -1,0 +1,33 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Concentrations en trypsine (μg/ml)
+concentrations = np.array([100, 50, 25, 12.5, 6.25, 3.125, 1.5625, 0.78125])
+
+# Valeurs d'absorbance correspondantes
+absorbances = np.array([1.2, 0.6, 0.3, 0.15, 0.075, 0.0375, 0.01875, 0.009375])
+
+# Tracé des points de données
+plt.scatter(concentrations, absorbances, color='blue', label='Données expérimentales')
+
+# Ajustement d'une ligne de régression linéaire
+coefficients = np.polyfit(concentrations, absorbances, 1)
+polynomial = np.poly1d(coefficients)
+y_fit = polynomial(concentrations)
+
+# Tracé de la ligne de régression
+plt.plot(concentrations, y_fit, color='red', label='Ligne de régression')
+
+# Ajout des labels et de la légende
+plt.xlabel('Concentration en trypsine (μg/ml)')
+plt.ylabel('Absorbance')
+plt.title('Courbe Étalon pour la Trypsine')
+plt.legend()
+
+# Affichage du graphique
+plt.show()
+
+
+WARN  deprecated: .Sites.First was deprecated in Hugo v0.127.0 and will be removed in a future release. Use .Sites.Default instead.
+WARN  deprecated: .Site.IsMultiLingual was deprecated in Hugo v0.124.0 and will be removed in a future release. Use hugo.IsMultilingual instead.
+

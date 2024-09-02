@@ -1,0 +1,175 @@
+## Programme et langage de programmation
+
+### Qu'est-ce qu'un programme ?
+
+- Un **programme** est une **suite d'instructions** écrites dans un langage de programmation qu'un système informatique comprend et exécute.
+- Un programme résulte des instructions (étapes) définies dans l'ordinogramme.
+
+### Qu'est-ce qu'un langage de programmation ?
+
+- Un **langage de programmation** est un **ensemble de mots clés** et des **règles de syntaxe** qui permettent d'écrire un programme exécutable par un système informatique.
+Ex: Python, Java, C#, Matlab, ....
+- Langages de programmation les plus populaires : [TIOBE Index](https://www.tiobe.com/tiobe-index/)
+Et le gagnant est.... 
+
+#### Les types de langages de programmation
+
+- Il y a beaucoup de types de langages de programmation, chacun avec ses propres avantages :
+	- **Langages de haut niveau** : Ils sont plus proches de la façon dont nous parlons, comme Python, Java, ou C++. Ils sont généralement **plus faciles à lire et à écrire**.
+
+	- **Langages de bas niveau** : Ils sont plus proches de la façon dont l’ordinateur parle, comme l’assembleur. Ils donnent plus de contrôle sur l’ordinateur mais sont **plus difficiles à apprendre**.
+
+## Le cycle de développement de logiciels
+
+- Le **cycle de développement de logiciel**, c’est **le plan** pour créer un logiciel. 
+- Il aide à travailler de manière organisée et à créer des logiciels de qualité qui répondent aux attentes des utilisateurs.
+- Le cycle de développement de logiciel a généralement les étapes suivantes:
+	1. Planification (Exigences) et Analyse des besoins
+	2. Conception 
+	3. Implémentation (Mise en oeuvre)
+	4. Tests
+	5. Déploiement
+	6. Maintenance
+
+[Goffinet, F. (2021, 11 novembre). Concepts de développement logiciel.](https://cisco.goffinet.org/devasc/concepts-dev-developpement-logiciel/)
+
+![Cycle de développement de logiciels](../assets/images/sdlc-software-development-life-cycle.png?width=40vw "Cycle de développement").
+
+Le schéma représente un cercle fermé car un logiciel ne "meurt" jamais. Il est en constante évolution dû à des besoins utilisateurs changeants et grandissants.
+
+### Définitions des étapes du cycle de développement
+
+1. **Planification :** C’est comme faire une liste de courses. On décide ce qu’on veut faire, ce dont on a besoin et quand on veut le faire.  
+   **Analyse des besoins :** C’est comme demander aux futurs utilisateurs ce qu’ils veulent dans le logiciel. On recueille et analyse les besoins des utilisateurs, telles que les différentes fonctionnalités, l’affichage, etc.
+2. **Conception :** C’est comme dessiner un plan. On crée l’architecture du logiciel et on planifie comment le construire.
+3. **Implémentation (Mise en oeuvre) :** C’est comme construire une maison. On écrit le code source du logiciel selon le plan.
+4. **Tests :** Ils servent à vérifier que tout fonctionne correctement et sans erreurs.
+5. **Déploiement :** C’est comme ouvrir la maison aux visiteurs. On met le logiciel en production pour qu’il soit utilisé par les utilisateurs finaux.
+6. **Maintenance :** C’est comme entretenir la maison. On corrige les bugs, on met à jour et on améliore le logiciel après sa mise en production.
+
+### Les modèles de développement
+
+Il y a différents modèles de développement, chacun avec ses avantages et inconvénients :  
+- **Modèle en Cascade**: C’est comme suivre une recette pas à pas. On doit terminer chaque étape avant de passer à la suivante.  
+
+![Cycle en cascade](../assets/images/modele_cascade.jpg?width=40vw "Cycle de développement en cascade").
+
+- **Modèle Agile**: C’est comme faire plusieurs petits projets. On travaille par itérations et on collabore en continu avec le client.  
+
+![Méthode Agile](../assets/images/méthode-agile-scrum.png?width=50vw "Méthode Agile - Scrum").
+
+[Everlaab, Méthode Agile : définition, étapes et exemples](https://everlaab.com/methode-agile/#m%C3%A9thode-agile-avantages-et-inconv%C3%A9nients)
+
+- **Modèle en V**: C’est comme le modèle en cascade, mais avec plus de tests à chaque étape.  
+
+![Cycle en V](../assets/images/modele_v.jpg?width=50vw "Cycle de développement en V").
+
+
+
+
+### 1. Algorithmes en langage naturel
+
+- Cette méthode consiste à décrire l'algorithme **en utilisant des phrases complètes dans un langage naturel**. 
+- C'est souvent utilisé pour expliquer l'algorithme à des personnes non techniques.
+
+**Exemple :**
+1. Demandez à l'utilisateur d'entrer deux nombres.
+2. Calculez la moyenne des deux nombres en les additionnant et en divisant le résultat par deux.
+3. Affichez la moyenne calculée.
+
+### 2. Pseudocode
+
+- Le **pseudocode** est une description textuelle d'un algorithme qui **utilise un langage naturel structuré**. 
+- Il est conçu pour être facilement compréhensible par les humains tout en étant **suffisamment précis pour être traduit en code de programmation**.
+
+**Exemple :**
+```
+ALGORITHME Moyenne
+DÉBUT
+   LIRE le premier nombre (a)
+   LIRE le deuxième nombre (b)
+   Calculer la moyenne : Moyenne = (a + b) / 2
+   AFFICHER la moyenne
+FIN
+```
+
+### 3. Ordinogramme (Diagrammes de flux)
+
+- Les **ordinogrammes** utilisent des **symboles graphiques pour représenter les étapes d'un algorithme**. 
+- **Chaque symbole représente une action spécifique**, comme une opération, une décision ou une entrée/sortie.
+
+**Exemple :**
+- **Ovales** : Début et fin
+- **Rectangles** : Actions ou processus
+- **Losanges** : Décisions
+- **Parallélogrammes** : Entrées et sorties
+
+![Symboles de base d'un ordinogramme](../assets/images/OrdinoRef_zc6.jpg?width=50vw "Symboles de base d'un ordinogramme").
+
+**Exemple : Applications au calcul de la moyenne de deux nombres**
+
+![Ordinogramme Moyenne entre deux nombres](../assets/images/ordino-moyenne.jpg?width=15vw "Ordinogramme Moyenne de deux nombres").
+
+### 4. La trace d'exécution
+
+- La **trace d'exécution** est une méthode utilisée pour suivre et représenter le déroulement d'un algorithme pas à pas. 
+- Elle permet de comprendre comment les variables évoluent et comment les instructions sont exécutées.
+- Une trace d'exécution est **un tableau** qui enregistre **l'état des données(variables)** et **les actions effectuées à chaque étape** de l'algorithme.
+- Elle est particulièrement **utile pour déboguer** et **vérifier le bon fonctionnement d'un algorithme**.
+
+#### Comment créer une trace d'exécution ?
+
+Pour créer une trace d'exécution, suivez ces étapes :
+
+1. **Initialisation :** Notez les valeurs initiales des variables avant le début de l'algorithme.
+2. **Étapes :** Pour chaque étape de l'algorithme, enregistrez les actions effectuées et les nouvelles valeurs des variables.
+3. **Conditions :** Si l'algorithme contient des conditions (comme des `if` ou des boucles), notez quelle condition est vérifiée et quelles actions en découlent.
+4. **Résultat final :** Notez les valeurs finales des variables à la fin de l'algorithme.
+
+**Exemple : a=4 et b=8**
+
+**Trace d'exécution :**
+
+| Étape | Action                        | a   | b   | Moyenne |
+|-------|-------------------------------|-----|-----|---------|
+| 1     | Initialisation                | -   | -   | -       |
+| 2     | LIRE le premier nombre (a)    | 4   | -   | -       |
+| 3     | LIRE le deuxième nombre (b)   | 4   | 8   | -       |
+| 4     | Calculer la moyenne           | 4   | 8   | 6       |
+| 5     | AFFICHER la moyenne           | 4   | 8   | "La moyenne de 4 et 8 est: 6"       |
+
+
+- La trace d'exécution est un **outil puissant pour analyser et comprendre les algorithmes**. 
+- En suivant chaque étape et en notant les **changements de variables**, on peut s'assurer que l'algorithme fonctionne correctement et **identifier rapidement les éventuelles erreurs**.
+
+### 5. Langages de programmation
+
+- Les algorithmes peuvent être directement écrits dans un langage de programmation. 
+- Cette méthode est la plus précise et **permet de tester et d'exécuter l'algorithme**.
+
+**Exemple en Python :**
+```python
+def moyenne(a, b):
+    return (a + b) / 2
+
+a = float(input("Entrez le premier nombre : "))
+b = float(input("Entrez le deuxième nombre : "))
+print("La moyenne est :", moyenne(a, b))
+```
+
+### 6. Tables de décision (Cas particuliers)
+
+- Les tables de décision sont utilisées pour représenter des **algorithmes qui impliquent des conditions complexes**. 
+- Elles montrent les différentes conditions possibles et les actions correspondantes.
+
+**Exemple :**
+| Condition A | Condition B | Action |
+|-------------|-------------|--------|
+| Vrai        | Vrai        | Action 1 |
+| Vrai        | Faux        | Action 2 |
+| Faux        | Vrai        | Action 3 |
+| Faux        | Faux        | Action 4 |
+
+- Chaque méthode de représentation a ses avantages et ses inconvénients. 
+- Le choix de la méthode dépend du contexte, du public cible et de la complexité de l'algorithme. 
+- Utiliser plusieurs méthodes peut également aider à mieux comprendre et communiquer l'algorithme.

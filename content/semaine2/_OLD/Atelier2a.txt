@@ -1,0 +1,82 @@
++++
+title = "ATELIER #2-Ordinogramme"
+weight = 22
++++
+
+## Directives
+
+- Vous devez finir l'atelier2 (2 parties) d'ici la fin de la séance. Lorsque vous aurez terminé, lisez bien la page "Pour le prochain cours" avant de quitter.
+- Pour cette partie, utilisez de préférence l'outil Diagrams.net (Draw.io), sinon Word.
+
+- L'atelier comporte 4 exercices. Vous devez TOUS les faire et pour chaque exercice, dans cette partie de l'atelier, vous devez traduire l'algorithme en ordinogramme. 
+
+---
+
+### Exercice 1 : Calcul de la moyenne de trois nombres
+
+**Objectif** : Traduire l'algorithme qui calcule la moyenne de trois nombres en ordinogramme.
+
+Voici l'algorithme à traduire :
+
+1. **Demander à l'utilisateur d'entrer le premier nombre.**
+2. **Lire le premier nombre** et le stocker dans une variable appelée `a`.
+3. **Demander à l'utilisateur d'entrer le deuxième nombre.**
+4. **Lire le deuxième nombre** et le stocker dans une variable appelée `b`.
+5. **Demander à l'utilisateur d'entrer le troisième nombre.**
+6. **Lire le troisième nombre** et le stocker dans une variable appelée `c`.
+7. **Calculer la somme** des trois nombres en ajoutant `a`, `b` et `c`.
+8. **Diviser la somme** par 3 pour obtenir la moyenne.
+9. **Afficher la moyenne** calculée à l'utilisateur.
+
+### Exercice 2 : Calcul de la somme de deux nombres
+
+**Objectif** : Traduire l'algorithme qui calcule la somme de deux nombres en ordinogramme.
+
+Voici l'algorithme à traduire :
+
+1. **Demander à l'utilisateur d'entrer le premier nombre.**
+2. **Lire le premier nombre** et le stocker dans une variable appelée `a`.
+3. **Demander à l'utilisateur d'entrer le deuxième nombre.**
+4. **Lire le deuxième nombre** et le stocker dans une variable appelée `b`.
+5. **Calculer la somme** des deux nombres en ajoutant `a` et `b`.
+6. **Afficher la somme** calculée à l'utilisateur.
+
+### Exercice 3 : Conversion de température (Fahrenheit à Celsius)
+
+**Objectif** : Traduire un algorithme qui convertit une température de Fahrenheit à Celsius en ordinogramme.
+
+**Algorithme :**
+
+1. **Demander à l'utilisateur d'entrer la température en degrés Fahrenheit.**
+2. **Lire la température en Fahrenheit** et la stocker dans une variable appelée `fahrenheit`.
+3. **Calculer la température en Celsius** en utilisant la formule suivante : soustraire 32 de la température en Fahrenheit, puis multiplier le résultat par 5/9. Stocker le résultat dans une variable appelée `celsius`.
+4. **Afficher la température en Celsius** calculée à l'utilisateur.
+
+### Exercice 4 : Calcul de l’aire d’un rectangle
+
+**Objectif** : Traduire un algorithme qui calcule l’aire d’un rectangle en ordinogramme.
+
+**Algorithme :**
+
+1. **Demander à l'utilisateur d'entrer la longueur du rectangle.**
+2. **Lire la longueur** et la stocker dans une variable appelée `longueur`.
+3. **Demander à l'utilisateur d'entrer la largeur du rectangle.**
+4. **Lire la largeur** et la stocker dans une variable appelée `largeur`.
+5. **Calculer l'aire** du rectangle en multipliant la longueur par la largeur. Stocker le résultat dans une variable appelée `aire`.
+6. **Afficher l'aire** calculée à l'utilisateur.
+
+### Exercice 5 : Calcul de la circonférence d’un cercle
+
+**Objectif** : Traduire un algorithme qui calcule la circonférence d’un cercle en ordinogramme.
+
+**Algorithme :**
+
+1. **Demander à l'utilisateur d'entrer le rayon du cercle.**
+2. **Lire le rayon** et le stocker dans une variable appelée `rayon`.
+3. **Calculer la circonférence** du cercle en utilisant la formule suivante : multiplier le rayon par 2, puis multiplier le résultat par π (pi). Stocker le résultat dans une variable appelée `circonférence`.
+4. **Afficher la circonférence** calculée à l'utilisateur.
+
+## Pause: 5 minutes
+
+![Pause 5 minutes](../assets/images/pause.jpg?width=50vw "Pause 5 minutes").
+

@@ -2,10 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Semaine5 :: My New Hugo Site</title>
-    <link>https://example.org/semaine5/index.html</link>
+    <link>http://localhost:1313/semaine5/index.html</link>
     <description>This is a new chapter.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/semaine5/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/semaine5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Les instructions répétitives</title>
+      <link>http://localhost:1313/semaine5/boucles/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine5/boucles/index.html</guid>
+      <description>Définition des instructions répétitives Info Les instructions répétitives, également appelées boucles, sont des structures de contrôle qui permettent d’exécuter un bloc de code plusieurs fois. En Python, les deux principales boucles sont for et while.&#xA;Importance des boucles en programmation Les boucles jouent un rôle crucial en programmation pour plusieurs raisons :&#xA;Automatisation des tâches répétitives : Elles permettent d’exécuter une série d’instructions plusieurs fois sans avoir à les écrire manuellement.</description>
+    </item>
+    <item>
+      <title>La boucle while</title>
+      <link>http://localhost:1313/semaine5/while/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine5/while/index.html</guid>
+      <description>La boucle WHILE La boucle while permet d’exécuter un bloc de code **tant qu’**une condition donnée est vraie.&#xA;La syntaxe de base est la suivante :&#xA;while condition: # bloc de code à exécuterPrincipe de base: la condition de la boucle while est évaluée avant chaque exécution du bloc de code. Si la condition est vraie, le bloc de code s’exécute. Après chaque exécution, la condition est réévaluée. Ce processus se répète jusqu’à ce que la condition devienne fausse, auquel moment la boucle se termine et le programme continue avec les instructions suivantes.</description>
+    </item>
+    <item>
+      <title>La boucle for et la fonction range</title>
+      <link>http://localhost:1313/semaine5/for/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine5/for/index.html</guid>
+      <description>La boucle FOR Info La boucle for est utilisée pour itérer sur une séquence d’éléments, comme une liste, une chaîne de caractères, ou un tuple.&#xA;Elle s’utilise, lorsque le nombre d’itérations (répétitions) est connu d’avance.&#xA;La syntaxe de base est la suivante :&#xA;for élément in séquence: # bloc de code à exécuterExemple simple :&#xA;liste_nombres = [1, 2, 3, 4, 5] for nombre in liste_nombres: print(nombre)Dans cet exemple, chaque élément représenté par la variable nombre de la liste_nombres est affiché à l’écran.</description>
+    </item>
+    <item>
+      <title>Le contrôle des boucles</title>
+      <link>http://localhost:1313/semaine5/controle/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine5/controle/index.html</guid>
+      <description>Les instructions BREAK et CONTINUE Les instructions break et continue sont utilisées pour contrôler le flux des boucles.&#xA;L’instruction BREAK L’instruction break permet de sortir immédiatement d’une boucle, même si la condition de la boucle n’est pas encore remplie.&#xA;for i in range(10): if i == 5: break print(i)Dans cet exemple, la boucle s’arrête lorsque i vaut 5, donc les nombres de 0 à 4 sont imprimés.&#xA;L’instruction CONTINUE L’instruction continue permet de passer immédiatement à l’itération suivante de la boucle, en sautant le reste du code à l’intérieur de la boucle pour l’itération en cours.</description>
+    </item>
   </channel>
 </rss>

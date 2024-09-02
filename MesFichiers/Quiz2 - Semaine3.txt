@@ -1,0 +1,6 @@
+Quiz2 - Semaine3
+Ordinogramme (formes/rôle)
+Nomenclature des variables
+Opérateurs arithmétiques
+Commentaires
+Erreurs d'arrondi

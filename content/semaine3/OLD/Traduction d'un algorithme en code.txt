@@ -1,0 +1,42 @@
++++
+title = "Traduction d'un algorithme en code"
+weight = 32
++++
+
+![Traduction en code](../traduction_algo.jpeg?width=25vw)
+
+## Traduction de l'algorithme en code
+
+La programmation est un outil puissant pour les scientifiques en herbe. Un algorithme est une série d'étapes pour résoudre un problème ou accomplir une tâche.
+
+### Comprendre l'algorithme
+
+{{% notice style=warning title=Attention %}}
+Avant de coder, il est crucial de comprendre l'algorithme et de le décomposer en étapes simples.
+{{% /notice %}}
+
+Prenons l'exemple d'un algorithme pour calculer l'indice de masse corporelle (IMC):
+
+1. Obtenir le poids en kilogrammes.
+2. Obtenir la taille en mètres.
+3. Calculer la taille au carré.
+4. Diviser le poids par la taille au carré.
+5. Afficher l'IMC.
+
+### Traduction en Python
+
+```python
+# Demander le poids et la taille à l'utilisateur
+poids = float(input("Entrez votre poids en kilogrammes: "))
+taille = float(input("Entrez votre taille en mètres: "))
+
+# Calculer l'IMC
+imc = poids / (taille ** 2)
+
+# Afficher l'IMC
+print("Votre indice de masse corporelle est:", imc)
+```
+
+## Atelier
+
+[Traduction d'algorithmes en code](../atelier-traduction-algo.ipynb)

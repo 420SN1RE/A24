@@ -1,0 +1,21 @@
+
+hugo
+cd public
+git init
+git remote add origin https://github.com/votre-utilisateur/votre-utilisateur.github.io.git
+git init
+
+git add .
+git commit -m "Commit initial"
+git push -u origin master
+
+
+
+git remote set-url origin https://github.com/NDesmangles/420SN1.git
+
+
+https://NDesmangles.github.io.
+
+git remote add origin https://github.com/420SN1RE/A24.git
+git branch -M main
+git push -u origin main

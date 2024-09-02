@@ -1,0 +1,81 @@
+### Exercice 1: Longueur d'une chaîne
+
+- Calculez la longueur de la chaîne `str1` et affichez le résultat.
+
+**Solution:**
+```python
+str1 = "Python"
+length = len(str1)
+print(length)
+```
+
+### Exercice 2: Extraction de Sous-chaîne
+
+- Extrayez les trois premiers caractères de la chaîne `str1` et affichez le résultat.
+
+**Solution:**
+```python
+str1 = "Programmation"
+substring = str1[:3]
+print(substring)  # Output: "Pro"
+```
+
+### Exercice 3: Conversion en Majuscules
+
+- Convertissez la chaîne `str1` en majuscules et affichez le résultat.
+
+**Solution:**
+```python
+str1 = "python est génial"
+upper_str = str1.upper()
+print(upper_str)  # Output: "PYTHON EST GÉNIAL"
+```
+
+### Exercice 4: Remplacement de Caractères
+
+- Remplacez toutes les occurrences du caractère `a` par le caractère `o` dans la chaîne `str1` et affichez le résultat.
+
+**Solution:**
+```python
+str1 = "abracadabra"
+replaced_str = str1.replace('a', 'o')
+print(replaced_str)  # Output: "obrocodobro"
+```
+
+### Exercice 5: Vérification de Sous-chaîne
+**Question:**
+Vérifiez si la sous-chaîne `sub` est présente dans la chaîne `str1` et affichez le résultat sous forme de chaîne de caractères.
+
+**Solution:**
+```python
+str1 = "Les chaînes de caractères en Python"
+sub = "Python"
+contains_sub = sub in str1
+result_message = str(contains_sub)
+print(result_message)  # Output: "True"
+```
+
+
+
+### Exercice 6: Suppression des Espaces
+**Question:**
+Supprimez les espaces au début et à la fin de la chaîne `str1` et affichez le résultat.
+
+
+**Solution:**
+```python
+str1 = "  espace blanc  "
+trimmed_str = str1.strip()
+print(trimmed_str)  # Output: "espace blanc"
+```
+
+### Exercice 7: Trouver l'Index d'un Caractère
+**Question:**
+Trouvez l'index de la première occurrence du caractère `a` dans la chaîne `str1` et affichez le résultat.
+
+**Solution:**
+```python
+str1 = "abracadabra"
+index = str1.find('a')
+print(index)  # Output: 0
+```
