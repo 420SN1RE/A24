@@ -5,7 +5,7 @@
     <link>https://example.org/bases/index.html</link>
     <description>Ici se trouve quelques informations pouvant vous être utile pour votre session. En autre:&#xA;Les erreurs communes et des astuces pour les éviter et les détecter L’utilisation de bloc-notes Jupyter Le Markdown et la programmation lettrée D’autres méthodes (obsolètes) de formatage des chaînes de caractères La régression linéaire et Python</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>fr-ca</language>
     <atom:link href="https://example.org/bases/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Formatage des chaines (obsolètes)</title>

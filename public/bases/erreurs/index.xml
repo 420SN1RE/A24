@@ -5,7 +5,7 @@
     <link>https://example.org/bases/erreurs/index.html</link>
     <description>Au fil des semaines nous aurons l’occasion de localiser et de corriger différentes erreurs (ou bogues). Dans cette section “Erreurs et débogage”, vous trouverez des techniques qui permettent de déboguer vos programmes.&#xA;La méthode Print et le débogage Une erreur de syntaxe signifie que le code n’est pas conforme aux règles de syntaxe du langage. Cela est habituellement détecté immédiatement.&#xA;Par exemple, si on oublie d’indenter correctement le code, ou une parenthèse dans une fonction, cela génère une erreur de syntaxe.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>fr-ca</language>
     <atom:link href="https://example.org/bases/erreurs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Erreurs avec les noms des variables</title>

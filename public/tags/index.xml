@@ -5,7 +5,7 @@
     <link>https://example.org/tags/index.html</link>
     <description></description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>fr-ca</language>
     <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

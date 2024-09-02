@@ -5,7 +5,7 @@
     <link>https://example.org/bases/debogage/index.html</link>
     <description>.&#xA;Techniques utilisant la méthode print() Gestion des exceptions Python permet de gérer les exceptions à l’aide des blocs try-except. Cela permet d’attraper les erreurs et de les traiter de manière appropriée sans interrompre l’exécution du programme.&#xA;try: resultat = 10 / 0 except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;)Il est également possible de gérer plusieurs types d’exceptions dans un même bloc try-except.&#xA;try: ma_liste = [1, 2, 3] print(ma_liste[5]) except IndexError: print(&#34;Erreur : index de liste incorrect&#34;) except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;)Suivi du flux d’exécution En ajoutant des instructions print à différents endroits du programme, vous pouvez suivre le flux d’exécution et voir quelles parties du code sont exécutées.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>fr-ca</language>
     <atom:link href="https://example.org/bases/debogage/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -5,7 +5,7 @@
     <link>https://example.org/outils/index.html</link>
     <description>Ici se trouve des informations sur les outils utilisés dans ce cours, pouvant vous être utiles pour votre session.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>fr-ca</language>
     <atom:link href="https://example.org/outils/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Visual Studio Code &amp; Jupyter</title>

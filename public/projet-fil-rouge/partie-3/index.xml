@@ -5,7 +5,7 @@
     <link>https://example.org/projet-fil-rouge/partie-3/index.html</link>
     <description>Objectif …&#xA;Affichage des données ….</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>fr-ca</language>
     <atom:link href="https://example.org/projet-fil-rouge/partie-3/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
