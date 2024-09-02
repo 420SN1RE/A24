@@ -9,3 +9,14 @@ title = 'My New Hugo Site'
 theme = 'hugo-theme-relearn'
 
 disableLandingPageButton = true
+
+[params]
+  search = false
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+  identifier = "home"
+  hidden = true
+
