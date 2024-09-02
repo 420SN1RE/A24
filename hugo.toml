@@ -7,3 +7,5 @@ title = 'My New Hugo Site'
     path = 'github.com/McShelby/hugo-theme-relearn'
 
 theme = 'hugo-theme-relearn'
+
+disableLandingPageButton = true
