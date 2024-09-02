@@ -22,3 +22,9 @@
 git pull = fetch + merge
 
 http://localhost:1313/ 
+
+git push : Envoie les modifications locales vers le dépôt distant. C’est comme publier vos changements pour que les autres puissent les voir.
+
+git pull : Récupère les modifications du dépôt distant et les fusionne avec votre branche locale. C’est comme mettre à jour votre copie locale avec les dernières modifications.
+
+git fetch : Récupère les modifications du dépôt distant sans les fusionner automatiquement. Cela vous permet de voir ce qui a changé avant de décider de fusionner.
