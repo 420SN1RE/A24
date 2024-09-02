@@ -17,7 +17,7 @@ Nous vous rappelons que dans le cadre de ce cours, il est impératif d'utiliser 
 Si vous soumettez du code contenant des éléments avancés qui n'ont pas été vus dans le cours, vous recevrez une **note de 0** pour l'évaluation.
 {{% /notice %}}
 
-**PS**: Dans [**Base de connaissances**](../Base-de-connaissances), vous trouverez un ensemble de connaissances nécessaires pour le cours, il s’agit de pages de références.
+**PS**: Dans [**Base de connaissances**](../Bases), vous trouverez un ensemble de connaissances nécessaires pour le cours, il s’agit de pages de références.
 
 
 Merci de votre compréhension et de votre coopération.  
