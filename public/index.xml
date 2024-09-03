@@ -40,7 +40,7 @@
       <link>https://example.org/solutions-ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/solutions-ateliers/index.html</guid>
-      <description>Semaine 1 - Analyse de problèmes</description>
+      <description>Semaine 1 - Analyse de problèmes&#xA;Semaine 2 - Ordinogrammes&#xA;Semaine 2 - Base de Python</description>
     </item>
     <item>
       <title>Base de connaissances</title>
