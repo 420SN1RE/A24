@@ -39,14 +39,11 @@ En Python, ces nombres peuvent parfois être un peu imprécis à cause de la fa�
 
 **Explication**:
 
-La fonction `math.isclose(a, b, rel_tol=1e-9)` en Python permet de vérifier si deux valeurs flottantes, `a` et `b`, sont proches l'une de l'autre en utilisant une tolérance relative. 
-
 Voici comment cela fonctionne :
 - **`a` et `b`** : Les deux valeurs que vous comparez.
-- **`rel_tol`** : La tolérance relative, qui est le maximum de différence autorisée entre `a` et `b`, relative à la magnitude des valeurs. Par défaut, cette tolérance est de \(1 \times 10^{-9}\).
+- **`rel_tol`** : La tolérance relative, qui est le maximum de différence autorisée entre `a` et `b`, relative à la magnitude des valeurs. Par défaut, cette tolérance est de `1e-9`.
 
-La fonction retourne `True` si les valeurs sont considérées comme proches, sinon `False`. La formule utilisée est :
-\[ \text{abs}(a - b) \leq \max(\text{rel\_tol} \times \max(\text{abs}(a), \text{abs}(b)), \text{abs\_tol}) \]
+La fonction retourne `True` si les valeurs sont considérées comme proches, sinon `False`.
 
 
 ## Atelier

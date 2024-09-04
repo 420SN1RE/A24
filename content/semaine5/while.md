@@ -80,8 +80,10 @@ On obtient ce qu'on appelle une **boucle infinie**, car la valeur de `nombre` re
 ```
 
 {{% notice style=note title=Astuce %}}
-Pour sortir d’une boucle infinie, il faut utiliser le clavier et taper les touches `CTRL+C`.
+Dans Jupyter Notebook, pour sortir d’une boucle infinie, il faut cliquer sur l’icône carrée (voir image ci-dessous) dans la barre d’outils pour interrompre le noyau Python (*kernel*).
 {{% /notice %}}
+
+![Arrêt Kernel](../arret-boucle-infinie.png?width=25vw)
 
 **Exemple corrigé avec la condition de sortie**:
 
