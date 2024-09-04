@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Semaine5 :: My New Hugo Site</title>
+    <title>Structures répétitives :: My New Hugo Site</title>
     <link>http://localhost:1313/semaine5/index.html</link>
-    <description>This is a new chapter.</description>
+    <description>Objectifs de la leçon Comprendre l’utilité des structures répétitives (les boucles) Utiliser la boucle WHILE Utiliser la boucle FOR et la fonction RANGE() Contrôler les boucles à l’aide des instructions break et continue Plan de la leçon Quiz (10 mins) Les instructions répétitives en générale ~5mins La boucle WHILE ~15mins Atelier: Utiliser la boucle While ~25mins Pause 5 minutes. La boucle FOR ~10mins Atelier: Utiliser la boucle For ~25mins Pause 5 minutes.</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>fr-ca</language>
     <atom:link href="http://localhost:1313/semaine5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Les instructions répétitives</title>

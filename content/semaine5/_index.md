@@ -21,7 +21,7 @@ draft = true
 - La boucle WHILE **~15mins**
 - Atelier: Utiliser la boucle While **~25mins**
 - Pause 5 minutes.
-- La boucle FOR **~01mins**
+- La boucle FOR **~10mins**
 - Atelier: Utiliser la boucle For **~25mins**
 - Pause 5 minutes.
 - Contrôler les boucles **~5mins**

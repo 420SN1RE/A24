@@ -9,7 +9,7 @@ weight = 53
 
 {{% notice style=info %}}
 La boucle `for` est utilisée pour itérer sur une séquence d'éléments, comme une liste, une chaîne de caractères, ou un tuple.   
-Elle s'utilise, lorsque le nombre d'itérations (répétitions) est connu d'avance.
+Elle s'utilise, lorsque le nombre d'**itérations** (répétitions) est connu d'avance.
 {{% /notice %}}
 
 La syntaxe de base est la suivante :
@@ -151,35 +151,7 @@ Nous verrons les fonctions `arrange()` et `linespace()` dans le cours sur la [bi
 
 Dans un ordinogramme, une boucle `for` est représentée par un rectangle qui contient la condition de la boucle, avec une flèche qui boucle vers l'arrière pour indiquer la répétition.
 
-**Exemple:**
-
-```
-+-------------------+
-| Début             |
-+-------------------+
-         |
-         V
-+-------------------+
-| Pour i de 1 à 5   |
-+-------------------+
-         |
-         V
-+-------------------+
-| Afficher i        |
-+-------------------+
-         |
-         | (retour au début de la boucle si la condition est vraie)
-         |
-+-------------------+
-| Fin de la boucle  |
-+-------------------+
-         |
-         V
-+-------------------+
-| Fin               |
-+-------------------+
-```
-
+![Ordinogramme FOR](../ordino-boucle-FOR.png?width=35vw)
 
 ## Les boucles imbriquées
 

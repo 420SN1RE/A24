@@ -48,49 +48,18 @@ Pour la boucle `while`, l'ordinogramme commence par une décision basée sur la 
 
 **Exemple:**
 
-```
-+-------------------+
-| Début             |
-+-------------------+
-         |
-         V
-+-------------------+
-| i = 0             |
-+-------------------+
-         |
-         V
-+-------------------+
-| Tant que i < 5    |
-+-------------------+
-         | Oui
-         V
-+-------------------+
-| Afficher i        |
-+-------------------+
-         |
-         V
-+-------------------+
-| i = i + 1         |
-+-------------------+
-         | (retour à la condition)
-         |
-         | Non
-         V
-+-------------------+
-| Fin               |
-+-------------------+
-```
+![Ordinogramme WHILE](../ordino-boucle-WHILE.png?width=35vw)
 
 ## Conditions et boucles infinies
 
 {{% notice style=warning title=Attention %}}
 La boucle `while` nécessite une **condition de sortie** pour éviter les boucles infinies.  
-Il est courant d'utiliser une variable de contrôle qui est modifiée à chaque itération.
+Il est courant d'utiliser une variable de contrôle (la variable test) qui est modifiée à chaque **itération** (répétition).
 {{% /notice %}}
 
 ### Importance de la condition de sortie
 
-**Exemple où la condition de sortie est omise
+**Exemple où la condition de sortie est omise**:
 
 ```python
 # Boucle sans la condition de sortie
@@ -138,8 +107,50 @@ while nombre > 0:
 1
 ```
 
-Dans cet exemple, l'instruction `nombre -= 1` permet de faire changer (**décrémenter**) la valeur la variable `nombre` jusqu'à ce qu'elle atteigne 0.
+Dans cet exemple, l'instruction `nombre -= 1` permet de faire changer (**décrémenter**, ou diminuer) la valeur la variable `nombre` jusqu'à ce qu'elle atteigne 0.
 
+## Les opérateurs raccourcis
+
+Voici quelques opérateurs raccourcis en Python :
+
+| **Opérateur** | **Description** | **Exemple** |
+|---------------|-----------------|-------------|
+| `+=`          | Addition et assignation | `a += 5` équivaut à `a = a + 5` |
+| `-=`          | Soustraction et assignation | `a -= 3` équivaut à `a = a - 3` |
+| `*=`          | Multiplication et assignation | `a *= 2` équivaut à `a = a * 2` |
+| `/=`          | Division et assignation | `a /= 4` équivaut à `a = a / 4` |
+| `%=`          | Modulo et assignation | `a %= 3` équivaut à `a = a % 3` |
+| `**=`         | Exponentiation et assignation | `a **= 2` équivaut à `a = a ** 2` |
+| `//=`         | Division entière et assignation | `a //= 2` équivaut à `a = a // 2` |
+
+Ces opérateurs sont très pratiques pour simplifier et rendre le code plus lisible. 
+
+## Les opérateurs d'incrémentation et de décrémentation
+
+Les opérateurs d'incrémentation et de décrémentation servent à **augmenter de 1** (incrémenter) ou **diminuer de 1** (décrémenter) des variables numériques (entiers).
+
+Voici un tableau avec ces opérateurs :
+
+| **Opérateur** | **Description** | **Exemple** |
+|---------------|-----------------|-------------|
+| `+=`          | Incrémentation | `a += 1` équivaut à `a = a + 1` |
+| `-=`          | Décrémentation | `a -= 1` équivaut à `a = a - 1` |
+
+### Exemples détaillés :
+
+- **Incrémentation** :
+  ```python
+  a = 5
+  a += 1  # Maintenant, a vaut 6
+  ```
+
+- **Décrémentation** :
+  ```python
+  a = 5
+  a -= 1  # Maintenant, a vaut 4
+  ```
+
+Ces opérateurs sont très utiles pour simplifier les opérations courantes d'incrémentation et de décrémentation dans les boucles et autres structures de contrôle. 
 
 ## Atelier
 
