@@ -29,21 +29,21 @@ Voici deux exemples pour illustrer cela :
 
 ```python
 nombre = 5
-if nb == 5:
+if nombre == 5:
 	print("Le test est vrai")
-	print(f"car la variable nb vaut {nb}")
+	print("car la variable nombre vaut", nombre)
 ```
 
-Dans cet exemple, les deux `print` sont exécutés si `nb` vaut 5.
+Dans cet exemple, les deux `print` sont exécutés si `nombre` vaut 5.
 
 ```python
 nombre = 5
-if nb == 5:
+if nombre == 5:
     print("Le test est vrai")
-print(f"car la variable nb vaut {nb}")
+print("car la variable nombre vaut, nombre)
 ```
 
-Dans cet exemple, le deuxième `print` est toujours exécuté, peu importe la valeur de `nb`.
+Dans cet exemple, le deuxième `print` est toujours exécuté, peu importe la valeur de `nombre`.
 
 ## L'erreur ***IndentationError***
 
