@@ -111,6 +111,34 @@ while nombre > 0:
 
 Dans cet exemple, l'instruction `nombre -= 1` permet de faire changer (**décrémenter**, ou diminuer) la valeur la variable `nombre` jusqu'à ce qu'elle atteigne 0.
 
+## Affichage sur la même ligne
+
+Par défaut, la fonction `print()` ajoute une nouvelle ligne après chaque affichage. On peut changer ce comportement avec le mot clé `end`.
+
+Voici quelques cas où l'utilisation de `end` peut être utile :
+
+1. **Éviter les nouvelles lignes :**
+
+   En utilisant `end=''`, on peut éviter cela et continuer l'affichage sur la même ligne.
+
+   ```python
+   for i in range(5):
+       print(i, end=' ')
+   ```
+
+   Cela affichera : `0 1 2 3 4` sur une seule ligne.
+
+2. **Ajouter un séparateur personnalisé :**
+
+   On peut utiliser `end` pour ajouter un séparateur personnalisé entre les éléments imprimés. Par exemple, pour ajouter une virgule et un espace :
+
+   ```python
+   for i in range(5):
+       print(i, end=', ')
+   ```
+
+   Cela affichera : `0, 1, 2, 3, 4, `.
+
 ## Les opérateurs raccourcis
 
 Voici quelques opérateurs raccourcis en Python :
