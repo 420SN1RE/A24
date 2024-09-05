@@ -11,3 +11,7 @@ weight = 170
 [Semaine 2 - Ordinogrammes](correction-atelier-ordinos.pdf)
 
 [Semaine 2 - Base de Python](correction-atelier-base.ipynb)
+
+[Semaine 3 - Input() et print() ](correction-atelier-input-print.ipynb)
+
+[Semaine 3 - Erreurs de syntaxe ](correction-atelier-erreurs-syntaxe.ipynb)

@@ -183,6 +183,4 @@ Cet exemple parcourt chaque élément d'un tableau 2D et les affiche.
 
 ## Ateliers
 
-[Boucles for](../atelier-for.ipynb)
-
-[Boucles for et while](../atelier-boucles.ipynb)
+[Boucle for](../atelier-for.ipynb)

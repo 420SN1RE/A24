@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projet - Fil Rouge :: My New Hugo Site</title>
+    <title>Projet Fil Rouge :: My New Hugo Site</title>
     <link>http://localhost:1313/projet-fil-rouge/index.html</link>
     <description>Le projet fil rouge est l’activité permettant d’évaluer l’atteinte de l’objectif intégrateur du cours. Il se déroulera sur les 5 dernières semaines de la session. Au cours des 4 premières semaines du projet, nous développerons un programme permettant d’explorer, analyser et visualiser des données scientifiques.&#xA;Lors de la 5e semaine du projet (dernier cours de la session), vous serez évalués. Votre programme devra être terminé et fonctionnel avant la dernière séance de cours.</description>
     <generator>Hugo</generator>
