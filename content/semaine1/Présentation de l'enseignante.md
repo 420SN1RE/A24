@@ -1,6 +1,7 @@
 +++
 title = "Présentation de l'enseignante"
 weight = 11
+draft = true
 +++
 
 ![Enseignante](../moi.jpg?width=25vw)

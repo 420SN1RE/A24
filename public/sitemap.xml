@@ -58,9 +58,6 @@
     <loc>https://example.org/semaine1/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine1/pr%C3%A9sentation-de-lenseignante/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/semaine1/pr%C3%A9sentation-du-cours/index.html</loc>
   </url>
   <url>
@@ -217,6 +214,9 @@
     <loc>https://example.org/bases/reg-lineaire/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/base-de-connaissances/erreurs/gestionexceptions/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/base-de-connaissances/stucturescondimbriquees/index.html</loc>
   </url>
   <url>
@@ -227,9 +227,6 @@
   </url>
   <url>
     <loc>https://example.org/outils/vs-code-jupyter/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/outils/vscode-jupyter/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/index.html</loc>

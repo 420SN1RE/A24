@@ -8,13 +8,6 @@
     <language>fr-ca</language>
     <atom:link href="https://example.org/semaine1/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Présentation de l&#39;enseignante</title>
-      <link>https://example.org/semaine1/pr%C3%A9sentation-de-lenseignante/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/semaine1/pr%C3%A9sentation-de-lenseignante/index.html</guid>
-      <description>L’enseignante Nathalie Desmangles&#xA;Pour me rejoindre Bureau : B-3320 Courriel : via ColNet Messagerie : via Teams Formation académique Baccalauréat en chimie, Université de Montréal Maîtrise en chimie, Université d’Ottawa Baccalauréat en informatique, Université de Sherbrooke D.E.S.S. en enseignement supérieur, Université de Montréal Expériences professionnelles Enseignement en informatique Analyste-programmeur en entreprise Collège Montmorency (2022-) Conseillers en Informatique d’Affaires Inc. (CIA), Montréal Collège André-Laurendeau (2015-2022) Sapphire Technologies Canada , Montréal Cégep de St-Jérôme (2014-2015) Cognicase (CGI), Montréal Cégep de Rosemont (2014) FinRAD Inc.</description>
-    </item>
-    <item>
       <title>Présentation du cours</title>
       <link>https://example.org/semaine1/pr%C3%A9sentation-du-cours/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

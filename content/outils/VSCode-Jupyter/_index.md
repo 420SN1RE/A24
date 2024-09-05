@@ -1,6 +1,7 @@
 +++
 title =  "Visual Studio Code & Jupyter Notebook"
 weight =  191
+draft = true
 +++
 
 ![VSCode](./VsCode.png?width=10vw)
