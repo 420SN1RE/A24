@@ -59,7 +59,3 @@ else:
     print("La boucle s'est terminée normalement.")
 ```
 Dans cet exemple, le message `else` n'est pas affiché car la boucle est interrompue par l'instruction `break` lorsque `i` vaut 3.
-
-## Atelier
-
-[Instructions break et continue](../atelier-controle.ipynb)

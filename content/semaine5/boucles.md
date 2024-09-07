@@ -25,7 +25,7 @@ Les boucles jouent un rôle crucial en programmation pour plusieurs raisons :
 Voici quelques exemples courants où les boucles sont utilisées en programmation :
 
 - **Parcourir une liste** : Accéder à chaque élément d'une liste pour effectuer des opérations comme la somme, la moyenne, ou la recherche d'un élément spécifique.
-- **Calculer des valeurs** : Utiliser une boucle pour calculer des valeurs comme la somme des nombres de 1 à 100.
+- **Calculer des valeurs** : Utiliser une boucle `for` pour calculer des valeurs comme la somme des nombres de 1 à 100.
 - **Générer des séquences** : Créer des séquences de nombres ou d'autres valeurs.
 - **Répéter des actions jusqu'à une condition** : Utiliser une boucle `while` pour répéter une action jusqu'à ce qu'une condition soit remplie.
 

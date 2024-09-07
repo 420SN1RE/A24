@@ -35,5 +35,19 @@
       <guid>http://localhost:1313/semaine5/controle/index.html</guid>
       <description>Les instructions BREAK et CONTINUE Les instructions break et continue sont utilisées pour contrôler le flux des boucles.&#xA;L’instruction BREAK L’instruction break permet de sortir immédiatement d’une boucle, même si la condition de la boucle n’est pas encore remplie.&#xA;for i in range(10): if i == 5: break print(i)Dans cet exemple, la boucle s’arrête lorsque i vaut 5, donc les nombres de 0 à 4 sont imprimés.&#xA;L’instruction CONTINUE L’instruction continue permet de passer immédiatement à l’itération suivante de la boucle, en sautant le reste du code à l’intérieur de la boucle pour l’itération en cours.</description>
     </item>
+    <item>
+      <title>ATELIERS</title>
+      <link>http://localhost:1313/semaine5/ateliers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine5/ateliers/index.html</guid>
+      <description>Ateliers Boucle while&#xA;Boucle for&#xA;Instructions break et continue</description>
+    </item>
+    <item>
+      <title>Pour le prochain cours</title>
+      <link>http://localhost:1313/semaine5/pour-le-prochain-cours/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine5/pour-le-prochain-cours/index.html</guid>
+      <description>Pour augmenter vos chances de réussite Terminer et soumettre l’atelier #5. Réviser la matière vue cette semaine, en vue du quiz qui aura lieu au début du prochain cours (arrivez à l’heure) Lire les notes de cours sur la matière du cours de la semaine 6. Note Si vous étiez présent au cours, posez moi des questions lorsque vous avez de la difficulté. N’attendez pas que la matière se complique.</description>
+    </item>
   </channel>
 </rss>

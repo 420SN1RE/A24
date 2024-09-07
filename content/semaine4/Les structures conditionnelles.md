@@ -205,6 +205,4 @@ else:
 
 ![Pause](../pause.jpg?width=25vw)
 
-## Atelier
-  
-[Les structures conditionnelles](../atelier-structures.ipynb)
+Voyons maintenant comment tester les nombres flottants.

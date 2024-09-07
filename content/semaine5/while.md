@@ -181,7 +181,3 @@ Voici un tableau avec ces opérateurs :
   ```
 
 Ces opérateurs sont très utiles pour simplifier les opérations courantes d'incrémentation et de décrémentation dans les boucles et autres structures de contrôle. 
-
-## Atelier
-
-[Boucle while](../atelier-while.ipynb)

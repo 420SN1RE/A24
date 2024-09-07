@@ -115,6 +115,9 @@
     <loc>https://example.org/semaine4/tests-flottants/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine4/ateliers/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine4/pour-le-prochain-cours/index.html</loc>
   </url>
   <url>
@@ -128,6 +131,12 @@
   </url>
   <url>
     <loc>https://example.org/semaine5/controle/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine5/ateliers/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine5/pour-le-prochain-cours/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine6/listes/index.html</loc>

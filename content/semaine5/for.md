@@ -180,7 +180,3 @@ for ligne in tableau:
     print()
 ```
 Cet exemple parcourt chaque élément d'un tableau 2D et les affiche.
-
-## Ateliers
-
-[Boucle for](../atelier-for.ipynb)

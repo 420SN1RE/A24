@@ -92,15 +92,4 @@ else:
     print("Il fait froid")
 ```
 
-
-## Atelier
-
-[Évaluer des expressions booléennes](../atelier-operateurs-bool.ipynb)
-
-## Pause : 5 minutes
-
-![Pause](../pause.jpg?width=25vw)
-
-Voyons maintenant que sont les [structures conditionnelles](../Les-structures-conditionnelles.md).
-
-
+Voyons maintenant que sont les structures conditionnelles.

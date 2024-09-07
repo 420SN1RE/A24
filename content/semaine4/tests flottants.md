@@ -44,8 +44,3 @@ Voici comment cela fonctionne :
 - **`rel_tol`** : La tolérance relative, qui est le maximum de différence autorisée entre `a` et `b`, relative à la magnitude des valeurs. Par défaut, cette tolérance est de `1e-9`.
 
 La fonction retourne `True` si les valeurs sont considérées comme proches, sinon `False`.
-
-
-## Atelier
-
-[Tester les flottants](../atelier-tests-flottants.ipynb)

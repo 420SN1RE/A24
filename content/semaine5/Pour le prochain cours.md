@@ -1,13 +1,13 @@
 +++
 title = "Pour le prochain cours"
-weight = 45
+weight = 56
 +++
 
 ## Pour augmenter vos chances de réussite
 
-- Terminer et soumettre l’atelier #4.
+- Terminer et soumettre l’atelier #5.
 - Réviser la matière vue cette semaine, en vue du quiz qui aura lieu au début du prochain cours (arrivez à l’heure)
-- Lire les notes de cours sur la matière du cours de la semaine 5.
+- Lire les notes de cours sur la matière du cours de la semaine 6.
 
 
 {{% notice note %}}

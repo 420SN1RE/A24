@@ -21,13 +21,13 @@ weight = 40
 
 - **Mini-test** (40 mins)
 - Les opérateurs et les expressions booléennes. **~10mins**
-- Atelier: Évaluer des expressions booléennes **~10mins**
-- Pause 5 minutes.
 - Les structures conditionnelles `if`, `elif` et `else`. **~10mins**
-- L'ordinogramme de structures conditionnelles **~5mins**
-- Les opérateurs logiques dans les structures conditionnelles **~5mins**
+- L'ordinogramme de structures conditionnelles. **~5mins**
 - Pause 5 minutes.
-- Atelier: Utiliser des structures conditionnelles dans des cas simples **~30mins**.
-- Tests avec les nombres flottants **~5mins** 
-- Atelier : Tester les nombres à virgule **~10mins** 
+- Les opérateurs logiques dans les structures conditionnelles. **~5mins**
+- Tests avec les nombres flottants. **~5mins**
+- Pause 5 minutes.
+- Atelier: Évaluer des expressions booléennes.
+- Atelier: Utiliser des structures conditionnelles dans des cas simples.
+- Atelier: Tester les nombres à virgule.
 - Pour la semaine prochaine.
