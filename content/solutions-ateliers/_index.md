@@ -15,3 +15,9 @@ weight = 170
 [Semaine 3 - Input() et print() ](correction-atelier-input-print.ipynb)
 
 [Semaine 3 - Erreurs de syntaxe ](correction-atelier-erreurs-syntaxe.ipynb)
+
+[Semaine 4 - Expressions booléennes](correction-atelier-operateurs-bool.ipynb)
+
+[Semaine 4 - IF-ELIF-ELSE](correction-atelier-if-elif-else.ipynb)
+
+[Semaine 4 - Tests de nombres flottants](correction-atelier-tests-flottants.ipynb)
