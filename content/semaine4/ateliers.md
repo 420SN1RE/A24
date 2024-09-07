@@ -3,7 +3,6 @@ title = "ATELIERS"
 weight = 44
 +++
 
-# Ateliers
 
 [Évaluer des expressions booléennes](../atelier-operateurs-bool.ipynb)
 

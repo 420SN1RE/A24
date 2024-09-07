@@ -3,7 +3,6 @@ title = "ATELIERS"
 weight = 55
 +++
 
-## Ateliers
 
 [Boucle while](../atelier-while.ipynb)
 
