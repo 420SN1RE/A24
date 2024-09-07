@@ -22,6 +22,13 @@
       <description>Les tests Definition Les tests sont très importants en programmation car ils permettent à l’ordinateur de prendre des décisions. Pour coder des tests, on utilise des structures conditionnelles.&#xA;Les structures conditionnelles Les structures conditionnelles sont essentielles pour la logique d’un programme. Elles permettent d’exécuter différentes actions en fonction de la valeur de certaines variables ou expressions. En Python, les structures conditionnelles sont if (Si), elif (Sinon Si), et else (Sinon).</description>
     </item>
     <item>
+      <title>Pour le prochain cours</title>
+      <link>https://example.org/semaine4/pour-le-prochain-cours/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/pour-le-prochain-cours/index.html</guid>
+      <description>Pour augmenter vos chances de réussite Terminer et soumettre l’atelier #4. Réviser la matière vue cette semaine, en vue du quiz qui aura lieu au début du prochain cours (arrivez à l’heure) Lire les notes de cours sur la matière du cours de la semaine 5. Note Si vous étiez présent au cours, posez moi des questions lorsque vous avez de la difficulté. N’attendez pas que la matière se complique.</description>
+    </item>
+    <item>
       <title>Tester des nombres flottants</title>
       <link>https://example.org/semaine4/tests-flottants/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
