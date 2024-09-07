@@ -29,4 +29,4 @@ Voici quelques exemples courants où les boucles sont utilisées en programmatio
 - **Générer des séquences** : Créer des séquences de nombres ou d'autres valeurs.
 - **Répéter des actions jusqu'à une condition** : Utiliser une boucle `while` pour répéter une action jusqu'à ce qu'une condition soit remplie.
 
-Voyons maintenant chacune des boucles `while` puis `for`.
+Voyons maintenant comment utiliser les boucles `while` et `for`.

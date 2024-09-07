@@ -59,3 +59,7 @@ else:
     print("La boucle s'est terminée normalement.")
 ```
 Dans cet exemple, le message `else` n'est pas affiché car la boucle est interrompue par l'instruction `break` lorsque `i` vaut 3.
+
+## Pause : 5 minutes
+
+![Pause](../pause.jpg?width=25vw)

@@ -36,6 +36,13 @@
       <description>Objectifs de la leçon Comprendre la base des expressions booléennes. comprendre les structures conditionnelles if, elif et else. Savoir représenter les structures conditionnelles dans un ordinogramme. Utiliser les instructions if, elif et else. Écrire des conditions utilisant les opérateurs logiques (and, or, not). Savoir tester des nombres à virgule. Implémenter des structures conditionnelles imbriquées. Appliquer les structures conditionnelles dans des cas pratiques. Plan de la leçon Mini-test (40 mins) Les opérateurs et les expressions booléennes.</description>
     </item>
     <item>
+      <title>Structures répétitives</title>
+      <link>https://example.org/semaine5/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine5/index.html</guid>
+      <description>Objectifs de la leçon Comprendre l’utilité des structures répétitives (les boucles) Utiliser la boucle WHILE Utiliser la boucle FOR et la fonction RANGE() Contrôler les boucles à l’aide des instructions break et continue Plan de la leçon Quiz (10 mins) Les instructions répétitives en générale ~5mins La boucle WHILE ~15mins Pause 5 minutes. La boucle FOR ~10mins Contrôler les boucles ~5mins Pause 5 minutes. Atelier: Utiliser la boucle While. Atelier: Utiliser la boucle For.</description>
+    </item>
+    <item>
       <title>Solutions de ateliers</title>
       <link>https://example.org/solutions-ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

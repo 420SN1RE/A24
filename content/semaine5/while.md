@@ -181,3 +181,7 @@ Voici un tableau avec ces opérateurs :
   ```
 
 Ces opérateurs sont très utiles pour simplifier les opérations courantes d'incrémentation et de décrémentation dans les boucles et autres structures de contrôle. 
+
+## Pause : 5 minutes
+
+![Pause](../pause.jpg?width=25vw)
