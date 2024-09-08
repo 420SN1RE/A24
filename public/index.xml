@@ -33,7 +33,7 @@
       <link>https://example.org/semaine4/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine4/index.html</guid>
-      <description>Objectifs de la leçon Comprendre la base des expressions booléennes. comprendre les structures conditionnelles if, elif et else. Savoir représenter les structures conditionnelles dans un ordinogramme. Utiliser les instructions if, elif et else. Écrire des conditions utilisant les opérateurs logiques (and, or, not). Savoir tester des nombres à virgule. Implémenter des structures conditionnelles imbriquées. Appliquer les structures conditionnelles dans des cas pratiques. Plan de la leçon Mini-test (40 mins) Les opérateurs et les expressions booléennes.</description>
+      <description>Objectifs de la leçon Comprendre la base des expressions booléennes. Comprendre les structures conditionnelles if, elif et else. Savoir représenter les structures conditionnelles dans un ordinogramme. Utiliser les instructions if, elif et else. Écrire des conditions utilisant les opérateurs logiques (and, or, not). Savoir tester des nombres à virgule. Implémenter des structures conditionnelles imbriquées. Appliquer les structures conditionnelles dans des cas pratiques. Plan de la leçon Mini-test (40 mins) Les opérateurs et les expressions booléennes.</description>
     </item>
     <item>
       <title>Structures répétitives</title>

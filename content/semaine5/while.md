@@ -7,7 +7,7 @@ weight = 52
 
 ## La boucle WHILE
 
-La boucle `while` permet d'exécuter un bloc de code **tant qu'**une condition donnée est vraie. 
+La boucle `while` permet d'exécuter un bloc de code **tant qu'** une condition donnée est vraie. 
 
 La syntaxe de base est la suivante :
 ```python

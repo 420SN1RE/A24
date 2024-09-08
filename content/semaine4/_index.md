@@ -8,7 +8,7 @@ weight = 40
 ## Objectifs de la leçon
 
 - Comprendre la base des expressions booléennes.
-- comprendre les structures conditionnelles `if`, `elif` et `else`.
+- Comprendre les structures conditionnelles `if`, `elif` et `else`.
 - Savoir représenter les structures conditionnelles dans un ordinogramme.
 - Utiliser les instructions `if`, `elif` et `else`.
 - Écrire des conditions utilisant les opérateurs logiques (`and`, `or`, `not`).

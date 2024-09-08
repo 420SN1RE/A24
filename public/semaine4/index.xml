@@ -3,7 +3,7 @@
   <channel>
     <title>Structures conditionnelles :: My New Hugo Site</title>
     <link>https://example.org/semaine4/index.html</link>
-    <description>Objectifs de la leçon Comprendre la base des expressions booléennes. comprendre les structures conditionnelles if, elif et else. Savoir représenter les structures conditionnelles dans un ordinogramme. Utiliser les instructions if, elif et else. Écrire des conditions utilisant les opérateurs logiques (and, or, not). Savoir tester des nombres à virgule. Implémenter des structures conditionnelles imbriquées. Appliquer les structures conditionnelles dans des cas pratiques. Plan de la leçon Mini-test (40 mins) Les opérateurs et les expressions booléennes.</description>
+    <description>Objectifs de la leçon Comprendre la base des expressions booléennes. Comprendre les structures conditionnelles if, elif et else. Savoir représenter les structures conditionnelles dans un ordinogramme. Utiliser les instructions if, elif et else. Écrire des conditions utilisant les opérateurs logiques (and, or, not). Savoir tester des nombres à virgule. Implémenter des structures conditionnelles imbriquées. Appliquer les structures conditionnelles dans des cas pratiques. Plan de la leçon Mini-test (40 mins) Les opérateurs et les expressions booléennes.</description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
     <atom:link href="https://example.org/semaine4/index.xml" rel="self" type="application/rss+xml" />
