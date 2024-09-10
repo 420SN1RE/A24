@@ -36,7 +36,7 @@
       <description>Blocs-notes Jupyter dans VS Code Jupyter (anciennement IPython Notebook) est un projet open source qui vous permet de combiner facilement du texte Markdown et du code source Python exécutable sur un canevas appelé notebook.&#xA;Visual Studio Code prend en charge l’utilisation des blocs-notes Jupyter en mode natif et via des fichiers de code Python.&#xA;Créer, ouvrir et enregistrer des blocs-notes Jupyter Utiliser des cellules de code Jupyter Afficher, inspecter et filtrer les variables à l’aide de l’Explorateur de variables et de la visionneuse de données Se connecter à un serveur Jupyter distant Déboguer un bloc-notes Jupyter Configuration de votre environnement Pour utiliser Python dans Jupyter Notebooks, vous devez activer un environnement Anaconda dans VS Code ou un autre environnement Python dans lequel vous avez installé le package Jupyter.</description>
     </item>
     <item>
-      <title>Markdown</title>
+      <title>MarkDown</title>
       <link>https://example.org/bases/markdown/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/bases/markdown/index.html</guid>

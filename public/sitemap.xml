@@ -148,7 +148,10 @@
     <loc>https://example.org/semaine6/chaines_caracteres/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine6/structures_donnees/index.html</loc>
+    <loc>https://example.org/semaine6/ateliers/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine6/pour-le-prochain-cours/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine7/librairies-systemes/index.html</loc>
@@ -208,10 +211,10 @@
     <loc>https://example.org/base-de-connaissances/jupyter/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/markdown/index.html</loc>
+    <loc>https://example.org/base-de-connaissances/markdown/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/base-de-connaissances/markdown/index.html</loc>
+    <loc>https://example.org/bases/markdown/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/base-de-connaissances/matchcase/index.html</loc>

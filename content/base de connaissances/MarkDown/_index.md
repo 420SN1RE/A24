@@ -51,7 +51,17 @@ Markdown est un langage de balisage léger qui vous permet de formater du texte 
    ***Gras et italique*** 
    ___Gras et italique___
 
-3. **Listes**:
+3. Texte souligné
+
+En Markdown, il n'y a pas de syntaxe native pour souligner du texte. Cependant, vous pouvez utiliser des balises HTML pour obtenir cet effet. Voici comment faire :
+
+```markdown
+<u>Texte souligné</u>
+```
+
+Cela produira le texte souligné suivant : <u>Texte souligné</u>.
+
+4. **Listes**:
 
    **Listes à puces**:
 
@@ -73,7 +83,7 @@ Markdown est un langage de balisage léger qui vous permet de formater du texte 
      3. Troisième élément
      ```
 
-4. **Liens et images**:
+5. **Liens et images**:
 
    Pour insérer un lien, utilisez la syntaxe suivante :
 
@@ -87,7 +97,7 @@ Markdown est un langage de balisage léger qui vous permet de formater du texte 
    ![Texte alternatif](URL_de_l'image)
    ```
 
-5. **Blocs de code**:
+6. **Blocs de code**:
 
    Utilisez des accents graves ` (backticks) pour insérer du code en ligne :
 
@@ -95,7 +105,7 @@ Markdown est un langage de balisage léger qui vous permet de formater du texte 
    `print("Hello, World!")`
    ```
 
-6. **Tableaux**:
+7. **Tableaux**:
 
    Créez des tableaux en utilisant des barres verticales `|` et des traits d'union `-` pour délimiter les en-têtes et les colonnes :
 
@@ -106,7 +116,7 @@ Markdown est un langage de balisage léger qui vous permet de formater du texte 
    | Cellule 3 | Cellule 4 |
    ```
 
-7. **Citations**:
+8. **Citations**:
 
    Utilisez le symbole `>` pour créer des citations.
 
@@ -114,7 +124,7 @@ Markdown est un langage de balisage léger qui vous permet de formater du texte 
    > Ceci est une citation.
    ```
 
-8. **Formules mathématiques**:
+9. **Formules mathématiques**:
 
    Utilisez LaTeX pour écrire des formules mathématiques. Encadrez vos formules avec des signes dollar `$`.
    
@@ -122,7 +132,7 @@ Markdown est un langage de balisage léger qui vous permet de formater du texte 
    $E = mc^2$
    ```
 
-9. **Texte barré**:
+10. **Texte barré**:
 
    Utilisez deux tildes `~~` pour barrer du texte.
   
@@ -130,7 +140,7 @@ Markdown est un langage de balisage léger qui vous permet de formater du texte 
    ~~texte barré~~
    ```
 
-10. **Blocs de texte surligné**:
+11. **Blocs de texte surligné**:
 
    Utilisez trois accents graves `^^^` pour surligner des blocs de texte.
 

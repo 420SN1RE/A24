@@ -7,8 +7,8 @@ weight = 51
 
 ## Définition des instructions répétitives
 
-{{% notice info %}}
-Les instructions répétitives, également appelées boucles, sont des structures de contrôle qui permettent d'exécuter un bloc de code plusieurs fois. 
+{{% notice style=info title=Définition %}}
+Les instructions répétitives, également appelées **boucles**, sont des structures de contrôle qui permettent **d'exécuter un bloc de code plusieurs fois**. 
 En Python, les deux principales boucles sont `for` et `while`.
 {{% /notice %}}
 

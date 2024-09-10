@@ -127,7 +127,3 @@ Il est possible d'itérer sur chaque lettre de la chaîne:
 for lettre in "Bonjour":
     print(lettre)
 ```
-
-## Atelier
-
-[Les chaînes de caractères](../atelier_caracteres.ipynb)
