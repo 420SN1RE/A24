@@ -26,5 +26,5 @@ weight = 10
 * Programme et langage de programmation **~5 mins**.
 * Le cycle de développement de logiciel **~5 mins**.
 * L'analyse du problème: détermination et traitement des données **~15 mins**.
-* Atelier #1: Analyse de problèmes simples **~30 mins**.
+* Atelier: Analyse de problèmes simples **~30 mins**.
 * Pour la semaine prochaine.

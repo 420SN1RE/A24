@@ -37,10 +37,6 @@ def addition(a, b):
     return a + b
 ```
 
-## Atelier
-
-[Lecture et affichage de données](../atelier-input_print.ipynb)
-
 ## Pause : 5 minutes
 
 ![Pause](../pause.jpg?width=25vw)

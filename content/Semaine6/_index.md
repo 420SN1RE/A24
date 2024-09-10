@@ -28,6 +28,6 @@ draft = true
 	- Trouver les éléments uniques d'une liste.
 	- Filtrer les nombres pairs d'une liste.
 - Pause 5 minutes.
-- Les chaines de caractères sont des listes**~10mins**
-- Atelier: Les listes et les chaines de caractères
+- Les chaines de caractères sont des listes **~10mins**
+- Ateliers: Les listes et les chaines de caractères
 - Pour la semaine prochaine.

@@ -17,11 +17,11 @@ weight = 20
 
 - **Mini-quiz #1**: Introduction à la programmation et analyse de problèmes (10 mins).
 - Algorithme en ordinogramme **~15 mins**.
-- Atelier #2 - Ordinogramme  **­~35 mins**.
 - Pause 5 mins
 - Les variables et les types de données **~30 mins**.
 - Les opérateurs arithmétiques et l'affichage de données **~10 mins**
 - Pause 5 mins
 - Les nombres à virgule et les erreurs d'arrondi **~10mins**.
-- Atelier #2 - Variables et expressions **~35mins**.
+- Atelier - Ordinogramme
+- Atelier - Variables et expressions
 - Pour la semaine prochaine.

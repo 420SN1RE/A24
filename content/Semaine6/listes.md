@@ -393,7 +393,7 @@ Explication:
 
 ===
 
-### Les listes dans les listes
+### Les listes dans les listes ???
 
 Une liste peut comporter tout type d'élément.  
 Nous pouvons donc mettre des listes dans des listes.

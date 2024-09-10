@@ -6,36 +6,160 @@ weight =  62
 ![Chaines de caractères](../chaines.jpeg?width=30vw)
 
 
-## Qu'est-ce qu'une chaîne de caractères ?
+## Quelques rappels sur les chaînes de caractères
 
-{{% notice style=info title=Définition %}}
-Une **chaîne de caractères** est simplement plusieurs caractères regroupés ensemble.
-{{% /notice %}}
-
+- Une **chaîne de caractères** est simplement plusieurs caractères regroupés ensemble, entourés de guillemets simples (`'`) ou doubles (`"`).
 - Les caractères peuvent être des lettres, chiffres, symboles ou espaces.
-- Les chaînes de caractères sont des objets que nous pouvons manipuler.
-- Nous pouvons concaténer des chaînes, extraire ou chercher des sous-chaînes, les modifier, etc...
+- Les chaines de caractères sont appelées **string**. 
+- Nous pouvons concaténer des chaînes, mais ce n'est pas tout...
+ 
+## Opérations sur les chaines de caractères
 
-En python, les chaînes de caractères sont appelées **string** ou **str**. Elles sont entourées de guillemets simples (`'`) ou doubles (`"`):
+Les chaînes de caractères en Python sont puissantes et flexibles. En les traitant comme des listes de caractères, vous pouvez effectuer une variété d’opérations pour manipuler et transformer vos données textuelles. 
+Par exemple: extraire ou chercher des sous-chaînes, les modifier, etc...
+
+## Les chaines de caractères sont des listes
+
+### Accès aux caractères individuels
+
+Vous pouvez accéder à chaque caractère d'une chaîne en utilisant des indices, de la même manière que vous le feriez avec une liste. Les indices commencent à 0.
 
 ```python
-une_chaine = 'Bonjour'
-une_autre = "Allo"
+chaine = "Bonjour"
+
+print(chaine[0])  # Affiche B
+print(chaine[1])  # Affiche o
 ```
 
-- Les chaînes en Python sont **immuables**, ce qui signifie qu'une fois créées, elles ne peuvent pas être modifiées. 
-- Toute opération qui semble modifier une chaîne crée en réalité une nouvelle chaîne. 
-- Pour l'utilisateur (programmeur), l'immutabilité est transparente dans la plupart des cas.
+![indices](../chaine_01.png)
 
-## Formater les chaines
+### Longueur d'une chaine de caractères
+
+Vous pouvez obtenir le nombre de caractères dans une chaine, avec la méthode `len()`.
+
+```python
+chaine = "Bonjour"
+
+longueur = len(chaine)
+print("La longueur de la chaîne est:", longueur)
+```
+
+Affiche :
+```python
+La longueur de la chaîne est: 7
+```
+
+### Itération sur les caractères
+
+Vous pouvez itérer sur chaque caractère d'une chaîne en utilisant une boucle `for`.
+
+```python
+chaine = "Bonjour"
+
+for caractere in chaine:
+    print(caractere)
+```
+Affiche:
+
+```python
+B
+o
+n
+j
+o
+u
+r
+```
+
+### Slicing (découpage)
+
+Le slicing vous permet d'extraire une sous-chaîne d'une chaîne existante.
+
+```python
+chaine = "Bonjour"
+
+# Extraire les caractères aux index 1 à 3 inclus
+sous_chaine = chaine[1:4] 
+print(sous_chaine)  # Affiche onj
+```
+
+## L'immutabilité des chaînes
+
+Les chaînes en Python sont **immuables**, ce qui signifie qu'une fois créées, elles ne peuvent pas être modifiées. 
+
+{{% notice note %}}
+Toute opération qui semble modifier une chaîne crée en réalité une nouvelle chaîne.
+{{% /notice %}}
+
+
+```python
+chaine = "Bonjour"
+
+# Extraire et concaténer les caractères "Bon" avec "a" et avec "jour"
+chaine_modifiee = chaine[:3] + 'a' + chaine[4:]
+print(chaine_modifiee)  # Affiche Bonajour
+```
+
+### Conversion entre chaînes et listes
+
+Vous pouvez convertir une chaîne en une liste de caractères et vice versa.
+
+```python
+chaine = "Bonjour"
+
+liste_caracteres = list(chaine)
+print(liste_caracteres)  # Affiche ['B', 'o', 'n', 'j', 'o', 'u', 'r']
+
+chaine_recomposee = ''.join(liste_caracteres)
+print(chaine_recomposee)  # Affiche Bonjour
+```
+
+### Autres méthodes utiles des chaînes
+
+Python fournit de nombreuses méthodes intégrées pour manipuler les chaînes de caractères.
+
+| Méthode | Description |
+| ---- | ----|
+|  `upper()` | Convertir en majuscules.|
+| `lower()` | Convertir en minuscules.|
+| `replace(old, new)` | Remplacer une sous-chaîne par une autre.|
+| `split(delim)` | Découper une chaîne en une liste de sous-chaînes.|
+| `strip()` | Supprimer les espaces en début et fin de chaîne.|
+
+Exemples: 
+
+```python
+print(chaine.upper())  # BONJOUR
+print(chaine.replace('o', 'a'))  # Banjaur
+print(chaine.split('o'))  # ['B', 'nj', 'ur']
+print(chaine.strip())  # Bonjour (si des espaces étaient présents)
+```
+
+## Formater les chaines de caractères
+
+### Insertion de variables
+
+Il est possible d'insérer facilement des variables dans des chaînes de caractères.
+Une première solution est d'utiliser la concaténation:
+
+```python
+nombre1 = 23
+nombre2 = 35
+la_chaine = "Le nombre " + str(nombre1) + " est plus petit que " + str(nombre2)
+print(la_chaine)   # Affiche:  Le nombre 23 est plus petit que 35
+```
+
+Mais il est préférable d'utiliser les `f-strings`
 
 ### Les f-Strings
 
 **Exemple**:
+
 ```python
-nom = "Laurence"
-age = 30
-print(f"Je m'appelle {nom} et j'ai {age} ans.")
+nombre1 = 23
+nombre2 = 35
+la_chaine = f'Le nombre {nombre1} est plus petit que {nombre2}'
+print(la_chaine)   # Affiche:  Le nombre 23 est plus petit que 35
 ```
 
 **Explication**:
@@ -43,34 +167,26 @@ print(f"Je m'appelle {nom} et j'ai {age} ans.")
 - `f-string` : Le `f` avant les guillemets indique que la chaîne de caractères est une `f-string`. Cela permet d’incorporer des expressions Python directement dans la chaîne.
 - `{ }` : Les accolades `{ }` sont utilisées pour inclure des expressions Python à l’intérieur de la chaîne. Ces expressions sont évaluées au moment de l’exécution et leurs valeurs sont insérées dans la chaîne.
 
-- `nom` est une variable contenant la chaîne "Laurence".
-- `age` est une variable contenant le nombre 30.
+### Les caractères "spéciaux"
 
-Lorsque le code est exécuté, l’expression `f"Je m'appelle {nom} et j'ai {age} ans."` est évaluée, et les valeurs des variables `nom` et `age` sont insérées à leurs emplacements respectifs dans la chaîne. Le résultat sera :
+**Rappel** : Le `\` permet d'échapper le caractère suivant.
 
-```plaintext
-Je m'appelle Laurence et j'ai 30 ans.
-```
+Le tableau ci-dessous présente quelques caractères d’échappement couramment utilisés en Python et leur rôle respectif :
 
-## Comment utiliser une chaîne de caractères ?
-
-### Fonctions, opérations et méthodes
-
-| Fonctions |  |
-| ---- | ----|
-| `len()` | Retourne la longueur de la chaîne |
-| `str()` | Convertit en chaîne de caractères |
+| Caractère |  Rôle|
+| --- | --- |
+| `\t` | Tabulation |
+| `\n` | Retour de ligne |
+| `\\` | Barre oblique inversée (Backslash) |
 
 
-| Opérations |  |
-| ---- | ----|
-| `*` | Multiplie une chaîne |
-| `+` | Concatène des chaînes |
+## Manipulation des chaines de caractères
 
-
-| Méthodes |  |
+| Méthodes | Définition |
 | ---- | ----|
 | `[ ]` | Accède à un caractère selon sa position |
+| `len()` | Retourne la longueur de la chaîne |
+| `str()` | Convertit en chaîne de caractères |
 | `lower()` | Convertit tous les caractères de la chaîne en minuscules |
 | `upper()` | Convertit tous les caractères de la chaîne en majuscules. |
 | `strip()` | Supprime les espaces (ou autres caractères spécifiés) au début et à la fin de la chaîne |
@@ -79,51 +195,13 @@ Je m'appelle Laurence et j'ai 30 ans.
 | `join()` | Concatène une séquence d'éléments (comme une liste) en une seule chaîne |
 | `find()` | Renvoie l'indice de la première occurrence de la sous-chaîne |
 
-### Les indices
 
-![indices](../chaine_01.png)
+| Opérations | Définition |
+| ---- | ----|
+| `*` | Multiplie (répète) une chaîne |
+| `+` | Concatène des chaînes |
 
-#### Exemples
+
+## Exemples
 
 [Exemples sur les chaînes de caractères](../exemples_caracteres.ipynb)
-
-#### Caractères "spéciaux"
-
-
-| Caractère |  |
-| --- | --- |
-| `\t` | Tabulation |
-| `\n` | Retour de ligne |
-| `\\` | Barre oblique inversée (Backslash) |
-
-Le `\` permet d'échapper le caractère suivant.
-
-### Insertion de variables
-
-Il est possible d'insérer facilement des variables dans des chaînes de caractères.
-Une première solution est d'utiliser la concaténation:
-
-```python
-var1 = 23
-var2 = 35
-la_chaine = "Le nombre " + str(var1) + " est plus petit que " + str(var2)
-print(la_chaine)   # Affiche:  Le nombre 23 est plus petit que 35
-```
-
-Mais il est préférable d'utiliser le f-strings :
-
-```python
-var1 = 23
-var2 = 35
-la_chaine = f'Le nombre {var1} est plus petit que {var2}'
-print(la_chaine)   # Affiche:  Le nombre 23 est plus petit que 35
-```
-
-### Dans une boucle
-
-Il est possible d'itérer sur chaque lettre de la chaîne:
-
-```python
-for lettre in "Bonjour":
-    print(lettre)
-```

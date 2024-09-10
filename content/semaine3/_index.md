@@ -19,12 +19,12 @@ weight = 30
 - **Mini-quiz #2**: Ordinogrammes et base de Python (10 mins)
 - Lecture de données et affichage textuel des résultats **~15mins**
 - Documentation du code **~5mins**
-- Atelier: Lecture et affichage de données **~20mins**
 - Pause 5 mins
 - La syntaxe est les erreurs **~10mins**
 - La vérification du bon fonctionnement d'un programme **~5mins**
-- Atelier: Déboguer des programmes simples **~20mins**
 - Pause 5 mins
 - Révision pour le minitest (10%) de la semaine prochaine **~30mins**
+- Atelier: Lecture et affichage de données **~20mins**
+- Atelier: Déboguer des programmes simples **~20mins**
 - Pour la semaine prochaine
 

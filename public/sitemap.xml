@@ -67,6 +67,9 @@
     <loc>https://example.org/semaine1/analyse-de-probl%C3%A8mes/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine1/ateliers/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine1/pour-le-prochain-cours/index.html</loc>
   </url>
   <url>
@@ -85,6 +88,9 @@
     <loc>https://example.org/semaine2/erreurs-arrondi/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine2/ateliers/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine2/pour-le-prochain-cours/index.html</loc>
   </url>
   <url>
@@ -98,6 +104,9 @@
   </url>
   <url>
     <loc>https://example.org/semaine3/erreurs-syntaxe/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine3/ateliers/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine3/pour-le-prochain-cours/index.html</loc>

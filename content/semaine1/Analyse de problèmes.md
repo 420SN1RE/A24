@@ -62,6 +62,4 @@ C'est plus efficace de créer un algorithme (une série d'étapes logiques) pour
 La semaine prochaine, nous verrons une des façons les plus répandues de traduire un algorithme avant de commencer à coder: [l'ordinogramme](/Semaine2/ordinogramme.md)
 {{% /notice %}}
 
-## Atelier
 
-[Analyse de problèmes](../Analyse_de_probleme.docx)

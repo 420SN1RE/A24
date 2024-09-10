@@ -1,6 +1,6 @@
 +++
 title = "Pour le prochain cours"
-weight = 17
+weight = 16
 +++
 
 ## Pour augmenter vos chances de réussite

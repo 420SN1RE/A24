@@ -164,9 +164,6 @@ Bien que la méthode `print` soit simple et efficace pour les petits projets ou 
 
 Pour ces raisons, il est souvent préférable d'utiliser des outils de débogage plus avancés, comme les tests unitaires ou les débogueurs intégrés, pour les projets plus complexes.
 
-## Atelier
-
-[Erreurs de syntaxe](../atelier-erreurs_syntaxe.ipynb)
 
 ## Pause : 5 minutes
 

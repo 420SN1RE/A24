@@ -3,7 +3,7 @@
   <channel>
     <title>Ordinogramme et introduction à Python :: My New Hugo Site</title>
     <link>https://example.org/semaine2/index.html</link>
-    <description>Objectifs de la leçon Comprendre les rôles du pseudo-code et de l’ordinogramme. Savoir comment créer un ordinogramme. Écrire un premier script Python. Savoir déclarer et initialiser des variables de différents types. Utiliser des variables dans des opérations simples en respectant les priorités des opérateurs. Plan de la leçon Mini-quiz #1: Introduction à la programmation et analyse de problèmes (10 mins). Algorithme en ordinogramme ~15 mins. Atelier #2 - Ordinogramme ­~35 mins.</description>
+    <description>Objectifs de la leçon Comprendre les rôles du pseudo-code et de l’ordinogramme. Savoir comment créer un ordinogramme. Écrire un premier script Python. Savoir déclarer et initialiser des variables de différents types. Utiliser des variables dans des opérations simples en respectant les priorités des opérateurs. Plan de la leçon Mini-quiz #1: Introduction à la programmation et analyse de problèmes (10 mins). Algorithme en ordinogramme ~15 mins. Pause 5 mins Les variables et les types de données ~30 mins.</description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
     <atom:link href="https://example.org/semaine2/index.xml" rel="self" type="application/rss+xml" />
@@ -34,6 +34,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine2/erreurs-arrondi/index.html</guid>
       <description>Les nombres flottants Attention En Python, c’est le point qui est utilisé comme séparateur décimal. Ainsi, 3.14 est un nombre reconnu comme un flottant, alors que 3,14 ne l’est pas.&#xA;Les erreurs d’arrondi Les erreurs d’arrondi sont un phénomène courant en Python. Elles surviennent principalement en raison de la manière dont les nombres à virgule flottante sont représentés en mémoire. Voici une explication détaillée :&#xA;Représentation des nombres à virgule flottante :</description>
+    </item>
+    <item>
+      <title>ATELIERS</title>
+      <link>https://example.org/semaine2/ateliers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine2/ateliers/index.html</guid>
+      <description>Atelier - Ordinogrammes Avant d’effectuer vos exercices vous devez installer drawio sur VS Code:&#xA;Etape 1: Rendez-vous dans la partie de gauche de Visual Studio Code et trouvez le logo “Extensions”, cherchez draw.io dans la barre de recherche.&#xA;Etape 2: cliquez sur installer Exercice 1 Écrire un ordinogramme qui demande à l’utilisateur de saisir trois nombres et calcule la moyenne de trois nombres. Fichier pour l’exercice 1&#xA;Exercice 2 Écrire un ordinogramme qui calcule et affiche l’aire d’un rectangle à partir de la longueur et de la largeur saisies par l’utilisateur.</description>
     </item>
     <item>
       <title>Pour le prochain cours</title>

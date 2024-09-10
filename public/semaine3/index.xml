@@ -3,7 +3,7 @@
   <channel>
     <title>Interagir avec le programme :: My New Hugo Site</title>
     <link>https://example.org/semaine3/index.html</link>
-    <description>Objectifs de la leçon Lire des données saisies au clavier par l’utilisateur. Afficher des données dans le terminal. Comprendre les avantages de la documentation du code. Connaitre et comprendre les différentes sources d’erreurs de syntaxe. Commencer à déboguer un programme à l’aide de la méthode print(). Plan de la leçon Mini-quiz #2: Ordinogrammes et base de Python (10 mins) Lecture de données et affichage textuel des résultats ~15mins Documentation du code ~5mins Atelier: Lecture et affichage de données ~20mins Pause 5 mins La syntaxe est les erreurs ~10mins La vérification du bon fonctionnement d’un programme ~5mins Atelier: Déboguer des programmes simples ~20mins Pause 5 mins Révision pour le minitest (10%) de la semaine prochaine ~30mins Pour la semaine prochaine</description>
+    <description>Objectifs de la leçon Lire des données saisies au clavier par l’utilisateur. Afficher des données dans le terminal. Comprendre les avantages de la documentation du code. Connaitre et comprendre les différentes sources d’erreurs de syntaxe. Commencer à déboguer un programme à l’aide de la méthode print(). Plan de la leçon Mini-quiz #2: Ordinogrammes et base de Python (10 mins) Lecture de données et affichage textuel des résultats ~15mins Documentation du code ~5mins Pause 5 mins La syntaxe est les erreurs ~10mins La vérification du bon fonctionnement d’un programme ~5mins Pause 5 mins Révision pour le minitest (10%) de la semaine prochaine ~30mins Atelier: Lecture et affichage de données ~20mins Atelier: Déboguer des programmes simples ~20mins Pour la semaine prochaine</description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
     <atom:link href="https://example.org/semaine3/index.xml" rel="self" type="application/rss+xml" />
@@ -27,6 +27,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/erreurs-syntaxe/index.html</guid>
       <description>.&#xA;La syntaxe et les erreurs d’exécution en Python Python est un langage de programmation réputé pour sa simplicité et sa lisibilité. Toutefois, comme tout langage de programmation, il est sujet aux erreurs de syntaxe et d’exécution.&#xA;Comprendre la syntaxe de Python et savoir comment gérer les erreurs d’exécution est essentiel pour écrire des programmes robustes et fiables. La détection et la correction des erreurs, qu’elles soient de syntaxe ou d’exécution, permettent d’améliorer la qualité du code et d’assurer son bon fonctionnement.</description>
+    </item>
+    <item>
+      <title>ATELIERS</title>
+      <link>https://example.org/semaine3/ateliers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine3/ateliers/index.html</guid>
+      <description>Lecture et affichage de données&#xA;Erreurs de syntaxe - FACULTATIF</description>
     </item>
     <item>
       <title>Pour le prochain cours</title>

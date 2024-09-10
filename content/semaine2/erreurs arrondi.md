@@ -57,7 +57,3 @@ On peut écrire des nombres très grands ou très petits avec des puissances de 
 nombre1 = 1e6 # 1000000.0
 nombre2 = 3.12e-3 # 0.00312
 ```
-
-## Atelier
-
-[Python- La base](../atelier-base.ipynb)
