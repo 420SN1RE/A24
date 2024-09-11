@@ -179,11 +179,11 @@ else:
 
 ### Les instructions IF et ELSE
 
-![ordinogramme if-else](../if-else.png?width=30vw)
+![ordinogramme if-else](../if-else.png?width=35vw)
 
 ### L'instruction ELIF
 
-![ordinogramme elif](../elif.png?width=30vw)
+![ordinogramme elif](../elif.png?width=35vw)
 
 ## Les opérateurs logiques dans les conditions
 
