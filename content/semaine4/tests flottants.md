@@ -1,6 +1,6 @@
 +++
 title = "Tester des nombres flottants"
-weight = 43
+weight = 44
 +++
 
 ![Tests flottants](../flottants.jpeg?width=25vw)

@@ -1,10 +1,9 @@
 +++
 title = 'Structures conditionnelles imbriquées'
-draft = false
-weight = 189
+weight = 43
 +++
 
-![structures imbriquées](./imbriquees.png?width=25vw)
+![structures imbriquées](../imbriquees.png?width=25vw)
 
 ## Les structures conditionnelles imbriquées
 
@@ -12,7 +11,7 @@ Les tests peuvent être imbriquées, c'est-à-dire qu'on peut mettre un `IF` dan
 
 ### La syntaxe générale
 
-![IF imbriqués](./if-imbriques.png?width=25vw)
+![IF imbriqués](../if-imbriques.png?width=25vw)
 
 
 **Exemple**

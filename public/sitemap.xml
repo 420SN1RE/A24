@@ -100,6 +100,9 @@
     <loc>https://example.org/semaine4/les-structures-conditionnelles/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine4/imbriquees/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine4/tests-flottants/index.html</loc>
   </url>
   <url>
@@ -197,9 +200,6 @@
   </url>
   <url>
     <loc>https://example.org/bases/reg-lineaire/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/bases/structures-cond-imbriquees/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/outils/index.html</loc>
