@@ -9,7 +9,7 @@ title = 'My New Hugo Site'
 theme = 'hugo-theme-relearn'
 
 [params]
-  disableLandingPageButton = false
+  disableLandingPageButton = true
   disableSearch = true
   disableHomeButton = false
 
