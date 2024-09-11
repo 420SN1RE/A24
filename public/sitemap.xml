@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/base-de-connaissances/erreurs/nomenclature-variables/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/bases/erreurs/nomenclature-variables/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/projet-fil-rouge/partie-1/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/base-de-connaissances/erreurs/operateurs/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/erreurs/operateurs/index.html</loc>
@@ -19,16 +13,10 @@
     <loc>https://example.org/projet-fil-rouge/partie-2/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/base-de-connaissances/erreurs/lecture-donnees/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/bases/erreurs/lecture-donnees/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/projet-fil-rouge/partie-3/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/base-de-connaissances/erreurs/if-else-elif/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/erreurs/if-else-elif/index.html</loc>
@@ -37,19 +25,10 @@
     <loc>https://example.org/projet-fil-rouge/partie-4/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/base-de-connaissances/erreurs/while/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/bases/erreurs/while/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/base-de-connaissances/erreurs/for-range/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/bases/erreurs/for-range/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/base-de-connaissances/erreurs/listes/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/erreurs/listes/index.html</loc>
@@ -199,16 +178,7 @@
     <loc>https://example.org/bases/chaines-caracteres/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/base-de-connaissances/chainesdecaracteres/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/base-de-connaissances/debogage/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/bases/debogage/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/base-de-connaissances/erreurs/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/erreurs/index.html</loc>
@@ -217,34 +187,13 @@
     <loc>https://example.org/bases/jupyter/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/base-de-connaissances/jupyter/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/base-de-connaissances/markdown/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/base-de-connaissances/matchcase/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/base-de-connaissances/regressionlineaire/scikit-learn/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/bases/markdown/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/match-case/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/base-de-connaissances/regressionlineaire/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/base-de-connaissances/erreurs/gestionexceptions/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/bases/reg-lineaire/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/base-de-connaissances/stucturescondimbriquees/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/structures-cond-imbriquees/index.html</loc>
@@ -260,9 +209,6 @@
   </url>
   <url>
     <loc>https://example.org/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/base-de-connaissances/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>
