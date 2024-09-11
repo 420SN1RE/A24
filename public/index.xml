@@ -63,5 +63,12 @@
       <guid>https://example.org/outils/index.html</guid>
       <description>Ici se trouve des informations sur les outils utilisés dans ce cours, pouvant vous être utiles pour votre session.</description>
     </item>
+    <item>
+      <title>Base De Connaissances</title>
+      <link>https://example.org/base-de-connaissances/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/base-de-connaissances/index.html</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

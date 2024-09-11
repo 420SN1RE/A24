@@ -1,7 +1,7 @@
 +++
 title = 'Régression Linéaire'
 draft = false
-weight = 187
+weight = 188
 +++
 
 ![](./regLineaire.png?width=25vw)

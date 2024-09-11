@@ -223,13 +223,13 @@
     <loc>https://example.org/base-de-connaissances/markdown/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/markdown/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/base-de-connaissances/matchcase/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/base-de-connaissances/regressionlineaire/scikit-learn/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/markdown/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/match-case/index.html</loc>
@@ -238,10 +238,10 @@
     <loc>https://example.org/base-de-connaissances/regressionlineaire/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/reg-lineaire/index.html</loc>
+    <loc>https://example.org/base-de-connaissances/erreurs/gestionexceptions/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/base-de-connaissances/erreurs/gestionexceptions/index.html</loc>
+    <loc>https://example.org/bases/reg-lineaire/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/base-de-connaissances/stucturescondimbriquees/index.html</loc>
@@ -260,6 +260,9 @@
   </url>
   <url>
     <loc>https://example.org/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/base-de-connaissances/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>

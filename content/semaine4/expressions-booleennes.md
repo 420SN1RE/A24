@@ -28,9 +28,9 @@ Soient `x = True` et `y = False`
 
 |Opération (opérateur)|Explication         |Exemple|
 |---------------------|--------------------|------------
-|Et (and)              |Renvoie `True` si les deux expressions sont vraies.|`a and b` donne `False`|
-|Ou (or)               |Renvoie `True` si au moins l’une des expressions est vraie.|`a or b` donne True|
-|Non (not)             |Inverse la valeur d’une expression (si c’était `True`, devient `False`, et vice versa).|`not a` donne False|
+|Et (and)              |Renvoie `True` si les deux expressions sont vraies.|`x and y` donne `False`|
+|Ou (or)               |Renvoie `True` si au moins l’une des expressions est vraie.|`x or y` donne True|
+|Non (not)             |Inverse la valeur d’une expression (si c’était `True`, devient `False`, et vice versa).|`not x` donne False|
 
 ## Les priorités des opérateurs
 

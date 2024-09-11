@@ -1,0 +1,8 @@
+Filtrer listes
+
+
+- Fonction Filter
+
+- Les compréhension de liste
+
+https://www.digitalocean.com/community/tutorials/how-to-use-the-python-filter-function-fr

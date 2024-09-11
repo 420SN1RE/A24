@@ -353,82 +353,44 @@ print(uniques)  # Affiche [1, 2, 3, 4, 5]
 
 ### Filtrer les nombres pairs d'une liste.
 
-{{% notice info %}}
+{{% notice note %}}
 L'opérateur modulo (`%`) est utilisé ici pour vérifier si un nombre est divisible par 2 sans reste, ce qui signifie qu'il est pair.
 {{% /notice %}}
 
-Pour extraire les nombres pairs d'une liste, en utilisant l'opérateur modulo (`%`), vous pouvez utiliser une compréhension de liste comme suit :
+Pour extraire les nombres pairs d'une liste, en utilisant l'opérateur modulo (`%`), vous pouvez utiliser une boucle pour parcourir la liste et pour chaque élément de la liste vérifier si le nombre est pair. S'il l'est on l'ajoute dans une autre liste comme suit :
 
 ```python
 nombres = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-pairs = [nombre for nombre in nombres if nombre % 2 == 0]
+# Liste vide pour stocker les nombres pairs
+pairs = []
+
+# Recherche des nombres pairs
+for nombre in nombres:
+    # Si le nombre est pair, on l'ajoute dans la liste "paires"
+    if nombre % 2 == 0:
+        pairs.append(nombre)
+
+# On affiche la liste des nombres pairs
 print(pairs)  # Affiche [2, 4, 6, 8, 10]
 ```
-
-Explication: 
-
-- La ligne de code **`pairs = [nombre for nombre in nombres if nombre % 2 == 0]`** utilise une compréhension de liste pour créer une nouvelle liste contenant uniquement les nombres pairs de la liste `nombres`. 
-- **`nombre for nombre in nombres`** : Cette partie de la compréhension de liste itère sur chaque élément de la liste `nombres`.
-- **`if nombre % 2 == 0`** : Cette condition utilise l'opérateur modulo (`%`) pour vérifier si le nombre est divisible par 2 sans reste. Si c'est le cas, le nombre est pair et il est ajouté à la nouvelle liste `pairs`.
-
 
 ## D'autres fonctions ou méthodes de listes
 
 
-| Fonction ou méthode | Description |
+| Fonction | Description |
 | ---- | ----|
-| max() | Retourne la valeur maximum de la liste |
-| min() | Retourne la valeur minimum de la liste |
-| del() | Supprime un élément selon sa position |
-| extend() | Ajoute tous les éléments d'une liste dans une autre liste |
-| clear() | Efface tous les éléments d'une liste |
-| index() | Retourne l'indice du premier élément dont la valeur est égale à celle spécifiée |
-| reverse() | Inverse l'ordre des éléments de la liste |
-| copy() | Retourne une copie superficielle de la liste |
+| `max()` | Retourne la valeur maximum de la liste |
+| `min()` | Retourne la valeur minimum de la liste |
+| `del()` | Supprime un élément selon sa position |
+| `extend()` | Ajoute tous les éléments d'une liste dans une autre liste |
+| `clear()` | Efface tous les éléments d'une liste |
+| `index()` | Retourne l'indice du premier élément dont la valeur est égale à celle spécifiée |
+| `reverse()` | Inverse l'ordre des éléments de la liste |
+| `copy()` | Retourne une copie superficielle de la liste |
+
+Pour voir des exemples de ces fonctions, [cliquez ici](../exemples_listes.ipynb)
 
 ## Pause 5 minutes
 
 ![Pause](../pause.jpg?width=25vw)
-
-===
-
-### Les listes dans les listes ???
-
-Une liste peut comporter tout type d'élément.  
-Nous pouvons donc mettre des listes dans des listes.
-Nous parlons alors de listes (ou tableaux) à 2 dimensions.
-
-```python
-# Liste contenant 3 éléments
-# Chaque élément est une liste contenant 2 nombres
-matrice = [[1, 2], [3, 4], [5, 6]]
-```
-
-Pour parcourir toutes les listes, il suffit de mettre une boucle dans une boucle :
-
-```python
-# On parcourt chaque éléments de la liste principale
-for sous_liste in matrice:
-    # et ensuite chaque élément de la "sous-liste"
-    for element in sous_liste:
-        print(element)
-```
-
-Les opérations vues sur les listes en 1 dimension fonctionnent aussi pour les listes en 2D:
-
-```python
-print(matrice[0]) # affiche la première liste de la matrice
-print(matrice[0][1]) # affiche le 2e élément de la première liste de la matrice
-
-matrice.append([7, 8]) # ajoute une nouvelle liste à la matrice
-```
-
-Comme nous l'avons vu plus haut, la fonction `range()` peut aussi être utilisé pour parcourir les listes à 2 dimensions :
-
-```python
-# On ajoute 1 à chaque élément de la matrice
-for i in range(len(matrice)):
-    for j in range(len(matrice[i])):
-        matrice[i][j] += 1
-```

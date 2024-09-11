@@ -1,5 +1,5 @@
 +++
-title = "Base de connaissances"
+title = "Base de conn."
 weight = 180
 draft = true
 +++
