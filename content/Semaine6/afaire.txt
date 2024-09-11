@@ -1,9 +1,3 @@
 
 
-Commit commentaire: ajout de S6 Listes
-
-Finaliser ateliers listes 
-Réviser Chaines de caracteres
-Finaliser atelier chaines de caractères
-
-ajouter correction ateliers S5
+ajouter correction ateliers S5 et S6
