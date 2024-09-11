@@ -3,7 +3,6 @@ archetype = "chapter"
 pre = "<b>6. </b>"
 title = 'Les listes et le traitement des chaines de caractères'
 weight = 60
-draft = true
 +++
 
 ## Objectifs de la leçon

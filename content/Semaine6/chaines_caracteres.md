@@ -182,26 +182,33 @@ Le tableau ci-dessous présente quelques caractères d’échappement couramment
 
 ## Manipulation des chaines de caractères
 
-| Méthodes | Définition |
-| ---- | ----|
-| `[ ]` | Accède à un caractère selon sa position |
-| `len()` | Retourne la longueur de la chaîne |
-| `str()` | Convertit en chaîne de caractères |
-| `lower()` | Convertit tous les caractères de la chaîne en minuscules |
-| `upper()` | Convertit tous les caractères de la chaîne en majuscules. |
-| `strip()` | Supprime les espaces (ou autres caractères spécifiés) au début et à la fin de la chaîne |
-| `replace()` | Remplace toutes les occurrences de la sous-chaîne |
-| `split()` | Divise la chaîne en une liste de sous-chaînes |
-| `join()` | Concatène une séquence d'éléments (comme une liste) en une seule chaîne |
-| `find()` | Renvoie l'indice de la première occurrence de la sous-chaîne |
-
-
 | Opérations | Définition |
 | ---- | ----|
 | `*` | Multiplie (répète) une chaîne |
 | `+` | Concatène des chaînes |
 
+---
+
+| Méthodes | Définition |
+| ---- | ----|
+| `[ ]` | Accède à un caractère selon sa position |
+| `[pos1:pos2 ]` | Accède aux caractères situés à l'indice `pos1` jusqu'à l'indice précédant `pos2` |
+| `[pos1: ]` | Accède aux caractères situés à l'indice `pos1` jusqu'à la fin de la chaine de caractères |
+| `[:pos2 ]` | Accède au premier caractère (indice 0) jusqu'au caractères à l'indice précédant `pos2` |
+| `len()` | Retourne la longueur de la chaîne |
+| `str()` | Convertit en chaîne de caractères |
+| `lower()` | Convertit tous les caractères de la chaîne en minuscules |
+| `islower()` | Vérifie si une chaîne de caractères est en minuscules et retourne `True` si c'est le cas, `False` sinon |
+| `upper()` | Convertit tous les caractères de la chaîne en majuscules. |
+| `isupper()` | Vérifie si une chaîne de caractères est en majuscules et retourne `True` si c'est le cas, `False` sinon |
+| `strip()` | Supprime les espaces (ou autres caractères spécifiés) au début et à la fin de la chaîne |
+| `isdigit()` | Vérifie si une chaîne de caractères est numérique et retourne `True` si c'est le cas, `False` sinon |
+| `isalpha()` | Vérifie si une chaîne de caractères est alpha-numérique et retourne `True` si c'est le cas, `False` sinon |
+| `replace()` | Remplace toutes les occurrences de la sous-chaîne |
+| `find()` | Renvoie l'indice de la première occurrence de la sous-chaîne |
+| `split()` | Divise la chaîne en une liste de sous-chaînes |
+| `join()` | Concatène une séquence d'éléments (comme une liste) en une seule chaîne |
 
 ## Exemples
 
-[Exemples sur les chaînes de caractères](../exemples_caracteres.ipynb)
+[Exemples avec les chaînes de caractères](../exemples_caracteres.ipynb)

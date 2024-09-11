@@ -389,7 +389,7 @@ print(pairs)  # Affiche [2, 4, 6, 8, 10]
 | `reverse()` | Inverse l'ordre des éléments de la liste |
 | `copy()` | Retourne une copie superficielle de la liste |
 
-Pour voir des exemples de ces fonctions, [cliquez ici](../exemples_listes.ipynb)
+Pour voir des exemples de ces fonctions, [cliquez ici](../exemples_foncListes.ipynb)
 
 ## Pause 5 minutes
 
