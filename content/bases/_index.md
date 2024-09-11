@@ -7,7 +7,7 @@ weight = 180
 
 ![Base de connaissances](base-connaissances.jpeg?width=25vw)
 
-Ici se trouve quelques informations pouvant vous être utile pour votre session.
+Ici se trouve quelques informations plus avancées, mais pouvant vous être utile pour votre session.
 En autre:
 - Les [erreurs communes](./Erreurs/) et des astuces pour les éviter et les détecter
 - L'utilisation de bloc-notes [Jupyter](./Jupyter/)
