@@ -3,7 +3,7 @@ title = 'Structures conditionnelles imbriquées'
 weight = 43
 +++
 
-![structures imbriquées](../imbriquees.png?width=25vw)
+![structures imbriquées](../if-imbriques?width=25vw)
 
 ## Les structures conditionnelles imbriquées
 
