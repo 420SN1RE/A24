@@ -28,7 +28,7 @@ Voici le lexique réécrit en ordre alphabétique :
 
 - **IDE (Environnement de Développement Intégré)** : Un logiciel qui fournit des outils complets pour le développement de logiciels, incluant un éditeur de code, un débogueur, et souvent un compilateur.
 
-- **Indentation** : Utilisation d'espaces ou de tabulations au début des lignes de code pour indiquer la structure et la hiérarchie du code, notamment dans les boucles, les conditions, et les fonctions. En Python, l'indentation est essentielle pour définir les blocs de code.
+- **Indentation** : Utilisation de tabulations au début des lignes de code pour indiquer la structure et la hiérarchie du code, notamment dans les boucles, les conditions, et les fonctions. En Python, l'indentation est essentielle pour définir les blocs de code.
 
 - **Méthode** : Une fonction définie à l'intérieur d'une classe en programmation orientée objet. Les méthodes définissent les comportements des objets créés à partir de la classe.
 
