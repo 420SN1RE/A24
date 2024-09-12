@@ -36,6 +36,20 @@
       <description>Blocs-notes Jupyter dans VS Code Jupyter (anciennement IPython Notebook) est un projet open source qui vous permet de combiner facilement du texte Markdown et du code source Python exécutable sur un canevas appelé notebook.&#xA;Visual Studio Code prend en charge l’utilisation des blocs-notes Jupyter en mode natif et via des fichiers de code Python.&#xA;Créer, ouvrir et enregistrer des blocs-notes Jupyter Utiliser des cellules de code Jupyter Afficher, inspecter et filtrer les variables à l’aide de l’Explorateur de variables et de la visionneuse de données Se connecter à un serveur Jupyter distant Déboguer un bloc-notes Jupyter Configuration de votre environnement Pour utiliser Python dans Jupyter Notebooks, vous devez activer un environnement Anaconda dans VS Code ou un autre environnement Python dans lequel vous avez installé le package Jupyter.</description>
     </item>
     <item>
+      <title>Lexique</title>
+      <link>https://example.org/bases/lexique/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/lexique/index.html</guid>
+      <description>Lexique de termes informatique Voici le lexique réécrit en ordre alphabétique :&#xA;Algorithme : Une série d’instructions définies pour résoudre un problème ou effectuer une tâche spécifique.&#xA;Booléen : Un type de donnée qui ne peut prendre que deux valeurs : true (vrai) ou false (faux). Utilisé pour les conditions et les tests logiques.&#xA;Boucle : Une structure de contrôle qui permet de répéter une série d’instructions plusieurs fois. Les boucles courantes incluent for, while, et do-while.</description>
+    </item>
+    <item>
+      <title>Les listes de listes</title>
+      <link>https://example.org/bases/listes-de-listes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/listes-de-listes/index.html</guid>
+      <description>Les listes dans les listes Une liste peut comporter tout type d’élément. Nous pouvons donc mettre des listes dans des listes. Nous parlons alors de listes (ou tableaux) à 2 dimensions.&#xA;# Liste contenant 3 éléments # Chaque élément est une liste contenant 2 nombres matrice = [[1, 2], [3, 4], [5, 6]]Pour parcourir toutes les listes, il suffit de mettre une boucle dans une boucle :&#xA;# On parcourt chaque éléments de la liste principale for sous_liste in matrice: # et ensuite chaque élément de la &#34;sous-liste&#34; for element in sous_liste: print(element)Les opérations vues sur les listes en 1 dimension fonctionnent aussi pour les listes en 2D:</description>
+    </item>
+    <item>
       <title>MarkDown</title>
       <link>https://example.org/bases/markdown/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

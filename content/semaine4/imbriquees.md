@@ -3,7 +3,7 @@ title = 'Structures conditionnelles imbriquées'
 weight = 43
 +++
 
-![structures imbriquées](../if-imbriques?width=25vw)
+![structures imbriquées](../if-imbriques.jpeg?width=25vw)
 
 ## Les structures conditionnelles imbriquées
 
@@ -11,7 +11,7 @@ Les tests peuvent être imbriquées, c'est-à-dire qu'on peut mettre un `IF` dan
 
 ### La syntaxe générale
 
-![IF imbriqués](../if-imbriques.png?width=25vw)
+![IF imbriqués](../if-imbriques-syntaxe.png?width=40vw)
 
 
 **Exemple**

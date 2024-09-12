@@ -193,6 +193,12 @@
     <loc>https://example.org/bases/jupyter/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/bases/lexique/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/listes-de-listes/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/markdown/index.html</loc>
   </url>
   <url>

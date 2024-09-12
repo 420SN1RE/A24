@@ -1,7 +1,6 @@
 +++
 title = 'Les listes de listes'
-weight = 185
-draft = true
+weight = 186
 +++
 
 ![Listes de listes](listes-listes.jpeg?width=25vw)

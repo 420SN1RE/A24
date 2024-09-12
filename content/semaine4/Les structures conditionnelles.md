@@ -29,6 +29,7 @@ Voici deux exemples pour illustrer cela :
 
 ```python
 nombre = 5
+
 if nombre == 5:
 	print("Le test est vrai")
 	print("car la variable nombre vaut", nombre)
@@ -37,13 +38,14 @@ if nombre == 5:
 Dans cet exemple, les deux `print` sont exécutés si `nombre` vaut 5.
 
 ```python
-nombre = 5
+nombre = 7
+
 if nombre == 5:
     print("Le test est vrai")
 print("car la variable nombre vaut, nombre)
 ```
 
-Dans cet exemple, le deuxième `print` est toujours exécuté, peu importe la valeur de `nombre`.
+Dans cet exemple, l pemier`print` ne sera pas exécuté, car la condition `nombre == 5` est fausse (`False`).Le deuxième `print` sera toujours exécuté, peu importe la valeur de `nombre`.
 
 ## L'erreur ***IndentationError***
 
@@ -189,7 +191,23 @@ else:
 
 Il est possible de combiner plusieurs conditions avec les opérateurs logiques `and` (ET), `or` (OU), et `not` (NON).
 
-**Exemple :**
+**Exemple 1: Meilleure façon d'écrire le code de l'exemple de l'instruction ELIF**
+
+```python
+age = 36
+
+if age >= 18 and age <= 30:
+    print("Vous êtes un jeune adulte")
+elif age > 30 and age < 65:
+    print("Avez-vous des enfants?")
+elif age >= 65:
+    print("Bonne retraite!")
+else:
+    print("Vous êtes mineur")
+```
+
+
+**Exemple 2:**
 
 ```python
 age = 20
