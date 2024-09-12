@@ -32,6 +32,8 @@ Voici le lexique réécrit en ordre alphabétique :
 
 - **Méthode** : Une fonction définie à l'intérieur d'une classe en programmation orientée objet. Les méthodes définissent les comportements des objets créés à partir de la classe.
 
+- **Nombre flottant** : Un type de donnée qui représente un nombre avec une partie décimale. Par exemple, 3.14 est un nombre flottant.
+
 - **Ordinogramme** : Un diagramme qui représente graphiquement les étapes d'un algorithme ou d'un processus. Aussi appelé diagramme de flux ou flowchart.
 
 - **Pseudo-code** : Une manière informelle de décrire un algorithme en utilisant un mélange de langage naturel et de structures de programmation. Le pseudo-code aide à planifier et à comprendre le fonctionnement d'un algorithme sans se soucier de la syntaxe exacte d'un langage de programmation.
