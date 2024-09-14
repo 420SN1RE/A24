@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Match Case :: My New Hugo Site</title>
-    <link>https://example.org/bases/match-case/index.html</link>
+    <link>http://localhost:1313/bases/match-case/index.html</link>
     <description>L’instruction MATCH-CASE L’instruction match-case est inspirée des structures de correspondance de motifs (switch-case) présentes dans d’autres langages de programmation. Elle permet généralement de simplifier le traitement de différentes conditions en rendant le code plus lisible et plus structuré. Syntaxe de base Astuce La syntaxe de l’instruction match-case est similaire à celle d’une série de conditions if-elif-else, mais elle est souvent plus concise et expressive.&#xA;Syntaxe générale:&#xA;def action(commande): match commande: case &#34;demarre&#34;: print(&#34;Démarrage.</description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
-    <atom:link href="https://example.org/bases/match-case/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/bases/match-case/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

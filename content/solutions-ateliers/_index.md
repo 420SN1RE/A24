@@ -1,5 +1,5 @@
 +++
-archetype = "chapter"
+archetype = "semaine"
 title = "Solutions de ateliers"
 weight = 170
 +++

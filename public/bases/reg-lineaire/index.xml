@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Régression Linéaire :: My New Hugo Site</title>
-    <link>https://example.org/bases/reg-lineaire/index.html</link>
+    <link>http://localhost:1313/bases/reg-lineaire/index.html</link>
     <description>Le concept de la régression linéaire La régression linéaire est une méthode statistique utilisée pour comprendre la relation entre deux variables. Imagine que tu veux savoir si la température extérieure influence la consommation d’électricité. Voici comment ça fonctionne, de manière simple :&#xA;Deux variables : La température extérieure (variable indépendante) et la consommation d’électricité (variable dépendante). Tracer les points : On collecte des données sur la température et la consommation d’électricité sur plusieurs jours et on trace ces points sur un graphique.</description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
-    <atom:link href="https://example.org/bases/reg-lineaire/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/bases/reg-lineaire/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

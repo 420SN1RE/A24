@@ -1,5 +1,5 @@
 +++
-archetype = "chapter"
+archetype = "semaine"
 pre = "<b>2. </b>"
 title = 'Ordinogramme et introduction à Python'
 weight = 20

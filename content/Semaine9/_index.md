@@ -1,5 +1,5 @@
 +++
-chapter = false
+archetypes = "semaine"
 pre = "<b>9. </b>"
 title = "Trace d'exécution et débogage"
 weight = 90

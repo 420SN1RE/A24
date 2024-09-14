@@ -1,12 +1,12 @@
 +++
-title = "Lexique"
-weight = 185
+title = "3. Lexique"
+weight = 183
 +++
 
 ![Lexique](lexique.jpeg?width=25vw)
 
 
-## Lexique de termes informatique
+## Lexique de termes informatiques
 
 Voici le lexique réécrit en ordre alphabétique :
 
@@ -18,15 +18,22 @@ Voici le lexique réécrit en ordre alphabétique :
 
 - **Classe** : Une structure qui permet de créer des objets en définissant leurs propriétés (attributs) et leurs comportements (méthodes). Utilisée dans la programmation orientée objet.
 
+- **Commentaire** : Lignes dans le code qui ne sont pas exécutées par python. Les commentaires sont utilisés pour expliquer et documenter le code, ce qui le rend plus lisible et compréhensible pour les autres développeurs (ou pour vous-même lorsque vous revenez sur votre code plus tard). Il sont aussi utilisés pour empêcher l'exécution (désactiver) de lignes de code lors du débogage.
+Il existe deux types de commentaires en Python :
+	1. **Commentaires sur une seule ligne** : Ils commencent par le symbole `#` et continuent jusqu’à la fin de la ligne.
+	2. **Commentaires sur plusieurs lignes** : Ils sont généralement créés en utilisant des chaînes de caractères multi-lignes (triple guillemets `"""` ou `'''`). Bien que ces chaînes ne soient pas techniquement des commentaires, elles sont souvent utilisées à cette fin.
+
 - **Compilateur** : Un programme qui traduit le code source écrit dans un langage de programmation en code machine exécutable par un ordinateur.
 
 - **Concaténation** : Action de mettre bout à bout deux chaînes de caractères ou plus pour en former une seule. Par exemple, concaténer "Hello" et "World" donne "HelloWorld".
 
-- **Débogage** : Le processus de recherche et de correction des erreurs dans un programme.
+- **Débogage** : Le processus de recherche et de correction des erreurs (ou “bugs”) dans un programme.
 
 - **Fonction** : Un bloc de code réutilisable qui effectue une tâche spécifique. Les fonctions peuvent prendre des paramètres et retourner des valeurs.
 
 - **IDE (Environnement de Développement Intégré)** : Un logiciel qui fournit des outils complets pour le développement de logiciels, incluant un éditeur de code, un débogueur, et souvent un compilateur.
+
+- **Les structures imbriquées** : Elles font référence à l’utilisation de structures de contrôle (comme la boucle `for` et les conditions `if`) à l’intérieur d’autres structures de contrôle.
 
 - **Indentation** : Utilisation de tabulations au début des lignes de code pour indiquer la structure et la hiérarchie du code, notamment dans les boucles, les conditions, et les fonctions. En Python, l'indentation est essentielle pour définir les blocs de code.
 

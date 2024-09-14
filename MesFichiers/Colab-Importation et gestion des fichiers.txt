@@ -1,0 +1,23 @@
+## Importation et gestion des fichiers
+
+Google Colab offre plusieurs méthodes pour importer et gérer des fichiers :
+- **Importer des fichiers depuis votre ordinateur** :
+  ```python
+  from google.colab import files
+  uploaded = files.upload()
+  for fn in uploaded.keys():
+      print(f'Vous avez importé le fichier "{fn}" qui a une taille de {len(uploaded[fn])} bytes')
+  ```
+- **Télécharger des fichiers sur votre ordinateur** :
+  ```python
+  from google.colab import files
+  with open('example.txt', 'w') as f:
+      f.write('exemple de contenu')
+  files.download('example.txt')
+  ```
+- **Utiliser des fichiers depuis Google Drive** :
+  ```python
+  from google.colab import drive
+  drive.mount('/content/gdrive')
+  !ls "/content/gdrive/My Drive/"
+  ```

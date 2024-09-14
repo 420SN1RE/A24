@@ -1,5 +1,5 @@
 +++
-chapter = false
+archetypes = "semaine"
 pre = "<b>7. </b>"
 title = 'Les librairies systèmes et les objets'
 weight = 70

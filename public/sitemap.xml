@@ -1,37 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/bases/erreurs/nomenclature-variables/index.html</loc>
+    <loc>https://example.org/bases/langage-de-prog/erreurs/nomenclature-variables/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/langage-de-prog/chaines-caracteres/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/projet-fil-rouge/partie-1/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/erreurs/operateurs/index.html</loc>
+    <loc>https://example.org/bases/langage-de-prog/erreurs/operateurs/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/projet-fil-rouge/partie-2/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/erreurs/lecture-donnees/index.html</loc>
+    <loc>https://example.org/bases/langage-de-prog/debogage/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/langage-de-prog/erreurs/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/langage-de-prog/erreurs/lecture-donnees/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/projet-fil-rouge/partie-3/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/erreurs/if-else-elif/index.html</loc>
+    <loc>https://example.org/bases/langage-de-prog/erreurs/if-else-elif/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/langage-de-prog/listes-de-listes/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/projet-fil-rouge/partie-4/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/erreurs/while/index.html</loc>
+    <loc>https://example.org/bases/langage-de-prog/erreurs/while/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/erreurs/for-range/index.html</loc>
+    <loc>https://example.org/bases/langage-de-prog/match-case/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/erreurs/listes/index.html</loc>
+    <loc>https://example.org/bases/langage-de-prog/erreurs/for-range/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/langage-de-prog/erreurs/listes/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine1/index.html</loc>
@@ -181,43 +196,48 @@
     <loc>https://example.org/bases/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/chaines-caracteres/index.html</loc>
+    <loc>https://example.org/bases/langage-de-prog/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/debogage/index.html</loc>
+    <loc>https://example.org/bases/outils/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/erreurs/index.html</loc>
+    <loc>https://example.org/bases/outils/installations/python/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/jupyter/index.html</loc>
+    <loc>https://example.org/bases/outils/installations/visual-studio-code/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/outils/installations/bibliotheques/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/outils/installations/extensions-dans-vs-code/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/lexique/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/listes-de-listes/index.html</loc>
+    <loc>https://example.org/bases/outils/jupyter/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/markdown/index.html</loc>
+    <loc>https://example.org/bases/outils/markdown/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/match-case/index.html</loc>
+    <loc>https://example.org/bases/outils/vs-code-jupyter/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/reg-lineaire/index.html</loc>
+    <loc>https://example.org/bases/outils/sauvegarge-automatique/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/outils/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/outils/vs-code-jupyter/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/outils/sauvegarge-automatique/index.html</loc>
+    <loc>https://example.org/bases/outils/google-colab/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/index.html</loc>
+    <lastmod>2024-09-14T18:57:08-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://example.org/semaine/index.html</loc>
+    <lastmod>2024-09-14T18:57:08-04:00</lastmod>
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>

@@ -1,5 +1,5 @@
 +++
-archetype = "chapter"
+archetype = "semaine"
 title = "Présentations et introduction à la programmation"
 pre = "<b>1. </b>"
 weight = 10

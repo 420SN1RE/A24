@@ -1,5 +1,5 @@
 +++
-archetype = "chapter"
+archetype = "semaine"
 title = "Base de connaissances"
 weight = 180
 +++
@@ -7,10 +7,11 @@ weight = 180
 
 ![Base de connaissances](base-connaissances.jpeg?width=25vw)
 
-Ici se trouve quelques informations plus avancées, mais pouvant vous être utile pour votre session.
-En autre:
-- Les [erreurs communes](./Erreurs/) et des astuces pour les éviter et les détecter
-- L'utilisation de bloc-notes [Jupyter](./Jupyter/)
-- Le [Markdown](./MarkDown/) et la programmation lettrée
-- D’autres méthodes (obsolètes) de [formatage des chaînes de caractères](./chaines-caracteres/)
-- La [régression linéaire](./RegressionLineaire/) et Python
+
+Ici vous trouverez diverses informations sur Python et sur les outils utilisés dans le cours ou que vous pouvez utiliser sur votre ordinateur personnel à la maison.
+
+Cette section est divisée en trois catégories:
+
+1. Le langage de programmation Python.
+2. Les outils et leur installation.
+3. LE lexique de termes ou expressions informatiques

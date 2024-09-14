@@ -1,5 +1,5 @@
 +++
-archetype = "chapter"
+archetype = "semaine"
 pre = "<b>5. </b>"
 title = 'Structures répétitives'
 weight = 50

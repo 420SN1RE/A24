@@ -1,5 +1,5 @@
 +++
-chapter = false
+archetypes = "semaine"
 pre = "<b>8. </b>"
 title = "Les sous-programmes et la portée des variables"
 weight = 80

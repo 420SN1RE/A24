@@ -6,6 +6,7 @@
     <description>Chers élèves,&#xA;Nous vous rappelons que dans le cadre de ce cours, il est impératif d’utiliser seulement les notions, fonctions et concepts qui ont été abordés en classe. Cela garantit une compréhension solide et progressive des sujets traités.&#xA;Note importante : L’utilisation d’outils d’intelligence artificielle pour générer du code, peut parfois fournir du code qui dépassent le cadre des notions étudiées.&#xA;Attention Si vous soumettez du code contenant des éléments avancés qui n’ont pas été vus dans le cours, vous recevrez une note de 0 pour l’évaluation.</description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
+    <lastBuildDate>Sat, 14 Sep 2024 18:57:08 -0400</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Présentations et introduction à la programmation</title>
@@ -61,14 +62,14 @@
       <link>https://example.org/bases/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/bases/index.html</guid>
-      <description>Ici se trouve quelques informations plus avancées, mais pouvant vous être utile pour votre session. En autre:&#xA;Les erreurs communes et des astuces pour les éviter et les détecter L’utilisation de bloc-notes Jupyter Le Markdown et la programmation lettrée D’autres méthodes (obsolètes) de formatage des chaînes de caractères La régression linéaire et Python</description>
+      <description>Ici vous trouverez diverses informations sur Python et sur les outils utilisés dans le cours ou que vous pouvez utiliser sur votre ordinateur personnel à la maison.&#xA;Cette section est divisée en trois catégories:&#xA;Le langage de programmation Python. Les outils et leur installation. LE lexique de termes ou expressions informatiques</description>
     </item>
     <item>
-      <title>Outils</title>
-      <link>https://example.org/outils/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/outils/index.html</guid>
-      <description>Ici se trouve des informations sur les outils utilisés dans ce cours, pouvant vous être utiles pour votre session.</description>
+      <title>Semaines</title>
+      <link>https://example.org/semaine/index.html</link>
+      <pubDate>Sat, 14 Sep 2024 18:57:08 -0400</pubDate>
+      <guid>https://example.org/semaine/index.html</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

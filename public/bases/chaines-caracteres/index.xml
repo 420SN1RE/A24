@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Formatage des chaines (obsolètes) :: My New Hugo Site</title>
-    <link>https://example.org/bases/chaines-caracteres/index.html</link>
+    <link>http://localhost:1313/bases/chaines-caracteres/index.html</link>
     <description>La méthode str.format() nom = &#34;Philippe&#34; age = 30 print(&#34;Je m&#39;appelle {} et j&#39;ai {} ans.&#34;.format(nom, age))Explication:&#xA;{} est un espace réservé pour une valeur qui sera insérée dans la chaîne de caractères. La méthode format(nom, age) remplace les accolades {} par les valeurs des variables nom et age respectivement. Donc, lorsque ce code est exécuté, il affiche :&#xA;Je m&#39;appelle Philippe et j&#39;ai 30 ans. Cette méthode est très flexible et permet d’insérer plusieurs variables dans une chaîne de caractères de manière claire et lisible.</description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
-    <atom:link href="https://example.org/bases/chaines-caracteres/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/bases/chaines-caracteres/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

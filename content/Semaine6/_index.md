@@ -1,5 +1,5 @@
 +++
-archetype = "chapter"
+archetype = "semaine"
 pre = "<b>6. </b>"
 title = 'Les listes et le traitement des chaines de caractères'
 weight = 60
