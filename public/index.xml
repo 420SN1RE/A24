@@ -6,7 +6,6 @@
     <description>Chers élèves,&#xA;Nous vous rappelons que dans le cadre de ce cours, il est impératif d’utiliser seulement les notions, fonctions et concepts qui ont été abordés en classe. Cela garantit une compréhension solide et progressive des sujets traités.&#xA;Note importante : L’utilisation d’outils d’intelligence artificielle pour générer du code, peut parfois fournir du code qui dépassent le cadre des notions étudiées.&#xA;Attention Si vous soumettez du code contenant des éléments avancés qui n’ont pas été vus dans le cours, vous recevrez une note de 0 pour l’évaluation.</description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
-    <lastBuildDate>Sat, 14 Sep 2024 18:57:08 -0400</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Présentations et introduction à la programmation</title>
@@ -63,13 +62,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/bases/index.html</guid>
       <description>Ici vous trouverez diverses informations sur Python et sur les outils utilisés dans le cours ou que vous pouvez utiliser sur votre ordinateur personnel à la maison.&#xA;Cette section est divisée en trois catégories:&#xA;Le langage de programmation Python. Les outils et leur installation. LE lexique de termes ou expressions informatiques</description>
-    </item>
-    <item>
-      <title>Semaines</title>
-      <link>https://example.org/semaine/index.html</link>
-      <pubDate>Sat, 14 Sep 2024 18:57:08 -0400</pubDate>
-      <guid>https://example.org/semaine/index.html</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
