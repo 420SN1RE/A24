@@ -1,6 +1,6 @@
 +++
 title = "Installation des extensions dans VS Code"
-weight = 182.4
+weight = 1.4
 +++
 
 ![Installation librairies sur VS code](install-lib-vsc.jpeg?width=25vw)

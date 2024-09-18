@@ -7,7 +7,25 @@
     <loc>https://example.org/bases/langage-de-prog/chaines-caracteres/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/bases/outils/installations/python/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/outils/installations/visual-studio-code/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/outils/installations/bibliotheques/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/outils/installations/extensions-dans-vs-code/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/outils/installations/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/projet-fil-rouge/partie-1/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/outils/vs-code/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/operateurs/index.html</loc>
@@ -205,18 +223,6 @@
     <loc>https://example.org/bases/outils/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/outils/installations/python/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/bases/outils/installations/visual-studio-code/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/bases/outils/installations/bibliotheques/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/bases/outils/installations/extensions-dans-vs-code/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/bases/lexique/index.html</loc>
   </url>
   <url>
@@ -226,10 +232,10 @@
     <loc>https://example.org/bases/outils/markdown/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/outils/vs-code-jupyter/index.html</loc>
+    <loc>https://example.org/bases/outils/vs-code/vs-code-jupyter/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/outils/sauvegarge-automatique/index.html</loc>
+    <loc>https://example.org/bases/outils/vs-code/sauvegarge-automatique/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/outils/google-colab/index.html</loc>

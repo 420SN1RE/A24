@@ -1,6 +1,6 @@
 +++
 title = "Installation de Python sur Windows"
-weight = 182.1
+weight = 1.1
 +++
 
 ![Python](install-python.jpeg?width=25vw)

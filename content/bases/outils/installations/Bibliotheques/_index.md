@@ -1,6 +1,6 @@
 +++
 title = "Installation des bibliothèques Python"
-weight = 182.3
+weight = 1.3
 +++
 
 ![Installation Python](install-lib.png?width=25vw)

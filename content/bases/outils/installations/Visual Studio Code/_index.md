@@ -1,6 +1,7 @@
 +++
+alwaysopen = false
 title = "Installation de Visual Studio Code sur Windows"
-weight = 182.2
+weight = 1.2
 +++
 
 

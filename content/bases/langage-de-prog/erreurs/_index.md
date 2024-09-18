@@ -1,4 +1,5 @@
 +++
+alwaysopen = false
 title = 'Erreurs communes'
 weight = 3
 +++
