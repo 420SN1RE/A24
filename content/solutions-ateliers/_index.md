@@ -21,3 +21,9 @@ weight = 170
 [Semaine 4 - IF-ELIF-ELSE](correction-atelier-if-elif-else.ipynb)
 
 [Semaine 4 - Tests de nombres flottants](correction-atelier-tests-flottants.ipynb)
+
+[Semaine 5 - Boucle while](correction-atelier-while.ipynb)
+
+[Semaine 5 - Boucle for](correction-atelier-for.ipynb)
+
+[Semaine 5 - Instructions break, continue et else](correction-atelier-controle.ipynb)
