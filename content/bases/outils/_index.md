@@ -1,4 +1,6 @@
 +++
+alwaysopen = false
+description = "Base - Outils"
 archetype = "semaine"
 title = "2. Outils"
 weight = 182

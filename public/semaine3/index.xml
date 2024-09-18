@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Interagir avec le programme :: My New Hugo Site</title>
+    <title>Interagir avec le programme :: Mon site 420SN1RE</title>
     <link>https://example.org/semaine3/index.html</link>
     <description>Objectifs de la leçon Lire des données saisies au clavier par l’utilisateur. Afficher des données dans le terminal. Comprendre les avantages de la documentation du code. Connaitre et comprendre les différentes sources d’erreurs de syntaxe. Commencer à déboguer un programme à l’aide de la méthode print(). Plan de la leçon Mini-quiz #2: Ordinogrammes et base de Python (10 mins) Lecture de données et affichage textuel des résultats ~15mins Documentation du code ~5mins Pause 5 mins La syntaxe est les erreurs ~10mins La vérification du bon fonctionnement d’un programme ~5mins Pause 5 mins Révision pour le minitest (10%) de la semaine prochaine ~30mins Atelier: Lecture et affichage de données ~20mins Atelier: Déboguer des programmes simples ~20mins Pour la semaine prochaine</description>
     <generator>Hugo</generator>
-    <language>fr-ca</language>
+    <language>en</language>
     <atom:link href="https://example.org/semaine3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lecture et affichage de données</title>
@@ -19,7 +19,7 @@
       <link>https://example.org/semaine3/documentation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/documentation/index.html</guid>
-      <description>.&#xA;Pourquoi documenter le code ? La documentation du code est essentielle pour rendre votre code compréhensible et maintenable par d’autres développeurs, ainsi que par vous-même à l’avenir.&#xA;Il existe différentes raisons de vouloir documenter le code:&#xA;Pour expliquer une instruction (commentaire) Pour décrire un module ou sous-programme (docstring) Pour incorporer du texte avec du code (programme lettré) Info Pour l’instant, on se contentera de documenter le code à l’aide de commentaires.</description>
+      <description>.&#xA;Pourquoi documenter le code ? La documentation du code est essentielle pour rendre votre code compréhensible et maintenable par d’autres développeurs, ainsi que par vous-même à l’avenir.&#xA;Il existe différentes raisons de vouloir documenter le code:&#xA;Pour expliquer une instruction (commentaire) Pour décrire un module ou sous-programme (docstring) Pour incorporer du texte avec du code (programme lettré) Info&#xD;Pour l’instant, on se contentera de documenter le code à l’aide de commentaires.</description>
     </item>
     <item>
       <title>Syntaxe et erreurs d&#39;exécution</title>
@@ -40,7 +40,7 @@
       <link>https://example.org/semaine3/pour-le-prochain-cours/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/pour-le-prochain-cours/index.html</guid>
-      <description>Pour augmenter vos chances de réussite Terminer et soumettre l’atelier #3. Réviser la matière des trois premières semaines, en vue du mini-test (10%) qui aura lieu au début du prochain cours (arrivez à l’heure) Lire les notes de cours sur la matière du cours de la semaine 4. Note Si vous étiez présent au cours, posez moi des questions lorsque vous avez de la difficulté. N’attendez pas que la matière se complique.</description>
+      <description>Pour augmenter vos chances de réussite Terminer et soumettre l’atelier #3. Réviser la matière des trois premières semaines, en vue du mini-test (10%) qui aura lieu au début du prochain cours (arrivez à l’heure) Lire les notes de cours sur la matière du cours de la semaine 4. Note&#xD;Si vous étiez présent au cours, posez moi des questions lorsque vous avez de la difficulté. N’attendez pas que la matière se complique.</description>
     </item>
   </channel>
 </rss>

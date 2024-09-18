@@ -1,16 +1,61 @@
 baseURL = 'https://example.org/'
+
 languageCode = 'fr-ca'
-title = 'My New Hugo Site'
-
-[module]
-  [[module.imports]]
-    path = 'github.com/McShelby/hugo-theme-relearn'
-
+title = 'Mon site 420SN1RE'
 theme = 'hugo-theme-relearn'
 
 [params]
-  disableLandingPageButton = true
-  disableSearch = true
-  disableHomeButton = false
+    disableLandingPageButton = true
+    disableSearch = true
+    disableHomeButton = true
+
+  [params.menu]
+    alwaysopen = false
+
+[module]
+  [module.hugoVersion]
+    min = "0.121.0"
+
+[mediaTypes]
+  [mediaTypes."text/javascript"]
+    suffixes = ["js"]
+
+[outputFormats]
+  [outputFormats.print]
+    name= "print"
+    baseName = "index.print"
+    isHTML = true
+    mediaType = 'text/html'
+    permalinkable = false
+    noUgly = true
+
+  [outputFormats.search]
+    name= "search"
+    baseName = "index.search"
+    isPlainText = true
+    mediaType = 'text/javascript'
+    permalinkable = false
+    noUgly = true
+
+  [outputFormats.searchpage]
+    name= "searchpage"
+    baseName = "search"
+    isHTML = true
+    mediaType = 'text/html'
+    permalinkable = false
+    noUgly = true
+
+[params.relearn.dependencies]
+  [params.relearn.dependencies.mathjax]
+    name = "MathJax"
+  [params.relearn.dependencies.mermaid]
+    name = "Mermaid"
+  [params.relearn.dependencies.openapi]
+    name = "OpenApi"
+
+[languages]
+  [languages.en]
+    [languages.en.params]
+      landingPageName = "<i class='fa-fw fas fa-home'></i> Home"
 
 

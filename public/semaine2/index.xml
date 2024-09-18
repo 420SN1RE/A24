@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ordinogramme et introduction à Python :: My New Hugo Site</title>
+    <title>Ordinogramme et introduction à Python :: Mon site 420SN1RE</title>
     <link>https://example.org/semaine2/index.html</link>
     <description>Objectifs de la leçon Comprendre les rôles du pseudo-code et de l’ordinogramme. Savoir comment créer un ordinogramme. Écrire un premier script Python. Savoir déclarer et initialiser des variables de différents types. Utiliser des variables dans des opérations simples en respectant les priorités des opérateurs. Plan de la leçon Mini-quiz #1: Introduction à la programmation et analyse de problèmes (10 mins). Algorithme en ordinogramme ~15 mins. Pause 5 mins Les variables et les types de données ~30 mins.</description>
     <generator>Hugo</generator>
-    <language>fr-ca</language>
+    <language>en</language>
     <atom:link href="https://example.org/semaine2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ordinogramme</title>
@@ -19,21 +19,21 @@
       <link>https://example.org/semaine2/variables-et-types-de-donn%C3%A9es/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine2/variables-et-types-de-donn%C3%A9es/index.html</guid>
-      <description>.&#xA;Définition des variables Définition Une variable est une zone de la mémoire de l’ordinateur dans laquelle une valeur est stockée. Une variable est définie par un nom et sa valeur. Vous pouvez imaginer une variable comme une boîte dans laquelle vous pouvez mettre des choses, comme des nombres, du texte, des listes, etc..&#xA;Comment nommer une variable ? Pour garantir la lisibilité et la maintenabilité de votre code, il est essentiel de suivre certaines règles de nommage des variables en Python.</description>
+      <description>.&#xA;Définition des variables Définition&#xD;Une variable est une zone de la mémoire de l’ordinateur dans laquelle une valeur est stockée. Une variable est définie par un nom et sa valeur. Vous pouvez imaginer une variable comme une boîte dans laquelle vous pouvez mettre des choses, comme des nombres, du texte, des listes, etc..&#xA;Comment nommer une variable ? Pour garantir la lisibilité et la maintenabilité de votre code, il est essentiel de suivre certaines règles de nommage des variables en Python.</description>
     </item>
     <item>
       <title>Opérateurs arithmétiques et l&#39;affichage</title>
       <link>https://example.org/semaine2/operateurs-arithm-affichage/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine2/operateurs-arithm-affichage/index.html</guid>
-      <description>.&#xA;Les opérateurs arithmétiques Les opérateurs permettent d’effectuer des opérations sur des variables. En Python, il existe plusieurs types d’opérateurs :&#xA;Arithmétiques. De comparaison. Logiques. Info Nous verrons les deux derniers types lors de l’études des structures conditionnelles. Pour l’instant, concentrons nous sur les opérateurs arithmétiques.&#xA;Les opérateurs arithmétiques sont utilisés pour effectuer des calculs mathématiques courants.&#xA;Soient a = 10 et b = 3&#xA;Opération (opérateur) Exemple Addition (+) a + b donne 13 Soustraction (-) a - b donne 7 Multiplication (*) a * b donne 30 Division (/) a / b donne 3.</description>
+      <description>.&#xA;Les opérateurs arithmétiques Les opérateurs permettent d’effectuer des opérations sur des variables. En Python, il existe plusieurs types d’opérateurs :&#xA;Arithmétiques. De comparaison. Logiques. Info&#xD;Nous verrons les deux derniers types lors de l’études des structures conditionnelles. Pour l’instant, concentrons nous sur les opérateurs arithmétiques.&#xA;Les opérateurs arithmétiques sont utilisés pour effectuer des calculs mathématiques courants.&#xA;Soient a = 10 et b = 3&#xA;Opération (opérateur) Exemple Addition (+) a + b donne 13 Soustraction (-) a - b donne 7 Multiplication (*) a * b donne 30 Division (/) a / b donne 3.</description>
     </item>
     <item>
       <title>Nombres flottants et erreurs d&#39;arrondi</title>
       <link>https://example.org/semaine2/erreurs-arrondi/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine2/erreurs-arrondi/index.html</guid>
-      <description>Les nombres flottants Attention En Python, c’est le point qui est utilisé comme séparateur décimal. Ainsi, 3.14 est un nombre reconnu comme un flottant, alors que 3,14 ne l’est pas.&#xA;Les erreurs d’arrondi Les erreurs d’arrondi sont un phénomène courant en Python. Elles surviennent principalement en raison de la manière dont les nombres à virgule flottante sont représentés en mémoire. Voici une explication détaillée :&#xA;Représentation des nombres à virgule flottante :</description>
+      <description>Les nombres flottants Attention&#xD;En Python, c’est le point qui est utilisé comme séparateur décimal. Ainsi, 3.14 est un nombre reconnu comme un flottant, alors que 3,14 ne l’est pas.&#xA;Les erreurs d’arrondi Les erreurs d’arrondi sont un phénomène courant en Python. Elles surviennent principalement en raison de la manière dont les nombres à virgule flottante sont représentés en mémoire. Voici une explication détaillée :&#xA;Représentation des nombres à virgule flottante :</description>
     </item>
     <item>
       <title>ATELIERS</title>
@@ -47,7 +47,7 @@
       <link>https://example.org/semaine2/pour-le-prochain-cours/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine2/pour-le-prochain-cours/index.html</guid>
-      <description>Pour augmenter vos chances de réussite Terminer et soumettre l’atelier #2. Réviser la matière vue cette semaine, en vue du quiz qui aura lieu au début du prochain cours (arrivez à l’heure) Lire les notes de cours sur la matière du cours de la semaine 3. Note Si vous étiez présent au cours, posez moi des questions lorsque vous avez de la difficulté. N’attendez pas que la matière se complique.</description>
+      <description>Pour augmenter vos chances de réussite Terminer et soumettre l’atelier #2. Réviser la matière vue cette semaine, en vue du quiz qui aura lieu au début du prochain cours (arrivez à l’heure) Lire les notes de cours sur la matière du cours de la semaine 3. Note&#xD;Si vous étiez présent au cours, posez moi des questions lorsque vous avez de la difficulté. N’attendez pas que la matière se complique.</description>
     </item>
   </channel>
 </rss>

@@ -1,4 +1,6 @@
 +++
+alwaysopen = false
+description = "Base - Lexique"
 title = "3. Lexique"
 weight = 183
 +++
@@ -10,46 +12,83 @@ weight = 183
 
 Voici le lexique réécrit en ordre alphabétique :
 
-- **Algorithme** : Une série d'instructions définies pour résoudre un problème ou effectuer une tâche spécifique.
+{{% expand title="**Algorithme**" %}}
+- Une série d'instructions définies pour résoudre un problème ou effectuer une tâche spécifique.
+{{% /expand %}}
 
-- **Booléen** : Un type de donnée qui ne peut prendre que deux valeurs : `true` (vrai) ou `false` (faux). Utilisé pour les conditions et les tests logiques.
+{{% expand title="**Booléen**" %}}
+- Un type de donnée qui ne peut prendre que deux valeurs : `true` (vrai) ou `false` (faux). Utilisé pour les conditions et les tests logiques.
+{{% /expand %}}
 
-- **Boucle** : Une structure de contrôle qui permet de répéter une série d'instructions plusieurs fois. Les boucles courantes incluent `for`, `while`, et `do-while`.
+{{% expand title="**Boucle**" %}}
+- Une structure de contrôle qui permet de répéter une série d'instructions plusieurs fois. Les boucles courantes incluent `for`, `while`, et `do-while`.
+{{% /expand %}}
 
-- **Classe** : Une structure qui permet de créer des objets en définissant leurs propriétés (attributs) et leurs comportements (méthodes). Utilisée dans la programmation orientée objet.
+{{% expand title="**Classe**" %}}
+- Une structure qui permet de créer des objets en définissant leurs propriétés (attributs) et leurs comportements (méthodes). Utilisée dans la programmation orientée objet.
+{{% /expand %}}
 
-- **Commentaire** : Lignes dans le code qui ne sont pas exécutées par python. Les commentaires sont utilisés pour expliquer et documenter le code, ce qui le rend plus lisible et compréhensible pour les autres développeurs (ou pour vous-même lorsque vous revenez sur votre code plus tard). Il sont aussi utilisés pour empêcher l'exécution (désactiver) de lignes de code lors du débogage.
+{{% expand title="**Commentaire**" %}}
+- Lignes dans le code qui ne sont pas exécutées par python. Les commentaires sont utilisés pour expliquer et documenter le code, ce qui le rend plus lisible et compréhensible pour les autres développeurs (ou pour vous-même lorsque vous revenez sur votre code plus tard). Il sont aussi utilisés pour empêcher l'exécution (désactiver) de lignes de code lors du débogage.
 Il existe deux types de commentaires en Python :
 	1. **Commentaires sur une seule ligne** : Ils commencent par le symbole `#` et continuent jusqu’à la fin de la ligne.
 	2. **Commentaires sur plusieurs lignes** : Ils sont généralement créés en utilisant des chaînes de caractères multi-lignes (triple guillemets `"""` ou `'''`). Bien que ces chaînes ne soient pas techniquement des commentaires, elles sont souvent utilisées à cette fin.
+{{% /expand %}}
 
-- **Compilateur** : Un programme qui traduit le code source écrit dans un langage de programmation en code machine exécutable par un ordinateur.
+{{% expand title="**Compilateur**" %}}
+- Un programme qui traduit le code source écrit dans un langage de programmation en code machine exécutable par un ordinateur.
+{{% /expand %}}
 
-- **Concaténation** : Action de mettre bout à bout deux chaînes de caractères ou plus pour en former une seule. Par exemple, concaténer "Hello" et "World" donne "HelloWorld".
+{{% expand title="**Concaténation**" %}}
+- Action de mettre bout à bout deux chaînes de caractères ou plus pour en former une seule. Par exemple, concaténer "Hello" et "World" donne "HelloWorld".
+{{% /expand %}}
 
-- **Débogage** : Le processus de recherche et de correction des erreurs (ou “bugs”) dans un programme.
+{{% expand title="**Débogage**" %}}
+- Le processus de recherche et de correction des erreurs (ou “bugs”) dans un programme.
+{{% /expand %}}
 
-- **Encapsulation** : Un concept fondamental en programmation orientée objet. Elle consiste à cacher les détails de l’implémentation d’un objet et à n’exposer que les aspects nécessaires pour interagir avec cet objet. Cela signifie que les données internes d’un objet sont protégées contre les modifications non autorisées et que l’accès à ces données se fait uniquement par des méthodes définies.
+{{% expand title="**Encapsulation**" %}}
+- Un concept fondamental en programmation orientée objet. Elle consiste à cacher les détails de l’implémentation d’un objet et à n’exposer que les aspects nécessaires pour interagir avec cet objet. Cela signifie que les données internes d’un objet sont protégées contre les modifications non autorisées et que l’accès à ces données se fait uniquement par des méthodes définies.
+{{% /expand %}}
 
-- **Flottant** : Un type de donnée qui représente un nombre avec une partie décimale. Par exemple, 3.14 est un nombre flottant.
+{{% expand title="**Flottant**" %}}
+- Un type de donnée qui représente un nombre avec une partie décimale. Par exemple, 3.14 est un nombre flottant.
+{{% /expand %}}
 
-- **Fonction** : Un bloc de code réutilisable qui effectue une tâche spécifique. Les fonctions peuvent prendre des paramètres et retourner des valeurs.
+{{% expand title="**Fonction**" %}}
+- Un bloc de code réutilisable qui effectue une tâche spécifique. Les fonctions peuvent prendre des paramètres et retourner des valeurs.
+{{% /expand %}}
 
-- **IDE (Environnement de Développement Intégré)** : Un logiciel qui fournit des outils complets pour le développement de logiciels, incluant un éditeur de code, un débogueur, et souvent un compilateur.
+{{% expand title="**IDE (Environnement de Développement Intégré)**" %}}
+- Un logiciel qui fournit des outils complets pour le développement de logiciels, incluant un éditeur de code, un débogueur, et souvent un compilateur.
+{{% /expand %}}
 
-- **Imbrication** : Fait référence à la pratique consistant à placer une structure de code à l’intérieur d’une autre. Cela peut inclure des boucles, des conditions, des fonctions, ou même des ensembles de données.
+{{% expand title="**Imbrication**" %}}
+- Fait référence à la pratique consistant à placer une structure de code à l’intérieur d’une autre. Cela peut inclure des boucles, des conditions, des fonctions, ou même des ensembles de données.
+{{% /expand %}}
 
-- **Indentation** : Utilisation de tabulations au début des lignes de code pour indiquer la structure et la hiérarchie du code, notamment dans les boucles, les conditions, et les fonctions. En Python, l'indentation est essentielle pour définir les blocs de code.
+{{% expand title="**Indentation**" %}}
+- Utilisation de tabulations au début des lignes de code pour indiquer la structure et la hiérarchie du code, notamment dans les boucles, les conditions, et les fonctions. En Python, l'indentation est essentielle pour définir les blocs de code.
+{{% /expand %}}
 
-- **Méthode** : Une fonction définie à l'intérieur d'une classe en programmation orientée objet. Les méthodes définissent les comportements des objets créés à partir de la classe.
+{{% expand title="**Méthode**" %}}
+- Une fonction définie à l'intérieur d'une classe en programmation orientée objet. Les méthodes définissent les comportements des objets créés à partir de la classe.
+{{% /expand %}}
 
-- **Ordinogramme** : Un diagramme qui représente graphiquement les étapes d'un algorithme ou d'un processus. Aussi appelé diagramme de flux ou flowchart.
+{{% expand title="**Ordinogramme**" %}}
+- Un diagramme qui représente graphiquement les étapes d'un algorithme ou d'un processus. Aussi appelé diagramme de flux ou flowchart.
+{{% /expand %}}
 
-- **Pseudo-code** : Une manière informelle de décrire un algorithme en utilisant un mélange de langage naturel et de structures de programmation. Le pseudo-code aide à planifier et à comprendre le fonctionnement d'un algorithme sans se soucier de la syntaxe exacte d'un langage de programmation.
+{{% expand title="**Pseudo-code**" %}}
+- Une manière informelle de décrire un algorithme en utilisant un mélange de langage naturel et de structures de programmation. Le pseudo-code aide à planifier et à comprendre le fonctionnement d'un algorithme sans se soucier de la syntaxe exacte d'un langage de programmation.
+{{% /expand %}}
 
-- **String** : Un type de donnée qui représente une chaîne de caractères. Par exemple, "Hello, World!" est une string.
+{{% expand title="**String**" %}}
+- Un type de donnée qui représente une chaîne de caractères. Par exemple, "Hello, World!" est une string.
+{{% /expand %}}
 
-- **Variable** : Un espace de stockage nommé qui peut contenir une valeur. Les variables permettent de manipuler et de stocker des données dans un programme.
-
+{{% expand title="**Variable**" %}}
+- Un espace de stockage nommé qui peut contenir une valeur. Les variables permettent de manipuler et de stocker des données dans un programme.
+{{% /expand %}}
 
 

@@ -1,4 +1,6 @@
 +++
+alwaysopen = false
+description = "Base - Langage de programmation"
 title = "1. Langage de programmation"
 weight = 181
 +++
