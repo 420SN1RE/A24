@@ -11,6 +11,7 @@ weight = 60
 - Savoir manipuler des listes dans un contexte scientifique
 - Appliquer la logique des boucles avec les listes
 - Utiliser d'autres fonctionnalités courantes es listes
+- Comprendre les notions d'objet et d'encapsulation
 
 
 ## Plan de la leçon
@@ -27,6 +28,7 @@ weight = 60
 	- Trouver les éléments uniques d'une liste.
 	- Filtrer les nombres pairs d'une liste.
 - Pause 5 minutes.
-- Les chaines de caractères sont des listes **~10mins**
+- Les chaines de caractères sont des listes **~5mins**
+- Les chaines de caractères sont des objets **~5mins**
 - Ateliers: Les listes et les chaines de caractères
 - Pour la semaine prochaine.
