@@ -29,17 +29,19 @@ Il existe deux types de commentaires en Python :
 
 - **Débogage** : Le processus de recherche et de correction des erreurs (ou “bugs”) dans un programme.
 
+- **Encapsulation** : Un concept fondamental en programmation orientée objet. Elle consiste à cacher les détails de l’implémentation d’un objet et à n’exposer que les aspects nécessaires pour interagir avec cet objet. Cela signifie que les données internes d’un objet sont protégées contre les modifications non autorisées et que l’accès à ces données se fait uniquement par des méthodes définies.
+
+- **Flottant** : Un type de donnée qui représente un nombre avec une partie décimale. Par exemple, 3.14 est un nombre flottant.
+
 - **Fonction** : Un bloc de code réutilisable qui effectue une tâche spécifique. Les fonctions peuvent prendre des paramètres et retourner des valeurs.
 
 - **IDE (Environnement de Développement Intégré)** : Un logiciel qui fournit des outils complets pour le développement de logiciels, incluant un éditeur de code, un débogueur, et souvent un compilateur.
 
-- **Les structures imbriquées** : Elles font référence à l’utilisation de structures de contrôle (comme la boucle `for` et les conditions `if`) à l’intérieur d’autres structures de contrôle.
+- **Imbrication** : Fait référence à la pratique consistant à placer une structure de code à l’intérieur d’une autre. Cela peut inclure des boucles, des conditions, des fonctions, ou même des ensembles de données.
 
 - **Indentation** : Utilisation de tabulations au début des lignes de code pour indiquer la structure et la hiérarchie du code, notamment dans les boucles, les conditions, et les fonctions. En Python, l'indentation est essentielle pour définir les blocs de code.
 
 - **Méthode** : Une fonction définie à l'intérieur d'une classe en programmation orientée objet. Les méthodes définissent les comportements des objets créés à partir de la classe.
-
-- **Nombre flottant** : Un type de donnée qui représente un nombre avec une partie décimale. Par exemple, 3.14 est un nombre flottant.
 
 - **Ordinogramme** : Un diagramme qui représente graphiquement les étapes d'un algorithme ou d'un processus. Aussi appelé diagramme de flux ou flowchart.
 
