@@ -1,6 +1,6 @@
 +++
 archetype = "semaine"
-title = "Solutions de ateliers"
+title = "Solutions des ateliers"
 weight = 170
 +++
 
