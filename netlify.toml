@@ -3,5 +3,10 @@ HUGO_VERSION = "0.133.0"
 TZ = "America/Los_Angeles"
 
 [build]
-publish = "public"
-command = "hugo --gc --minify"
+  publish = "public"
+  command = "jupyter nbconvert --to html notebooks/*.ipynb && hugo --gc --minify"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

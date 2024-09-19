@@ -1,0 +1,35 @@
+[build.environment]
+HUGO_VERSION = "0.128.0"
+TZ = "America/Los_Angeles"
+
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+pip install -r requirements.txt && jupyter-book build .
+
+===
+
+
+[build]
+  command = "hugo"
+  publish = "public"
+# Add the version specification for Hugo
+  [context.production]
+    environment = { HUGO_VERSION = "0.133.0" }
+
+[build.environment]
+  HUGO_VERSION = "0.133.0-extended"
+
+
+=== FONCTIONNE SANS JUPYTER 19/09 12h30
+
+[build.environment]
+HUGO_VERSION = "0.133.0"
+TZ = "America/Los_Angeles"
+
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+ 
+
+
