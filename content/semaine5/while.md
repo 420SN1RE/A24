@@ -29,7 +29,7 @@ Typiquement avec des saisies utilisateurs
 compteur = 0
 while compteur < 5:
     print(compteur)
-    compteur -= 1
+    compteur += 1
 ```
 
 ```plaintext
@@ -122,8 +122,10 @@ Voici quelques cas où l'utilisation de `end` peut être utile :
    En utilisant `end=''`, on peut éviter cela et continuer l'affichage sur la même ligne.
 
    ```python
-   for i in range(5):
-       print(i, end=' ')
+   i = 0
+   while i < 5:
+      print(i, end=' ')
+      i += 1
    ```
 
    Cela affichera : `0 1 2 3 4` sur une seule ligne.
@@ -133,8 +135,10 @@ Voici quelques cas où l'utilisation de `end` peut être utile :
    On peut utiliser `end` pour ajouter un séparateur personnalisé entre les éléments imprimés. Par exemple, pour ajouter une virgule et un espace :
 
    ```python
-   for i in range(5):
-       print(i, end=', ')
+   i = 0
+   while i < 5:
+      print(i, end=', ')
+      i += 1
    ```
 
    Cela affichera : `0, 1, 2, 3, 4, `.
