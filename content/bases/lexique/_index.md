@@ -47,6 +47,10 @@ Il existe deux types de commentaires en Python :
 - Le processus de recherche et de correction des erreurs (ou “bugs”) dans un programme.
 {{% /expand %}}
 
+{{% expand title="**Décrémentation**" %}}
+- Action de diminuer la valeur d’une variable, généralement par un certain pas, souvent de 1.
+{{% /expand %}}
+
 {{% expand title="**Encapsulation**" %}}
 - Un concept fondamental en programmation orientée objet. Elle consiste à cacher les détails de l’implémentation d’un objet et à n’exposer que les aspects nécessaires pour interagir avec cet objet. Cela signifie que les données internes d’un objet sont protégées contre les modifications non autorisées et que l’accès à ces données se fait uniquement par des méthodes définies.
 {{% /expand %}}
@@ -67,8 +71,16 @@ Il existe deux types de commentaires en Python :
 - Fait référence à la pratique consistant à placer une structure de code à l’intérieur d’une autre. Cela peut inclure des boucles, des conditions, des fonctions, ou même des ensembles de données.
 {{% /expand %}}
 
+{{% expand title="**Incrémentation**" %}}
+- Action d’augmenter la valeur d’une variable, généralement par un certain pas, souvent de 1.
+{{% /expand %}}
+
 {{% expand title="**Indentation**" %}}
 - Utilisation de tabulations au début des lignes de code pour indiquer la structure et la hiérarchie du code, notamment dans les boucles, les conditions, et les fonctions. En Python, l'indentation est essentielle pour définir les blocs de code.
+{{% /expand %}}
+
+{{% expand title="**Itération **" %}}
+- Répétition d’un processus ou d’une série d’instructions dans un programme informatique, souvent dans le cadre d’une boucle.
 {{% /expand %}}
 
 {{% expand title="**Méthode**" %}}
