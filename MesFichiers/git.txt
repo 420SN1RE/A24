@@ -22,6 +22,10 @@ hugo
 git add .
 git commit -m "message"
 git push origin main
+====
+
+hugo version
+hugo mod get -u ./...
 
 ---
 

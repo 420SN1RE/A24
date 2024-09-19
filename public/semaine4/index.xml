@@ -12,7 +12,7 @@
       <link>https://example.org/semaine4/expressions-booleennes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine4/expressions-booleennes/index.html</guid>
-      <description>Les opérateurs de comparaison Les opérateurs de comparaison permettent de comparer des valeurs et de déterminer si une condition est vraie ou fausse.&#xA;Soient a = 10 et b = 3&#xA;Opération (opérateur) Exemple Égalité (==) a == b donne faux (False) Inégalité (!=) a != b donne vrai (True) Supérieur â (&gt;) a &gt; b donne vrai (True) Inférieur à (&lt;) a &lt; b donne faux (False) Supérieur ou égal â (&gt;=) a &gt;= b donne vrai (True) Inférieur ou égal à (&lt;=) a &lt;= b donne faux (False) Les opérateurs logiques Les opérateurs logiques permettent de combiner des expressions booléennes.</description>
+      <description>Les opérateurs de comparaison Les opérateurs de comparaison permettent de comparer des valeurs et de déterminer si une condition est vraie ou fausse.&#xA;Soient a = 10 et b = 3&#xA;Opération (opérateur) Exemple Égalité (==) a == b donne faux (False) Inégalité (!=) a != b donne vrai (True) Supérieur à (&gt;) a &gt; b donne vrai (True) Inférieur à (&lt;) a &lt; b donne faux (False) Supérieur ou égal à (&gt;=) a &gt;= b donne vrai (True) Inférieur ou égal à (&lt;=) a &lt;= b donne faux (False) Les opérateurs logiques Les opérateurs logiques permettent de combiner des expressions booléennes.</description>
     </item>
     <item>
       <title>Les instructions if else elif</title>

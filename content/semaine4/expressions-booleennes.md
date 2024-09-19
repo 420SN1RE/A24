@@ -15,9 +15,9 @@ Soient `a = 10` et `b = 3`
 |------------------------|-------|
 |Égalité (`==`)            |`a == b` donne faux (`False`)|
 |Inégalité (`!=`)          |`a != b` donne vrai (`True`)|
-|Supérieur â (`>`)         |`a > b` donne vrai (`True`)|
+|Supérieur à (`>`)         |`a > b` donne vrai (`True`)|
 |Inférieur à (`<`)         |`a < b` donne faux (`False`)|
-|Supérieur ou égal â (`>=`)|`a >= b` donne vrai (`True`)|
+|Supérieur ou égal à (`>=`)|`a >= b` donne vrai (`True`)|
 |Inférieur ou égal à (`<=`)|`a <= b` donne faux (`False`)|
 
 ### Les opérateurs logiques
