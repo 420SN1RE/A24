@@ -144,7 +144,7 @@ On peut ajouter des éléments à une liste avec `append()` ou `insert()`, et le
 ma_liste = []
 ```
 
-![Trace 1](/Semaine6/trace_01.png)
+![Trace 1](../trace_01.png)
 
 
 ```python
