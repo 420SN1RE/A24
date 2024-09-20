@@ -21,7 +21,7 @@ Voici le lexique réécrit en ordre alphabétique :
 {{% /expand %}}
 
 {{% expand title="**Boucle**" %}}
-- Une structure de contrôle qui permet de répéter une série d'instructions plusieurs fois. Les boucles courantes incluent `for`, `while`, et `do-while`.
+- Une structure de contrôle qui permet de répéter une série d'instruction. En Python, les boucles sont `for`, `while`. D'autres langages de programmation incluent la boucle `do-while`.
 {{% /expand %}}
 
 {{% expand title="**Classe**" %}}
