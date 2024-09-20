@@ -15,7 +15,7 @@ Elle s'utilise, lorsque le nombre d'**itérations** (répétitions) est connu d'
 La syntaxe de base est la suivante :
 
 ```python
-for élément in séquence:
+for element in sequence:
     # bloc de code à exécuter
 ```
 
@@ -83,7 +83,7 @@ La fonction `range()` génère une séquence de nombres entiers (pas de flottant
 Une instruction `for` est toujours de la forme:
 
 ```python
-for variable-de-contrôle in itérable :
+for variable-de-controle in iterable :
 ```
 
 {{% notice style=info title=Définition %}}
@@ -139,7 +139,14 @@ Par exemple, `range(3, 10)` génère une séquence de nombres commençant à 3 e
 {{% notice style=tip title=Astuce %}}
 De manière générale, pour générer une séquence croissante d'entiers consécutifs dont le premier terme est **debut** et le dernier terme est **fin**, on peut écrire:
 ```python
-range(debut,fin+1)
+debut = 3
+fin = 10
+
+for i in range(debut,fin+1):
+   print(i, end="-")
+
+# Affiche
+3-4-5-6-7-8-9-10
 ```
 {{% /notice %}}
 
@@ -174,9 +181,15 @@ tableau = [
     [7, 8, 9]
 ]
 
+# Pour chaque ligne du tableau
 for ligne in tableau:
-    for élément in ligne:
-        print(élément, end=" ")
-    print()
+	# Pour chaque élément de la ligne
+	for element in ligne:
+		# Affiche l'élément
+        	print(element, end=" ")
 ```
-Cet exemple parcourt chaque élément d'un tableau 2D et les affiche.
+Cet exemple parcourt chaque élément d'un tableau 2D et les affiche ainsi:
+
+```python
+1 2 3 4 5 6 7 8 9 
+```

@@ -26,7 +26,7 @@
       <link>https://example.org/semaine5/for/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine5/for/index.html</guid>
-      <description>La boucle FOR Info&#xD;La boucle for est utilisée pour itérer sur une séquence d’éléments, comme une liste, une chaîne de caractères, ou un tuple.&#xA;Elle s’utilise, lorsque le nombre d’itérations (répétitions) est connu d’avance.&#xA;La syntaxe de base est la suivante :&#xA;for élément in séquence: # bloc de code à exécuterExemple simple :&#xA;liste_nombres = [1, 2, 3, 4, 5] for nombre in liste_nombres: print(nombre)Dans cet exemple, chaque élément représenté par la variable nombre de la liste_nombres est affiché à l’écran.</description>
+      <description>La boucle FOR Info&#xD;La boucle for est utilisée pour itérer sur une séquence d’éléments, comme une liste, une chaîne de caractères, ou un tuple.&#xA;Elle s’utilise, lorsque le nombre d’itérations (répétitions) est connu d’avance.&#xA;La syntaxe de base est la suivante :&#xA;for element in sequence: # bloc de code à exécuterExemple simple :&#xA;liste_nombres = [1, 2, 3, 4, 5] for nombre in liste_nombres: print(nombre)Dans cet exemple, chaque élément représenté par la variable nombre de la liste_nombres est affiché à l’écran.</description>
     </item>
     <item>
       <title>Le contrôle des boucles</title>

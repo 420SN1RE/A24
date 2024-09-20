@@ -79,7 +79,7 @@ Il existe deux types de commentaires en Python :
 - Utilisation de tabulations au début des lignes de code pour indiquer la structure et la hiérarchie du code, notamment dans les boucles, les conditions, et les fonctions. En Python, l'indentation est essentielle pour définir les blocs de code.
 {{% /expand %}}
 
-{{% expand title="**Itération **" %}}
+{{% expand title="**Itération**" %}}
 - Répétition d’un processus ou d’une série d’instructions dans un programme informatique, souvent dans le cadre d’une boucle.
 {{% /expand %}}
 
