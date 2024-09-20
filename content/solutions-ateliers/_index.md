@@ -27,3 +27,11 @@ weight = 170
 [Semaine 5 - Boucle for](correction-atelier-for.ipynb)
 
 [Semaine 5 - Instructions break, continue et else](correction-atelier-controle.ipynb)
+
+[Semaine 6 - Listes - La base](correction_atelier_listes_base.ipynb)
+
+[Semaine 6 - Listes - En sciences](correction_atelier_listes_sciences.ipynb)
+
+[Semaine 6 - Listes - Système solaire](correction_atelier_listes_systeme_solaire.ipynb)
+
+[Semaine 6 - Les chaines de caractères](correction_atelier_caracteres.ipynb)
