@@ -31,5 +31,16 @@ TZ = "America/Los_Angeles"
 publish = "public"
 command = "hugo --gc --minify"
  
+=== FONTIONNE PAS
 
+[build]
+  publish = "public"
+  command = "jupyter nbconvert --to html notebooks/*.ipynb && hugo --gc --minify"
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+===
+
+[Test de lien](https://raw.githubusercontent.com/420sn1re/A24/semaine3/atelier-erreurs_syntaxe.ipynb)
