@@ -18,7 +18,7 @@ weight = 70
 	1. **Manipulation des structures de données** : Savoir utiliser les listes pour organiser et gérer les données.
 	1. **Programmation orientée objet (POO)** : Comprendre le concept d'objets à l'aide des chaines de caractères.
 
-- Une exercice récapitulatif
+- Un exercice récapitulatif
 
 {{% notice style=warning title=Attention %}}
 Le contenu de cette section n'est pas exhaustif. L'emphase est mise sur les éléments les moins bien assimilés.
