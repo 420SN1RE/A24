@@ -184,13 +184,22 @@
     <loc>https://example.org/semaine6/pour-le-prochain-cours/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine7/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine7/python-base/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine7/ordinogramme/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine7/listes/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine7/chaines/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine7/exercice/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine7/pour-le-prochain-cours/index.html</loc>

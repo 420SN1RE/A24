@@ -1,0 +1,19 @@
+
+
+
+Leur donner une structure
+
+- dossier pour le cours sur leur OneDrive du Collège
+- à l'intérieur
+  - dossier pour les ateliers
+  - dossiers pour chaque cours (exemples démo)
+  - dossier pour le projet final
+  - dossier pour le minitest
+  - dossier pour l'examen
+  - dossier pour les quiz?
+
+
+
+
+
+

@@ -50,6 +50,13 @@
       <description>Objectifs de la leçon Comprendre les concepts de base et fondamentaux des listes Savoir manipuler des listes dans un contexte scientifique Appliquer la logique des boucles avec les listes Utiliser d’autres fonctionnalités courantes es listes Comprendre les notions d’objet et d’encapsulation Plan de la leçon Quiz (10 mins) L’importance des listes en programmation et en contexte scientifique. ~5mins Création, accès, modification, ajout et suppression d’éléments d’une liste. ~15mins Pause 5 minutes.</description>
     </item>
     <item>
+      <title>Révision des semaines 1 à 6</title>
+      <link>https://example.org/semaine7/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine7/index.html</guid>
+      <description>Objectifs de la leçon Réviser les notions vues jusqu’à présent en mettant l’emphase sur les éléments de compétence obligatoires. Plan de la leçon Quiz (10 mins)&#xA;Révision:&#xA;Compréhension de la syntaxe de base : Connaître les types de données, les variables, les opérateurs, et les structures de contrôle comme les conditions et les boucles. Manipulation des structures de données : Savoir utiliser les listes pour organiser et gérer les données. Programmation orientée objet (POO) : Comprendre le concept d’objets à l’aide des chaines de caractères.</description>
+    </item>
+    <item>
       <title>Solutions des ateliers</title>
       <link>https://example.org/solutions-ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

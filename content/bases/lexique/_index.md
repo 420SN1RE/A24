@@ -47,6 +47,10 @@ Il existe deux types de commentaires en Python :
 - Le processus de recherche et de correction des erreurs (ou “bugs”) dans un programme.
 {{% /expand %}}
 
+{{% expand title="**Déclaration de variable**" %}}
+- Une instruction qui permet de créer une variable et de lui attribuer un nom. Cette déclaration réserve un espace en mémoire pour stocker une valeur qui peut être utilisée et modifiée au cours de l’exécution du programme.
+{{% /expand %}}
+
 {{% expand title="**Décrémentation**" %}}
 - Action de diminuer la valeur d’une variable, généralement par un certain pas, souvent de 1.
 {{% /expand %}}

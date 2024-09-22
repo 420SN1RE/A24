@@ -301,6 +301,59 @@ Résultat :
 La liste contient 5 notes
 ```
 
+### Obtenir la position d'un élément dans une liste
+
+La méthode `index()` est utilisée pour trouver la position (l'index) d'un élément spécifique dans une liste. Voici comment elle fonctionne :
+
+#### Syntaxe
+
+```python
+list.index(element, debut, fin)
+```
+
+- **element** : L'élément dont vous voulez trouver l'index.
+- **debut** (optionnel) : La position de départ pour la recherche.
+- **fin** (optionnel) : La position de fin pour la recherche.
+
+
+```python
+# Créer une liste
+fruits = ['pomme', 'banane', 'cerise', 'banane']
+
+# Trouver la position de 'banane'
+indice_banane = fruits.index('banane')
+
+print(f"L'indice de l'élément 'banane' est : {indice_banane}. 'banane' est donc le {indice_banane+1}e élément")
+```
+
+**Résultat**
+
+```plaintext
+L'indice de l'élément 'banane' est : 1. 'banane' est donc le 2e élément
+```
+
+Dans cet exemple, la méthode `index()` retourne l'index de la première occurrence de `'banane'` dans la liste, qui est `1`.
+
+#### Utilisation avec les paramètres debut et fin
+
+Vous pouvez également spécifier une plage de recherche en utilisant les paramètres `debut` et `fin` :
+
+```python
+# Trouver l'indice de 'banane' après la position 1
+index_banane_apres_1 = fruits.index('banane', 2)
+
+print(f"L'index de 'banane' après la position 1 est : {index_banane_apres_1}")
+```
+
+**Résultat**
+
+```plaintext
+L'index de 'banane' après la position 1 est : 3
+```
+
+Ici, la méthode `index()` commence la recherche à partir de l'indice `2` et trouve la deuxième occurrence de `'banane'` à l'indice `3`.
+
+
 ### Trier les éléments d'une liste.
 
 La méthode `ma_list.sort()` en Python est utilisée pour trier les éléments d'une liste. Exemples: 

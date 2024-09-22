@@ -28,7 +28,7 @@ Les erreurs d'arrondi sont un phénomène courant en Python. Elles surviennent p
    - On pourrait s'attendre à ce que le résultat soit 0.3, mais en réalité, il affiche quelque chose comme 0.30000000000000004. Cela est dû à l'approximation binaire de 0.1 et 0.2.
 
 3. **Conséquences des erreurs d'arrondi** :
-   - Les erreurs d'arrondi peuvent entraîner des résultats inattendus dans les calculs, surtout lorsqu'ils sont accumulés sur de nombreuses opérations.
+   - Les erreurs d'arrondi peuvent entraîner des résultats inattendus dans les **calculs**, surtout lorsqu'ils sont accumulés sur de nombreuses opérations.
    - Elles peuvent également poser des problèmes dans les comparaisons de flottants. Par exemple :
      ```python
      # Est-ce que 0.1 + 0.2 est égal à 0.3?

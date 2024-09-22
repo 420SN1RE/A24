@@ -3,7 +3,6 @@ archetypes = "semaine"
 pre = "<b>7. </b>"
 title = 'Révision des semaines 1 à 6'
 weight = 70
-draft = true
 +++
 
 ## Objectifs de la leçon
@@ -12,10 +11,15 @@ draft = true
 
 ## Plan de la leçon
 
-Pour réussir le cours, voici jusqu'à présent quelques compétences essentielles à maîtriser :
+- **Quiz** (10 mins)
+- Révision:
 
-1. **Compréhension de la syntaxe de base** : Connaître les types de données, les variables, les opérateurs, et les structures de contrôle comme les conditions et les boucles.
-1. **Manipulation des structures de données** : Savoir utiliser les listes pour organiser et gérer les données.
-1. **Comment déboguer** : Apprendre à identifier et corriger les erreurs dans le code, et utiliser des outils de débogage simples (print, exécution ligne par ligne) pour résoudre les problèmes.
-1. **Programmation orientée objet (POO)** : Comprendre le concept d'objets
+	1. **Compréhension de la syntaxe de base** : Connaître les types de données, les variables, les opérateurs, et les structures de contrôle comme les conditions et les boucles.
+	1. **Manipulation des structures de données** : Savoir utiliser les listes pour organiser et gérer les données.
+	1. **Programmation orientée objet (POO)** : Comprendre le concept d'objets à l'aide des chaines de caractères.
 
+- Une exercice récapitulatif
+
+{{% notice style=warning title=Attention %}}
+Le contenu de cette section n'est pas exhaustif. L'emphase est mise sur les éléments les moins bien assimilés.
+{{% /notice %}}
