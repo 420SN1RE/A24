@@ -1,6 +1,4 @@
 
-
-
 Leur donner une structure
 
 - dossier pour le cours sur leur OneDrive du Collège
@@ -13,6 +11,18 @@ Leur donner une structure
   - dossier pour les quiz?
 
 
+Ajout
+- Bases Erreurs avec les fonctions
+- Bases Erreurs variable non définie
+- Bases Lexique: appel de fonction
+- S8
+- Correction ateliers S8
+
+
+Lexique
+- docstring (vérifier commentaires)
+- récursivité
+- retour de fonction
 
 
 

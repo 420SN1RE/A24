@@ -1,7 +1,6 @@
 +++
 title = "Gestion des exceptions"
-weight = 188
-draft = true
+weight = 99
 +++
 
 ## La gestion des exceptions

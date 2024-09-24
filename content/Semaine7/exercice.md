@@ -31,10 +31,10 @@ Vous allez créer un programme en Python pour analyser une chaîne de caractère
 
 - Utiliser une boucle pour parcourir chaque caractère de la chaîne.
 - Utiliser les fonctions et méthodes de listes/chaines:
-   - `append()` pour ajouter des caractères dans une liste
-   - `lower()` pour ne traiter que des caractères en minuscules
-   - `len()` pour obtenir la longueur d'une chaine ou liste
-   - `index()` pour XXX
+   - `append()` pour ajouter des caractères dans une liste.
+   - `lower()` pour ne traiter que des caractères en minuscules.
+   - `len()` pour obtenir la longueur d'une chaine ou liste.
+   - `index()` pour trouver la position (l’indice) d’un élément spécifique dans une liste.
 
 **Logique de l'analyse**
 

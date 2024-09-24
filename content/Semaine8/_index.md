@@ -22,4 +22,6 @@ draft = true
 	- Le passage de paramètres. 
 	- Le retour de valeurs. 
 	- La portée des variables.
-- Pour la semaine prochaine 5 mins
+	- Les fonctions récursives.
+- Ateliers : Les fonctions et la portée des variables
+- Pour la semaine prochaine

@@ -35,3 +35,6 @@ weight = 170
 [Semaine 6 - Listes - Système solaire](correction_atelier_listes_systeme_solaire.ipynb)
 
 [Semaine 6 - Les chaines de caractères](correction_atelier_caracteres.ipynb)
+
+[Semaine 7 - Révision (à venir)]()
+

@@ -1,0 +1,72 @@
+### Variables enfermées (Bases de connaissances)
+
+Les variables enfermées sont des variables définies dans une fonction englobante et accessibles dans une fonction imbriquée.
+
+```python
+def exterieur():
+    x = 10
+
+    def interieur():
+        print(x)  # Accède à la variable x de la fonction englobante
+
+    interieur()
+
+exterieur()  # Affiche 10
+```
+
+## Fonctions Lambda (Bases de connaissances)
+
+Les fonctions lambda sont des fonctions anonymes définies à l'aide du mot-clé `lambda`. Elles sont souvent utilisées pour des opérations simples et rapides.
+
+```python
+carre = lambda x: x ** 2
+print(carre(5))  # Affiche 25
+```
+
+## Fonctions de première classe (Bases de connaissances)
+
+En Python, les fonctions sont des objets de première classe, ce qui signifie qu'elles peuvent être passées en argument à d'autres fonctions, retournées par d'autres fonctions, et assignées à des variables.
+
+```python
+def appliquer_fonction(f, valeur):
+    return f(valeur)
+
+def carre(x):
+    return x ** 2
+
+resultat = appliquer_fonction(carre, 5)  # resultat vaut 25
+```
+
+## Fermetures (Bases de connaissances)
+
+Une fermeture est une fonction qui capture les variables de son environnement englobant. Cela permet de créer des fonctions avec un état interne.
+
+```python
+def creer_incrementateur(n):
+    def incrementer(x):
+        return x + n
+    return incrementer
+
+incrementer_de_5 = creer_incrementateur(5)
+print(incrementer_de_5(10))  # Affiche 15
+```
+
+## Décorateurs (Bases de connaissances)
+
+Les décorateurs sont des fonctions qui modifient le comportement d'autres fonctions. Ils sont souvent utilisés pour ajouter des fonctionnalités à des fonctions existantes.
+
+```python
+def decorateur(fonction):
+    def nouvelle_fonction(*args, **kwargs):
+        print("Avant l'appel de la fonction")
+        resultat = fonction(*args, **kwargs)
+        print("Après l'appel de la fonction")
+        return resultat
+    return nouvelle_fonction
+
+@decorateur
+def dire_bonjour():
+    print("Bonjour!")
+
+dire_bonjour()
+```

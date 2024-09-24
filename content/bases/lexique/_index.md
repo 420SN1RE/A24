@@ -16,6 +16,10 @@ Voici le lexique réécrit en ordre alphabétique :
 - Une série d'instructions définies pour résoudre un problème ou effectuer une tâche spécifique.
 {{% /expand %}}
 
+{{% expand title="**Appel**" %}}
+- L’appel d’une fonction consiste à invoquer une fonction définie ailleurs dans le code pour qu’elle effectue une tâche spécifique. Lors de l’appel, on peut passer des arguments à la fonction, qui sont des valeurs ou des variables que la fonction utilisera pour effectuer ses opérations. La fonction peut ensuite retourner une valeur en guise de résultat.
+{{% /expand %}}
+
 {{% expand title="**Booléen**" %}}
 - Un type de donnée qui ne peut prendre que deux valeurs : `true` (vrai) ou `false` (faux). Utilisé pour les conditions et les tests logiques.
 {{% /expand %}}

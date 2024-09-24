@@ -22,14 +22,19 @@ draft = true
 
 [Semaine 4 - Test de flottants](correction-atelier-tests-flottants.ipynb)
 
-
 [Semaine 5 - Boucles](correction-atelier-boucles.ipynb)
 
 [Semaine 6 - Listes et chaines de caractères](correction-atelier-listes-chaines.ipynb)
 
-[Semaine 7 - Librairies systèmes](correction-atelier-librairies-sys.ipynb)
+
+
+[Semaine 7 - Révision](correction-exercice-recap-sem7.ipynb)
 
 [Semaine 8 - Fonctions](correction-atelier-fonctions.ipynb)
+
+[Semaine 8 - Fonctions](correction-atelier-porteeVaraiables.ipynb)
+
+
 
 [Semaine 9 - Trace d'exécution](correction-atelier-trace.ipynb)
 
