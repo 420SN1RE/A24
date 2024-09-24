@@ -15,6 +15,7 @@ draft = true
 
 ## Plan de la leçon
 
+- **Quiz récapitulatif**: semaines 1 à 7 (15 mins)
 - Fonctions: 
 	- Rôles et définition.
 	- Déclaration. 
