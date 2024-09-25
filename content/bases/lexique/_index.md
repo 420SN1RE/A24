@@ -16,7 +16,7 @@ Voici le lexique réécrit en ordre alphabétique :
 - Une série d'instructions définies pour résoudre un problème ou effectuer une tâche spécifique.
 {{% /expand %}}
 
-{{% expand title="**Appel**" %}}
+{{% expand title="**Appel de fonction**" %}}
 - L’appel d’une fonction consiste à invoquer une fonction définie ailleurs dans le code pour qu’elle effectue une tâche spécifique. Lors de l’appel, on peut passer des arguments à la fonction, qui sont des valeurs ou des variables que la fonction utilisera pour effectuer ses opérations. La fonction peut ensuite retourner une valeur en guise de résultat.
 {{% /expand %}}
 
@@ -57,6 +57,10 @@ Il existe deux types de commentaires en Python :
 
 {{% expand title="**Décrémentation**" %}}
 - Action de diminuer la valeur d’une variable, généralement par un certain pas, souvent de 1.
+{{% /expand %}}
+
+{{% expand title="**Docstring**" %}}
+- Une chaîne de caractères utilisée pour documenter un module, une classe ou une fonction dans le code source. Elle est généralement placée immédiatement après la définition de l’élément qu’elle documente et est utilisée pour expliquer son fonctionnement, ses paramètres et ses retours.
 {{% /expand %}}
 
 {{% expand title="**Encapsulation**" %}}
@@ -101,6 +105,14 @@ Il existe deux types de commentaires en Python :
 
 {{% expand title="**Pseudo-code**" %}}
 - Une manière informelle de décrire un algorithme en utilisant un mélange de langage naturel et de structures de programmation. Le pseudo-code aide à planifier et à comprendre le fonctionnement d'un algorithme sans se soucier de la syntaxe exacte d'un langage de programmation.
+{{% /expand %}}
+
+{{% expand title="**Récursivité**" %}}
+- Une technique de programmation où une fonction s’appelle elle-même pour résoudre un problème. Cette méthode est souvent utilisée pour résoudre des problèmes complexes en les décomposant en sous-problèmes plus simples.
+{{% /expand %}}
+
+{{% expand title="**Retour de fonction**" %}}
+- C'est la valeur ou l’ensemble de valeurs qu’une fonction renvoie après son exécution. Cette valeur est souvent utilisée pour continuer le traitement ou pour obtenir un résultat spécifique à partir de la fonction appelée.
 {{% /expand %}}
 
 {{% expand title="**String**" %}}
