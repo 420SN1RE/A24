@@ -10,7 +10,7 @@ weight = 60
 - Comprendre les concepts de base et fondamentaux des listes
 - Savoir manipuler des listes dans un contexte scientifique
 - Appliquer la logique des boucles avec les listes
-- Utiliser d'autres fonctionnalités courantes es listes
+- Utiliser d'autres fonctionnalités courantes des listes
 - Comprendre les notions d'objet et d'encapsulation
 
 

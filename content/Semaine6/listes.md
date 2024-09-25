@@ -10,7 +10,7 @@ weight = 61
 Les listes sont l’une des structures de données les plus utilisées en Python. Elles permettent de **stocker plusieurs éléments de différents types dans une seule variable**, ce qui les rend très pratiques pour gérer des collections de données.
 
 {{% notice style=info title=Définition %}}
-Une liste est une collection **ordonnée** et **modifiable** d’éléments. Chaque élément de la liste a une position définie, appelée **index**, qui **commence à 0 pour le premier élément**.
+Une liste est une collection **ordonnée** et **modifiable** d’éléments. Chaque élément de la liste a une position définie, appelée **indice**, qui **commence à 0 pour le premier élément**.
 {{% /notice %}}
 
 Les listes sont particulièrement utiles pour :
@@ -75,8 +75,8 @@ Les listes en Python sont définies en utilisant des crochets `[ ]`.
 
 - **Ordonnée** : Les éléments de la liste conservent un ordre défini, ce qui signifie que l'ordre dans lequel vous ajoutez les éléments est préservé.
 - **Modifiable** : Une liste peut être modifiée après sa création, ce qui signifie que vous pouvez ajouter, supprimer ou changer des éléments.
-- **Taille Dynamique** : Une liste en Python peut changer de taille dynamiquement. Vous pouvez ajouter ou supprimer des éléments sans avoir à spécifier la taille initiale de la liste.
-- **Hétérogène** : En *Python*, une liste peut contenir des éléments de différents types (entiers, chaînes de caractères, listes, etc.).
+- **Taille dynamique** : Une liste en Python peut changer de taille dynamiquement. Vous pouvez ajouter ou supprimer des éléments sans avoir à spécifier la taille initiale de la liste.
+- **Hétérogène** : En Python, une liste peut contenir des éléments de différents types (entiers, chaînes de caractères, listes, etc.).
     - Bien qu'il est possible de le faire, il faut rester prudent lorsqu'on utilise des listes hétérogènes. Elles pourraient entraîner des erreurs, notamment dans les boucles.
 
 ## Création d'une liste
@@ -303,15 +303,15 @@ La liste contient 5 notes
 
 ### Obtenir la position d'un élément dans une liste
 
-La méthode `index()` est utilisée pour trouver la position (l'index) d'un élément spécifique dans une liste. Voici comment elle fonctionne :
+La méthode `index()` est utilisée pour trouver la position (l'indice) d'un élément spécifique dans une liste. Voici comment elle fonctionne :
 
 #### Syntaxe
 
 ```python
-list.index(element, debut, fin)
+liste.index(element, debut, fin)
 ```
 
-- **element** : L'élément dont vous voulez trouver l'index.
+- **element** : L'élément dont vous voulez trouver l'indice.
 - **debut** (optionnel) : La position de départ pour la recherche.
 - **fin** (optionnel) : La position de fin pour la recherche.
 
@@ -332,7 +332,7 @@ print(f"L'indice de l'élément 'banane' est : {indice_banane}. 'banane' est don
 L'indice de l'élément 'banane' est : 1. 'banane' est donc le 2e élément
 ```
 
-Dans cet exemple, la méthode `index()` retourne l'index de la première occurrence de `'banane'` dans la liste, qui est `1`.
+Dans cet exemple, la méthode `index()` retourne l'indice de la première occurrence de `'banane'` dans la liste, qui est `1`.
 
 #### Utilisation avec les paramètres debut et fin
 
@@ -342,13 +342,13 @@ Vous pouvez également spécifier une plage de recherche en utilisant les param�
 # Trouver l'indice de 'banane' après la position 1
 index_banane_apres_1 = fruits.index('banane', 2)
 
-print(f"L'index de 'banane' après la position 1 est : {index_banane_apres_1}")
+print(f"L'indice de 'banane' après la position 1 est : {index_banane_apres_1}")
 ```
 
 **Résultat**
 
 ```plaintext
-L'index de 'banane' après la position 1 est : 3
+L'indice de 'banane' après la position 1 est : 3
 ```
 
 Ici, la méthode `index()` commence la recherche à partir de l'indice `2` et trouve la deuxième occurrence de `'banane'` à l'indice `3`.

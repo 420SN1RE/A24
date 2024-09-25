@@ -1,5 +1,5 @@
 
-Leur donner une structure
+1) Leur donner une structure
 
 - dossier pour le cours sur leur OneDrive du Collège
 - à l'intérieur
@@ -10,19 +10,20 @@ Leur donner une structure
   - dossier pour l'examen
   - dossier pour les quiz?
 
+2) Montrer ipynb S1-S2
+
+3) quiz code vs tests Moodle
+
 
 Ajout
-- Bases Erreurs avec les fonctions
-- Bases Erreurs variable non définie
-- Bases Lexique: appel de fonction
-- S8
-- Correction ateliers S8
+
+retrait
+
+- S4 p1 exemple avec if
 
 
-Lexique
-- docstring (vérifier commentaires)
-- récursivité
-- retour de fonction
+
+
 
 
 
