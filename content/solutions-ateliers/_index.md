@@ -36,5 +36,9 @@ weight = 170
 
 [Semaine 6 - Les chaines de caractères](correction_atelier_caracteres.ipynb)
 
-[Semaine 7 - Révision (à venir)]()
+[Semaine 7 - Révision (à venir)](patience-yoda.gif)
+
+[Semaine 8 - Fonctions](correction-atelier-fonctions.ipynb)
+
+[Semaine 8 - Fonctions](correction-atelier-porteeVaraiables.ipynb)
 

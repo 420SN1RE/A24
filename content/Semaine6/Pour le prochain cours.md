@@ -5,7 +5,7 @@ weight = 64
 
 ## Pour augmenter vos chances de réussite
 
-- Terminer et soumettre l’atelier.
+- Terminer et soumettre le(s) atelier(s).
 - Réviser la matière vue cette semaine, en vue du quiz qui aura lieu au début du prochain cours (arrivez à l’heure)
 - Réviser la matière du cours depuis le début de la session.
 

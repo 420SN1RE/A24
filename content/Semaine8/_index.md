@@ -3,7 +3,6 @@ archetypes = "semaine"
 pre = "<b>8. </b>"
 title = "Les sous-programmes (fonctions)"
 weight = 80
-draft = true
 +++
 
 ## Objectifs de la leçon

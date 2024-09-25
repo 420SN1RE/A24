@@ -57,6 +57,13 @@
       <description>Objectifs de la leçon Réviser les notions vues jusqu’à présent en mettant l’emphase sur les éléments de compétence obligatoires. Plan de la leçon Quiz (10 mins)&#xA;Révision:&#xA;Compréhension de la syntaxe de base : Connaître les types de données, les variables, les opérateurs, et les structures de contrôle comme les conditions et les boucles. Manipulation des structures de données : Savoir utiliser les listes pour organiser et gérer les données. Programmation orientée objet (POO) : Comprendre le concept d’objets à l’aide des chaines de caractères.</description>
     </item>
     <item>
+      <title>Les sous-programmes (fonctions)</title>
+      <link>https://example.org/semaine8/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine8/index.html</guid>
+      <description>Objectifs de la leçon Comprendre les rôles et utilités des sous-programmes. Définir des sous-programmes. Utiliser des sous-programmes. Comprendre le passage de paramètres et la portée des variables. Plan de la leçon Quiz récapitulatif: semaines 1 à 7 (15 mins) Fonctions: Rôles et définition. Déclaration. L’appel. Le passage de paramètres. Le retour de valeurs. La portée des variables. Les fonctions récursives. Ateliers : Les fonctions et la portée des variables Pour la semaine prochaine</description>
+    </item>
+    <item>
       <title>Solutions des ateliers</title>
       <link>https://example.org/solutions-ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

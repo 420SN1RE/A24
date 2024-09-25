@@ -26,9 +26,7 @@ draft = true
 
 [Semaine 6 - Listes et chaines de caractères](correction-atelier-listes-chaines.ipynb)
 
-
-
-[Semaine 7 - Révision](correction-exercice-recap-sem7.ipynb)
+[Semaine 7 - Révision](correction-exercice-recap-sem7.ipynb) *******
 
 [Semaine 8 - Fonctions](correction-atelier-fonctions.ipynb)
 
