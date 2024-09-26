@@ -18,6 +18,12 @@ weight =  62
 Les chaînes de caractères en Python sont puissantes et flexibles. En les traitant comme des listes de caractères, vous pouvez effectuer une variété d’opérations pour manipuler et transformer vos données textuelles. 
 Par exemple: extraire ou chercher des sous-chaînes, les modifier, etc...
 
+
+| Opérations | Définition |
+| ---- | ----|
+| `*` | Multiplie (répète) une chaîne |
+| `+` | Concatène des chaînes |
+
 ## Les chaines de caractères sont des listes
 
 ### Accès aux caractères individuels
@@ -83,23 +89,6 @@ sous_chaine = chaine[1:4]
 print(sous_chaine)  # Affiche onj
 ```
 
-## L'immutabilité des chaînes
-
-Les chaînes en Python sont **immuables**, ce qui signifie qu'une fois créées, elles ne peuvent pas être modifiées. 
-
-{{% notice note %}}
-Toute opération qui semble modifier une chaîne crée en réalité une nouvelle chaîne.
-{{% /notice %}}
-
-
-```python
-chaine = "Bonjour"
-
-# Extraire et concaténer les caractères "Bon" avec "a" et avec "jour"
-chaine_modifiee = chaine[:3] + 'a' + chaine[4:]
-print(chaine_modifiee)  # Affiche Bonajour
-```
-
 ### Conversion entre chaînes et listes
 
 Vous pouvez convertir une chaîne en une liste de caractères et vice versa.
@@ -118,22 +107,39 @@ print(chaine_recomposee)  # Affiche Bonjour
 
 Python fournit de nombreuses méthodes intégrées pour manipuler les chaînes de caractères.
 
-| Méthode | Description |
+| Méthodes | Définition |
 | ---- | ----|
-|  `upper()` | Convertir en majuscules.|
-| `lower()` | Convertir en minuscules.|
-| `replace(old, new)` | Remplacer une sous-chaîne par une autre.|
-| `split(delim)` | Découper une chaîne en une liste de sous-chaînes.|
+| `[ ]` | Accède à un caractère selon sa position |
+| `[pos1:pos2 ]` | Accède aux caractères situés à l'indice `pos1` jusqu'à l'indice précédant `pos2` |
+| `[pos1: ]` | Accède aux caractères situés à l'indice `pos1` jusqu'à la fin de la chaine de caractères |
+| `[:pos2 ]` | Accède au premier caractère (indice 0) jusqu'au caractères à l'indice précédant `pos2` |
+| `len()` | Retourne la longueur de la chaîne |
+| `str()` | Convertit en chaîne de caractères |
+| `lower()` | Convertit tous les caractères de la chaîne en minuscules |
+| `islower()` | Vérifie si une chaîne de caractères est en minuscules et retourne `True` si c'est le cas, `False` sinon |
+| `upper()` | Convertit tous les caractères de la chaîne en majuscules. |
+| `isupper()` | Vérifie si une chaîne de caractères est en majuscules et retourne `True` si c'est le cas, `False` sinon |
+| `strip()` | Supprime les espaces (ou autres caractères spécifiés) au début et à la fin de la chaîne |
+| `isdigit()` | Vérifie si une chaîne de caractères est numérique et retourne `True` si c'est le cas, `False` sinon |
+| `isalpha()` | Vérifie si une chaîne de caractères est alpha-numérique et retourne `True` si c'est le cas, `False` sinon |
+| `replace()` | Remplace toutes les occurrences de la sous-chaîne |
+| `find()` | Renvoie l'indice de la première occurrence de la sous-chaîne |
+| `split(delimiteur)` | Découper une chaîne en une liste de sous-chaînes.|
+| `join()` | Concatène une séquence d'éléments (comme une liste) en une seule chaîne |
+| `replace(ancienne, nouvelle)` | Remplacer une sous-chaîne par une autre.|
 | `strip()` | Supprimer les espaces en début et fin de chaîne.|
 
-Exemples: 
+Quelques exemples: 
 
 ```python
+chaine = "Bonjour"
+
 print(chaine.upper())  # BONJOUR
 print(chaine.replace('o', 'a'))  # Banjaur
 print(chaine.split('o'))  # ['B', 'nj', 'ur']
 print(chaine.strip())  # Bonjour (si des espaces étaient présents)
 ```
+[Exemples avec les chaînes de caractères](../exemples_caracteres.ipynb)
 
 ## Formater les chaines de caractères
 
@@ -179,36 +185,6 @@ Le tableau ci-dessous présente quelques caractères d’échappement couramment
 | `\n` | Retour de ligne |
 | `\\` | Barre oblique inversée (Backslash) |
 
+## Pause 5 minutes
 
-## Manipulation des chaines de caractères
-
-| Opérations | Définition |
-| ---- | ----|
-| `*` | Multiplie (répète) une chaîne |
-| `+` | Concatène des chaînes |
-
----
-
-| Méthodes | Définition |
-| ---- | ----|
-| `[ ]` | Accède à un caractère selon sa position |
-| `[pos1:pos2 ]` | Accède aux caractères situés à l'indice `pos1` jusqu'à l'indice précédant `pos2` |
-| `[pos1: ]` | Accède aux caractères situés à l'indice `pos1` jusqu'à la fin de la chaine de caractères |
-| `[:pos2 ]` | Accède au premier caractère (indice 0) jusqu'au caractères à l'indice précédant `pos2` |
-| `len()` | Retourne la longueur de la chaîne |
-| `str()` | Convertit en chaîne de caractères |
-| `lower()` | Convertit tous les caractères de la chaîne en minuscules |
-| `islower()` | Vérifie si une chaîne de caractères est en minuscules et retourne `True` si c'est le cas, `False` sinon |
-| `upper()` | Convertit tous les caractères de la chaîne en majuscules. |
-| `isupper()` | Vérifie si une chaîne de caractères est en majuscules et retourne `True` si c'est le cas, `False` sinon |
-| `strip()` | Supprime les espaces (ou autres caractères spécifiés) au début et à la fin de la chaîne |
-| `isdigit()` | Vérifie si une chaîne de caractères est numérique et retourne `True` si c'est le cas, `False` sinon |
-| `isalpha()` | Vérifie si une chaîne de caractères est alpha-numérique et retourne `True` si c'est le cas, `False` sinon |
-| `replace()` | Remplace toutes les occurrences de la sous-chaîne |
-| `find()` | Renvoie l'indice de la première occurrence de la sous-chaîne |
-| `split()` | Divise la chaîne en une liste de sous-chaînes |
-| `join()` | Concatène une séquence d'éléments (comme une liste) en une seule chaîne |
-
-## Exemples
-
-[Exemples avec les chaînes de caractères](../exemples_caracteres.ipynb)
+![Pause](../pause.jpg?width=25vw)

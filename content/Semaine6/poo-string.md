@@ -53,7 +53,6 @@ En programmation, l'encapsulation c'est la même chose. Voici quelques exemples 
 - On n'a pas besoin de savoir comment la méthode `print()` est codée à l'intérieur pour l'utiliser pour afficher des phrases. 
 - Idem pour `int()`, `float()`, `str()` ou `bool()` pour convertir des données en entier, en nombre à virgule, en chaine de caractère ou en booléen respectivement.
 
-
 ## Manipulation des chaînes de caractères en tant qu'objets
 
 En plus d'être des listes, les chaines de caractères sont aussi des objets (de la classe `String`). On peut alors utiliser leurs propriétés et méthodes sur des instances de `String`.
@@ -75,22 +74,3 @@ print("nathalie".upper())
 Grâce aux guillemets, Python reconnait que "nathalie" est une chaine de caractères. C'est pour cela qu'on peut utiliser `.upper()` pour la mettre en lettres majuscules.
 {{% /notice %}}
 
-Python fournit de nombreuses méthodes intégrées pour manipuler les chaînes de caractères.
-
-| Méthode | Description |
-| ---- | ----|
-|  `upper()` | Convertir en majuscules.|
-| `lower()` | Convertir en minuscules.|
-| `replace(old, new)` | Remplacer une sous-chaîne par une autre.|
-| `split(delim)` | Découper une chaîne en une liste de sous-chaînes.|
-| `strip()` | Supprimer les espaces en début et fin de chaîne.|
-
-Exemples: 
-
-```python
-chaine1 = "Bonjour"
-chaine2 = "   Bonjour    "
-print(chaine1.replace('o', 'a'))  # Affiche Banjaur
-print(chaine1.split('o'))  # Affiche ['B', 'nj', 'ur']
-print(chaine2.strip())  # Affiche Bonjour 
-```

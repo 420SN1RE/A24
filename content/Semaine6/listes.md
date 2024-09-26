@@ -107,6 +107,8 @@ Les crochets `[]` sont aussi utilisés pour accéder directement à l'élément 
 
 
 ```python
+ma_liste = [6, 3, 8, 9, 7, 3, 1, 2]
+
 # Accès au premier élément
 print(ma_liste[0])  # Affiche 6
 
@@ -123,6 +125,8 @@ print(x)    # Affiche 12
 Les listes sont modifiables, ce qui signifie que l’on peut changer la valeur des éléments :
 
 ```python
+ma_liste = [6, 3, 8, 9, 7, 3, 1, 2]
+
 # La valeur de la case à l'indice 2 est maintenant 0
 ma_liste[2] = 0
 
@@ -356,9 +360,11 @@ Ici, la méthode `index()` commence la recherche à partir de l'indice `2` et tr
 
 ### Trier les éléments d'une liste.
 
-La méthode `ma_list.sort()` en Python est utilisée pour trier les éléments d'une liste. Exemples: 
+La méthode `ma_liste.sort()` en Python est utilisée pour trier les éléments d'une liste. Exemples: 
 
 ```python
+ma_liste = [0, 3, 9, 9, 3, 1]
+
 # La liste est triée en ordre croissant
 ma_liste.sort()
 ```
@@ -430,7 +436,6 @@ print(pairs)  # Affiche [2, 4, 6, 8, 10]
 
 ## D'autres fonctions ou méthodes de listes
 
-
 | Fonction | Description |
 | ---- | ----|
 | `max()` | Retourne la valeur maximum de la liste |
@@ -443,7 +448,3 @@ print(pairs)  # Affiche [2, 4, 6, 8, 10]
 | `copy()` | Retourne une copie superficielle de la liste |
 
 Pour voir des exemples de ces fonctions, [cliquez ici](../exemples_foncListes.ipynb)
-
-## Pause 5 minutes
-
-![Pause](../pause.jpg?width=25vw)
