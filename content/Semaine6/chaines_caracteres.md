@@ -13,7 +13,7 @@ weight =  62
 - Les chaines de caractères sont appelées **string**. 
 - Nous pouvons concaténer des chaînes, mais ce n'est pas tout...
  
-## Opérations sur les chaines de caractères
+##3 Opérations sur les chaines de caractères
 
 Les chaînes de caractères en Python sont puissantes et flexibles. En les traitant comme des listes de caractères, vous pouvez effectuer une variété d’opérations pour manipuler et transformer vos données textuelles. 
 Par exemple: extraire ou chercher des sous-chaînes, les modifier, etc...
