@@ -67,31 +67,36 @@ Fréquence des caractères: [1, 4, 2, 1, 2, 1, 3, 2, 1, 2, 1, 1]
 
 ## Contexte
 
-Vous allez créer un programme qui gère une liste de produits dans un magasin. Le programme doit permettre à l’utilisateur d’ajouter des produits, de les afficher, et de rechercher des produits spécifiques en fonction de leur nom ou de leur prix.
+Vous allez créer un programme qui gère une liste de produits dans un magasin. Le programme doit permettre à l'utilisateur d'ajouter des produits, de les afficher, et de rechercher des produits spécifiques en fonction de leur nom ou de leur prix.
 
-## Instructions
+## Instructions :
 
-1. **Variables et types de données** :
-- Créez une liste vide produits pour stocker les produits.
-- Chaque produit doit être représenté par un dictionnaire contenant les clés nom (chaîne de caractères) et prix (nombre flottant).
+1. **Variables et Types de Données** :
+   - Créez deux listes vides `noms_produits` et `prix_produits` pour stocker les noms et les prix des produits respectivement.
 
-2. **Entrées au clavier** :
-- Demandez à l’utilisateur combien de produits il souhaite ajouter.
-- Utilisez une boucle pour permettre à l’utilisateur d’entrer le nom et le prix de chaque produit.
+2. **Entrées au Clavier** :
+   - Demandez à l'utilisateur combien de produits il souhaite ajouter.
+   - Utilisez une boucle pour permettre à l'utilisateur d'entrer le nom et le prix de chaque produit.
 
 3. **Transtypage** :
-- Assurez vous de convertir les entrées de l’utilisateur en types de données appropriés (par exemple, convertir le prix en nombre flottant).
+   - Assurez vous de convertir les entrées de l'utilisateur en types de données appropriés (par exemple, convertir le prix en nombre flottant).
 
-4. **Structures conditionnelles** :
-- Ajoutez une option pour rechercher un produit par son nom ou par son prix.
-- Si l’utilisateur choisit de rechercher par nom, demandez le nom et affichez les produits correspondants.
-- Si l’utilisateur choisit de rechercher par prix, demandez le prix et affichez les produits dont le prix est inférieur ou égal à ce montant.
+4. **Structures Conditionnelles** :
+   - Ajoutez une option pour rechercher un produit par son nom ou par son prix.
+   - Si l'utilisateur choisit de rechercher par nom, demandez le nom et affichez les produits correspondants.
+   - Si l'utilisateur choisit de rechercher par prix, demandez le prix et affichez les produits dont le prix est inférieur ou égal à ce montant.
 
 5. **Boucles** :
-- Utilisez des boucles pour parcourir la liste des produits et afficher les résultats de la recherche.
+   - Utilisez des boucles pour parcourir les listes des produits et afficher les résultats de la recherche.
 
-6. **Listes et chaînes de caractères** :
-- Affichez la liste complète des produits avec leur nom et leur prix formatés correctement.
+6. **Listes et Chaînes de Caractères** :
+   - Affichez la liste complète des produits avec leur nom et leur prix formatés correctement.
+
+
+### Points à Vérifier :
+- Assurez vous que les entrées de l'utilisateur sont correctement converties en types de données appropriés.
+- Vérifiez que les boucles et les conditions fonctionnent comme prévu.
+- Testez le programme avec différents scénarios pour vous assurer qu'il gère correctement les entrées et les recherches.
 
 
 ## Jeu de test 1 : Ajout et affichage de produits
@@ -168,10 +173,3 @@ Vous allez créer un programme qui gère une liste de produits dans un magasin. 
 
 2. **Sortie Attendue** :
    - Aucun produit trouvé (aucune sortie spécifique attendue pour ce cas, mais le programme ne doit pas planter).
-
-
-## Points à vérifier :
-
-- Assurez vous que les entrées de l’utilisateur sont correctement converties en types de données appropriés.
-- Vérifiez que les boucles et les conditions fonctionnent comme prévu.
-- Testez le programme avec différents scénarios pour vous assurer qu’il gère correctement les entrées et les recherches.
