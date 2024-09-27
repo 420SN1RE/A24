@@ -12,7 +12,15 @@
 
 2) Montrer ipynb S1-S2
 
-3) quiz code vs tests Moodle
+3) quiz code vs tests Moodle 
+
+4) fréquence des quiz (au 2 semaines?)
+
+5) leur donner des pistes d'autonomie (plan de cours et calendriers pour dates, matiere, etc.)
+
+6) Les faaire coder plus avec l'analyse du problème pour qu'ils apprennent à faire le lien entre énoncé et langage
+
+7) clarifier, simplifier les objectifs d'apprentissage
 
 
 Ajout

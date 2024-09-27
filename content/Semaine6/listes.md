@@ -182,6 +182,8 @@ Chaque nouveau nombre est ajouté dans l'ordre. La liste conservera cet ordre, s
 
 ### Insertion d'éléments
 
+La méthode 
+
 ```python
 ma_liste = [0, 9, 9, 3, 1]
 # Insert la valeur 7 à la case 3
