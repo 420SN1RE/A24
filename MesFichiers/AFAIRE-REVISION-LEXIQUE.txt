@@ -18,7 +18,7 @@
 
 5) leur donner des pistes d'autonomie (plan de cours et calendriers pour dates, matiere, etc.)
 
-6) Les faaire coder plus avec l'analyse du problème pour qu'ils apprennent à faire le lien entre énoncé et langage
+6) Les faire coder plus avec l'analyse du problème pour qu'ils apprennent à faire le lien entre énoncé et langage
 
 7) clarifier, simplifier les objectifs d'apprentissage
 

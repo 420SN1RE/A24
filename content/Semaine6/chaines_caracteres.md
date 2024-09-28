@@ -119,15 +119,13 @@ Python fournit de nombreuses méthodes intégrées pour manipuler les chaînes d
 | `islower()` | Vérifie si une chaîne de caractères est en minuscules et retourne `True` si c'est le cas, `False` sinon |
 | `upper()` | Convertit tous les caractères de la chaîne en majuscules. |
 | `isupper()` | Vérifie si une chaîne de caractères est en majuscules et retourne `True` si c'est le cas, `False` sinon |
-| `strip()` | Supprime les espaces (ou autres caractères spécifiés) au début et à la fin de la chaîne |
 | `isdigit()` | Vérifie si une chaîne de caractères est numérique et retourne `True` si c'est le cas, `False` sinon |
 | `isalpha()` | Vérifie si une chaîne de caractères est alpha-numérique et retourne `True` si c'est le cas, `False` sinon |
-| `replace()` | Remplace toutes les occurrences de la sous-chaîne |
 | `find()` | Renvoie l'indice de la première occurrence de la sous-chaîne |
 | `split(delimiteur)` | Découper une chaîne en une liste de sous-chaînes.|
 | `join()` | Concatène une séquence d'éléments (comme une liste) en une seule chaîne |
 | `replace(ancienne, nouvelle)` | Remplacer une sous-chaîne par une autre.|
-| `strip()` | Supprimer les espaces en début et fin de chaîne.|
+| `strip()` | Supprime les espaces (ou autres caractères spécifiés) au début et à la fin de la chaîne |
 
 Quelques exemples: 
 
@@ -140,6 +138,8 @@ print(chaine.split('o'))  # ['B', 'nj', 'ur']
 print(chaine.strip())  # Bonjour (si des espaces étaient présents)
 ```
 [Exemples avec les chaînes de caractères](../exemples_caracteres.ipynb)
+
+[Référence w3schools.com](https://www.w3schools.com/python/python_ref_string.asp)
 
 ## Formater les chaines de caractères
 

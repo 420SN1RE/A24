@@ -450,3 +450,5 @@ print(pairs)  # Affiche [2, 4, 6, 8, 10]
 | `copy()` | Retourne une copie superficielle de la liste |
 
 Pour voir des exemples de ces fonctions, [cliquez ici](../exemples_foncListes.ipynb)
+
+[Référence site w3schools.com](https://www.w3schools.com/python/python_ref_list.asp)
