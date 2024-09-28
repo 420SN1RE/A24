@@ -45,7 +45,7 @@ weight = 74
 ## Accès aux caractères d'une chaine
 
 - On utilise les `[]` et l'indice de position du caractère, comme avec les listes.
-- **NB** : L'indiice du premier caractères ets toujours 0.
+- **NB** : L'indice du premier caractères est toujours 0.
 
 ## Obtenir la longueur d'une chaine de caractères
 
