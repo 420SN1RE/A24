@@ -446,6 +446,7 @@ print(pairs)  # Affiche [2, 4, 6, 8, 10]
 | `extend()` | Ajoute tous les éléments d'une liste dans une autre liste |
 | `clear()` | Efface tous les éléments d'une liste |
 | `index()` | Retourne l'indice du premier élément dont la valeur est égale à celle spécifiée |
+| `insert(position, element)`| Insert un élément à la position designee |
 | `reverse()` | Inverse l'ordre des éléments de la liste |
 | `copy()` | Retourne une copie superficielle de la liste |
 
