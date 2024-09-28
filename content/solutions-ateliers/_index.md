@@ -40,5 +40,5 @@ weight = 170
 
 [Semaine 8 - Fonctions](correction-atelier-fonctions.ipynb)
 
-[Semaine 8 - Fonctions](correction-atelier-porteeVaraiables.ipynb)
+[Semaine 8 - Portées des variables](correction-atelier-porteeVariables.ipynb)
 
