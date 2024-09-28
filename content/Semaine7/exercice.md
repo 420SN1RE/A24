@@ -5,7 +5,7 @@ weight = 75
 
 ![Exos Récapitulatifs](../exos.jpg?width=25vw)
 
-**Objectif :** Ces exercices visent à évaluer votre compréhension de la syntaxe de base, la manipulation des listes et les concepts de programmation orientée objet (POO) en manipulant des chaînes de caractères.
+**Objectif :** Ces exercices visent à évaluer votre compréhension de la syntaxe de base (variables et types de données, l'interaction avec le programme, les expressions booléennes et les conditions, les boucles, la manipulation des listes des chaînes de caractères.
 
 # Exercice 1
 
@@ -69,12 +69,12 @@ Fréquence des caractères: [1, 4, 2, 1, 2, 1, 3, 2, 1, 2, 1, 1]
 
 Vous allez créer un programme qui gère une liste de produits dans un magasin. Le programme doit permettre à l'utilisateur d'ajouter des produits, de les afficher, et de rechercher des produits spécifiques en fonction de leur nom ou de leur prix.
 
-## Instructions :
+## Instructions
 
-1. **Variables et Types de Données** :
+1. **Variables et types de données** :
    - Créez deux listes vides `noms_produits` et `prix_produits` pour stocker les noms et les prix des produits respectivement.
 
-2. **Entrées au Clavier** :
+2. **Entrées au clavier** :
    - Demandez à l'utilisateur combien de produits il souhaite ajouter.
    - Utilisez une boucle pour permettre à l'utilisateur d'entrer le nom et le prix de chaque produit.
 
@@ -89,17 +89,21 @@ Vous allez créer un programme qui gère une liste de produits dans un magasin. 
 5. **Boucles** :
    - Utilisez des boucles pour parcourir les listes des produits et afficher les résultats de la recherche.
 
-6. **Listes et Chaînes de Caractères** :
+6. **Listes et chaînes de caractères** :
    - Affichez la liste complète des produits avec leur nom et leur prix formatés correctement.
 
 
-### Points à Vérifier :
+## Points à vérifier :
+
 - Assurez vous que les entrées de l'utilisateur sont correctement converties en types de données appropriés.
 - Vérifiez que les boucles et les conditions fonctionnent comme prévu.
 - Testez le programme avec différents scénarios pour vous assurer qu'il gère correctement les entrées et les recherches.
 
+## Les jeux de tests
 
-## Jeu de test 1 : Ajout et affichage de produits
+Ces jeux de tests devraient vous permettre de vérifier que votre programme fonctionne correctement avec les deux listes séparées.
+
+### Jeu de test 1 : Ajout et affichage de produits
 
 1. **Entrées** :
    - Nombre de produits : 3
@@ -107,7 +111,7 @@ Vous allez créer un programme qui gère une liste de produits dans un magasin. 
    - Produit 2 : Nom = "Banane", Prix = 0.8
    - Produit 3 : Nom = "Orange", Prix = 1.2
 
-2. **Sortie Attendue** :
+2. **Sortie attendue** :
    - Liste des produits :
      ```
      Nom: Pomme, Prix: 1.5
@@ -115,7 +119,7 @@ Vous allez créer un programme qui gère une liste de produits dans un magasin. 
      Nom: Orange, Prix: 1.2
      ```
 
-## Jeu de test 2 : Recherche par nom
+### Jeu de test 2 : Recherche par nom
 
 1. **Entrées** :
    - Nombre de produits : 2
@@ -124,13 +128,13 @@ Vous allez créer un programme qui gère une liste de produits dans un magasin. 
    - Recherche : nom
    - Nom à rechercher : "Lait"
 
-2. **Sortie Attendue** :
+2. **Sortie attendue** :
    - Produit trouvé :
      ```
      Produit trouvé - Nom: Lait, Prix: 2.5
      ```
 
-## Jeu de test 3 : Recherche par prix
+### Jeu de test 3 : Recherche par prix
 
 1. **Entrées** :
    - Nombre de produits : 4
@@ -141,7 +145,7 @@ Vous allez créer un programme qui gère une liste de produits dans un magasin. 
    - Recherche : prix
    - Prix maximum : 2.0
 
-2. **Sortie Attendue** :
+2. **Sortie attendue** :
    - Produits trouvés :
      ```
      Produit trouvé - Nom: Bonbon, Prix: 0.5
@@ -149,7 +153,7 @@ Vous allez créer un programme qui gère une liste de produits dans un magasin. 
      Produit trouvé - Nom: Jus, Prix: 2.0
      ```
 
-## Jeu de test 4 : Entrée invalide pour la recherche
+### Jeu de test 4 : Entrée invalide pour la recherche
 
 1. **Entrées** :
    - Nombre de produits : 1
@@ -162,7 +166,7 @@ Vous allez créer un programme qui gère une liste de produits dans un magasin. 
      Option de recherche invalide.
      ```
 
-## Jeu de test 5 : Aucun produit trouvé
+### Jeu de test 5 : Aucun produit trouvé
 
 1. **Entrées** :
    - Nombre de produits : 2
@@ -171,5 +175,5 @@ Vous allez créer un programme qui gère une liste de produits dans un magasin. 
    - Recherche : nom
    - Nom à rechercher : "Lait"
 
-2. **Sortie Attendue** :
+2. **Sortie attendue** :
    - Aucun produit trouvé (aucune sortie spécifique attendue pour ce cas, mais le programme ne doit pas planter).
