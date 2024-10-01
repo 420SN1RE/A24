@@ -13,6 +13,21 @@
 2) Montrer ipynb S1-S2
 
 3) quiz code vs tests Moodle 
+- S2: analyse de problèmes
+- S3: 1 ordinogramme + variables + print + transtypage
+- S4: programme (variables, input, types de données et transtypage)
+- S5: programme (variables, input, if, if imbriqués)
+- S6: 2 programmes (boucles while et for)
+- S7: programme (liste et chaines)
+- S8: pas de quiz
+- S9: programme (fonction) 50% matières S1-S6; 50% fonctions
+- S10: exam
+- S11: pas de quiz, début du projet (pandas)
+- S12: pandas, projet (matplotlib)
+- S13: matplot, projet (numpy)
+- S14: numpy, projet
+- S15: eval projet: petits programmes en lien au projet 
+
 
 4) fréquence des quiz (au 2 semaines?)
 
@@ -23,6 +38,8 @@
 7) clarifier, simplifier les objectifs d'apprentissage
 
 8) Classe inversée
+
+9) le quiz commence en même temps pour tout le monde les 10 premières minutes (temps heur debut et fin). Porte fermée. après 5 minutes de pause
 
 
 Ajout

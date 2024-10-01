@@ -32,11 +32,11 @@ draft = true
 
 [Semaine 8 - Fonctions](correction-atelier-fonctions.ipynb)
 
-[Semaine 8 - Fonctions](correction-atelier-porteeVaraiables.ipynb)
+[Semaine 8 - Fonctions](correction-atelier-porteeVariables.ipynb)
 
 
 
-[Semaine 9 - Trace d'exécution](correction-atelier-trace.ipynb)
+[Semaine 9 - Débogage avec print()](correction-atelier-debogage.ipynb)
 
 [Semaine 11 - Pandas](correction-atelier-pandas.ipynb)
 

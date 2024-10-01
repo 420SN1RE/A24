@@ -64,6 +64,13 @@
       <description>Objectifs de la leçon Comprendre les rôles et utilités des sous-programmes. Définir des sous-programmes. Utiliser des sous-programmes. Comprendre le passage de paramètres et la portée des variables. Plan de la leçon Quiz récapitulatif: semaines 1 à 7 (15 mins) Fonctions: Rôles et définition. Déclaration. L’appel. Le passage de paramètres. Le retour de valeurs. La portée des variables. Les fonctions récursives. Ateliers : Les fonctions et la portée des variables Pour la semaine prochaine</description>
     </item>
     <item>
+      <title>Technique de débogage simple</title>
+      <link>https://example.org/semaine9/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine9/index.html</guid>
+      <description>Objectifs de la leçon Comprendre l’importance du débogage Appliquer une technique de débogage simple pour résoudre des bogues courants. Évaluer l’acquisition des éléments de compétence du cours (Examen formatif) Plan de la leçon Quiz: 10 mins L’importance du débogage dans le développement de logiciels. ~5mins Suivre l’exécution d’un programme simple et identifier les erreurs. ~10mins Aperçu aux outils de débogage disponibles dans VS Code. ~5mins Utilisation des points d’arrêt, de l’inspection des variables et de la navigation dans le code.</description>
+    </item>
+    <item>
       <title>Solutions des ateliers</title>
       <link>https://example.org/solutions-ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

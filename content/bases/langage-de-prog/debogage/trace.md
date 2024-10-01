@@ -1,6 +1,6 @@
 +++
 title = "La trace d'exécution"
-weight = 92
+weight = 2
 +++
 
 ![Trace d'exécution](../trace.webp?width=20vw)
@@ -44,8 +44,3 @@ print("La somme des deux nombres saisis est égale à : ", somme)
 | 5 |   | 10 |   |  |
 | 6 |   |   | 15 |  |
 | 7 |   |   |    | La somme des deux nombres saisis est égale à : 15 |
-
-## Atelier
-
-[Trace](../atelier_traces.ipynb) \
-[Fichier excel](../trace.xlsx)

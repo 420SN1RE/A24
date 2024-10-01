@@ -42,3 +42,5 @@ weight = 170
 
 [Semaine 8 - Portées des variables](correction-atelier-porteeVariables.ipynb)
 
+[Semaine 9 - Débogage avec print()](correction-atelier-debogage.ipynb)
+

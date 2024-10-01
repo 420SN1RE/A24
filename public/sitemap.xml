@@ -25,16 +25,19 @@
     <loc>https://example.org/projet-fil-rouge/partie-1/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/bases/langage-de-prog/debogage/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/outils/vs-code/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/operateurs/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/projet-fil-rouge/partie-2/index.html</loc>
+    <loc>https://example.org/bases/langage-de-prog/debogage/trace/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/langage-de-prog/debogage/index.html</loc>
+    <loc>https://example.org/projet-fil-rouge/partie-2/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/index.html</loc>
@@ -223,7 +226,16 @@
     <loc>https://example.org/semaine8/pour-le-prochain-cours/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine9/trace/index.html</loc>
+    <loc>https://example.org/semaine9/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine9/debogage-print/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine9/examen-formatif/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine9/atelier/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/gestionexceptions/index.html</loc>
