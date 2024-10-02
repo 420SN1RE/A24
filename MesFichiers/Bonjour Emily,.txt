@@ -1,0 +1,29 @@
+Bonjour Emily,
+
+La seule date qui me convient c'est vendredi entre 11h40 et 12h30.
+En attendant, tu peux utiliser Google Colab. Voir sur le site du cours: https://420sn1re.github.io/A24/bases/outils/google-colab/index.html
+
+Si tu veux réessayer d'installer les outils sur ton MAC: 
+
+1: Installer VS Code sur ton MAC https://youtu.be/w0xBQHKjoGo?si=d1zrt8NzH879FgrQ
+2: Installer Python sur ton MAC https://youtu.be/nhv82tvFfkM?si=3RYD6TKgiv0-FkNR
+3: Installer Python sur VS Code https://youtu.be/mtCqZZ-7jfg?si=iyPtVeA_eT4I3rVc
+4: Installer Jupyter Notebook sur ton MAC (à partir de 5:33-9:20 ) https://youtu.be/drbaFALFKDg?si=KyRKkZBIMvEBeaqn
+5: Installer Jupyter Notebook sur VS Code
+
+
+
+https://youtu.be/Ob6tPxrLzz4?si=QSPfkTnS-q9srh-t
+
+202498256
+202496928
+202493431
+
+VS Code tips — Debugging Jupyter notebooks
+https://www.youtube.com/watch?v=CY6uZIoF_kQ
+
+
+https://medium.com/codex/how-to-debug-jupyter-notebooks-in-visual-studio-code-3d36039c6f86
+
+
+Base, Jupyter, image ne s'affiche pas
