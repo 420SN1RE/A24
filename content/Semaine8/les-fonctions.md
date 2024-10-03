@@ -26,7 +26,7 @@ def ma_fonction():
 Notez le `:` après les parenthèses et l'**indentation** du bloc de code.
 {{% /notice %}}
 
-## Utilisation des fonctions (l'appel)
+## Utilisation des fonctions (l'appel d'une fonction)
 
 Pour utiliser une fonction, il faut `l'appeler`. Pour ce faire, il suffit d'écrire son nom suivi de parenthèses `()`.
 
@@ -105,7 +105,9 @@ x = carre(5)  # x vaut maintenant 25
 ## La documentation des fonctions (_Docstrings_)
 
 Les docstrings sont des chaînes de caractères utilisées pour documenter les fonctions. Elles sont placées juste après la définition de la fonction.
+
 **Exemple en Python :**
+
 ```python
 def addition(a, b):
     """

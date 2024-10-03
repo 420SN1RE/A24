@@ -41,6 +41,10 @@
 
 9) le quiz commence en même temps pour tout le monde les 10 premières minutes (temps heur debut et fin). Porte fermée. après 5 minutes de pause
 
+10) leur faire changer l'écran partagé
+
+11) leur demander (S2-S4) horaire semaine prochaine, évaluation à venir
+
 
 Ajout
 

@@ -1,0 +1,89 @@
+https://code.visualstudio.com/docs/editor/debugging
+
+# Debugging
+
+One of the key features of Visual Studio Code is its great debugging support. VS Code's built-in debugger helps accelerate your edit, compile, and debug loop.
+
+VIDEO
+
+## User interface
+
+The following diagram shows the main components of the debugging user interface:
+
+[UI](https://code.visualstudio.com/assets/docs/editor/debugging/debugging_hero.png)
+
+1.Run and Debug view: displays all information related to running, debugging, and managing debug configuration settings.
+2.Debug toolbar: has buttons for the most common debugging actions.
+3.Debug console: enables viewing and interacting with the output of your code running in the debugger.
+4.Debug sidebar: during a debug session, lets you interact with the call stack, breakpoints, variables, and watch variables.
+
+## Debugger extensions
+
+VS Code has built-in debugging support for the Node.js runtime and can debug JavaScript, TypeScript, or any other language that gets transpiled to JavaScript.
+
+For debugging other languages and runtimes (including PHP, Ruby, Go, C#, Python, C++, PowerShell and many others), look for Debuggers extensions in the VS Code Marketplace or select Install Additional Debuggers in the top-level Run menu.
+
+Below are several popular extensions which include debugging support:
+
+[image](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+
+## Start debugging
+The following documentation is based on the built-in Node.js debugger, but most of the concepts and features are applicable to other debuggers as well.
+
+It is helpful to first create a sample Node.js application before reading about debugging. You can follow the Node.js walkthrough to install Node.js and create a simple "Hello World" JavaScript application (app.js). Once you have a simple application set up, this page will take you through VS Code debugging features.
+
+## Run and Debug view
+To bring up the Run and Debug view, select the Run and Debug icon in the Activity Bar on the side of VS Code. You can also use the keyboard shortcut Ctrl+Shift+D.
+
+[image](https://code.visualstudio.com/assets/docs/editor/debugging/run.png)
+
+The Run and Debug view displays all information related to running and debugging and has a top bar with debugging commands and configuration settings.
+
+If running and debugging is not yet configured (no launch.json has been created), VS Code shows the Run start view.
+
+[image](https://code.visualstudio.com/assets/docs/editor/debugging/debug-start.png)
+
+##Run menu
+
+The top-level Run menu has the most common run and debug commands:
+
+[image](https://code.visualstudio.com/assets/docs/editor/debugging/debug-menu.png)
+
+
+====
+https://code.visualstudio.com/docs/datascience/jupyter-notebooks
+
+## Debug a Jupyter Notebook
+
+There are two different ways to debug a Jupyter notebook: a simpler mode called "Run by Line", and full debugging mode.
+
+Note: Both of these features require ipykernel 6+. See this wiki page for details about installing or upgrading ipykernel.
+
+## Run by Line
+
+Run by Line lets you execute a cell one line at a time, without being distracted by other VS Code debug features. To start, select the Run by Line button in the cell toolbar:
+
+[image 1](https://code.visualstudio.com/assets/docs/datascience/jupyter/run-by-line.png)
+
+Use the same button to advance by one statement. You can select the cell Stop button to stop early, or the Continue button in the toolbar to continue running to the end of the cell.
+
+## Debug Cell
+
+If you want to use the full set of debugging features supported in VS Code, such as breakpoints and the ability to step in to other cells and modules, you can use the full VS Code debugger.
+
+Start by setting any breakpoints you need by clicking in the left margin of a notebook cell.
+Then select the Debug Cell button in the menu next to the Run button. This will run the cell in a debug session, and will pause on your breakpoints in any code that runs, even if it is in a different cell or a .py file.
+You can use the Debug view, Debug Console, and all the buttons in the Debug Toolbar as you normally would in VS Code.
+Note that debugging cells in a jupyter notebook does not use any of the debug configurations in launch.json. It can be customized instead via settings such as jupyter.debugJustMyCode.
+
+[image 2](https://code.visualstudio.com/assets/docs/datascience/jupyter/debug-cell.png)
+
+## Search through notebook
+
+You can search through a notebook (or parts of it by filtering the search options) by using the keyboard shortcut Ctrl/Cmd + F. Click the Filter option (funnel icon) to search across:
+
+Markdown cell input (Markdown Source)
+Markdown cell output (Rendered Markdown)
+Code cell input (Code Cell Source)
+Code cell output (Cell Output)
+Notebook searches are filtered cell inputs only by default.

@@ -28,6 +28,14 @@ draft = true
 
 [Semaine 7 - Récapitulation Exercice 1](exercice1.ipynb) ***
 
+[Semaine 7 - Récapitulation Exercice 1  Groupe 6 - jeudi 8h](exercice1.ipynb) ***
+
+[Semaine 7 - Récapitulation Exercice 1  Groupe 8 - jeudi 13h30](exercice1.ipynb) ***
+
+[Semaine 7 - Récapitulation Exercice 1  Groupe 7 - vendredi](exercice1.ipynb) ***
+
+[Semaine 7 - Récapitulation Exercice 1  Groupe 5 - mardi](exercice1.ipynb) ***
+
 [Semaine 7 - Récapitulation Exercice 2](exercice2.ipynb) ***
 
 [Semaine 8 - Fonctions](correction-atelier-fonctions.ipynb)

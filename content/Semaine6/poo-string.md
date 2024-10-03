@@ -1,6 +1,7 @@
 +++
 title = "La classe, les objets et l'encapsulation"
 weight = 63
+draft = true
 +++
 
 ![POO et String](../poo-string.jpeg?width=25vw)
