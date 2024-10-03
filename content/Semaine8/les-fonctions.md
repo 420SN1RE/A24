@@ -1,7 +1,6 @@
 +++
 title = "Les fonctions"
 weight = 81
-draft = true
 +++
 
 ![fonctions](../fonction.jpeg?width=25vw)
