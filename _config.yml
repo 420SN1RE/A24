@@ -1,9 +1,16 @@
-title: Mon Site Jekyll
-description: >- # Ce signe permet de continuer la description sur plusieurs lignes
-  Une description de mon site Jekyll.
-baseurl: "" # Laissez vide si vous déployez à la racine du domaine
-url: "https://github.com/420SN1RE/A24.git" # Remplacez par l'URL de votre site
-theme: hugo-relearn # Remplacez par le thème que vous utilisez
+# Fichier _config.yml pour Jekyll
+title: "Mon Site Jekyll avec Hugo Relearn"
+description: "Une brève description de votre site"
+baseurl: "" # le sous-chemin de votre site, par exemple /blog
+url: "https://420SN1RE.github.io/A24" # l'URL de votre site
+
+# Paramètres GitHub Pages
+repository: "420SN1RE/A24" # nom du dépôt GitHub
+
+# Thème
+theme: "hugo-relearn"
+
+# Plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-github-metadata
@@ -13,3 +20,12 @@ plugins:
   - jekyll-readme-index
   - jekyll-default-layout
   - jekyll-titles-from-headings
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Paramètres du thème Hugo Relearn
+relearn:
+  author: "Nathalie Desmangles"
+  showReadingTime: true
+  description: "Programmation en sciences"
+
