@@ -1,6 +1,6 @@
 +++
 title = "Les fonctions récursives"
-weight = 83
+weight = 4
 +++
 
 ![fonctions récursives](../fonction-recursive.jpeg?width=25vw)

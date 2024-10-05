@@ -52,7 +52,7 @@ Vous allez créer un programme en Python pour analyser une chaîne de caractère
 - Si le prénom saisi est "Nathalie" et l'âge 16
 
 ```plaintext
-Bonjour Nathalie, malheureusement, ce programme est réservé au plus de 18 ans et vous n'avez que 16 ans.
+Bonjour Nathalie, malheureusement, ce programme est réservé aux plus de 18 ans et vous n'avez que 16 ans.
 ```
 
 - Si le prénom saisi est "Nathalie" et l'âge 30 et le texte est "Bonjour tout le monde"
