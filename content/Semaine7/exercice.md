@@ -7,6 +7,8 @@ weight = 75
 
 **Objectif :** Ces exercices visent à évaluer votre compréhension de la syntaxe de base (variables et types de données, l'interaction avec le programme, les expressions booléennes et les conditions, les boucles, la manipulation des listes des chaînes de caractères.
 
+En bas de l'énoncé de cet exercice, vous avez des exemples de résultats attendus.
+
 # Exercice 1
 
 ## Contexte
@@ -68,6 +70,9 @@ Fréquence des caractères: [1, 4, 2, 1, 2, 1, 3, 2, 1, 2, 1, 1]
 ## Contexte
 
 Vous allez créer un programme qui gère une liste de produits dans un magasin. Le programme doit permettre à l'utilisateur d'ajouter des produits, de les afficher, et de rechercher des produits spécifiques en fonction de leur nom ou de leur prix.
+
+En bas de l'énoncé de cet exercice, vous avez des jeux de tests à utiliser pour vous assurer de traiter tous les cas possibles.
+
 
 ## Instructions
 
@@ -177,3 +182,7 @@ Ces jeux de tests devraient vous permettre de vérifier que votre programme fonc
 
 2. **Sortie attendue** :
    - Aucun produit trouvé (aucune sortie spécifique attendue pour ce cas, mais le programme ne doit pas planter).
+
+# Exercice 1 - Version 2
+
+Modifiez le code de l'exercice 1 pour que **tant que** l'âge de l'utilisateur n'est pas supérieur ou égal à 18 ans, on lui redemande son age.
