@@ -32,8 +32,8 @@ weight = 110
 		- Nettoyage de données (manquantes, nulles)
 	- Calcul de statistiques descriptives.
 	- Groupement de données.
-	- Présentation du Projet Final (Partie 1) - À VENIR
 - Pause 5 mins
+	- Présentation du Projet Final (Partie 1) - À VENIR
 - Atelier
 - Pour la semaine prochaine
 

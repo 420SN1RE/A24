@@ -22,9 +22,6 @@
     <loc>https://example.org/bases/outils/installations/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/projet-fil-rouge/partie-1/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/bases/langage-de-prog/debogage/index.html</loc>
   </url>
   <url>
@@ -37,25 +34,16 @@
     <loc>https://example.org/bases/langage-de-prog/debogage/trace/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/projet-fil-rouge/partie-2/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/lecture-donnees/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/projet-fil-rouge/partie-3/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/if-else-elif/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/fonction-recursive/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/projet-fil-rouge/partie-4/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/while/index.html</loc>
@@ -250,10 +238,10 @@
     <loc>https://example.org/semaine11/pandas/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine11/atelier/index.html</loc>
+    <loc>https://example.org/semaine11/projet/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine11/projet/index.html</loc>
+    <loc>https://example.org/semaine11/atelier/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine12/matplotlib/index.html</loc>
@@ -296,9 +284,6 @@
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/projet-fil-rouge/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/tags/index.html</loc>

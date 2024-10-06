@@ -25,6 +25,6 @@ weight = 100
 
 ### Format de l'examen (**Détails à confirmer sous peu**)
 
-**Durée** : 2 heures (SAA[^1]: Le 2h40)
+**Durée** : 2 heures (SAA[^1]: 2h40)
 
 [^1]: Les étudiants du Service d'aide à l'apprentissage (SAA) pourront faire l'examen dans la salle de classe ET bénéficier de leur temps supplémentaire.

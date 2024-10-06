@@ -75,7 +75,7 @@
       <link>https://example.org/semaine10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine10/index.html</guid>
-      <description>Matière Semaine 1 à 9 inclusivement Analyse de problèmes Algorithmie: Ordinogramme La base de python: Variables, Les types de données, les opérateurs Lecture, affichage de données Structures conditionnelles Structures répétitives Listes et les chaines de caractères Fonctions et la portée des variables Débogage avec print Documentation permise (À confirmer sous peu) Format de l’examen (Détails à confirmer sous peu) Durée : 2 heures (SAA1: Le 2h40)&#xA;Les étudiants du Service d’aide à l’apprentissage (SAA) pourront faire l’examen dans la salle de classe ET bénéficier de leur temps supplémentaire.</description>
+      <description>Matière Semaine 1 à 9 inclusivement Analyse de problèmes Algorithmie: Ordinogramme La base de python: Variables, Les types de données, les opérateurs Lecture, affichage de données Structures conditionnelles Structures répétitives Listes et les chaines de caractères Fonctions et la portée des variables Débogage avec print Documentation permise (À confirmer sous peu) Format de l’examen (Détails à confirmer sous peu) Durée : 2 heures (SAA1: 2h40)&#xA;Les étudiants du Service d’aide à l’apprentissage (SAA) pourront faire l’examen dans la salle de classe ET bénéficier de leur temps supplémentaire.</description>
     </item>
     <item>
       <title>Pandas et présentation du projet final</title>
@@ -97,13 +97,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/bases/index.html</guid>
       <description>Ici vous trouverez diverses informations sur Python et sur les outils utilisés dans le cours ou que vous pouvez utiliser sur votre ordinateur personnel à la maison.&#xA;Cette section est divisée en trois catégories:&#xA;1. Langage de programmation&#xD;2. Outils&#xD;3. Lexique</description>
-    </item>
-    <item>
-      <title>Projet-Fil-Rouges</title>
-      <link>https://example.org/projet-fil-rouge/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/projet-fil-rouge/index.html</guid>
-      <description></description>
     </item>
   </channel>
 </rss>

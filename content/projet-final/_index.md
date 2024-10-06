@@ -29,7 +29,7 @@ Le projet comporte 4 étapes :
 - Étape 3 : Analyse des données (Semaine 13)
 - Étape 4 : Rédaction du rapport en programmation lettrée. (Semaine 14)
 
-Semaine 15: Évaluation (30%)
+Semaine 15: **Évaluation (40%)**
 
 # Mise en situation - En construction
 

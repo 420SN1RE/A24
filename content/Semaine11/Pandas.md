@@ -341,6 +341,10 @@ Dans cet exemple, nous avons deux DataFrames `df1` et `df2`. Nous utilisons la f
 1   2     Robert   30
 ```
 
+## Pause 5 minutes
+
+![Pause](../pause.jpg?width=25vw)
+
 ## Gestion des données de type date
 
 Travailler avec des données temporelles est essentiel dans de nombreuses disciplines scientifiques. Pandas rend cette tâche beaucoup plus simple en fournissant des outils pour manipuler et analyser les dates. 
@@ -778,3 +782,11 @@ Nous verrons comment utiliser la bibliothèque Matplotlib pour tracer des graphi
 {{% /notice %}}
 
 Pour tout savoir sur Pandas: [Site officiel Pandas](https://pandas.pydata.org/ "Pandas").
+
+## Pause 5 minutes
+
+![Pause](../pause.jpg?width=25vw)
+
+## Présentation du projet final (Étape 1)
+
+[Projet final](https://420sn1re.github.io/A24/semaine11/projet/index.html#projet---fil-rouge
