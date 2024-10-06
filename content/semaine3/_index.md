@@ -16,7 +16,7 @@ weight = 30
 
 ## Plan de la leçon
 
-- **Mini-quiz #2**: Ordinogrammes et base de Python (10 mins)
+- **Quiz**: Ordinogrammes et base de Python (10 mins)
 - Lecture de données et affichage textuel des résultats **~15mins**
 - Documentation du code **~5mins**
 - Pause 5 mins

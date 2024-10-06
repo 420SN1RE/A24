@@ -1,7 +1,7 @@
 +++
-chapter = false
+archetypes = "semaine"
 pre = "<b>13. </b>"
-title = "La bibliothèque NumPy"
+title = "NumPy"
 weight = 130
 draft = true
 +++
@@ -13,7 +13,7 @@ draft = true
 
 ## Plan de la leçon
 
-- **Mini-quiz #11**:  10 mins
-- **Pause** 5 mins
-- Pour la semaine prochaine 5 mins
+- **Quiz**:  bibliothèque Matplotlib (10 mins)
+- Pause 5 mins
+- Pour la semaine prochaine
 

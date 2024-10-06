@@ -44,3 +44,10 @@ for element in ma_liste:
 sous_liste = ma_liste[1:3]  # Prend les éléments de l'indice 1 à 2
 ```
 
+## Comment obtenir l'indice (position) d'un élément dans une liste
+
+```python
+ma_liste.index(element, debut, fin)
+```
+
+

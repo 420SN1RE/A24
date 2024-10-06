@@ -11,7 +11,7 @@ weight = 70
 
 ## Plan de la leçon
 
-- **Quiz** (10 mins)
+- **Quiz**: Les listes et les chaines de caractères (10 mins)
 - Révision:
 
 	1. **Compréhension de la syntaxe de base** : Connaître les types de données, les variables, les opérateurs, et les structures de contrôle comme les conditions et les boucles.

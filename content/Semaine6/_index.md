@@ -16,7 +16,7 @@ weight = 60
 
 ## Plan de la leçon
 
-- **Quiz** (10 mins)
+- **Quiz**: Les boucles (10 mins)
 - L'importance des listes en programmation et en contexte scientifique.       **~5mins**
 - Création, accès, modification, ajout et suppression d'éléments d'une liste. **~15mins**
 - Pause 5 minutes.

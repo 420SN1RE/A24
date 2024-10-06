@@ -14,7 +14,7 @@ weight = 90
 
 ## Plan de la leçon
 
-- **Quiz**:  10 mins
+- **Quiz**: Les fonctions  (10 mins)
 - L’importance du débogage dans le développement de logiciels. **~5mins**
 - Suivre l’exécution d’un programme simple et identifier les erreurs. **~10mins**
 - Aperçu aux outils de débogage disponibles dans VS Code. **~5mins**

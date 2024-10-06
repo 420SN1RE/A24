@@ -1,0 +1,28 @@
+Bonjour à tous,
+
+Lisez bien ce qui suis.
+
+À la semaine #8 (voir plus bas dans ce courriel les dates basées sur le calendrier scolaire et la répartition des semaines), le quiz comptera pour 2 quiz, afin de reprendre un quiz qui avait été annulé au début de la session.
+
+Ce quiz portera sur toute la matière vue (semaine #1 à la semaine #6 inclusivement). 
+
+Voici quelques informations:
+
+- Le quiz sera entièrement sur Moodle
+- Il y aura 2 exercices à coder (écrire dans Moodle)
+- Pour chaque exercices, le maximum de ligne à écrire ne dépassera pas 10 lignes
+- Les critères de correction seront sur:
+   - Le respect de la syntaxe et de l'indentation
+   - L'emploi des bonnes structures (ex: if, elif, else, for, range, while)
+   - L'utilisation pertinent du transtypage (int(), float(), str(), bool(), list())
+   - L'utilisation des bonnes fonctions/méthodes (ex: print, input, append, len, sort, etc.)
+   - Le respect de l'énoncé des exercices (lisez bien ce qui sera demandé)
+
+Dates
+
+Groupe #6: jeudi 17 octobre 8h
+Groupe #8: jeudi 17 octobre 13h30
+Groupe #5: mardi 22 octobre
+Groupe #7*: vendredi 25 octobre
+
+*En raison de mon absence du 18 octobre

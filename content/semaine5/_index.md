@@ -15,7 +15,7 @@ weight = 50
 
 ## Plan de la leçon
 
-- **Quiz** (10 mins)
+- **Quiz**: Interaction avec le programme et les conditions (10 mins)
 - Les instructions répétitives en générale **~5mins**
 - La boucle WHILE **~15mins**
 - Pause 5 minutes.

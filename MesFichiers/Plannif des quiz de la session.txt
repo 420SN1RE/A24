@@ -1,0 +1,29 @@
+Semaine 2: Quiz analyse de problème (ANNULÉ)
+Semaine 3: Quiz ordinogramme (ANNULÉ pour les groupes 5 et 7)
+Semaine 4: Quiz Interaction avec le programme
+Semaine 5: Quiz IF-ELIF-ELSE
+Semaine 6: Quiz boucles
+Semaine 7: Quiz listes et chaines
+Semaine 8: Quiz récapitulatif
+Semaine 9: Quiz fonctions et examen formatif
+Semaine 10 : Examen
+Semaine 11: pas de quiz
+Semaine 12: Quiz pandas
+Semaine 13: Quiz matplotlib
+Semaine 14: Quiz numpy
+
+H2024
+Semaine 1: présentation du cours et de l'environnement de travail
+Semaine 2: Premier script et variables et types de données (pbl operations str et int/float)
+Semaine 3: Quiz analyse de problème et ordinogramme (4%)
+Semaine 4: -- Minitest
+Semaine 5: Quiz Interaction avec le programme et IF-ELIF-ELSE (4%)
+Semaine 6: --
+Semaine 7: Quiz boucles et listes et chaines (4%)
+Semaine 8: --
+Semaine 9: Quiz fonctions et examen formatif (4%)
+Semaine 10 : Examen
+Semaine 11: --
+Semaine 12: Quiz pandas et matplotlib (4%)
+Semaine 13: --
+Semaine 14: Quiz numpy (?4%)

@@ -5,20 +5,19 @@ weight = 111
 
 ![Bibliothèque Pandas](../pandas.jpg?width=25vw)
 
-## Qu'est-ce que Pandas et pourquoi l'utiliser ?
 
-Pandas a été développé pour fournir des structures de données flexibles et intuitives, permettant de **manipuler facilement des tableaux de données** avec des étiquettes de variables (colonnes) et d’individus (lignes).
-Pandas a été créé par Wes McKinney en 2008, depuis, elle est devenue une bibliothèque de référence pour l’analyse de données en Python.
-Pandas se distingue par sa capacité à manipuler des **données hétérogènes** et étiquetées, contrairement à **NumPy** qui est principalement utilisé pour les tableaux numériques homogènes. 
-De plus, Pandas intègre des fonctionnalités de visualisation via Matplotlib
-Les principales structures de données de Pandas sont les **Series** et les **DataFrames**.
+## Qu'est-ce que pandas?
 
-## Utilisation de Pandas
+Pandas est une bibliothèque Python utilisée pour la manipulation et l'analyse de données. Elle est particulièrement utile pour traiter de grandes quantités de données expérimentales. 
 
-Pour commencer, vous devez l'importer dans votre script Python :
+Ce cours couvre les concepts de base de Pandas, en mettant l'accent sur les applications pratiques dans les sciences.
 
-```python
-import pandas as pd
+## Installation de Pandas (déjà fait sur les ordinateurs du cégep)
+
+Avant de commencer, assurez vous d'avoir Pandas installé. Vous pouvez l'installer via pip :
+
+```bash
+pip install pandas
 ```
 
 Pour vérifier que Pandas est bien installé sur votre environnement :
@@ -28,515 +27,754 @@ Pour vérifier que Pandas est bien installé sur votre environnement :
 pd.__version__
 ```
 
-## Les structures de données de base
+## Étape obligatoire avant d'utiliser Pandas
+
+Pour commencer, vous devez l'importer dans votre code.
+
+```python
+import pandas as pd
+```
+
+## Structures de données de base
 
 ### Les Series
 
-- Une **Series** est une structure de données **unidimensionnelle** similaire à une liste ou un tableau. 
-- Chaque élément d’une Series a un **index**, ce qui permet un accès rapide et efficace aux données.
-- L'index du premier élément est 0, le deuxième élément 1, etc.
-- Pour une Series de taille n éléments, les index seront donc de 0 à n-1.
+Une `Series` est une structure de données **unidimensionnelle** semblable à une **liste**. Elle peut contenir des données de tout type (entiers, flottants, chaînes, etc.).
 
-#### Comment créer une Series ?
+#### Création d'une série et accès à ses éléments
 
-Pour créer une Series, vous pouvez utiliser une **liste**, un **dictionnaire** ou même un **tableau NumPy**. Voici quelques exemples :
-
-````python
-# Importation de la bibliothèque Pandas
+```python
 import pandas as pd
 
-# Création d'une Series à partir d'une liste
-ma_serie = pd.Series([1, 3, 5, 7, 9])
-print(ma_serie)
+# Création d'une Series
+ma_serie = pd.Series([1, 2, 3, 4, 5])
+print(f"La série:\n{ma_serie}")
 
-# Création d'une Series à partir d'un dictionnaire
-data = {'a': 1, 'b': 2, 'c': 3}
-ma_serie = pd.Series(data)
-print(ma_serie)
-````
-
-#### Comment accéder et sélectionner des données dans une Series ?
-
-Vous pouvez accéder aux éléments d’une Series en utilisant leur index :
-
-````python
 # Accès par position
-print(ma_serie[0])  # La donnée en première position
+print(f"Premier élément: {ma_serie[0]}")  # La donnée en première position
+```
 
-# Accès par étiquette
-print(ma_serie['a'])   # La donnée à l'index 'a'
-````
+**Affiche**:
+```plaintext
+La série:
+0    1
+1    2
+2    3
+3    4
+4    5
+dtype: int64
+Premier élément: 1
+```
 
-## Les DataFrames
+### Les *DataFrames*
 
-Un **DataFrame** est une structure de données **bidimensionnelle** avec des étiquettes de lignes et de colonnes. 
-Il est similaire à une **feuille de calcul** ou une table de base de données.
+Un `DataFrame` est une structure de données **bidimensionnelle** avec des étiquettes de **lignes** et de **colonnes**. C'est l'équivalent d'une feuille de calcul comme Excel.
 
-#### Comment créer un DataFrame ?
+#### Création d'un *DataFrame*
 
-Vous pouvez créer un DataFrame à partir de diverses sources de données, telles que des **listes de listes**, des **dictionnaires de listes**, ou des **fichiers CSV**.
-
-````python
-# Création d'un DataFrame à partir d'un dictionnaire de listes
-data = {
-    'Nom': ['Julie', 'Robert', 'Charles'],
-    'Age': [25, 30, 35],
-    'Ville': ['Montréal', 'Laval', 'Rimouski']
+```python
+# Création d'un DataFrame
+donnee = {
+    "Nom": ["Aline", "Robert", "Charles"],
+    "Âge": [25, 30, 35],
+    "Note": [85.5, 90.3, 78.9]
 }
-df = pd.DataFrame(data)
+df = pd.DataFrame(donnee)
 print(df)
-````
+```
 
-#### Comment accéder et sélectionner des données dans un DataFrame ?
+**Affiche**:
+```plaintext
+       Nom  Âge  Note
+0    Aline   25  85.5
+1   Robert   30  90.3
+2  Charles   35  78.9
+```
 
-Vous pouvez sélectionner des colonnes, des lignes ou des sous-ensembles de données en utilisant des méthodes comme `loc` et `iloc`.
+#### Création d'un *Dataframe* à partir d'une Serie
 
-````python
-# Sélection d'une colonne
-print(df['Nom'])
-
-# Sélection de plusieurs colonnes
-print(df[['Nom', 'Age']])
-
-# Sélection de lignes par étiquette
-print(df.loc[0])
-
-# Sélection de lignes par position
-print(df.iloc[0])
-````
-
-## Le traitement de fichiers textes
-
-Le traitement des fichiers texte, tels que les fichiers CSV, est essentiel en programmation Python, en particulier dans le domaine de la science des données.
-
-## Introduction aux fichiers CSV
-
-CSV signifie **Comma-Separated Values** (valeurs séparées par des virgules). C'est un format de fichier simple utilisé pour stocker des données tabulaires, comme une feuille de calcul Excel ou une base de données.
-
-## Lecture d'un fichier CSV
-
-La bibliothèque Pandas fournit une fonction `read_csv()` pour lire les fichiers CSV et les convertir en DataFrame.
+La méthode `to_frame()` permet de transformer une série en un DataFrame avec une seule colonne. Cela peut être utile lorsque vous souhaitez appliquer des opérations ou des méthodes spécifiques aux DataFrames sur une série.
 
 ```python
 import pandas as pd
 
-df = pd.read_csv('fichier.csv')
-```
-**Explications** :
+# Création d'une série
+ma_serie = pd.Series([1, 2, 3, 4, 5], name='Valeurs')
 
-- `pd.read_csv('fichier.csv')` : Cette fonction lit le fichier CSV nommé 'fichier.csv'. Le fichier est supposé se trouver dans le même répertoire que le script Python. La fonction retourne un DataFrame où chaque ligne du CSV devient une ligne dans le DataFrame, et les en-têtes de colonne du CSV deviennent les noms de colonne du DataFrame.
+# Conversion de la série en DataFrame
+df = ma_serie.to_frame()
 
-- `df = ` : Cette partie du code assigne le DataFrame retourné par `pd.read_csv('fichier.csv')` à la variable `df`. Après cette ligne de code, vous pouvez utiliser `df` pour vous référer au DataFrame.
-
-## Écriture dans un fichier CSV
-
-Pandas fournit également une fonction `to_csv()` pour écrire un DataFrame dans un fichier CSV.
-
-```python
-df.to_csv('nouveau_fichier.csv', index=False)
+# Affichage du DataFrame
+print(df)
 ```
 
-**Explications** :
+**Affiche**:
 
-- `df.to_csv()` : Cette fonction écrit le contenu du DataFrame `df` dans un fichier CSV.
+```plaintext
+   Valeurs
+0        1
+1        2
+2        3
+3        4
+4        5
+```
 
-- `'nouveau_fichier.csv'` : C'est l'argument de la fonction `to_csv()`, qui spécifie le nom du fichier CSV dans lequel les données seront écrites. Dans ce cas, le fichier s'appellera 'nouveau_fichier.csv'.
+Dans cet exemple, `ma_serie` est convertie en un DataFrame `df` avec une seule colonne nommée "Valeurs". 
 
-- `index=False` : C'est un autre argument de la fonction `to_csv()`. Lorsqu'il est défini sur `False`, cela signifie que les indices des lignes du DataFrame ne seront pas écrits dans le fichier CSV. Par défaut, `to_csv()` écrit les indices des lignes dans le fichier CSV, donc si vous ne voulez pas cela, vous devez spécifier `index=False`.
+#### Accès aux colonnes et aux lignes d'un *DataFrame*
 
-## Les paramètres de la méthode `read_csv`
+Les méthodes `df.loc` et `df.iloc` de pandas sont utilisées pour accéder aux données dans un *DataFrame*, mais elles fonctionnent de manière différente :
 
-| Paramètre          | Description                                                                 |
-|--------------------|-----------------------------------------------------------------------------|
-| `filepath_or_buffer` | Chemin du fichier ou objet de type fichier à lire.                          |
-| `sep`              | Caractère ou motif regex à utiliser comme délimiteur (par défaut ',').       |
-| `delimiter`        | Alias pour `sep`.                                                            |
-| `header`           | Ligne(s) à utiliser comme en-têtes de colonnes (par défaut 'infer').         |
-| `names`            | Liste des noms de colonnes à utiliser.                                       |
-| `index_col`        | Colonne(s) à utiliser comme index des lignes.                                |
-| `usecols`          | Liste des colonnes à lire.                                                   |
-| `dtype`            | Type de données pour les colonnes.                                           |
-| `engine`           | Moteur de parsing à utiliser ('c' ou 'python').                              |
-| `converters`       | Dictionnaire de fonctions de conversion pour les colonnes.                   |
-| `true_values`      | Liste des valeurs à considérer comme True.                                   |
-| `false_values`     | Liste des valeurs à considérer comme False.                                  |
-| `skipinitialspace` | Ignore les espaces après le délimiteur.                                      |
-| `skiprows`         | Lignes à ignorer au début du fichier.                                        |
-| `skipfooter`       | Lignes à ignorer à la fin du fichier.                                        |
-| `nrows`            | Nombre de lignes à lire.                                                     |
-| `na_values`        | Valeurs supplémentaires à considérer comme NA/NaN.                           |
-| `keep_default_na`  | Garde les valeurs par défaut comme NA/NaN.                                   |
-| `na_filter`        | Détecte les valeurs NA/NaN.                                                  |
-| `verbose`          | Affiche des informations supplémentaires lors de la lecture.                 |
-| `skip_blank_lines` | Ignore les lignes vides.                                                     |
-| `parse_dates`      | Tente de convertir les colonnes en dates.                                    |
-| `infer_datetime_format` | Infère le format des dates.                                             |
-| `keep_date_col`    | Garde la colonne d'origine après conversion en date.                         |
-| `date_parser`      | Fonction pour analyser les dates.                                            |
-| `dayfirst`         | Considère le premier jour dans les dates.                                    |
-| `cache_dates`      | Met en cache les dates converties.                                           |
-| `iterator`         | Retourne un objet d'itération.                                               |
-| `chunksize`        | Nombre de lignes par itération.                                              |
-| `compression`      | Type de compression à utiliser.                                              |
-| `thousands`        | Caractère utilisé pour les séparateurs de milliers.                          |
-| `decimal`          | Caractère utilisé pour le séparateur décimal.                                |
-| `lineterminator`   | Caractère utilisé pour terminer les lignes.                                  |
-| `quotechar`        | Caractère utilisé pour les citations.                                        |
-| `quoting`          | Contrôle la citation des champs.                                             |
-| `doublequote`      | Contrôle le doublement des citations.                                        |
-| `escapechar`       | Caractère utilisé pour échapper les délimiteurs.                             |
-| `comment`          | Caractère utilisé pour indiquer les commentaires.                            |
-| `encoding`         | Encodage du fichier.                                                         |
-| `encoding_errors`  | Gestion des erreurs d'encodage.                                              |
-| `dialect`          | Dialecte à utiliser pour le parsing.                                         |
-| `on_bad_lines`     | Action à prendre pour les lignes incorrectes.                                |
-| `delim_whitespace` | Utilise les espaces comme délimiteurs.                                       |
-| `low_memory`       | Utilise moins de mémoire lors de la lecture.                                 |
-| `memory_map`       | Utilise la mémoire mappée pour la lecture.                                   |
-| `float_precision`  | Précision des nombres flottants.                                             |
-| `storage_options`  | Options de stockage supplémentaires.                                         |
+- **`df.loc`** : est basée sur les noms des lignes et des colonnes pour sélectionner les données. Par exemple :
+  ```python
+  df.loc['nom_ligne', 'nom_colonne']
+  ```
+  - **Avantages** : Plus intuitif lorsque vous travaillez avec des étiquettes de lignes et de colonnes.
+  - **Inconvénients** : Peut être plus lent que `iloc` pour de grandes quantités de données.
 
-## Les paramètres de la méthode `to_csv`
+- **`df.iloc`** : est basée sur les indices numériques des lignes et des colonnes pour sélectionner les données. Par exemple :
+  ```python
+  df.iloc[0, 1]
+  ```
+  - **Avantages** : Plus rapide et utile pour des opérations basées sur des positions.
+  - **Inconvénients** : Moins intuitif si vous ne connaissez pas les positions exactes des lignes et des colonnes¹².
 
-| Paramètre          | Description                                                                 |
-|--------------------|-----------------------------------------------------------------------------|
-| `filepath_or_buffer` | Chemin du fichier ou objet de type fichier à lire.                          |
-| `sep`              | Caractère ou motif regex à utiliser comme délimiteur (par défaut ',').       |
-| `delimiter`        | Alias pour `sep`.                                                            |
-| `header`           | Ligne(s) à utiliser comme en-têtes de colonnes (par défaut 'infer').         |
-| `names`            | Liste des noms de colonnes à utiliser.                                       |
-| `index_col`        | Colonne(s) à utiliser comme index des lignes.                                |
-| `usecols`          | Liste des colonnes à lire.                                                   |
-| `dtype`            | Type de données pour les colonnes.                                           |
-| `engine`           | Moteur de parsing à utiliser ('c' ou 'python').                              |
-| `converters`       | Dictionnaire de fonctions de conversion pour les colonnes.                   |
-| `true_values`      | Liste des valeurs à considérer comme True.                                   |
-| `false_values`     | Liste des valeurs à considérer comme False.                                  |
-| `skipinitialspace` | Ignore les espaces après le délimiteur.                                      |
-| `skiprows`         | Lignes à ignorer au début du fichier.                                        |
-| `skipfooter`       | Lignes à ignorer à la fin du fichier.                                        |
-| `nrows`            | Nombre de lignes à lire.                                                     |
-| `na_values`        | Valeurs supplémentaires à considérer comme NA/NaN.                           |
-| `keep_default_na`  | Garde les valeurs par défaut comme NA/NaN.                                   |
-| `na_filter`        | Détecte les valeurs NA/NaN.                                                  |
-| `verbose`          | Affiche des informations supplémentaires lors de la lecture.                 |
-| `skip_blank_lines` | Ignore les lignes vides.                                                     |
-| `parse_dates`      | Tente de convertir les colonnes en dates.                                    |
-| `infer_datetime_format` | Infère le format des dates.                                             |
-| `keep_date_col`    | Garde la colonne d'origine après conversion en date.                         |
-| `date_parser`      | Fonction pour analyser les dates.                                            |
-| `dayfirst`         | Considère le premier jour dans les dates.                                    |
-| `cache_dates`      | Met en cache les dates converties.                                           |
-| `iterator`         | Retourne un objet d'itération.                                               |
-| `chunksize`        | Nombre de lignes par itération.                                              |
-| `compression`      | Type de compression à utiliser.                                              |
-| `thousands`        | Caractère utilisé pour les séparateurs de milliers.                          |
-| `decimal`          | Caractère utilisé pour le séparateur décimal.                                |
-| `lineterminator`   | Caractère utilisé pour terminer les lignes.                                  |
-| `quotechar`        | Caractère utilisé pour les citations.                                        |
-| `quoting`          | Contrôle la citation des champs.                                             |
-| `doublequote`      | Contrôle le doublement des citations.                                        |
-| `escapechar`       | Caractère utilisé pour échapper les délimiteurs.                             |
-| `comment`          | Caractère utilisé pour indiquer les commentaires.                            |
-| `encoding`         | Encodage du fichier.                                                         |
-| `encoding_errors`  | Gestion des erreurs d'encodage.                                              |
-| `dialect`          | Dialecte à utiliser pour le parsing.                                         |
-| `on_bad_lines`     | Action à prendre pour les lignes incorrectes.                                |
-| `delim_whitespace` | Utilise les espaces comme délimiteurs.                                       |
-| `low_memory`       | Utilise moins de mémoire lors de la lecture.                                 |
-| `memory_map`       | Utilise la mémoire mappée pour la lecture.                                   |
-| `float_precision`  | Précision des nombres flottants.                                             |
-| `storage_options`  | Options de stockage supplémentaires.                                         |
+En résumé, utilisez `loc` lorsque vous travaillez avec des étiquettes et `iloc` lorsque vous travaillez avec des indice (nombres entiers).
 
-Pour plus de fonctions : [Site officiel Pandas](https://pandas.pydata.org/docs/reference/index.html "Pandas").
-
-## Manipulation des données
-
-Une fois que les données sont chargées dans un DataFrame, vous pouvez utiliser les nombreuses fonctionnalités de Pandas, pour manipuler les données. 
-Par exemple, pour les nettoyer, filtrer les lignes, trier les données, grouper les données, etc.
-
-## Manipulation de données
-
-La manipulation de données est une étape importante dans l'analyse de données. Elle permet de **nettoyer**, **transformer** et **préparer les données** pour une analyse plus approfondie. Pandas offre une multitude de méthodes pour manipuler les données de manière efficace et flexible.
-
-### Exploration des données
-
-Avant de nettoyer les données, c'est important de comprendre la structure et le contenu de vos données. 
-Pour obtenir un aperçu de vos données utilisez les méthodes suivantes:
-- `head()` 
-- `info()` et
-- `describe()`.
-
-```python
-df.head()
-df.head(n) # où n est le nombre de lignes à afficher
-df.info()
-df.describe()
-df['colonne'].describe() # où 'colonne' est le nom de la colonne à afficher
-````
-
-### Nettoyage de données
-
-Le nettoyage des données est souvent la première étape dans la manipulation de données. Cela inclut :
-- la gestion des valeurs manquantes, 
-- la suppression des doublons et 
-- la correction des erreurs de données.
-
-#### La gestion des valeurs manquantes
-
-Les valeurs manquantes peuvent être gérées de différentes manières, comme les **supprimer** ou les **remplacer** par une valeur spécifique.
+**Exemples:**
 
 ```python
 import pandas as pd
 
-# Création d'un DataFrame avec des valeurs manquantes
-data = {'Nom': ['Julie', 'Robert', 'Charles'], 'Age': [25, None, 35], 'Ville': ['Montréal', 'Laval', None]}
-df = pd.DataFrame(data)
+# Création du dataframe
+donnee = {
+    'Nom': ['Aline', 'Robert', 'Charles'],
+    'Âge': [25, 30, 35],
+    'Note': [85.5, 90.3, 78.9]
+}
+df = pd.DataFrame(donnee)
+print(f"Le dataframe \n{df}")
+print()
 
-# Suppression des lignes avec des valeurs manquantes
-df_suppr = df.dropna()
-print(df_suppr)
+# Utilisation de df.loc
+# Sélection de la ligne avec l'index 1 (Robert)
+ligne_loc = df.loc[1]
+print("Utilisation de df.loc pour sélectionner la ligne avec l'index 1:")
+print(ligne_loc)
 
-# Remplacement des valeurs manquantes par une valeur spécifique
-df_remplace = df.fillna({'Age': df['Age'].mean(), 'Ville': 'Inconnue'})
-print(df_remplace)
+# Sélection des lignes avec les index 0 et 2 (Aline et Charles)
+lignes_loc = df.loc[[0, 2]]
+print("\nUtilisation de df.loc pour sélectionner les lignes avec les index 0 et 2:")
+print(lignes_loc)
+
+# Utilisation de df.iloc
+# Sélection de la ligne à la position 1 (Robert)
+ligne_iloc = df.iloc[1]
+print("\nUtilisation de df.iloc pour sélectionner la ligne à la position 1:")
+print(ligne_iloc)
+
+# Sélection des lignes aux positions 0 et 2 (Aline et Charles)
+lignes_iloc = df.iloc[[0, 2]]
+print("\nUtilisation de df.iloc pour sélectionner les lignes aux positions 0 et 2:")
+print(lignes_iloc)
 ```
 
-#### Traitement d'autres valeurs comme valeurs manquantes
+Voici ce que fait chaque partie du code :
 
-La méthode `read_csv` fourni un paramètre `na_values` pour pouvoir spécifier d'autres valeurs que `NaN`(Not a Number) à considérer comme étant manquantes, lors de la lecture d'un fichier `csv`.
+- `df.loc[1]` sélectionne la ligne avec l'index 1, c'est-à-dire la ligne correspondant à Robert.
+- `df.loc[[0, 2]]` sélectionne les lignes avec les index 0 et 2, c'est-à-dire les lignes correspondant à Aline et Charles.
+- `df.iloc[1]` sélectionne la ligne à la position 1, c'est-à-dire la ligne correspondant à Robert.
+- `df.iloc[[0, 2]]` sélectionne les lignes aux positions 0 et 2, c'est-à-dire les lignes correspondant à Aline et Charles.
 
-**`na_values`** : Ce paramètre spécifie quelles valeurs doivent être traitées comme NaN (Not a Number, utilisé pour représenter les données manquantes ou indéfinies) dans un DataFrame.
+**Affiche** :
 
-**Exemple** :
+```plaintext
+Le dataframe 
+       Nom  Âge  Note
+0    Aline   25  85.5
+1   Robert   30  90.3
+2  Charles   35  78.9
 
-Supposons que vous ayez un fichier CSV nommé 'donnees.csv' qui ressemble à ceci :
+Utilisation de df.loc pour sélectionner la ligne avec l'index 1:
+Nom     Robert
+Âge         30
+Note      90.3
+Name: 1, dtype: object
 
-```
-age,poids,taille
-25,70,1.75
-30,"?",1.80
-35,75,"n.a"
-```
+Utilisation de df.loc pour sélectionner les lignes avec les index 0 et 2:
+       Nom  Âge  Note
+0    Aline   25  85.5
+2  Charles   35  78.9
 
-Dans ce fichier, les valeurs manquantes sont représentées par "?" et "n.a". 
-Vous pouvez utiliser le paramètre `na_values` pour indiquer à pandas de traiter ces valeurs comme NaN (Not a Number) lors de la lecture du fichier. 
+Utilisation de df.iloc pour sélectionner la ligne à la position 1:
+Nom     Robert
+Âge         30
+Note      90.3
+Name: 1, dtype: object
 
-Voici comment :
-
-```python
-import pandas as pd
-
-df = pd.read_csv('donnees.csv', na_values=["?", "n.a"])
-```
-
-Après l'exécution de ce code, le DataFrame `df` ressemblera à ceci :
-
-```
-   age  poids  taille
-0   25   70.0    1.75
-1   30    NaN    1.80
-2   35   75.0     NaN
-```
-
-#### La suppression des doublons
-
-Les doublons peuvent être supprimés pour éviter les erreurs dans l'analyse.
-
-```python
-# Suppression des doublons
-df_unique = df.drop_duplicates()
-print(df_unique)
+Utilisation de df.iloc pour sélectionner les lignes aux positions 0 et 2:
+       Nom  Âge  Note
+0    Aline   25  85.5
+2  Charles   35  78.9
 ```
 
-#### La transformation de données
-
-La transformation de données inclut :
-- **l'ajout** de colonnes, 
-- **la suppression** de colonnes, 
-- la **modification** de colonnes, 
-- l'application de fonctions sur les données.
-
-##### L'ajout et la suppression de colonnes
+#### Ajout et suppression de colonnes
 
 Vous pouvez facilement ajouter ou supprimer des colonnes dans un DataFrame.
 
 ```python
+import pandas as pd
+
+donnee = {
+    'Nom': ['Aline', 'Robert', 'Charles'],
+    'Âge': [25, 30, 35],
+    'Note': [85.5, 90.3, 78.9]
+}
+df = pd.DataFrame(donnee)
+
 # Ajout d'une nouvelle colonne
-df['Pays'] = 'France'
-print(df)
+df["Session"] = "Automne"
+print(f"La colonne Session ajoutée \n{df}\n")
 
 # Suppression d'une colonne
-df = df.drop(columns=['Ville'])
-print(df)
+df = df.drop(columns=["Session"])
+print(f"La colonne Session supprimée \n{df}\n")
 ```
 
-##### Renommage de colonnes
+**Affiche**:
+
+```plaintext
+La colonne Session ajoutée 
+       Nom  Âge  Note  Session
+0    Aline   25  85.5  Automne
+1   Robert   30  90.3  Automne
+2  Charles   35  78.9  Automne
+
+La colonne Session supprimée 
+       Nom  Âge  Note
+0    Aline   25  85.5
+1   Robert   30  90.3
+2  Charles   35  78.9
+```
+
+#### Renommage de colonnes
 
 Les colonnes peuvent être renommées pour une meilleure clarté.
 
 ```python
 # Renommage des colonnes
-df = df.rename(columns={'Nom': 'Prenom', 'Age': 'Annees'})
+df = df.rename(columns={"Nom": "Prénom"})
+print(f"La colonne Nom modifiée \n{df}\n")
+```
+
+**Affiche**:
+
+```plaintext
+La colonne Nom modifiée 
+    Prénom  Âge  Note
+0    Aline   25  85.5
+1   Robert   30  90.3
+2  Charles   35  78.9
+```
+
+#### Tri d'un *DataFrame*
+
+Supposons que nous ayons un DataFrame `df` que nous voulons trier par la colonne `âge`.
+
+```python
+import pandas as pd
+
+# Création du DataFrame
+df = pd.DataFrame({
+    'Nom': ['Aline', 'Robert', 'Charles'],
+    'Âge': [25, 30, 35],
+})
+
+# Tri du DataFrame par la colonne 'âge'
+df_trie = df.sort_values(by='Âge')
+
+print(df_trie)
+```
+
+Dans cet exemple, nous avons un DataFrame `df` avec deux colonnes : `Nom` et `Âge`. La fonction `sort_values()` pour trier le DataFrame par la colonne `âge`. Le paramètre `by='âge'` indique la colonne sur laquelle nous voulons effectuer le tri.
+
+**Affiche**:
+
+```plaintext
+       nom  âge
+2  Charles   20
+0    Aline   25
+1   Robert   30
+```
+
+#### Fusion de *Dataframes*
+
+Supposons que nous ayons deux DataFrames, `df1` et `df2`, que nous voulons fusionner sur une colonne commune appelée `id`.
+
+```python
+import pandas as pd
+
+# Création des DataFrames
+df1 = pd.DataFrame({
+    'id': [1, 2, 3],
+    'prénom': ['Aline', 'Robert', 'Charles']
+})
+
+df2 = pd.DataFrame({
+    'id': [1, 2, 4],
+    'âge': [25, 30, 35]
+})
+
+# Fusion des DataFrames sur la colonne 'id'
+df_fusionne = pd.merge(df1, df2, on='id', how='inner')
+
+print(df_fusionne)
+```
+
+Dans cet exemple, nous avons deux DataFrames `df1` et `df2`. Nous utilisons la fonction `merge()` pour les fusionner sur la colonne `id`. Le paramètre `how='inner'` indique que nous voulons une jointure interne, ce qui signifie que seules les lignes avec des valeurs correspondantes dans les deux DataFrames seront incluses dans le résultat final.
+
+**Affiche**:
+
+```plaintext
+   id     prénom  âge
+0   1   Aline   25
+1   2     Robert   30
+```
+
+## Gestion des données de type date
+
+Travailler avec des données temporelles est essentiel dans de nombreuses disciplines scientifiques. Pandas rend cette tâche beaucoup plus simple en fournissant des outils pour manipuler et analyser les dates. 
+
+### Conversion des chaînes de caractères en dates
+
+Lorsque vous chargez des données, les dates peuvent être sous forme de chaînes de caractères. La première étape consiste donc à les convertir type `datetime`.
+
+```python
+import pandas as pd
+
+# Chargement des données
+donnees_date = {'Date': ['2024-01-01', '2024-01-02', '2024-01-03'], 'Température': [20, 21, 19]}
+df = pd.DataFrame(donnees_date)
+
+# Conversion en datetime
+df['Date'] = pd.to_datetime(df['Date'])
+
 print(df)
 ```
 
-##### Application de fonctions
+**Affiche**:
 
-Vous pouvez appliquer des fonctions personnalisées à des colonnes ou à des lignes entières.
+```plaintext
+        Date  Température
+0 2024-01-01           20
+1 2024-01-02           21
+2 2024-01-03           19
+```
+
+### Extraction des composants de la date
+
+Une fois les dates converties en `datetime`, vous pouvez extraire facilement des composants spécifiques comme l'année, le mois ou le jour.
 
 ```python
-# Application d'une fonction à une colonne
-df['Age'] = df['Age'].apply(lambda x: x * 2 if pd.notnull(x) else x)
+# Extraction de l'année
+df['Année'] = df['Date'].dt.year
+
+# Extraction du mois
+df['Mois'] = df['Date'].dt.month
+
+# Extraction du jour
+df['Jour'] = df['Date'].dt.day
+
 print(df)
+```
 
-# Application d'une fonction à l'ensemble du DataFrame
-df = df.applymap(lambda x: str(x).upper() if isinstance(x, str) else x)
+**Affiche**:
+
+```plaintext
+        Date  Température  Année  Mois  Jour
+0 2024-01-01           20   2024     1     1
+1 2024-01-02           21   2024     1     2
+2 2024-01-03           19   2024     1     3
+
+```
+
+### Manipulation des dates
+
+Pandas permet aussi de faire des manipulations temporelles comme le filtrage par date, l'ajout de jours ou la création de plages de dates.
+
+#### Filtrage par date
+
+```python
+# Filtrage pour obtenir les données de janvier 2024
+masque = (df['Date'] >= '2024-01-01') & (df['Date'] <= '2024-01-31')
+donnee_janvier = df.loc[masque]
+
+print(donnee_janvier)
+```
+
+**Affiche**:
+
+```plaintext
+         Date  Température
+0  2024-01-01           20
+1  2024-01-02           21
+2  2024-01-03           19
+```
+
+#### Ajout de jours
+
+```python
+# Ajout de 5 jours à chaque date
+df['Date plus 5'] = df['Date'] + pd.Timedelta(days=5)
+
 print(df)
 ```
 
-## L'analyse de données
+**Affiche**:
 
-L'analyse de données inclut le calcul de statistiques descriptives, le filtre, le tri, le groupement de données et l'affichage de graphiques avec MatplotLib.
-
-### Les statistiques descriptives
-
-Pandas permet de calculer facilement des statistiques descriptives comme la moyenne, la médiane et l'écart-type.
-
-```python
-# Calcul de la moyenne et de l'écart-type
-print(df['Age'].mean())
-print(df['Age'].std())
+```plaintext
+        Date  Température Date plus 5
+0 2024-01-01           20  2024-01-06
+1 2024-01-02           21  2024-01-07
+2 2024-01-03           19  2024-01-08
 ```
 
-### Filtrer les données
-
-Le filtre de données permet de visualiser une catégorie précise de données
+#### Création d'une plage de dates
 
 ```python
-df_filtre = df[df['Age'] > 18]
+# Création d'une plage de dates (D = Day)
+plage_date = pd.date_range(start='2024-01-01', end='2024-01-10', freq='D')
 
-### Trier les données
-
-Le tri de données permet de les visualiser dans une ordre précis
-
-```python
-df_trie = df.sort_values('Age')
+print(plage_date)
 ```
 
-### Grouper les données
+**Affiche**:
 
-Le groupement de données permet de calculer des statistiques agrégées pour des sous-ensembles de données.
-
-```python
-# Groupement par une colonne et calcul de la moyenne
-groupe = df.groupby('Ville')['Age'].mean()
-print(groupe)
+```plaintext
+DatetimeIndex(['2024-01-01', '2024-01-02', '2024-01-03', '2024-01-04',
+               '2024-01-05', '2024-01-06', '2024-01-07', '2024-01-08',
+               '2024-01-09', '2024-01-10'],
+              dtype='datetime64[ns]', freq='D')
 ```
 
-## La manipulation de dates
-
-La manipulation des dates et des heures est une compétence essentielle en programmation, notamment pour les applications de planification, d'analyse de données et de gestion de bases de données. Python offre plusieurs modules pour travailler avec les dates et les heures, dont le plus utilisé est le module `datetime`.
-
-### Importation du module
-
-Pour commencer à travailler avec les dates et les heures, vous devez importer le module `datetime` :
+#### Exemple complet
 
 ```python
-import datetime
+import pandas as pd
+
+# Données
+data = {'Date': ['2024-01-01', '2024-01-02', '2024-01-03'],
+        'Température': [20, 21, 19]}
+df = pd.DataFrame(data)
+
+# Conversion en datetime
+df['Date'] = pd.to_datetime(df['Date'])
+
+# Extraction des composants de la date
+df['Année'] = df['Date'].dt.year
+df['Mois'] = df['Date'].dt.month
+df['Jour'] = df['Date'].dt.day
+
+# Filtrage par date
+masque = (df['Date'] >= '2024-01-01') & (df['Date'] <= '2024-01-31')
+donnees_janvier = df.loc[masque]
+
+# Ajout de jours
+df['Date plus 5'] = df['Date'] + pd.Timedelta(days=5)
+
+# Création d'une plage de dates
+plage_date = pd.date_range(start='2024-01-01', end='2024-01-10', freq='D')
+
+print(f"Le dataframe \n{df}\n")
+print(f"Les données du mois de janvier \n{donnees_janvier}\n")
+print(f"La plage de dates du 1er au 10 janvier 2024 \n{plage_date}\n")
 ```
 
-## Création d'objets Date et Heure
+**Affiche**:
 
-### Date
+```plaintext
+Le dataframe 
+        Date  Température  Année  Mois  Jour Date plus 5
+0 2024-01-01           20   2024     1     1  2024-01-06
+1 2024-01-02           21   2024     1     2  2024-01-07
+2 2024-01-03           19   2024     1     3  2024-01-08
 
-Pour créer un objet date, utilisez la classe `date` du module `datetime` :
+Les données du mois de janvier 
+        Date  Température  Année  Mois  Jour
+0 2024-01-01           20   2024     1     1
+1 2024-01-02           21   2024     1     2
+2 2024-01-03           19   2024     1     3
+
+La plage de dates du 1er au 10 janvier 2024 
+DatetimeIndex(['2024-01-01', '2024-01-02', '2024-01-03', '2024-01-04',
+               '2024-01-05', '2024-01-06', '2024-01-07', '2024-01-08',
+               '2024-01-09', '2024-01-10'],
+              dtype='datetime64[ns]', freq='D')
+
+```
+
+## Utilisation de fichiers de données
+
+Le traitement des fichiers contenant des données est essentiel en programmation Python, en particulier dans le domaine des sciences de données.
+
+### Introduction aux fichiers CSV
+
+CSV signifie ***Comma-Separated Values*** (valeurs séparées par des virgules). C'est un format de fichier simple utilisé pour stocker des données tabulaires, comme une feuille de calcul Excel.
+
+Pandas fourni des fonctionnalités pour lire des fichiers csv ou en créer.
+
+### Importation et exportation de données
+
+#### Lecture de fichiers CSV
+
+Pandas permet de les lire facilement. Le code suivant, permet de lire le contenu du fichier **donnees.csv** et d'afficher  les premières lignes (par défaut 5). On peut préciser le nombre de ligne à afficher, en spécifiant une valeur dans `head()` par exemple `df.head(12)` affichera les 12 premières lignes du dataframe. 
 
 ```python
-from datetime import date
-
-# Créer une date pour le 22 mai 2023
-ma_date = date(2023, 5, 22)
-print(ma_date)  # Affiche : 2023-05-22
+# Lecture d'un fichier CSV
+df = pd.read_csv("donnees.csv")
+print(df.head())
 ```
 
-### Heure
+#### Écriture de fichiers CSV
 
-Pour créer un objet heure, utilisez la classe `time` :
+Vous pouvez également écrire des données dans un fichier CSV.
 
 ```python
-from datetime import time
-
-# Créer une heure pour 14h30m15s
-mon_heure = time(14, 30, 15)
-print(mon_heure)  # Affiche : 14:30:15
+# Écriture d'un DataFrame dans un fichier CSV
+df.to_csv("fichier.csv", index=False)
 ```
+L'argument `index=False` est utilisé pour indiquer que vous ne souhaitez pas inclure l'index du dataframe dans le fichier CSV exporté. Par défaut, Pandas inclut l'index du dataframe comme première colonne dans le fichier CSV. En utilisant `index=False`, vous pouvez éviter cela.
 
-### Date et Heure
-
-Pour combiner une date et une heure, utilisez la classe `datetime` :
+Voici un exemple pour illustrer :
 
 ```python
-from datetime import datetime
+import pandas as pd
 
-# Créer une date et une heure pour le 22 mai 2023 à 14h30m15s
-ma_datetime = datetime(2023, 5, 22, 14, 30, 15)
-print(ma_datetime)  # Affiche : 2023-05-22 14:30:15
+# Création du dataframe
+donnee = {
+    'Nom': ['Aline', 'Robert', 'Charles'],
+    'Âge': [25, 30, 35],
+    'Note': [85.5, 90.3, 78.9]
+}
+df = pd.DataFrame(donnee)
+
+# Exportation du dataframe en CSV sans l'index
+df.to_csv("fichier-sans-index.csv", index=False)
+
+# Exportation du dataframe en CSV avec l'index (par défaut)
+df.to_csv("fichier-avec-index.csv")
 ```
 
-## Manipulation des Dates et Heures
+Dans `fichier_sans_index.csv`, le fichier CSV n'aura pas de colonne d'index, tandis que dans `fichier_avec_index.csv`, la première colonne sera l'index du dataframe.
 
-### Extraction des composants
+**Fichier csv avec index**
 
-Vous pouvez extraire les composants individuels d'un objet date ou datetime :
+![Fichier avec index](../fichier_csv_avec_index.png?width=25vw)
+[Fichier csv avec index](../fichier_avec_index.csv)
+
+**Fichier csv sans index**
+
+![Fichier sans index](../fichier_csv_sans_index.png?width=25vw)
+[Fichier csv sans index](../fichier_sans_index.csv)
+
+
+## Manipulation de données
+
+### Sélection et filtrage de données
+
+Vous pouvez sélectionner des **colonnes** spécifiques ou filtrer des **lignes** en fonction de conditions.
 
 ```python
-# Extraire l'année, le mois et le jour
-annee = ma_date.year
-mois = ma_date.month
-jour = ma_date.day
+# Sélection de colonnes
+ages = df['Âge']
+print(f"Les âges sont:\n{ages}\n")
 
-print(annee, mois, jour)  # Affiche : 2023 5 22
+# Filtrage de lignes
+df_filtre = df[df['Note'] > 80]
+print(f"Le dataframe contenant seulement les notes > 80 \n{df_filtre}\n")
 ```
 
-### Calculs avec les dates
+**Affiche** :
 
-Le module `datetime` permet également de faire des calculs avec les dates en utilisant la classe `timedelta` :
+```plaintext
+Les âges sont:
+0    25
+1    30
+2    35
+Name: Âge, dtype: int64
+
+Le dataframe contenant seulement les notes > 80 
+      Nom  Âge  Note
+0   Aline   25  85.5
+1  Robert   30  90.3
+```
+
+### Gestion des valeurs manquantes
+
+Les données expérimentales peuvent souvent contenir des valeurs manquantes. Pandas offre des méthodes pour les gérer.
+
+**Remplissage des valeurs manquantes**:
 
 ```python
-from datetime import timedelta
-
-# Ajouter 10 jours à une date
-nouvelle_date = ma_date + timedelta(days=10)
-print(nouvelle_date)  # Affiche : 2023-06-01
+df.fillna(0, inplace=True)
 ```
+Cette ligne remplace toutes les valeurs manquantes (NaN) dans le dataframe `df` par `0`. L'argument `inplace=True` signifie que la modification est faite directement sur le dataframe `df` sans créer une nouvelle copie.
 
-### Formatage des dates
-
-Pour afficher les dates dans différents formats, utilisez la méthode `strftime` :
+**Suppression des lignes avec des valeurs manquantes**:
 
 ```python
-# Formatage de la date
-date_formatee = ma_date.strftime("%d/%m/%Y")
-print(date_formatee)  # Affiche : 22/05/2023
+df.dropna(inplace=True)
 ```
+Cette ligne supprime toutes les lignes du dataframe `df` qui contiennent au moins une valeur manquante (NaN). Comme précédemment, `inplace=True` signifie que la modification est faite directement sur le dataframe `df`.
 
-## Visualisation des données
+Si `inplace=False`, les modifications ne sont pas appliquées directement au dataframe original. Au lieu de cela, une nouvelle copie du dataframe avec les modifications est retournée. Le dataframe original reste inchangé.
 
-Bien que Pandas ne soit pas spécialement conçu pour la visualisation, il offre une intégration avec la bibliothèque **Matplotlib**, permettant de créer rapidement des graphiques pour visualiser les données:
+## Analyse de données
+
+### Statistiques descriptives
+
+Pandas fournit des méthodes pour calculer des statistiques descriptives rapidement.
 
 ```python
-# Tracer un histogramme de la colonne 'Taille'
-df['Taille'].plot.hist()
+# Statistiques descriptives
+print(f"Statistiques : \n{df.describe()}\n")
 ```
 
-**NB**: Pour tracer les graphiques, nous utiliserons la bibliothèque **Matplotlib**.
+**Affiche** :
+
+```plaintext
+Statistiques : 
+        Âge       Note
+count   3.0   3.000000
+mean   30.0  84.900000
+std     5.0   5.723635
+min    25.0  78.900000
+25%    27.5  82.200000
+50%    30.0  85.500000
+75%    32.5  87.900000
+max    35.0  90.300000
+```
+
+La méthode `df.describe()` fournit des statistiques descriptives pour les colonnes numériques d’un dataframe. Voici les informations qu’elle donne :
+
+| Statistique | Description |
+|-------------|-------------|
+| count       | Le nombre de valeurs non manquantes |
+| mean        | La moyenne des valeurs |
+| std         | L’écart type, qui mesure la dispersion des valeurs par rapport à la moyenne |
+| min         | La valeur minimale |
+| 25%         | Le premier quartile (25ème percentile), qui est la valeur en dessous de laquelle se trouvent 25% des données |
+| 50%         | La médiane (50ème percentile), qui est la valeur en dessous de laquelle se trouvent 50% des données |
+| 75%         | Le troisième quartile (75ème percentile), qui est la valeur en dessous de laquelle se trouvent 75% des données |
+| max         | La valeur maximale |
+
+
+### Groupement et agrégation
+
+Le groupement et l'agrégation sont essentiels pour analyser des données catégorielles.
+
+```python
+import pandas as pd
+
+# Création du DataFrame
+data = {
+    'Substance': ['Eau', 'Eau', 'Eau', 'Acide sulfurique', 'Acide sulfurique', 'Acide sulfurique', 'Sodium', 'Sodium', 'Sodium'],
+    'Concentration (mol/L)': [0.1, 0.2, 0.3, 1.0, 1.5, 2.0, 0.5, 0.7, 0.9],
+    'pH': [7.0, 7.1, 7.2, 1.0, 1.2, 1.5, 13.0, 13.2, 13.5],
+    'Température (°C)': [25, 25, 25, 20, 20, 20, 30, 30, 30]
+}
+
+df = pd.DataFrame(data)
+
+# Affichage du DataFrame
+print(f"Affichage des données \n{df}\n")
+
+# Grouper par la colonne Substance et calcul de la moyenne des autres colonnes
+df_groupe = df.groupby("Substance").mean()
+print(f"Affichage des données groupées par substance \n{df_groupe}\n")
+```
+
+**Affiche**:
+
+```plaintext
+Affichage des données 
+          Substance  Concentration (mol/L)    pH  Température (°C)
+0               Eau                    0.1   7.0                25
+1               Eau                    0.2   7.1                25
+2               Eau                    0.3   7.2                25
+3  Acide sulfurique                    1.0   1.0                20
+4  Acide sulfurique                    1.5   1.2                20
+5  Acide sulfurique                    2.0   1.5                20
+6            Sodium                    0.5  13.0                30
+7            Sodium                    0.7  13.2                30
+8            Sodium                    0.9  13.5                30
+
+Affichage de la moyenne des données groupées par substance 
+                  Concentration (mol/L)         pH  Température (°C)
+Substance                                                           
+Acide sulfurique                    1.5   1.233333              20.0
+Eau                                 0.2   7.100000              25.0
+Sodium                              0.7  13.233333              30.0
+```
+
+## Cas avertissement de *FutureWarning*
+
+{{% notice style=warning title=Attention %}}
+Si vous rencontrez un avertissement ***FutureWarning***: The default value of `numeric_only` in DataFrameGroupBy.mean is deprecated. In a future version, `numeric_only` will default to False. Either specify `numeric_only` or select only columns which should be valid for the function.*, vous devez soit spécifier explicitement `numeric_only=True` ou sélectionner uniquement les colonnes numériques avant d’appliquer la fonction mean()
+{{% /notice %}}
+
+**Exemple**: 
+
+```python
+donnee = {
+    "Nom": ["Aline", "Robert", "Charles", "Julie"],
+    "Âge": [25, 30, 35, 25],
+    "Note": [85.5, 90.3, 78.9, 88.9]
+}
+df = pd.DataFrame(donnee)
+
+df_groupe = df.groupby("Âge").mean(numeric_only=True)
+print(f"Affichage de la moyenne des données groupées par âge \n{df_groupe}\n")
+```
+
+**Affiche**:
+
+```plaintext
+Affichage de la moyenne des données groupées par âge 
+     Note
+Âge      
+25   87.2
+30   90.3
+35   78.9
+```
+## Fonctions et méthodes
+
+Voici un tableau de quelques méthodes et fonctions incontournables en analyse de données scientifiques :
+
+| Méthode/Fonction | Description |
+|------------------|-------------|
+| `read_csv()`     | Lire des fichiers CSV et les convertir en DataFrame |
+| `head()`         | Afficher les premières lignes d'un DataFrame |
+| `describe()`     | Fournir des statistiques descriptives pour les colonnes numériques d'un DataFrame |
+| `info()`         | Afficher un résumé concis du DataFrame, y compris le type de données et les valeurs manquantes |
+| `groupby()`      | Grouper les données par une ou plusieurs colonnes et appliquer des fonctions d'agrégation |
+| `pivot_table()`  | Créer des tableaux croisés dynamiques pour résumer les données |
+| `plot()`         | Générer des graphiques simples pour visualiser les données |
+| `corr()`         | Calculer la matrice de corrélation entre les colonnes numériques |
+| `merge()`        | Fusionner deux DataFrames sur une ou plusieurs colonnes clés |
+| `dropna()`       | Supprimer les lignes ou colonnes contenant des valeurs manquantes |
+| `fillna()`       | Remplace les lignes ou colonnes contenant des valeurs manquantes par une valeur donnée |
+| `to_frame()`     | Transforme une série en un DataFrame avec une seule colonne |
+| `sort_values()`  | Trie les valeurs d'une colonne d'un DataFrame |
+
+
+
+## Visualisation de données
+
+Bien que Pandas ne soit pas une bibliothèque de visualisation, il s'intègre bien avec Matplotlib pour créer des graphiques simples.
+
+{{% notice style=info %}}
+Nous verrons comment utiliser la bibliothèque Matplotlib pour tracer des graphiques, la semaine prochaine.
+{{% /notice %}}
 
 Pour tout savoir sur Pandas: [Site officiel Pandas](https://pandas.pydata.org/ "Pandas").
-
-## Atelier
-
-[La bibliothèque Pandas](../atelier-Pandas.ipynb)  
-
-[Fichier iris.csv](../iris.csv)
-

@@ -1,7 +1,7 @@
 +++
-chapter = false
+archetype = "semaine"
 pre = "<b>12. </b>"
-title = "La bibliothèque Matplotlib"
+title = "Matplotlib"
 weight = 120
 draft = true
 +++
@@ -13,7 +13,7 @@ draft = true
 
 ## Plan de la leçon
 
-- **Mini-quiz #11**:  10 mins
+- **Quiz**:  Bibliothèque Pandas (10 mins)
 - **Pause** 5 mins
-- Pour la semaine prochaine 5 mins
+- Pour la semaine prochaine
 

@@ -117,8 +117,9 @@ Ces jeux de tests devraient vous permettre de vérifier que votre programme fonc
    - Produit 3 : Nom = "Orange", Prix = 1.2
 
 2. **Sortie attendue** :
+
    - Liste des produits :
-     ```
+     ```plaintext
      Nom: Pomme, Prix: 1.5
      Nom: Banane, Prix: 0.8
      Nom: Orange, Prix: 1.2
@@ -134,8 +135,9 @@ Ces jeux de tests devraient vous permettre de vérifier que votre programme fonc
    - Nom à rechercher : "Lait"
 
 2. **Sortie attendue** :
+
    - Produit trouvé :
-     ```
+     ```plaintext
      Produit trouvé - Nom: Lait, Prix: 2.5
      ```
 
@@ -151,8 +153,9 @@ Ces jeux de tests devraient vous permettre de vérifier que votre programme fonc
    - Prix maximum : 2.0
 
 2. **Sortie attendue** :
+
    - Produits trouvés :
-     ```
+     ```plaintext
      Produit trouvé - Nom: Bonbon, Prix: 0.5
      Produit trouvé - Nom: Biscuit, Prix: 1.5
      Produit trouvé - Nom: Jus, Prix: 2.0
@@ -165,9 +168,10 @@ Ces jeux de tests devraient vous permettre de vérifier que votre programme fonc
    - Produit 1 : Nom = "Eau", Prix = 0.7
    - Recherche : couleur (option invalide)
 
-2. **Sortie Attendue** :
+2. **Sortie attendue** :
+
    - Message d'erreur :
-     ```
+     ```plaintext
      Option de recherche invalide.
      ```
 
@@ -181,7 +185,10 @@ Ces jeux de tests devraient vous permettre de vérifier que votre programme fonc
    - Nom à rechercher : "Lait"
 
 2. **Sortie attendue** :
-   - Aucun produit trouvé (aucune sortie spécifique attendue pour ce cas, mais le programme ne doit pas planter).
+
+   ```plaintext
+   Aucun produit trouvé (aucune sortie spécifique attendue pour ce cas, mais le programme ne doit pas planter).
+   ```
 
 # Exercice 1 - Version 2
 

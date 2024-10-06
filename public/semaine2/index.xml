@@ -3,7 +3,7 @@
   <channel>
     <title>Ordinogramme et introduction à Python :: Mon site 420SN1RE</title>
     <link>https://example.org/semaine2/index.html</link>
-    <description>Objectifs de la leçon Comprendre les rôles du pseudo-code et de l’ordinogramme. Savoir comment créer un ordinogramme. Écrire un premier script Python. Savoir déclarer et initialiser des variables de différents types. Utiliser des variables dans des opérations simples en respectant les priorités des opérateurs. Plan de la leçon Mini-quiz #1: Introduction à la programmation et analyse de problèmes (10 mins). Algorithme en ordinogramme ~15 mins. Pause 5 mins Les variables et les types de données ~30 mins.</description>
+    <description>Objectifs de la leçon Comprendre les rôles du pseudo-code et de l’ordinogramme. Savoir comment créer un ordinogramme. Écrire un premier script Python. Savoir déclarer et initialiser des variables de différents types. Utiliser des variables dans des opérations simples en respectant les priorités des opérateurs. Plan de la leçon Quiz: Introduction à la programmation et analyse de problèmes (10 mins). Algorithme en ordinogramme ~15 mins. Pause 5 mins Les variables et les types de données ~30 mins.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://example.org/semaine2/index.xml" rel="self" type="application/rss+xml" />

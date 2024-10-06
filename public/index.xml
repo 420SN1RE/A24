@@ -19,14 +19,14 @@
       <link>https://example.org/semaine2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine2/index.html</guid>
-      <description>Objectifs de la leçon Comprendre les rôles du pseudo-code et de l’ordinogramme. Savoir comment créer un ordinogramme. Écrire un premier script Python. Savoir déclarer et initialiser des variables de différents types. Utiliser des variables dans des opérations simples en respectant les priorités des opérateurs. Plan de la leçon Mini-quiz #1: Introduction à la programmation et analyse de problèmes (10 mins). Algorithme en ordinogramme ~15 mins. Pause 5 mins Les variables et les types de données ~30 mins.</description>
+      <description>Objectifs de la leçon Comprendre les rôles du pseudo-code et de l’ordinogramme. Savoir comment créer un ordinogramme. Écrire un premier script Python. Savoir déclarer et initialiser des variables de différents types. Utiliser des variables dans des opérations simples en respectant les priorités des opérateurs. Plan de la leçon Quiz: Introduction à la programmation et analyse de problèmes (10 mins). Algorithme en ordinogramme ~15 mins. Pause 5 mins Les variables et les types de données ~30 mins.</description>
     </item>
     <item>
       <title>Interagir avec le programme</title>
       <link>https://example.org/semaine3/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/index.html</guid>
-      <description>Objectifs de la leçon Lire des données saisies au clavier par l’utilisateur. Afficher des données dans le terminal. Comprendre les avantages de la documentation du code. Connaitre et comprendre les différentes sources d’erreurs de syntaxe. Commencer à déboguer un programme à l’aide de la méthode print(). Plan de la leçon Mini-quiz #2: Ordinogrammes et base de Python (10 mins) Lecture de données et affichage textuel des résultats ~15mins Documentation du code ~5mins Pause 5 mins La syntaxe est les erreurs ~10mins La vérification du bon fonctionnement d’un programme ~5mins Pause 5 mins Révision pour le minitest (10%) de la semaine prochaine ~30mins Atelier: Lecture et affichage de données ~20mins Atelier: Déboguer des programmes simples ~20mins Pour la semaine prochaine</description>
+      <description>Objectifs de la leçon Lire des données saisies au clavier par l’utilisateur. Afficher des données dans le terminal. Comprendre les avantages de la documentation du code. Connaitre et comprendre les différentes sources d’erreurs de syntaxe. Commencer à déboguer un programme à l’aide de la méthode print(). Plan de la leçon Quiz: Ordinogrammes et base de Python (10 mins) Lecture de données et affichage textuel des résultats ~15mins Documentation du code ~5mins Pause 5 mins La syntaxe est les erreurs ~10mins La vérification du bon fonctionnement d’un programme ~5mins Pause 5 mins Révision pour le minitest (10%) de la semaine prochaine ~30mins Atelier: Lecture et affichage de données ~20mins Atelier: Déboguer des programmes simples ~20mins Pour la semaine prochaine</description>
     </item>
     <item>
       <title>Structures conditionnelles</title>
@@ -40,35 +40,49 @@
       <link>https://example.org/semaine5/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine5/index.html</guid>
-      <description>Objectifs de la leçon Comprendre l’utilité des structures répétitives (les boucles) Utiliser la boucle WHILE Utiliser la boucle FOR et la fonction RANGE() Contrôler les boucles à l’aide des instructions break et continue Plan de la leçon Quiz (10 mins) Les instructions répétitives en générale ~5mins La boucle WHILE ~15mins Pause 5 minutes. La boucle FOR ~10mins Contrôler les boucles ~5mins Pause 5 minutes. Atelier: Utiliser la boucle While. Atelier: Utiliser la boucle For.</description>
+      <description>Objectifs de la leçon Comprendre l’utilité des structures répétitives (les boucles) Utiliser la boucle WHILE Utiliser la boucle FOR et la fonction RANGE() Contrôler les boucles à l’aide des instructions break et continue Plan de la leçon Quiz: Interaction avec le programme et les conditions (10 mins) Les instructions répétitives en générale ~5mins La boucle WHILE ~15mins Pause 5 minutes. La boucle FOR ~10mins Contrôler les boucles ~5mins Pause 5 minutes.</description>
     </item>
     <item>
       <title>Les listes et le traitement des chaines de caractères</title>
       <link>https://example.org/semaine6/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine6/index.html</guid>
-      <description>Objectifs de la leçon Comprendre les concepts de base et fondamentaux des listes Savoir manipuler des listes dans un contexte scientifique Appliquer la logique des boucles avec les listes Utiliser d’autres fonctionnalités courantes des listes Comprendre les notions d’objet et d’encapsulation Plan de la leçon Quiz (10 mins) L’importance des listes en programmation et en contexte scientifique. ~5mins Création, accès, modification, ajout et suppression d’éléments d’une liste. ~15mins Pause 5 minutes.</description>
+      <description>Objectifs de la leçon Comprendre les concepts de base et fondamentaux des listes Savoir manipuler des listes dans un contexte scientifique Appliquer la logique des boucles avec les listes Utiliser d’autres fonctionnalités courantes des listes Comprendre les notions d’objet et d’encapsulation Plan de la leçon Quiz: Les boucles (10 mins) L’importance des listes en programmation et en contexte scientifique. ~5mins Création, accès, modification, ajout et suppression d’éléments d’une liste. ~15mins Pause 5 minutes.</description>
     </item>
     <item>
       <title>Révision des semaines 1 à 6</title>
       <link>https://example.org/semaine7/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine7/index.html</guid>
-      <description>Objectifs de la leçon Réviser les notions vues jusqu’à présent en mettant l’emphase sur les éléments de compétence obligatoires. Plan de la leçon Quiz (10 mins)&#xA;Révision:&#xA;Compréhension de la syntaxe de base : Connaître les types de données, les variables, les opérateurs, et les structures de contrôle comme les conditions et les boucles. Manipulation des structures de données : Savoir utiliser les listes pour organiser et gérer les données. Programmation orientée objet (POO) : Comprendre le concept d’objets à l’aide des chaines de caractères.</description>
+      <description>Objectifs de la leçon Réviser les notions vues jusqu’à présent en mettant l’emphase sur les éléments de compétence obligatoires. Plan de la leçon Quiz: Les listes et les chaines de caractères (10 mins)&#xA;Révision:&#xA;Compréhension de la syntaxe de base : Connaître les types de données, les variables, les opérateurs, et les structures de contrôle comme les conditions et les boucles. Manipulation des structures de données : Savoir utiliser les listes pour organiser et gérer les données.</description>
     </item>
     <item>
       <title>Les sous-programmes (fonctions)</title>
       <link>https://example.org/semaine8/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine8/index.html</guid>
-      <description>Objectifs de la leçon Comprendre les rôles et utilités des sous-programmes. Définir des sous-programmes. Utiliser des sous-programmes. Comprendre le passage de paramètres et la portée des variables. Plan de la leçon Quiz récapitulatif: semaines 1 à 7 (15 mins) Fonctions: Rôles et définition. Déclaration. L’appel. Le passage de paramètres. Le retour de valeurs. La portée des variables. Les fonctions récursives. Ateliers : Les fonctions et la portée des variables Pour la semaine prochaine</description>
+      <description>Objectifs de la leçon Comprendre les rôles et utilités des sous-programmes. Définir des sous-programmes. Utiliser des sous-programmes. Comprendre le passage de paramètres et la portée des variables. Plan de la leçon Quiz récapitulatif: semaines 1 à 6 (15 mins) Fonctions: Rôles et définition. Déclaration. L’appel. Le passage de paramètres. Le retour de valeurs. La portée des variables. Les fonctions récursives. Ateliers : Les fonctions et la portée des variables Pour la semaine prochaine</description>
     </item>
     <item>
       <title>Technique de débogage simple</title>
       <link>https://example.org/semaine9/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine9/index.html</guid>
-      <description>Objectifs de la leçon Comprendre l’importance du débogage Appliquer une technique de débogage simple pour résoudre des bogues courants. Évaluer l’acquisition des éléments de compétence du cours (Examen formatif) Plan de la leçon Quiz: 10 mins L’importance du débogage dans le développement de logiciels. ~5mins Suivre l’exécution d’un programme simple et identifier les erreurs. ~10mins Aperçu aux outils de débogage disponibles dans VS Code. ~5mins Utilisation des points d’arrêt, de l’inspection des variables et de la navigation dans le code.</description>
+      <description>Objectifs de la leçon Comprendre l’importance du débogage Appliquer une technique de débogage simple pour résoudre des bogues courants. Évaluer l’acquisition des éléments de compétence du cours (Examen formatif) Plan de la leçon Quiz: Les fonctions (10 mins) L’importance du débogage dans le développement de logiciels. ~5mins Suivre l’exécution d’un programme simple et identifier les erreurs. ~10mins Aperçu aux outils de débogage disponibles dans VS Code. ~5mins Utilisation des points d’arrêt, de l’inspection des variables et de la navigation dans le code.</description>
+    </item>
+    <item>
+      <title>Examen</title>
+      <link>https://example.org/semaine10/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine10/index.html</guid>
+      <description>Matière Semaine 1 à 9 inclusivement Analyse de problèmes Algorithmie: Ordinogramme La base de python: Variables, Les types de données, les opérateurs Lecture, affichage de données Structures conditionnelles Structures répétitives Listes et les chaines de caractères Fonctions et la portée des variables Débogage avec print Documentation permise (À confirmer sous peu) Format de l’examen (Détails à confirmer sous peu) Durée : 2 heures (SAA1: Le 2h40)&#xA;Les étudiants du Service d’aide à l’apprentissage (SAA) pourront faire l’examen dans la salle de classe ET bénéficier de leur temps supplémentaire.</description>
+    </item>
+    <item>
+      <title>Pandas et présentation du projet final</title>
+      <link>https://example.org/semaine11/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine11/index.html</guid>
+      <description>Objectifs de la leçon Comprendre les structures de données de la bibliothèque Pandas. Apprendre à créer et manipuler des Series et des DataFrames. Savoir manipuler des données de type Date. Savoir importer et exporter des données de fichiers CSV avec Pandas. Effectuer des opérations de nettoyage des données. Réaliser des analyses de données simples. Plan de la leçon Quiz: Pas cette semaine La bibliothèque Pandas Création de Series et de DataFrames.</description>
     </item>
     <item>
       <title>Solutions des ateliers</title>
@@ -83,6 +97,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/bases/index.html</guid>
       <description>Ici vous trouverez diverses informations sur Python et sur les outils utilisés dans le cours ou que vous pouvez utiliser sur votre ordinateur personnel à la maison.&#xA;Cette section est divisée en trois catégories:&#xA;1. Langage de programmation&#xD;2. Outils&#xD;3. Lexique</description>
+    </item>
+    <item>
+      <title>Projet-Fil-Rouges</title>
+      <link>https://example.org/projet-fil-rouge/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/projet-fil-rouge/index.html</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

@@ -241,7 +241,16 @@
     <loc>https://example.org/bases/langage-de-prog/erreurs/gestionexceptions/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine10/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine11/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine11/pandas/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine11/atelier/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine11/projet/index.html</loc>
@@ -287,6 +296,9 @@
   </url>
   <url>
     <loc>https://example.org/categories/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/projet-fil-rouge/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/tags/index.html</loc>

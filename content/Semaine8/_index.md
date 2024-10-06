@@ -14,7 +14,7 @@ weight = 80
 
 ## Plan de la leçon
 
-- **Quiz récapitulatif**: semaines 1 à 7 (15 mins)
+- **Quiz récapitulatif**: semaines 1 à 6 (15 mins)
 - Fonctions: 
 	- Rôles et définition.
 	- Déclaration. 
