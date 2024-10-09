@@ -3,7 +3,6 @@ title = "Projet final"
 weight = 112
 +++
 
-## Projet final
 
 [Présentation du projet - Étape 1 - À VENIR]()
 

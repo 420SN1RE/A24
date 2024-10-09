@@ -1,0 +1,85 @@
+### Introduction à la régression linéaire
+
+Une droite de régression linéaire est utilisée pour modéliser la relation entre deux variables. Elle permet de prédire les valeurs d'une variable en fonction des valeurs de l'autre.
+
+- **But principal** : Trouver la meilleure ligne droite qui passe au plus près des points de données.
+- **Utilisation** : Prédire ou estimer une valeur inconnue basée sur une valeur connue.
+- **Exemple** : Si vous avez des données sur la concentration d'une solution et son absorbance, la droite de régression peut vous aider à prédire l'absorbance pour une nouvelle concentration.
+
+**Rappel**: équation d'une droite `ax + b`
+
+En résumé, la droite de régression linéaire aide à comprendre et à quantifier la relation entre deux variables, facilitant ainsi les prédictions et les analyses.
+
+### Contexte
+
+Analyser les résultats de tests biologiques pour déterminer la relation entre deux variables.
+
+#### Étapes
+
+1. **Importer les bibliothèques nécessaires :**
+    ```python
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    ```
+
+2. **Charger les données depuis un fichier `.csv` :**
+    ```python
+    # Assurez-vous que le fichier 'data.csv' est dans le même répertoire que votre script
+    df = pd.read_csv('data.csv')
+    ```
+
+3. **Afficher un aperçu des données :**
+    ```python
+    print(df.head())
+    ```
+
+4. **Tracer les données :**
+    ```python
+    plt.scatter(df['Concentration'], df['Absorbance'])
+    plt.xlabel('Concentration (M)')
+    plt.ylabel('Absorbance')
+    plt.title('Relation entre la concentration et l\'absorbance')
+    plt.show()
+    ```
+
+5. **Calculer la droite de régression :**
+    ```python
+    x = df['Concentration']
+    y = df['Absorbance']
+    n = len(x)
+    
+    sum_x = sum(x)
+    sum_y = sum(y)
+    sum_xy = sum(x * y)
+    sum_x2 = sum(x ** 2)
+    
+    # Calcul des coefficients de la droite de régression y = mx + b
+    m = (n * sum_xy - sum_x * sum_y) / (n * sum_x2 - sum_x ** 2)
+    b = (sum_y - m * sum_x) / n
+    
+    print(f"Équation de la droite de régression : y = {m:.2f}x + {b:.2f}")
+    ```
+
+6. **Tracer la droite de régression avec les données :**
+    ```python
+    regression_line = [m * xi + b for xi in x]
+    
+    plt.scatter(x, y, label='Données')
+    plt.plot(x, regression_line, color='red', label='Droite de régression')
+    plt.xlabel('Concentration (M)')
+    plt.ylabel('Absorbance')
+    plt.title('Relation entre la concentration et l\'absorbance avec droite de régression')
+    plt.legend()
+    plt.show()
+    ```
+
+### Exemple de fichier `data.csv`
+Assurez-vous que votre fichier `data.csv` a le format suivant :
+```
+Concentration,Absorbance
+0.1,0.05
+0.2,0.10
+0.3,0.15
+0.4,0.20
+0.5,0.25
+```

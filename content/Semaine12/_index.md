@@ -3,17 +3,26 @@ archetype = "semaine"
 pre = "<b>12. </b>"
 title = "Matplotlib"
 weight = 120
-draft = true
 +++
 
 ## Objectifs de la leçon
 
-- Analyse et visualisation des données
+- Comprendre les bases de la bibliothèque Matplotlib.
+- Apprendre à créer des graphiques simples et personnalisés.
+- Interpréter les résultats de graphiques pour des applications en sciences.
 
 
 ## Plan de la leçon
 
 - **Quiz**:  Bibliothèque Pandas (10 mins)
-- **Pause** 5 mins
+- La création et la personnalisation de graphiques simples.
+	- Traçage de graphiques en ligne
+	- Ajout d'éléments de graphique (titres, légendes, marqueurs, etc.)
+- La sauvegarde d'un graphique en format image (png)
+- Pause 5 mins
+- Les sous graphiques et les graphiques multiples
+- Application scientifique, un exemple simple : Croissance des plantes (Biologie)
+- Pause 5 mins
+- Ateliers
 - Pour la semaine prochaine
 

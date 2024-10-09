@@ -36,11 +36,19 @@ weight = 170
 
 [Semaine 6 - Les chaines de caractères](correction_atelier_caracteres.ipynb)
 
-[Semaine 7 - Révision (à venir)](patience-yoda.gif)
+[Semaine 7 - Révision Exercice 1](exercice1.ipynb)
+
+[Semaine 7 - Révision Exercice 1_V2](exercice1-v2.ipynb)
+
+[Semaine 7 - Révision Exercice 2](exercice2.ipynb)
 
 [Semaine 8 - Fonctions](correction-atelier-fonctions.ipynb)
 
 [Semaine 8 - Portées des variables](correction-atelier-porteeVariables.ipynb)
 
 [Semaine 9 - Débogage avec print()](correction-atelier-debogage.ipynb)
+
+[Semaine 11 - Pandas](correction-atelier-pandas.ipynb)
+
+[Semaine 12 - Matplotlib](correction-atelier-matplotlib.ipynb)
 

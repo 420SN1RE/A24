@@ -20,19 +20,19 @@ Avant de commencer, assurez vous d'avoir Pandas installé. Vous pouvez l'install
 pip install pandas
 ```
 
-Pour vérifier que Pandas est bien installé sur votre environnement :
-
-```python
-# Version de Pandas
-pd.__version__
-```
-
-## Étape obligatoire avant d'utiliser Pandas
+## Étape obligatoire pour utiliser Pandas
 
 Pour commencer, vous devez l'importer dans votre code.
 
 ```python
 import pandas as pd
+```
+
+Pour vérifier que Pandas est bien installé sur votre environnement :
+
+```python
+# Version de Pandas
+pd.__version__
 ```
 
 ## Structures de données de base
@@ -721,7 +721,7 @@ Eau                                 0.2   7.100000              25.0
 Sodium                              0.7  13.233333              30.0
 ```
 
-## Cas avertissement de *FutureWarning*
+### Cas avertissement de *FutureWarning*
 
 {{% notice style=warning title=Attention %}}
 Si vous rencontrez un avertissement ***FutureWarning***: The default value of `numeric_only` in DataFrameGroupBy.mean is deprecated. In a future version, `numeric_only` will default to False. Either specify `numeric_only` or select only columns which should be valid for the function.*, vous devez soit spécifier explicitement `numeric_only=True` ou sélectionner uniquement les colonnes numériques avant d’appliquer la fonction mean()
@@ -751,6 +751,29 @@ Affichage de la moyenne des données groupées par âge
 30   90.3
 35   78.9
 ```
+
+### Les attributs index et values des *DataFrames* et des Series
+
+1. **`.index`** :
+   - **Définition** : L'attribut `.index` d'un DataFrame ou d'une Series représente les étiquettes des lignes. Pour un DataFrame, il s'agit des étiquettes des lignes, et pour une Series, il s'agit des étiquettes des éléments.
+   - **Utilisation** : Il est souvent utilisé pour accéder ou manipuler les indices des données. Par exemple, dans une Series contenant des précipitations annuelles (Année, Précipitation), `.index` contiendrait les années.
+
+```python
+total_annee = df.groupby('Année')['Précipitation'].sum()
+print(total_annee.index)  # Affiche les années
+```
+
+2. **`.values`** :
+   - **Définition** : L'attribut `.values` d'un DataFrame ou d'une Series représente les données sous forme de tableau (numPy). Pour un DataFrame, il s'agit des valeurs de toutes les cellules, et pour une Series, il s'agit des valeurs des éléments.
+   - **Utilisation** : Il est utilisé pour accéder directement aux valeurs des données sans les étiquettes. Par exemple, dans une Series contenant des précipitations annuelles (Année, Précipitation), `.values` contiendrait les valeurs des précipitations.
+
+```python
+total_par_annee = df.groupby('Année')['Précipitation'].sum()
+print(total_par_annee.values)  # Affiche les précipitations totales pour chaque année
+```
+
+En résumé, `.index` vous donne les étiquettes des lignes (ou des éléments dans une Series), tandis que `.values` vous donne les valeurs des données.
+
 ## Fonctions et méthodes
 
 Voici un tableau de quelques méthodes et fonctions incontournables en analyse de données scientifiques :
@@ -772,7 +795,6 @@ Voici un tableau de quelques méthodes et fonctions incontournables en analyse d
 | `sort_values()`  | Trie les valeurs d'une colonne d'un DataFrame |
 
 
-
 ## Visualisation de données
 
 Bien que Pandas ne soit pas une bibliothèque de visualisation, il s'intègre bien avec Matplotlib pour créer des graphiques simples.
@@ -789,4 +811,4 @@ Pour tout savoir sur Pandas: [Site officiel Pandas](https://pandas.pydata.org/ "
 
 ## Présentation du projet final (Étape 1)
 
-[Projet final](https://420sn1re.github.io/A24/semaine11/projet/index.html#projet---fil-rouge
+[Projet final](https://420sn1re.github.io/A24/semaine11/projet/index.html#projet-final)

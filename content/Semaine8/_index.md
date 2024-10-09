@@ -14,7 +14,7 @@ weight = 80
 
 ## Plan de la leçon
 
-- **Quiz récapitulatif**: semaines 1 à 6 (15 mins)
+- **Quiz récapitulatif**: semaines 1 à 6 (20 mins)
 - Fonctions: 
 	- Rôles et définition.
 	- Déclaration. 
@@ -22,6 +22,5 @@ weight = 80
 	- Le passage de paramètres. 
 	- Le retour de valeurs. 
 	- La portée des variables.
-	- Les fonctions récursives.
 - Ateliers : Les fonctions et la portée des variables
 - Pour la semaine prochaine

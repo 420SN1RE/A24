@@ -61,7 +61,7 @@
       <link>https://example.org/semaine8/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine8/index.html</guid>
-      <description>Objectifs de la leçon Comprendre les rôles et utilités des sous-programmes. Définir des sous-programmes. Utiliser des sous-programmes. Comprendre le passage de paramètres et la portée des variables. Plan de la leçon Quiz récapitulatif: semaines 1 à 6 (15 mins) Fonctions: Rôles et définition. Déclaration. L’appel. Le passage de paramètres. Le retour de valeurs. La portée des variables. Les fonctions récursives. Ateliers : Les fonctions et la portée des variables Pour la semaine prochaine</description>
+      <description>Objectifs de la leçon Comprendre les rôles et utilités des sous-programmes. Définir des sous-programmes. Utiliser des sous-programmes. Comprendre le passage de paramètres et la portée des variables. Plan de la leçon Quiz récapitulatif: semaines 1 à 6 (20 mins) Fonctions: Rôles et définition. Déclaration. L’appel. Le passage de paramètres. Le retour de valeurs. La portée des variables. Ateliers : Les fonctions et la portée des variables Pour la semaine prochaine</description>
     </item>
     <item>
       <title>Technique de débogage simple</title>
@@ -83,6 +83,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine11/index.html</guid>
       <description>Objectifs de la leçon Comprendre les structures de données de la bibliothèque Pandas. Apprendre à créer et manipuler des Series et des DataFrames. Savoir manipuler des données de type Date. Savoir importer et exporter des données de fichiers CSV avec Pandas. Effectuer des opérations de nettoyage des données. Réaliser des analyses de données simples. Plan de la leçon Quiz: Pas cette semaine La bibliothèque Pandas Création de Series et de DataFrames.</description>
+    </item>
+    <item>
+      <title>Matplotlib</title>
+      <link>https://example.org/semaine12/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine12/index.html</guid>
+      <description>Objectifs de la leçon Comprendre les bases de la bibliothèque Matplotlib. Apprendre à créer des graphiques simples et personnalisés. Interpréter les résultats de graphiques pour des applications en sciences. Plan de la leçon Quiz: Bibliothèque Pandas (10 mins) La création et la personnalisation de graphiques simples. Traçage de graphiques en ligne Ajout d’éléments de graphique (titres, légendes, marqueurs, etc.) La sauvegarde d’un graphique en format image (png) Pause 5 mins Les sous graphiques et les graphiques multiples Application scientifique, un exemple simple : Croissance des plantes (Biologie) Pause 5 mins Ateliers Pour la semaine prochaine</description>
     </item>
     <item>
       <title>Solutions des ateliers</title>

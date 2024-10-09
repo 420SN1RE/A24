@@ -67,6 +67,9 @@
     <loc>https://example.org/semaine1/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/bases/langage-de-prog/reg-lineaire/reglineaire_numpy/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine1/pr%C3%A9sentation-du-cours/index.html</loc>
   </url>
   <url>
@@ -244,7 +247,13 @@
     <loc>https://example.org/semaine11/atelier/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine12/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine12/matplotlib/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine12/atelier/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine13/numpy/index.html</loc>

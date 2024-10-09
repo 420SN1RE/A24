@@ -26,11 +26,11 @@ draft = true
 
 [Semaine 6 - Listes et chaines de caractères](correction-atelier-listes-chaines.ipynb)
 
-[Semaine 7 - Récapitulation Exercice 1](correction-exercice1.ipynb) ***
+[Semaine 7 - Récapitulation Exercice 1](exercice1.ipynb)
 
-[Semaine 7 - Récapitulation Exercice 1 - Version 2](correction-exercice1-v2.ipynb.ipynb) ***
+[Semaine 7 - Révision Exercice 1_V2](exercice1-v2.ipynb) 
 
-[Semaine 7 - Récapitulation Exercice 2](exercice2.ipynb) ***
+[Semaine 7 - Révision Exercice 2](exercice2.ipynb)
 
 [Semaine 8 - Fonctions](correction-atelier-fonctions.ipynb)
 
