@@ -38,6 +38,8 @@ weight = 170
 
 [Semaine 7 - Révision Exercice 1](exercice1.ipynb)
 
+[Semaine 7 - Révision Exercice 1 avec utilisation de lower()](exercice1-lower.ipynb)
+
 [Semaine 7 - Révision Exercice 1_V2](exercice1-v2.ipynb)
 
 [Semaine 7 - Révision Exercice 2](exercice2.ipynb)
