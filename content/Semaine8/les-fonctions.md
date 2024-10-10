@@ -1,17 +1,9 @@
 +++
-title = "Les fonctions"
-weight = 81
+title = "Création et utilisation de fonctions"
+weight = 82
 +++
 
 ![fonctions](../fonction.jpeg?width=25vw)
-
-Les sous-programmes, aussi appelés `fonctions`, sont des blocs de **code réutilisables** qui permettent de structurer et d'organiser un programme. Ils facilitent la maintenance et la lisibilité du code. 
-
-Vous en connaissez déjà quelques-unes:
-- print()
-- int(), float(), str(), bool()
-- input()
-- range()
 
 ## Déclaration des fonctions
 

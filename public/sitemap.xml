@@ -22,6 +22,9 @@
     <loc>https://example.org/bases/outils/installations/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/bases/langage-de-prog/biopython/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/langage-de-prog/debogage/index.html</loc>
   </url>
   <url>
@@ -31,7 +34,13 @@
     <loc>https://example.org/bases/langage-de-prog/erreurs/operateurs/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/bases/langage-de-prog/biopython/intro/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/langage-de-prog/debogage/trace/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/langage-de-prog/biopython/manipulation/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/index.html</loc>
@@ -203,6 +212,9 @@
   </url>
   <url>
     <loc>https://example.org/semaine8/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine8/fonctions-predefinies/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine8/les-fonctions/index.html</loc>

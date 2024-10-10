@@ -45,10 +45,8 @@
 
 11) leur demander (S2-S4) horaire semaine prochaine, évaluation à venir
 
+12) après le quiz je fais la correction, donc ne m'appelez pas individuellement
 
-Ajout
-
-retrait
 
 - S4 p1 exemple avec if
 
