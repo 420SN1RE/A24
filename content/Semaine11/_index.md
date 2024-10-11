@@ -7,7 +7,7 @@ weight = 110
 
 ## Objectifs de la leçon
 
-- Comprendre la structure de données DataFrame de la bibliothèque Pandas.
+- Comprendre la structure de données DataFrame.
 - Apprendre à créer et manipuler des dataframes.
 - Savoir importer et exporter des données de fichiers CSV avec Pandas.
 - Réaliser des analyses de données simples.
