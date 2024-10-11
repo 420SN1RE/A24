@@ -82,7 +82,7 @@
       <link>https://example.org/semaine11/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine11/index.html</guid>
-      <description>Objectifs de la leçon Comprendre les structures de données de la bibliothèque Pandas. Apprendre à créer et manipuler des Series et des DataFrames. Savoir manipuler des données de type Date. Savoir importer et exporter des données de fichiers CSV avec Pandas. Effectuer des opérations de nettoyage des données. Réaliser des analyses de données simples. Plan de la leçon Quiz: Pas cette semaine La bibliothèque Pandas Création de Series et de DataFrames.</description>
+      <description>Objectifs de la leçon Comprendre la structure de données DataFrame de la bibliothèque Pandas. Apprendre à créer et manipuler des dataframes. Savoir importer et exporter des données de fichiers CSV avec Pandas. Réaliser des analyses de données simples. Plan de la leçon Quiz: Pas cette semaine La bibliothèque Pandas Extraction des données de fichiers CSV. Création de Series et de DataFrames. Accès aux données d’un DataFrame. Pause 5 mins Ajout, suppression et renommage de colonnes.</description>
     </item>
     <item>
       <title>Matplotlib</title>

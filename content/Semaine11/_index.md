@@ -7,11 +7,9 @@ weight = 110
 
 ## Objectifs de la leçon
 
-- Comprendre les structures de données de la bibliothèque Pandas.
-- Apprendre à créer et manipuler des Series et des *DataFrames*.
-- Savoir manipuler des données de type Date.
+- Comprendre la structure de données DataFrame de la bibliothèque Pandas.
+- Apprendre à créer et manipuler des dataframes.
 - Savoir importer et exporter des données de fichiers CSV avec Pandas.
-- Effectuer des opérations de nettoyage des données.
 - Réaliser des analyses de données simples.
 
 
@@ -19,19 +17,13 @@ weight = 110
 
 - **Quiz:  Pas cette semaine**
 - La bibliothèque Pandas
+	- Extraction des données de fichiers CSV.
 	- Création de Series et de *DataFrames*.
-	- Accès aux lignes et colonnes d'un *DataFrame*.
+	- Accès aux données d'un *DataFrame*.
+- Pause 5 mins
 	- Ajout, suppression et renommage de colonnes.
 	- Sélection et filtrage de données.
-	- Tri des données d'un *DataFrame*.
-	- Fusion de *DataFrames*.
-- Pause 5 mins
-	- Gestion des données de type Date.
-	- Traitement de fichiers de données (CSV).
-		- Lecture et écriture.
-		- Nettoyage de données (manquantes, nulles)
 	- Calcul de statistiques descriptives.
-	- Groupement de données.
 - Pause 5 mins
 	- Présentation du Projet Final (Partie 1) - À VENIR
 - Atelier
