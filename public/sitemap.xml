@@ -271,7 +271,13 @@
     <loc>https://example.org/semaine12/atelier/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/semaine13/numpy2/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/semaine13/numpy/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine13/reglin/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions-ateliers/index.html</loc>
@@ -293,6 +299,9 @@
   </url>
   <url>
     <loc>https://example.org/bases/outils/markdown/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/exercices-supplementaires/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/outils/vs-code/vs-code-jupyter/index.html</loc>

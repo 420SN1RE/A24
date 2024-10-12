@@ -105,5 +105,12 @@
       <guid>https://example.org/bases/index.html</guid>
       <description>Ici vous trouverez diverses informations sur Python et sur les outils utilisés dans le cours ou que vous pouvez utiliser sur votre ordinateur personnel à la maison.&#xA;Cette section est divisée en trois catégories:&#xA;1. Langage de programmation&#xD;2. Outils&#xD;3. Lexique</description>
     </item>
+    <item>
+      <title>Exercices supplémentaires (Semaines 1 à 6)</title>
+      <link>https://example.org/exercices-supplementaires/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/exercices-supplementaires/index.html</guid>
+      <description>Dans le document Exercices-supplémentaires.pdf, vous trouverez une trentaine d’exercices afin de plus vous exercer. Les exercices sont regroupés selon leur difficulté (facile, moyenne et difficile)&#xA;Vous pouvez télécharger le document ICI</description>
+    </item>
   </channel>
 </rss>
