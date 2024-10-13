@@ -24,6 +24,7 @@ weight = 110
 	- Ajout, suppression et renommage de colonnes.
 	- Sélection et filtrage de données.
 	- Calcul de statistiques descriptives.
+	- Conversion d'un *DataFrame* en liste et modification des valeurs manquantes
 - Pause 5 mins
 	- Présentation du Projet Final (Partie 1) - À VENIR
 - Atelier

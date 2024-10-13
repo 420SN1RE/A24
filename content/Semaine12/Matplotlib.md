@@ -80,8 +80,6 @@ plt.ylabel("L'axe Y")
 plt.show()
 ```
 
-Bien sûr ! Voici un tableau expliquant les fonctions et méthodes utilisées dans votre code :
-
 | Méthode       | Description                                                                 |
 |------------------------|-----------------------------------------------------------------------------|
 | `plt.title('Graphique simple')` | Ajoute un titre au graphique avec le texte 'Graphique simple'.      |
@@ -121,32 +119,23 @@ plt.show()
 
 **Liste de marqueurs**
 
-Voici un tableau des différents marqueurs possibles dans Matplotlib :
+Voici un tableau de quelques marqueurs possibles:
 
-| Marqueur | Description             |
-|----------|-------------------------|
-| `'.'`    | Point                   |
-| `','`    | Pixel                   |
-| `'o'`    | Cercle                  |
-| `'v'`    | Triangle vers le bas    |
-| `'^'`    | Triangle vers le haut   |
-| `'<'`    | Triangle vers la gauche |
-| `'>'`    | Triangle vers la droite |
-| `'1'`    | Tri-down                |
-| `'2'`    | Tri-up                  |
-| `'3'`    | Tri-left                |
-| `'4'`    | Tri-right               |
-| `'s'`    | Carré                   |
-| `'p'`    | Pentagone               |
-| `'*'`    | Étoile                  |
-| `'h'`    | Hexagone 1              |
-| `'H'`    | Hexagone 2              |
-| `'+'`    | Plus                    |
-| `'x'`    | Croix                   |
-| `'D'`    | Diamant                 |
-| `'d'`    | Diamant mince           |
-| `'|'`    | Ligne verticale         |
-| `'_'`    | Ligne horizontale       |
+| Marqueur         | Description             |
+|------------------|-------------------------|
+| `'.'`            | Point                   |
+| `','`            | Pixel                   |
+| `'o'`            | Cercle                  |
+| `'v'`            | Triangle                |
+| `'s'`            | Carré                   |
+| `'p'`            | Pentagone               |
+| `'*'`            | Étoile                  |
+| `'h'`,  `'H'`    | Hexagone                |
+| `'+'`            | Plus                    |
+| `'x'`            | Croix                   |
+| `'D'`, `'d'`     | Diamant                 |
+| `'\|'`           | Ligne verticale         |
+| `'_'`            | Ligne horizontale       |
 
 ### Ajout de légende
 
@@ -173,6 +162,41 @@ plt.show()
 ```
 
 ![graphe 6](../graphe6.png?width=30vw)
+
+## Définir les étiquettes de graduations des axes x et y
+
+Les fonctions `xticks()` et `yticks()` sont utilisées pour obtenir ou définir les étiquettes des graduations sur les axes x et y d’un graphique.
+
+```python
+import matplotlib.pyplot as plt
+
+# Exemple de données
+x = [0, 1, 2, 3, 4]
+y = [10, 20, 25, 30, 40]
+
+plt.plot(x, y)
+
+# Définir les étiquettes des graduations de l'axe x
+plt.xticks([0, 1, 2, 3, 4], ['A', 'B', 'C', 'D', 'E'])
+
+# Définir les étiquettes des graduations de l'axe y
+plt.yticks([10, 20, 30, 40], ['Dix', 'Vingt', 'Trente', 'Quarante'])
+
+plt.show()
+```
+
+| Méthode              | Description                                                   |
+|----------------------|---------------------------------------------------------------|
+| `plt.xticks`         | Définit ou obtient les étiquettes des graduations de l’axe x. |
+| `plt.yticks`         | Définit ou obtient les étiquettes des graduations de l’axe y. |
+
+
+![graphe 8](../graphe8.png?width=30vw)
+
+
+## Pause 5 minutes
+
+![Pause](../pause.jpg?width=25vw)
 
 ### Création de graphiques multiples
 
@@ -206,6 +230,7 @@ plt.show()
 
 | Méthode                | Description                                                                 |
 |------------------------|-----------------------------------------------------------------------------|
+| `plt.figure()`         | Crée une nouvelle figure dans laquelle vous pouvez tracer vos graphiques. |
 | `plt.subplot(2, 1, 2)` | Crée un sous-graphique dans une grille de 2 lignes et 1 colonne, et place ce sous-graphique dans la deuxième position (en bas). Cela permet de créer plusieurs graphiques dans une seule figure. |
 | `plt.tight_layout()`   | Ajuste automatiquement les paramètres des sous-graphiques pour qu'ils s'adaptent proprement à la zone de la figure, en évitant les chevauchements entre les étiquettes, les titres et les axes. |
 
@@ -345,6 +370,7 @@ plt.show()
 
 ![Graphique en nuage](../matplotlib-nuage.png?width=30vw)
 
+
 ## Quelques méthodes
 
 | Méthode        | Description                                                              |
@@ -358,35 +384,13 @@ plt.show()
 | `plt.title()`           | Ajoute un titre au graphique.                                            |
 | `plt.show()`            | Affiche le graphique.                                                    |
 | `plt.savefig()`         | Enregistre le graphique sous forme d'image.                              |
-| `fig, ax = plt.subplots()`| Crée une figure et des axes, permettant des graphes plus complexes.     |
+| `fig, ax = plt.subplots()`| Crée une figure et des axes, permettant des graphes plus complexes.    |
+| `fig = plt.figure(figsize=(width, height)`| `figsize` : Une tuple (largeur, hauteur) en pouces, définissant la taille de la figure.|
+| `plt.grid()`            |  Afficher ou masquer la grille quadrillée sur un graphique.              |
 
 
 Pour tout savoir sur Matplotlib: [Site officiel Matplotlib](https://matplotlib.org/stable/ "Matplotlib").
 
-## Exemple d'application en sciences : Précipitations annuelles
+## Pause 5 minutes
 
-On utilisera le fichier suivant: [Précipitations](../precipitations.csv) , contenant les colonnes : `Année` et `Précipitation` (en mm).
-
-L'objectif: 
-- Analyser les précipitations annuelles sur plusieurs années et visualiser les tendances.
-
-```python
-# 1. Charger les données
-import pandas as pd
-df = pd.read_csv('precipitations.csv')
-
-# 2. Calculer la précipitation totale par année
-total_par_annee = df.groupby('Année')['Précipitation'].sum()
-
-# 3. Visualiser les données avec un graphique linéaire
-import matplotlib.pyplot as plt
-
-# x = Année, y = Précipitations
-plt.plot(total_par_annee.index, total_par_annee.values)
-plt.xlabel('Année')
-plt.ylabel('Précipitation totale (mm)')
-plt.title('Précipitations annuelles')
-plt.show()
-```
-
-![graphe 7](../graphe7.png?width=35vw)
+![Pause](../pause.jpg?width=25vw)

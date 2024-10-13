@@ -18,10 +18,10 @@ weight = 120
 - La création et la personnalisation de graphiques simples.
 	- Traçage de graphiques en ligne
 	- Ajout d'éléments de graphique (titres, légendes, marqueurs, etc.)
-- La sauvegarde d'un graphique en format image (png)
 - Pause 5 mins
 - Les sous graphiques et les graphiques multiples
-- Application scientifique, un exemple simple : Croissance des plantes (Biologie)
+- La sauvegarde d'un graphique en format image (png)
+- Les types de graphiques
 - Pause 5 mins
 - Ateliers
 - Pour la semaine prochaine

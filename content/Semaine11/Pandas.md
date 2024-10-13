@@ -45,6 +45,7 @@ df = pd.read_csv('data.csv')
 Une fois les données chargées, vous pouvez les afficher pour avoir un aperçu :
 ```python
 print(df.head())  # Affiche les 5 premières lignes du DataFrame
+print(df.tail())  # Affiche les 5 dernières lignes du DataFrame
 ```
 
 **Exemple**:
@@ -166,6 +167,31 @@ df_filtre = df[df['Colonne'] > valeur]  # Filtre les lignes où les valeurs de '
 print(df_filtre.head())
 ```
 
+### Grouper les données
+
+Le groupement de données permet de calculer des statistiques agrégées pour des sous-ensembles de données.
+
+```plaintext
+La colonne Session ajoutée 
+       Nom  Âge  Note  Ville
+0    Aline   25  85.5  Laval
+1   Robert   30  90.3  Laval
+2  Charles   35  78.9  Montréal
+```
+
+```python
+# Groupement par une colonne et calcul de la moyenne
+groupe = df.groupby('Ville')['Age'].mean()
+print(groupe)
+```
+
+```plaintext
+Ville
+Laval       27.5
+Montréal    35.0
+Name: Age, dtype: float64
+```
+
 ## Les attributs index et values des DataFrames
 
 Pour accéder à l'index du DataFrame :
@@ -189,6 +215,39 @@ print(valeurs)
  ['Robert' 30 90.3]
  ['Charles' 35 78.9]]
 ```
+
+## Conversion d'un *DataFrame* en liste
+
+La méthode `tolist()` est utilisée pour convertir un *DataFrame* en une liste. Chaque ligne du *DataFrame* sera un élément de la liste. C’est particulièrement utile lorsqu'on souhaite manipuler les données sans utilises les méthodes de pandas. Par exemple, pour identifier et modifier les données manquantes (Ex.: *None* ou *NaN*).
+
+```python
+import pandas as pd
+
+# Charger les données dans un DataFrame
+df = pd.read_csv('data.csv')
+
+# Convertir le DataFrame en liste
+liste = df.values.tolist()
+
+# Remplacer les valeurs manquantes par 0
+for ligne in liste:
+    for i in range(len(ligne)):
+        if ligne[i] != ligne[i]:
+            ligne[i] = 0
+
+# Afficher la liste modifiée
+print(liste)
+```
+
+```plaintext
+[['Aline', 25, 85.5, 'Laval'], ['Robert', 30, 0, 'Laval'], ['Charles', 35, 78.9, 'Montréal'], ['Sophie', 28, 0, 'Québec'], ['Luc', 22, 88.0, 'Sherbrooke'], ['Marie', 27, 0, 'Trois-Rivières'], ['Jean', 32, 92.3, 'Gatineau'], ['Paul', 29, 0, 'Saguenay'], ['Julie', 24, 81.7, 'Drummondville'], ['Marc', 31, 0, 'Longueuil']]
+```
+
+La condition `if ligne[i] != ligne[i]:` fonctionne grâce à une propriété unique des valeurs NaN (Not a Number) en Python. :
+
+### Propriété des valeurs *NaN*
+
+En Python, et plus généralement dans les langages de programmation, les valeurs `NaN` ont une propriété spéciale : elles ne sont pas égales à elles-mêmes. Cela signifie que si vous comparez une valeur `NaN` à elle-même, le résultat sera toujours `False`.
 
 ## Visualisation des données
 
