@@ -21,18 +21,18 @@ Voyons d'autres fonctions prédéfinies utiles.
 
 ## Les fonctions mathématiques
 
-Pour utiliser ces fonctions, vous devez d'abord importer le module math dans votre code.
-
-```python
-import math
-```
-
 ### La fonction `abs()`
 
 La fonction `abs()` retourne la valeur absolue d'un nombre.
 
 ```python
 print(abs(-5))  # Affiche 5
+```
+
+Pour utiliser certaines fonctions, vous devez d'abord importer le module math dans votre code.
+
+```python
+import math
 ```
 
 ### La fonction `sqrt()`

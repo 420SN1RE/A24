@@ -19,9 +19,10 @@ weight = 100
 		- Fonctions et la portée des variables
 		- Débogage avec print
 
-### Documentation permise (**À confirmer sous peu**)
+### Documentation permise
 
-- 
+- 2 feuilles 8.5 x 11 recto-verso
+- 1 crayon et 1 feuille vierge comme feuille brouillon
 
 ### Format de l'examen (**Détails à confirmer sous peu**)
 
