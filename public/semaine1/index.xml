@@ -3,7 +3,7 @@
   <channel>
     <title>Présentations et introduction à la programmation :: Mon site 420SN1RE</title>
     <link>https://example.org/semaine1/index.html</link>
-    <description>Objectifs de la leçon Comprendre quels sont les objectifs du cours 420-SN1-RE. Connaitre les responsabilités de l’enseignante et celles des étudiants Comprendre les éléments de base de la programmation. Se familiariser à l’environnement de travail. Savoir déterminer les données en entrée, en sortie et leurs traitements dans des problèmes scientifique simples. Plan de la leçon Connexion à Moodle et présentation du site du cours ~15 mins. Présentation de votre enseignante ~5 mins.</description>
+    <description>Objectifs de la leçon Comprendre quels sont les objectifs du cours 420-SN1-RE. Connaitre les responsabilités de l’enseignante et celles des étudiants Comprendre les éléments de base de la programmation. Se familiariser à l’environnement de travail. Savoir déterminer les données en entrée, en sortie et leurs traitements dans des problèmes scientifique simples. Plan de la leçon Connexion à Moodle et présentation du site du cours ~15 mins. Présentation de votre enseignante ~5 mins. Présentation des étudiants (prénom, [nom] , passes-temps, expérience en programmation) ~20 mins. Présentation du cours ~25 mins. Pause 5 minutes. Quiz Moodle : Évaluation diagnostique ~5 mins. L’environnement de développement (Python, Visual Studio Code et Jupyter Notebook) ~20 mins. Pause 5 mins. Programme et langage de programmation ~5 mins. Le cycle de développement de logiciel ~5 mins. L’analyse du problème: détermination et traitement des données ~15 mins. Atelier: Analyse de problèmes simples ~30 mins. Pour la semaine prochaine.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://example.org/semaine1/index.xml" rel="self" type="application/rss+xml" />
@@ -12,21 +12,21 @@
       <link>https://example.org/semaine1/pr%C3%A9sentation-du-cours/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine1/pr%C3%A9sentation-du-cours/index.html</guid>
-      <description>Le plan et la vue synoptique du cours Note&#xD;Vous trouverez l’intégralité du plan de cours sur Moodle. C’est cette version que vous devrez consulter au cours de la session. Sur Moodle, vous trouverez également la vue synoptique du cours, qui permet d’avoir une vue d’ensemble des étapes de la session.&#xA;La pondération 1-2-3 La pondération d’un cours, le nombre d’heures en moyenne par semaine qu’un.e élève doit effectuer pour réussir le cours.</description>
+      <description>Le plan et la vue synoptique du cours Note&#xD;Vous trouverez l’intégralité du plan de cours sur Moodle. C’est cette version que vous devrez consulter au cours de la session. Sur Moodle, vous trouverez également la vue synoptique du cours, qui permet d’avoir une vue d’ensemble des étapes de la session.</description>
     </item>
     <item>
       <title>Introduction à la programmation</title>
       <link>https://example.org/semaine1/introduction-la-programmation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine1/introduction-la-programmation/index.html</guid>
-      <description>.&#xA;Qu’est-ce qu’un programme ? Un programme, ou une application, ou encore un logiciel, est un outil permettant la réalisation de tâches.&#xA;Traitement de texte Envois de messages Prévision météorologique Gestion de stock Montage vidéo Pour réaliser ces tâches, un programme va implémenter un ou plusieurs algorithmes dans un langage de programmation.&#xA;Qu’est-ce qu’un algorithme ? Un algorithme est une suite d’actions qui suivent un ordre précis. Cette suite d’actions représente les traitements sur les données.</description>
+      <description>.&#xA;Qu’est-ce qu’un programme ? Un programme, ou une application, ou encore un logiciel, est un outil permettant la réalisation de tâches.&#xA;Traitement de texte Envois de messages Prévision météorologique Gestion de stock Montage vidéo Pour réaliser ces tâches, un programme va implémenter un ou plusieurs algorithmes dans un langage de programmation.</description>
     </item>
     <item>
       <title>Du problème à l&#39;algorithme au programme</title>
       <link>https://example.org/semaine1/analyse-de-probl%C3%A8mes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine1/analyse-de-probl%C3%A8mes/index.html</guid>
-      <description>.&#xA;L’importance de l’analyse de problèmes Attention&#xD;Avant de commencer à coder, il est fortement recommandé de décortiquer le problème. C’est plus efficace de créer un algorithme (une série d’étapes logiques) pour résoudre un problème, avant de se lancer dans l’écriture du code.&#xA;En quoi consiste l’analyse d’un problème ? À ce stade, ce n’est pas nécessaire de connaitre la syntaxe du langage de programmation.&#xA;L’objectif est d’identifier :</description>
+      <description>.&#xA;L’importance de l’analyse de problèmes Attention&#xD;Avant de commencer à coder, il est fortement recommandé de décortiquer le problème. C’est plus efficace de créer un algorithme (une série d’étapes logiques) pour résoudre un problème, avant de se lancer dans l’écriture du code.&#xA;En quoi consiste l’analyse d’un problème ? À ce stade, ce n’est pas nécessaire de connaitre la syntaxe du langage de programmation.</description>
     </item>
     <item>
       <title>ATELIERS</title>

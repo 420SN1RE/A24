@@ -3,7 +3,7 @@ title = "Régression linéaire avec NumPy"
 weight = 132
 +++
 
-![Régression linéaire](../reg-lineaire.jpg?width=20vw)
+![Régression linéaire](../regLineaire.png?width=20vw)
 
 
 La régression linéaire est une technique statistique utilisée pour modéliser la relation entre une variable dépendante (souvent notée `y`) et une ou plusieurs variables indépendantes (notées `x`). En termes simples, c'est une méthode qui permet de tracer une ligne droite (appelée droite de régression) qui s'ajuste le mieux aux données.

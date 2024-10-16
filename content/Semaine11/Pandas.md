@@ -36,6 +36,7 @@ CSV signifie ***Comma-Separated Values*** (valeurs séparées par des virgules).
 Pandas fourni des fonctionnalités pour lire des fichiers csv ou en créer.
 
 La première étape pour travailler avec des données est de les charger dans un DataFrame. Supposons que vous avez un fichier CSV nommé `data.csv` :
+
 ```python
 df = pd.read_csv('data.csv')
 ```
@@ -44,17 +45,15 @@ df = pd.read_csv('data.csv')
 
 Une fois les données chargées, vous pouvez les afficher pour avoir un aperçu :
 ```python
-print(df.head())  # Affiche les 5 premières lignes du DataFrame
-print(df.tail())  # Affiche les 5 dernières lignes du DataFrame
+df.head()  # Affiche les 5 premières lignes du DataFrame
 ```
 
-**Exemple**:
-```plaintext
-       Nom  Âge  Note
-0    Aline   25  85.5
-1   Robert   30  90.3
-2  Charles   35  78.9
+![5 premières lignes](../head.png?wdth=15vw)
+
+```python
+df.tail()  # Affiche les 5 dernières lignes du DataFrame
 ```
+![5 dernières lignes](../tail.png?wdth=15vw)
 
 ## Renommage de colonnes
 
@@ -63,16 +62,11 @@ Les colonnes peuvent être renommées pour une meilleure clarté.
 ```python
 # Renommage des colonnes
 df = df.rename(columns={"Nom": "Prénom"})
-print(f"La colonne Nom modifiée \n{df}\n")
+print("La colonne Nom modifiée")
+df
 ```
 
-```plaintext
-La colonne Nom modifiée 
-    Prénom  Âge  Note
-0    Aline   25  85.5
-1   Robert   30  90.3
-2  Charles   35  78.9
-```
+![Rename](../rename.png?wdth=15vw)
 
 ## Ajout et suppression de colonnes
 
@@ -80,77 +74,67 @@ Pour renommer une ou plusieurs colonnes :
 ```python
 # Ajout d'une nouvelle colonne
 df["Session"] = "Automne"
-print(f"La colonne Session ajoutée \n{df}\n")
+print("La colonne Session ajoutée")
+df
 
 # Suppression d'une colonne
 df = df.drop(columns=["Session"])
-print(f"La colonne Session supprimée \n{df}\n")
+print("La colonne Session supprimée")
+df
 ```
 
-```plaintext
-La colonne Session ajoutée 
-       Nom  Âge  Note  Session
-0    Aline   25  85.5  Automne
-1   Robert   30  90.3  Automne
-2  Charles   35  78.9  Automne
+![Session ajoutée](../session.png?wdth=10vw)
 
-La colonne Session supprimée 
-       Nom  Âge  Note
-0    Aline   25  85.5
-1   Robert   30  90.3
-2  Charles   35  78.9
-```
+![Session supprimée](../session_suppr.png?wdth=10vw)
 
-## Informations sur le DataFrame
+## Informations sur le *DataFrame*
 
-Pour obtenir des informations générales sur votre DataFrame, telles que le nombre de lignes et de colonnes, les types de données, etc. :
+Pour obtenir des informations générales sur votre *DataFrame*, telles que le nombre de lignes et de colonnes, les types de données, etc. :
+
 ```python
-print(df.info())
+df.info()
 ```
 ```plaintext
 <class 'pandas.core.frame.DataFrame'>
-RangeIndex: 3 entries, 0 to 2
+RangeIndex: 8 entries, 0 to 7
 Data columns (total 3 columns):
  #   Column  Non-Null Count  Dtype  
 ---  ------  --------------  -----  
- 0   Nom     3 non-null      object 
- 1   Âge     3 non-null      int64  
- 2   Note    3 non-null      float64
+ 0   Prénom  8 non-null      object 
+ 1   Age     8 non-null      int64  
+ 2   Note    8 non-null      float64
 dtypes: float64(1), int64(1), object(1)
-memory usage: 204.0+ bytes
+memory usage: 324.0+ bytes
 ```
+On a bien les types de variables connus : `int`, `float`.`object` fait souvent référence au type `str`.
 
 ## Statistiques de base
 
 Pandas offre des méthodes simples pour obtenir des statistiques de base sur vos données :
+
 ```python
-print(df.describe())  # Affiche les statistiques descriptives des colonnes numériques
+df.describe()  # Affiche les statistiques descriptives des colonnes numériques
 ```
 
-```plaintext
-        Âge       Note
-count   3.0   3.000000
-mean   30.0  84.900000
-std     5.0   5.723635
-min    25.0  78.900000
-25%    27.5  82.200000
-50%    30.0  85.500000
-75%    32.5  87.900000
-max    35.0  90.300000
-```
+![describre](../describe.png?width=25vw)
 
 ## Accès direct aux données
 
 Vous pouvez accéder directement aux données d'une colonne du DataFrame.
 ```python
-print(df["Âge"])  # Accède aux données de la colonne Âge
+df["Age"]  # Accède aux données de la colonne Age
 ```
 
 ```plaintext
 0    25
 1    30
 2    35
-Name: Âge, dtype: int64
+3    42
+4    55
+5    67
+6    37
+7    23
+Name: Age, dtype: int64
 ```
 
 ## Sélection et filtrage de données
@@ -158,38 +142,49 @@ Name: Âge, dtype: int64
 Pour sélectionner des colonnes spécifiques :
 ```python
 df_selection = df[['Colonne1', 'Colonne2']]  # Sélectionne les colonnes 'Colonne1' et 'Colonne2'
-print(df_selection.head())
+df_selection.head()
 ```
 
 Pour filtrer les données selon une condition :
 ```python
 df_filtre = df[df['Colonne'] > valeur]  # Filtre les lignes où les valeurs de 'Colonne' sont supérieures à 'valeur'
-print(df_filtre.head())
+df_filtre.head()
 ```
+
+{{%notice style="warning" title="Attention"%}}
+Dans les chapitres précédents, on utilisait `and` et `or` pour combiner des comparaisons. Avec Pandas, il faut utiliser `&` pour `and` et `|` pour `or`.
+{{% /notice%}}
 
 ### Grouper les données
 
 Le groupement de données permet de calculer des statistiques agrégées pour des sous-ensembles de données.
 
-```plaintext
-La colonne Session ajoutée 
-       Nom  Âge  Note  Ville
-0    Aline   25  85.5  Laval
-1   Robert   30  90.3  Laval
-2  Charles   35  78.9  Montréal
-```
+![Avant groupe](../avant_groupe.png?width=20vw)
 
+Ci-dessous, voici comment faire, sans utiliser les fonctionnalités avancées de Pandas et en utilisant les notions déjà vues dans ce cours.
+
+#### Boucler sur une colonne pour effectuer des groupements
+
+Calculons la moyenne pour les étudiants de l'automne.
+
+1. On **filtre** notre jeu de données en rapport avec les données de la session d'Automne.
 ```python
-# Groupement par une colonne et calcul de la moyenne
-groupe = df.groupby('Ville')['Age'].mean()
-print(groupe)
+df_automne = df[df["Session"] == "Automne"]
 ```
 
+![Groupe Automne](../automne.png?width=20vw)
+
+2. On **calcule la moyenne** des notes à l'aide d'une boucle `for`
+```python
+somme_note = 0
+for note in df_automne["Note"]:
+   somme_note = somme_note + note
+
+moyenne = somme_note / len(df_automne)
+print(f"La moyenne des étudiants de l'automne est de {round(moyenne,2)}%")
+```
 ```plaintext
-Ville
-Laval       27.5
-Montréal    35.0
-Name: Age, dtype: float64
+La moyenne des étudiants de l'automne est de 77.97%
 ```
 
 ## Les attributs index et values des DataFrames
@@ -206,7 +201,7 @@ RangeIndex(start=0, stop=3, step=1)
 
 Pour accéder aux valeurs du DataFrame sous forme de tableau :
 ```python
-valeurs = df.values	# Accède à la première ligne sous forme de tableau numpy
+valeurs = df.values	# Accède à la première ligne sous forme de tableau numPy
 print(valeurs)
 ```
 

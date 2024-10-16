@@ -12,14 +12,14 @@
       <link>https://example.org/semaine3/lecture-et-affichage-de-donn%C3%A9es/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/lecture-et-affichage-de-donn%C3%A9es/index.html</guid>
-      <description>.&#xA;Pour qu’un programme soit réutilisable, il faut que l’utilisateur puisse interagir avec, c’est-à-dire lui fournir des données en entrée à volonté.&#xA;La capacité d’un programme de lire des données au clavier est essentielle en programmation.&#xA;Lecture de données au clavier La méthode input() est utilisée pour lire une ligne de texte entrée par l’utilisateur. Elle permet de capturer les données saisies au clavier et de les utiliser dans un programme.</description>
+      <description>.&#xA;Pour qu’un programme soit réutilisable, il faut que l’utilisateur puisse interagir avec, c’est-à-dire lui fournir des données en entrée à volonté.&#xA;La capacité d’un programme de lire des données au clavier est essentielle en programmation.&#xA;Lecture de données au clavier La méthode input() est utilisée pour lire une ligne de texte entrée par l’utilisateur. Elle permet de capturer les données saisies au clavier et de les utiliser dans un programme. Voici un exemple simple :</description>
     </item>
     <item>
       <title>Documentation du code</title>
       <link>https://example.org/semaine3/documentation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine3/documentation/index.html</guid>
-      <description>.&#xA;Pourquoi documenter le code ? La documentation du code est essentielle pour rendre votre code compréhensible et maintenable par d’autres développeurs, ainsi que par vous-même à l’avenir.&#xA;Il existe différentes raisons de vouloir documenter le code:&#xA;Pour expliquer une instruction (commentaire) Pour décrire un module ou sous-programme (docstring) Pour incorporer du texte avec du code (programme lettré) Info&#xD;Pour l’instant, on se contentera de documenter le code à l’aide de commentaires.</description>
+      <description>.&#xA;Pourquoi documenter le code ? La documentation du code est essentielle pour rendre votre code compréhensible et maintenable par d’autres développeurs, ainsi que par vous-même à l’avenir.&#xA;Il existe différentes raisons de vouloir documenter le code:&#xA;Pour expliquer une instruction (commentaire) Pour décrire un module ou sous-programme (docstring) Pour incorporer du texte avec du code (programme lettré) Info&#xD;Pour l’instant, on se contentera de documenter le code à l’aide de commentaires. Plus tard dans la session, on utilisera des docstrings et la programmation lettrée.</description>
     </item>
     <item>
       <title>Syntaxe et erreurs d&#39;exécution</title>

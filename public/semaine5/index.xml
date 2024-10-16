@@ -3,7 +3,7 @@
   <channel>
     <title>Structures répétitives :: Mon site 420SN1RE</title>
     <link>https://example.org/semaine5/index.html</link>
-    <description>Objectifs de la leçon Comprendre l’utilité des structures répétitives (les boucles) Utiliser la boucle WHILE Utiliser la boucle FOR et la fonction RANGE() Contrôler les boucles à l’aide des instructions break et continue Plan de la leçon Quiz: Interaction avec le programme et les conditions (10 mins) Les instructions répétitives en générale ~5mins La boucle WHILE ~15mins Pause 5 minutes. La boucle FOR ~10mins Contrôler les boucles ~5mins Pause 5 minutes.</description>
+    <description>Objectifs de la leçon Comprendre l’utilité des structures répétitives (les boucles) Utiliser la boucle WHILE Utiliser la boucle FOR et la fonction RANGE() Contrôler les boucles à l’aide des instructions break et continue Plan de la leçon Quiz: Interaction avec le programme et les conditions (10 mins) Les instructions répétitives en générale ~5mins La boucle WHILE ~15mins Pause 5 minutes. La boucle FOR ~10mins Contrôler les boucles ~5mins Pause 5 minutes. Atelier: Utiliser la boucle While. Atelier: Utiliser la boucle For. Atelier: break et continue. Pour la semaine prochaine.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://example.org/semaine5/index.xml" rel="self" type="application/rss+xml" />
@@ -12,7 +12,7 @@
       <link>https://example.org/semaine5/boucles/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine5/boucles/index.html</guid>
-      <description>Définition des instructions répétitives Définition&#xD;Les instructions répétitives, également appelées boucles, sont des structures de contrôle qui permettent d’exécuter un bloc de code plusieurs fois. En Python, les deux principales boucles sont for et while.&#xA;Importance des boucles en programmation Les boucles jouent un rôle crucial en programmation pour plusieurs raisons :&#xA;Automatisation des tâches répétitives : Elles permettent d’exécuter une série d’instructions plusieurs fois sans avoir à les écrire manuellement.</description>
+      <description>Définition des instructions répétitives Définition&#xD;Les instructions répétitives, également appelées boucles, sont des structures de contrôle qui permettent d’exécuter un bloc de code plusieurs fois. En Python, les deux principales boucles sont for et while.&#xA;Importance des boucles en programmation Les boucles jouent un rôle crucial en programmation pour plusieurs raisons :&#xA;Automatisation des tâches répétitives : Elles permettent d’exécuter une série d’instructions plusieurs fois sans avoir à les écrire manuellement. Efficacité et réduction du code : Utiliser des boucles réduit la quantité de code nécessaire, rendant les programmes plus courts et plus faciles à lire. Traitement des collections de données : Les boucles sont indispensables pour parcourir et manipuler des structures de données comme les listes, les tuples, les dictionnaires, et les ensembles. Implémentation d’algorithmes : De nombreux algorithmes, comme les tris et les recherches, reposent sur des boucles pour fonctionner correctement. Exemples d’utilisation courants Voici quelques exemples courants où les boucles sont utilisées en programmation :</description>
     </item>
     <item>
       <title>La boucle while</title>
@@ -26,14 +26,14 @@
       <link>https://example.org/semaine5/for/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine5/for/index.html</guid>
-      <description>La boucle FOR Info&#xD;La boucle for est utilisée pour itérer sur une séquence d’éléments, comme une liste, une chaîne de caractères, ou un tuple.&#xA;Elle s’utilise, lorsque le nombre d’itérations (répétitions) est connu d’avance.&#xA;La syntaxe de base est la suivante :&#xA;for element in sequence: # bloc de code à exécuterExemple simple :&#xA;liste_nombres = [1, 2, 3, 4, 5] for nombre in liste_nombres: print(nombre)Dans cet exemple, chaque élément représenté par la variable nombre de la liste_nombres est affiché à l’écran.</description>
+      <description>La boucle FOR Info&#xD;La boucle for est utilisée pour itérer sur une séquence d’éléments, comme une liste, une chaîne de caractères, ou un tuple.&#xA;Elle s’utilise, lorsque le nombre d’itérations (répétitions) est connu d’avance.&#xA;La syntaxe de base est la suivante :&#xA;for element in sequence: # bloc de code à exécuterExemple simple :</description>
     </item>
     <item>
       <title>Le contrôle des boucles</title>
       <link>https://example.org/semaine5/controle/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine5/controle/index.html</guid>
-      <description>Les instructions BREAK et CONTINUE Les instructions break et continue sont utilisées pour contrôler le flux des boucles.&#xA;L’instruction BREAK L’instruction break permet de sortir immédiatement d’une boucle, même si la condition de la boucle n’est pas encore remplie.&#xA;for i in range(10): if i == 5: break print(i)Dans cet exemple, la boucle s’arrête lorsque i vaut 5, donc les nombres de 0 à 4 sont imprimés.&#xA;L’instruction CONTINUE L’instruction continue permet de passer immédiatement à l’itération suivante de la boucle, en sautant le reste du code à l’intérieur de la boucle pour l’itération en cours.</description>
+      <description>Les instructions BREAK et CONTINUE Les instructions break et continue sont utilisées pour contrôler le flux des boucles.&#xA;L’instruction BREAK L’instruction break permet de sortir immédiatement d’une boucle, même si la condition de la boucle n’est pas encore remplie.&#xA;for i in range(10): if i == 5: break print(i)Dans cet exemple, la boucle s’arrête lorsque i vaut 5, donc les nombres de 0 à 4 sont imprimés.</description>
     </item>
     <item>
       <title>ATELIERS</title>

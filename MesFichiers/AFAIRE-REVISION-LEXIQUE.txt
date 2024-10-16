@@ -47,6 +47,10 @@
 
 12) après le quiz je fais la correction, donc ne m'appelez pas individuellement
 
+13) les faire noter les réponses aux questions qu'ils posent souvent alors qu'ils ont déjà la réponse:
+- Infos dans les courriels
+- Infos dans le plan de cours
+- Infos sur le site
 
 - S4 p1 exemple avec if
 
