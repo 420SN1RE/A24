@@ -58,9 +58,9 @@ La fonction `math.log(x, base)` retourne le logarithme de `x` dans la base spéc
 ```python
 import math
 
-# Logarithme naturel de 10
-resultat = math.log(10)
-print(resultat)  # Affiche environ 2.302585092994046
+# Logarithme naturel de 2
+resultat = math.log(2)
+print(resultat)  # Affiche 0.6931471805599453
 
 # Logarithme de 8 en base 2
 resultat = math.log(8, 2)
@@ -81,16 +81,18 @@ import math
 
 # Calcul de e^1
 resultat = math.exp(1)
-print(resultat)  # Affiche environ 2.718281828459045
+print(resultat)  # Affiche 2.718281828459045
 
 # Calcul de e^2
 resultat = math.exp(2)
-print(resultat)  # Affiche environ 7.3890560989306495
+print(resultat)  # Affiche 7.3890560989306495
 
 # Calcul de e^0
 resultat = math.exp(0)
 print(resultat)  # Affiche 1.0
 ```
+
+Le nombre `e` est la base des logarithmes naturels, c'est-à-dire le nombre défini par ln(e) = 1. Cette constante mathématique, également appelée nombre d'Euler ou constante de Néper vaut environ 2,71828. `ln` est le logarithme naturel.
 
 Voici un tableau récapitulatif de quelques fonctions mathématiques prédéfinies en Python :
 
