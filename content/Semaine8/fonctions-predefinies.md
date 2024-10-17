@@ -92,7 +92,7 @@ resultat = math.exp(0)
 print(resultat)  # Affiche 1.0
 ```
 
-Le nombre `e` est la base des logarithmes naturels, c'est-à-dire le nombre défini par ln(e) = 1. Cette constante mathématique, également appelée nombre d'Euler ou constante de Néper vaut environ 2,71828. `ln` est le logarithme naturel.
+Le nombre `e` est la base des logarithmes naturels, c'est-à-dire le nombre défini par `ln(e) = 1`. Cette constante mathématique, également appelée nombre d'Euler ou constante de Néper vaut environ 2,71828. `ln` est le logarithme naturel.
 
 Voici un tableau récapitulatif de quelques fonctions mathématiques prédéfinies en Python :
 
