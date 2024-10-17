@@ -48,12 +48,12 @@ Une fois les données chargées, vous pouvez les afficher pour avoir un aperçu 
 df.head()  # Affiche les 5 premières lignes du DataFrame
 ```
 
-![5 premières lignes](../head.png?wdth=15vw)
+![5 premières lignes](../head.png?width=25vw)
 
 ```python
 df.tail()  # Affiche les 5 dernières lignes du DataFrame
 ```
-![5 dernières lignes](../tail.png?wdth=15vw)
+![5 dernières lignes](../tail.png?width=25vw)
 
 ## Renommage de colonnes
 
@@ -66,7 +66,7 @@ print("La colonne Nom modifiée")
 df
 ```
 
-![Rename](../rename.png?wdth=15vw)
+![Rename](../rename.png?width=25vw)
 
 ## Ajout et suppression de colonnes
 
@@ -83,9 +83,9 @@ print("La colonne Session supprimée")
 df
 ```
 
-![Session ajoutée](../session.png?wdth=10vw)
+![Session ajoutée](../session.png?width=25vw)
 
-![Session supprimée](../session_suppr.png?wdth=10vw)
+![Session supprimée](../session_suppr.png?width=25vw)
 
 ## Informations sur le *DataFrame*
 
@@ -159,7 +159,7 @@ Dans les chapitres précédents, on utilisait `and` et `or` pour combiner des co
 
 Le groupement de données permet de calculer des statistiques agrégées pour des sous-ensembles de données.
 
-![Avant groupe](../avant_groupe.png?width=20vw)
+![Avant groupe](../avant_groupe.png?width=30vw)
 
 Ci-dessous, voici comment faire, sans utiliser les fonctionnalités avancées de Pandas et en utilisant les notions déjà vues dans ce cours.
 
@@ -172,7 +172,7 @@ Calculons la moyenne pour les étudiants de l'automne.
 df_automne = df[df["Session"] == "Automne"]
 ```
 
-![Groupe Automne](../automne.png?width=20vw)
+![Groupe Automne](../automne.png?width=35vw)
 
 2. On **calcule la moyenne** des notes à l'aide d'une boucle `for`
 ```python
@@ -243,6 +243,10 @@ La condition `if ligne[i] != ligne[i]:` fonctionne grâce à une propriété uni
 ### Propriété des valeurs *NaN*
 
 En Python, et plus généralement dans les langages de programmation, les valeurs `NaN` ont une propriété spéciale : elles ne sont pas égales à elles-mêmes. Cela signifie que si vous comparez une valeur `NaN` à elle-même, le résultat sera toujours `False`.
+
+## Reconstruction d'un *DataFrame*
+
+L'utilisation de `pd.DataFrame(donnees_nettoyees, columns=dataframe.columns)` permet reconstruire un *DataFrame* nettoyé avec les mêmes colonnes que l’original.
 
 ## Visualisation des données
 
