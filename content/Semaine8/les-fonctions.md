@@ -94,6 +94,20 @@ def carre(nombre):
 x = carre(5)  # x vaut maintenant 25
 ```
 
+### Retour multiple
+
+En Python, on peut retourner plusieurs valeurs d'une fonction en utilisant le nom des variables à retourner. 
+
+```python
+def calculer(a, b):
+    somme = a + b
+    produit = a * b
+    return somme, produit
+
+resultat = calculer(3, 4)
+print(resultat)  # Affiche (7, 12)
+```
+
 ## La documentation des fonctions (_Docstrings_)
 
 Les docstrings sont des chaînes de caractères utilisées pour documenter les fonctions. Elles sont placées juste après la définition de la fonction.
