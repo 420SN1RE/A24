@@ -43,6 +43,6 @@ Pour toutes les questions à coder et la question bonus, si vous ne savez pas co
 
 
 [^1]: Les étudiants du Service d'aide à l'apprentissage **(SAA)** pourront faire l'examen dans la salle de classe **ET** bénéficier de leur temps supplémentaire.
-[^2]: Mise à part les questions à coder et la question bonus, les questions sont à choix multiple.
+[^2]: Mise à part les questions à coder et la question bonus, les questions sont à choix multiple ou à réponse courte.
 [^3]: Mise à part la catégorie 8, chaque question facile vaut **3pts**, chaque question moyenne vaut **3pts**, chaque question difficile vaut **4pts**, pour un total de **70 points**.
 [^4]: La question facile vaut **8pts**, la question moyenne vaut **10pts** et la question difficile vaut **12pts**, pour un total de **30 points**.
