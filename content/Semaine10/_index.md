@@ -36,7 +36,7 @@ weight = 100
 - Il y aura 1 question bonus qui vaudra 10pts
 
 {{% notice style=warning title=Attention %}}
-Pour toutes les questions à coder et les questions bonus, si vous savez pas comment écrire le code, vous pouvez écrire l'algorithme (en phases). Ainsi, vous pourrez quand même avoir quelques points.
+Pour toutes les questions à coder et les questions bonus, si vous ne savez pas comment écrire le code, vous pouvez écrire l'algorithme (les étapes et la logique en français). Ainsi, vous pourrez quand même avoir quelques points.
 {{% /notice %}}
 
 
