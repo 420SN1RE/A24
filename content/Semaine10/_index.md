@@ -22,9 +22,11 @@ weight = 100
 
 **Durée** : 2 heures (SAA[^1]: 2h40)
 
+**Plateforme**: 100% sur Moodle[^2]
+
 **Nombre de questions** : 24 + 1 question bonus
 
-- Il y aura 8 catégories de questions et pour chacune, il y aura 3 questions (1 facile, 1 moyenne et 1 difficile)[^2]
+- Il y aura 8 catégories de questions et pour chacune, il y aura 3 questions (1 facile, 1 moyenne et 1 difficile)[^3]
 	- Catégorie 1: variables, interaction et types de variables
 	- Catégorie 2: if-elif-else
 	- Catégorie 3: boucle while
@@ -32,7 +34,7 @@ weight = 100
 	- Catégorie 5: listes
 	- Catégorie 6: chaines de caractères
 	- Catégorie 7: fonctions
-	- Catégorie 8[^3]: Code à composer
+	- Catégorie 8[^4]: Code à composer
 - Il y aura 1 question bonus qui vaudra 10pts
 
 {{% notice style=warning title=Attention %}}
@@ -41,5 +43,6 @@ Pour toutes les questions à coder et les questions bonus, si vous ne savez pas 
 
 
 [^1]: Les étudiants du Service d'aide à l'apprentissage **(SAA)** pourront faire l'examen dans la salle de classe **ET** bénéficier de leur temps supplémentaire.
-[^2]: Mise à part la catégorie 8, chaque question facile vaut **3pts**, chaque question moyenne vaut **3pts**, chaque question difficile vaut **4pts**, pour un total de **70 points**.
-[^3]: La question facile vaut **8pts**, la question moyenne vaut **10pts** et la question difficile vaut **12pts**, pour un total de **30 points**.
+[^2]: Mise à part les questions à coder et la question bonus, les questions sont à choix multiple.
+[^3]: Mise à part la catégorie 8, chaque question facile vaut **3pts**, chaque question moyenne vaut **3pts**, chaque question difficile vaut **4pts**, pour un total de **70 points**.
+[^4]: La question facile vaut **8pts**, la question moyenne vaut **10pts** et la question difficile vaut **12pts**, pour un total de **30 points**.
