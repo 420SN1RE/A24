@@ -75,7 +75,7 @@
       <link>https://example.org/semaine10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.org/semaine10/index.html</guid>
-      <description>Matière Semaine 1 à 9 inclusivement Analyse de problèmes Algorithmie: Ordinogramme La base de python: Variables, Les types de données, les opérateurs Lecture, affichage de données Structures conditionnelles Structures répétitives Listes et les chaines de caractères Fonctions et la portée des variables Débogage avec print Documentation permise 2 feuilles 8.5 x 11 recto-verso 1 crayon et 1 feuille vierge comme feuille brouillon Format de l’examen (Détails à confirmer sous peu) Durée : 2 heures (SAA1: 2h40)</description>
+      <description>Matière Semaine 1 à 9 inclusivement Documentation permise 2 feuilles 8.5 x 11 recto-verso 1 crayon et 1 feuille vierge comme feuille brouillon Format de l’examen Durée : 2 heures (SAA1: 2h40)&#xA;Nombre de questions : 24 + 1 question bonus&#xA;Il y aura 8 catégories de questions et pour chacune, il y aura 3 questions (1 facile, 1 moyenne et 1 difficile)2 Catégorie 1: variables, interaction et types de variables Catégorie 2: if-elif-else Catégorie 3: boucle while Catégorie 4: boucle for Catégorie 5: listes Catégorie 6: chaines de caractères Catégorie 7: fonctions Catégorie 83: Code à composer Il y aura 1 question bonus qui vaudra 10pts Attention&#xD;Pour toutes les questions à coder et les questions bonus, si vous savez pas comment écrire le code, vous pouvez écrire l’algorithme (en phases). Ainsi, vous pourrez quand même avoir quelques points.</description>
     </item>
     <item>
       <title>Pandas et présentation du projet final</title>

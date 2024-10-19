@@ -1,0 +1,28 @@
+1-variables, interaction et types de variables
+2-if
+3-boucle while
+4-boucle for
+5-listes
+6-chaines
+7-fonctions
+
+7 * 3 = 21
+7 * 10pts = 70pts
+
+8-Code à composer
+3 * 10 = 30
+
+25-Bonus 10pts
+=======================
+FACILE 		2pts
+MOYEN  		3pts
+DIFFICILE	5pts
+
+=======================
+1-variables, interaction et types de variables (
+2-if
+3-boucle while
+4-boucle for
+5-listes
+6-chaines
+7-fonctions
