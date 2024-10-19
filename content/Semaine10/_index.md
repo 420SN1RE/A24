@@ -7,12 +7,16 @@ weight = 100
 
 ### Matière
 
-- Semaine 1 à 9 inclusivement
+- Semaine 1 à 9 inclusivement.
+
+### Poids de l'examen
+
+- Vaut **30%** de la note finale du cours.
 
 ### Documentation permise
 
-- 2 feuilles 8.5 x 11 recto-verso
-- 1 crayon et 1 feuille vierge comme feuille brouillon
+- 2 feuilles 8.5 x 11 recto-verso.
+- 1 crayon et 1 feuille vierge comme feuille brouillon.
 
 ### Format de l'examen
 
