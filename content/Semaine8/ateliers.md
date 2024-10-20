@@ -4,7 +4,7 @@ weight = 84
 +++
 
 
-![FONCTIONNE À NOUVEAU](../fonctionne.jpeg)
+![FONCTIONNE À NOUVEAU](../fonctionne.jpeg?width=30vw)
 
 ### Les fichiers .ipynb sont à nouveau téléchargeables ici.
 
