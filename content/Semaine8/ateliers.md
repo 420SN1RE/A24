@@ -4,9 +4,9 @@ weight = 84
 +++
 
 
-![NE FONCTIONNE PAS](../fonctionne_pas.jpg)
+![FONCTIONNE À NOUVEAU](../fonctionne.jpeg)
 
-### Les fichiers .pynb sont sur Moodle en attendant que je trouve comment arranger ça
+### Les fichiers .ipynb sont sur Moodle en attendant que je trouve comment arranger ça
 
 
 [Les fonctions](../atelier_fonctions.ipynb)
