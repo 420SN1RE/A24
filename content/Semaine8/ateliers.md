@@ -9,6 +9,6 @@ weight = 84
 ### Les fichiers .pynb sont sur Moodle en attendant que je trouve comment arranger ça
 
 
-[Les fonctions](../atelier-fonctions.ipynb)
+[Les fonctions](../atelier_fonctions.ipynb)
 
-[La portée des variables](../atelier-porteeVariables.ipynb)
+[La portée des variables](../atelier_porteeVariables.ipynb)
