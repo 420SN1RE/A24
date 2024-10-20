@@ -6,7 +6,7 @@ weight = 84
 
 ![FONCTIONNE À NOUVEAU](../fonctionne.jpeg)
 
-### Les fichiers .ipynb sont sur Moodle en attendant que je trouve comment arranger ça
+### Les fichiers .ipynb sont à nouveau téléchargeables ici.
 
 
 [Les fonctions](../atelier_fonctions.ipynb)
