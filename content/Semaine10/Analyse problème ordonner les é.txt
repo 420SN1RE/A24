@@ -1,0 +1,188 @@
+### Analyse problème: ordonner les étapes d’un code à trous
+1. **Facile (choix multiples) :**
+   Quelle est la première étape dans l'analyse d'un problème en programmation ?
+   - a) Écrire le code
+   - b) Tester le programme
+   - c) Comprendre le problème
+   - d) Déboguer le code
+
+2. **Moyenne (à trous) :**
+   Complétez les étapes suivantes pour résoudre un problème en Python :
+   1. Comprendre le problème
+   2. _________
+   3. Écrire le code
+   4. Tester le code
+
+3. **Difficile (composition) :**
+   Décrivez les étapes nécessaires pour analyser et résoudre un problème de calcul de la moyenne de notes d'étudiants en Python. Incluez la compréhension du problème, la planification, l'écriture du code, et les tests.
+
+### Variables et types de données
+1. **Facile (choix multiples) :**
+   Quel type de données est utilisé pour stocker des nombres entiers en Python ?
+   - a) float
+   - b) int
+   - c) str
+   - d) bool
+
+2. **Moyenne (à trous) :**
+   Complétez le code suivant pour déclarer une variable de type chaîne de caractères :
+   ```python
+   nom = _________
+   ```
+
+3. **Difficile (composition) :**
+   Expliquez la différence entre les types de données `list`, `tuple`, et `set` en Python. Donnez des exemples de situations où chaque type serait le plus approprié.
+
+### Input, print et transtypage
+1. **Facile (choix multiples) :**
+   Quelle fonction est utilisée pour afficher un message à l'écran en Python ?
+   - a) input()
+   - b) print()
+   - c) display()
+   - d) show()
+
+2. **Moyenne (à trous) :**
+   Complétez le code pour convertir une chaîne de caractères en entier :
+   ```python
+   age_str = "25"
+   age_int = _________(age_str)
+   ```
+
+3. **Difficile (composition) :**
+   Écrivez un programme en Python qui demande à l'utilisateur son nom et son âge, puis affiche un message personnalisé en utilisant le transtypage pour convertir l'âge en entier.
+
+### If
+1. **Facile (choix multiples) :**
+   Quelle est la syntaxe correcte pour une condition `if` en Python ?
+   - a) if x == 10 then:
+   - b) if x == 10:
+   - c) if (x == 10)
+   - d) if x = 10:
+
+2. **Moyenne (à trous) :**
+   Complétez le code pour vérifier si un nombre est positif :
+   ```python
+   nombre = 5
+   if nombre > 0:
+       print("Le nombre est _________")
+   ```
+
+3. **Difficile (composition) :**
+   Écrivez un programme en Python qui vérifie si un nombre donné par l'utilisateur est pair ou impair et affiche un message approprié.
+
+### While
+1. **Facile (choix multiples) :**
+   Quelle boucle est utilisée pour répéter un bloc de code tant qu'une condition est vraie ?
+   - a) for
+   - b) while
+   - c) repeat
+   - d) until
+
+2. **Moyenne (à trous) :**
+   Complétez le code pour afficher les nombres de 1 à 5 :
+   ```python
+   i = 1
+   while i <= 5:
+       print(i)
+       i = i + _________
+   ```
+
+3. **Difficile (composition) :**
+   Écrivez un programme en Python qui utilise une boucle `while` pour calculer la somme des nombres de 1 à 100.
+
+### For
+1. **Facile (choix multiples) :**
+   Quelle boucle est utilisée pour itérer sur une séquence (comme une liste) en Python ?
+   - a) for
+   - b) while
+   - c) repeat
+   - d) until
+
+2. **Moyenne (à trous) :**
+   Complétez le code pour afficher chaque élément d'une liste :
+   ```python
+   fruits = ["pomme", "banane", "cerise"]
+   for fruit in _________:
+       print(fruit)
+   ```
+
+3. **Difficile (composition) :**
+   Écrivez un programme en Python qui utilise une boucle `for` pour afficher les nombres pairs de 1 à 20.
+
+### Listes
+1. **Facile (choix multiples) :**
+   Comment accède-t-on au premier élément d'une liste en Python ?
+   - a) list[0]
+   - b) list[1]
+   - c) list[-1]
+   - d) list[first]
+
+2. **Moyenne (à trous) :**
+   Complétez le code pour ajouter un élément à une liste :
+   ```python
+   nombres = [1, 2, 3]
+   nombres._________(4)
+   ```
+
+3. **Difficile (composition) :**
+   Écrivez un programme en Python qui prend une liste de nombres et retourne une nouvelle liste contenant uniquement les nombres pairs.
+
+### Chaînes de caractères
+1. **Facile (choix multiples) :**
+   Quelle méthode est utilisée pour convertir une chaîne de caractères en majuscules en Python ?
+   - a) upper()
+   - b) capitalize()
+   - c) toUpperCase()
+   - d) uppercase()
+
+2. **Moyenne (à trous) :**
+   Complétez le code pour obtenir la longueur d'une chaîne de caractères :
+   ```python
+   texte = "Bonjour"
+   longueur = len(_________)
+   ```
+
+3. **Difficile (composition) :**
+   Écrivez un programme en Python qui demande à l'utilisateur une phrase et retourne le nombre de mots dans cette phrase.
+
+### Fonctions
+1. **Facile (choix multiples) :**
+   Quelle est la syntaxe correcte pour définir une fonction en Python ?
+   - a) def ma_fonction:
+   - b) function ma_fonction():
+   - c) def ma_fonction():
+   - d) func ma_fonction():
+
+2. **Moyenne (à trous) :**
+   Complétez le code pour définir une fonction qui retourne la somme de deux nombres :
+   ```python
+   def somme(a, b):
+       return _________ + _________
+   ```
+
+3. **Difficile (composition) :**
+   Écrivez une fonction en Python qui prend une liste de nombres et retourne la moyenne de ces nombres.
+
+### Portée des variables
+1. **Facile (choix multiples) :**
+   Quelle est la portée d'une variable définie à l'intérieur d'une fonction en Python ?
+   - a) Globale
+   - b) Locale
+   - c) Universelle
+   - d) Permanente
+
+2. **Moyenne (à trous) :**
+   Complétez le code pour démontrer la portée locale d'une variable :
+   ```python
+   def ma_fonction():
+       x = 10
+       print(x)
+
+   ma_fonction()
+   print(_________)
+   ```
+
+3. **Difficile (composition) :**
+   Expliquez la différence entre les variables locales et globales en Python. Donnez un exemple de code pour illustrer chaque type de variable.
+
+
