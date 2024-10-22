@@ -5,6 +5,11 @@ title = "Examen"
 weight = 100
 +++
 
+
+{{% notice style=warning title=Attention %}}
+Vous **DEVREZ OBLIGATOIREMENT** utiliser les ordinateurs du cégep. Pour ce faire, au préalable, vous devrez vous assurer que vous **êtes en mesure de vous connecter** sur ces ordinateurs et sur **Moodle**. Autrement, il n'y aura **AUCUNE** reprise possible.
+{{% /notice %}}
+
 ### Matière
 
 - Semaine 1 à 9 inclusivement.
