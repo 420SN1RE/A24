@@ -809,8 +809,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Programmation en sciences",
-    "content": "Dans le document Exercices-supplémentaires.pdf, vous trouverez une trentaine d’exercices afin de plus vous exercer. Les exercices sont regroupés selon leur difficulté (facile, moyenne et difficile)\nVous pouvez télécharger le document ICI",
-    "description": "Dans le document Exercices-supplémentaires.pdf, vous trouverez une trentaine d’exercices afin de plus vous exercer. Les exercices sont regroupés selon leur difficulté (facile, moyenne et difficile)\nVous pouvez télécharger le document ICI",
+    "content": "Dans le document Exercices-supplémentaires.pdf, vous trouverez une trentaine d’exercices afin de plus vous exercer. Les exercices sont regroupés selon leur difficulté (facile, moyenne et difficile)\nVous pouvez télécharger le document ICI\nInfo Il n’y a pas de corrigé pour ces exercices",
+    "description": "Dans le document Exercices-supplémentaires.pdf, vous trouverez une trentaine d’exercices afin de plus vous exercer. Les exercices sont regroupés selon leur difficulté (facile, moyenne et difficile)\nVous pouvez télécharger le document ICI\nInfo Il n’y a pas de corrigé pour ces exercices",
     "tags": [],
     "title": "Exercices supplémentaires (Semaines 1 à 6)",
     "uri": "/exercices-supplementaires/index.html"
