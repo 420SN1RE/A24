@@ -219,6 +219,39 @@ else:
     print("Vous ne pouvez pas conduire.")
 ```
 
+## L'opérateur in avec if
+
+En Python, l'opérateur `in` est souvent utilisé avec une condition `if` pour vérifier si un élément se trouve dans une séquence (comme une liste, une chaîne de caractères, etc.). 
+
+```python
+# Exemple avec une liste
+fruits = ['pomme', 'banane', 'cerise']
+
+# Vérifier si 'banane' est dans la liste
+if 'banane' in fruits:
+    print("La banane est dans la liste des fruits!")
+else:
+    print("La banane n'est pas dans la liste des fruits.")
+```
+
+Dans cet exemple, `if 'banane' in fruits:` vérifie si `'banane'` est un élément de la liste `fruits`. Si c'est le cas, le message "La banane est dans la liste des fruits!" sera affiché.
+
+On peux utiliser `in` de la même manière avec des chaînes de caractères :
+
+```python
+# Exemple avec une chaîne de caractères
+phrase = "Bonjour tout le monde"
+
+# Vérifier si 'Bonjour' est dans la phrase
+if 'Bonjour' in phrase:
+    print("Le mot 'Bonjour' est dans la phrase!")
+else:
+    print("Le mot 'Bonjour' n'est pas dans la phrase.")
+```
+
+Ici, `if 'Bonjour' in phrase:` vérifie si `'Bonjour'` est une sous-chaîne de `phrase`.
+
+
 ## Pause : 5 minutes
 
 ![Pause](../pause.jpg?width=25vw)

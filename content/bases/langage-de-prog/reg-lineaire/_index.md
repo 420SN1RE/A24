@@ -1,7 +1,7 @@
 +++
 alwaysopen = false
 title = 'Régression Linéaire'
-weight = 9
+weight = 10
 draft = true
 +++
 
