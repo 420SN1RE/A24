@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6. Gestion des fichiers :: My New Hugo Site</title>
+    <link>http://localhost:1313/semaine6---copie/index.html</link>
+    <description>Objectifs :&#xA;Apprendre à lire et écrire des fichiers. Contenu :&#xA;Ouverture, lecture et écriture de fichiers. . Activités : Projets pratiques sur la manipulation de fichiers.&#xA;Évaluation (Semaines 1 à 5) : Quiz 1</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/semaine6---copie/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content=".
+Gestion des exceptions Python permet de gérer les exceptions à l’aide des blocs try-except. Cela permet d’attraper les erreurs et de les traiter de manière appropriée sans interrompre l’exécution du programme.
+try: resultat = 10 / 0 except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;) Il est également possible de gérer plusieurs types d’exceptions dans un même bloc try-except.
+try: ma_liste = [1, 2, 3] print(ma_liste[5]) except IndexError: print(&#34;Erreur : index de liste incorrect&#34;) except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;) Suivi du flux d’exécution En ajoutant des instructions print à différents endroits du programme, vous pouvez suivre le flux d’exécution et voir quelles parties du code sont exécutées. Cela est particulièrement utile pour les structures de contrôle comme les boucles et les conditions.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Débogage dans VS Code (à faire) :: 420-SN1-RE">
+    <meta name="twitter:description" content=".
+Gestion des exceptions Python permet de gérer les exceptions à l’aide des blocs try-except. Cela permet d’attraper les erreurs et de les traiter de manière appropriée sans interrompre l’exécution du programme.
+try: resultat = 10 / 0 except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;) Il est également possible de gérer plusieurs types d’exceptions dans un même bloc try-except.
+try: ma_liste = [1, 2, 3] print(ma_liste[5]) except IndexError: print(&#34;Erreur : index de liste incorrect&#34;) except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;) Suivi du flux d’exécution En ajoutant des instructions print à différents endroits du programme, vous pouvez suivre le flux d’exécution et voir quelles parties du code sont exécutées. Cela est particulièrement utile pour les structures de contrôle comme les boucles et les conditions.">
+    <meta property="og:url" content="http://localhost:1313/bases/langage-de-prog/debogage/debogage-vscode/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Débogage dans VS Code (à faire) :: 420-SN1-RE">
+    <meta property="og:description" content=".
+Gestion des exceptions Python permet de gérer les exceptions à l’aide des blocs try-except. Cela permet d’attraper les erreurs et de les traiter de manière appropriée sans interrompre l’exécution du programme.
+try: resultat = 10 / 0 except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;) Il est également possible de gérer plusieurs types d’exceptions dans un même bloc try-except.
+try: ma_liste = [1, 2, 3] print(ma_liste[5]) except IndexError: print(&#34;Erreur : index de liste incorrect&#34;) except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;) Suivi du flux d’exécution En ajoutant des instructions print à différents endroits du programme, vous pouvez suivre le flux d’exécution et voir quelles parties du code sont exécutées. Cela est particulièrement utile pour les structures de contrôle comme les boucles et les conditions.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Base de connaissances">
+    <meta itemprop="name" content="Débogage dans VS Code (à faire) :: 420-SN1-RE">
+    <meta itemprop="description" content=".
+Gestion des exceptions Python permet de gérer les exceptions à l’aide des blocs try-except. Cela permet d’attraper les erreurs et de les traiter de manière appropriée sans interrompre l’exécution du programme.
+try: resultat = 10 / 0 except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;) Il est également possible de gérer plusieurs types d’exceptions dans un même bloc try-except.
+try: ma_liste = [1, 2, 3] print(ma_liste[5]) except IndexError: print(&#34;Erreur : index de liste incorrect&#34;) except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;) Suivi du flux d’exécution En ajoutant des instructions print à différents endroits du programme, vous pouvez suivre le flux d’exécution et voir quelles parties du code sont exécutées. Cela est particulièrement utile pour les structures de contrôle comme les boucles et les conditions.">
+    <meta itemprop="wordCount" content="1165">
+    <title>Débogage dans VS Code (à faire) :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694383" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694383" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694383" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694383" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694383" rel="stylesheet">
+    <link href="/css/fonts.css?1729694383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694383" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694383" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694383" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694383" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694383" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694383"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/bases/langage-de-prog/debogage/debogage-vscode/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#gestion-des-exceptions">Gestion des exceptions</a></li>
+        <li><a href="#suivi-du-flux-dexécution">Suivi du flux d&rsquo;exécution</a></li>
+        <li><a href="#inspection-des-variables">Inspection des variables</a></li>
+        <li><a href="#débogage-des-fonctions-récursives">Débogage des fonctions récursives</a></li>
+        <li><a href="#messages-derreur-et-expressions-conditionnelles">Messages d&rsquo;erreur et expressions conditionnelles</a></li>
+      </ul>
+    </li>
+    <li><a href="#technique-utilisant-un-outil-intégré-ex-vs-code">Technique utilisant un outil intégré (Ex: VS Code)</a>
+      <ul>
+        <li><a href="#quest-ce-quun-point-darrêt-">Qu&rsquo;est-ce qu&rsquo;un point d&rsquo;arrêt ?</a></li>
+        <li><a href="#comment-ajouter-un-point-darrêt-">Comment ajouter un point d&rsquo;arrêt ?</a></li>
+        <li><a href="#utilisation-des-points-darrêt">Utilisation des points d&rsquo;arrêt</a></li>
+        <li><a href="#gestion-des-points-darrêt">Gestion des points d&rsquo;arrêt</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/index.html"><span itemprop="name">Base de connaissances</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/langage-de-prog/index.html"><span itemprop="name">1. Langage de programmation</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/langage-de-prog/debogage/index.html"><span itemprop="name">Techniques de débogage</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Débogage dans VS Code (à faire)</span><meta itemprop="position" content="5"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/langage-de-prog/debogage/index.html" title="Techniques de débogage (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/langage-de-prog/debogage/trace/index.html" title="La trace d&#39;exécution (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable bases" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="débogage-dans-vs-code-à-faire">Débogage dans VS Code (à faire)</h1>
+
+<p><a href="#R-image-f34bd620e838445bd96a1ad3735d4dc1" class="lightbox-link"><img alt="Débogage" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../tech-debog.jpg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f34bd620e838445bd96a1ad3735d4dc1"><img alt="Débogage" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../tech-debog.jpg?width=25vw"></a>.</p>
+<h3 id="gestion-des-exceptions">Gestion des exceptions</h3>
+<p>Python permet de gérer les exceptions à l&rsquo;aide des blocs <code>try-except</code>. Cela permet d&rsquo;attraper les erreurs et de les traiter de manière appropriée sans interrompre l&rsquo;exécution du programme.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    resultat <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ZeroDivisionError</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Erreur : division par zéro&#34;</span>)</span></span></code></pre></div>
+<p>Il est également possible de gérer plusieurs types d&rsquo;exceptions dans un même bloc <code>try-except</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>    print(ma_liste[<span style="color:#ae81ff">5</span>])
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">IndexError</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Erreur : index de liste incorrect&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ZeroDivisionError</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Erreur : division par zéro&#34;</span>)</span></span></code></pre></div>
+<h3 id="suivi-du-flux-dexécution">Suivi du flux d&rsquo;exécution</h3>
+<p>En ajoutant des instructions <code>print</code> à différents endroits du programme, vous pouvez suivre le flux d&rsquo;exécution et voir quelles parties du code sont exécutées.
+Cela est particulièrement utile pour les structures de contrôle comme les boucles et les conditions.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">verifier_parite</span>(nombre):
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Vérification de la parité pour le nombre: </span><span style="color:#e6db74">{</span>nombre<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> nombre <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Le nombre est pair&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Le nombre est impair&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exemple d&#39;utilisation</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>):
+</span></span><span style="display:flex;"><span>    resultat <span style="color:#f92672">=</span> verifier_parite(i)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Le nombre </span><span style="color:#e6db74">{</span>i<span style="color:#e6db74">}</span><span style="color:#e6db74"> est pair: </span><span style="color:#e6db74">{</span>resultat<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<h3 id="inspection-des-variables">Inspection des variables</h3>
+<p>L&rsquo;une des utilisations les plus courantes de <code>print</code> est d&rsquo;inspecter les valeurs des variables à différents points du programme.
+Cela permet de vérifier que les variables contiennent les valeurs attendues.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">calculer_somme_liste</span>(liste):
+</span></span><span style="display:flex;"><span>    somme <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> liste:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Ajout de </span><span style="color:#e6db74">{</span>element<span style="color:#e6db74">}</span><span style="color:#e6db74"> à la somme actuelle de </span><span style="color:#e6db74">{</span>somme<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        somme <span style="color:#f92672">+=</span> element
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;La somme totale est: </span><span style="color:#e6db74">{</span>somme<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> somme
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exemple d&#39;utilisation</span>
+</span></span><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> calculer_somme_liste(ma_liste)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Le résultat final est: </span><span style="color:#e6db74">{</span>resultat<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<h3 id="débogage-des-fonctions-récursives">Débogage des fonctions récursives</h3>
+<p>Le débogage des fonctions récursives peut être particulièrement difficile. L&rsquo;utilisation de <code>print</code> pour afficher les valeurs des arguments à chaque appel récursif peut aider à comprendre le comportement de la fonction.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">factorielle</span>(n):
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Calcul de factorielle(</span><span style="color:#e6db74">{</span>n<span style="color:#e6db74">}</span><span style="color:#e6db74">)&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> n <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        resultat <span style="color:#f92672">=</span> n <span style="color:#f92672">*</span> factorielle(n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Résultat intermédiaire pour factorielle(</span><span style="color:#e6db74">{</span>n<span style="color:#e6db74">}</span><span style="color:#e6db74">): </span><span style="color:#e6db74">{</span>resultat<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> resultat
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exemple d&#39;utilisation</span>
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> factorielle(<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Le résultat final est: </span><span style="color:#e6db74">{</span>resultat<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<h3 id="messages-derreur-et-expressions-conditionnelles">Messages d&rsquo;erreur et expressions conditionnelles</h3>
+<p>Inclure des messages d&rsquo;erreur conditionnels peut aider à identifier pourquoi une certaine branche du code est exécutée ou pourquoi une erreur se produit.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">division</span>(a, b):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> b <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Erreur: Tentative de division par zéro&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        resultat <span style="color:#f92672">=</span> a <span style="color:#f92672">/</span> b
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Résultat de la division: </span><span style="color:#e6db74">{</span>resultat<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> resultat
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exemple d&#39;utilisation</span>
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> division(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> resultat <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Le résultat final est: </span><span style="color:#e6db74">{</span>resultat<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<h2 id="technique-utilisant-un-outil-intégré-ex-vs-code">Technique utilisant un outil intégré (Ex: VS Code)</h2>
+<p>Les points d&rsquo;arrêt (breakpoints) sont des outils essentiels pour le débogage dans Visual Studio Code (VS Code). Voici un aperçu de leur utilisation :</p>
+<h3 id="quest-ce-quun-point-darrêt-">Qu&rsquo;est-ce qu&rsquo;un point d&rsquo;arrêt ?</h3>
+<p>Un point d&rsquo;arrêt est un marqueur que vous placez dans votre code pour indiquer à l&rsquo;outil de débogage où s&rsquo;arrêter pendant l&rsquo;exécution. Cela vous permet d&rsquo;examiner l&rsquo;état de votre application à des moments spécifiques.</p>
+<h3 id="comment-ajouter-un-point-darrêt-">Comment ajouter un point d&rsquo;arrêt ?</h3>
+<ol>
+<li><strong>Ouvrez votre fichier de code</strong> dans VS Code.</li>
+<li><strong>Cliquez dans la marge de gauche</strong> à côté de la ligne de code où vous souhaitez ajouter un point d&rsquo;arrêt. Un point rouge apparaîtra, indiquant que le point d&rsquo;arrêt est actif.</li>
+</ol>
+<h3 id="utilisation-des-points-darrêt">Utilisation des points d&rsquo;arrêt</h3>
+<ul>
+<li><strong>Lancer le débogage</strong> : Appuyez sur <code>F5</code> ou allez dans le menu <code>Run</code> et sélectionnez <code>Start Debugging</code>.</li>
+<li><strong>Exécution jusqu&rsquo;au point d&rsquo;arrêt</strong> : Votre programme s&rsquo;exécutera normalement jusqu&rsquo;à ce qu&rsquo;il atteigne le point d&rsquo;arrêt, où il s&rsquo;arrêtera.</li>
+<li><strong>Examiner les variables</strong> : Une fois arrêté, vous pouvez survoler les variables avec votre souris pour voir leurs valeurs actuelles, ou utiliser le panneau <code>Variables</code> pour une vue plus détaillée.</li>
+<li><strong>Contrôler l&rsquo;exécution</strong> : Utilisez les commandes de débogage comme <code>Step Over</code> (F10), <code>Step Into</code> (F11), et <code>Continue</code> (F5) pour naviguer dans votre code.</li>
+</ul>
+<h3 id="gestion-des-points-darrêt">Gestion des points d&rsquo;arrêt</h3>
+<ul>
+<li><strong>Activer/Désactiver</strong> : Cliquez droit sur le point d&rsquo;arrêt et sélectionnez <code>Enable Breakpoint</code> ou <code>Disable Breakpoint</code>.</li>
+<li><strong>Supprimer</strong> : Cliquez droit et sélectionnez <code>Remove Breakpoint</code> ou cliquez simplement sur le point rouge.</li>
+</ul>
+<p>Les points d&rsquo;arrêt sont des outils puissants pour identifier et corriger les erreurs dans votre code, rendant le processus de débogage plus efficace et moins frustrant.</p>
+<p>=====</p>
+<p>Debugging
+One of the key features of Visual Studio Code is its great debugging support. VS Code&rsquo;s built-in debugger helps accelerate your edit, compile, and debug loop.</p>
+<p>User interface
+The following diagram shows the main components of the debugging user interface:</p>
+<p>Run and Debug view: displays all information related to running, debugging, and managing debug configuration settings.
+Debug toolbar: has buttons for the most common debugging actions.
+Debug console: enables viewing and interacting with the output of your code running in the debugger.
+Debug sidebar: during a debug session, lets you interact with the call stack, breakpoints, variables, and watch variables.</p>
+<p>Debugger extensions
+VS Code has built-in debugging support for the Node.js runtime and can debug JavaScript, TypeScript, or any other language that gets transpiled to JavaScript.</p>
+<p>For debugging other languages and runtimes (including PHP, Ruby, Go, C#, Python, C++, PowerShell and many others), look for Debuggers extensions in the VS Code Marketplace or select Install Additional Debuggers in the top-level Run menu.</p>
+<p>Below are several popular extensions which include debugging support:</p>
+<p>Start debugging
+The following documentation is based on the built-in Node.js debugger, but most of the concepts and features are applicable to other debuggers as well.</p>
+<p>It is helpful to first create a sample Node.js application before reading about debugging. You can follow the Node.js walkthrough to install Node.js and create a simple &ldquo;Hello World&rdquo; JavaScript application (app.js). Once you have a simple application set up, this page will take you through VS Code debugging features.</p>
+<p>Run and Debug view
+To bring up the Run and Debug view, select the Run and Debug icon in the Activity Bar on the side of VS Code. You can also use the keyboard shortcut Ctrl+Shift+D.</p>
+<p>The Run and Debug view displays all information related to running and debugging and has a top bar with debugging commands and configuration settings.</p>
+<p>If running and debugging is not yet configured (no launch.json has been created), VS Code shows the Run start view.</p>
+<p>Run menu
+The top-level Run menu has the most common run and debug commands:</p>
+<p>Launch configurations
+To run or debug a simple app in VS Code, select Run and Debug on the Debug start view or press F5 and VS Code will try to run your currently active file.</p>
+<p>However, for most debugging scenarios, creating a launch configuration file is beneficial because it allows you to configure and save debugging setup details. VS Code keeps debugging configuration information in a launch.json file located in a .vscode folder in your workspace (project root folder) or in your user settings or workspace settings.</p>
+<p>To create a launch.json file, select create a launch.json file in the Run start view.</p>
+<p>VS Code will try to automatically detect your debug environment, but if this fails, you will have to choose it manually:</p>
+<p>Here is the launch configuration generated for Node.js debugging:</p>
+<p>If you go back to the File Explorer view (Ctrl+Shift+E), you&rsquo;ll see that VS Code has created a .vscode folder and added the launch.json file to your workspace.</p>
+<p><a href="https://code.visualstudio.com/docs/python/debugging" rel="external" target="_blank">https://code.visualstudio.com/docs/python/debugging</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694383";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694383" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694383" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694383" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694383" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694383" defer></script>
+        <script src="/js/search.js?1729694383" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a><ul id="R-subsections-03961ce580d238cff52c29446332cc57" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13. </b>NumPy</a><ul id="R-subsections-0ab58a3d5437fab8543fbb7a1695016f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14. </b>Rédaction d&#39;un programme lettré (Markdown)</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15. </b>Évaluation du projet final</a></li>
+            <li class="" data-nav-id="/projet-final/index.html"><a class="padding" href="/projet-final/index.html">Projet Final</a></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="parent " data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu">
+            <li class="parent " data-nav-id="/bases/langage-de-prog/index.html"><a class="padding" href="/bases/langage-de-prog/index.html">1. Langage de programmation</a><ul id="R-subsections-be5c8169920e24019fa741b0d66dc652" class="collapsible-menu">
+            <li class="" data-nav-id="/bases/langage-de-prog/chaines-caracteres/index.html"><a class="padding" href="/bases/langage-de-prog/chaines-caracteres/index.html">Formatage des chaines</a></li>
+            <li class="alwaysopen " data-nav-id="/bases/langage-de-prog/biopython/index.html"><a class="padding" href="/bases/langage-de-prog/biopython/index.html">Les bibliothèques de bioinformatique</a><ul id="R-subsections-bb249212bc778a0eddf3633643153bf5" class="collapsible-menu"></ul></li>
+            <li class="parent alwaysopen " data-nav-id="/bases/langage-de-prog/debogage/index.html"><a class="padding" href="/bases/langage-de-prog/debogage/index.html">Techniques de débogage</a><ul id="R-subsections-3e9c2661746a9ff83626144636af0aab" class="collapsible-menu">
+            <li class="active " data-nav-id="/bases/langage-de-prog/debogage/debogage-vscode/index.html"><a class="padding" href="/bases/langage-de-prog/debogage/debogage-vscode/index.html">Débogage dans VS Code (à faire)</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/debogage/trace/index.html"><a class="padding" href="/bases/langage-de-prog/debogage/trace/index.html">La trace d&#39;exécution</a></li></ul></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/erreurs/index.html"><a class="padding" href="/bases/langage-de-prog/erreurs/index.html">Erreurs communes</a><ul id="R-subsections-23a700e31b2f22b689e66a3c24cc7bff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/fonction-recursive/index.html"><a class="padding" href="/bases/langage-de-prog/fonction-recursive/index.html">Les fonctions récursives</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/listes-de-listes/index.html"><a class="padding" href="/bases/langage-de-prog/listes-de-listes/index.html">Les listes de listes</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/match-case/index.html"><a class="padding" href="/bases/langage-de-prog/match-case/index.html">Match Case</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/poo/index.html"><a class="padding" href="/bases/langage-de-prog/poo/index.html">La programmation orientée objet (POO)</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/pandas/pandas/index.html"><a class="padding" href="/bases/langage-de-prog/pandas/pandas/index.html">Pandas (intermédiaire-avancé)</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/reg-lineaire/index.html"><a class="padding" href="/bases/langage-de-prog/reg-lineaire/index.html">Régression Linéaire</a><ul id="R-subsections-c5ccdae06eb66b7c925cb44611fc6a31" class="collapsible-menu"></ul></li></ul></li>
+            <li class="" data-nav-id="/bases/outils/index.html"><a class="padding" href="/bases/outils/index.html">2. Outils</a><ul id="R-subsections-63c1095d7ccdc1b9ecea42dfa732d4d2" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/bases/lexique/index.html"><a class="padding" href="/bases/lexique/index.html">3. Lexique</a></li></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/bases/langage-de-prog/debogage/debogage-vscode/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694383" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694383" defer></script>
+    <script src="/js/theme.js?1729694383" defer></script>
+  </body>
+</html>

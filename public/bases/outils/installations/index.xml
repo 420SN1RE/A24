@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installations :: 420-SN1-RE</title>
+    <link>https://example.org/bases/outils/installations/index.html</link>
+    <description>Dans cette section vous trouverez les informations nécessaires pour configurer votre environnement de développement sur Windows.&#xA;Installation de Python : Suivez nos instructions détaillées pour télécharger et installer Python sur votre système Windows. Nous vous guiderons à travers chaque étape pour vous assurer que Python est correctement configuré.&#xA;Installation de Visual Studio Code (VS Code) : Apprenez à installer VS Code, l’éditeur de code puissant et flexible. Nous vous montrerons comment le télécharger et l’installer facilement.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/outils/installations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installation de Python sur Windows</title>
+      <link>https://example.org/bases/outils/installations/python/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/outils/installations/python/index.html</guid>
+      <description>Pour installer Python sur Windows 10 et Windows 11, suivez ces étapes simples :&#xA;Windows 10 Téléchargez l’installateur Python :&#xA;Rendez-vous sur le site officiel de Python et téléchargez la version stable la plus récente pour Windows. Exécutez l’installateur :&#xA;Double-cliquez sur le fichier téléchargé pour lancer l’installateur. Cochez l’option “Add Python to PATH” pour ajouter Python au chemin d’accès système. Cliquez sur “Install Now” pour une installation par défaut ou sur “Customize installation” pour des options avancées. Vérifiez l’installation :</description>
+    </item>
+    <item>
+      <title>Installation de Visual Studio Code sur Windows</title>
+      <link>https://example.org/bases/outils/installations/visual-studio-code/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/outils/installations/visual-studio-code/index.html</guid>
+      <description>Le processus d’installation commence par le téléchargement du fichier EXE de Visual Studio Code, suivi de quelques instructions à l’écran. Voici les étapes nécessaires pour installer VS Code sur Windows de manière détaillée.&#xA;Étape 1 : Visitez le site officiel de Visual Studio Code en utilisant n’importe quel navigateur web comme Google Chrome, Microsoft Edge, etc.</description>
+    </item>
+    <item>
+      <title>Installation des bibliothèques Python</title>
+      <link>https://example.org/bases/outils/installations/bibliotheques/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/outils/installations/bibliotheques/index.html</guid>
+      <description>Installation des librairies Python sur Windows 10/11 Python est un langage de programmation puissant et polyvalent, largement utilisé pour l’analyse de données, la visualisation et les calculs scientifiques. Les librairies pandas, matplotlib, numpy et scipy sont parmi les plus populaires pour ces tâches. Ce chapitre vous guidera à travers les étapes nécessaires pour installer ces librairies sur un système Windows 10 ou 11.</description>
+    </item>
+    <item>
+      <title>Installation des extensions dans VS Code</title>
+      <link>https://example.org/bases/outils/installations/extensions-dans-vs-code/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/outils/installations/extensions-dans-vs-code/index.html</guid>
+      <description>Pour installer les extensions comme Python, Pandas, Numpy, Matplotlib et SciPy dans Visual Studio Code, suivez ces étapes :&#xA;Ouvrir Visual Studio Code&#xA;Installer l’extension Python :&#xA;Cliquez sur l’icône des extensions dans la barre d’activité à gauche (elle ressemble à quatre carrés) ou utilisez le raccourci Ctrl+Shift+X. Recherchez Python et installez l’extension officielle développée par Microsoft. Ouvrir un terminal intégré :</description>
+    </item>
+  </channel>
+</rss>

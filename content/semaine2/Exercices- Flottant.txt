@@ -1,0 +1,131 @@
+### Exercice 1: Addition de Flottants
+**Question:**
+Calculez la somme de deux nombres flottants `a` et `b` et affichez le résultat.
+
+```python
+a = 3.14
+b = 2.71
+result = a + b
+print(result)
+```
+
+**Solution:**
+```python
+a = 3.14
+b = 2.71
+result = a + b
+print(result)  # Output: 5.85
+```
+
+### Exercice 2: Soustraction de Flottants
+**Question:**
+Calculez la différence entre deux nombres flottants `a` et `b` et affichez le résultat.
+
+```python
+a = 5.5
+b = 3.2
+result = a - b
+print(result)
+```
+
+**Solution:**
+```python
+a = 5.5
+b = 3.2
+result = a - b
+print(result)  # Output: 2.3
+```
+
+### Exercice 3: Multiplication de Flottants
+**Question:**
+Calculez le produit de deux nombres flottants `a` et `b` et affichez le résultat.
+
+```python
+a = 1.5
+b = 4.0
+result = a * b
+print(result)
+```
+
+**Solution:**
+```python
+a = 1.5
+b = 4.0
+result = a * b
+print(result)  # Output: 6.0
+```
+
+### Exercice 4: Division de Flottants
+**Question:**
+Calculez le quotient de deux nombres flottants `a` et `b` et affichez le résultat.
+
+```python
+a = 7.0
+b = 2.0
+result = a / b
+print(result)
+```
+
+**Solution:**
+```python
+a = 7.0
+b = 2.0
+result = a / b
+print(result)  # Output: 3.5
+```
+
+### Exercice 5: Puissance de Flottants
+**Question:**
+Calculez `a` élevé à la puissance `b` et affichez le résultat.
+
+```python
+a = 2.0
+b = 3.0
+result = a ** b
+print(result)
+```
+
+**Solution:**
+```python
+a = 2.0
+b = 3.0
+result = a ** b
+print(result)  # Output: 8.0
+```
+
+### Exercice 6: Racine Carrée
+**Question:**
+Calculez la racine carrée d'un nombre flottant `a` et affichez le résultat en utilisant l'opérateur de puissance.
+
+```python
+a = 16.0
+result = a ** 0.5
+print(result)
+```
+
+**Solution:**
+```python
+a = 16.0
+result = a ** 0.5
+print(result)  # Output: 4.0
+```
+
+### Exercice 7: Modulo de Flottants
+**Question:**
+Calculez le reste de la division de `a` par `b` et affichez le résultat.
+
+```python
+a = 7.5
+b = 2.5
+result = a % b
+print(result)
+```
+
+**Solution:**
+```python
+a = 7.5
+b = 2.5
+result = a % b
+print(result)  # Output: 0.0
+```
+

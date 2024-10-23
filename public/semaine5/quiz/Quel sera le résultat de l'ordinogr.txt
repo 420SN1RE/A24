@@ -1,0 +1,7 @@
+Quel sera le résultat de l'ordinogramme, si le pH saisi est 7.5 ?
+
+Quel sera le résultat de l'ordinogramme, si la note saisie est 60.5 ?
+
+Quel sera le résultat de l'ordinogramme, si le taux saisi est 15.5 ?
+
+Quel sera le résultat de l'ordinogramme, si le nombre saisi est 5.5 ?

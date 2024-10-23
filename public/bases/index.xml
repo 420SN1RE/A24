@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Base de connaissances :: 420-SN1-RE</title>
+    <link>https://example.org/bases/index.html</link>
+    <description>Ici vous trouverez diverses informations sur Python et sur les outils utilisés dans le cours ou que vous pouvez utiliser sur votre ordinateur personnel à la maison.&#xA;Cette section est divisée en trois catégories:&#xA;1. Langage de programmation 2. Outils 3. Lexique</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. Langage de programmation</title>
+      <link>https://example.org/bases/langage-de-prog/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/index.html</guid>
+      <description>Base - Langage de programmation</description>
+    </item>
+    <item>
+      <title>2. Outils</title>
+      <link>https://example.org/bases/outils/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/outils/index.html</guid>
+      <description>Base - Outils</description>
+    </item>
+    <item>
+      <title>3. Lexique</title>
+      <link>https://example.org/bases/lexique/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/lexique/index.html</guid>
+      <description>Base - Lexique</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interagir avec le programme :: 420-SN1-RE</title>
+    <link>https://example.org/semaine3/index.html</link>
+    <description>Objectifs de la leçon Lire des données saisies au clavier par l’utilisateur. Afficher des données dans le terminal. Comprendre les avantages de la documentation du code. Connaitre et comprendre les différentes sources d’erreurs de syntaxe. Commencer à déboguer un programme à l’aide de la méthode print(). Plan de la leçon Quiz: Ordinogrammes et base de Python (10 mins) Lecture de données et affichage textuel des résultats ~15mins Documentation du code ~5mins Pause 5 mins La syntaxe est les erreurs ~10mins La vérification du bon fonctionnement d’un programme ~5mins Pause 5 mins Révision pour le minitest (10%) de la semaine prochaine ~30mins Atelier: Lecture et affichage de données ~20mins Atelier: Déboguer des programmes simples ~20mins Pour la semaine prochaine</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lecture et affichage de données</title>
+      <link>https://example.org/semaine3/lecture-et-affichage-de-donn%C3%A9es/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine3/lecture-et-affichage-de-donn%C3%A9es/index.html</guid>
+      <description>.&#xA;Pour qu’un programme soit réutilisable, il faut que l’utilisateur puisse interagir avec, c’est-à-dire lui fournir des données en entrée à volonté.&#xA;La capacité d’un programme de lire des données au clavier est essentielle en programmation.&#xA;Lecture de données au clavier La méthode input() est utilisée pour lire une ligne de texte entrée par l’utilisateur. Elle permet de capturer les données saisies au clavier et de les utiliser dans un programme. Voici un exemple simple :</description>
+    </item>
+    <item>
+      <title>Documentation du code</title>
+      <link>https://example.org/semaine3/documentation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine3/documentation/index.html</guid>
+      <description>.&#xA;Pourquoi documenter le code ? La documentation du code est essentielle pour rendre votre code compréhensible et maintenable par d’autres développeurs, ainsi que par vous-même à l’avenir.&#xA;Il existe différentes raisons de vouloir documenter le code:&#xA;Pour expliquer une instruction (commentaire) Pour décrire un module ou sous-programme (docstring) Pour incorporer du texte avec du code (programme lettré) Info Pour l’instant, on se contentera de documenter le code à l’aide de commentaires. Plus tard dans la session, on utilisera des docstrings et la programmation lettrée.</description>
+    </item>
+    <item>
+      <title>Syntaxe et erreurs d&#39;exécution</title>
+      <link>https://example.org/semaine3/erreurs-syntaxe/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine3/erreurs-syntaxe/index.html</guid>
+      <description>.&#xA;La syntaxe et les erreurs d’exécution en Python Python est un langage de programmation réputé pour sa simplicité et sa lisibilité. Toutefois, comme tout langage de programmation, il est sujet aux erreurs de syntaxe et d’exécution.&#xA;Comprendre la syntaxe de Python et savoir comment gérer les erreurs d’exécution est essentiel pour écrire des programmes robustes et fiables. La détection et la correction des erreurs, qu’elles soient de syntaxe ou d’exécution, permettent d’améliorer la qualité du code et d’assurer son bon fonctionnement.</description>
+    </item>
+    <item>
+      <title>ATELIERS</title>
+      <link>https://example.org/semaine3/ateliers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine3/ateliers/index.html</guid>
+      <description>Lecture et affichage de données&#xA;Erreurs de syntaxe - FACULTATIF</description>
+    </item>
+    <item>
+      <title>Pour le prochain cours</title>
+      <link>https://example.org/semaine3/pour-le-prochain-cours/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine3/pour-le-prochain-cours/index.html</guid>
+      <description>Pour augmenter vos chances de réussite Terminer et soumettre l’atelier #3. Réviser la matière des trois premières semaines, en vue du mini-test (10%) qui aura lieu au début du prochain cours (arrivez à l’heure) Lire les notes de cours sur la matière du cours de la semaine 4. Note Si vous étiez présent au cours, posez moi des questions lorsque vous avez de la difficulté. N’attendez pas que la matière se complique.</description>
+    </item>
+  </channel>
+</rss>

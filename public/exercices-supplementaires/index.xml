@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exercices supplémentaires (Semaines 1 à 6) :: 420-SN1-RE</title>
+    <link>https://example.org/exercices-supplementaires/index.html</link>
+    <description>Dans le document Exercices-supplémentaires.pdf, vous trouverez une trentaine d’exercices afin de plus vous exercer. Les exercices sont regroupés selon leur difficulté (facile, moyenne et difficile)&#xA;Vous pouvez télécharger le document ICI</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/exercices-supplementaires/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

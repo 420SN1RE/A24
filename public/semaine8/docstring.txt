@@ -1,0 +1,24 @@
+
++++
+title =  "Documentation des fonctions (Docstrings)"
+weight =  3
++++
+
+## Les Docstrings
+
+Les docstrings sont des chaînes de caractères utilisées pour documenter les fonctions. Elles sont placées juste après la définition de la fonction.
+**Exemple en Python :**
+```python
+def addition(a, b):
+    """
+    Calcule la somme de deux nombres.
+
+    Paramètres:
+    a (int, float): Le premier nombre.
+    b (int, float): Le deuxième nombre.
+
+    Retourne:
+    int, float: La somme des deux nombres.
+    """
+    return a + b
+```

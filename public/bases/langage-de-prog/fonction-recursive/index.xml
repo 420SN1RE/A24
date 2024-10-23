@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Les fonctions récursives :: 420-SN1-RE</title>
+    <link>https://example.org/bases/langage-de-prog/fonction-recursive/index.html</link>
+    <description>Qu’est-ce qu’une fonction récursive ? Une fonction récursive est une fonction qui s’appelle elle-même. Pour qu’une fonction récursive fonctionne correctement, elle doit avoir deux éléments essentiels :&#xA;Un cas de base : Une condition qui arrête la récursion. Un appel récursif : La fonction s’appelle elle-même avec des arguments modifiés. Exemple simple : La factorielle d’un nombre Calculer la factorielle d’un nombre est un exemple classique de récursion. La factorielle de n (notée n!) est le produit de tous les entiers de 1 à n.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/langage-de-prog/fonction-recursive/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

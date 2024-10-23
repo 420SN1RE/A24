@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google Colab :: 420-SN1-RE</title>
+    <link>https://example.org/bases/outils/google-colab/index.html</link>
+    <description>Google Colab, ou Colaboratory, est un service cloud gratuit proposé par Google, basé sur Jupyter Notebook. Colab permet d’exécuter du code Python directement dans le navigateur sans nécessiter de configuration préalable, tout en offrant un accès gratuit aux processeurs graphiques (GPU ou Graphics Processing), pour accélérer les calculs.&#xA;Accéder à Google Colab Pour commencer à utiliser Google Colab, suivez ces étapes simples :</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/outils/google-colab/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

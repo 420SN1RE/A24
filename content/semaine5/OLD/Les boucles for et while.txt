@@ -1,0 +1,206 @@
++++
+title = "Les boucles for et while"
+weight = 51
++++
+
+![](boucles.jpeg?width=20vw)
+
+## Structures Répétitives en Python
+
+En Python, les structures répétitives, aussi appelées boucles, permettent de répéter une ou plusieurs instructions plusieurs fois. Les deux principales structures répétitives en Python sont `for` et `while`.
+
+### La Boucle `for`
+
+La boucle `for` est utilisée pour itérer sur une séquence (qui peut être une liste, un tuple, un dictionnaire, un ensemble ou une chaîne de caractères).
+
+**Exemple:**
+
+```python
+# Utilisation de la boucle for pour parcourir une liste
+nombres = [1, 2, 3, 4, 5]
+for nombre in nombres:
+    print(nombre)
+```
+
+**Exercice 1:**
+Écrivez un programme qui utilise une boucle `for` pour imprimer tous les éléments d'une liste fournie par l'utilisateur.
+
+### La Boucle `while`
+
+La boucle `while` permet d'exécuter un ensemble d'instructions tant qu'une condition est vraie.
+
+**Exemple:**
+
+```python
+# Utilisation de la boucle while pour répéter une instruction jusqu'à ce qu'une condition soit fausse
+compteur = 1
+while compteur <= 5:
+    print(compteur)
+    compteur += 1
+```
+
+**Exercice 2:**
+Écrivez un programme qui demande à l'utilisateur de saisir un nombre. Ensuite, à l'aide d'une boucle `while`, imprimez le compte à rebours à partir de ce nombre jusqu'à 0.
+
+### Instructions de Contrôle de Boucle
+
+Python offre également des instructions de contrôle de boucle comme `break` et `continue`.
+
+- `break`: Permet de sortir immédiatement de la boucle.
+- `continue`: Permet de passer immédiatement à l'itération suivante de la boucle.
+
+**Exemple avec `break`:**
+
+```python
+# Utilisation de break pour sortir d'une boucle for
+for nombre in range(1, 10):
+    if nombre == 6:
+        break
+    print(nombre)
+```
+
+**Exercice 3:**
+Écrivez un programme qui continue à demander à l'utilisateur de saisir un nombre jusqu'à ce qu'il saisisse le nombre 0, puis quitte le programme.
+
+**Exemple avec `continue`:**
+
+```python
+# Utilisation de continue pour passer à l'itération suivante dans une boucle while
+compteur = 0
+while compteur < 10:
+    compteur += 1
+    if compteur % 2 == 0:
+        continue
+    print(compteur)
+```
+
+**Exercice 4:**
+Écrivez un programme qui imprime tous les nombres impairs entre 1 et 20, en utilisant une boucle et l'instruction `continue`.
+
+# ===
+
+La boucle `for` en Python est un outil puissant et flexible, idéal pour les étudiants de première session au cégep en sciences de la nature qui commencent à explorer la programmation. Cette structure permet de répéter une série d'instructions pour chaque élément d'une séquence, comme une liste ou une plage de nombres.
+
+Voici comment cela fonctionne: la boucle `for` commence par prendre le premier élément de la séquence et exécute le bloc de code indenté qui suit. Après avoir exécuté le bloc de code pour cet élément, elle passe au suivant, et ainsi de suite, jusqu'à ce qu'elle ait parcouru tous les éléments de la séquence.
+
+**Exemple simple:**
+
+```python
+for i in range(5):  # La fonction range(5) génère une séquence de 0 à 4
+    print(i)        # Imprime chaque élément de la séquence
+```
+
+Dans cet exemple, `i` est la variable qui prend la valeur de chaque élément de la séquence générée par `range(5)`. Pour chaque itération, `i` change de valeur, commençant à 0 et se terminant à 4, et le message est imprimé avec la valeur actuelle de `i`.
+
+C'est un concept fondamental en informatique qui permet de simplifier des tâches répétitives et de traiter efficacement des collections de données. Les étudiants apprendront à utiliser cette structure pour analyser des données scientifiques, automatiser des calculs et bien plus encore.
+
+# ===
+
+La boucle `while` en Python est une structure de contrôle qui permet d'exécuter répétitivement un bloc de code tant que la condition spécifiée reste vraie. Pour les étudiants de première session au cégep en sciences de la nature, comprendre le fonctionnement de la boucle `while` est essentiel pour automatiser et résoudre des problèmes scientifiques.
+
+Voici le principe de base: la condition de la boucle `while` est évaluée avant chaque exécution du bloc de code. Si la condition est vraie, le bloc de code s'exécute. Après chaque exécution, la condition est réévaluée. Ce processus se répète jusqu'à ce que la condition devienne fausse, auquel moment la boucle se termine et le programme continue avec les instructions suivantes.
+
+**Exemple:**
+
+```python
+compteur = 0
+while compteur < 5:
+    print(compteur)
+    compteur += 1  # Incrémentation du compteur
+```
+
+Dans cet exemple, tant que la variable `compteur` est inférieure à 5, le programme imprime la valeur du compteur et l'incrémente ensuite de 1. Lorsque `compteur` atteint 5, la condition `compteur < 5` devient fausse, et la boucle se termine.
+
+La boucle `while` est particulièrement utile lorsque le nombre d'itérations n'est pas connu à l'avance, ce qui est souvent le cas dans les expériences et les analyses scientifiques. Elle permet aux étudiants de construire des simulations, des modèles et des calculs répétitifs avec une grande précision.
+
+# ===
+
+Bien sûr! Voici une introduction aux représentations graphiques des structures répétitives dans un ordinogramme, avec des exemples et des exercices pour un cours de programmation.
+
+---
+
+## Représentations Graphiques des Structures Répétitives
+
+Les ordinogrammes, également connus sous le nom de diagrammes de flux, sont des outils visuels utilisés pour représenter le flux d'un programme. Ils sont particulièrement utiles pour illustrer le fonctionnement des structures répétitives, comme les boucles `for` et `while`.
+
+### Boucle `for` dans un Ordinogramme
+
+Dans un ordinogramme, une boucle `for` est représentée par un rectangle qui contient la condition de la boucle, avec une flèche qui boucle vers l'arrière pour indiquer la répétition.
+
+**Exemple:**
+
+```
++-------------------+
+| Début             |
++-------------------+
+         |
+         V
++-------------------+
+| Pour i de 1 à 5   |
++-------------------+
+         |
+         V
++-------------------+
+| Afficher i        |
++-------------------+
+         |
+         | (retour au début de la boucle si la condition est vraie)
+         |
++-------------------+
+| Fin de la boucle  |
++-------------------+
+         |
+         V
++-------------------+
+| Fin               |
++-------------------+
+```
+
+**Exercice 1:**
+Dessinez un ordinogramme pour une boucle `for` qui affiche les carrés des nombres de 1 à 10.
+
+### Boucle `while` dans un Ordinogramme
+
+Pour la boucle `while`, l'ordinogramme commence par une décision basée sur la condition de la boucle. Si la condition est vraie, le flux continue vers les instructions à répéter, puis retourne à la condition initiale.
+
+**Exemple:**
+
+```
++-------------------+
+| Début             |
++-------------------+
+         |
+         V
++-------------------+
+| i = 0             |
++-------------------+
+         |
+         V
++-------------------+
+| Tant que i < 5    |
++-------------------+
+         | Oui
+         V
++-------------------+
+| Afficher i        |
++-------------------+
+         |
+         V
++-------------------+
+| i = i + 1         |
++-------------------+
+         | (retour à la condition)
+         |
+         | Non
+         V
++-------------------+
+| Fin               |
++-------------------+
+```
+
+**Exercice 2:**
+Créez un ordinogramme pour une boucle `while` qui demande à l'utilisateur de saisir un mot et continue de demander jusqu'à ce que l'utilisateur saisisse "fin".
+
+---
+
+Ces représentations graphiques aident les étudiants à visualiser et à comprendre le flux de contrôle dans les boucles, ce qui est crucial pour la conception et le débogage de programmes. Encouragez vos étudiants à pratiquer en créant leurs propres ordinogrammes pour différentes structures répétitives.

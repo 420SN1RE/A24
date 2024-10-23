@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="L’instruction MATCH-CASE L’instruction match-case est inspirée des structures de correspondance de motifs (switch-case) présentes dans d’autres langages de programmation. Elle permet généralement de simplifier le traitement de différentes conditions en rendant le code plus lisible et plus structuré. Syntaxe de base Astuce La syntaxe de l’instruction match-case est similaire à celle d’une série de conditions if-elif-else, mais elle est souvent plus concise et expressive.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Match Case :: 420-SN1-RE">
+    <meta name="twitter:description" content="L’instruction MATCH-CASE L’instruction match-case est inspirée des structures de correspondance de motifs (switch-case) présentes dans d’autres langages de programmation. Elle permet généralement de simplifier le traitement de différentes conditions en rendant le code plus lisible et plus structuré. Syntaxe de base Astuce La syntaxe de l’instruction match-case est similaire à celle d’une série de conditions if-elif-else, mais elle est souvent plus concise et expressive.">
+    <meta property="og:url" content="https://example.org/bases/langage-de-prog/match-case/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Match Case :: 420-SN1-RE">
+    <meta property="og:description" content="L’instruction MATCH-CASE L’instruction match-case est inspirée des structures de correspondance de motifs (switch-case) présentes dans d’autres langages de programmation. Elle permet généralement de simplifier le traitement de différentes conditions en rendant le code plus lisible et plus structuré. Syntaxe de base Astuce La syntaxe de l’instruction match-case est similaire à celle d’une série de conditions if-elif-else, mais elle est souvent plus concise et expressive.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Match Case :: 420-SN1-RE">
+    <meta itemprop="description" content="L’instruction MATCH-CASE L’instruction match-case est inspirée des structures de correspondance de motifs (switch-case) présentes dans d’autres langages de programmation. Elle permet généralement de simplifier le traitement de différentes conditions en rendant le code plus lisible et plus structuré. Syntaxe de base Astuce La syntaxe de l’instruction match-case est similaire à celle d’une série de conditions if-elif-else, mais elle est souvent plus concise et expressive.">
+    <meta itemprop="wordCount" content="643">
+    <title>Match Case :: 420-SN1-RE</title>
+    <link href="/bases/langage-de-prog/match-case/index.xml" rel="alternate" type="application/rss+xml" title="Match Case :: 420-SN1-RE">
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/bases/langage-de-prog/match-case/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#linstruction-match-case">L’instruction MATCH-CASE</a></li>
+    <li><a href="#syntaxe-de-base">Syntaxe de base</a></li>
+    <li><a href="#exemple-de-if-elif-else-avec-match-case">Exemple de IF-ELIF-ELSE avec MATCH-CASE</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/index.html"><span itemprop="name">Base de connaissances</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/langage-de-prog/index.html"><span itemprop="name">1. Langage de programmation</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Match Case</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/langage-de-prog/listes-de-listes/index.html" title="Les listes de listes (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/langage-de-prog/poo/index.html" title="La programmation orientée objet (POO) (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable bases" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="match-case">Match Case</h1>
+
+<p><a href="#R-image-9dd7a51fc9cb83610d279729b9591bbf" class="lightbox-link"><img alt="match-case" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/bases/langage-de-prog/match-case/match-case.jpeg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9dd7a51fc9cb83610d279729b9591bbf"><img alt="match-case" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/bases/langage-de-prog/match-case/match-case.jpeg?width=25vw"></a></p>
+<h2 id="linstruction-match-case">L’instruction MATCH-CASE</h2>
+<ul>
+<li>L’instruction <code>match-case</code> est inspirée des structures de correspondance de motifs (switch-case) présentes dans d’autres langages de programmation.</li>
+<li>Elle permet <strong>généralement</strong> de simplifier le traitement de différentes conditions en rendant le code plus lisible et plus structuré.</li>
+</ul>
+<h2 id="syntaxe-de-base">Syntaxe de base</h2>
+<div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fa-fw fas fa-lightbulb"></i> Astuce
+  </div>
+  <div class="box-content">
+<p>La syntaxe de l’instruction <code>match-case</code> est similaire à celle d’une série de conditions <code>if-elif-else</code>, mais elle est souvent plus concise et expressive.</p>
+  </div>
+</div>
+<p>Syntaxe générale:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>def action(commande):
+</span></span><span style="display:flex;"><span>    match commande:
+</span></span><span style="display:flex;"><span>        case &#34;demarre&#34;:
+</span></span><span style="display:flex;"><span>            print(&#34;Démarrage...&#34;)
+</span></span><span style="display:flex;"><span>        case &#34;stop&#34;:
+</span></span><span style="display:flex;"><span>            print(&#34;Arrêt...&#34;)
+</span></span><span style="display:flex;"><span>        case &#34;pause&#34;:
+</span></span><span style="display:flex;"><span>            print(&#34;Pause...&#34;)
+</span></span><span style="display:flex;"><span>        case _:
+</span></span><span style="display:flex;"><span>            print(&#34;Commande inconnue&#34;)</span></span></code></pre></div>
+<ul>
+<li>Dans cet exemple, la fonction <code>action</code> utilise <code>match</code> pour comparer la variable <code>commande</code> à différents motifs (&ldquo;demarre&rdquo;, &ldquo;stop&rdquo;, &ldquo;pause&rdquo;).</li>
+<li>Si aucun motif ne correspond, le cas par défaut <code>(_)</code> est exécuté.</li>
+</ul>
+<p>Voici deux exemples concrets simples:</p>
+<p><strong>Exemple 1</strong>: Sélection de fruit:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">selectionner_fruit</span>(fruit):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">match</span> fruit:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;pomme&#34;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;C&#39;est une pomme&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;banane&#34;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;C&#39;est une banane&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;cerise&#34;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;C&#39;est une cerise&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> _:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Fruit inconnu&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exemple d&#39;utilisation</span>
+</span></span><span style="display:flex;"><span>print(selectionner_fruit(<span style="color:#e6db74">&#34;pomme&#34;</span>))  <span style="color:#75715e"># C&#39;est une pomme</span>
+</span></span><span style="display:flex;"><span>print(selectionner_fruit(<span style="color:#e6db74">&#34;kiwi&#34;</span>))   <span style="color:#75715e"># Fruit inconnu</span></span></span></code></pre></div>
+<p><strong>Explication</strong>:</p>
+<ol>
+<li>
+<p><strong><code>match fruit:</code></strong></p>
+<ul>
+<li>Compare la valeur de la variable <code>fruit</code> à différents motifs.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>case &quot;pomme&quot;</code></strong></p>
+<ul>
+<li>Vérifie si <code>fruit</code> est égal à <code>&quot;pomme&quot;</code>.</li>
+<li>Si <code>fruit</code> correspond à &ldquo;pomme&rdquo;, le code suivant <code>return &quot;C'est une pomme&quot;</code> est exécuté.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>case &quot;banane&quot;</code></strong></p>
+<ul>
+<li>Vérifie si <code>fruit</code> est égal à <code>&quot;banane&quot;</code>.</li>
+<li>Si <code>fruit</code> correspond à &ldquo;banane&rdquo;, le code suivant <code>return &quot;C'est une banane&quot;</code> est exécuté.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>case &quot;cerise&quot;</code></strong></p>
+<ul>
+<li>Vérifie si <code>fruit</code> est égal à <code>&quot;cerise&quot;</code>.</li>
+<li>Si <code>fruit</code> correspond à &ldquo;cerise&rdquo;, le code suivant <code>return &quot;C'est une cerise&quot;</code> est exécuté.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>case _:</code></strong></p>
+<ul>
+<li>Le symbole <code>_</code> est un motif générique qui correspond à n&rsquo;importe quelle valeur qui n&rsquo;a pas été capturée par les motifs précédents.</li>
+<li><strong><code>return &quot;Fruit inconnu&quot;</code></strong> : Si <code>fruit</code> ne correspond à aucun des motifs précédents, la fonction retourne <code>&quot;Fruit inconnu&quot;</code>.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Exemple 2</strong>: Classification d&rsquo;animaux en fonction de leur type :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">classifier</span>(animal):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">match</span> animal:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;chien&#34;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#34;chat&#34;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#34;lapin&#34;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Mammifère&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;aigle&#34;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#34;canari&#34;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#34;perroquet&#34;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Oiseau&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;serpent&#34;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#34;lézard&#34;</span> <span style="color:#f92672">|</span> <span style="color:#e6db74">&#34;tortue&#34;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Reptile&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">case</span> _:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;Inconnu&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exemple d&#39;utilisation</span>
+</span></span><span style="display:flex;"><span>animal <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;chat&#34;</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>animal<span style="color:#e6db74">}</span><span style="color:#e6db74"> est un </span><span style="color:#e6db74">{</span>classifier(animal)<span style="color:#e6db74">}</span><span style="color:#e6db74">.&#34;</span>) <span style="color:#75715e"># chat est une Mammifère</span></span></span></code></pre></div>
+<p><strong>Explication</strong>:</p>
+<ol>
+<li>
+<p><strong><code>match animal:</code></strong></p>
+<ul>
+<li>Compare la valeur de la variable <code>animal</code> à différents motifs.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>case &quot;chien&quot; | &quot;chat&quot; | &quot;lapin&quot;:</code></strong></p>
+<ul>
+<li>Vérifie si <code>animal</code> est égal à <code>&quot;chien&quot;</code>, <code>&quot;chat&quot;</code> ou <code>&quot;lapin&quot;</code>.</li>
+<li>Le symbole <code>|</code> signifie &ldquo;ou&rdquo;. Si <code>animal</code> correspond à l&rsquo;un de ces trois mots, le code suivant est exécuté.</li>
+<li><strong><code>return &quot;Mammifère&quot;</code></strong> : Si <code>animal</code> est <code>&quot;chien&quot;</code>, <code>&quot;chat&quot;</code> ou <code>&quot;lapin&quot;</code>, la fonction retourne la chaîne de caractères <code>&quot;Mammifère&quot;</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>case &quot;aigle&quot; | &quot;canari&quot; | &quot;perroquet&quot;:</code></strong></p>
+<ul>
+<li>Vérifie si <code>animal</code> est égal à <code>&quot;aigle&quot;</code>, <code>&quot;canari&quot;</code> ou <code>&quot;perroquet&quot;</code>.</li>
+<li><strong><code>return &quot;Oiseau&quot;</code></strong> : Si <code>animal</code> est l&rsquo;un de ces trois mots, la fonction retourne <code>&quot;Oiseau&quot;</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>case &quot;serpent&quot; | &quot;lézard&quot; | &quot;tortue&quot;:</code></strong></p>
+<ul>
+<li>Vérifie si <code>animal</code> est égal à <code>&quot;serpent&quot;</code>, <code>&quot;lézard&quot;</code> ou <code>&quot;tortue&quot;</code>.</li>
+<li><strong><code>return &quot;Reptile&quot;</code></strong> : Si <code>animal</code> est l&rsquo;un de ces trois mots, la fonction retourne <code>&quot;Reptile&quot;</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>case _:</code></strong></p>
+<ul>
+<li>Le symbole <code>_</code> est un motif générique qui correspond à n&rsquo;importe quelle valeur qui n&rsquo;a pas été capturée par les motifs précédents.</li>
+<li><strong><code>return &quot;Inconnu&quot;</code></strong> : Si <code>animal</code> ne correspond à aucun des motifs précédents, la fonction retourne <code>&quot;Inconnu&quot;</code>.</li>
+</ul>
+</li>
+</ol>
+<h2 id="exemple-de-if-elif-else-avec-match-case">Exemple de IF-ELIF-ELSE avec MATCH-CASE</h2>
+<p>Soit l&rsquo;exemple suivant vu précédemment. Re-écrivons-le avec <code>match-case</code>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">36</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#ae81ff">18</span> <span style="color:#f92672">&lt;=</span> age <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">30</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Vous êtes un jeune adulte&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> <span style="color:#ae81ff">30</span> <span style="color:#f92672">&lt;</span> age <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">65</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Avez-vous des enfants?&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> age <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">65</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Bonne retraite!&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Vous êtes mineur&#34;</span>)</span></span></code></pre></div>
+<p>Voici le même algorithme, mais avec <code>match-case</code>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">36</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">match</span> age:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> age <span style="color:#66d9ef">if</span> <span style="color:#ae81ff">18</span> <span style="color:#f92672">&lt;=</span> age <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">30</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Vous êtes un jeune adulte&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> age <span style="color:#66d9ef">if</span> <span style="color:#ae81ff">30</span> <span style="color:#f92672">&lt;</span> age <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">65</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Avez-vous des enfants?&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> age <span style="color:#66d9ef">if</span> age <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">65</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Bonne retraite!&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> _:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Vous êtes mineur&#34;</span>)</span></span></code></pre></div>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Info
+  </div>
+  <div class="box-content">
+<p>Comme vous pouvez le voir, le code n&rsquo;est pas vraiment plus simple. Dans ce cours, nous utiliserons principalement <code>if-elif-else</code>. Ceci dit, lorsque les directives ne vous obligent pas à utiliser <code>if-elif-else</code>, l&rsquo;instruction <code>match-case</code> sera acceptée.</p>
+  </div>
+</div>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="parent " data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu">
+            <li class="parent " data-nav-id="/bases/langage-de-prog/index.html"><a class="padding" href="/bases/langage-de-prog/index.html">1. Langage de programmation</a><ul id="R-subsections-be5c8169920e24019fa741b0d66dc652" class="collapsible-menu">
+            <li class="" data-nav-id="/bases/langage-de-prog/chaines-caracteres/index.html"><a class="padding" href="/bases/langage-de-prog/chaines-caracteres/index.html">Formatage des chaines</a></li>
+            <li class="alwaysopen " data-nav-id="/bases/langage-de-prog/debogage/index.html"><a class="padding" href="/bases/langage-de-prog/debogage/index.html">Techniques de débogage</a><ul id="R-subsections-3e9c2661746a9ff83626144636af0aab" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/erreurs/index.html"><a class="padding" href="/bases/langage-de-prog/erreurs/index.html">Erreurs communes</a><ul id="R-subsections-23a700e31b2f22b689e66a3c24cc7bff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/fonction-recursive/index.html"><a class="padding" href="/bases/langage-de-prog/fonction-recursive/index.html">Les fonctions récursives</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/listes-de-listes/index.html"><a class="padding" href="/bases/langage-de-prog/listes-de-listes/index.html">Les listes de listes</a></li>
+            <li class="active " data-nav-id="/bases/langage-de-prog/match-case/index.html"><a class="padding" href="/bases/langage-de-prog/match-case/index.html">Match Case</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/poo/index.html"><a class="padding" href="/bases/langage-de-prog/poo/index.html">La programmation orientée objet (POO)</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/pandas/pandas/index.html"><a class="padding" href="/bases/langage-de-prog/pandas/pandas/index.html">Pandas (intermédiaire-avancé)</a></li></ul></li>
+            <li class="" data-nav-id="/bases/outils/index.html"><a class="padding" href="/bases/outils/index.html">2. Outils</a><ul id="R-subsections-63c1095d7ccdc1b9ecea42dfa732d4d2" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/bases/lexique/index.html"><a class="padding" href="/bases/lexique/index.html">3. Lexique</a></li></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/bases/langage-de-prog/match-case/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

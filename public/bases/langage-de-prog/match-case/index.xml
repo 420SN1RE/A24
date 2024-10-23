@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Match Case :: 420-SN1-RE</title>
+    <link>https://example.org/bases/langage-de-prog/match-case/index.html</link>
+    <description>L’instruction MATCH-CASE L’instruction match-case est inspirée des structures de correspondance de motifs (switch-case) présentes dans d’autres langages de programmation. Elle permet généralement de simplifier le traitement de différentes conditions en rendant le code plus lisible et plus structuré. Syntaxe de base Astuce La syntaxe de l’instruction match-case est similaire à celle d’une série de conditions if-elif-else, mais elle est souvent plus concise et expressive.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/langage-de-prog/match-case/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

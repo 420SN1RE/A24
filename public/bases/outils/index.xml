@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2. Outils :: 420-SN1-RE</title>
+    <link>https://example.org/bases/outils/index.html</link>
+    <description>Base - Outils</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/outils/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installations</title>
+      <link>https://example.org/bases/outils/installations/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/outils/installations/index.html</guid>
+      <description>Dans cette section vous trouverez les informations nécessaires pour configurer votre environnement de développement sur Windows.&#xA;Installation de Python : Suivez nos instructions détaillées pour télécharger et installer Python sur votre système Windows. Nous vous guiderons à travers chaque étape pour vous assurer que Python est correctement configuré.&#xA;Installation de Visual Studio Code (VS Code) : Apprenez à installer VS Code, l’éditeur de code puissant et flexible. Nous vous montrerons comment le télécharger et l’installer facilement.</description>
+    </item>
+    <item>
+      <title>Utilisation de VS Code</title>
+      <link>https://example.org/bases/outils/vs-code/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/outils/vs-code/index.html</guid>
+      <description>Visual Studio Code &amp; Jupyter Sauvegarde avec Visual Studio Code</description>
+    </item>
+    <item>
+      <title>Jupyter</title>
+      <link>https://example.org/bases/outils/jupyter/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/outils/jupyter/index.html</guid>
+      <description>Blocs-notes Jupyter dans VS Code Jupyter (anciennement IPython Notebook) est un projet open source qui vous permet de combiner facilement du texte Markdown et du code source Python exécutable sur un canevas appelé notebook.&#xA;Visual Studio Code prend en charge l’utilisation des blocs-notes Jupyter en mode natif et via des fichiers de code Python.&#xA;Créer, ouvrir et enregistrer des blocs-notes Jupyter Utiliser des cellules de code Jupyter Afficher, inspecter et filtrer les variables à l’aide de l’Explorateur de variables et de la visionneuse de données Se connecter à un serveur Jupyter distant Déboguer un bloc-notes Jupyter Configuration de votre environnement Pour utiliser Python dans Jupyter Notebooks, vous devez activer un environnement Anaconda dans VS Code ou un autre environnement Python dans lequel vous avez installé le package Jupyter. Pour sélectionner un environnement, utilisez la commande Python : Sélectionner un interpréteur dans la palette de commandes (Ctrl+Maj+P).</description>
+    </item>
+    <item>
+      <title>MarkDown</title>
+      <link>https://example.org/bases/outils/markdown/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/outils/markdown/index.html</guid>
+      <description>Introduction au Markdown dans Jupyter Notebook Markdown est un langage de balisage léger qui vous permet de formater du texte en utilisant une syntaxe simple. Dans Jupyter Notebook, vous pouvez utiliser des cellules Markdown pour ajouter des titres, des listes, des liens, des images, et bien plus encore.&#xA;Comment créer une cellule Markdown Créer une nouvelle cellule : Cliquez sur le bouton “+” dans la barre d’outils pour ajouter une nouvelle cellule. Changer le type de cellule : Cliquez sur le menu déroulant “Code” dans la barre d’outils et sélectionnez “Markdown”. Vous pouvez également utiliser le raccourci clavier Esc puis M. Écrire du texte en Markdown : Tapez votre texte en utilisant la syntaxe Markdown. Exécuter la cellule : Appuyez sur Shift + Enter pour exécuter la cellule et afficher le texte formaté. Les bases du Markdown Titres et sous-titres:</description>
+    </item>
+    <item>
+      <title>Google Colab</title>
+      <link>https://example.org/bases/outils/google-colab/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/outils/google-colab/index.html</guid>
+      <description>Google Colab, ou Colaboratory, est un service cloud gratuit proposé par Google, basé sur Jupyter Notebook. Colab permet d’exécuter du code Python directement dans le navigateur sans nécessiter de configuration préalable, tout en offrant un accès gratuit aux processeurs graphiques (GPU ou Graphics Processing), pour accélérer les calculs.&#xA;Accéder à Google Colab Pour commencer à utiliser Google Colab, suivez ces étapes simples :</description>
+    </item>
+  </channel>
+</rss>

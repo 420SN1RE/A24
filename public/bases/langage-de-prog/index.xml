@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1. Langage de programmation :: 420-SN1-RE</title>
+    <link>https://example.org/bases/langage-de-prog/index.html</link>
+    <description>Base - Langage de programmation</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/langage-de-prog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Formatage des chaines</title>
+      <link>https://example.org/bases/langage-de-prog/chaines-caracteres/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/chaines-caracteres/index.html</guid>
+      <description>La méthode str.format() nom = &#34;Philippe&#34; age = 30 print(&#34;Je m&#39;appelle {} et j&#39;ai {} ans.&#34;.format(nom, age)) Explication:&#xA;{} est un espace réservé pour une valeur qui sera insérée dans la chaîne de caractères. La méthode format(nom, age) remplace les accolades {} par les valeurs des variables nom et age respectivement. Donc, lorsque ce code est exécuté, il affiche :</description>
+    </item>
+    <item>
+      <title>Techniques de débogage</title>
+      <link>https://example.org/bases/langage-de-prog/debogage/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/debogage/index.html</guid>
+      <description>L’importance de savoir déboguer Le code que nous écrivons ne fonctionne pas toujours comme prévu et peut parfois produire des résultats inattendus.&#xA;Lorsqu’un problème survient, il est plus efficace d’utiliser un outil de débogage plutôt que de rester perplexe devant le code.&#xA;Un débogueur permet d’exécuter le code pas à pas pour identifier précisément où se trouve l’erreur et comprendre les corrections nécessaires.</description>
+    </item>
+    <item>
+      <title>Erreurs communes</title>
+      <link>https://example.org/bases/langage-de-prog/erreurs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/erreurs/index.html</guid>
+      <description>Au fil des semaines nous aurons l’occasion de localiser et de corriger différentes erreurs (ou bogues). Dans cette section “Erreurs et débogage”, vous trouverez des techniques qui permettent de déboguer vos programmes.&#xA;La méthode Print et le débogage Une erreur de syntaxe signifie que le code n’est pas conforme aux règles de syntaxe du langage. Cela est habituellement détecté immédiatement.</description>
+    </item>
+    <item>
+      <title>Les fonctions récursives</title>
+      <link>https://example.org/bases/langage-de-prog/fonction-recursive/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/fonction-recursive/index.html</guid>
+      <description>Qu’est-ce qu’une fonction récursive ? Une fonction récursive est une fonction qui s’appelle elle-même. Pour qu’une fonction récursive fonctionne correctement, elle doit avoir deux éléments essentiels :&#xA;Un cas de base : Une condition qui arrête la récursion. Un appel récursif : La fonction s’appelle elle-même avec des arguments modifiés. Exemple simple : La factorielle d’un nombre Calculer la factorielle d’un nombre est un exemple classique de récursion. La factorielle de n (notée n!) est le produit de tous les entiers de 1 à n.</description>
+    </item>
+    <item>
+      <title>Les listes de listes</title>
+      <link>https://example.org/bases/langage-de-prog/listes-de-listes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/listes-de-listes/index.html</guid>
+      <description>Les listes dans les listes Une liste peut comporter tout type d’élément. Nous pouvons donc mettre des listes dans des listes. Nous parlons alors de listes (ou tableaux) à 2 dimensions.&#xA;# Liste contenant 3 éléments # Chaque élément est une liste contenant 2 nombres matrice = [[1, 2], [3, 4], [5, 6]] Pour parcourir toutes les listes, il suffit de mettre une boucle dans une boucle :</description>
+    </item>
+    <item>
+      <title>Match Case</title>
+      <link>https://example.org/bases/langage-de-prog/match-case/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/match-case/index.html</guid>
+      <description>L’instruction MATCH-CASE L’instruction match-case est inspirée des structures de correspondance de motifs (switch-case) présentes dans d’autres langages de programmation. Elle permet généralement de simplifier le traitement de différentes conditions en rendant le code plus lisible et plus structuré. Syntaxe de base Astuce La syntaxe de l’instruction match-case est similaire à celle d’une série de conditions if-elif-else, mais elle est souvent plus concise et expressive.</description>
+    </item>
+    <item>
+      <title>La programmation orientée objet (POO)</title>
+      <link>https://example.org/bases/langage-de-prog/poo/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/poo/index.html</guid>
+      <description>La programmation orientée objet (POO) est un concept clé en Python et dans de nombreux autres langages de programmation. Voici une introduction simple :&#xA;Concepts de base de la POO en Python Classes et Objets Classe : Une classe est comme un plan ou un modèle pour créer des objets. Elle définit les attributs (données) et les méthodes (fonctions) que les objets créés à partir de cette classe auront. Objet : Un objet est une instance d’une classe. Par exemple, si Chien est une classe, alors mon_chien peut être un objet de cette classe. class Chien: def __init__(self, nom, age): self.nom = nom self.age = age def aboyer(self): print(&#34;Woof!&#34;) mon_chien = Chien(&#34;Rex&#34;, 5) mon_chien.aboyer() # Affiche &#34;Woof!&#34; Encapsulation L’encapsulation consiste à restreindre l’accès à certaines parties d’un objet. Cela se fait en utilisant des attributs privés (commençant par un underscore _) et des méthodes pour accéder et modifier ces attributs. class CompteBancaire: def __init__(self, solde): self._solde = solde def deposer(self, montant): self._solde += montant def retirer(self, montant): if montant &lt;= self._solde: self._solde -= montant else: print(&#34;Fonds insuffisants&#34;) def afficher_solde(self): print(f&#34;Solde: {self._solde}&#34;) mon_compte = CompteBancaire(100) mon_compte.deposer(50) mon_compte.afficher_solde() # Affiche &#34;Solde: 150&#34; Héritage L’héritage permet de créer une nouvelle classe à partir d’une classe existante. La nouvelle classe (classe dérivée) hérite des attributs et méthodes de la classe existante (classe de base). class Animal: def __init__(self, nom): self.nom = nom def parler(self): pass class Chien(Animal): def parler(self): print(&#34;Woof!&#34;) class Chat(Animal): def parler(self): print(&#34;Meow!&#34;) mon_chien = Chien(&#34;Rex&#34;) mon_chat = Chat(&#34;Mimi&#34;) mon_chien.parler() # Affiche &#34;Woof!&#34; mon_chat.parler() # Affiche &#34;Meow!&#34; Polymorphisme Le polymorphisme permet d’utiliser une interface commune pour des objets de différentes classes. Par exemple, différentes classes peuvent avoir une méthode parler, mais chaque classe peut l’implémenter différemment. for animal in [mon_chien, mon_chat]: animal.parler()</description>
+    </item>
+    <item>
+      <title>Pandas (intermédiaire-avancé)</title>
+      <link>https://example.org/bases/langage-de-prog/pandas/pandas/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/pandas/pandas/index.html</guid>
+      <description>Qu’est-ce que pandas? Pandas est une bibliothèque Python utilisée pour la manipulation et l’analyse de données. Elle est particulièrement utile pour traiter de grandes quantités de données expérimentales.&#xA;Ce cours couvre les concepts de base de Pandas, en mettant l’accent sur les applications pratiques dans les sciences.&#xA;Installation de Pandas Avant de commencer, assurez vous d’avoir Pandas installé. Vous pouvez l’installer via pip :</description>
+    </item>
+  </channel>
+</rss>

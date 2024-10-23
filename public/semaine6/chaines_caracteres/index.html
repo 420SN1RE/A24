@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="Quelques rappels sur les chaînes de caractères Une chaîne de caractères est simplement plusieurs caractères regroupés ensemble, entourés de guillemets simples (&#39;) ou doubles (&#34;). Les caractères peuvent être des lettres, chiffres, symboles ou espaces. Les chaines de caractères sont appelées string. Nous pouvons concaténer des chaînes, mais ce n’est pas tout… ##3 Opérations sur les chaines de caractères">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Les chaînes de caractères :: 420-SN1-RE">
+    <meta name="twitter:description" content="Quelques rappels sur les chaînes de caractères Une chaîne de caractères est simplement plusieurs caractères regroupés ensemble, entourés de guillemets simples (&#39;) ou doubles (&#34;). Les caractères peuvent être des lettres, chiffres, symboles ou espaces. Les chaines de caractères sont appelées string. Nous pouvons concaténer des chaînes, mais ce n’est pas tout… ##3 Opérations sur les chaines de caractères">
+    <meta property="og:url" content="https://example.org/semaine6/chaines_caracteres/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Les chaînes de caractères :: 420-SN1-RE">
+    <meta property="og:description" content="Quelques rappels sur les chaînes de caractères Une chaîne de caractères est simplement plusieurs caractères regroupés ensemble, entourés de guillemets simples (&#39;) ou doubles (&#34;). Les caractères peuvent être des lettres, chiffres, symboles ou espaces. Les chaines de caractères sont appelées string. Nous pouvons concaténer des chaînes, mais ce n’est pas tout… ##3 Opérations sur les chaines de caractères">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Les listes et le traitement des chaines de caractères">
+    <meta itemprop="name" content="Les chaînes de caractères :: 420-SN1-RE">
+    <meta itemprop="description" content="Quelques rappels sur les chaînes de caractères Une chaîne de caractères est simplement plusieurs caractères regroupés ensemble, entourés de guillemets simples (&#39;) ou doubles (&#34;). Les caractères peuvent être des lettres, chiffres, symboles ou espaces. Les chaines de caractères sont appelées string. Nous pouvons concaténer des chaînes, mais ce n’est pas tout… ##3 Opérations sur les chaines de caractères">
+    <meta itemprop="wordCount" content="779">
+    <title>Les chaînes de caractères :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine6/chaines_caracteres/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#quelques-rappels-sur-les-chaînes-de-caractères">Quelques rappels sur les chaînes de caractères</a></li>
+    <li><a href="#les-chaines-de-caractères-sont-des-listes">Les chaines de caractères sont des listes</a>
+      <ul>
+        <li><a href="#accès-aux-caractères-individuels">Accès aux caractères individuels</a></li>
+        <li><a href="#longueur-dune-chaine-de-caractères">Longueur d&rsquo;une chaine de caractères</a></li>
+        <li><a href="#itération-sur-les-caractères">Itération sur les caractères</a></li>
+        <li><a href="#slicing-découpage">Slicing (découpage)</a></li>
+        <li><a href="#conversion-entre-chaînes-et-listes">Conversion entre chaînes et listes</a></li>
+        <li><a href="#autres-méthodes-utiles-des-chaînes">Autres méthodes utiles des chaînes</a></li>
+      </ul>
+    </li>
+    <li><a href="#formater-les-chaines-de-caractères">Formater les chaines de caractères</a>
+      <ul>
+        <li><a href="#insertion-de-variables">Insertion de variables</a></li>
+        <li><a href="#les-f-strings">Les f-Strings</a></li>
+        <li><a href="#les-caractères-spéciaux">Les caractères &ldquo;spéciaux&rdquo;</a></li>
+      </ul>
+    </li>
+    <li><a href="#pause-5-minutes">Pause 5 minutes</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/semaine6/index.html"><span itemprop="name">Les listes et le traitement des chaines de caractères</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Les chaînes de caractères</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/listes/index.html" title="Les Listes (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/ateliers/index.html" title="ATELIERS (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine6" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="les-chaînes-de-caractères">Les chaînes de caractères</h1>
+
+<p><a href="#R-image-3fccb3b86f922100e72d57e4fe41b264" class="lightbox-link"><img alt="Chaines de caractères" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../chaines.jpeg?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3fccb3b86f922100e72d57e4fe41b264"><img alt="Chaines de caractères" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../chaines.jpeg?width=30vw"></a></p>
+<h2 id="quelques-rappels-sur-les-chaînes-de-caractères">Quelques rappels sur les chaînes de caractères</h2>
+<ul>
+<li>Une <strong>chaîne de caractères</strong> est simplement plusieurs caractères regroupés ensemble, entourés de guillemets simples (<code>'</code>) ou doubles (<code>&quot;</code>).</li>
+<li>Les caractères peuvent être des lettres, chiffres, symboles ou espaces.</li>
+<li>Les chaines de caractères sont appelées <strong>string</strong>.</li>
+<li>Nous pouvons concaténer des chaînes, mais ce n&rsquo;est pas tout&hellip;</li>
+</ul>
+<p>##3 Opérations sur les chaines de caractères</p>
+<p>Les chaînes de caractères en Python sont puissantes et flexibles. En les traitant comme des listes de caractères, vous pouvez effectuer une variété d’opérations pour manipuler et transformer vos données textuelles.
+Par exemple: extraire ou chercher des sous-chaînes, les modifier, etc&hellip;</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Opérations</th>
+          <th style="text-align: left">Définition</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>*</code></td>
+          <td style="text-align: left">Multiplie (répète) une chaîne</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>+</code></td>
+          <td style="text-align: left">Concatène des chaînes</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="les-chaines-de-caractères-sont-des-listes">Les chaines de caractères sont des listes</h2>
+<h3 id="accès-aux-caractères-individuels">Accès aux caractères individuels</h3>
+<p>Vous pouvez accéder à chaque caractère d&rsquo;une chaîne en utilisant des indices, de la même manière que vous le feriez avec une liste. Les indices commencent à 0.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>chaine <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(chaine[<span style="color:#ae81ff">0</span>])  <span style="color:#75715e"># Affiche B</span>
+</span></span><span style="display:flex;"><span>print(chaine[<span style="color:#ae81ff">1</span>])  <span style="color:#75715e"># Affiche o</span></span></span></code></pre></div>
+<p><a href="#R-image-d0d481cf9eff837855ae00ffab1f8ba2" class="lightbox-link"><img alt="indices" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../chaine_01.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d0d481cf9eff837855ae00ffab1f8ba2"><img alt="indices" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../chaine_01.png"></a></p>
+<h3 id="longueur-dune-chaine-de-caractères">Longueur d&rsquo;une chaine de caractères</h3>
+<p>Vous pouvez obtenir le nombre de caractères dans une chaine, avec la méthode <code>len()</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>chaine <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>longueur <span style="color:#f92672">=</span> len(chaine)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La longueur de la chaîne est:&#34;</span>, longueur)</span></span></code></pre></div>
+<p>Affiche :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>La longueur de la chaîne est: <span style="color:#ae81ff">7</span></span></span></code></pre></div>
+<h3 id="itération-sur-les-caractères">Itération sur les caractères</h3>
+<p>Vous pouvez itérer sur chaque caractère d&rsquo;une chaîne en utilisant une boucle <code>for</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>chaine <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> caractere <span style="color:#f92672">in</span> chaine:
+</span></span><span style="display:flex;"><span>    print(caractere)</span></span></code></pre></div>
+<p>Affiche:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>B
+</span></span><span style="display:flex;"><span>o
+</span></span><span style="display:flex;"><span>n
+</span></span><span style="display:flex;"><span>j
+</span></span><span style="display:flex;"><span>o
+</span></span><span style="display:flex;"><span>u
+</span></span><span style="display:flex;"><span>r</span></span></code></pre></div>
+<h3 id="slicing-découpage">Slicing (découpage)</h3>
+<p>Le slicing vous permet d&rsquo;extraire une sous-chaîne d&rsquo;une chaîne existante.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>chaine <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extraire les caractères aux index 1 à 3 inclus</span>
+</span></span><span style="display:flex;"><span>sous_chaine <span style="color:#f92672">=</span> chaine[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">4</span>] 
+</span></span><span style="display:flex;"><span>print(sous_chaine)  <span style="color:#75715e"># Affiche onj</span></span></span></code></pre></div>
+<h3 id="conversion-entre-chaînes-et-listes">Conversion entre chaînes et listes</h3>
+<p>Vous pouvez convertir une chaîne en une liste de caractères et vice versa.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>chaine <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>liste_caracteres <span style="color:#f92672">=</span> list(chaine)
+</span></span><span style="display:flex;"><span>print(liste_caracteres)  <span style="color:#75715e"># Affiche [&#39;B&#39;, &#39;o&#39;, &#39;n&#39;, &#39;j&#39;, &#39;o&#39;, &#39;u&#39;, &#39;r&#39;]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>chaine_recomposee <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join(liste_caracteres)
+</span></span><span style="display:flex;"><span>print(chaine_recomposee)  <span style="color:#75715e"># Affiche Bonjour</span></span></span></code></pre></div>
+<h3 id="autres-méthodes-utiles-des-chaînes">Autres méthodes utiles des chaînes</h3>
+<p>Python fournit de nombreuses méthodes intégrées pour manipuler les chaînes de caractères.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Méthodes</th>
+          <th style="text-align: left">Définition</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>[ ]</code></td>
+          <td style="text-align: left">Accède à un caractère selon sa position</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>[pos1:pos2 ]</code></td>
+          <td style="text-align: left">Accède aux caractères situés à l&rsquo;indice <code>pos1</code> jusqu&rsquo;à l&rsquo;indice précédant <code>pos2</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>[pos1: ]</code></td>
+          <td style="text-align: left">Accède aux caractères situés à l&rsquo;indice <code>pos1</code> jusqu&rsquo;à la fin de la chaine de caractères</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>[:pos2 ]</code></td>
+          <td style="text-align: left">Accède au premier caractère (indice 0) jusqu&rsquo;au caractères à l&rsquo;indice précédant <code>pos2</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>len()</code></td>
+          <td style="text-align: left">Retourne la longueur de la chaîne</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>str()</code></td>
+          <td style="text-align: left">Convertit en chaîne de caractères</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>lower()</code></td>
+          <td style="text-align: left">Convertit tous les caractères de la chaîne en minuscules</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>islower()</code></td>
+          <td style="text-align: left">Vérifie si une chaîne de caractères est en minuscules et retourne <code>True</code> si c&rsquo;est le cas, <code>False</code> sinon</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>upper()</code></td>
+          <td style="text-align: left">Convertit tous les caractères de la chaîne en majuscules.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>isupper()</code></td>
+          <td style="text-align: left">Vérifie si une chaîne de caractères est en majuscules et retourne <code>True</code> si c&rsquo;est le cas, <code>False</code> sinon</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>isdigit()</code></td>
+          <td style="text-align: left">Vérifie si une chaîne de caractères est numérique et retourne <code>True</code> si c&rsquo;est le cas, <code>False</code> sinon</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>isalpha()</code></td>
+          <td style="text-align: left">Vérifie si une chaîne de caractères est alpha-numérique et retourne <code>True</code> si c&rsquo;est le cas, <code>False</code> sinon</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>find()</code></td>
+          <td style="text-align: left">Renvoie l&rsquo;indice de la première occurrence de la sous-chaîne</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>split(delimiteur)</code></td>
+          <td style="text-align: left">Découper une chaîne en une liste de sous-chaînes.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>join()</code></td>
+          <td style="text-align: left">Concatène une séquence d&rsquo;éléments (comme une liste) en une seule chaîne</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>replace(ancienne, nouvelle)</code></td>
+          <td style="text-align: left">Remplacer une sous-chaîne par une autre.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>strip()</code></td>
+          <td style="text-align: left">Supprime les espaces (ou autres caractères spécifiés) au début et à la fin de la chaîne</td>
+      </tr>
+  </tbody>
+</table>
+<p>Quelques exemples:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>chaine <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(chaine<span style="color:#f92672">.</span>upper())  <span style="color:#75715e"># BONJOUR</span>
+</span></span><span style="display:flex;"><span>print(chaine<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;o&#39;</span>, <span style="color:#e6db74">&#39;a&#39;</span>))  <span style="color:#75715e"># Banjaur</span>
+</span></span><span style="display:flex;"><span>print(chaine<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;o&#39;</span>))  <span style="color:#75715e"># [&#39;B&#39;, &#39;nj&#39;, &#39;ur&#39;]</span>
+</span></span><span style="display:flex;"><span>print(chaine<span style="color:#f92672">.</span>strip())  <span style="color:#75715e"># Bonjour (si des espaces étaient présents)</span></span></span></code></pre></div>
+<p><a href="../exemples_caracteres.ipynb">Exemples avec les chaînes de caractères</a></p>
+<p><a href="https://www.w3schools.com/python/python_ref_string.asp" rel="external" target="_blank">Référence w3schools.com</a></p>
+<h2 id="formater-les-chaines-de-caractères">Formater les chaines de caractères</h2>
+<h3 id="insertion-de-variables">Insertion de variables</h3>
+<p>Il est possible d&rsquo;insérer facilement des variables dans des chaînes de caractères.
+Une première solution est d&rsquo;utiliser la concaténation:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombre1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">23</span>
+</span></span><span style="display:flex;"><span>nombre2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">35</span>
+</span></span><span style="display:flex;"><span>la_chaine <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Le nombre &#34;</span> <span style="color:#f92672">+</span> str(nombre1) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; est plus petit que &#34;</span> <span style="color:#f92672">+</span> str(nombre2)
+</span></span><span style="display:flex;"><span>print(la_chaine)   <span style="color:#75715e"># Affiche:  Le nombre 23 est plus petit que 35</span></span></span></code></pre></div>
+<p>Mais il est préférable d&rsquo;utiliser les <code>f-strings</code></p>
+<h3 id="les-f-strings">Les f-Strings</h3>
+<p><strong>Exemple</strong>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombre1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">23</span>
+</span></span><span style="display:flex;"><span>nombre2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">35</span>
+</span></span><span style="display:flex;"><span>la_chaine <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Le nombre </span><span style="color:#e6db74">{</span>nombre1<span style="color:#e6db74">}</span><span style="color:#e6db74"> est plus petit que </span><span style="color:#e6db74">{</span>nombre2<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span>print(la_chaine)   <span style="color:#75715e"># Affiche:  Le nombre 23 est plus petit que 35</span></span></span></code></pre></div>
+<p><strong>Explication</strong>:</p>
+<ul>
+<li><code>f-string</code> : Le <code>f</code> avant les guillemets indique que la chaîne de caractères est une <code>f-string</code>. Cela permet d’incorporer des expressions Python directement dans la chaîne.</li>
+<li><code>{ }</code> : Les accolades <code>{ }</code> sont utilisées pour inclure des expressions Python à l’intérieur de la chaîne. Ces expressions sont évaluées au moment de l’exécution et leurs valeurs sont insérées dans la chaîne.</li>
+</ul>
+<h3 id="les-caractères-spéciaux">Les caractères &ldquo;spéciaux&rdquo;</h3>
+<p><strong>Rappel</strong> : Le <code>\</code> permet d&rsquo;échapper le caractère suivant.</p>
+<p>Le tableau ci-dessous présente quelques caractères d’échappement couramment utilisés en Python et leur rôle respectif :</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Caractère</th>
+          <th style="text-align: left">Rôle</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>\t</code></td>
+          <td style="text-align: left">Tabulation</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>\n</code></td>
+          <td style="text-align: left">Retour de ligne</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>\\</code></td>
+          <td style="text-align: left">Barre oblique inversée (Backslash)</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="pause-5-minutes">Pause 5 minutes</h2>
+<p><a href="#R-image-4a1b5ca9cc24e74e3470aae4fad5e203" class="lightbox-link"><img alt="Pause" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../pause.jpg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4a1b5ca9cc24e74e3470aae4fad5e203"><img alt="Pause" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../pause.jpg?width=25vw"></a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine6/listes/index.html"><a class="padding" href="/semaine6/listes/index.html">Les Listes</a></li>
+            <li class="active " data-nav-id="/semaine6/chaines_caracteres/index.html"><a class="padding" href="/semaine6/chaines_caracteres/index.html">Les chaînes de caractères</a></li>
+            <li class="" data-nav-id="/semaine6/ateliers/index.html"><a class="padding" href="/semaine6/ateliers/index.html">ATELIERS</a></li>
+            <li class="" data-nav-id="/semaine6/pour-le-prochain-cours/index.html"><a class="padding" href="/semaine6/pour-le-prochain-cours/index.html">Pour le prochain cours</a></li></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/semaine6/chaines_caracteres/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

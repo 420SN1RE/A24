@@ -1,0 +1,315 @@
++++
+title = "NumPy vieux"
+weight = 131
++++
+
+
+![NumPy](../numpy.jpg?width=18vw)
+
+
+## Introduction et installation
+
+NumPy, ou *Numerical Python*, est une bibliothèque essentielle pour le calcul scientifique en Python. Elle permet de travailler efficacement avec des tableaux multidimensionnels et offre une large gamme de fonctions mathématiques pour effectuer des opérations sur ces tableaux. 
+
+NumPy permet de :
+- Manipuler des données de manière efficace.
+- Effectuer des opérations mathématiques et statistiques avancées.
+- Travailler avec des données multidimensionnelles.
+- Intégrer facilement avec d'autres bibliothèques et outils de data science.
+
+## Utilisation de NumPy
+
+Pour commencer, vous devez importer dans votre script Python :
+
+```python
+import numpy as np
+```
+
+Pour vérifier que NumPy est bien installé sur votre environnement :
+
+```python
+# Version de NumPy
+np.__version__
+```
+
+Vous devriez voir la version installée sous la forme de 1.XX.X. Si tel n’est pas le cas, il faudra installer Numpy comme ceci :
+
+```
+pip install numpy
+```
+
+## Les bases de NumPy
+
+
+### Création de tableaux (Arrays)
+
+Tout comme nous avons créé des listes en Python, il est possible de créer des tableaux avec Numpy. La différence réside dans la rapidité de traitement lorsqu’il s’agit de travailler avec des données en grande quantité.
+En effet, Numpy a été développé de sorte que les calculs soient plus rapides.
+
+Voici comment créer des tableaux à une ou deux dimensions:
+
+1. **Tableaux 1D** :
+   ```python
+   tab_1d = np.array([5, 4, 2, 8])
+   print("Tableau 1D:", tab_1d)
+   ```
+
+![Tab 1D](../tab_1d.JPG)
+
+2. **Tableaux 2D** :
+   ```python
+   array_2d = np.array([[5, 4, 2, 8], [7, 10, 3, 5], [8, 7, 4, 1]])
+   print("Tableau 2D:\n", array_2d)
+   ```
+
+![Tab 2D](../tab_2d.JPG)
+
+
+### Types de données dans un tableau NumPy
+
+NumPy permet de spécifier le type de données des éléments du tableau. Voici quelques exemples de types de données courants :
+
+1. **Entiers** :
+   ```python
+   int_tab = np.array([1, 2, 3], dtype=np.int32)
+   print("Tableau d'entiers:", int_tab)
+   ```
+![Tab entiers](../tab_entiers.JPG)
+
+2. **Flottants** :
+   ```python
+   float_tab = np.array([1.0, 2.0, 3.0], dtype=np.float64)
+   print("Tableau de flottants:", float_tab)
+   ```
+![Tab flottants](../tab_flottants.JPG)
+
+3. **Booléens** :
+   ```python
+   bool_tab = np.array([True, False, True], dtype=np.bool_)
+   print("Tableau de booléens:", bool_tab)
+   ```
+![Tab bools](../tab_bools.JPG)
+
+Vous pouvez également convertir le type de données d'un tableau existant :
+
+```python
+tab_converti = int_tab.astype(np.float64)
+print("Tableau converti en flottants:", tab_converti )
+```
+![Tab bools](../tab_bools.JPG)
+
+### Accès aux éléments et découpage (*Slicing*) du tableau
+
+L'indexation et le *slicing* sont des opérations essentielles pour manipuler les tableaux NumPy. Comme tous tableaux, il est possible d’accéder aux éléments à l’aide des index.
+
+1. **Accès à un élément** :
+
+   ```python
+   element = tab_2d[0, 1]  # Accède à l'élément de la première ligne, deuxième colonne
+   print("Élément:", element) # Affiche Élément 
+   ```
+
+2. **Slicing** :
+
+   ```python
+   slice_1d = tab_1d[1:4]  # Accède aux éléments de l'indice 1 à 3
+   print("Slice 1D:", slice_1d) # Affiche 
+
+![Tab 1D slice](../tab_1d_slice.JPG)
+
+   slice_2d = tab_2d[:, 1]  # Accède à la deuxième colonne de toutes les lignes
+   print("Slice 2D:", slice_2d)
+   ```
+![Tab 2D slice](../tab_2d_slice.JPG)
+
+### Opérations de base sur les tableaux
+
+NumPy permet d'effectuer des opérations arithmétiques directement sur les tableaux :
+
+1. **Addition** :
+   ```python
+   tab_somme = tab_1d + 5
+   print("Addition:", tab_somme)
+   ```
+
+2. **Multiplication** :
+   ```python
+   tab_mult = tab_2d * 2
+   print("Multiplication:\n", tab_mult)
+   ```
+
+3. **Fonctions Universelles (ufuncs)** :
+   NumPy fournit des fonctions mathématiques universelles qui opèrent élément par élément sur les tableaux :
+   ```python
+   tab_racinecarre = np.sqrt(tab_1d)
+   print("Racine carrée:", tab_racinecarre)
+   ```
+
+
+## Manipulation des tableaux
+
+### Redimensionnement
+
+Le redimensionnement des tableaux NumPy permet d'adapter les données à différentes formes pour les analyses. Voici quelques techniques courantes :
+- **reshape()** : Cette fonction permet de changer la forme d'un tableau sans modifier ses données. Par exemple, convertir un tableau 1D en tableau 2D.
+
+  ```python
+  import numpy as np
+  a = np.array([1, 2, 3, 4, 5, 6])
+  b = a.reshape((2, 3))
+  ```
+- **resize()** : Contrairement à reshape(), resize() modifie la taille du tableau et peut changer les données si nécessaire.
+  ```python
+  a.resize((3, 2))
+  ```
+
+### Concatenation et Splitting
+
+La concatenation et le splitting sont des techniques essentielles pour manipuler les données de manière plus complexe avec NumPy :
+- **Concatenation** : Combiner plusieurs tableaux en un seul. Cela peut se faire par :
+  - **np.concatenate()** : Combiner des tableaux le long d'un axe spécifié.
+    ```python
+    a = np.array([[1, 2], [3, 4]])
+    b = np.array([[5, 6]])
+    c = np.concatenate((a, b), axis=0)
+    ```
+  - **np.vstack() et np.hstack()** : Combiner des tableaux verticalement ou horizontalement.
+    ```python
+    c = np.vstack((a, b))
+    d = np.hstack((a, b.T))
+    ```
+
+- **Splitting** : Diviser un tableau en plusieurs parties. Cela peut inclure :
+  - **np.split()** : Diviser un tableau en sous-tableaux le long d'un axe spécifié.
+    ```python
+    a = np.array([[1, 2, 3], [4, 5, 6]])
+    b = np.split(a, 2, axis=1)
+    ```
+  - **np.vsplit() et np.hsplit()** : Diviser des tableaux verticalement ou horizontalement.
+    ```python
+    c = np.vsplit(a, 2)
+    d = np.hsplit(a, 3)
+    ```
+
+## Fonctions mathématiques et statistiques
+
+### Fonctions de base
+
+Les fonctions mathématiques de base permettent de calculer des statistiques descriptives essentielles pour l'analyse des données :
+
+- **Somme** : Calculer la somme des éléments d'un tableau.
+  ```python
+  import numpy as np
+  a = np.array([1, 2, 3, 4])
+  somme = np.sum(a)
+  ```
+- **Moyenne** : Calculer la moyenne des éléments d'un tableau.
+  ```python
+  moyenne = np.mean(a)
+  ```
+- **Médiane** : Trouver la médiane des éléments d'un tableau.
+  ```python
+  mediane = np.median(a)
+  ```
+- **Écart-type** : Calculer l'écart-type des éléments d'un tableau.
+  ```python
+  ecart_type = np.std(a)
+  ```
+
+### Fonctions avancées
+
+Les fonctions avancées d'algèbre linéaire permettent des analyses plus complexes et approfondies :
+- **Produit matriciel** : Calculer le produit de deux matrices.
+
+  ```python
+  b = np.array([[1, 2], [3, 4]])
+  produit = np.dot(a.reshape(2, 2), b)
+  ```
+- **Déterminant** : Calculer le déterminant d'une matrice.
+  ```python
+  determinant = np.linalg.det(b)
+  ```
+- **Valeurs propres et vecteurs propres** : Trouver les valeurs propres et les vecteurs propres d'une matrice.
+  ```python
+  valeurs_propres, vecteurs_propres = np.linalg.eig(b)
+  ```
+- **Décomposition en valeurs singulières (SVD)** : Effectuer une décomposition en valeurs singulières.
+  ```python
+  U, S, V = np.linalg.svd(b)
+  ```
+
+### 6. Génération de Données
+
+#### Utilisation de `np.arange`, `np.linspace`, `np.random`
+Ces fonctions de NumPy sont essentielles pour générer des données nécessaires aux simulations et analyses :
+
+- **`np.arange`** : Génère des valeurs régulièrement espacées dans un intervalle donné.
+  ```python
+  import numpy as np
+  valeurs = np.arange(0, 10, 2)  # Génère [0, 2, 4, 6, 8]
+  ```
+- **`np.linspace`** : Génère un nombre spécifié de valeurs uniformément espacées entre deux bornes.
+  ```python
+  valeurs = np.linspace(0, 1, 5)  # Génère [0. , 0.25, 0.5 , 0.75, 1. ]
+  ```
+- **`np.random`** : Fournit des fonctions pour générer des données aléatoires.
+  - **`np.random.rand`** : Génère des valeurs aléatoires uniformément distribuées entre 0 et 1.
+    ```python
+    valeurs = np.random.rand(5)  # Génère 5 valeurs aléatoires
+    ```
+  - **`np.random.randint`** : Génère des entiers aléatoires dans un intervalle spécifié.
+    ```python
+    valeurs = np.random.randint(0, 10, 5)  # Génère 5 entiers aléatoires entre 0 et 9
+    ```
+
+## Création de matrices spéciales
+
+NumPy permet également de créer des matrices spéciales pour des calculs spécifiques :
+
+- **Matrice identité** : Utilisée dans de nombreux calculs algébriques.
+  ```python
+  identite = np.eye(3)  # Crée une matrice identité 3x3
+  ```
+- **Matrice de zéros** : Utile pour initialiser des structures de données.
+  ```python
+  zeros = np.zeros((2, 3))  # Crée une matrice 2x3 remplie de zéros
+  ```
+- **Matrice de uns** : Utile pour initialiser des structures de données avec des valeurs non nulles.
+  ```python
+  uns = np.ones((2, 3))  # Crée une matrice 2x3 remplie de uns
+  ```
+
+## Liste non exhaustive de fonctions
+
+Numpy est doté d'une grande quantité de fonction permettant de gérer des tableaux. Il est aussi possible de faire des calculs mathématiques tel que le calcul de la moyenne, la médiane, l'écart type etc...
+
+| Fonctions |  |
+| ---- | ----|
+| array() | Crée un tableau |
+| shape() | Retourne la forme du tableau |
+| ndim() | Retourne le nombre de dimension du tableau |
+| size() | Retourne le nombre d'éléments dans le tableau |
+| zeros() | Crée un tableau composé uniquement de 0 |
+| ones() | Crée un tableau composé uniquement de 1 |
+| arange() | Génère un tableau avec une suite de nombre en fonction du pas saisi |
+| linspace() | Génère un tableau avec une suite de nombre en fonction de la quantité saisie |
+| random.randn() | Génère un tableau avec des nombres basés sur la loi normale centrée réduite |
+| sum() | Retourne la somme |
+| prod() | Retourne le produit |
+| mean() | Retourne la moyenne |
+| median() | Retourne la médiane |
+| var() | Retourne la variance |
+| std() | Retourne l'écart type |
+| corrcoef() | Retourne la corrélation entre les différentes variables |
+| sort() | Tri le tableau |
+| min() | Retourne la valeur minimum |
+| max() | Retourne la valeur maximum |
+| argmin() | Retourne l'indice de la valeur minimum |
+| argmax() | Retourne l'indice de la valeur maximum |
+
+Pour plus de fonctions : [Site officiel Numpy](https://numpy.org/doc/stable/index.html "Numpy").
+
+
+## Atelier
+
+[La bibliothèque NumPy](../atelier-numpy.ipynb)

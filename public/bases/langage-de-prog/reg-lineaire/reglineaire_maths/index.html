@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="Le calcul d’une droite de régression linéaire consiste à trouver la meilleure droite qui passe à travers un ensemble de points de données. Cette droite est souvent exprimée par l’équation (y = ax &#43; b), où a est la pente et b est l’ordonnée à l’origine. Voici comment on peut calculer ces coefficients de manière mathématique.
+Étapes du calcul Définir les données : Supposons que nous avons un ensemble de n points de données ((x_i, y_i)) pour (i = 1, 2, ..., n).">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="La régression linéaire (mathématiquement) :: 420-SN1-RE">
+    <meta name="twitter:description" content="Le calcul d’une droite de régression linéaire consiste à trouver la meilleure droite qui passe à travers un ensemble de points de données. Cette droite est souvent exprimée par l’équation (y = ax &#43; b), où a est la pente et b est l’ordonnée à l’origine. Voici comment on peut calculer ces coefficients de manière mathématique.
+Étapes du calcul Définir les données : Supposons que nous avons un ensemble de n points de données ((x_i, y_i)) pour (i = 1, 2, ..., n).">
+    <meta property="og:url" content="http://localhost:1313/bases/langage-de-prog/reg-lineaire/reglineaire_maths/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="La régression linéaire (mathématiquement) :: 420-SN1-RE">
+    <meta property="og:description" content="Le calcul d’une droite de régression linéaire consiste à trouver la meilleure droite qui passe à travers un ensemble de points de données. Cette droite est souvent exprimée par l’équation (y = ax &#43; b), où a est la pente et b est l’ordonnée à l’origine. Voici comment on peut calculer ces coefficients de manière mathématique.
+Étapes du calcul Définir les données : Supposons que nous avons un ensemble de n points de données ((x_i, y_i)) pour (i = 1, 2, ..., n).">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Base de connaissances">
+    <meta itemprop="name" content="La régression linéaire (mathématiquement) :: 420-SN1-RE">
+    <meta itemprop="description" content="Le calcul d’une droite de régression linéaire consiste à trouver la meilleure droite qui passe à travers un ensemble de points de données. Cette droite est souvent exprimée par l’équation (y = ax &#43; b), où a est la pente et b est l’ordonnée à l’origine. Voici comment on peut calculer ces coefficients de manière mathématique.
+Étapes du calcul Définir les données : Supposons que nous avons un ensemble de n points de données ((x_i, y_i)) pour (i = 1, 2, ..., n).">
+    <meta itemprop="wordCount" content="549">
+    <title>La régression linéaire (mathématiquement) :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694383" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694383" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694383" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694383" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694383" rel="stylesheet">
+    <link href="/css/fonts.css?1729694383" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694383" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694383" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694383" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694383" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694383" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694383"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/bases/langage-de-prog/reg-lineaire/reglineaire_maths/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#étapes-du-calcul">Étapes du calcul</a></li>
+        <li><a href="#dérivation-des-formules">Dérivation des formules</a></li>
+        <li><a href="#exemple-numérique">Exemple numérique</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/index.html"><span itemprop="name">Base de connaissances</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/langage-de-prog/index.html"><span itemprop="name">1. Langage de programmation</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/langage-de-prog/reg-lineaire/index.html"><span itemprop="name">Régression Linéaire</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">La régression linéaire (mathématiquement)</span><meta itemprop="position" content="5"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/langage-de-prog/reg-lineaire/index.html" title="Régression Linéaire (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/langage-de-prog/reg-lineaire/reglineaire_numpy/index.html" title="Calcul d&#39;une droite de régression linéaire avec NumPy (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable bases" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="la-régression-linéaire-mathématiquement">La régression linéaire (mathématiquement)</h1>
+
+<p>Le calcul d&rsquo;une droite de régression linéaire consiste à trouver la meilleure droite qui passe à travers un ensemble de points de données. Cette droite est souvent exprimée par l&rsquo;équation <code>(y = ax + b)</code>, où <code>a</code> est la pente et <code>b</code> est l&rsquo;ordonnée à l&rsquo;origine. Voici comment on peut calculer ces coefficients de manière mathématique.</p>
+<h3 id="étapes-du-calcul">Étapes du calcul</h3>
+<ol>
+<li>
+<p><strong>Définir les données</strong> :
+Supposons que nous avons un ensemble de <code>n</code> points de données <code>((x_i, y_i))</code> pour <code>(i = 1, 2, ..., n)</code>.</p>
+</li>
+<li>
+<p><strong>Formules pour les coefficients</strong> :
+Les coefficients <code>a</code> (pente) et <code>b</code> (ordonnée à l&rsquo;origine) sont calculés à l&rsquo;aide des formules suivantes :</p>
+<span class="math align-center">- Pente : `$$[ a = \frac{n(\sum xy) - (\sum x)(\sum y)}{n(\sum x^2) - (\sum x)^2} ]$$`
+- Ordonnée à l’origine : `$$[ b = \frac{(\sum y) - a(\sum x)}{n} ]$$`</span>
+</li>
+</ol>
+<p>Ces formules permettent de calculer les coefficients <code>a</code> et <code>b</code> de la droite de régression linéaire, où :</p>
+<p><code>(n)</code> est le nombre de points de données.<br>
+$(\sum xy)$ est la somme des produits des paires de valeurs <code>(x)</code> et <code>(y)</code>.<br>
+$(\sum x)$ est la somme des valeurs <code>x</code>.<br>
+$(\sum y)$ est la somme des valeurs <code>y</code>.<br>
+$(\sum x^2)$ est la somme des carrés des valeurs <code>x</code>.</p>
+<h3 id="dérivation-des-formules">Dérivation des formules</h3>
+<ol>
+<li>
+<p><strong>Minimisation de l&rsquo;erreur quadratique</strong> :
+La droite de régression linéaire est celle qui minimise la somme des carrés des erreurs (différences entre les valeurs observées et les valeurs prédites). Cette somme des carrés des erreurs est donnée par :
+$$ S = \sum_{i=1}^{n} (y_i - (ax_i + b))^2 $$</p>
+</li>
+<li>
+<p><strong>Calcul des dérivées partielles</strong> :
+Pour minimiser <code>S</code>, nous prenons les dérivées partielles de <code>S</code> par rapport à <code>a</code> et <code>b</code></p>
+<ul>
+<li>
+<p><strong>Dérivée partielle par rapport à <code>a</code></strong> :
+$$ \frac{\partial S}{\partial a} = -2 \sum_{i=1}^{n} x_i (y_i - ax_i - b) = 0 $$</p>
+</li>
+<li>
+<p><strong>Dérivée partielle par rapport à <code>b</code></strong> :
+$$ \frac{\partial S}{\partial b} = -2 \sum_{i=1}^{n} (y_i - ax_i - b) = 0 $$</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Résolution des équations</strong> :
+En résolvant ces équations simultanément, nous obtenons les formules pour <code>a</code> et <code>b</code>.</p>
+<ul>
+<li>
+<p><strong>Pour <code>a</code></strong> :
+$$ a = \frac{n(\sum xy) - (\sum x)(\sum y)}{n(\sum x^2) - (\sum x)^2} $$</p>
+</li>
+<li>
+<p><strong>Pour <code>b</code></strong> :
+$$ b = \frac{(\sum y) - a(\sum x)}{n} $$</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="exemple-numérique">Exemple numérique</h3>
+<p>Supposons que nous avons les points de données suivants :</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">x</th>
+          <th style="text-align: left">y</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">1</td>
+          <td style="text-align: left">2</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2</td>
+          <td style="text-align: left">3</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3</td>
+          <td style="text-align: left">5</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4</td>
+          <td style="text-align: left">7</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">5</td>
+          <td style="text-align: left">11</td>
+      </tr>
+  </tbody>
+</table>
+<p>Calculons les sommes nécessaires :</p>
+<p>$<br>
+\sum x = 1 + 2 + 3 + 4 + 5 = 15
+$</p>
+<p>$
+\sum y = 2 + 3 + 5 + 7 + 11 = 28
+$</p>
+<p>$<br>
+\sum xy = 1 \cdot 2 + 2 \cdot 3 + 3 \cdot 5 + 4 \cdot 7 + 5 \cdot 11 = 97
+$</p>
+<p>$<br>
+\sum x^2 = 1^2 + 2^2 + 3^2 + 4^2 + 5^2 = 55
+$</p>
+<p>$<br>
+n = 5
+$</p>
+<p>Calculons <code>a</code> et <code>b</code> :</p>
+<p>$<br>
+a = \frac{5 \cdot 97 - 15 \cdot 28}{5 \cdot 55 - 15^2} = \frac{485 - 420}{275 - 225} = \frac{65}{50} = 1.3
+$</p>
+<p>$<br>
+b = \frac{28 - 1.3 \cdot 15}{5} = \frac{28 - 19.5}{5} = \frac{8.5}{5} = 1.7
+$</p>
+<p>Ainsi, l&rsquo;équation de la droite de régression est :
+$\ y = 1.3x + 1.7 $</p>
+<p>Cette droite représente la meilleure approximation linéaire des points de données donnés.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694383";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694383" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694383" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694383" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694383" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694383" defer></script>
+        <script src="/js/search.js?1729694383" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a><ul id="R-subsections-03961ce580d238cff52c29446332cc57" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine13/index.html"><a class="padding" href="/semaine13/index.html"><b>13. </b>NumPy</a><ul id="R-subsections-0ab58a3d5437fab8543fbb7a1695016f" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine14/index.html"><a class="padding" href="/semaine14/index.html"><b>14. </b>Rédaction d&#39;un programme lettré (Markdown)</a></li>
+            <li class="" data-nav-id="/semaine15/index.html"><a class="padding" href="/semaine15/index.html"><b>15. </b>Évaluation du projet final</a></li>
+            <li class="" data-nav-id="/projet-final/index.html"><a class="padding" href="/projet-final/index.html">Projet Final</a></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="parent " data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu">
+            <li class="parent " data-nav-id="/bases/langage-de-prog/index.html"><a class="padding" href="/bases/langage-de-prog/index.html">1. Langage de programmation</a><ul id="R-subsections-be5c8169920e24019fa741b0d66dc652" class="collapsible-menu">
+            <li class="" data-nav-id="/bases/langage-de-prog/chaines-caracteres/index.html"><a class="padding" href="/bases/langage-de-prog/chaines-caracteres/index.html">Formatage des chaines</a></li>
+            <li class="alwaysopen " data-nav-id="/bases/langage-de-prog/biopython/index.html"><a class="padding" href="/bases/langage-de-prog/biopython/index.html">Les bibliothèques de bioinformatique</a><ul id="R-subsections-bb249212bc778a0eddf3633643153bf5" class="collapsible-menu"></ul></li>
+            <li class="alwaysopen " data-nav-id="/bases/langage-de-prog/debogage/index.html"><a class="padding" href="/bases/langage-de-prog/debogage/index.html">Techniques de débogage</a><ul id="R-subsections-3e9c2661746a9ff83626144636af0aab" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/erreurs/index.html"><a class="padding" href="/bases/langage-de-prog/erreurs/index.html">Erreurs communes</a><ul id="R-subsections-23a700e31b2f22b689e66a3c24cc7bff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/fonction-recursive/index.html"><a class="padding" href="/bases/langage-de-prog/fonction-recursive/index.html">Les fonctions récursives</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/listes-de-listes/index.html"><a class="padding" href="/bases/langage-de-prog/listes-de-listes/index.html">Les listes de listes</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/match-case/index.html"><a class="padding" href="/bases/langage-de-prog/match-case/index.html">Match Case</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/poo/index.html"><a class="padding" href="/bases/langage-de-prog/poo/index.html">La programmation orientée objet (POO)</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/pandas/pandas/index.html"><a class="padding" href="/bases/langage-de-prog/pandas/pandas/index.html">Pandas (intermédiaire-avancé)</a></li>
+            <li class="parent " data-nav-id="/bases/langage-de-prog/reg-lineaire/index.html"><a class="padding" href="/bases/langage-de-prog/reg-lineaire/index.html">Régression Linéaire</a><ul id="R-subsections-c5ccdae06eb66b7c925cb44611fc6a31" class="collapsible-menu">
+            <li class="active " data-nav-id="/bases/langage-de-prog/reg-lineaire/reglineaire_maths/index.html"><a class="padding" href="/bases/langage-de-prog/reg-lineaire/reglineaire_maths/index.html">La régression linéaire (mathématiquement)</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/reg-lineaire/reglineaire_numpy/index.html"><a class="padding" href="/bases/langage-de-prog/reg-lineaire/reglineaire_numpy/index.html">Calcul d&#39;une droite de régression linéaire avec NumPy</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/reg-lineaire/scikit-learn/index.html"><a class="padding" href="/bases/langage-de-prog/reg-lineaire/scikit-learn/index.html">La bibliothèque Scikit-learn</a></li></ul></li></ul></li>
+            <li class="" data-nav-id="/bases/outils/index.html"><a class="padding" href="/bases/outils/index.html">2. Outils</a><ul id="R-subsections-63c1095d7ccdc1b9ecea42dfa732d4d2" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/bases/lexique/index.html"><a class="padding" href="/bases/lexique/index.html">3. Lexique</a></li></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/bases/langage-de-prog/reg-lineaire/reglineaire_maths/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694383" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694383" defer></script>
+    <script>
+      function useMathJax( config ){
+        window.MathJax = Object.assign( window.MathJax || {}, {
+          tex: {
+            inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+            displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+          },
+          options: {
+            enableMenu: false 
+          }
+        }, config );
+      }
+      useMathJax( JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1729694383"></script>
+    <script src="/js/theme.js?1729694383" defer></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
++++
+title = "Solutions des ateliers"
+weight = 170
+draft = true
++++
+
+![Solutionnaires](solutions.jpeg?width=25vw)
+
+[Semaine 1 - Analyse de problèmes](correction-atelier-analyse.pdf)
+
+[Semaine 2 - Ordinogrammes](correction-atelier-ordinos.pdf)
+
+[Semaine 2 - Base de Python](correction-atelier-base.ipynb)
+
+[Semaine 3 - Input() et print() ](correction-atelier-input-print.ipynb)
+
+[Semaine 3 - Erreurs de syntaxe ](correction-atelier-erreurs-syntaxe.ipynb)
+
+[Semaine 4 - Expressions booléennes](correction-atelier-operateurs-bool.ipynb)
+
+[Semaine 4 - IF-ELIF-ELSE](correction-atelier-if-elif-else.ipynb)
+
+[Semaine 4 - Test de flottants](correction-atelier-tests-flottants.ipynb)
+
+[Semaine 5 - Boucles](correction-atelier-boucles.ipynb)
+
+[Semaine 6 - Listes et chaines de caractères](correction-atelier-listes-chaines.ipynb)
+
+[Semaine 7 - Récapitulation Exercice 1](exercice1.ipynb)
+
+[Semaine 7 - Révision Exercice 1_V2](exercice1-v2.ipynb) 
+
+[Semaine 7 - Révision Exercice 2](exercice2.ipynb)
+
+[Semaine 8 - Fonctions](correction-atelier-fonctions.ipynb)
+
+[Semaine 8 - Fonctions](correction-atelier-porteeVariables.ipynb)
+
+[Semaine 9 - Débogage avec print()](correction-atelier-debogage.ipynb)
+
+
+
+[Semaine 11 - Pandas](correction-atelier-pandas.ipynb)
+
+[Semaine 12 - Matplotlib](correction-atelier-matplotlib.ipynb)
+
+[Semaine 13 - NumPy](correction-atelier-numpy.ipynb)

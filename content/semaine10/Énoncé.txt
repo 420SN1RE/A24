@@ -1,0 +1,23 @@
+Énoncé
+Ecrire un programme qui demande à un utilisateur de saisir un nombre entier positif et qui répond au problème ci-dessous.
+Si un nombre est pair, on le divise par 2.
+Si un nombre est impair, on le multiplie par 3 et on ajoute 1.
+L'objectif est de voir si, en répétant cette opération, on finit toujours par atteindre la valeur 1, quel que soit le nombre initial.
+Un exemple : l'utilisateur saisie 6. Le programme affiche : 3, 10, 5, 16, 8, 4, 2, 1
+
+Ce qui est évalué ici c'est :
+
+La syntaxe (orthographe, indentation, ponctuation…) (4 points)
+Utilisation des bons mots clés vus en cours (condition, boucles, opérateurs…) (4 point)
+La résolution du problème (8 point)
+Règle pour l'indentation du code : appuyez 5 fois sur la barre espace ce qui représentera une tabulation dans VS Code.
+
+Indice : 7 à 12 lignes maximum sont nécessaires pour résoudre ce problème
+
+==== SAA
+
+Sur Internet, accès uniquement à Moodle
+2 feuilles de notes 8.5 x 11 recto-verso
+1 crayon et 1 feuille vierge comme feuille brouillon
+
+

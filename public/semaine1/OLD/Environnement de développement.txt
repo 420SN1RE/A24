@@ -1,0 +1,66 @@
++++
+title = "L'environnement de travail"
+weight = 13
++++
+
+![Environnement de travail](../assets/images/environnement.jpg?width=25vw "Environnement de travail").
+
+## Les outils utilisés dans le cours 420-SN1-RE
+
+- Dans ce cours, nous allons utiliser 
+le **langage Python** et deux outils 
+pour analyser des données scientifiques. 
+- Il s'agit de **Visual Studio Code** et 
+**Jupyter Notebook**.
+
+### L'éditeur Visual Studio code
+
+- **Visual Studio Code** est **comme un cahier de notes** pour écrire du code. 
+- Il est **gratuit** et peut être utilisé avec beaucoup de langages de programmation, dont Python. 
+- Il a des **fonctionnalités cool**, comme :
+	- Aider à compléter le code.
+	- Trouver des erreurs.
+	- Mettre en forme le code, etc. 
+- On peut aussi ajouter des **extensions** pour avoir plus de fonctionnalités, comme intégrer des **bibliothèques scientifiques**, des vérificateurs de code, des testeurs, etc. 
+- **Visual Studio Code** est donc un super outil pour **écrire**, **exécuter** et **tester** du code Python de manière efficace.
+
+#### **Démonstration**: Utilisation de Visual Studio Code (premier script Python)
+
+1. Ouvrir Visual Studio Code
+2. Créer un nouveau fichier nommé **premierScript.py**
+3. Dans le fichier .py, écrire *print('Votre prénom')*
+4. Exécuter le code (bouton Exécuter)
+	- Vous devriez voir afficher votre prénom dans le terminal
+5. Dans le fichier ajouter 
+	- *prenom = 'votre prénom'*
+	- *print(prenom)*
+6. Exécuter le code (bouton Exécuter)
+	- Vous devriez voir afficher votre prénom dans le terminal
+
+**Explication :**
+- print est ce qu'on appelle **une fonction** (on étudiera plus en détail, plus tard). La fonction *print* permet d'afficher ce qu'on lui met entre les parenthèses.
+- dans le 2e exemple, on utilise ce qu'on appelle **une variable** pour stocker le prénom. Ensuite on met la variable entre les parenthèses (en **paramètre**) de la fonction *print*. Du fait que la variable contient le prénom, à l'exécution, le résultat est le même.
+
+{{< youtube Ql2ni66uXRc >}}
+
+### Jupyter Notebook
+
+- **Jupyter Notebook** est **comme un cahier de laboratoire interactif** sur le web. 
+- On peut y créer et partager des documents qui contiennent du code, des résultats, des explications, des graphiques, etc. 
+- C’est un outil très pratique pour :
+	- explorer des données.
+	- faire des analyses.
+	- montrer des informations, etc. 
+- Il facilite la création de la documentation. 
+- Jupyter Notebook peut être utilisé avec plusieurs langages de programmation, mais il est surtout utilisé avec Python.
+
+#### **Démonstration**: Utilisation de Jupyter Notebook dans Visual Studio Code
+
+**Lien**: [Comment utiliser Jupyter Notebook dans Visual Studio Code](https://learn.microsoft.com/fr-fr/shows/ai-show/jupyter-notebooks-in-visual-studio-code)
+
+## PAUSE 5 minutes
+
+![PAUSE 5 mins](../assets/images/pause.jpg "Pause 5 minutes").
+
+
+

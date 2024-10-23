@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Solutions des ateliers :: 420-SN1-RE</title>
+    <link>https://example.org/solutions-ateliers/index.html</link>
+    <description>Semaine 1 - Analyse de problèmes&#xA;Semaine 2 - Ordinogrammes&#xA;Semaine 2 - Base de Python&#xA;Semaine 3 - Input() et print() Semaine 3 - Erreurs de syntaxe Semaine 4 - Expressions booléennes&#xA;Semaine 4 - IF-ELIF-ELSE&#xA;Semaine 4 - Tests de nombres flottants&#xA;Semaine 5 - Boucle while&#xA;Semaine 5 - Boucle for&#xA;Semaine 5 - Instructions break, continue et else</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/solutions-ateliers/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

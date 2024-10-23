@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="La régression linéaire est une technique statistique utilisée pour modéliser la relation entre une variable dépendante (souvent notée y) et une ou plusieurs variables indépendantes (notées x). En termes simples, c’est une méthode qui permet de tracer une ligne droite (appelée droite de régression) qui s’ajuste le mieux aux données.
+Calcul de la Régression Linéaire (à la main) Concept de base: La formule de la régression linéaire simple est : [ y = ax &#43; b ] où :">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Régression linéaire avec NumPy :: 420-SN1-RE">
+    <meta name="twitter:description" content="La régression linéaire est une technique statistique utilisée pour modéliser la relation entre une variable dépendante (souvent notée y) et une ou plusieurs variables indépendantes (notées x). En termes simples, c’est une méthode qui permet de tracer une ligne droite (appelée droite de régression) qui s’ajuste le mieux aux données.
+Calcul de la Régression Linéaire (à la main) Concept de base: La formule de la régression linéaire simple est : [ y = ax &#43; b ] où :">
+    <meta property="og:url" content="https://example.org/semaine13/reglin/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Régression linéaire avec NumPy :: 420-SN1-RE">
+    <meta property="og:description" content="La régression linéaire est une technique statistique utilisée pour modéliser la relation entre une variable dépendante (souvent notée y) et une ou plusieurs variables indépendantes (notées x). En termes simples, c’est une méthode qui permet de tracer une ligne droite (appelée droite de régression) qui s’ajuste le mieux aux données.
+Calcul de la Régression Linéaire (à la main) Concept de base: La formule de la régression linéaire simple est : [ y = ax &#43; b ] où :">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="NumPy">
+    <meta itemprop="name" content="Régression linéaire avec NumPy :: 420-SN1-RE">
+    <meta itemprop="description" content="La régression linéaire est une technique statistique utilisée pour modéliser la relation entre une variable dépendante (souvent notée y) et une ou plusieurs variables indépendantes (notées x). En termes simples, c’est une méthode qui permet de tracer une ligne droite (appelée droite de régression) qui s’ajuste le mieux aux données.
+Calcul de la Régression Linéaire (à la main) Concept de base: La formule de la régression linéaire simple est : [ y = ax &#43; b ] où :">
+    <meta itemprop="wordCount" content="661">
+    <title>Régression linéaire avec NumPy :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine13/reglin/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#calcul-de-la-régression-linéaire-à-la-main">Calcul de la Régression Linéaire (à la main)</a></li>
+    <li><a href="#calcul-de-la-régression-linéaire-avec-numpy">Calcul de la Régression Linéaire avec NumPy</a>
+      <ul>
+        <li><a href="#exercices-pratiques">Exercices Pratiques</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">NumPy</span><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Régression linéaire avec NumPy</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine13/nb_aleatoires/index.html" title="Les nombres aléatoires (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine13" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="régression-linéaire-avec-numpy">Régression linéaire avec NumPy</h1>
+
+<p><a href="#R-image-d2d409965dd9e3a29f575f9b1d5b3cdb" class="lightbox-link"><img alt="Régression linéaire" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../regLineaire.png?width=20vw" style=" height: auto; width: 20vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d2d409965dd9e3a29f575f9b1d5b3cdb"><img alt="Régression linéaire" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../regLineaire.png?width=20vw"></a></p>
+<p>La régression linéaire est une technique statistique utilisée pour modéliser la relation entre une variable dépendante (souvent notée <code>y</code>) et une ou plusieurs variables indépendantes (notées <code>x</code>). En termes simples, c&rsquo;est une méthode qui permet de tracer une ligne droite (appelée droite de régression) qui s&rsquo;ajuste le mieux aux données.</p>
+<h2 id="calcul-de-la-régression-linéaire-à-la-main">Calcul de la Régression Linéaire (à la main)</h2>
+<ol>
+<li>
+<p><strong>Concept de base</strong>:
+La formule de la régression linéaire simple est :
+[
+y = ax + b
+]
+où :</p>
+<ul>
+<li><code>y</code> est la variable dépendante.</li>
+<li><code>x</code> est la variable indépendante.</li>
+<li><code>a</code> est la pente de la ligne.</li>
+<li><code>b</code> est l&rsquo;ordonnée à l&rsquo;origine (le point où la ligne coupe l&rsquo;axe des y).</li>
+</ul>
+</li>
+<li>
+<p><strong>Calcul de <code>a</code> et <code>b</code></strong>:
+Pour trouver les valeurs de <code>a</code> et <code>b</code>, on utilise les formules suivantes :
+[
+a = \frac{n(\sum xy) - (\sum x)(\sum y)}{n(\sum x^2) - (\sum x)^2}
+]
+[
+b = \frac{(\sum y)(\sum x^2) - (\sum x)(\sum xy)}{n(\sum x^2) - (\sum x)^2}
+]
+où (n) est le nombre de points de données.</p>
+</li>
+<li>
+<p><strong>Exemple en Python</strong>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Données</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">11</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul des paramètres</span>
+</span></span><span style="display:flex;"><span>n <span style="color:#f92672">=</span> len(x)
+</span></span><span style="display:flex;"><span>sum_x <span style="color:#f92672">=</span> sum(x)
+</span></span><span style="display:flex;"><span>sum_y <span style="color:#f92672">=</span> sum(y)
+</span></span><span style="display:flex;"><span>sum_x_sq <span style="color:#f92672">=</span> sum([i<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span> <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> x])
+</span></span><span style="display:flex;"><span>sum_xy <span style="color:#f92672">=</span> sum([x[i]<span style="color:#f92672">*</span>y[i] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n)])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> (n <span style="color:#f92672">*</span> sum_xy <span style="color:#f92672">-</span> sum_x <span style="color:#f92672">*</span> sum_y) <span style="color:#f92672">/</span> (n <span style="color:#f92672">*</span> sum_x_sq <span style="color:#f92672">-</span> sum_x<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> (sum_y <span style="color:#f92672">*</span> sum_x_sq <span style="color:#f92672">-</span> sum_x <span style="color:#f92672">*</span> sum_xy) <span style="color:#f92672">/</span> (n <span style="color:#f92672">*</span> sum_x_sq <span style="color:#f92672">-</span> sum_x<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Pente (a): </span><span style="color:#e6db74">{</span>a<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Ordonnée à l</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">origine (b): </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)</span></span></code></pre></div>
+</li>
+</ol>
+<h2 id="calcul-de-la-régression-linéaire-avec-numpy">Calcul de la Régression Linéaire avec NumPy</h2>
+<p>NumPy simplifie grandement le processus de calcul des paramètres de la régression linéaire. Voici comment :</p>
+<ol>
+<li><strong>Utilisation de NumPy</strong>:
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>])
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">11</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul des paramètres</span>
+</span></span><span style="display:flex;"><span>A <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>vstack([x, np<span style="color:#f92672">.</span>ones(len(x))])<span style="color:#f92672">.</span>T
+</span></span><span style="display:flex;"><span>a, b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>lstsq(A, y, rcond<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Pente (a): </span><span style="color:#e6db74">{</span>a<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Ordonnée à l</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">origine (b): </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)</span></span></code></pre></div>
+</li>
+</ol>
+<h3 id="exercices-pratiques">Exercices Pratiques</h3>
+<h4 id="exercice-1-régression-linéaire-en-biologie">Exercice 1: Régression linéaire en biologie</h4>
+<p><strong>Objectif</strong>: Trouver la relation entre la concentration d&rsquo;un nutriment dans le sol et la croissance des plantes.</p>
+<p><strong>Données</strong>: Un fichier CSV nommé <code>plantes.csv</code> contenant les colonnes <code>Concentration</code> (en ppm) et <code>Croissance</code> (en cm).</p>
+<p><strong>Instructions</strong>:</p>
+<ol>
+<li>
+<p><strong>Charger les données</strong>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;plantes.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;Concentration&#39;</span>]<span style="color:#f92672">.</span>values
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;Croissance&#39;</span>]<span style="color:#f92672">.</span>values</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>Effectuer la régression linéaire sans bibliothèques</strong>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>n <span style="color:#f92672">=</span> len(x)
+</span></span><span style="display:flex;"><span>sum_x <span style="color:#f92672">=</span> sum(x)
+</span></span><span style="display:flex;"><span>sum_y <span style="color:#f92672">=</span> sum(y)
+</span></span><span style="display:flex;"><span>sum_x_sq <span style="color:#f92672">=</span> sum(x<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>sum_xy <span style="color:#f92672">=</span> sum(x <span style="color:#f92672">*</span> y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>m <span style="color:#f92672">=</span> (n <span style="color:#f92672">*</span> sum_xy <span style="color:#f92672">-</span> sum_x <span style="color:#f92672">*</span> sum_y) <span style="color:#f92672">/</span> (n <span style="color:#f92672">*</span> sum_x_sq <span style="color:#f92672">-</span> sum_x<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> (sum_y <span style="color:#f92672">*</span> sum_x_sq <span style="color:#f92672">-</span> sum_x <span style="color:#f92672">*</span> sum_xy) <span style="color:#f92672">/</span> (n <span style="color:#f92672">*</span> sum_x_sq <span style="color:#f92672">-</span> sum_x<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Pente (m): </span><span style="color:#e6db74">{</span>m<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Ordonnée à l</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">origine (b): </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>Effectuer la régression linéaire avec NumPy</strong>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>A <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>vstack([x, np<span style="color:#f92672">.</span>ones(len(x))])<span style="color:#f92672">.</span>T
+</span></span><span style="display:flex;"><span>m, b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>lstsq(A, y, rcond<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Pente (m): </span><span style="color:#e6db74">{</span>m<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Ordonnée à l</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">origine (b): </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>Visualiser les résultats</strong>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>scatter(x, y, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Données&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, m<span style="color:#f92672">*</span>x <span style="color:#f92672">+</span> b, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;red&#39;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Régression linéaire&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;Concentration (ppm)&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;Croissance (cm)&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Croissance des plantes en fonction de la concentration de nutriments&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+</li>
+</ol>
+<h4 id="exercice-2-régression-linéaire-en-santé">Exercice 2: Régression linéaire en santé</h4>
+<p><strong>Objectif</strong>: Trouver la relation entre l&rsquo;âge et le taux de cholestérol.</p>
+<p><strong>Données</strong>: Un fichier CSV nommé <code>sante.csv</code> contenant les colonnes <code>Age</code> et <code>Cholestérol</code>.</p>
+<p><strong>Instructions</strong>:</p>
+<ol>
+<li>
+<p><strong>Charger les données</strong>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;sante.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;Age&#39;</span>]<span style="color:#f92672">.</span>values
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;Cholestérol&#39;</span>]<span style="color:#f92672">.</span>values</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>Effectuer la régression linéaire sans bibliothèques</strong>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>n <span style="color:#f92672">=</span> len(x)
+</span></span><span style="display:flex;"><span>sum_x <span style="color:#f92672">=</span> sum(x)
+</span></span><span style="display:flex;"><span>sum_y <span style="color:#f92672">=</span> sum(y)
+</span></span><span style="display:flex;"><span>sum_x_sq <span style="color:#f92672">=</span> sum(x<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>sum_xy <span style="color:#f92672">=</span> sum(x <span style="color:#f92672">*</span> y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>m <span style="color:#f92672">=</span> (n <span style="color:#f92672">*</span> sum_xy <span style="color:#f92672">-</span> sum_x <span style="color:#f92672">*</span> sum_y) <span style="color:#f92672">/</span> (n <span style="color:#f92672">*</span> sum_x_sq <span style="color:#f92672">-</span> sum_x<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> (sum_y <span style="color:#f92672">*</span> sum_x_sq <span style="color:#f92672">-</span> sum_x <span style="color:#f92672">*</span> sum_xy) <span style="color:#f92672">/</span> (n <span style="color:#f92672">*</span> sum_x_sq <span style="color:#f92672">-</span> sum_x<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Pente (m): </span><span style="color:#e6db74">{</span>m<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Ordonnée à l</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">origine (b): </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>Effectuer la régression linéaire avec NumPy</strong>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>A <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>vstack([x, np<span style="color:#f92672">.</span>ones(len(x))])<span style="color:#f92672">.</span>T
+</span></span><span style="display:flex;"><span>m, b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>lstsq(A, y, rcond<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>)[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Pente (m): </span><span style="color:#e6db74">{</span>m<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Ordonnée à l</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">origine (b): </span><span style="color:#e6db74">{</span>b<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)</span></span></code></pre></div>
+</li>
+<li>
+<p><strong>Visualiser les résultats</strong>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>scatter(x, y, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Données&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, m<span style="color:#f92672">*</span>x <span style="color:#f92672">+</span> b, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;red&#39;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Régression linéaire&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;Age&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;Cholestérol (mg/dL)&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Cholestérol en fonction de l</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">âge&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+</li>
+</ol>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/semaine13/reglin/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

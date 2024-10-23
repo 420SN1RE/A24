@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="Les variables et les types de données On utilise des variables en programmation pour stocker des informations que l’on peut réutiliser et manipuler plus tard au lieu d’écrire à nouveau la valeur. Les types des variables et les transtypage Python supporte plusieurs types de données de base. Pour l’instant nous avons vu: nombre_entier = 15	# int nombre_flottant = 15.0	# float chaine_caracteres = &#34;Je suis une chaine de caractères&#34; # str chaine_caracteres = &#39;Je suis aussi une chaine de caractères&#39;	# str valeur_booleenne = True	# bool autre_valeur_booleenne = False	# bool une_liste = [1, 2, 3, 4, 5]	# list Une_autre_liste = [&#34;Lundi&#34;, &#34;Mardi&#34;, &#34;Mercredi&#34;, &#34;Jeudi&#34;, &#34;Vendredi&#34;]	# list Transtypage : C’est la conversion d’un type de données à un autre. Par exemple, convertir une chaîne en entier avec int(&#34;123&#34;) ou un entier en chaîne avec str(123). Utilisation de variables Avant d’utiliser une variable, il faut la déclarer, c’est-à-dire la nommer et lui donner une valeur. Le nom d’une variable doit respecter certains critères: Ils doivent commencer par une lettre ou un underscore (_), suivis de lettres, chiffres ou underscores. Ils sont sensibles à la casse (age et Age sont différents). Ils ne peuvent contenir ni espaces, ni lettres accentuées. Attention Si vous oubliez de déclarer une variable avant de l’utiliser, ou si vous vous trompez en écrivant son nom, cela causera l’erreur NameError comme dans l’exemple ci-dessous:">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Python: La base :: 420-SN1-RE">
+    <meta name="twitter:description" content="Les variables et les types de données On utilise des variables en programmation pour stocker des informations que l’on peut réutiliser et manipuler plus tard au lieu d’écrire à nouveau la valeur. Les types des variables et les transtypage Python supporte plusieurs types de données de base. Pour l’instant nous avons vu: nombre_entier = 15	# int nombre_flottant = 15.0	# float chaine_caracteres = &#34;Je suis une chaine de caractères&#34; # str chaine_caracteres = &#39;Je suis aussi une chaine de caractères&#39;	# str valeur_booleenne = True	# bool autre_valeur_booleenne = False	# bool une_liste = [1, 2, 3, 4, 5]	# list Une_autre_liste = [&#34;Lundi&#34;, &#34;Mardi&#34;, &#34;Mercredi&#34;, &#34;Jeudi&#34;, &#34;Vendredi&#34;]	# list Transtypage : C’est la conversion d’un type de données à un autre. Par exemple, convertir une chaîne en entier avec int(&#34;123&#34;) ou un entier en chaîne avec str(123). Utilisation de variables Avant d’utiliser une variable, il faut la déclarer, c’est-à-dire la nommer et lui donner une valeur. Le nom d’une variable doit respecter certains critères: Ils doivent commencer par une lettre ou un underscore (_), suivis de lettres, chiffres ou underscores. Ils sont sensibles à la casse (age et Age sont différents). Ils ne peuvent contenir ni espaces, ni lettres accentuées. Attention Si vous oubliez de déclarer une variable avant de l’utiliser, ou si vous vous trompez en écrivant son nom, cela causera l’erreur NameError comme dans l’exemple ci-dessous:">
+    <meta property="og:url" content="https://example.org/semaine7/python-base/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Python: La base :: 420-SN1-RE">
+    <meta property="og:description" content="Les variables et les types de données On utilise des variables en programmation pour stocker des informations que l’on peut réutiliser et manipuler plus tard au lieu d’écrire à nouveau la valeur. Les types des variables et les transtypage Python supporte plusieurs types de données de base. Pour l’instant nous avons vu: nombre_entier = 15	# int nombre_flottant = 15.0	# float chaine_caracteres = &#34;Je suis une chaine de caractères&#34; # str chaine_caracteres = &#39;Je suis aussi une chaine de caractères&#39;	# str valeur_booleenne = True	# bool autre_valeur_booleenne = False	# bool une_liste = [1, 2, 3, 4, 5]	# list Une_autre_liste = [&#34;Lundi&#34;, &#34;Mardi&#34;, &#34;Mercredi&#34;, &#34;Jeudi&#34;, &#34;Vendredi&#34;]	# list Transtypage : C’est la conversion d’un type de données à un autre. Par exemple, convertir une chaîne en entier avec int(&#34;123&#34;) ou un entier en chaîne avec str(123). Utilisation de variables Avant d’utiliser une variable, il faut la déclarer, c’est-à-dire la nommer et lui donner une valeur. Le nom d’une variable doit respecter certains critères: Ils doivent commencer par une lettre ou un underscore (_), suivis de lettres, chiffres ou underscores. Ils sont sensibles à la casse (age et Age sont différents). Ils ne peuvent contenir ni espaces, ni lettres accentuées. Attention Si vous oubliez de déclarer une variable avant de l’utiliser, ou si vous vous trompez en écrivant son nom, cela causera l’erreur NameError comme dans l’exemple ci-dessous:">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Révision des semaines 1 à 6">
+    <meta itemprop="name" content="Python: La base :: 420-SN1-RE">
+    <meta itemprop="description" content="Les variables et les types de données On utilise des variables en programmation pour stocker des informations que l’on peut réutiliser et manipuler plus tard au lieu d’écrire à nouveau la valeur. Les types des variables et les transtypage Python supporte plusieurs types de données de base. Pour l’instant nous avons vu: nombre_entier = 15	# int nombre_flottant = 15.0	# float chaine_caracteres = &#34;Je suis une chaine de caractères&#34; # str chaine_caracteres = &#39;Je suis aussi une chaine de caractères&#39;	# str valeur_booleenne = True	# bool autre_valeur_booleenne = False	# bool une_liste = [1, 2, 3, 4, 5]	# list Une_autre_liste = [&#34;Lundi&#34;, &#34;Mardi&#34;, &#34;Mercredi&#34;, &#34;Jeudi&#34;, &#34;Vendredi&#34;]	# list Transtypage : C’est la conversion d’un type de données à un autre. Par exemple, convertir une chaîne en entier avec int(&#34;123&#34;) ou un entier en chaîne avec str(123). Utilisation de variables Avant d’utiliser une variable, il faut la déclarer, c’est-à-dire la nommer et lui donner une valeur. Le nom d’une variable doit respecter certains critères: Ils doivent commencer par une lettre ou un underscore (_), suivis de lettres, chiffres ou underscores. Ils sont sensibles à la casse (age et Age sont différents). Ils ne peuvent contenir ni espaces, ni lettres accentuées. Attention Si vous oubliez de déclarer une variable avant de l’utiliser, ou si vous vous trompez en écrivant son nom, cela causera l’erreur NameError comme dans l’exemple ci-dessous:">
+    <meta itemprop="wordCount" content="1211">
+    <title>Python: La base :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine7/python-base/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#les-variables-et-les-types-de-données">Les variables et les types de données</a>
+      <ul>
+        <li><a href="#les-types-des-variables-et-les-transtypage">Les types des variables et les transtypage</a></li>
+        <li><a href="#utilisation-de-variables">Utilisation de variables</a></li>
+      </ul>
+    </li>
+    <li><a href="#les-commentaires">Les commentaires</a></li>
+    <li><a href="#les-opérateurs-de-division">Les opérateurs de division</a></li>
+    <li><a href="#les-nombres-flottants-et-les-erreurs-darrondi">Les nombres flottants et les erreurs d&rsquo;arrondi</a></li>
+    <li><a href="#lire-et-traiter-des-données-saisies-au-clavier">Lire et traiter des données saisies au clavier</a></li>
+    <li><a href="#les-conditions-et-les-instructions-if-elif-else">Les conditions et les instructions IF, ELIF, ELSE</a>
+      <ul>
+        <li><a href="#les-conditions">Les conditions</a></li>
+        <li><a href="#les-instructions-if-elif-else">Les instructions IF, ELIF, ELSE</a></li>
+      </ul>
+    </li>
+    <li><a href="#les-boucles-while-et-for">Les boucles WHILE et FOR</a>
+      <ul>
+        <li><a href="#forcer-larrêt-break-ou-forcer-le-saut-continue-dune-itération-dune-boucle">Forcer l&rsquo;arrêt (BREAK) ou forcer le saut (CONTINUE) d&rsquo;une itération d&rsquo;une boucle</a></li>
+        <li><a href="#traitement-lorsquune-boucle-se-termine-normalement">Traitement lorsqu&rsquo;une boucle se termine normalement</a></li>
+        <li><a href="#lindentation-et-la-logique-du-code">L&rsquo;indentation et la logique du code</a></li>
+      </ul>
+    </li>
+    <li><a href="#la-fonction-print">La fonction print</a>
+      <ul>
+        <li><a href="#utilisation-de-base">Utilisation de base</a></li>
+        <li><a href="#affichage-de-plusieurs-éléments">Affichage de plusieurs éléments</a></li>
+        <li><a href="#largument-end">L&rsquo;argument <code>end</code></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/semaine7/index.html"><span itemprop="name">Révision des semaines 1 à 6</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Python: La base</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/index.html" title="Révision des semaines 1 à 6 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/ordinogramme/index.html" title="Les ordinogrammes (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine7" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="python-la-base">Python: La base</h1>
+
+<h2 id="les-variables-et-les-types-de-données">Les variables et les types de données</h2>
+<ul>
+<li>On utilise des variables en programmation pour <strong>stocker des informations</strong> que l&rsquo;on peut réutiliser et manipuler plus tard au lieu d&rsquo;écrire à nouveau la valeur.</li>
+</ul>
+<h3 id="les-types-des-variables-et-les-transtypage">Les types des variables et les transtypage</h3>
+<ul>
+<li>Python supporte plusieurs types de données de base. Pour l&rsquo;instant nous avons vu:</li>
+</ul>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombre_entier <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>	<span style="color:#75715e"># int</span>
+</span></span><span style="display:flex;"><span>nombre_flottant <span style="color:#f92672">=</span> <span style="color:#ae81ff">15.0</span>	<span style="color:#75715e"># float</span>
+</span></span><span style="display:flex;"><span>chaine_caracteres <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Je suis une chaine de caractères&#34;</span> 	<span style="color:#75715e"># str</span>
+</span></span><span style="display:flex;"><span>chaine_caracteres <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Je suis aussi une chaine de caractères&#39;</span>	<span style="color:#75715e"># str</span>
+</span></span><span style="display:flex;"><span>valeur_booleenne <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>	<span style="color:#75715e"># bool</span>
+</span></span><span style="display:flex;"><span>autre_valeur_booleenne <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>	<span style="color:#75715e"># bool</span>
+</span></span><span style="display:flex;"><span>une_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]	<span style="color:#75715e"># list</span>
+</span></span><span style="display:flex;"><span>Une_autre_liste <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Lundi&#34;</span>, <span style="color:#e6db74">&#34;Mardi&#34;</span>, <span style="color:#e6db74">&#34;Mercredi&#34;</span>, <span style="color:#e6db74">&#34;Jeudi&#34;</span>, <span style="color:#e6db74">&#34;Vendredi&#34;</span>]	<span style="color:#75715e"># list</span></span></span></code></pre></div>
+<ul>
+<li><strong>Transtypage</strong> : C&rsquo;est la conversion d&rsquo;un type de données à un autre. Par exemple, convertir une chaîne en entier avec <code>int(&quot;123&quot;)</code> ou un entier en chaîne avec <code>str(123)</code>.</li>
+</ul>
+<h3 id="utilisation-de-variables">Utilisation de variables</h3>
+<ul>
+<li>Avant d&rsquo;utiliser une variable, il faut la <strong>déclarer</strong>, c&rsquo;est-à-dire la nommer et lui donner une valeur.</li>
+<li>Le nom d&rsquo;une variable doit respecter certains critères:
+<ul>
+<li>Ils doivent commencer par une lettre ou un underscore (_), suivis de lettres, chiffres ou underscores.</li>
+<li>Ils sont sensibles à la casse (<code>age</code> et <code>Age</code> sont différents).</li>
+<li>Ils ne peuvent contenir ni espaces, ni lettres accentuées.</li>
+</ul>
+</li>
+</ul>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Attention
+  </div>
+  <div class="box-content">
+<p>Si  vous oubliez de déclarer une variable avant de l&rsquo;utiliser, ou si vous vous trompez en écrivant son nom, cela causera l&rsquo;erreur <strong><code>NameError</code></strong> comme dans l&rsquo;exemple ci-dessous:</p>
+  </div>
+</div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombre1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>nombre2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>somme <span style="color:#f92672">=</span> nombre1 <span style="color:#f92672">+</span> nombre2 <span style="color:#f92672">+</span> nombre3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">---------------------------------------------------------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">NameError</span>                                 Traceback (most recent call last)
+</span></span><span style="display:flex;"><span>Cell In[<span style="color:#ae81ff">20</span>], line <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">1</span> nombre1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ae81ff">2</span> nombre2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">----&gt;</span> <span style="color:#ae81ff">4</span> somme <span style="color:#f92672">=</span> nombre1 <span style="color:#f92672">+</span> nombre2 <span style="color:#f92672">+</span> nombre3
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">NameError</span>: name <span style="color:#e6db74">&#39;nombre3&#39;</span> <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> defined</span></span></code></pre></div>
+<h2 id="les-commentaires">Les commentaires</h2>
+<ul>
+<li>Les commentaires sont des lignes de texte dans le code qui sont ignorées par l’interpréteur.</li>
+<li>Ils sont utilisés pour expliquer le code, pour désactiver des ligne de code ou pour laisser des notes aux programmeurs.</li>
+<li>Python utilise le symbole <code>#</code> suivi du texte du commentaire.</li>
+</ul>
+<h2 id="les-opérateurs-de-division">Les opérateurs de division</h2>
+<ul>
+<li>
+<p><strong>Division classique (<code>/</code>)</strong> : Cet opérateur divise deux nombres et retourne un résultat en <strong>nombre flottant</strong> (même si les deux nombres sont des entiers).</p>
+</li>
+<li>
+<p><strong>Division entière (<code>//</code>)</strong> : Cet opérateur divise deux nombres et retourne le <strong>quotient entier</strong> de la division, en ignorant la partie décimale.</p>
+</li>
+<li>
+<p><strong>Modulo (<code>%</code>)</strong> : Cet opérateur retourne le <strong>reste</strong> de la division de deux nombres.</p>
+</li>
+</ul>
+<h2 id="les-nombres-flottants-et-les-erreurs-darrondi">Les nombres flottants et les erreurs d&rsquo;arrondi</h2>
+<ul>
+<li>Les erreurs d’arrondi avec les nombres flottants en Python proviennent de la manière dont les nombres sont représentés en mémoire. Les nombres flottants sont stockés en binaire, ce qui peut entraîner des approximations pour certains nombres décimaux. Par conséquent, <strong>des opérations arithmétiques</strong> peuvent produire des résultats légèrement inexacts.</li>
+</ul>
+<h2 id="lire-et-traiter-des-données-saisies-au-clavier">Lire et traiter des données saisies au clavier</h2>
+<ul>
+<li>Lorsqu&rsquo;on veut utiliser une donnée qui est fournie au programme par l&rsquo;utilisateur (saisie au clavier), la fonction <code>input()</code> est utilisée.</li>
+<li>input() permet de faire trois actions:
+<ol>
+<li>Afficher un message pour guider l&rsquo;utilisateur.</li>
+<li>Lire la donnée saisie au clavier par l&rsquo;utilisateur.</li>
+<li>Stocker la donnée dans une variable.</li>
+</ol>
+</li>
+</ul>
+<p><strong>Exemple général :</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>variable <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Texte pour guider l&#39;utilisateur&#34;</span>)</span></span></code></pre></div>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Attention
+  </div>
+  <div class="box-content">
+<p>Les données lues avec <code>input()</code> sont <strong>toujours de type chaîne de caractères</strong>. Il est donc nécessaire de les convertir en un autre type, lorsqu&rsquo;on souhaite les utiliser dans des calculs.</p>
+  </div>
+</div>
+<h2 id="les-conditions-et-les-instructions-if-elif-else">Les conditions et les instructions IF, ELIF, ELSE</h2>
+<h3 id="les-conditions">Les conditions</h3>
+<ul>
+<li>Les conditions (ou tests) sont des <strong>expressions booléennes</strong>. Leurs résultats sont soit <code>True</code>, soit <code>False</code>.</li>
+<li>Elles s&rsquo;expriment à l&rsquo;aide d&rsquo;opérateurs de comparaison (<code>==, !=, &gt;, &gt;=, &lt;, &lt;=</code>) et/ou des opérateurs logiques (<code>and, or, not</code>).</li>
+</ul>
+<h3 id="les-instructions-if-elif-else">Les instructions IF, ELIF, ELSE</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> condition:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># bloc de code si condition est vraie</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> autre_condition:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># bloc de code si autre_condition est vraie</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># bloc de code si aucune condition n&#39;est vraie</span></span></span></code></pre></div>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Attention
+  </div>
+  <div class="box-content">
+<ul>
+<li>N&rsquo;oubliez pas les <code>:</code> après les conditions du <code>if</code> et du <code>elif</code> et après le <code>else</code>.</li>
+<li>Après le <code>else</code>, il n&rsquo;y a pas de condition.</li>
+<li><code>elif</code> et <code>else</code> ne sont <strong>pas toujours nécessaires</strong>.
+<ul>
+<li><code>elif</code>: Si d&rsquo;autres conditions doivent être vérifiées lorsque la condition du <code>if</code> est <code>True</code>.</li>
+<li><code>else</code>: Les traitements à faire lorsque la condition du <code>if</code> est <code>False</code>.</li>
+</ul>
+</li>
+</ul>
+  </div>
+</div>
+<h2 id="les-boucles-while-et-for">Les boucles WHILE et FOR</h2>
+<ul>
+<li><strong>Boucle <code>while</code></strong> : Répète un bloc de code <strong>tant qu&rsquo;</strong> une condition est vraie.
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> condition:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># bloc de code</span></span></span></code></pre></div>
+</li>
+<li><strong>Boucle <code>for</code></strong> : Itère sur une séquence (<code>range()</code>, liste, tuple, chaîne, etc.).
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> sequence:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># bloc de code</span></span></span></code></pre></div>
+</li>
+</ul>
+<h3 id="forcer-larrêt-break-ou-forcer-le-saut-continue-dune-itération-dune-boucle">Forcer l&rsquo;arrêt (BREAK) ou forcer le saut (CONTINUE) d&rsquo;une itération d&rsquo;une boucle</h3>
+<ul>
+<li><code>break</code> : Interrompt la boucle.</li>
+<li><code>continue</code> : Passe à l&rsquo;itération suivante de la boucle.</li>
+</ul>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Attention
+  </div>
+  <div class="box-content">
+<ul>
+<li>Avec la boucle <code>while</code> il faut explicitement modifier la variable de test pour la faire passer à la valeur de l&rsquo;itération suivante.</li>
+<li>Avec la boucle <code>for</code>, ce changement se fait tout seul.</li>
+</ul>
+  </div>
+</div>
+<h3 id="traitement-lorsquune-boucle-se-termine-normalement">Traitement lorsqu&rsquo;une boucle se termine normalement</h3>
+<ul>
+<li><strong>L&rsquo;instruction <code>else</code> dans les boucles</strong> permet d&rsquo;exécuter un bloc de code, lorsque la boucle se termine normalement (sans <code>break</code>).</li>
+</ul>
+<h3 id="lindentation-et-la-logique-du-code">L&rsquo;indentation et la logique du code</h3>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Attention
+  </div>
+  <div class="box-content">
+<ul>
+<li>L’<strong>indentation</strong> est essentielle pour définir les blocs de code qui doivent être exécutés en fonction des conditions.</li>
+</ul>
+  </div>
+</div>
+<h4 id="lindentation-et-les-instructions-if-elif-et-else">L&rsquo;indentation et les instructions IF, ELIF et ELSE</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Début de la structure</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> condition1:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Code exécuté si condition1 est vraie</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> condition2:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Code exécuté si condition1 est fausse ET condition2 est vraie</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Code exécuté si aucune des conditions précédentes n&#39;est vraie</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extérieur de la structure conditionnelle</span></span></span></code></pre></div>
+<h4 id="lindentation-et-la-boucle-while">L&rsquo;indentation et la boucle WHILE</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Début de la boucle while</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> condition:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Code exécuté tant que condition est vraie</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Instructions pour modifier la variable de test pour éviter d&#39;entrer dans une boucle infinie.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extérieur de la boucle while</span></span></span></code></pre></div>
+<h4 id="lindentation-et-la-boucle-for">L&rsquo;indentation et la boucle FOR</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Début de la boucle for</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> sequence:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Code exécuté pour chaque élément dans la séquence</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extérieur de la boucle for</span></span></span></code></pre></div>
+<h4 id="lindentation-et-les-instructions-break-et-continue">L&rsquo;indentation et les instructions BREAK et CONTINUE</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Début de la boucle for</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> sequence:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> condition_arret:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Code exécuté si condition_arret est vraie</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>  <span style="color:#75715e"># Sort de la boucle</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> condition_continuer:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Code exécuté si condition_continuer est vraie</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">continue</span>  <span style="color:#75715e"># Passe à l&#39;itération suivante</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Code exécuté si aucune des conditions n&#39;est vraie</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extérieur de la boucle for</span></span></span></code></pre></div>
+<h4 id="lindentation-et-linstruction-else-dans-les-boucles">L&rsquo;indentation et l&rsquo;instruction ELSE dans les boucles</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Début de la boucle for</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> sequence:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> condition_arret:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Code exécuté si condition_arret est vraie</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>  <span style="color:#75715e"># Sort de la boucle</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Code exécuté si la boucle se termine normalement (sans break)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extérieur de la boucle for</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Début de la boucle while</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> condition:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Code exécuté tant que condition est vraie</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> condition_arret:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Code exécuté si condition_arret est vraie</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>  <span style="color:#75715e"># Sort de la boucle</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Code exécuté si la boucle se termine normalement (sans break)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extérieur de la boucle while</span></span></span></code></pre></div>
+<h2 id="la-fonction-print">La fonction print</h2>
+<ul>
+<li>En Python, la fonction <code>print()</code> est utilisée pour afficher des messages ou des valeurs à l&rsquo;écran.</li>
+</ul>
+<h3 id="utilisation-de-base">Utilisation de base</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Bonjour le monde&#34;</span>)  <span style="color:#75715e"># Affiche : Bonjour le monde</span></span></span></code></pre></div>
+<h3 id="affichage-de-plusieurs-éléments">Affichage de plusieurs éléments</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Bonjour&#34;</span>, <span style="color:#e6db74">&#34;le&#34;</span>, <span style="color:#e6db74">&#34;monde&#34;</span>)  <span style="color:#75715e"># Affiche : Bonjour le monde</span></span></span></code></pre></div>
+<h3 id="largument-end">L&rsquo;argument <code>end</code></h3>
+<ul>
+<li>
+<p>Par défaut, <code>print()</code> ajoute un saut de ligne (<code>\n</code>) à la fin de chaque appel. L&rsquo;argument <code>end</code> permet de modifier ce comportement.</p>
+</li>
+<li>
+<p><strong>Exemple</strong>: Utilisation de <code>end</code> pour créer une liste sur une seule ligne :</p>
+</li>
+</ul>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>):
+</span></span><span style="display:flex;"><span>    print(i, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;, &#34;</span>)  <span style="color:#75715e"># Affiche : 0, 1, 2, 3, 4, </span></span></span></code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine7/python-base/index.html"><a class="padding" href="/semaine7/python-base/index.html">Python: La base</a></li>
+            <li class="" data-nav-id="/semaine7/ordinogramme/index.html"><a class="padding" href="/semaine7/ordinogramme/index.html">Les ordinogrammes</a></li>
+            <li class="" data-nav-id="/semaine7/listes/index.html"><a class="padding" href="/semaine7/listes/index.html">Les listes</a></li>
+            <li class="" data-nav-id="/semaine7/chaines/index.html"><a class="padding" href="/semaine7/chaines/index.html">Les chaines de caractères</a></li>
+            <li class="" data-nav-id="/semaine7/exercice/index.html"><a class="padding" href="/semaine7/exercice/index.html">Exercices récapitulatifs</a></li>
+            <li class="" data-nav-id="/semaine7/pour-le-prochain-cours/index.html"><a class="padding" href="/semaine7/pour-le-prochain-cours/index.html">Pour le prochain cours</a></li></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/semaine7/python-base/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

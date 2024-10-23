@@ -1,0 +1,87 @@
+
+**Exercice 1 :**
+
+Écrivez un programme qui vérifie si un nombre est positif, négatif ou nul.
+
+```python
+# Solution
+nombre = -5
+if nombre > 0:
+    print("Le nombre est positif.")
+elif nombre < 0:
+    print("Le nombre est négatif.")
+else:
+    print("Le nombre est nul.")
+```
+
+**Exercice 2 :**
+
+Écrivez un programme qui vérifie si un étudiant a réussi ou échoué. Un étudiant réussit s'il a une note égale ou supérieure à 50.
+
+```python
+# Solution
+note = 45
+if note >= 50:
+    print("L'étudiant a réussi.")
+else:
+    print("L'étudiant a échoué.")
+```
+
+**Exercice 3 :**
+
+Écrivez un programme qui vérifie si une année est bissextile. Une année est bissextile si elle est divisible par 4, mais pas par 100, sauf si elle est aussi divisible par 400.
+
+```python
+# Solution
+annee = 2020
+if (annee % 4 == 0 and annee % 100 != 0) or (annee % 400 == 0):
+    print("L'année est bissextile.")
+else:
+    print("L'année n'est pas bissextile.")
+```
+
+#### 6. Atelier : Réponses des Exercices
+
+1. **Exercice 1 :**
+
+   ```python
+   nombre = -5
+   if nombre > 0:
+       print("Le nombre est positif.")
+   elif nombre < 0:
+       print("Le nombre est négatif.")
+   else:
+       print("Le nombre est nul.")
+   ```
+
+2. **Exercice 2 :**
+
+   ```python
+   note = 45
+   if note >= 50:
+       print("L'étudiant a réussi.")
+   else:
+       print("L'étudiant a échoué.")
+   ```
+
+3. **Exercice 3 :**
+
+   ```python
+   annee = 2020
+   if (annee % 4 == 0 and annee % 100 != 0) or (annee % 400 == 0):
+       print("L'année est bissextile.")
+   else:
+       print("L'année n'est pas bissextile.")
+   ```
+## Exercices Pratiques
+
+1. **Classification des Êtres Vivants**
+   Créez un programme qui classe un être vivant en fonction de sa cellule. Demandez à l'utilisateur si l'être vivant est unicellulaire ou multicellulaire, et s'il possède une cellule eucaryote ou procaryote.
+
+2. **Point d'Ébullition**
+   Écrivez un programme qui détermine si une substance est à l'état liquide ou gazeux à une température donnée. Par exemple, l'eau bout à 100°C à la pression atmosphérique normale.
+
+3. **Cycle de Vie d'une Plante**
+   Simulez le cycle de vie d'une plante avec des conditions. Demandez à l'utilisateur d'entrer le stade de la plante (germination, croissance, floraison, etc.) et affichez les conditions nécessaires pour passer au stade suivant.
+
+---

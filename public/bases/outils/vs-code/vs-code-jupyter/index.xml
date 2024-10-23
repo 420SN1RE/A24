@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visual Studio Code &amp; Jupyter :: 420-SN1-RE</title>
+    <link>https://example.org/bases/outils/vs-code/vs-code-jupyter/index.html</link>
+    <description>Visual Studio Code &amp; Jupyter Notebook Dans ce cours, nous allons utiliser deux outils pour analyser des données scientifiques avec Python. Il s’agit de Visual Studio Code et Jupyter Notebook.&#xA;Visual Studio Code Visual Studio Code est comme un cahier de notes pour écrire du code.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/outils/vs-code/vs-code-jupyter/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

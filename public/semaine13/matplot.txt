@@ -1,0 +1,326 @@
++++
+title = "Matpotlib"
+weight = 121
++++
+
+![Bibliohèque MatplotLib](../matplotlib.jpg?width=30vw)
+
+## Qu'est-ce que matplotlib ?
+
+Matplotlib est une bibliothèque de visualisation de données en Python, utilisée pour générer des graphiques.
+
+## Installation de Matplotlib (déjà fait sur les ordinateurs du cégep)
+
+Avant de commencer, assurez vous d'avoir Matplotlib installé. Vous pouvez l'installer via pip :
+
+```bash
+pip install matplotlib
+```
+
+## Composants de base de Matplotlib
+
+1. **Pyplot**: C'est un module qui offre une interface de tracé simple. Pour l'utiliser, il faut d'abord l'importé dans votre code comme suit:
+
+```python
+import matplotlib.pyplot as plt
+```
+
+Pour vérifier que Matplotlib est bien installé sur votre environnement :
+
+```python
+# Version de Matplotlib
+plt.__version__
+```
+
+2. **Figure et axes**: La **Figure** c'est la fenêtre où les graphiques sont dessinés. Les Axes sont une partie de la figure où les données sont tracées.
+
+```python
+fig, ax = plt.subplots()
+```
+
+3. **Types de graphiques courants**:
+
+    - **Graphique linéaire**: Utilisé pour tracer des points connectés par des lignes.
+    - **Histogramme**: Utilisé pour afficher la distribution des données.
+    - **Graphique en barres**: Utilisé pour comparer des catégories.
+    - **Graphique en dispersion (scatter plot)**: Utilisé pour montrer la relation entre deux variables.
+    
+#### Exemples de base
+
+1. **Graphique linéaire**:
+```python
+import matplotlib.pyplot as plt
+
+# Données
+x = [1, 2, 3, 4, 5]
+y = [2, 3, 5, 7, 11]
+
+# Création du graphique
+plt.plot(x, y)
+
+# Ajout de labels et titre
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Graphique linéaire')
+
+# Affichage
+plt.show()
+```
+
+2. **Histogramme**:
+```python
+import matplotlib.pyplot as plt
+
+# Données
+data = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+
+# Création de l'histogramme
+plt.hist(data, bins=4)
+
+# Ajout de labels et titre
+plt.xlabel('Valeur')
+plt.ylabel('Fréquence')
+plt.title('Histogramme')
+
+# Affichage
+plt.show()
+```
+
+3. **Graphique en barres**:
+```python
+import matplotlib.pyplot as plt
+
+# Données
+categories = ['A', 'B', 'C']
+values = [5, 7, 3]
+
+# Création du graphique en barres
+plt.bar(categories, values)
+
+# Ajout de labels et titre
+plt.xlabel('Catégories')
+plt.ylabel('Valeurs')
+plt.title('Graphique en barres')
+
+# Affichage
+plt.show()
+```
+
+4. **Graphique en dispersion**:
+```python
+import matplotlib.pyplot as plt
+
+# Données
+x = [1, 2, 3, 4, 5]
+y = [2, 3, 5, 7, 11]
+
+# Création du graphique en dispersion
+plt.scatter(x, y)
+
+# Ajout de labels et titre
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Graphique en dispersion')
+
+# Affichage
+plt.show()
+```
+
+### Tableau des fonctions et méthodes incontournables
+
+| Fonction/Méthode        | Description                                                              |
+|-------------------------|--------------------------------------------------------------------------|
+| `plt.plot()`            | Crée un graphique linéaire.                                              |
+| `plt.hist()`            | Crée un histogramme.                                                     |
+| `plt.bar()`             | Crée un graphique en barres.                                             |
+| `plt.scatter()`         | Crée un graphique en dispersion.                                         |
+| `plt.xlabel()`          | Ajoute une étiquette à l'axe des abscisses.                              |
+| `plt.ylabel()`          | Ajoute une étiquette à l'axe des ordonnées.                              |
+| `plt.title()`           | Ajoute un titre au graphique.                                            |
+| `plt.show()`            | Affiche le graphique.                                                    |
+| `plt.savefig()`         | Enregistre le graphique sous forme d'image.                              |
+| `fig, ax = plt.subplots()`| Crée une figure et des axes, permettant des graphes plus complexes.     |
+
+
+#### Exemple d'utilisation de Pandas avec Matplotlib
+
+1. **Charger des données et créer un graphique à barres**:
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Données sous forme de dictionnaire
+data = {'Nom': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Score': [88, 92, 85, 90]}
+
+# Création d'un DataFrame
+df = pd.DataFrame(data)
+
+# Création du graphique à barres à partir du DataFrame
+df.plot(kind='bar', x='Nom', y='Score')
+
+# Ajout de labels et titre
+plt.xlabel('Nom')
+plt.ylabel('Score')
+plt.title('Scores des étudiants')
+
+# Affichage
+plt.show()
+```
+
+2. **Graphique linéaire à partir de données temporelles**:
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Création d'une série de données temporelles
+date_range = pd.date_range(start='1/1/2022', periods=5, freq='D')
+data = {'Température': [20, 21, 19, 22, 20]}
+df = pd.DataFrame(data, index=date_range)
+
+# Création du graphique linéaire
+df.plot()
+
+# Ajout de labels et titre
+plt.xlabel('Date')
+plt.ylabel('Température (°C)')
+plt.title('Variation de la température au cours des jours')
+
+# Affichage
+plt.show()
+```
+
+### Tableau des fonctions et méthodes incontournables
+
+| Fonction/Méthode        | Description                                                              |
+|-------------------------|--------------------------------------------------------------------------|
+| `plt.plot()`            | Crée un graphique linéaire.                                              |
+| `plt.hist()`            | Crée un histogramme.                                                     |
+| `plt.bar()`             | Crée un graphique en barres.                                             |
+| `plt.scatter()`         | Crée un graphique en dispersion.                                         |
+| `plt.xlabel()`          | Ajoute une étiquette à l'axe des abscisses.                              |
+| `plt.ylabel()`          | Ajoute une étiquette à l'axe des ordonnées.                              |
+| `plt.title()`           | Ajoute un titre au graphique.                                            |
+| `plt.show()`            | Affiche le graphique.                                                    |
+| `plt.savefig()`         | Enregistre le graphique sous forme d'image.                              |
+| `fig, ax = plt.subplots()`| Crée une figure et des axes, permettant des graphes plus complexes.     |
+| `pd.read_csv()`         | Charge un fichier CSV dans un DataFrame Pandas.                          |
+| `pd.DataFrame()`        | Crée un DataFrame Pandas à partir de données diverses.                   |
+| `df.plot()`             | Crée un graphique à partir d'un DataFrame Pandas.                        |
+
+Voilà de quoi te donner une bonne base pour utiliser Matplotlib avec Pandas pour tes visualisations de données en sciences de la nature! 🚀
+
+Parfait! Voici quelques exercices pratiques pour utiliser Pandas et Matplotlib avec des fichiers CSV. Ces exercices couvrent des thèmes des sciences de la nature et de la santé.
+
+### Exercice 1: Analyse des données de température
+
+#### Objectif:
+Analyser les données de température sur une année et visualiser les variations mensuelles.
+
+#### Données:
+Un fichier CSV nommé `temperatures.csv` contenant deux colonnes : `Date` (format AAAA-MM-JJ) et `Température` (en °C).
+
+#### Instructions:
+1. **Charger les données**:
+    ```python
+    import pandas as pd
+    
+    df = pd.read_csv('temperatures.csv')
+    ```
+
+2. **Convertir la colonne `Date` en type datetime**:
+    ```python
+    df['Date'] = pd.to_datetime(df['Date'])
+    ```
+
+3. **Ajouter une colonne `Mois`**:
+    ```python
+    df['Mois'] = df['Date'].dt.month
+    ```
+
+4. **Calculer la température moyenne pour chaque mois**:
+    ```python
+    moyennes_mensuelles = df.groupby('Mois')['Température'].mean()
+    ```
+
+5. **Visualiser les données avec un graphique linéaire**:
+    ```python
+    import matplotlib.pyplot as plt
+    
+    plt.plot(moyennes_mensuelles.index, moyennes_mensuelles.values)
+    plt.xlabel('Mois')
+    plt.ylabel('Température moyenne (°C)')
+    plt.title('Variation mensuelle de la température')
+    plt.show()
+    ```
+
+### Exercice 2: Analyse des données de patients
+
+#### Objectif:
+Étudier la distribution d'âges des patients et comparer les taux de cholestérol par groupe d'âge.
+
+#### Données:
+Un fichier CSV nommé `patients.csv` contenant les colonnes : `Age`, `Sexe`, `Cholestérol` (en mg/dL).
+
+#### Instructions:
+1. **Charger les données**:
+    ```python
+    import pandas as pd
+    
+    df = pd.read_csv('patients.csv')
+    ```
+
+2. **Créer des groupes d'âge**:
+    ```python
+    bins = [0, 20, 40, 60, 80, 100]
+    labels = ['0-20', '21-40', '41-60', '61-80', '81-100']
+    df['Groupe d\'âge'] = pd.cut(df['Age'], bins=bins, labels=labels)
+    ```
+
+3. **Calculer le taux moyen de cholestérol par groupe d'âge**:
+    ```python
+    cholesterol_par_age = df.groupby('Groupe d\'âge')['Cholestérol'].mean()
+    ```
+
+4. **Visualiser les données avec un graphique en barres**:
+    ```python
+    import matplotlib.pyplot as plt
+    
+    cholesterol_par_age.plot(kind='bar')
+    plt.xlabel('Groupe d\'âge')
+    plt.ylabel('Cholestérol moyen (mg/dL)')
+    plt.title('Cholestérol moyen par groupe d\'âge')
+    plt.show()
+    ```
+
+### Exercice 3: Analyse des précipitations annuelles
+
+#### Objectif:
+Analyser les précipitations annuelles sur plusieurs années et visualiser les tendances.
+
+#### Données:
+Un fichier CSV nommé `precipitations.csv` contenant les colonnes : `Année` et `Précipitation` (en mm).
+
+#### Instructions:
+1. **Charger les données**:
+    ```python
+    import pandas as pd
+    
+    df = pd.read_csv('precipitations.csv')
+    ```
+
+2. **Calculer la précipitation totale par année**:
+    ```python
+    total_par_annee = df.groupby('Année')['Précipitation'].sum()
+    ```
+
+3. **Visualiser les données avec un graphique linéaire**:
+    ```python
+    import matplotlib.pyplot as plt
+    
+    plt.plot(total_par_annee.index, total_par_annee.values)
+    plt.xlabel('Année')
+    plt.ylabel('Précipitation totale (mm)')
+    plt.title('Précipitations annuelles')
+    plt.show()
+    ```

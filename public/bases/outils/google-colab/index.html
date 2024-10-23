@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="Google Colab, ou Colaboratory, est un service cloud gratuit proposé par Google, basé sur Jupyter Notebook. Colab permet d’exécuter du code Python directement dans le navigateur sans nécessiter de configuration préalable, tout en offrant un accès gratuit aux processeurs graphiques (GPU ou Graphics Processing), pour accélérer les calculs.
+Accéder à Google Colab Pour commencer à utiliser Google Colab, suivez ces étapes simples :">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Google Colab :: 420-SN1-RE">
+    <meta name="twitter:description" content="Google Colab, ou Colaboratory, est un service cloud gratuit proposé par Google, basé sur Jupyter Notebook. Colab permet d’exécuter du code Python directement dans le navigateur sans nécessiter de configuration préalable, tout en offrant un accès gratuit aux processeurs graphiques (GPU ou Graphics Processing), pour accélérer les calculs.
+Accéder à Google Colab Pour commencer à utiliser Google Colab, suivez ces étapes simples :">
+    <meta property="og:url" content="https://example.org/bases/outils/google-colab/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Google Colab :: 420-SN1-RE">
+    <meta property="og:description" content="Google Colab, ou Colaboratory, est un service cloud gratuit proposé par Google, basé sur Jupyter Notebook. Colab permet d’exécuter du code Python directement dans le navigateur sans nécessiter de configuration préalable, tout en offrant un accès gratuit aux processeurs graphiques (GPU ou Graphics Processing), pour accélérer les calculs.
+Accéder à Google Colab Pour commencer à utiliser Google Colab, suivez ces étapes simples :">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Google Colab :: 420-SN1-RE">
+    <meta itemprop="description" content="Google Colab, ou Colaboratory, est un service cloud gratuit proposé par Google, basé sur Jupyter Notebook. Colab permet d’exécuter du code Python directement dans le navigateur sans nécessiter de configuration préalable, tout en offrant un accès gratuit aux processeurs graphiques (GPU ou Graphics Processing), pour accélérer les calculs.
+Accéder à Google Colab Pour commencer à utiliser Google Colab, suivez ces étapes simples :">
+    <meta itemprop="wordCount" content="283">
+    <title>Google Colab :: 420-SN1-RE</title>
+    <link href="/bases/outils/google-colab/index.xml" rel="alternate" type="application/rss+xml" title="Google Colab :: 420-SN1-RE">
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/bases/outils/google-colab/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#accéder-à-google-colab">Accéder à Google Colab</a>
+      <ul>
+        <li><a href="#via-le-site-de-google-colab">Via le site de Google Colab</a></li>
+        <li><a href="#via-votre-compte-google-drive">Via votre compte Google Drive</a></li>
+      </ul>
+    </li>
+    <li><a href="#utilisation-des-bibliothèques-python">Utilisation des bibliothèques Python</a></li>
+    <li><a href="#collaboration-et-partage">Collaboration et partage</a></li>
+    <li><a href="#utiliser-colab">Utiliser Colab</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/index.html"><span itemprop="name">Base de connaissances</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/outils/index.html"><span itemprop="name">2. Outils</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Google Colab</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/outils/markdown/index.html" title="MarkDown (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/lexique/index.html" title="3. Lexique (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable bases" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="google-colab">Google Colab</h1>
+
+<p><a href="#R-image-e51ecdf731fde45a8a1c615857d13763" class="lightbox-link"><img alt="Google Colab" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/bases/outils/google-colab/colab.png?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e51ecdf731fde45a8a1c615857d13763"><img alt="Google Colab" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/bases/outils/google-colab/colab.png?width=25vw"></a></p>
+<p><strong>Google Colab</strong>, ou <em><strong>Colaboratory</strong></em>, est un service cloud gratuit proposé par Google, basé sur Jupyter Notebook. Colab permet d&rsquo;exécuter du code Python directement dans le navigateur sans nécessiter de configuration préalable, tout en offrant un accès gratuit aux processeurs graphiques (<strong>GPU</strong> ou <em>Graphics Processing</em>), pour accélérer les calculs.</p>
+<h2 id="accéder-à-google-colab">Accéder à Google Colab</h2>
+<p>Pour commencer à utiliser Google Colab, suivez ces étapes simples :</p>
+<h3 id="via-le-site-de-google-colab">Via le site de Google Colab</h3>
+<ol>
+<li>Allez sur le site: <a href="https://colab.research.google.com/" rel="external" target="_blank">Google Colab</a>.</li>
+<li>Cliquez sur le bouton <strong>Open Colab</strong>.</li>
+<li>Si la fenêtre <strong>Ouvrir le notebook</strong> s&rsquo;ouvre, cliquez sur le bouton <strong>+ Nouveau notebook</strong> pour créer un nouveau notebook. Sinon, une fois sur l&rsquo;interface de Colab, vous pouvez créer un nouveau notebook en utilisant le menu <strong>Fichier</strong> et en sélectionnant <strong>Nouveau notebook</strong>.</li>
+</ol>
+<p><a href="#R-image-049b8cd48f72b4432a551b84c29a70b5" class="lightbox-link"><img alt="Nouveau notebook" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/bases/outils/google-colab/nouveau-notebook.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-049b8cd48f72b4432a551b84c29a70b5"><img alt="Nouveau notebook" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/bases/outils/google-colab/nouveau-notebook.png?width=40vw"></a></p>
+<p><a href="#R-image-b10da6d824795672664144d60977d22f" class="lightbox-link"><img alt="Menu Fichier" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/bases/outils/google-colab/menu-fichier.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-b10da6d824795672664144d60977d22f"><img alt="Menu Fichier" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/bases/outils/google-colab/menu-fichier.png?width=40vw"></a></p>
+<p>Les notebooks Colab permettent d&rsquo;écrire et d&rsquo;exécuter du code Python. Par exemple, pour exécuter une cellule de code, cliquez dessus et appuyez sur le bouton de lecture ou utilisez le raccourci clavier <code>Ctrl+Entrée</code>.</p>
+<h3 id="via-votre-compte-google-drive">Via votre compte Google Drive</h3>
+<ol>
+<li>Ouvrez votre compte <strong>Google Drive</strong>, cliquez sur <strong>Nouveau</strong>, puis sur <strong>Plus</strong> et sélectionnez <em><strong>Google Colaboratory</strong></em>.</li>
+</ol>
+<p><a href="#R-image-092999d8ce1c9b88127c35296918522e" class="lightbox-link"><img alt="Ouvrir Colab via Google Drive" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/bases/outils/google-colab/drive-colab.png?width=40vw" style=" height: auto; width: 40vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-092999d8ce1c9b88127c35296918522e"><img alt="Ouvrir Colab via Google Drive" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/bases/outils/google-colab/drive-colab.png?width=40vw"></a></p>
+<h2 id="utilisation-des-bibliothèques-python">Utilisation des bibliothèques Python</h2>
+<p>Colab permet d&rsquo;utiliser des bibliothèques populaires pour l&rsquo;analyse et la visualisation des données. Par exemple, pour générer des données aléatoires avec <code>NumPy</code> et les visualiser avec <code>Matplotlib</code> :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ys <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span> <span style="color:#f92672">+</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randn(<span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(len(ys))]
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>figure(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">6</span>))
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, ys, <span style="color:#e6db74">&#39;-&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>fill_between(x, ys, <span style="color:#ae81ff">195</span>, where<span style="color:#f92672">=</span>(ys <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">195</span>), facecolor<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;g&#39;</span>, alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">0.6</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<h2 id="collaboration-et-partage">Collaboration et partage</h2>
+<p>Les notebooks Colab sont enregistrés dans votre compte Google Drive, ce qui facilite le partage et la collaboration. Vous pouvez partager vos notebooks avec d&rsquo;autres utilisateurs, qui peuvent les commenter ou les modifier.</p>
+<h2 id="utiliser-colab">Utiliser Colab</h2>
+<p><a href="https://colab.research.google.com/notebooks/intro.ipynb" rel="external" target="_blank">Lire ce notebook</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="parent " data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu">
+            <li class="" data-nav-id="/bases/langage-de-prog/index.html"><a class="padding" href="/bases/langage-de-prog/index.html">1. Langage de programmation</a><ul id="R-subsections-be5c8169920e24019fa741b0d66dc652" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/bases/outils/index.html"><a class="padding" href="/bases/outils/index.html">2. Outils</a><ul id="R-subsections-63c1095d7ccdc1b9ecea42dfa732d4d2" class="collapsible-menu">
+            <li class="" data-nav-id="/bases/outils/installations/index.html"><a class="padding" href="/bases/outils/installations/index.html">Installations</a><ul id="R-subsections-d1e5f8a7c34b6d7151b0474c7c23542b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/bases/outils/vs-code/index.html"><a class="padding" href="/bases/outils/vs-code/index.html">Utilisation de VS Code</a><ul id="R-subsections-ca73804d85a31038f53f0cec7eb3bda3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/bases/outils/jupyter/index.html"><a class="padding" href="/bases/outils/jupyter/index.html">Jupyter</a></li>
+            <li class="" data-nav-id="/bases/outils/markdown/index.html"><a class="padding" href="/bases/outils/markdown/index.html">MarkDown</a></li>
+            <li class="active " data-nav-id="/bases/outils/google-colab/index.html"><a class="padding" href="/bases/outils/google-colab/index.html">Google Colab</a></li></ul></li>
+            <li class="" data-nav-id="/bases/lexique/index.html"><a class="padding" href="/bases/lexique/index.html">3. Lexique</a></li></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/bases/outils/google-colab/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

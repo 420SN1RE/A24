@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation de Python sur Windows :: 420-SN1-RE</title>
+    <link>https://example.org/bases/outils/installations/python/index.html</link>
+    <description>Pour installer Python sur Windows 10 et Windows 11, suivez ces étapes simples :&#xA;Windows 10 Téléchargez l’installateur Python :&#xA;Rendez-vous sur le site officiel de Python et téléchargez la version stable la plus récente pour Windows. Exécutez l’installateur :&#xA;Double-cliquez sur le fichier téléchargé pour lancer l’installateur. Cochez l’option “Add Python to PATH” pour ajouter Python au chemin d’accès système. Cliquez sur “Install Now” pour une installation par défaut ou sur “Customize installation” pour des options avancées. Vérifiez l’installation :</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/outils/installations/python/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

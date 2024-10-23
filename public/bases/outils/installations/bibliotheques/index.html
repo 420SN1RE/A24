@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="Installation des librairies Python sur Windows 10/11 Python est un langage de programmation puissant et polyvalent, largement utilisé pour l’analyse de données, la visualisation et les calculs scientifiques. Les librairies pandas, matplotlib, numpy et scipy sont parmi les plus populaires pour ces tâches. Ce chapitre vous guidera à travers les étapes nécessaires pour installer ces librairies sur un système Windows 10 ou 11.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Installation des bibliothèques Python :: 420-SN1-RE">
+    <meta name="twitter:description" content="Installation des librairies Python sur Windows 10/11 Python est un langage de programmation puissant et polyvalent, largement utilisé pour l’analyse de données, la visualisation et les calculs scientifiques. Les librairies pandas, matplotlib, numpy et scipy sont parmi les plus populaires pour ces tâches. Ce chapitre vous guidera à travers les étapes nécessaires pour installer ces librairies sur un système Windows 10 ou 11.">
+    <meta property="og:url" content="https://example.org/bases/outils/installations/bibliotheques/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Installation des bibliothèques Python :: 420-SN1-RE">
+    <meta property="og:description" content="Installation des librairies Python sur Windows 10/11 Python est un langage de programmation puissant et polyvalent, largement utilisé pour l’analyse de données, la visualisation et les calculs scientifiques. Les librairies pandas, matplotlib, numpy et scipy sont parmi les plus populaires pour ces tâches. Ce chapitre vous guidera à travers les étapes nécessaires pour installer ces librairies sur un système Windows 10 ou 11.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Installation des bibliothèques Python :: 420-SN1-RE">
+    <meta itemprop="description" content="Installation des librairies Python sur Windows 10/11 Python est un langage de programmation puissant et polyvalent, largement utilisé pour l’analyse de données, la visualisation et les calculs scientifiques. Les librairies pandas, matplotlib, numpy et scipy sont parmi les plus populaires pour ces tâches. Ce chapitre vous guidera à travers les étapes nécessaires pour installer ces librairies sur un système Windows 10 ou 11.">
+    <meta itemprop="wordCount" content="603">
+    <title>Installation des bibliothèques Python :: 420-SN1-RE</title>
+    <link href="/bases/outils/installations/bibliotheques/index.xml" rel="alternate" type="application/rss+xml" title="Installation des bibliothèques Python :: 420-SN1-RE">
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/bases/outils/installations/bibliotheques/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#installation-des-librairies-python-sur-windows-1011">Installation des librairies Python sur Windows 10/11</a>
+      <ul>
+        <li><a href="#prérequis">Prérequis</a></li>
+        <li><a href="#étape-1--ouvrir-linvite-de-commande-windows">Étape 1 : Ouvrir l&rsquo;invite de commande (Windows)</a></li>
+        <li><a href="#étape-2--installation-de-pip">Étape 2 : Installation de pip</a></li>
+        <li><a href="#étape-3--installation-des-librairies">Étape 3 : Installation des librairies</a></li>
+        <li><a href="#étape-4--vérification-de-linstallation">Étape 4 : Vérification de l&rsquo;installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#résolution-des-problèmes-courants">Résolution des problèmes courants</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/index.html"><span itemprop="name">Base de connaissances</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/outils/index.html"><span itemprop="name">2. Outils</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/outils/installations/index.html"><span itemprop="name">Installations</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Installation des bibliothèques Python</span><meta itemprop="position" content="5"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/outils/installations/visual-studio-code/index.html" title="Installation de Visual Studio Code sur Windows (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/outils/installations/extensions-dans-vs-code/index.html" title="Installation des extensions dans VS Code (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable bases" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="installation-des-bibliothèques-python">Installation des bibliothèques Python</h1>
+
+<p><a href="#R-image-6bcf8272a37bcfb018847c499cde3ce6" class="lightbox-link"><img alt="Installation Python" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/bases/outils/installations/bibliotheques/install-lib.png?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6bcf8272a37bcfb018847c499cde3ce6"><img alt="Installation Python" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/bases/outils/installations/bibliotheques/install-lib.png?width=25vw"></a></p>
+<h2 id="installation-des-librairies-python-sur-windows-1011">Installation des librairies Python sur Windows 10/11</h2>
+<p>Python est un langage de programmation puissant et polyvalent, largement utilisé pour l&rsquo;analyse de données, la visualisation et les calculs scientifiques. Les librairies <code>pandas</code>, <code>matplotlib</code>, <code>numpy</code> et <code>scipy</code> sont parmi les plus populaires pour ces tâches. Ce chapitre vous guidera à travers les étapes nécessaires pour installer ces librairies sur un système Windows 10 ou 11.</p>
+<h3 id="prérequis">Prérequis</h3>
+<p>Avant de commencer, assurez vous d&rsquo;avoir installé Python sur votre système. Vous pouvez télécharger la dernière version de Python depuis le site officiel <a href="https://www.python.org/" rel="external" target="_blank">python.org</a>. Pendant l&rsquo;installation, assurez vous de cocher l&rsquo;option <strong>&ldquo;Add Python to PATH&rdquo;</strong>.</p>
+<h3 id="étape-1--ouvrir-linvite-de-commande-windows">Étape 1 : Ouvrir l&rsquo;invite de commande (Windows)</h3>
+<p>Ouvrir l&rsquo;invite de commande sur Windows 10 et Windows 11 est assez simple. Voici les étapes pour chaque version :</p>
+<h4 id="windows-10">Windows 10</h4>
+<ol>
+<li>
+<p><strong>Utiliser le menu Démarrer</strong> :</p>
+<ul>
+<li>Cliquez sur le bouton <strong>Démarrer</strong> (icône Windows en bas à gauche de l&rsquo;écran).</li>
+<li>Tapez <strong>cmd</strong> ou <strong>invite de commande</strong> dans la barre de recherche.</li>
+<li>Cliquez sur <strong>Invite de commandes</strong> dans les résultats de recherche.</li>
+</ul>
+</li>
+<li>
+<p><strong>Utiliser le raccourci clavier</strong> :</p>
+<ul>
+<li>Appuyez sur les touches <strong>Windows + R</strong> pour ouvrir la boîte de dialogue <strong>Exécuter</strong>.</li>
+<li>Tapez <strong>cmd</strong> et appuyez sur <strong>Entrée</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Utiliser le menu contextuel</strong> :</p>
+<ul>
+<li>Faites un clic droit sur le bouton <strong>Démarrer</strong>.</li>
+<li>Sélectionnez <strong>Invite de commandes</strong> ou <strong>Windows PowerShell</strong> (selon la version de Windows 10).</li>
+</ul>
+</li>
+</ol>
+<h4 id="windows-11">Windows 11</h4>
+<ol>
+<li>
+<p><strong>Utiliser le menu Démarrer</strong> :</p>
+<ul>
+<li>Cliquez sur le bouton <strong>Démarrer</strong> (icône Windows au centre de la barre des tâches).</li>
+<li>Tapez <strong>cmd</strong> ou <strong>invite de commande</strong> dans la barre de recherche.</li>
+<li>Cliquez sur <strong>Invite de commandes</strong> dans les résultats de recherche.</li>
+</ul>
+</li>
+<li>
+<p><strong>Utiliser le raccourci clavier</strong> :</p>
+<ul>
+<li>Appuyez sur les touches <strong>Windows + R</strong> pour ouvrir la boîte de dialogue <strong>Exécuter</strong>.</li>
+<li>Tapez <strong>cmd</strong> et appuyez sur <strong>Entrée</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Utiliser le menu contextuel</strong> :</p>
+<ul>
+<li>Faites un clic droit sur le bouton <strong>Démarrer</strong>.</li>
+<li>Sélectionnez <strong>Terminal Windows</strong> ou <strong>Windows PowerShell</strong> (selon la version de Windows 11).</li>
+</ul>
+</li>
+</ol>
+<h4 id="astuce-supplémentaire">Astuce supplémentaire</h4>
+<p>Pour ouvrir l&rsquo;invite de commande en tant qu&rsquo;administrateur, faites un clic droit sur <strong>Invite de commandes</strong> ou <strong>Terminal Windows</strong> et sélectionnez <strong>Exécuter en tant qu&rsquo;administrateur</strong>.</p>
+<h3 id="étape-2--installation-de-pip">Étape 2 : Installation de pip</h3>
+<p><code>pip</code> est le gestionnaire de paquets de Python, utilisé pour installer et gérer les librairies Python. Si vous avez installé Python 3.4 ou une version ultérieure, <code>pip</code> est déjà inclus. Pour vérifier si <code>pip</code> est installé, dans l&rsquo;invite de commande (CMD) tapez :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pip --version</span></span></code></pre></div>
+<p>Si <code>pip</code> n&rsquo;est pas installé, vous pouvez l&rsquo;installer en téléchargeant le script <code>get-pip.py</code> depuis <a href="https://bootstrap.pypa.io/get-pip.py" rel="external" target="_blank">ce lien</a> et en l&rsquo;exécutant avec Python :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>python get-pip.py</span></span></code></pre></div>
+<h3 id="étape-3--installation-des-librairies">Étape 3 : Installation des librairies</h3>
+<p>Une fois <code>pip</code> installé, vous pouvez installer les librairies <code>pandas</code>, <code>matplotlib</code>, <code>numpy</code> et <code>scipy</code> en utilisant les commandes suivantes dans l&rsquo;invite de commande :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>pip install pandas
+</span></span><span style="display:flex;"><span>pip install matplotlib
+</span></span><span style="display:flex;"><span>pip install numpy
+</span></span><span style="display:flex;"><span>pip install scipy</span></span></code></pre></div>
+<h3 id="étape-4--vérification-de-linstallation">Étape 4 : Vérification de l&rsquo;installation</h3>
+<p>Pour vérifier que les librairies ont été correctement installées, vous pouvez ouvrir une session Python interactive en tapant <code>python</code> dans l&rsquo;invite de commande, puis essayer d&rsquo;importer chaque librairie :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> scipy</span></span></code></pre></div>
+<p>Si aucune erreur n&rsquo;est affichée, cela signifie que les librairies ont été installées avec succès.</p>
+<h2 id="résolution-des-problèmes-courants">Résolution des problèmes courants</h2>
+<ul>
+<li>
+<p><strong>Problème : <code>pip</code> n&rsquo;est pas reconnu comme une commande interne ou externe.</strong></p>
+<ul>
+<li>Solution : Assurez-vous que le chemin vers le dossier <code>Scripts</code> de Python est ajouté à la variable d&rsquo;environnement PATH.</li>
+</ul>
+</li>
+<li>
+<p><strong>Problème : Erreur d&rsquo;installation due à des permissions.</strong></p>
+<ul>
+<li>Solution : Exécutez l&rsquo;invite de commande en tant qu&rsquo;administrateur.</li>
+</ul>
+</li>
+<li>
+<p><strong>Problème : Conflits de versions.</strong></p>
+<ul>
+<li>Solution : Utilisez des environnements virtuels pour isoler les dépendances de votre projet. Vous pouvez créer un environnement virtuel avec <code>venv</code> :
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>python -m venv myenv
+</span></span><span style="display:flex;"><span>myenv<span style="color:#ae81ff">\S</span>cripts<span style="color:#ae81ff">\a</span>ctivate</span></span></code></pre></div>
+</li>
+</ul>
+</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="parent " data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu">
+            <li class="" data-nav-id="/bases/langage-de-prog/index.html"><a class="padding" href="/bases/langage-de-prog/index.html">1. Langage de programmation</a><ul id="R-subsections-be5c8169920e24019fa741b0d66dc652" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/bases/outils/index.html"><a class="padding" href="/bases/outils/index.html">2. Outils</a><ul id="R-subsections-63c1095d7ccdc1b9ecea42dfa732d4d2" class="collapsible-menu">
+            <li class="parent " data-nav-id="/bases/outils/installations/index.html"><a class="padding" href="/bases/outils/installations/index.html">Installations</a><ul id="R-subsections-d1e5f8a7c34b6d7151b0474c7c23542b" class="collapsible-menu">
+            <li class="" data-nav-id="/bases/outils/installations/python/index.html"><a class="padding" href="/bases/outils/installations/python/index.html">Installation de Python sur Windows</a></li>
+            <li class="" data-nav-id="/bases/outils/installations/visual-studio-code/index.html"><a class="padding" href="/bases/outils/installations/visual-studio-code/index.html">Installation de Visual Studio Code sur Windows</a></li>
+            <li class="active " data-nav-id="/bases/outils/installations/bibliotheques/index.html"><a class="padding" href="/bases/outils/installations/bibliotheques/index.html">Installation des bibliothèques Python</a></li>
+            <li class="" data-nav-id="/bases/outils/installations/extensions-dans-vs-code/index.html"><a class="padding" href="/bases/outils/installations/extensions-dans-vs-code/index.html">Installation des extensions dans VS Code</a></li></ul></li>
+            <li class="" data-nav-id="/bases/outils/vs-code/index.html"><a class="padding" href="/bases/outils/vs-code/index.html">Utilisation de VS Code</a><ul id="R-subsections-ca73804d85a31038f53f0cec7eb3bda3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/bases/outils/jupyter/index.html"><a class="padding" href="/bases/outils/jupyter/index.html">Jupyter</a></li>
+            <li class="" data-nav-id="/bases/outils/markdown/index.html"><a class="padding" href="/bases/outils/markdown/index.html">MarkDown</a></li>
+            <li class="" data-nav-id="/bases/outils/google-colab/index.html"><a class="padding" href="/bases/outils/google-colab/index.html">Google Colab</a></li></ul></li>
+            <li class="" data-nav-id="/bases/lexique/index.html"><a class="padding" href="/bases/lexique/index.html">3. Lexique</a></li></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/bases/outils/installations/bibliotheques/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

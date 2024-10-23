@@ -1,0 +1,93 @@
+
++++
+title =  "Prog lettrée"
+weight =  32
++++
+
+======================
+
+## La documentation du code et d'un programme lettré (_literate programming_)
+
+- La documentation du code est une pratique très importante dans le développement de logiciels. 
+- Elle permet non seulement de rendre le **code compréhensible** pour d'autres développeurs, mais aussi de faciliter la maintenance et l'extension du logiciel. 
+
+## Pourquoi documenter le code ?
+
+- **Faciliter la compréhension** : La documentation permet aux autres développeurs (et à vous-même dans le futur) de comprendre rapidement le fonctionnement du code.
+- **Améliorer la maintenabilité** : Un code bien documenté est plus facile à maintenir et à modifier.
+- **Assurer la qualité** : La documentation aide à vérifier que le code respecte les spécifications et les bonnes pratiques.
+
+## Types de documentation
+
+1. **Commentaires** : Ce sont des commentaires insérés directement dans le code pour expliquer des lignes ou des blocs spécifiques.
+
+   ```python
+   # Calculer la somme de deux nombres
+   def addition(a, b):
+       return a + b
+   ```
+
+2. **Docstrings** : Utilisées pour documenter les modules, classes, fonctions et méthodes. Elles fournissent une description plus détaillée et structurée.
+
+   ```python
+   def addition(a, b):
+       """
+       Calcule la somme de deux nombres.
+
+       Paramètres:
+       a (int, float): Le premier nombre.
+       b (int, float): Le deuxième nombre.
+
+       Retourne:
+       int, float: La somme des deux nombres.
+       """
+       return a + b
+   ```
+
+3. **Documentation externe** : Documentation séparée du code, généralement dans des fichiers Markdown ou _reStructuredText_, souvent utilisée pour les projets plus grands.
+
+## La programmation lettrée (_Literate Programming_)
+
+- La programmation lettrée est une approche qui combine la documentation et le code dans un seul document. 
+- L'idée est de créer un récit compréhensible pour les humains, dans lequel le code est intégré de manière fluide.
+
+### Exemple de programme lettré
+
+- Utilisons le format [Markdown](../base-de-connaissances/MarkDown/_index.md) et Python [(Jupyter)](../base-de-connaissances/Jupyter/Jupyter-Notebook-dans-VS-Code.md) pour illustrer un programme lettré simple.
+
+```markdown
+# Calcul de la Factorielle
+
+- Dans ce document, nous allons implémenter une fonction pour calculer la factorielle d'un nombre. 
+- La factorielle d'un nombre `n` est le produit de tous les entiers positifs inférieurs ou égaux à `n`.
+
+## Fonction Factorielle
+
+1. Tout d'abord, nous définissons une fonction `factorielle` qui prend un entier `n` et retourne sa factorielle.
+
+```python
+def factorielle(n):
+    """
+    Calcule la factorielle d'un nombre.
+
+    Paramètre:
+    n (int): Le nombre dont on veut calculer la factorielle.
+
+    Retourne:
+    int: La factorielle de n.
+    """
+    if n == 0:
+        return 1
+    else:
+        return n * factorielle(n - 1)
+
+## Utilisation de la fonction
+
+2. Ensuite, nous allons tester notre fonction avec un exemple simple. Dans un bloc note Jupyter, ce code sera dans une cellule de type Code.
+
+
+```python
+print(f"La factorielle de 5 est {factorielle(5)}")
+```
+
+Cette approche permet de lire et comprendre le code comme une histoire, ce qui peut être très utile pour l'apprentissage et la collaboration.

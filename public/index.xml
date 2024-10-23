@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programmation en sciences :: 420-SN1-RE</title>
+    <link>https://example.org/index.html</link>
+    <description>Chers élèves,&#xA;Nous vous rappelons que dans le cadre de ce cours, il est impératif d’utiliser seulement les notions, fonctions et concepts qui ont été abordés en classe. Cela garantit une compréhension solide et progressive des sujets traités.&#xA;Note importante : L’utilisation d’outils d’intelligence artificielle pour générer du code, peut parfois fournir du code qui dépassent le cadre des notions étudiées.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Présentations et introduction à la programmation</title>
+      <link>https://example.org/semaine1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine1/index.html</guid>
+      <description>Objectifs de la leçon Comprendre quels sont les objectifs du cours 420-SN1-RE. Connaitre les responsabilités de l’enseignante et celles des étudiants Comprendre les éléments de base de la programmation. Se familiariser à l’environnement de travail. Savoir déterminer les données en entrée, en sortie et leurs traitements dans des problèmes scientifique simples. Plan de la leçon Connexion à Moodle et présentation du site du cours ~15 mins. Présentation de votre enseignante ~5 mins. Présentation des étudiants (prénom, [nom] , passes-temps, expérience en programmation) ~20 mins. Présentation du cours ~25 mins. Pause 5 minutes. Quiz Moodle : Évaluation diagnostique ~5 mins. L’environnement de développement (Python, Visual Studio Code et Jupyter Notebook) ~20 mins. Pause 5 mins. Programme et langage de programmation ~5 mins. Le cycle de développement de logiciel ~5 mins. L’analyse du problème: détermination et traitement des données ~15 mins. Atelier: Analyse de problèmes simples ~30 mins. Pour la semaine prochaine.</description>
+    </item>
+    <item>
+      <title>Ordinogramme et introduction à Python</title>
+      <link>https://example.org/semaine2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine2/index.html</guid>
+      <description>Objectifs de la leçon Comprendre les rôles du pseudo-code et de l’ordinogramme. Savoir comment créer un ordinogramme. Écrire un premier script Python. Savoir déclarer et initialiser des variables de différents types. Utiliser des variables dans des opérations simples en respectant les priorités des opérateurs. Plan de la leçon Quiz: Introduction à la programmation et analyse de problèmes (10 mins). Algorithme en ordinogramme ~15 mins. Pause 5 mins Les variables et les types de données ~30 mins. Les opérateurs arithmétiques et l’affichage de données ~10 mins Pause 5 mins Les nombres à virgule et les erreurs d’arrondi ~10mins. Atelier - Ordinogramme Atelier - Variables et expressions Pour la semaine prochaine.</description>
+    </item>
+    <item>
+      <title>Interagir avec le programme</title>
+      <link>https://example.org/semaine3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine3/index.html</guid>
+      <description>Objectifs de la leçon Lire des données saisies au clavier par l’utilisateur. Afficher des données dans le terminal. Comprendre les avantages de la documentation du code. Connaitre et comprendre les différentes sources d’erreurs de syntaxe. Commencer à déboguer un programme à l’aide de la méthode print(). Plan de la leçon Quiz: Ordinogrammes et base de Python (10 mins) Lecture de données et affichage textuel des résultats ~15mins Documentation du code ~5mins Pause 5 mins La syntaxe est les erreurs ~10mins La vérification du bon fonctionnement d’un programme ~5mins Pause 5 mins Révision pour le minitest (10%) de la semaine prochaine ~30mins Atelier: Lecture et affichage de données ~20mins Atelier: Déboguer des programmes simples ~20mins Pour la semaine prochaine</description>
+    </item>
+    <item>
+      <title>Structures conditionnelles</title>
+      <link>https://example.org/semaine4/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/index.html</guid>
+      <description>Objectifs de la leçon Comprendre la base des expressions booléennes. Comprendre les structures conditionnelles if, elif et else. Savoir représenter les structures conditionnelles dans un ordinogramme. Utiliser les instructions if, elif et else. Écrire des conditions utilisant les opérateurs logiques (and, or, not). Savoir tester des nombres à virgule. Implémenter des structures conditionnelles imbriquées. Appliquer les structures conditionnelles dans des cas pratiques. Plan de la leçon Mini-test (40 mins) Les opérateurs et les expressions booléennes. ~10mins Les structures conditionnelles if, elif et else. ~10mins L’ordinogramme de structures conditionnelles. ~5mins Pause 5 minutes. Les opérateurs logiques dans les structures conditionnelles. ~5mins Tests avec les nombres flottants. ~5mins Pause 5 minutes. Atelier: Évaluer des expressions booléennes. Atelier: Utiliser des structures conditionnelles dans des cas simples. Atelier: Tester les nombres à virgule. Pour la semaine prochaine.</description>
+    </item>
+    <item>
+      <title>Structures répétitives</title>
+      <link>https://example.org/semaine5/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine5/index.html</guid>
+      <description>Objectifs de la leçon Comprendre l’utilité des structures répétitives (les boucles) Utiliser la boucle WHILE Utiliser la boucle FOR et la fonction RANGE() Contrôler les boucles à l’aide des instructions break et continue Plan de la leçon Quiz: Interaction avec le programme et les conditions (10 mins) Les instructions répétitives en générale ~5mins La boucle WHILE ~15mins Pause 5 minutes. La boucle FOR ~10mins Contrôler les boucles ~5mins Pause 5 minutes. Atelier: Utiliser la boucle While. Atelier: Utiliser la boucle For. Atelier: break et continue. Pour la semaine prochaine.</description>
+    </item>
+    <item>
+      <title>Les listes et le traitement des chaines de caractères</title>
+      <link>https://example.org/semaine6/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine6/index.html</guid>
+      <description>Objectifs de la leçon Comprendre les concepts de base et fondamentaux des listes Savoir manipuler des listes dans un contexte scientifique Appliquer la logique des boucles avec les listes Utiliser d’autres fonctionnalités courantes des listes Comprendre les notions d’objet et d’encapsulation Plan de la leçon Quiz: Les boucles (10 mins) L’importance des listes en programmation et en contexte scientifique. ~5mins Création, accès, modification, ajout et suppression d’éléments d’une liste. ~15mins Pause 5 minutes. Parcourir les éléments d’une liste. ~10mins Autres manipulations courantes sur les listes ~15mins Faire la somme de tous les éléments d’une liste. Obtenir le nombre d’éléments d’une liste (sa taille ou longueur). Trier les éléments d’une liste. Trouver les éléments uniques d’une liste. Filtrer les nombres pairs d’une liste. Pause 5 minutes. Les chaines de caractères sont des listes ~5mins Les chaines de caractères sont des objets ~5mins Ateliers: Les listes et les chaines de caractères Pour la semaine prochaine.</description>
+    </item>
+    <item>
+      <title>Révision des semaines 1 à 6</title>
+      <link>https://example.org/semaine7/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine7/index.html</guid>
+      <description>Objectifs de la leçon Réviser les notions vues jusqu’à présent en mettant l’emphase sur les éléments de compétence obligatoires. Plan de la leçon Quiz: Les listes et les chaines de caractères (10 mins)&#xA;Révision:&#xA;Compréhension de la syntaxe de base : Connaître les types de données, les variables, les opérateurs, et les structures de contrôle comme les conditions et les boucles. Manipulation des structures de données : Savoir utiliser les listes pour organiser et gérer les données. Programmation orientée objet (POO) : Comprendre le concept d’objets à l’aide des chaines de caractères. Deux exercices récapitulatifs</description>
+    </item>
+    <item>
+      <title>Les sous-programmes (fonctions)</title>
+      <link>https://example.org/semaine8/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine8/index.html</guid>
+      <description>Objectifs de la leçon Comprendre les rôles et utilités des sous-programmes. Définir des sous-programmes. Utiliser des sous-programmes. Comprendre le passage de paramètres et la portée des variables. Plan de la leçon Quiz récapitulatif: semaines 1 à 6 (20 mins) Fonctions: Rôles et définition. Déclaration. L’appel. Le passage de paramètres. Le retour de valeurs. La portée des variables. Ateliers : Les fonctions et la portée des variables Pour la semaine prochaine</description>
+    </item>
+    <item>
+      <title>Technique de débogage simple</title>
+      <link>https://example.org/semaine9/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine9/index.html</guid>
+      <description>Objectifs de la leçon Comprendre l’importance du débogage Appliquer une technique de débogage simple pour résoudre des bogues courants. Évaluer l’acquisition des éléments de compétence du cours (Examen formatif) Plan de la leçon Quiz: Les fonctions (10 mins) L’importance du débogage dans le développement de logiciels. ~5mins Suivre l’exécution d’un programme simple et identifier les erreurs. ~10mins Aperçu aux outils de débogage disponibles dans VS Code. ~5mins Utilisation des points d’arrêt, de l’inspection des variables et de la navigation dans le code. Pause 5 mins Examen formatif: à faire obligatoirement individuellement et en classe ~120mins Atelier (à faire à la maison): Trouvez l’erreur… et corrigez-la. Pour la semaine prochaine</description>
+    </item>
+    <item>
+      <title>Examen</title>
+      <link>https://example.org/semaine10/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine10/index.html</guid>
+      <description>Attention Vous DEVREZ OBLIGATOIREMENT utiliser les ordinateurs du cégep. Pour ce faire, au préalable, vous devrez vous assurer que vous êtes en mesure de vous connecter sur ces ordinateurs et sur Moodle. Autrement, il n’y aura AUCUNE reprise possible.&#xA;Matière Semaine 1 à 9 inclusivement. Poids de l’examen Vaut 30% de la note finale du cours. Documentation permise 2 feuilles 8.5 x 11 recto-verso. 1 crayon et 1 feuille vierge comme feuille brouillon. Format de l’examen Durée : 2 heures (SAA1: 2h40)</description>
+    </item>
+    <item>
+      <title>Pandas et présentation du projet final</title>
+      <link>https://example.org/semaine11/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine11/index.html</guid>
+      <description>Objectifs de la leçon Comprendre la structure de données DataFrame. Apprendre à créer et manipuler des dataframes. Savoir importer et exporter des données de fichiers CSV avec Pandas. Réaliser des analyses de données simples. Plan de la leçon Quiz: Pas cette semaine La bibliothèque Pandas Extraction des données de fichiers CSV. Création de Series et de DataFrames. Accès aux données d’un DataFrame. Pause 5 mins Ajout, suppression et renommage de colonnes. Sélection et filtrage de données. Calcul de statistiques descriptives. Conversion d’un DataFrame en liste et modification des valeurs manquantes Pause 5 mins Présentation du Projet Final (Partie 1) - À VENIR Atelier Pour la semaine prochaine</description>
+    </item>
+    <item>
+      <title>Matplotlib</title>
+      <link>https://example.org/semaine12/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine12/index.html</guid>
+      <description>Objectifs de la leçon Comprendre les bases de la bibliothèque Matplotlib. Apprendre à créer des graphiques simples et personnalisés. Interpréter les résultats de graphiques pour des applications en sciences. Plan de la leçon Quiz: Bibliothèque Pandas (10 mins) La création et la personnalisation de graphiques simples. Traçage de graphiques en ligne Ajout d’éléments de graphique (titres, légendes, marqueurs, etc.) Pause 5 mins Les sous graphiques et les graphiques multiples La sauvegarde d’un graphique en format image (png) Les types de graphiques Pause 5 mins Ateliers Pour la semaine prochaine</description>
+    </item>
+    <item>
+      <title>Solutions des ateliers</title>
+      <link>https://example.org/solutions-ateliers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/solutions-ateliers/index.html</guid>
+      <description>Semaine 1 - Analyse de problèmes&#xA;Semaine 2 - Ordinogrammes&#xA;Semaine 2 - Base de Python&#xA;Semaine 3 - Input() et print() Semaine 3 - Erreurs de syntaxe Semaine 4 - Expressions booléennes&#xA;Semaine 4 - IF-ELIF-ELSE&#xA;Semaine 4 - Tests de nombres flottants&#xA;Semaine 5 - Boucle while&#xA;Semaine 5 - Boucle for&#xA;Semaine 5 - Instructions break, continue et else</description>
+    </item>
+    <item>
+      <title>Base de connaissances</title>
+      <link>https://example.org/bases/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/index.html</guid>
+      <description>Ici vous trouverez diverses informations sur Python et sur les outils utilisés dans le cours ou que vous pouvez utiliser sur votre ordinateur personnel à la maison.&#xA;Cette section est divisée en trois catégories:&#xA;1. Langage de programmation 2. Outils 3. Lexique</description>
+    </item>
+    <item>
+      <title>Exercices supplémentaires (Semaines 1 à 6)</title>
+      <link>https://example.org/exercices-supplementaires/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/exercices-supplementaires/index.html</guid>
+      <description>Dans le document Exercices-supplémentaires.pdf, vous trouverez une trentaine d’exercices afin de plus vous exercer. Les exercices sont regroupés selon leur difficulté (facile, moyenne et difficile)&#xA;Vous pouvez télécharger le document ICI</description>
+    </item>
+  </channel>
+</rss>

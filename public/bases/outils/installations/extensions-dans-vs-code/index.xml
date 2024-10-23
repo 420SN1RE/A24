@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation des extensions dans VS Code :: 420-SN1-RE</title>
+    <link>https://example.org/bases/outils/installations/extensions-dans-vs-code/index.html</link>
+    <description>Pour installer les extensions comme Python, Pandas, Numpy, Matplotlib et SciPy dans Visual Studio Code, suivez ces étapes :&#xA;Ouvrir Visual Studio Code&#xA;Installer l’extension Python :&#xA;Cliquez sur l’icône des extensions dans la barre d’activité à gauche (elle ressemble à quatre carrés) ou utilisez le raccourci Ctrl+Shift+X. Recherchez Python et installez l’extension officielle développée par Microsoft. Ouvrir un terminal intégré :</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/outils/installations/extensions-dans-vs-code/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

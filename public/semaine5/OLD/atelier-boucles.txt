@@ -1,0 +1,56 @@
++++
+title = "Atelier"
+weight = 54
++++
+
+### Section 4 : Applications Pratiques
+
+#### 4.1. **Exemples de Projets**
+
+##### 4.1.1. **Calcul de la Somme des Nombres**
+Un projet simple mais efficace pour comprendre les instructions répétitives est de calculer la somme des nombres dans une liste. Par exemple, en utilisant une boucle `for`, on peut itérer à travers chaque élément de la liste et ajouter chaque nombre à une variable de somme.
+
+```python
+nombres = [1, 2, 3, 4, 5]
+somme = 0
+for nombre in nombres:
+    somme += nombre
+print("La somme des nombres est :", somme)
+```
+
+##### 4.1.2. **Recherche dans une Liste**
+Un autre projet pratique est de rechercher un élément spécifique dans une liste. Cela peut être réalisé en utilisant une boucle `while` ou `for` pour parcourir la liste jusqu'à ce que l'élément soit trouvé.
+
+```python
+nombres = [10, 20, 30, 40, 50]
+recherche = 30
+trouvé = False
+for nombre in nombres:
+    if nombre == recherche:
+        trouvé = True
+        break
+if trouvé:
+    print(f"{recherche} a été trouvé dans la liste.")
+else:
+    print(f"{recherche} n'a pas été trouvé dans la liste.")
+```
+
+##### 4.1.3. **Génération de Séquences**
+Les instructions répétitives sont également utiles pour générer des séquences de nombres ou de caractères. Par exemple, on peut utiliser une boucle pour générer les premiers `n` nombres de la suite de Fibonacci.
+
+```python
+n = 10
+a, b = 0, 1
+print("Suite de Fibonacci :")
+for _ in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+```
+
+#### 4.2. **Exercices Pratiques**
+
+Pour renforcer les compétences en utilisant des instructions répétitives, voici quelques problèmes à résoudre :
+
+1. **Calculer la Factorielle d'un Nombre** : Écrire un programme qui calcule la factorielle d'un nombre donné en utilisant une boucle.
+2. **Trouver le Plus Grand Nombre dans une Liste** : Écrire un programme qui trouve et affiche le plus grand nombre dans une liste donnée.
+3. **Inverser une Chaîne de Caractères** : Écrire un programme qui inverse une chaîne de caractères en utilisant une boucle.

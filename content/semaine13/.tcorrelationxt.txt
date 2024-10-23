@@ -1,0 +1,22 @@
++++
+title = "coefficient de corrélation"
+weight = 
++++
+
+![Corrélation ](../
+
+## Qu'est-ce que le coefficient de corrélation ?
+
+Le coefficient de corrélation est la mesure spécifique qui quantifie la force de la relation linéaire entre deux variables d'une analyse de corrélation. Le coefficient est noté r dans un rapport de corrélation.
+
+## À quoi sert le coefficient de corrélation ?
+
+Pour deux variables, la formule compare la distance de chaque point de données depuis la moyenne de la variable et l'utilise pour indiquer dans quelle mesure la relation entre les variables suit une ligne imaginaire tracée dans les données. C'est ce que l'on entend par « les corrélations concernent les relations linéaires ».
+
+## Quelles sont les limites à prendre en compte ?
+
+La corrélation n'inclut que deux variables et ne donne aucune information sur des éventuelles relations contenant plus de données. Cette analyse ne détectera pas (et sera donc biaisée par) les valeurs aberrantes présentes dans les données et ne peut pas détecter les relations curvilinéaires.
+
+donnees_plantes.csv
+
+Ce fichier contient des données simulées sur la croissance des plantes sous différentes conditions de lumière et d’arrosage. 

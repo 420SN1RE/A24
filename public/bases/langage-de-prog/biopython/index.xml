@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Les bibliothèques de bioinformatique :: 420-SN1-RE</title>
+    <link>http://localhost:1313/bases/langage-de-prog/biopython/index.html</link>
+    <description>Cette section vous permettra d’apprendre la base des bibliothèques Python de Biopython et de commencer à l’utiliser. Voici les sujets présentés:&#xA;Chapitre 1 : Introduction à Biopython Présentation de Biopython Installation et configuration Aperçu des fonctionnalités principales Chapitre 2 : Manipulation de séquences Lecture et écriture de séquences Opérations de base sur les séquences (traduction, transcription, complémentarité) Alignement de séquences Chapitre 3 : Analyse de séquences Recherche de motifs Calcul des propriétés des séquences (GC content, poids moléculaire) Utilisation des outils d’alignement (BLAST, ClustalW) Chapitre 4 : Structures de données biologiques Introduction aux objets SeqRecord et SeqFeature Annotation de séquences Manipulation des fichiers GenBank et FASTA Chapitre 5 : Accès aux bases de données biologiques Utilisation de Bio.Entrez pour accéder à NCBI Téléchargement et analyse de données génomiques Utilisation de Bio.ExPASy pour accéder aux bases de données protéiques Chapitre 6 : Visualisation de données biologiques Création de graphiques avec Matplotlib et Biopython Visualisation des alignements de séquences Visualisation des structures 3D des protéines</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/bases/langage-de-prog/biopython/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction à Biopython</title>
+      <link>http://localhost:1313/bases/langage-de-prog/biopython/intro/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bases/langage-de-prog/biopython/intro/index.html</guid>
+      <description>Présentation de Biopython Biopython est une collection de bibliothèques Python conçues pour faciliter le travail en bioinformatique. Il offre des outils pour manipuler des séquences biologiques, accéder à des bases de données biologiques, effectuer des analyses de séquences, et bien plus encore. Biopython est largement utilisé par les bioinformaticiens pour automatiser et simplifier les tâches courantes en biologie computationnelle.&#xA;Installation et configuration Pour commencer à utiliser Biopython, vous devez d’abord l’installer. Voici comment procéder :</description>
+    </item>
+    <item>
+      <title>Manipulation de Séquences</title>
+      <link>http://localhost:1313/bases/langage-de-prog/biopython/manipulation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/bases/langage-de-prog/biopython/manipulation/index.html</guid>
+      <description>Lecture et écriture de séquences Biopython facilite la lecture et l’écriture de séquences à partir de différents formats de fichiers biologiques comme FASTA, GenBank, etc.&#xA;Exemple : Lecture d’un fichier FASTA&#xA;from Bio import SeqIO # Lecture d&#39;un fichier FASTA for record in SeqIO.parse(&#34;example.fasta&#34;, &#34;fasta&#34;): print(f&#34;ID: {record.id}&#34;) print(f&#34;Séquence: {record.seq}&#34;) print(f&#34;Description: {record.description}&#34;) Exemple : Écriture dans un fichier FASTA&#xA;from Bio.Seq import Seq from Bio.SeqRecord import SeqRecord from Bio import SeqIO # Création d&#39;un objet SeqRecord record = SeqRecord( Seq(&#34;AGTACACTGGT&#34;), id=&#34;example&#34;, description=&#34;Exemple de séquence&#34; ) # Écriture dans un fichier FASTA SeqIO.write(record, &#34;output.fasta&#34;, &#34;fasta&#34;) Opérations de base sur les séquences Biopython permet d’effectuer diverses opérations sur les séquences, telles que la traduction, la transcription et la complémentarité.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,8 @@
+theme = 'hugo-theme-relearn'
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = '420-SN1-RE'
+
+[module]
+  [[module.imports]]
+    path = 'github.com/McShelby/hugo-theme-relearn'

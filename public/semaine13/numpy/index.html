@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="Qu’est-ce que NumPy? NumPy, ou Numerical Python, est une bibliothèque essentielle pour le calcul scientifique en Python. Elle permet de travailler efficacement avec des tableaux multidimensionnels et offre une large gamme de fonctions mathématiques pour effectuer des opérations sur ces tableaux.
+NumPy permet de :
+Manipuler des données de manière efficace. Effectuer des opérations mathématiques et statistiques avancées. Travailler avec des données multidimensionnelles. Intégrer facilement avec d’autres bibliothèques et outils de data science. Utilisation de NumPy Pour commencer, vous devez importer dans votre script Python :">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="NumPy OLD :: 420-SN1-RE">
+    <meta name="twitter:description" content="Qu’est-ce que NumPy? NumPy, ou Numerical Python, est une bibliothèque essentielle pour le calcul scientifique en Python. Elle permet de travailler efficacement avec des tableaux multidimensionnels et offre une large gamme de fonctions mathématiques pour effectuer des opérations sur ces tableaux.
+NumPy permet de :
+Manipuler des données de manière efficace. Effectuer des opérations mathématiques et statistiques avancées. Travailler avec des données multidimensionnelles. Intégrer facilement avec d’autres bibliothèques et outils de data science. Utilisation de NumPy Pour commencer, vous devez importer dans votre script Python :">
+    <meta property="og:url" content="https://example.org/semaine13/numpy/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="NumPy OLD :: 420-SN1-RE">
+    <meta property="og:description" content="Qu’est-ce que NumPy? NumPy, ou Numerical Python, est une bibliothèque essentielle pour le calcul scientifique en Python. Elle permet de travailler efficacement avec des tableaux multidimensionnels et offre une large gamme de fonctions mathématiques pour effectuer des opérations sur ces tableaux.
+NumPy permet de :
+Manipuler des données de manière efficace. Effectuer des opérations mathématiques et statistiques avancées. Travailler avec des données multidimensionnelles. Intégrer facilement avec d’autres bibliothèques et outils de data science. Utilisation de NumPy Pour commencer, vous devez importer dans votre script Python :">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="NumPy">
+    <meta itemprop="name" content="NumPy OLD :: 420-SN1-RE">
+    <meta itemprop="description" content="Qu’est-ce que NumPy? NumPy, ou Numerical Python, est une bibliothèque essentielle pour le calcul scientifique en Python. Elle permet de travailler efficacement avec des tableaux multidimensionnels et offre une large gamme de fonctions mathématiques pour effectuer des opérations sur ces tableaux.
+NumPy permet de :
+Manipuler des données de manière efficace. Effectuer des opérations mathématiques et statistiques avancées. Travailler avec des données multidimensionnelles. Intégrer facilement avec d’autres bibliothèques et outils de data science. Utilisation de NumPy Pour commencer, vous devez importer dans votre script Python :">
+    <meta itemprop="wordCount" content="1374">
+    <title>NumPy OLD :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine13/numpy/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#quest-ce-que-numpy">Qu&rsquo;est-ce que NumPy?</a></li>
+    <li><a href="#utilisation-de-numpy">Utilisation de NumPy</a></li>
+    <li><a href="#les-bases-de-numpy">Les bases de NumPy</a>
+      <ul>
+        <li><a href="#les-tableaux-numpy">Les tableaux NumPy</a></li>
+        <li><a href="#la-forme-la-taille-et-la-dimension-dun-tableau">La <strong>forme</strong>, la <strong>taille</strong> et la <strong>dimension</strong> d&rsquo;un tableau</a></li>
+        <li><a href="#accès-aux-éléments-et-découpage-slicing-du-tableau">Accès aux éléments et découpage (<em>Slicing</em>) du tableau</a></li>
+      </ul>
+    </li>
+    <li><a href="#opérations-mathématiques-et-statistiques-sur-les-tableaux">Opérations mathématiques et statistiques sur les tableaux</a>
+      <ul>
+        <li><a href="#mathématiques">Mathématiques</a></li>
+        <li><a href="#statistiques">Statistiques</a></li>
+      </ul>
+    </li>
+    <li><a href="#fonctions-diverses">Fonctions diverses</a>
+      <ul>
+        <li><a href="#1-valeurs-uniques">1. Valeurs uniques</a></li>
+        <li><a href="#2-importer-un-jeu-de-données">2. Importer un jeu de données</a></li>
+      </ul>
+    </li>
+    <li><a href="#liste-non-exhaustive-de-fonctions">Liste non exhaustive de fonctions</a></li>
+    <li><a href="#atelier">Atelier</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">NumPy</span><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">NumPy OLD</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine13/numpy2/index.html" title="NumPy (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine13/nb_aleatoires/index.html" title="Les nombres aléatoires (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine13" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="numpy-old">NumPy OLD</h1>
+
+<p><a href="#R-image-1bd6ed0fb59f028b94f36b62a2a0a670" class="lightbox-link"><img alt="NumPy" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../numpy.jpg?width=18vw" style=" height: auto; width: 18vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1bd6ed0fb59f028b94f36b62a2a0a670"><img alt="NumPy" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../numpy.jpg?width=18vw"></a></p>
+<h2 id="quest-ce-que-numpy">Qu&rsquo;est-ce que NumPy?</h2>
+<p>NumPy, ou <em>Numerical Python</em>, est une bibliothèque essentielle pour le calcul scientifique en Python. Elle permet de travailler efficacement avec des tableaux multidimensionnels et offre une large gamme de fonctions mathématiques pour effectuer des opérations sur ces tableaux.</p>
+<p>NumPy permet de :</p>
+<ul>
+<li>Manipuler des données de manière efficace.</li>
+<li>Effectuer des opérations mathématiques et statistiques avancées.</li>
+<li>Travailler avec des données multidimensionnelles.</li>
+<li>Intégrer facilement avec d&rsquo;autres bibliothèques et outils de data science.</li>
+</ul>
+<h2 id="utilisation-de-numpy">Utilisation de NumPy</h2>
+<p>Pour commencer, vous devez importer dans votre script Python :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np</span></span></code></pre></div>
+<p>Pour vérifier que NumPy est bien installé sur votre environnement :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Version de NumPy</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>__version__</span></span></code></pre></div>
+<p>Vous devriez voir la version installée sous la forme de 1.XX.X. Si tel n’est pas le cas, il faudra installer Numpy comme ceci :</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>pip install numpy</code></pre></div>
+<h2 id="les-bases-de-numpy">Les bases de NumPy</h2>
+<h3 id="les-tableaux-numpy">Les tableaux NumPy</h3>
+<p>Un tableau NumPy (ou <code>ndarray</code> pour <em>n-dimensional array</em>) est une grille de valeurs, toutes du même type, et est indexée par un tuple de nombres non négatifs.
+Les dimensions d&rsquo;un tableau sont appelées axes.</p>
+<p>Tout comme nous avons créé des listes en Python, il est possible de créer des tableaux avec Numpy. La différence réside dans la rapidité de traitement lorsqu&rsquo;il s&rsquo;agit de travailler avec des données en grande quantité.
+En effet, Numpy a été développé de sorte que les calculs soient plus rapides.</p>
+<p>Ici, nous allons manipuler des tableaux à 1 et 2 dimensions.</p>
+<h4 id="création-de-tableaux">Création de tableaux</h4>
+<p><strong>Tableau à 1 dimension : np.array()</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Tableau à une dimension</span>
+</span></span><span style="display:flex;"><span>tab_1d <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">8</span>])
+</span></span><span style="display:flex;"><span>print(tab_1d)</span></span></code></pre></div>
+<p><a href="#R-image-6e8bf131c0a3fb09f2eefd7449d072c6" class="lightbox-link"><img alt="Tab 1D" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../tab_1d.JPG" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6e8bf131c0a3fb09f2eefd7449d072c6"><img alt="Tab 1D" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../tab_1d.JPG"></a></p>
+<p><strong>Tableau à 2 dimensions : np.array()</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Tableau à deux dimension</span>
+</span></span><span style="display:flex;"><span>tab_2d <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([[<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">8</span>],[<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>][<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">1</span>]])
+</span></span><span style="display:flex;"><span>print(tab_2d)</span></span></code></pre></div>
+<p><a href="#R-image-1c4e2748d6a68e95a43d51ec30553935" class="lightbox-link"><img alt="Tab 2D" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../tab_2d.JPG" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1c4e2748d6a68e95a43d51ec30553935"><img alt="Tab 2D" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../tab_2d.JPG"></a></p>
+<p><strong>D&rsquo;autres créations de tableaux : np.array()</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># À partir d&#39;une liste</span>
+</span></span><span style="display:flex;"><span>tab_liste <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>])
+</span></span><span style="display:flex;"><span>print(tab_liste) <span style="color:#75715e"># Affiche </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tableaux de zéros et de uns</span>
+</span></span><span style="display:flex;"><span>tab_zeros <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>print(tab_zeros) <span style="color:#75715e"># Affiche</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tab_uns <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>ones((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>print(tab_uns) <span style="color:#75715e"># Affiche</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tableau vide (initialisé avec des valeurs aléatoires proches de zéro) :</span>
+</span></span><span style="display:flex;"><span>tab_vide <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>empty((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>print(tab_vide) <span style="color:#75715e"># Affiche par exemple</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tableau avec une plage de valeurs</span>
+</span></span><span style="display:flex;"><span>tab_plage <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>print(tab_plage) <span style="color:#75715e"># Affiche </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tableau avec des valeurs espacées linéairement</span>
+</span></span><span style="display:flex;"><span>tab_espace <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>print(tab_espace) <span style="color:#75715e"># Affiche</span></span></span></code></pre></div>
+<p>Vous pouvez également convertir le type de données d&rsquo;un tableau existant :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tab_converti <span style="color:#f92672">=</span> tab_liste<span style="color:#f92672">.</span>astype(np<span style="color:#f92672">.</span>float64)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Tableau converti en flottants:&#34;</span>, tab_converti) <span style="color:#75715e"># Affiche </span></span></span></code></pre></div>
+<h3 id="la-forme-la-taille-et-la-dimension-dun-tableau">La <strong>forme</strong>, la <strong>taille</strong> et la <strong>dimension</strong> d&rsquo;un tableau</h3>
+<p>Les tableaux NumPy ont plusieurs attributs importants :</p>
+<ul>
+<li><code>shape</code> : les formes du tableau.</li>
+<li><code>size</code> : le nombre total d&rsquo;éléments (taille) dans le tableau.</li>
+<li><code>ndim</code> : le nombre d&rsquo;axes (dimensions) du tableau.</li>
+</ul>
+<p>Pour connaître la forme de notre tableau :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Retourne la forme du tableau</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>shape(tab_2d) <span style="color:#75715e"># Affiche (3, 4). Notre tableau comporte 2 lignes et 4 colonnes.</span></span></span></code></pre></div>
+<p>Pour connaître la taille de notre tableau :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Retourne la forme du tableau</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>size(tab_2d) <span style="color:#75715e"># Affiche 12 comme le nombre d&#39;éléments de notre tableau</span></span></span></code></pre></div>
+<p>Pour connaître la dimension de notre tableau :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Retourne la forme du tableau</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>ndim(tab_2d) <span style="color:#75715e"># Affiche 2 comme le nombre de dimensions de notre tableau</span></span></span></code></pre></div>
+<h3 id="accès-aux-éléments-et-découpage-slicing-du-tableau">Accès aux éléments et découpage (<em>Slicing</em>) du tableau</h3>
+<p>L&rsquo;indexation et le <em>slicing</em> sont des opérations essentielles pour manipuler les tableaux NumPy.</p>
+<h4 id="1-accès-indicé">1. Accès indicé</h4>
+<p>Comme tous tableaux, il est possible d&rsquo;accéder aux éléments à l&rsquo;aide des <strong>index</strong>.</p>
+<ul>
+<li>Pour notre tableau à 1 dimension, rien de plus simple :</li>
+</ul>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Accès au premier élément</span>
+</span></span><span style="display:flex;"><span>tab_1d[<span style="color:#ae81ff">0</span>] <span style="color:#75715e"># Affiche 5</span>
+</span></span><span style="display:flex;"><span>tab_1d[<span style="color:#ae81ff">2</span>] <span style="color:#75715e"># Affiche 2</span></span></span></code></pre></div>
+<ul>
+<li>Pour notre tableau à 2 dimensions, ils existent bien plus d&rsquo;éléments à savoir :</li>
+</ul>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Accès à la première ligne</span>
+</span></span><span style="display:flex;"><span>print(tab_2d[<span style="color:#ae81ff">0</span>]) <span style="color:#75715e"># Affiche [5 4 2 8]</span></span></span></code></pre></div>
+<p>De ce fait, si je souhaite accéder à la première &ldquo;case&rdquo; de mon tableau :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Accès au premier élément de notre tableau à 2 dimensions</span>
+</span></span><span style="display:flex;"><span>print(tab_2d[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">0</span>]) <span style="color:#75715e"># Affiche 5</span></span></span></code></pre></div>
+<h4 id="2-découpage-du-tableau">2. Découpage du tableau</h4>
+<p>Il faut savoir qu&rsquo;un tableau comporte des <strong>axes</strong> (axis).</p>
+<p><a href="#R-image-c7f8f104b00a43344c787df81870153d" class="lightbox-link"><img alt="Axes tableau" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="axis.JPG" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c7f8f104b00a43344c787df81870153d"><img alt="Axes tableau" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="axis.JPG"></a></p>
+<p>Nous avons vu que lorsque nous utilisons la fonction shape(), le premier élément correspond aux lignes et le deuxième aux colonnes du tableau.
+De ce fait, l&rsquo;axe 0 correspond aux lignes et l&rsquo;axe 1 aux colonnes de mon tableau.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(tab_2d[:, <span style="color:#ae81ff">0</span>]) <span style="color:#75715e"># Affiche [5 7 8] soit la première colonne</span></span></span></code></pre></div>
+<p><a href="#R-image-cfbea3f3fdc23b5e5fc49e14d3edd09f" class="lightbox-link"><img alt="Accès colonnes" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="acces_colonne.JPG" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-cfbea3f3fdc23b5e5fc49e14d3edd09f"><img alt="Accès colonnes" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="acces_colonne.JPG"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(tab_2d[<span style="color:#ae81ff">0</span>, :]) <span style="color:#75715e"># Affiche [5 4 2 8] soit la première ligne</span></span></span></code></pre></div>
+<p><a href="#R-image-ab71672b51a1a3a4a54ceb428647e555" class="lightbox-link"><img alt="Accès lignes" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="acces_ligne.JPG" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ab71672b51a1a3a4a54ceb428647e555"><img alt="Accès lignes" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="acces_ligne.JPG"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(tab_2d[:, <span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">2</span>]) <span style="color:#75715e"># # Affiche [[5 4][7 10][8 7]]</span></span></span></code></pre></div>
+<p><a href="#R-image-d13eb8782c6056b68923cc1d344d2e3f" class="lightbox-link"><img alt="Accès multi colonnes" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="multi_colonne.JPG" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d13eb8782c6056b68923cc1d344d2e3f"><img alt="Accès multi colonnes" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="multi_colonne.JPG"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(tab_2d[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">2</span>, :]) <span style="color:#75715e"># Affiche [[5 4 2 8][7 10 3 5]]</span></span></span></code></pre></div>
+<p><a href="#R-image-f1acd0dbe25f0e682e5fa0745ed4ed66" class="lightbox-link"><img alt="Accès multi lignes" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="multi_ligne.JPG" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f1acd0dbe25f0e682e5fa0745ed4ed66"><img alt="Accès multi lignes" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="multi_ligne.JPG"></a></p>
+<h4 id="3-indexation-booléenne">3. Indexation booléenne</h4>
+<p>L&rsquo;indexation booléenne consiste à interroger notre tableau pour qu&rsquo;il nous retourne &ldquo;Vrai&rdquo; ou &ldquo;Faux&rdquo; sous la forme d&rsquo;un masque booléen. Par la suite, nous pourrons effectuer des modifications basées sur celui-ci.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(tab_2d <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">7</span>)</span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[[ <span style="color:#66d9ef">True</span>  <span style="color:#66d9ef">True</span>  <span style="color:#66d9ef">True</span> <span style="color:#66d9ef">False</span>]
+</span></span><span style="display:flex;"><span> [<span style="color:#66d9ef">False</span> <span style="color:#66d9ef">False</span>  <span style="color:#66d9ef">True</span>  <span style="color:#66d9ef">True</span>]
+</span></span><span style="display:flex;"><span> [<span style="color:#66d9ef">False</span> <span style="color:#66d9ef">False</span>  <span style="color:#66d9ef">True</span>  <span style="color:#66d9ef">True</span>]]</span></span></code></pre></div>
+<p>A partir de ce masque, je peux modifier toutes les valeurs de ce tableau qui sont inférieures à 7 et les remplacer par des valeurs égales à 3.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tab_2d[tab_2d <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">7</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>print(tab_2d)</span></span></code></pre></div>
+<p><a href="#R-image-43922c9dd56eba4889ada21c42b378c7" class="lightbox-link"><img alt="tab &lt; 7" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="test_inf_7.JPG" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-43922c9dd56eba4889ada21c42b378c7"><img alt="tab &lt; 7" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="test_inf_7.JPG"></a></p>
+<p>Il est aussi possible d&rsquo;effectuer des tests multiples.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tab_2d <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([[<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">8</span>],[<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>][<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">1</span>]])
+</span></span><span style="display:flex;"><span>tab_2d[(tab_2d <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">7</span>) <span style="color:#f92672">&amp;</span> (tab_2d <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">3</span>)] <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>print(tab_2d)</span></span></code></pre></div>
+<p><a href="#R-image-fe2b8a852ec58be13114928693f83980" class="lightbox-link"><img alt="Tab entre 3 et 7" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="test_inf7_sup3.JPG" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fe2b8a852ec58be13114928693f83980"><img alt="Tab entre 3 et 7" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="test_inf7_sup3.JPG"></a></p>
+<h2 id="opérations-mathématiques-et-statistiques-sur-les-tableaux">Opérations mathématiques et statistiques sur les tableaux</h2>
+<p>NumPy permet d&rsquo;effectuer des opérations arithmétiques et statistiques directement sur les tableaux :</p>
+<h3 id="mathématiques">Mathématiques</h3>
+<h4 id="1-somme">1. Somme</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>tab_2d <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([[<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">8</span>],[<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>][<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">1</span>]])
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>sum(tab_2d) <span style="color:#75715e"># Affiche 64</span></span></span></code></pre></div>
+<p>Il est possible de calculer la somme en fonction d&rsquo;un axe.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>sum(tab_2d, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>) <span style="color:#75715e"># Affiche [20, 21,  9, 14] soit la somme des colonnes</span></span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>sum(tab_2d, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>) <span style="color:#75715e"># Affiche [19, 25, 20] soit la somme des lignes</span></span></span></code></pre></div>
+<p>Cette technique pourra être utilisée pour les fonctions suivantes.</p>
+<h4 id="2-produit">2. Produit</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>prod(tab_2d) <span style="color:#75715e"># Affiche 75264000</span></span></span></code></pre></div>
+<h4 id="3-sinus">3. Sinus</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>sin(tab_2d)</span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[[<span style="color:#f92672">-</span><span style="color:#ae81ff">0.95892427</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">0.7568025</span> ,  <span style="color:#ae81ff">0.90929743</span>,  <span style="color:#ae81ff">0.98935825</span>],
+</span></span><span style="display:flex;"><span>[ <span style="color:#ae81ff">0.6569866</span> , <span style="color:#f92672">-</span><span style="color:#ae81ff">0.54402111</span>,  <span style="color:#ae81ff">0.14112001</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">0.95892427</span>],
+</span></span><span style="display:flex;"><span>[ <span style="color:#ae81ff">0.98935825</span>,  <span style="color:#ae81ff">0.6569866</span> , <span style="color:#f92672">-</span><span style="color:#ae81ff">0.7568025</span> ,  <span style="color:#ae81ff">0.84147098</span>]]</span></span></code></pre></div>
+<h4 id="4-exponentiel">4. Exponentiel</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>exp(tab_2d)</span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[[<span style="color:#ae81ff">1.48413159e+02</span>, <span style="color:#ae81ff">5.45981500e+01</span>, <span style="color:#ae81ff">7.38905610e+00</span>, <span style="color:#ae81ff">2.98095799e+03</span>],
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">1.09663316e+03</span>, <span style="color:#ae81ff">2.20264658e+04</span>, <span style="color:#ae81ff">2.00855369e+01</span>, <span style="color:#ae81ff">1.48413159e+02</span>],
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">2.98095799e+03</span>, <span style="color:#ae81ff">1.09663316e+03</span>, <span style="color:#ae81ff">5.45981500e+01</span>, <span style="color:#ae81ff">2.71828183e+00</span>]]</span></span></code></pre></div>
+<h3 id="statistiques">Statistiques</h3>
+<h4 id="1-moyenne">1. Moyenne</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>mean(tab_2d) <span style="color:#75715e"># Affiche 5.33</span></span></span></code></pre></div>
+<h4 id="2-médiane">2. Médiane</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>median(tab_2d) <span style="color:#75715e"># Affiche 5</span></span></span></code></pre></div>
+<h4 id="3-variance">3. Variance</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>var(tab_2d) <span style="color:#75715e"># Affiche 6.722222222222222</span></span></span></code></pre></div>
+<h4 id="4-ecart-type">4. Ecart type</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>std(tab_2d) <span style="color:#75715e"># Affiche 2.592724864350674</span></span></span></code></pre></div>
+<h4 id="5-coefficient-de-corrélation">5. Coefficient de corrélation</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>mean(tab_2d)</span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[[ <span style="color:#ae81ff">1.</span>        ,  <span style="color:#ae81ff">0.1004662</span> , <span style="color:#f92672">-</span><span style="color:#ae81ff">0.46380072</span>],
+</span></span><span style="display:flex;"><span>[ <span style="color:#ae81ff">0.1004662</span> ,  <span style="color:#ae81ff">1.</span>        ,  <span style="color:#ae81ff">0.63540406</span>],
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">-</span><span style="color:#ae81ff">0.46380072</span>,  <span style="color:#ae81ff">0.63540406</span>,  <span style="color:#ae81ff">1.</span>        ]]</span></span></code></pre></div>
+<h2 id="fonctions-diverses">Fonctions diverses</h2>
+<h3 id="1-valeurs-uniques">1. Valeurs uniques</h3>
+<p>La fonction suivante permet de retourner les valeurs uniques de notre tableaux et de compter le nombre d&rsquo;occurrences de ces valeurs.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>np<span style="color:#f92672">.</span>unique(tab_2d, return_counts<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)</span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>array([ <span style="color:#ae81ff">1</span>,  <span style="color:#ae81ff">2</span>,  <span style="color:#ae81ff">3</span>,  <span style="color:#ae81ff">4</span>,  <span style="color:#ae81ff">5</span>,  <span style="color:#ae81ff">7</span>,  <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">10</span>]),
+</span></span><span style="display:flex;"><span>array([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>], dtype<span style="color:#f92672">=</span>int64)</span></span></code></pre></div>
+<h3 id="2-importer-un-jeu-de-données">2. Importer un jeu de données</h3>
+<p>Dans la majorité des cas, vous travaillerez avec des données qui vous seront fournies.
+Ils existent des fonctions qui vous permettent de charger ces données.</p>
+<p>Voici un exemple avec un fichier contenant des données météo très simplifiées réparties sur 7 jours.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>data <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>loadtxt(<span style="color:#e6db74">&#34;data.csv&#34;</span>, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;,&#39;</span>, skiprows<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>print(data)</span></span></code></pre></div>
+<p>Les arguments à passer sont :</p>
+<ul>
+<li>le nom du fichier</li>
+<li>le délimiteur (à vérifier en ouvrant votre fichier)</li>
+<li>étant donné que notre première ligne est composée de caractère, nous faisons abstraction de celle-ci. Numpy ne prend pas en charge la gestion des données numériques.</li>
+</ul>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[[ <span style="color:#ae81ff">1</span>  <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">10</span>]
+</span></span><span style="display:flex;"><span> [ <span style="color:#ae81ff">2</span>  <span style="color:#ae81ff">0</span>  <span style="color:#ae81ff">8</span>]
+</span></span><span style="display:flex;"><span> [ <span style="color:#ae81ff">3</span>  <span style="color:#ae81ff">5</span>  <span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span> [ <span style="color:#ae81ff">4</span>  <span style="color:#ae81ff">2</span>  <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span> [ <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">10</span>  <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span> [ <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">50</span>  <span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span> [ <span style="color:#ae81ff">7</span>  <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">10</span>]]</span></span></code></pre></div>
+<p>Nous retrouvons notre tableau à deux dimensions avec les données chargées dans notre variable data.</p>
+<h2 id="liste-non-exhaustive-de-fonctions">Liste non exhaustive de fonctions</h2>
+<p>Numpy est doté d&rsquo;une grande quantité de fonction permettant de gérer des tableaux.</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Fonctions</th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>array()</code></td>
+          <td style="text-align: left">Crée un tableau</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>shape()</code></td>
+          <td style="text-align: left">Retourne la forme du tableau</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>ndim()</code></td>
+          <td style="text-align: left">Retourne le nombre de dimension du tableau</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>size()</code></td>
+          <td style="text-align: left">Retourne le nombre d&rsquo;éléments dans le tableau</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>zeros()</code></td>
+          <td style="text-align: left">Crée un tableau composé uniquement de 0</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>ones()</code></td>
+          <td style="text-align: left">Crée un tableau composé uniquement de 1</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>arange()</code></td>
+          <td style="text-align: left">Génère un tableau avec une suite de nombre en fonction du pas saisi</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>linspace()</code></td>
+          <td style="text-align: left">Génère un tableau avec une suite de nombre en fonction de la quantité saisie</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>random.randn()</code></td>
+          <td style="text-align: left">Génère un tableau avec des nombres basés sur la loi normale centrée réduite</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>sum()</code></td>
+          <td style="text-align: left">Retourne la somme</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>prod()</code></td>
+          <td style="text-align: left">Retourne le produit</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>mean()</code></td>
+          <td style="text-align: left">Retourne la moyenne</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>median()</code></td>
+          <td style="text-align: left">Retourne la médiane</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>var()</code></td>
+          <td style="text-align: left">Retourne la variance</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>std()</code></td>
+          <td style="text-align: left">Retourne l&rsquo;écart type</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>corrcoef()</code></td>
+          <td style="text-align: left">Retourne la corrélation entre les différentes variables</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>sort()</code></td>
+          <td style="text-align: left">Tri le tableau</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>min()</code></td>
+          <td style="text-align: left">Retourne la valeur minimum</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>max()</code></td>
+          <td style="text-align: left">Retourne la valeur maximum</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>argmin()</code></td>
+          <td style="text-align: left">Retourne l&rsquo;indice de la valeur minimum</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>argmax()</code></td>
+          <td style="text-align: left">Retourne l&rsquo;indice de la valeur maximum</td>
+      </tr>
+  </tbody>
+</table>
+<p>Pour plus de fonctions : <a href="https://numpy.org/doc/stable/index.html" rel="external" target="_blank" title="Numpy">Site officiel Numpy</a>.</p>
+<h2 id="atelier">Atelier</h2>
+<p><a href="../atelier-numpy.ipynb">La bibliothèque NumPy</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/semaine13/numpy/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="La boucle FOR Info La boucle for est utilisée pour itérer sur une séquence d’éléments, comme une liste, une chaîne de caractères, ou un tuple.
+Elle s’utilise, lorsque le nombre d’itérations (répétitions) est connu d’avance.
+La syntaxe de base est la suivante :
+for element in sequence: # bloc de code à exécuter Exemple simple :">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="La boucle for et la fonction range :: 420-SN1-RE">
+    <meta name="twitter:description" content="La boucle FOR Info La boucle for est utilisée pour itérer sur une séquence d’éléments, comme une liste, une chaîne de caractères, ou un tuple.
+Elle s’utilise, lorsque le nombre d’itérations (répétitions) est connu d’avance.
+La syntaxe de base est la suivante :
+for element in sequence: # bloc de code à exécuter Exemple simple :">
+    <meta property="og:url" content="https://example.org/semaine5/for/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="La boucle for et la fonction range :: 420-SN1-RE">
+    <meta property="og:description" content="La boucle FOR Info La boucle for est utilisée pour itérer sur une séquence d’éléments, comme une liste, une chaîne de caractères, ou un tuple.
+Elle s’utilise, lorsque le nombre d’itérations (répétitions) est connu d’avance.
+La syntaxe de base est la suivante :
+for element in sequence: # bloc de code à exécuter Exemple simple :">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Structures répétitives">
+    <meta itemprop="name" content="La boucle for et la fonction range :: 420-SN1-RE">
+    <meta itemprop="description" content="La boucle FOR Info La boucle for est utilisée pour itérer sur une séquence d’éléments, comme une liste, une chaîne de caractères, ou un tuple.
+Elle s’utilise, lorsque le nombre d’itérations (répétitions) est connu d’avance.
+La syntaxe de base est la suivante :
+for element in sequence: # bloc de code à exécuter Exemple simple :">
+    <meta itemprop="wordCount" content="727">
+    <title>La boucle for et la fonction range :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine5/for/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#la-boucle-for">La boucle FOR</a></li>
+    <li><a href="#utilisation-avec-des-listes-et-des-chaînes-de-caractères">Utilisation avec des listes et des chaînes de caractères</a></li>
+    <li><a href="#la-fonction-range">La fonction RANGE()</a>
+      <ul>
+        <li><a href="#le-nombre-darguments-de-la-fonction-range">Le nombre d&rsquo;arguments de la fonction RANGE</a></li>
+        <li><a href="#boucle-for-dans-un-ordinogramme">Boucle FOR dans un ordinogramme</a></li>
+      </ul>
+    </li>
+    <li><a href="#les-boucles-imbriquées">Les boucles imbriquées</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/semaine5/index.html"><span itemprop="name">Structures répétitives</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">La boucle for et la fonction range</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine5/while/index.html" title="La boucle while (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine5/controle/index.html" title="Le contrôle des boucles (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine5" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="la-boucle-for-et-la-fonction-range">La boucle for et la fonction range</h1>
+
+<p><a href="#R-image-447ee59630de5e370cf191ec9f209c5c" class="lightbox-link"><img alt="Boucle for" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../boucle-for.jpeg?width=20vw" style=" height: auto; width: 20vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-447ee59630de5e370cf191ec9f209c5c"><img alt="Boucle for" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../boucle-for.jpeg?width=20vw"></a></p>
+<h2 id="la-boucle-for">La boucle FOR</h2>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Info
+  </div>
+  <div class="box-content">
+<p>La boucle <code>for</code> est utilisée pour itérer sur une séquence d&rsquo;éléments, comme une liste, une chaîne de caractères, ou un tuple.<br>
+Elle s&rsquo;utilise, lorsque le nombre d&rsquo;<strong>itérations</strong> (répétitions) est connu d&rsquo;avance.</p>
+  </div>
+</div>
+<p>La syntaxe de base est la suivante :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> sequence:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># bloc de code à exécuter</span></span></span></code></pre></div>
+<p><strong>Exemple simple :</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>liste_nombres <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> nombre <span style="color:#f92672">in</span> liste_nombres:
+</span></span><span style="display:flex;"><span>    print(nombre)</span></span></code></pre></div>
+<p>Dans cet exemple, chaque élément représenté par la variable <code>nombre</code> de la <code>liste_nombres</code> est affiché à l&rsquo;écran.</p>
+<p><strong>Voici comment cela fonctionne</strong>:</p>
+<ul>
+<li>la boucle <code>for</code> commence par prendre le premier élément de la liste et exécute le bloc de code indenté qui suit.</li>
+<li>Après avoir exécuté le bloc de code pour cet élément, elle passe au suivant, et ainsi de suite, jusqu&rsquo;à ce qu&rsquo;elle ait parcouru tous les éléments de la séquence.</li>
+</ul>
+<p><strong>Résultat:</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>1
+</span></span><span style="display:flex;"><span>2
+</span></span><span style="display:flex;"><span>3
+</span></span><span style="display:flex;"><span>4
+</span></span><span style="display:flex;"><span>5</span></span></code></pre></div>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Info
+  </div>
+  <div class="box-content">
+<p>Nous étudierons ces types de séquences dans ce cours, en commençant par les listes, dès la semaine prochaine.</p>
+  </div>
+</div>
+<h2 id="utilisation-avec-des-listes-et-des-chaînes-de-caractères">Utilisation avec des listes et des chaînes de caractères</h2>
+<p>La boucle <code>for</code> est particulièrement utile pour parcourir des listes et des chaînes de caractères.</p>
+<p><strong>Parcourir une liste :</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>fruits <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;pomme&#34;</span>, <span style="color:#e6db74">&#34;banane&#34;</span>, <span style="color:#e6db74">&#34;cerise&#34;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> fruit <span style="color:#f92672">in</span> fruits:
+</span></span><span style="display:flex;"><span>    print(fruit)</span></span></code></pre></div>
+<p><strong>Parcourir une chaîne de caractères :</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>mot <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Python&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> lettre <span style="color:#f92672">in</span> mot:
+</span></span><span style="display:flex;"><span>    print(lettre)</span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>P
+</span></span><span style="display:flex;"><span>y
+</span></span><span style="display:flex;"><span>t
+</span></span><span style="display:flex;"><span>h
+</span></span><span style="display:flex;"><span>o
+</span></span><span style="display:flex;"><span>n</span></span></code></pre></div>
+<h2 id="la-fonction-range">La fonction RANGE()</h2>
+<p>La fonction <code>range()</code> génère une séquence de nombres entiers (pas de flottants), ce qui est très utile pour les boucles <code>for</code>.
+<code>range(n)</code> génèra <code>n-1</code> entiers en commençant par 0. Exemple, si n = 3, <code>range(n)</code> donnera 0, 1, 2.
+Une instruction <code>for</code> est toujours de la forme:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> variable<span style="color:#f92672">-</span>de<span style="color:#f92672">-</span>controle <span style="color:#f92672">in</span> iterable :</span></span></code></pre></div>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Définition
+  </div>
+  <div class="box-content">
+<p>Un <strong>itérable</strong> est un objet ou une structure de données sur lequel on peut parcourir ou répéter des actions.
+Imaginez une liste de courses : vous pouvez passer en revue <strong>chaque élément un par un</strong>.
+De la même manière, en programmation, un <strong>itérable</strong> permet de traiter chaque élément de manière séquentielle, comme une liste, un tableau, etc..</p>
+  </div>
+</div>
+<p>La fonction <code>range()</code> est un <strong>itérable</strong>, dans le sens qu&rsquo;elle génère une séquence de nombres.</p>
+<p><strong>Générer des séquences de nombres (entiers):</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>):
+</span></span><span style="display:flex;"><span>    print(i)</span></span></code></pre></div>
+<p>Cela affichera les nombres de 0 à 4. <code>range(5)</code> génère la séquence de 5 entiers suivants: 0, 1, 2, 3, 4</p>
+<h3 id="le-nombre-darguments-de-la-fonction-range">Le nombre d&rsquo;arguments de la fonction RANGE</h3>
+<p>La fonction <code>range()</code> peut accepter un, deux ou trois arguments, selon les besoins.</p>
+<p>Voici un aperçu des différents cas où <code>range()</code> peut accepter plus d&rsquo;un argument :</p>
+<ol>
+<li><strong>Deux arguments :</strong></li>
+</ol>
+<ul>
+<li>
+<p>Lorsque <code>range()</code> accepte deux arguments, ils représentent le <strong>début</strong> et la <strong>fin</strong> de la séquence.
+Par exemple, <code>range(3, 10)</code> génère une séquence de nombres commençant à 3 et se terminant juste avant 10 (c&rsquo;est-à-dire 3, 4, 5, 6, 7, 8, 9).</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">10</span>):
+</span></span><span style="display:flex;"><span>    print(i)</span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>3
+</span></span><span style="display:flex;"><span>4
+</span></span><span style="display:flex;"><span>5
+</span></span><span style="display:flex;"><span>6
+</span></span><span style="display:flex;"><span>7
+</span></span><span style="display:flex;"><span>8
+</span></span><span style="display:flex;"><span>9</span></span></code></pre></div>
+</li>
+</ul>
+<ol start="2">
+<li>
+<p><strong>Trois arguments :</strong>
+Avec trois arguments, le premier représente le début de la séquence, le deuxième la fin, et le troisième le pas (ou l&rsquo;incrément). Par exemple, <code>range(3, 10, 2)</code> génère une séquence de nombres commençant à 3, se terminant juste avant 10, avec un pas de 2 (c&rsquo;est-à-dire 3, 5, 7, 9).</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>):
+</span></span><span style="display:flex;"><span>    print(i)</span></span></code></pre></div>
+</li>
+</ol>
+<div class="box notices cstyle tip">
+  <div class="box-label">
+    <i class="fa-fw fas fa-lightbulb"></i> Astuce
+  </div>
+  <div class="box-content">
+<p>De manière générale, pour générer une séquence croissante d&rsquo;entiers consécutifs dont le premier terme est <strong>debut</strong> et le dernier terme est <strong>fin</strong>, on peut écrire:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>debut <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>fin <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(debut,fin<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>   print(i, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affiche</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span><span style="color:#f92672">-</span><span style="color:#ae81ff">4</span><span style="color:#f92672">-</span><span style="color:#ae81ff">5</span><span style="color:#f92672">-</span><span style="color:#ae81ff">6</span><span style="color:#f92672">-</span><span style="color:#ae81ff">7</span><span style="color:#f92672">-</span><span style="color:#ae81ff">8</span><span style="color:#f92672">-</span><span style="color:#ae81ff">9</span><span style="color:#f92672">-</span><span style="color:#ae81ff">10</span></span></span></code></pre></div>
+  </div>
+</div>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Info
+  </div>
+  <div class="box-content">
+<p>Nous verrons les fonctions <code>arrange()</code> et <code>linespace()</code> dans le cours sur la <a href="/semaine13/numpy/index.html">bibliothèque NumPy</a>.</p>
+  </div>
+</div>
+<h3 id="boucle-for-dans-un-ordinogramme">Boucle FOR dans un ordinogramme</h3>
+<p>Dans un ordinogramme, une boucle <code>for</code> est représentée par un rectangle qui contient la condition de la boucle, avec une flèche qui boucle vers l&rsquo;arrière pour indiquer la répétition.</p>
+<p><a href="#R-image-904a37c493f717ee2906397471f1b8c6" class="lightbox-link"><img alt="Ordinogramme FOR" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../ordino-boucle-FOR.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-904a37c493f717ee2906397471f1b8c6"><img alt="Ordinogramme FOR" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../ordino-boucle-FOR.png?width=35vw"></a></p>
+<h2 id="les-boucles-imbriquées">Les boucles imbriquées</h2>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Définition
+  </div>
+  <div class="box-content">
+<p>Les <strong>boucles imbriquées</strong> sont des boucles à l&rsquo;intérieur d&rsquo;autres boucles.
+Elles sont utiles pour travailler avec des structures de données multidimensionnelles.</p>
+  </div>
+</div>
+<p><strong>Exemple :</strong></p>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Info
+  </div>
+  <div class="box-content">
+<p>Nous verrons les tableaux 1D dans le cours sur la <a href="/semaine13/numpy/index.html">bibliothèque NumPy</a>.</p>
+  </div>
+</div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Tableau 2D</span>
+</span></span><span style="display:flex;"><span>tableau <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>],
+</span></span><span style="display:flex;"><span>    [<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>]
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Pour chaque ligne du tableau</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> tableau:
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e"># Pour chaque élément de la ligne</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> ligne:
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e"># Affiche l&#39;élément</span>
+</span></span><span style="display:flex;"><span>        	print(element, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34; &#34;</span>)</span></span></code></pre></div>
+<p>Cet exemple parcourt chaque élément d&rsquo;un tableau 2D et les affiche ainsi:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">6</span> <span style="color:#ae81ff">7</span> <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">9</span> </span></span></code></pre></div>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine5/boucles/index.html"><a class="padding" href="/semaine5/boucles/index.html">Les instructions répétitives</a></li>
+            <li class="" data-nav-id="/semaine5/while/index.html"><a class="padding" href="/semaine5/while/index.html">La boucle while</a></li>
+            <li class="active " data-nav-id="/semaine5/for/index.html"><a class="padding" href="/semaine5/for/index.html">La boucle for et la fonction range</a></li>
+            <li class="" data-nav-id="/semaine5/controle/index.html"><a class="padding" href="/semaine5/controle/index.html">Le contrôle des boucles</a></li>
+            <li class="" data-nav-id="/semaine5/ateliers/index.html"><a class="padding" href="/semaine5/ateliers/index.html">ATELIERS</a></li>
+            <li class="" data-nav-id="/semaine5/pour-le-prochain-cours/index.html"><a class="padding" href="/semaine5/pour-le-prochain-cours/index.html">Pour le prochain cours</a></li></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/semaine5/for/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+## Exercice 6 : Générer une liste Python de tous les nombres pairs entre 4 et 30
+
+**Résultat attendu :**
+
+```
+[4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
+```
+
+**Indice :**
+
+- Utilisez la fonction intégrée `range()` pour générer la séquence de nombres entre le nombre de départ donné et le nombre d'arrêt avec un pas de 2 pour obtenir des nombres pairs. 
+- Passez la fonction `range()` à un constructeur de liste pour créer une liste.
+
+
+## Exercice 7 : Trouver l'élément le plus grand d'une liste donnée
+
+```python
+x = [4, 6, 8, 24, 12, 2]
+```
+
+**Résultat attendu :**
+
+```
+24
+```
+
+**Indice :**
+
+- Utilisez la fonction intégrée `max()` pour obtenir le plus grand nombre d'une liste.

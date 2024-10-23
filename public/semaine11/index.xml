@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pandas et présentation du projet final :: 420-SN1-RE</title>
+    <link>https://example.org/semaine11/index.html</link>
+    <description>Objectifs de la leçon Comprendre la structure de données DataFrame. Apprendre à créer et manipuler des dataframes. Savoir importer et exporter des données de fichiers CSV avec Pandas. Réaliser des analyses de données simples. Plan de la leçon Quiz: Pas cette semaine La bibliothèque Pandas Extraction des données de fichiers CSV. Création de Series et de DataFrames. Accès aux données d’un DataFrame. Pause 5 mins Ajout, suppression et renommage de colonnes. Sélection et filtrage de données. Calcul de statistiques descriptives. Conversion d’un DataFrame en liste et modification des valeurs manquantes Pause 5 mins Présentation du Projet Final (Partie 1) - À VENIR Atelier Pour la semaine prochaine</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine11/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction à Pandas</title>
+      <link>https://example.org/semaine11/pandas/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine11/pandas/index.html</guid>
+      <description>Qu’est-ce que pandas ? Pandas est une bibliothèque Python puissante et flexible utilisée pour la manipulation et l’analyse de données. Elle est particulièrement utile pour les scientifiques qui travaillent avec de grandes quantités de données.&#xA;Installation de pandas Avant de commencer, assurez-vous d’avoir pandas installé. Vous pouvez l’installer via pip :&#xA;pip install pandas Importation de pandas Pour utiliser pandas, vous devez d’abord l’importer dans votre script Python :</description>
+    </item>
+    <item>
+      <title>Projet final</title>
+      <link>https://example.org/semaine11/projet/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine11/projet/index.html</guid>
+      <description>Présentation du projet - Étape 1 - À VENIR&#xA;Présentation du projet - Étape 2 - À VENIR&#xA;Présentation du projet - Étape 3 - À VENIR&#xA;Présentation du projet - Étape 4 - À VENIR</description>
+    </item>
+    <item>
+      <title>ATELIERS</title>
+      <link>https://example.org/semaine11/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine11/atelier/index.html</guid>
+      <description>La bibliothèque Pandas&#xA;Fichier iris.csv</description>
+    </item>
+  </channel>
+</rss>

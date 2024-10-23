@@ -1,0 +1,63 @@
+Full-featured Code Editor
+Pythonista's professional code editor provides syntax highlighting, smart code completion, and an extended on-screen keyboard specifically designed for Python.
+
+A convenient outline view allows you to navigate your scripts efficiently, and multiple tabs make it easy to work on larger projects.
+
+
+===
+
+Powerful Interactive Prompt
+When you want to quickly try a snippet of code or perform an ad-hoc calculation, the interactive prompt is always just a swipe away. You can also use it to inspect the results of your scripts interactively.
+
+The console also provides support for showing images and plots when working with the included matplotlib and PIL (Python Imaging Library) modules.
+
+===
+
+Graphics and Multi-Touch
+Pythonista comes with easy-to-use libraries for 2D graphics, multitouch and sound effects. You can even use the accelerometer to create motion-controlled games or interactive experiments.
+
+Lots of ready-to-run examples are included, so you can get started right away.
+
+===
+
+Batteries Included
+In addition to the powerful Python standard library, Pythonista includes several modules specifically designed for iOS.
+
+You can write automation scripts with access to data from the clipboard, your contacts, reminders, and photos. You can also use your device's motion sensors and geo-location data, and Pythonista is probably the easiest way to experiment with Twitter APIs.
+
+And if something's not covered yet, you can even access native Objective-C APIs from Python.
+
+===
+
+NumPy and MatPlotLib
+Pythonista includes the powerful NumPy and matplotlib packages for scientific computation and data visualization.
+
+Plots are shown directly in the console output, and you can easily save them to your photo library, or tap to zoom in.
+
+===
+
+Extended Keyboard and Snippets
+The keyboard has been designed specifically for Python and includes common special characters. Of course there's also full support for external keyboards, including lots of convenient shortcuts.
+
+With the new snippet system in 3.0, you can insert frequently-used blocks of code much more quickly.
+
+Color Themes
+A variety of tasteful light and dark color themes allow you to customize the editor's UI and syntax highlighting. New in version 3.0, you can even create your own themes.
+
+===
+
+UI Editor
+With the integrated UI Editor, you can create user interfaces for your scripts without writing any code.
+
+===
+
+Complete Documentation
+You can read the entire Python documentation within the app — no internet connection required. Context-sensitive help is also available directly from the code editor.
+
+===
+
+Universal App
+Pythonista is a universal app that runs on iPad, iPhone, and iPod touch with just one purchase (and no in-app purchases).
+
+===
+

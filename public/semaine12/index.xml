@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matplotlib :: 420-SN1-RE</title>
+    <link>https://example.org/semaine12/index.html</link>
+    <description>Objectifs de la leçon Comprendre les bases de la bibliothèque Matplotlib. Apprendre à créer des graphiques simples et personnalisés. Interpréter les résultats de graphiques pour des applications en sciences. Plan de la leçon Quiz: Bibliothèque Pandas (10 mins) La création et la personnalisation de graphiques simples. Traçage de graphiques en ligne Ajout d’éléments de graphique (titres, légendes, marqueurs, etc.) Pause 5 mins Les sous graphiques et les graphiques multiples La sauvegarde d’un graphique en format image (png) Les types de graphiques Pause 5 mins Ateliers Pour la semaine prochaine</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine12/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Matpotlib</title>
+      <link>https://example.org/semaine12/matplotlib/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine12/matplotlib/index.html</guid>
+      <description>Matplotlib est une bibliothèque de visualisation de données en Python qui permet de créer une grande variété de graphiques.&#xA;Installation de Matplotlib (déjà fait sur les ordinateurs du cégep) Avant de commencer, assurez vous d’avoir Matplotlib installé. Vous pouvez l’installer via pip :&#xA;pip install matplotlib Importation de Matplotlib Pour utiliser Matplotlib, vous devez en premier l’importer dans votre code.</description>
+    </item>
+    <item>
+      <title>ATELIERS</title>
+      <link>https://example.org/semaine12/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine12/atelier/index.html</guid>
+      <description>La bibliothèque Matplotlib&#xA;Fichier ventes.csv</description>
+    </item>
+  </channel>
+</rss>

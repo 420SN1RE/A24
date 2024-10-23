@@ -1,0 +1,188 @@
+<mxfile host="65bd71144e" pages="4">
+    <diagram name="Page-1" id="5eX4Q030cal43u4tE9cf">
+        <mxGraphModel dx="772" dy="374" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="DÉBUT" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="269" y="20" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="FIN" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="269" y="535" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="16">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="329" y="80" as="sourcePoint"/>
+                        <mxPoint x="329" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="16" target="10">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="329" y="190" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="10" target="12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="LIRE tempFarenheit" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="259" y="220" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="12" target="17">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="329" y="460" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="CALCULER tempCelsius = (tempFarenheit - 32) * 5 / 9" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="251.5" y="320" width="155" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="17" target="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="329" y="530" as="sourcePoint"/>
+                        <mxPoint x="329" y="560" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="AFFICHER &quot;Veuillez saisir une température en Fahrenheit :&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="224" y="120" width="210" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="AFFICHER &quot;La température en Celsius est : &quot;&lt;br&gt;tempCelsius&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22AFFICHER%20%26quot%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-size%3A11.0pt%3Bline-height%3A107%25%3B%26lt%3Bbr%2F%26gt%3Bfont-family%3A%26amp%3Bquot%3BCalibri%26amp%3Bquot%3B%2Csans-serif%3Bmso-ascii-theme-font%3Aminor-latin%3Bmso-fareast-font-family%3A%26lt%3Bbr%2F%26gt%3BCalibri%3Bmso-fareast-theme-font%3Aminor-latin%3Bmso-hansi-theme-font%3Aminor-latin%3B%26lt%3Bbr%2F%26gt%3Bmso-bidi-theme-font%3Aminor-latin%3Bmso-ansi-language%3AFR-CA%3Bmso-fareast-language%3A%26lt%3Bbr%2F%26gt%3BEN-US%3Bmso-bidi-language%3AAR-SA%26quot%3B%26gt%3BVeuillez%20saisir%20une%20temp%C3%A9rature%20en%20Fahrenheit%20%3A%26lt%3B%2Fspan%26gt%3B%26quot%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22115%22%20y%3D%22140%22%20width%3D%22150%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="204" y="430" width="250" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="BtFexejdZ64q9sORLQ9k" name="Page-2">
+        <mxGraphModel dx="1034" dy="458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="m4159YTi05dSgR7cBVEY-1" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m4159YTi05dSgR7cBVEY-2" target="m4159YTi05dSgR7cBVEY-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-2" value="DÉBUT" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-3" value="FIN" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="890" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-4" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m4159YTi05dSgR7cBVEY-5" target="m4159YTi05dSgR7cBVEY-7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-5" value="AFFICHER &quot;Veuillez saisir la longueur du rectangle&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="230" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-6" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m4159YTi05dSgR7cBVEY-7" target="m4159YTi05dSgR7cBVEY-9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-7" value="LIRE longueur" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="330" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-8" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m4159YTi05dSgR7cBVEY-9" target="m4159YTi05dSgR7cBVEY-11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-9" value="AFFICHER &quot;Veuillez saisir la largeur du rectangle&quot;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="440" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-10" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m4159YTi05dSgR7cBVEY-11" target="m4159YTi05dSgR7cBVEY-13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-11" value="LIRE largeur" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="550" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-12" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="m4159YTi05dSgR7cBVEY-13" target="m4159YTi05dSgR7cBVEY-15">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-13" value="CALCULER aire = longueur x largeur" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="670" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-14" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="m4159YTi05dSgR7cBVEY-15" target="m4159YTi05dSgR7cBVEY-3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4159YTi05dSgR7cBVEY-15" value="AFFICHER &quot;L'aire du rectangle est: &quot; aire" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="790" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="sdB3q6RiLR2rOzRtmzpr" name="Page-3">
+        <mxGraphModel dx="392" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="srWkxfmoEyLZCl1tzg56-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1Uzi8sGTm2Drs4TYPaYb-1" target="srWkxfmoEyLZCl1tzg56-1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1Uzi8sGTm2Drs4TYPaYb-1" value="DÉBUT" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="srWkxfmoEyLZCl1tzg56-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="1Uzi8sGTm2Drs4TYPaYb-2" target="srWkxfmoEyLZCl1tzg56-2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="1Uzi8sGTm2Drs4TYPaYb-2" value="LIRE rayon" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="270" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="srWkxfmoEyLZCl1tzg56-1" value="AFFICHER &quot;&lt;span style=&quot;font-size: 11pt; line-height: 15.6933px;&quot;&gt;Veuillez saisir le rayon du cercle :&lt;/span&gt;&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="160" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="srWkxfmoEyLZCl1tzg56-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="srWkxfmoEyLZCl1tzg56-2" target="srWkxfmoEyLZCl1tzg56-3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="srWkxfmoEyLZCl1tzg56-2" value="CALCULER circonference = 2 * PI * rayon" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="370" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="srWkxfmoEyLZCl1tzg56-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="srWkxfmoEyLZCl1tzg56-3" target="srWkxfmoEyLZCl1tzg56-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="srWkxfmoEyLZCl1tzg56-3" value="AFFICHER &quot;&lt;span style=&quot;font-size:11.0pt;line-height:107%;&lt;br/&gt;font-family:&amp;quot;Calibri&amp;quot;,sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:&lt;br/&gt;Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;&lt;br/&gt;mso-bidi-theme-font:minor-latin;mso-ansi-language:FR-CA;mso-fareast-language:&lt;br/&gt;EN-US;mso-bidi-language:AR-SA&quot;&gt;La circonférence du cercle est : &quot;&lt;br/&gt;circonference&lt;/span&gt;&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="75" y="470" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="srWkxfmoEyLZCl1tzg56-5" value="FIN" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="585" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="srWkxfmoEyLZCl1tzg56-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.558;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="srWkxfmoEyLZCl1tzg56-1" target="1Uzi8sGTm2Drs4TYPaYb-2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="1wRHwCY2B2gN1H9mx7yu" name="Page-4">
+        <mxGraphModel dx="392" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6Qdc_yV_WzYwVpa7C919-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6Qdc_yV_WzYwVpa7C919-1" target="6Qdc_yV_WzYwVpa7C919-2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6Qdc_yV_WzYwVpa7C919-1" value="DÉBUT" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="30" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6Qdc_yV_WzYwVpa7C919-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="6Qdc_yV_WzYwVpa7C919-2" target="6Qdc_yV_WzYwVpa7C919-3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6Qdc_yV_WzYwVpa7C919-2" value="AFFICHER &quot;&lt;span style=&quot;font-size:11.0pt;line-height:107%;&lt;br/&gt;font-family:&amp;quot;Calibri&amp;quot;,sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:&lt;br/&gt;Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;&lt;br/&gt;mso-bidi-theme-font:minor-latin;mso-ansi-language:FR-CA;mso-fareast-language:&lt;br/&gt;EN-US;mso-bidi-language:AR-SA&quot;&gt;Veuillez saisir une température en Fahrenheit :&lt;/span&gt;&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="115" y="140" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6Qdc_yV_WzYwVpa7C919-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6Qdc_yV_WzYwVpa7C919-3" target="6Qdc_yV_WzYwVpa7C919-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6Qdc_yV_WzYwVpa7C919-3" value="LIRE tempFarenheit" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="260" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6Qdc_yV_WzYwVpa7C919-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6Qdc_yV_WzYwVpa7C919-4" target="6Qdc_yV_WzYwVpa7C919-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6Qdc_yV_WzYwVpa7C919-4" value="CALCULER tempCelsius = (tempFarenheit - 32) * 5 / 9" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="112.5" y="370" width="155" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6Qdc_yV_WzYwVpa7C919-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6Qdc_yV_WzYwVpa7C919-5" target="6Qdc_yV_WzYwVpa7C919-6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6Qdc_yV_WzYwVpa7C919-5" value="AFFICHER &quot;&lt;span style=&quot;font-size:11.0pt;line-height:107%;&lt;br/&gt;font-family:&amp;quot;Calibri&amp;quot;,sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:&lt;br/&gt;Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;&lt;br/&gt;mso-bidi-theme-font:minor-latin;mso-ansi-language:FR-CA;mso-fareast-language:&lt;br/&gt;EN-US;mso-bidi-language:AR-SA&quot;&gt;La température en Celsius est : &quot;&lt;br/&gt;tempCelsius&lt;/span&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22AFFICHER%20%26quot%3B%26lt%3Bspan%20style%3D%26quot%3Bfont-size%3A11.0pt%3Bline-height%3A107%25%3B%26lt%3Bbr%2F%26gt%3Bfont-family%3A%26amp%3Bquot%3BCalibri%26amp%3Bquot%3B%2Csans-serif%3Bmso-ascii-theme-font%3Aminor-latin%3Bmso-fareast-font-family%3A%26lt%3Bbr%2F%26gt%3BCalibri%3Bmso-fareast-theme-font%3Aminor-latin%3Bmso-hansi-theme-font%3Aminor-latin%3B%26lt%3Bbr%2F%26gt%3Bmso-bidi-theme-font%3Aminor-latin%3Bmso-ansi-language%3AFR-CA%3Bmso-fareast-language%3A%26lt%3Bbr%2F%26gt%3BEN-US%3Bmso-bidi-language%3AAR-SA%26quot%3B%26gt%3BVeuillez%20saisir%20une%20temp%C3%A9rature%20en%20Fahrenheit%20%3A%26lt%3B%2Fspan%26gt%3B%26quot%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22115%22%20y%3D%22140%22%20width%3D%22150%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&quot;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="105" y="470" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="6Qdc_yV_WzYwVpa7C919-6" value="FIN" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="570" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

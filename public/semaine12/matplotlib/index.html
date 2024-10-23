@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="Matplotlib est une bibliothèque de visualisation de données en Python qui permet de créer une grande variété de graphiques.
+Installation de Matplotlib (déjà fait sur les ordinateurs du cégep) Avant de commencer, assurez vous d’avoir Matplotlib installé. Vous pouvez l’installer via pip :
+pip install matplotlib Importation de Matplotlib Pour utiliser Matplotlib, vous devez en premier l’importer dans votre code.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Matpotlib :: 420-SN1-RE">
+    <meta name="twitter:description" content="Matplotlib est une bibliothèque de visualisation de données en Python qui permet de créer une grande variété de graphiques.
+Installation de Matplotlib (déjà fait sur les ordinateurs du cégep) Avant de commencer, assurez vous d’avoir Matplotlib installé. Vous pouvez l’installer via pip :
+pip install matplotlib Importation de Matplotlib Pour utiliser Matplotlib, vous devez en premier l’importer dans votre code.">
+    <meta property="og:url" content="https://example.org/semaine12/matplotlib/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Matpotlib :: 420-SN1-RE">
+    <meta property="og:description" content="Matplotlib est une bibliothèque de visualisation de données en Python qui permet de créer une grande variété de graphiques.
+Installation de Matplotlib (déjà fait sur les ordinateurs du cégep) Avant de commencer, assurez vous d’avoir Matplotlib installé. Vous pouvez l’installer via pip :
+pip install matplotlib Importation de Matplotlib Pour utiliser Matplotlib, vous devez en premier l’importer dans votre code.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Matplotlib">
+    <meta itemprop="name" content="Matpotlib :: 420-SN1-RE">
+    <meta itemprop="description" content="Matplotlib est une bibliothèque de visualisation de données en Python qui permet de créer une grande variété de graphiques.
+Installation de Matplotlib (déjà fait sur les ordinateurs du cégep) Avant de commencer, assurez vous d’avoir Matplotlib installé. Vous pouvez l’installer via pip :
+pip install matplotlib Importation de Matplotlib Pour utiliser Matplotlib, vous devez en premier l’importer dans votre code.">
+    <meta itemprop="wordCount" content="1551">
+    <title>Matpotlib :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine12/matplotlib/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#installation-de-matplotlib-déjà-fait-sur-les-ordinateurs-du-cégep">Installation de Matplotlib (déjà fait sur les ordinateurs du cégep)</a></li>
+    <li><a href="#importation-de-matplotlib">Importation de Matplotlib</a></li>
+    <li><a href="#étapes-des-base-pour-créer-et-mettre-en-forme-un-graphique">Étapes des base pour créer et mettre en forme un graphique</a>
+      <ul>
+        <li><a href="#création-dun-graphique-simple">Création d&rsquo;un graphique simple</a></li>
+        <li><a href="#ajout-de-titres">Ajout de titres</a></li>
+        <li><a href="#personnalisation-des-styles-de-ligne-et-des-couleurs">Personnalisation des styles de ligne et des couleurs</a></li>
+        <li><a href="#ajout-de-légende">Ajout de légende</a></li>
+      </ul>
+    </li>
+    <li><a href="#définir-les-étiquettes-de-graduations-des-axes-x-et-y">Définir les étiquettes de graduations des axes x et y</a></li>
+    <li><a href="#pause-5-minutes">Pause 5 minutes</a>
+      <ul>
+        <li><a href="#création-de-graphiques-multiples">Création de graphiques multiples</a></li>
+      </ul>
+    </li>
+    <li><a href="#sauvegarde-du-graphique">Sauvegarde du graphique</a></li>
+    <li><a href="#les-différents-types-de-graphiques">Les différents types de graphiques</a>
+      <ul>
+        <li><a href="#histogramme">Histogramme</a></li>
+        <li><a href="#graphique-en-barres">Graphique en barres</a></li>
+        <li><a href="#graphique-en-secteurs">Graphique en secteurs</a></li>
+        <li><a href="#graphique-en-nuages-de-points">Graphique en nuages de points</a></li>
+      </ul>
+    </li>
+    <li><a href="#quelques-méthodes">Quelques méthodes</a></li>
+    <li><a href="#pause-5-minutes-1">Pause 5 minutes</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/semaine12/index.html"><span itemprop="name">Matplotlib</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Matpotlib</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine12/index.html" title="Matplotlib (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine12/atelier/index.html" title="ATELIERS (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine12" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="matpotlib">Matpotlib</h1>
+
+<p><a href="#R-image-11cd0b7e576fa266e17f760275741d15" class="lightbox-link"><img alt="Bibliohèque MatplotLib" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../matplotlib.jpg?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-11cd0b7e576fa266e17f760275741d15"><img alt="Bibliohèque MatplotLib" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../matplotlib.jpg?width=30vw"></a></p>
+<p>Matplotlib est une bibliothèque de visualisation de données en Python qui permet de créer une grande variété de graphiques.</p>
+<h2 id="installation-de-matplotlib-déjà-fait-sur-les-ordinateurs-du-cégep">Installation de Matplotlib (déjà fait sur les ordinateurs du cégep)</h2>
+<p>Avant de commencer, assurez vous d&rsquo;avoir Matplotlib installé. Vous pouvez l&rsquo;installer via pip :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install matplotlib</span></span></code></pre></div>
+<h2 id="importation-de-matplotlib">Importation de Matplotlib</h2>
+<p>Pour utiliser Matplotlib, vous devez en premier l&rsquo;importer dans votre code.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt</span></span></code></pre></div>
+<p>Pour vérifier que Matplotlib est bien installé sur votre environnement:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Version de Matplotlib</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>__version__</span></span></code></pre></div>
+<h2 id="étapes-des-base-pour-créer-et-mettre-en-forme-un-graphique">Étapes des base pour créer et mettre en forme un graphique</h2>
+<h3 id="création-dun-graphique-simple">Création d&rsquo;un graphique simple</h3>
+<p>Pour créer un graphique simple, utilisez la fonction <code>plot()</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">11</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Création du graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage du graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Méthode</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>plt.plot(x, y)</code></td>
+          <td style="text-align: left">Crée un graphique en ligne avec les valeurs de <code>x</code> et <code>y</code>.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.show()</code></td>
+          <td style="text-align: left">Affiche le graphique créé.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="#R-image-4e29a6871541118190acd87d1301d0ef" class="lightbox-link"><img alt="graphe 1" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../graphe1.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4e29a6871541118190acd87d1301d0ef"><img alt="graphe 1" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../graphe1.png?width=30vw"></a></p>
+<h3 id="ajout-de-titres">Ajout de titres</h3>
+<p>Vous pouvez ajouter des titres au graphique et aux axes pour rendre le graphique plus informatif.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">11</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Création du graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ajout de titres</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Graphique simple&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;L&#39;axe X&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;L&#39;axe Y&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage du graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Méthode</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>plt.title('Graphique simple')</code></td>
+          <td style="text-align: left">Ajoute un titre au graphique avec le texte &lsquo;Graphique simple&rsquo;.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.xlabel(&quot;L'axe X&quot;)</code></td>
+          <td style="text-align: left">Ajoute une étiquette à l&rsquo;axe des abscisses (x) avec le texte &ldquo;L&rsquo;axe X&rdquo;.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.ylabel(&quot;L'axe Y&quot;)</code></td>
+          <td style="text-align: left">Ajoute une étiquette à l&rsquo;axe des ordonnées (y) avec le texte &ldquo;L&rsquo;axe Y&rdquo;.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="#R-image-87d429954aac85cfb4924415bf5a1aba" class="lightbox-link"><img alt="graphe 2" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../graphe2.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-87d429954aac85cfb4924415bf5a1aba"><img alt="graphe 2" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../graphe2.png?width=30vw"></a></p>
+<h3 id="personnalisation-des-styles-de-ligne-et-des-couleurs">Personnalisation des styles de ligne et des couleurs</h3>
+<p>Matplotlib permet de personnaliser les styles de ligne et les couleurs.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">11</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Création du graphique avec personnalisation</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;green&#39;</span>, linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;--&#39;</span>, marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ajout de titres</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Graphique personnalisé&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;L&#39;axe X&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;L&#39;axe Y&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage du graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Méthode</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>plt.plot(x, y, color='green', linestyle='--', marker='o')</code></td>
+          <td style="text-align: left">Crée un graphique en ligne avec les valeurs de <code>x</code> et <code>y</code>, en utilisant des paramètres supplémentaires pour personnaliser l&rsquo;apparence de la ligne : <code>color='green'</code> pour la couleur verte, <code>linestyle='--'</code> pour une ligne en pointillés, et <code>marker='o'</code> pour des marqueurs en forme de cercle sur chaque point de données.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="#R-image-3c7f6c304658eaaa6eacfac4dd47c6d1" class="lightbox-link"><img alt="graphe 3" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../graphe3.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3c7f6c304658eaaa6eacfac4dd47c6d1"><img alt="graphe 3" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../graphe3.png?width=30vw"></a></p>
+<p><strong>Liste de marqueurs</strong></p>
+<p>Voici un tableau de quelques marqueurs possibles:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Marqueur</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>'.'</code></td>
+          <td style="text-align: left">Point</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>','</code></td>
+          <td style="text-align: left">Pixel</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>'o'</code></td>
+          <td style="text-align: left">Cercle</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>'v'</code></td>
+          <td style="text-align: left">Triangle</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>'s'</code></td>
+          <td style="text-align: left">Carré</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>'p'</code></td>
+          <td style="text-align: left">Pentagone</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>'*'</code></td>
+          <td style="text-align: left">Étoile</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>'h'</code>,  <code>'H'</code></td>
+          <td style="text-align: left">Hexagone</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>'+'</code></td>
+          <td style="text-align: left">Plus</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>'x'</code></td>
+          <td style="text-align: left">Croix</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>'D'</code>, <code>'d'</code></td>
+          <td style="text-align: left">Diamant</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>'|'</code></td>
+          <td style="text-align: left">Ligne verticale</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>'_'</code></td>
+          <td style="text-align: left">Ligne horizontale</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="ajout-de-légende">Ajout de légende</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">11</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Création du graphique avec personnalisation</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;green&#39;</span>, linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;--&#39;</span>, marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Croissance&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ajout de titres</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Graphique personnalisé&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;L&#39;axe X&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;L&#39;axe Y&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ajout de la légende</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage du graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<p><a href="#R-image-191469bedda835577c556ae7a6e543f8" class="lightbox-link"><img alt="graphe 6" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../graphe6.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-191469bedda835577c556ae7a6e543f8"><img alt="graphe 6" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../graphe6.png?width=30vw"></a></p>
+<h2 id="définir-les-étiquettes-de-graduations-des-axes-x-et-y">Définir les étiquettes de graduations des axes x et y</h2>
+<p>Les fonctions <code>xticks()</code> et <code>yticks()</code> sont utilisées pour obtenir ou définir les étiquettes des graduations sur les axes x et y d’un graphique.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exemple de données</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Définir les étiquettes des graduations de l&#39;axe x</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xticks([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>], [<span style="color:#e6db74">&#39;A&#39;</span>, <span style="color:#e6db74">&#39;B&#39;</span>, <span style="color:#e6db74">&#39;C&#39;</span>, <span style="color:#e6db74">&#39;D&#39;</span>, <span style="color:#e6db74">&#39;E&#39;</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Définir les étiquettes des graduations de l&#39;axe y</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>yticks([<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">40</span>], [<span style="color:#e6db74">&#39;Dix&#39;</span>, <span style="color:#e6db74">&#39;Vingt&#39;</span>, <span style="color:#e6db74">&#39;Trente&#39;</span>, <span style="color:#e6db74">&#39;Quarante&#39;</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Méthode</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>plt.xticks</code></td>
+          <td style="text-align: left">Définit ou obtient les étiquettes des graduations de l’axe x.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.yticks</code></td>
+          <td style="text-align: left">Définit ou obtient les étiquettes des graduations de l’axe y.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="#R-image-1ce210c0cf4409cce785272b0745aebc" class="lightbox-link"><img alt="graphe 8" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../graphe8.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1ce210c0cf4409cce785272b0745aebc"><img alt="graphe 8" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../graphe8.png?width=30vw"></a></p>
+<h2 id="pause-5-minutes">Pause 5 minutes</h2>
+<p><a href="#R-image-5b5c01f5652504998a94bb09acd06db9" class="lightbox-link"><img alt="Pause" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../pause.jpg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5b5c01f5652504998a94bb09acd06db9"><img alt="Pause" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../pause.jpg?width=25vw"></a></p>
+<h3 id="création-de-graphiques-multiples">Création de graphiques multiples</h3>
+<p>Vous pouvez créer plusieurs graphiques dans une seule figure en utilisant <code>subplot()</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>y1 <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">11</span>]
+</span></span><span style="display:flex;"><span>y2 <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">10</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Création de la figure</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>figure()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Premier graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>subplot(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y1)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Premier graphique&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Deuxième graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>subplot(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y2)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Deuxième graphique&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage des graphiques</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>tight_layout()
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Méthode</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>plt.figure()</code></td>
+          <td style="text-align: left">Crée une nouvelle figure dans laquelle vous pouvez tracer vos graphiques.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.subplot(2, 1, 2)</code></td>
+          <td style="text-align: left">Crée un sous-graphique dans une grille de 2 lignes et 1 colonne, et place ce sous-graphique dans la deuxième position (en bas). Cela permet de créer plusieurs graphiques dans une seule figure.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.tight_layout()</code></td>
+          <td style="text-align: left">Ajuste automatiquement les paramètres des sous-graphiques pour qu&rsquo;ils s&rsquo;adaptent proprement à la zone de la figure, en évitant les chevauchements entre les étiquettes, les titres et les axes.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="#R-image-a7cb5372dd7da910616b0496ddeeeed0" class="lightbox-link"><img alt="graphe 4" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../graphe4.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a7cb5372dd7da910616b0496ddeeeed0"><img alt="graphe 4" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../graphe4.png?width=30vw"></a></p>
+<h2 id="sauvegarde-du-graphique">Sauvegarde du graphique</h2>
+<p>Vous pouvez sauvegarder le graphique dans un fichier en utilisant <code>savefig()</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">11</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Création du graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Ajout de titres</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Graphique à sauvegarder&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#34;L&#39;axe X&#34;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#34;L&#39;axe Y&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sauvegarde du graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#39;graphique.png&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage du graphique</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Méthode</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>plt.savefig</code></td>
+          <td style="text-align: left">Enregistre le graphique actuel dans le fichier spécifié. Le format du fichier peut être <code>PNG</code>, <code>JPG</code>, <code>PDF</code>, <code>SVG</code>, etc. On peut inclure un chemin pour spécifier où enregistrer le fichier.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="#R-image-4fd7ff0b57e8a4303d9559fb0ad63f3d" class="lightbox-link"><img alt="graphe 5" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../graphe5.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4fd7ff0b57e8a4303d9559fb0ad63f3d"><img alt="graphe 5" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../graphe5.png?width=30vw"></a></p>
+<h2 id="les-différents-types-de-graphiques">Les différents types de graphiques</h2>
+<p>En plus des graphiques de type ligne, Matplotlib permet de créer une multitude d&rsquo;autres graphiques.</p>
+<h3 id="histogramme">Histogramme</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>donnees <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>hist(donnees, bins<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, range<span style="color:#f92672">=</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>), density<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, cumulative<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;green&#39;</span>, edgecolor<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;black&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;Valeurs&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;Fréquence&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Histogramme&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Méthode</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>plt.hist</code></td>
+          <td style="text-align: left">Fonction pour créer un histogramme à partir des données fournies.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"></td>
+          <td style="text-align: left"><code>donnees</code>: Les données à analyser et à représenter sous forme d&rsquo;histogramme. <code>bins=5</code>le nombre de barres dans l&rsquo;histogramme. <code>range=(1, 5)</code> la plage de valeurs à inclure dans l&rsquo;histogramme. <code>density=False</code>: Si <code>True</code>, l&rsquo;histogramme affiche une densité de probabilité plutôt que le nombre brut d&rsquo;observations. <code>cumulative=False</code> Si <code>True</code>, l&rsquo;histogramme est cumulatif, affichant la somme des fréquences jusqu&rsquo;à chaque point. <code>color='green'</code>et <code>edgecolor='black'</code>couleurs des barres de l&rsquo;histogramme et des contours des barres.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="#R-image-d11a7afbf478ff009960169a73137f4f" class="lightbox-link"><img alt="Histogramme" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../matplotlib-histo.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d11a7afbf478ff009960169a73137f4f"><img alt="Histogramme" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../matplotlib-histo.png?width=30vw"></a></p>
+<h3 id="graphique-en-barres">Graphique en barres</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>categories <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;A&#39;</span>, <span style="color:#e6db74">&#39;B&#39;</span>, <span style="color:#e6db74">&#39;C&#39;</span>, <span style="color:#e6db74">&#39;D&#39;</span>]
+</span></span><span style="display:flex;"><span>valeurs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>bar(categories, valeurs)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;Catégories&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;Valeurs&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Graphique en barres&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Méthode</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>plt.bar</code></td>
+          <td style="text-align: left">Fonction pour créer un diagramme à barres. <code>categories</code>: la liste des catégories ou étiquettes pour chaque barre. <code>valeurs</code>: La liste des valeurs correspondant à la hauteur de chaque barre.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="#R-image-f1c8e35702169262b8535f302f33a327" class="lightbox-link"><img alt="Graphique en barres" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../matplotlib-barres.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f1c8e35702169262b8535f302f33a327"><img alt="Graphique en barres" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../matplotlib-barres.png?width=30vw"></a></p>
+<h4 id="différence-entre-un-histogramme-et-un-graphique-en-barres">Différence entre un histogramme et un graphique en barres</h4>
+<ul>
+<li>
+<p><strong>Histogramme</strong> : Utilisé pour montrer la <strong>distribution d&rsquo;un ensemble de données continues</strong>. Les données sont regroupées en intervalles, et chaque barre représente le nombre de données dans chaque intervalle. Par exemple, un histogramme peut montrer la distribution des âges d&rsquo;un groupe de personnes.</p>
+</li>
+<li>
+<p><strong>Graphique en barres</strong> : Utilisé pour <strong>comparer des catégories distinctes</strong>. Chaque barre représente une catégorie et la hauteur de la barre montre la valeur de cette catégorie. Par exemple, un graphique en barres peut montrer les ventes de différents produits.</p>
+</li>
+</ul>
+<p>En résumé, un histogramme montre la distribution d&rsquo;un ensemble de données continues, tandis qu&rsquo;un graphique en barres compare des catégories distinctes.</p>
+<h3 id="graphique-en-secteurs">Graphique en secteurs</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données</span>
+</span></span><span style="display:flex;"><span>etiquettes <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;A&#39;</span>, <span style="color:#e6db74">&#39;B&#39;</span>, <span style="color:#e6db74">&#39;C&#39;</span>, <span style="color:#e6db74">&#39;D&#39;</span>]
+</span></span><span style="display:flex;"><span>tailles <span style="color:#f92672">=</span> [<span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">45</span>, <span style="color:#ae81ff">10</span>]
+</span></span><span style="display:flex;"><span>secteur <span style="color:#f92672">=</span> (<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)  <span style="color:#75715e"># Décale le deuxième secteur</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Création du graphique en secteurs</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>pie(tailles, explode<span style="color:#f92672">=</span>secteur, labels<span style="color:#f92672">=</span>etiquettes, colors<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;gold&#39;</span>, <span style="color:#e6db74">&#39;yellowgreen&#39;</span>, <span style="color:#e6db74">&#39;lightcoral&#39;</span>, <span style="color:#e6db74">&#39;lightskyblue&#39;</span>],
+</span></span><span style="display:flex;"><span>        autopct<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%1.1f%%</span><span style="color:#e6db74">&#39;</span>, shadow<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, startangle<span style="color:#f92672">=</span><span style="color:#ae81ff">140</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>axis(<span style="color:#e6db74">&#39;equal&#39;</span>)  <span style="color:#75715e"># Assure que le graphique est circulaire</span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Graphique en secteurs&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<p>Voici une explication simple des deux méthodes <code>plt.pie</code> et <code>plt.axis('equal')</code> dans Matplotlib, présentée sous forme de tableau :</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Méthode</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>plt.pie</code></td>
+          <td style="text-align: left">Fonction pour créer un graphique circulaire (camembert). <code>tailles</code>: Les valeurs déterminant la taille de chaque secteur (portion) du camembert. <code>explode=secteur</code>:   Liste déterminant quelle portion est décalée (mise en avant). <code>labels=etiquettes</code>: Étiquettes pour chaque secteur, décrivant ce que chaque portion représente. <code>colors</code>:  Liste des couleurs utilisées pour chaque secteur. <code>autopct='%1.1f%%'</code>: Affiche le pourcentage de chaque secteur à l&rsquo;intérieur de celui-ci, formaté à une décimale près. <code>shadow=True</code>:  Ajoute une ombre au graphique pour un effet de profondeur. <code>startangle=140</code>: Angle de départ pour le premier secteur.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.axis('equal')</code></td>
+          <td style="text-align: left">Assure que le graphique est parfaitement circulaire en réglant les axes x et y à la même échelle.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="#R-image-f431ccc1eae063635e6ada2ac40a3fb4" class="lightbox-link"><img alt="Graphique en secteurs" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../matplotlib-secteur.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f431ccc1eae063635e6ada2ac40a3fb4"><img alt="Graphique en secteurs" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../matplotlib-secteur.png?width=30vw"></a></p>
+<h3 id="graphique-en-nuages-de-points">Graphique en nuages de points</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">11</span>]
+</span></span><span style="display:flex;"><span>tailles <span style="color:#f92672">=</span> [<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">80</span>, <span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">500</span>]
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>scatter(x, y, s<span style="color:#f92672">=</span>tailles)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;Axe x&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;Axe y&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Graphique en nuage de points&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()</span></span></code></pre></div>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Méthode</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>plt.scatter</code></td>
+          <td style="text-align: left">utilisée pour tracer un graphique en nuage de points. <strong><code>x</code> et <code>y</code></strong> : les coordonnées des points sur le graphique. - <strong><code>s=tailles</code></strong> : L&rsquo;argument <code>s</code> définit la taille des marqueurs de chaque point. Cela peut être une valeur unique qui s&rsquo;applique à tous les points, ou une liste de valeurs qui spécifie une taille différente pour chaque point.</td>
+      </tr>
+  </tbody>
+</table>
+<p><a href="#R-image-fedb60f4b55c91afd50bfd209f5b2805" class="lightbox-link"><img alt="Graphique en nuage" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../matplotlib-nuage.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-fedb60f4b55c91afd50bfd209f5b2805"><img alt="Graphique en nuage" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../matplotlib-nuage.png?width=30vw"></a></p>
+<h2 id="quelques-méthodes">Quelques méthodes</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Méthode</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>plt.plot()</code></td>
+          <td style="text-align: left">Crée un graphique linéaire.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.hist()</code></td>
+          <td style="text-align: left">Crée un histogramme.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.bar()</code></td>
+          <td style="text-align: left">Crée un graphique en barres.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.scatter()</code></td>
+          <td style="text-align: left">Crée un graphique en dispersion.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.xlabel()</code></td>
+          <td style="text-align: left">Ajoute une étiquette à l&rsquo;axe des abscisses.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.ylabel()</code></td>
+          <td style="text-align: left">Ajoute une étiquette à l&rsquo;axe des ordonnées.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.title()</code></td>
+          <td style="text-align: left">Ajoute un titre au graphique.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.show()</code></td>
+          <td style="text-align: left">Affiche le graphique.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.savefig()</code></td>
+          <td style="text-align: left">Enregistre le graphique sous forme d&rsquo;image.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>fig, ax = plt.subplots()</code></td>
+          <td style="text-align: left">Crée une figure et des axes, permettant des graphes plus complexes.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>fig = plt.figure(figsize=(width, height)</code></td>
+          <td style="text-align: left"><code>figsize</code> : Une tuple (largeur, hauteur) en pouces, définissant la taille de la figure.</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>plt.grid()</code></td>
+          <td style="text-align: left">Afficher ou masquer la grille quadrillée sur un graphique.</td>
+      </tr>
+  </tbody>
+</table>
+<p>Pour tout savoir sur Matplotlib: <a href="https://matplotlib.org/stable/" rel="external" target="_blank" title="Matplotlib">Site officiel Matplotlib</a>.</p>
+<h2 id="pause-5-minutes-1">Pause 5 minutes</h2>
+<p><a href="#R-image-dddf4ee802a499a9ac4b994183607576" class="lightbox-link"><img alt="Pause" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../pause.jpg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-dddf4ee802a499a9ac4b994183607576"><img alt="Pause" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../pause.jpg?width=25vw"></a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine12/matplotlib/index.html"><a class="padding" href="/semaine12/matplotlib/index.html">Matpotlib</a></li>
+            <li class="" data-nav-id="/semaine12/atelier/index.html"><a class="padding" href="/semaine12/atelier/index.html">ATELIERS</a></li></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/semaine12/matplotlib/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

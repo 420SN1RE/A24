@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="L’importance des listes Les listes sont l’une des structures de données les plus utilisées en Python. Elles permettent de stocker plusieurs éléments de différents types dans une seule variable, ce qui les rend très pratiques pour gérer des collections de données.
+Définition Une liste est une collection ordonnée et modifiable d’éléments. Chaque élément de la liste a une position définie, appelée indice, qui commence à 0 pour le premier élément.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Les Listes :: 420-SN1-RE">
+    <meta name="twitter:description" content="L’importance des listes Les listes sont l’une des structures de données les plus utilisées en Python. Elles permettent de stocker plusieurs éléments de différents types dans une seule variable, ce qui les rend très pratiques pour gérer des collections de données.
+Définition Une liste est une collection ordonnée et modifiable d’éléments. Chaque élément de la liste a une position définie, appelée indice, qui commence à 0 pour le premier élément.">
+    <meta property="og:url" content="https://example.org/semaine6/listes/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Les Listes :: 420-SN1-RE">
+    <meta property="og:description" content="L’importance des listes Les listes sont l’une des structures de données les plus utilisées en Python. Elles permettent de stocker plusieurs éléments de différents types dans une seule variable, ce qui les rend très pratiques pour gérer des collections de données.
+Définition Une liste est une collection ordonnée et modifiable d’éléments. Chaque élément de la liste a une position définie, appelée indice, qui commence à 0 pour le premier élément.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Les listes et le traitement des chaines de caractères">
+    <meta itemprop="name" content="Les Listes :: 420-SN1-RE">
+    <meta itemprop="description" content="L’importance des listes Les listes sont l’une des structures de données les plus utilisées en Python. Elles permettent de stocker plusieurs éléments de différents types dans une seule variable, ce qui les rend très pratiques pour gérer des collections de données.
+Définition Une liste est une collection ordonnée et modifiable d’éléments. Chaque élément de la liste a une position définie, appelée indice, qui commence à 0 pour le premier élément.">
+    <meta itemprop="wordCount" content="1719">
+    <title>Les Listes :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine6/listes/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#limportance-des-listes">L&rsquo;importance des listes</a></li>
+    <li><a href="#pourquoi-utiliser-des-listes-">Pourquoi utiliser des listes ?</a>
+      <ul>
+        <li><a href="#mise-en-situation">Mise en situation</a></li>
+      </ul>
+    </li>
+    <li><a href="#quest-ce-quune-liste-">Qu&rsquo;est-ce qu&rsquo;une liste ?</a>
+      <ul>
+        <li><a href="#caractéristiques-dune-liste">Caractéristiques d&rsquo;une liste</a></li>
+      </ul>
+    </li>
+    <li><a href="#création-dune-liste">Création d&rsquo;une liste</a></li>
+    <li><a href="#accès-aux-éléments-dune-liste">Accès aux éléments d&rsquo;une liste</a></li>
+    <li><a href="#modification-des-éléments-dune-liste">Modification des éléments d&rsquo;une liste</a></li>
+    <li><a href="#ajout-et-suppression-déléments-dune-liste">Ajout et suppression d’éléments d&rsquo;une liste</a>
+      <ul>
+        <li><a href="#ajout-déléments">Ajout d&rsquo;éléments</a></li>
+        <li><a href="#insertion-déléments">Insertion d&rsquo;éléments</a></li>
+        <li><a href="#suppression-déléments">Suppression d&rsquo;éléments</a></li>
+      </ul>
+    </li>
+    <li><a href="#pause-5-minutes">Pause 5 minutes</a></li>
+    <li><a href="#parcourir-les-éléments-dune-liste-à-laide-dune-boucle">Parcourir les éléments d&rsquo;une liste (à l&rsquo;aide d&rsquo;une <strong>boucle</strong>)</a></li>
+    <li><a href="#autres-manipulations-courantes-sur-les-listes">Autres manipulations courantes sur les listes</a>
+      <ul>
+        <li><a href="#faire-la-somme-de-tous-les-éléments-dune-liste">Faire la somme de tous les éléments d&rsquo;une liste.</a></li>
+        <li><a href="#obtenir-le-nombre-déléments-dune-liste-sa-taille-ou-longueur">Obtenir le nombre d&rsquo;éléments d&rsquo;une liste (sa taille ou longueur).</a></li>
+        <li><a href="#obtenir-la-position-dun-élément-dans-une-liste">Obtenir la position d&rsquo;un élément dans une liste</a></li>
+        <li><a href="#trier-les-éléments-dune-liste">Trier les éléments d&rsquo;une liste.</a></li>
+        <li><a href="#trouver-les-éléments-uniques-dune-liste">Trouver les éléments uniques d&rsquo;une liste.</a></li>
+        <li><a href="#filtrer-les-nombres-pairs-dune-liste">Filtrer les nombres pairs d&rsquo;une liste.</a></li>
+      </ul>
+    </li>
+    <li><a href="#dautres-fonctions-ou-méthodes-de-listes">D&rsquo;autres fonctions ou méthodes de listes</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/semaine6/index.html"><span itemprop="name">Les listes et le traitement des chaines de caractères</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Les Listes</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/index.html" title="Les listes et le traitement des chaines de caractères (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine6/chaines_caracteres/index.html" title="Les chaînes de caractères (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine6" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="les-listes">Les Listes</h1>
+
+<p><a href="#R-image-9d4ec4d667cba7555eb717aba5b47822" class="lightbox-link"><img alt="Les listes" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../listes.png?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-9d4ec4d667cba7555eb717aba5b47822"><img alt="Les listes" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../listes.png?width=25vw"></a></p>
+<h2 id="limportance-des-listes">L&rsquo;importance des listes</h2>
+<p>Les listes sont l’une des structures de données les plus utilisées en Python. Elles permettent de <strong>stocker plusieurs éléments de différents types dans une seule variable</strong>, ce qui les rend très pratiques pour gérer des collections de données.</p>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Définition
+  </div>
+  <div class="box-content">
+<p>Une liste est une collection <strong>ordonnée</strong> et <strong>modifiable</strong> d’éléments. Chaque élément de la liste a une position définie, appelée <strong>indice</strong>, qui <strong>commence à 0 pour le premier élément</strong>.</p>
+  </div>
+</div>
+<p>Les listes sont particulièrement utiles pour :</p>
+<ul>
+<li><strong>Gérer des collections de données</strong> : Par exemple, une liste de noms, de numéros, ou d&rsquo;éléments complexes (objets).</li>
+<li><strong>Effectuer des opérations à répétition</strong> : Parcourir les éléments d’une liste pour les traiter.</li>
+<li><strong>Modifier des données</strong> : Ajouter, supprimer ou modifier des éléments de la liste.</li>
+</ul>
+<h2 id="pourquoi-utiliser-des-listes-">Pourquoi utiliser des listes ?</h2>
+<h3 id="mise-en-situation">Mise en situation</h3>
+<p>Vous devez gérer les données des planètes des différents systèmes solaires.
+Chaque planète a un <strong>nom</strong> et une <strong>distance</strong> par rapport à notre soleil.
+Vous ne savez pas combien de planètes sont exactement présentes dans ces systèmes solaires.
+Vous devez afficher le nom de toutes les planètes et leur distance par rapport à notre soleil.</p>
+<h4 id="solution-sans-liste">Solution sans liste</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Saisie de chaque variable</span>
+</span></span><span style="display:flex;"><span>planete_01_nom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Mercure&#34;</span>
+</span></span><span style="display:flex;"><span>planete_01_distance <span style="color:#f92672">=</span> <span style="color:#ae81ff">58</span>
+</span></span><span style="display:flex;"><span>planete_02_nom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Vénus&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ....</span>
+</span></span><span style="display:flex;"><span>planete_08_distance <span style="color:#f92672">=</span> <span style="color:#ae81ff">2871</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage des noms et des distances un par un</span>
+</span></span><span style="display:flex;"><span>print(planete_01_nom, planete_01_distance)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ....</span>
+</span></span><span style="display:flex;"><span>print(planete_08_nom, planete_08_distance)</span></span></code></pre></div>
+<h4 id="solution-avec-une-liste">Solution avec une liste</h4>
+<p>L&rsquo;utilisation des listes permettra d&rsquo;exécuter cette tâche beaucoup plus facilement.
+Vous pourrez ajouter/modifier/enlever des planètes.
+Et vous pourrez ajouter plusieurs informations pour chaque planète.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Remplissage de la liste</span>
+</span></span><span style="display:flex;"><span>planetes <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>planetes<span style="color:#f92672">.</span>append([<span style="color:#e6db74">&#34;Mercure&#34;</span>, <span style="color:#ae81ff">58</span>])
+</span></span><span style="display:flex;"><span>planetes<span style="color:#f92672">.</span>append([<span style="color:#e6db74">&#34;Vénus&#34;</span>, <span style="color:#ae81ff">108.2</span>])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">....</span>
+</span></span><span style="display:flex;"><span>planetes<span style="color:#f92672">.</span>append([<span style="color:#e6db74">&#34;Uranus&#34;</span>, <span style="color:#ae81ff">2871</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage des noms et des distances dans une boucle</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> planete <span style="color:#f92672">in</span> planetes:
+</span></span><span style="display:flex;"><span>    print(planete[<span style="color:#ae81ff">0</span>], planete[<span style="color:#ae81ff">1</span>])</span></span></code></pre></div>
+<p><a href="#R-image-e154cb0b4d06820e6858204213c763ea" class="lightbox-link"><img alt="Exemple" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../exempleListe_01_2.jpg" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e154cb0b4d06820e6858204213c763ea"><img alt="Exemple" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../exempleListe_01_2.jpg"></a></p>
+<h2 id="quest-ce-quune-liste-">Qu&rsquo;est-ce qu&rsquo;une liste ?</h2>
+<p>Les listes en Python sont définies en utilisant des crochets <code>[ ]</code>.</p>
+<h3 id="caractéristiques-dune-liste">Caractéristiques d&rsquo;une liste</h3>
+<ul>
+<li><strong>Ordonnée</strong> : Les éléments de la liste conservent un ordre défini, ce qui signifie que l&rsquo;ordre dans lequel vous ajoutez les éléments est préservé.</li>
+<li><strong>Modifiable</strong> : Une liste peut être modifiée après sa création, ce qui signifie que vous pouvez ajouter, supprimer ou changer des éléments.</li>
+<li><strong>Taille dynamique</strong> : Une liste en Python peut changer de taille dynamiquement. Vous pouvez ajouter ou supprimer des éléments sans avoir à spécifier la taille initiale de la liste.</li>
+<li><strong>Hétérogène</strong> : En Python, une liste peut contenir des éléments de différents types (entiers, chaînes de caractères, listes, etc.).
+<ul>
+<li>Bien qu&rsquo;il est possible de le faire, il faut rester prudent lorsqu&rsquo;on utilise des listes hétérogènes. Elles pourraient entraîner des erreurs, notamment dans les boucles.</li>
+</ul>
+</li>
+</ul>
+<h2 id="création-dune-liste">Création d&rsquo;une liste</h2>
+<p>Pour créer une liste en Python, on utilise des crochets [] :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Création d&#39;une liste vide</span>
+</span></span><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ou</span>
+</span></span><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> list()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Liste avec des éléments</span>
+</span></span><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>]</span></span></code></pre></div>
+<p><a href="#R-image-12fa91b8ece7d9f69aa7c1075aa35475" class="lightbox-link"><img alt="Trace 1" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../trace_01.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-12fa91b8ece7d9f69aa7c1075aa35475"><img alt="Trace 1" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../trace_01.png"></a></p>
+<p><a href="#R-image-1cab86141a3046399e0d258c00e3dbfb" class="lightbox-link"><img alt="Trace 4" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../trace_04.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1cab86141a3046399e0d258c00e3dbfb"><img alt="Trace 4" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../trace_04.png"></a></p>
+<h2 id="accès-aux-éléments-dune-liste">Accès aux éléments d&rsquo;une liste</h2>
+<p>Les crochets <code>[]</code> sont aussi utilisés pour accéder directement à l&rsquo;élément correspondant.</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p><strong>Rappel</strong> : Les indices commencent à zéro.</p>
+  </div>
+</div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Accès au premier élément</span>
+</span></span><span style="display:flex;"><span>print(ma_liste[<span style="color:#ae81ff">0</span>])  <span style="color:#75715e"># Affiche 6</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Accès au dernier élément</span>
+</span></span><span style="display:flex;"><span>print(ma_liste[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])  <span style="color:#75715e"># Affiche 2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Opérations sur les éléments de la liste</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> ma_liste[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">+</span> ma_liste[<span style="color:#ae81ff">3</span>]  <span style="color:#75715e"># est l&#39;équivalent de 3 + 9, soit les éléments qui se trouve aux indices 1 et 3</span>
+</span></span><span style="display:flex;"><span>print(x)    <span style="color:#75715e"># Affiche 12</span></span></span></code></pre></div>
+<h2 id="modification-des-éléments-dune-liste">Modification des éléments d&rsquo;une liste</h2>
+<p>Les listes sont modifiables, ce qui signifie que l’on peut changer la valeur des éléments :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># La valeur de la case à l&#39;indice 2 est maintenant 0</span>
+</span></span><span style="display:flex;"><span>ma_liste[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># La valeur de la case à l&#39;indice 4 est maintenant la même que celle de la case à l&#39;indice 7</span>
+</span></span><span style="display:flex;"><span>ma_liste[<span style="color:#ae81ff">4</span>] <span style="color:#f92672">=</span> ma_liste[<span style="color:#ae81ff">7</span>]</span></span></code></pre></div>
+<p><a href="#R-image-07a9fb94a47cf09163db04578f4f11ae" class="lightbox-link"><img alt="Trace 5" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../trace_05.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-07a9fb94a47cf09163db04578f4f11ae"><img alt="Trace 5" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../trace_05.png"></a></p>
+<h2 id="ajout-et-suppression-déléments-dune-liste">Ajout et suppression d’éléments d&rsquo;une liste</h2>
+<p>On peut ajouter des éléments à une liste avec <code>append()</code> ou <code>insert()</code>, et les supprimer avec <code>remove()</code> ou <code>pop()</code>.</p>
+<h3 id="ajout-déléments">Ajout d&rsquo;éléments</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Liste vide</span>
+</span></span><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> []</span></span></code></pre></div>
+<p><a href="#R-image-2ff0faf659c547167bd7225e729df579" class="lightbox-link"><img alt="Trace 1" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../trace_01.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-2ff0faf659c547167bd7225e729df579"><img alt="Trace 1" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../trace_01.png"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Ajoute la valeur 6 à la fin de la liste</span>
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">6</span>)</span></span></code></pre></div>
+<p><a href="#R-image-570f68d724d0ea0ab53843e61598cf62" class="lightbox-link"><img alt="Trace 2" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../trace_02.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-570f68d724d0ea0ab53843e61598cf62"><img alt="Trace 2" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../trace_02.png"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Ajoute la valeur 3 à la fin de la liste</span>
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">3</span>)</span></span></code></pre></div>
+<p><a href="#R-image-1e835cfc1799a40710fdddf6fb34e836" class="lightbox-link"><img alt="Trace 3" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../trace_03.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1e835cfc1799a40710fdddf6fb34e836"><img alt="Trace 3" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../trace_03.png"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">8</span>)
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">9</span>)
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">7</span>)
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">3</span>)
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">2</span>)</span></span></code></pre></div>
+<p><a href="#R-image-07c3561c3cfd07f850d855ca0ebbf9c3" class="lightbox-link"><img alt="Trace 4" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../trace_04.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-07c3561c3cfd07f850d855ca0ebbf9c3"><img alt="Trace 4" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../trace_04.png"></a></p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>Chaque nouveau nombre est ajouté dans l&rsquo;ordre. La liste conservera cet ordre, s&rsquo;il n&rsquo;est pas volontairement modifié dans le code.</p>
+  </div>
+</div>
+<h3 id="insertion-déléments">Insertion d&rsquo;éléments</h3>
+<p>La méthode</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Insert la valeur 7 à la case 3</span>
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>insert(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">7</span>)</span></span></code></pre></div>
+<p><a href="#R-image-549a7152157fae852480a0d304afbf5e" class="lightbox-link"><img alt="Trace 10" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../trace_10.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-549a7152157fae852480a0d304afbf5e"><img alt="Trace 10" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../trace_10.png"></a></p>
+<h3 id="suppression-déléments">Suppression d&rsquo;éléments</h3>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Attention
+  </div>
+  <div class="box-content">
+<p>Lors de la suppression, les valeurs <strong>après</strong> sont décalées.</p>
+  </div>
+</div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Supprime le dernier élément de la liste</span>
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>pop()</span></span></code></pre></div>
+<p><a href="#R-image-bf9d3dec6d91e9b73d017e2b3579ebb1" class="lightbox-link"><img alt="Trace 8" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../trace_08.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bf9d3dec6d91e9b73d017e2b3579ebb1"><img alt="Trace 8" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../trace_08.png"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Supprime l&#39;élément à l&#39;indice 2</span>
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>pop(<span style="color:#ae81ff">2</span>)</span></span></code></pre></div>
+<p><a href="#R-image-762cc7fde5b170a596fb970632929ac9" class="lightbox-link"><img alt="Trace 9" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../trace_09.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-762cc7fde5b170a596fb970632929ac9"><img alt="Trace 9" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../trace_09.png"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Supprime la première occurrence de la valeur 3</span>
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>remove(<span style="color:#ae81ff">3</span>)</span></span></code></pre></div>
+<p><a href="#R-image-bbfe410e144b668c13d9d8c1fc058f99" class="lightbox-link"><img alt="Trace 11" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../trace_11.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-bbfe410e144b668c13d9d8c1fc058f99"><img alt="Trace 11" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../trace_11.png"></a></p>
+<h2 id="pause-5-minutes">Pause 5 minutes</h2>
+<p><a href="#R-image-af37d799d7cacc6a86b3430cfd0fb7e5" class="lightbox-link"><img alt="Pause" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../pause.jpg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-af37d799d7cacc6a86b3430cfd0fb7e5"><img alt="Pause" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../pause.jpg?width=25vw"></a></p>
+<h2 id="parcourir-les-éléments-dune-liste-à-laide-dune-boucle">Parcourir les éléments d&rsquo;une liste (à l&rsquo;aide d&rsquo;une <strong>boucle</strong>)</h2>
+<p>Un premier exemple serait de parcourir chacun des éléments de la liste avec une boucle <code>for</code>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage de chacun des éléments de la liste</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> element <span style="color:#f92672">in</span> ma_liste:
+</span></span><span style="display:flex;"><span>    print(element, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;,&#34;</span>)	<span style="color:#75715e"># Affiche  1, 2, 3, 4, 5, 6, 7</span></span></span></code></pre></div>
+<p>Il est aussi possible d&rsquo;utiliser la fonction <code>range()</code> afin de parcourir la liste à l&rsquo;aide des indices:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># On additionne 1 à chaque élément de la liste</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(ma_liste)):
+</span></span><span style="display:flex;"><span>    ma_liste[i] <span style="color:#f92672">=</span> ma_liste[i] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>	
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>print(ma_liste, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34; &#34;</span>)	<span style="color:#75715e"># Affiche 2 3 4 5 6 7 8</span></span></span></code></pre></div>
+<p>Enfin, la boucle <code>while</code> peut aussi être utile:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># On affiche les premiers éléments de la liste.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># On arrête dès que le total des nombres lus dépasse 10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>total <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> total <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>:
+</span></span><span style="display:flex;"><span>    print(ma_liste[i], end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.&#34;</span>)
+</span></span><span style="display:flex;"><span>    total <span style="color:#f92672">+=</span> ma_liste[i]
+</span></span><span style="display:flex;"><span>    i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div>
+<p>Affiche:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">1.2.3.4</span><span style="color:#f92672">.</span></span></span></code></pre></div>
+<h2 id="autres-manipulations-courantes-sur-les-listes">Autres manipulations courantes sur les listes</h2>
+<h3 id="faire-la-somme-de-tous-les-éléments-dune-liste">Faire la somme de tous les éléments d&rsquo;une liste.</h3>
+<p>Avec <code>sum(ma_liste)</code> on obtient la somme des éléments numériques d&rsquo;une liste. Par exemple:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>notes <span style="color:#f92672">=</span> [<span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">17</span>]
+</span></span><span style="display:flex;"><span>somme <span style="color:#f92672">=</span> sum(notes)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La somme des notes est: &#34;</span>, somme)</span></span></code></pre></div>
+<p>Cela affiche:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>La somme des notes est:  <span style="color:#ae81ff">82</span></span></span></code></pre></div>
+<h3 id="obtenir-le-nombre-déléments-dune-liste-sa-taille-ou-longueur">Obtenir le nombre d&rsquo;éléments d&rsquo;une liste (sa taille ou longueur).</h3>
+<p>La méthode <code>len(ma_liste)</code> donne le nombre d&rsquo;éléments de la liste. Par exemple:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>notes <span style="color:#f92672">=</span> [<span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">17</span>]
+</span></span><span style="display:flex;"><span>nb_notes <span style="color:#f92672">=</span> len(notes)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La liste contient&#34;</span>, nb_notes, <span style="color:#e6db74">&#34;notes&#34;</span>)</span></span></code></pre></div>
+<p>Résultat :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>La liste contient <span style="color:#ae81ff">5</span> notes</span></span></code></pre></div>
+<h3 id="obtenir-la-position-dun-élément-dans-une-liste">Obtenir la position d&rsquo;un élément dans une liste</h3>
+<p>La méthode <code>index()</code> est utilisée pour trouver la position (l&rsquo;indice) d&rsquo;un élément spécifique dans une liste. Voici comment elle fonctionne :</p>
+<h4 id="syntaxe">Syntaxe</h4>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>liste<span style="color:#f92672">.</span>index(element, debut, fin)</span></span></code></pre></div>
+<ul>
+<li><strong>element</strong> : L&rsquo;élément dont vous voulez trouver l&rsquo;indice.</li>
+<li><strong>debut</strong> (optionnel) : La position de départ pour la recherche.</li>
+<li><strong>fin</strong> (optionnel) : La position de fin pour la recherche.</li>
+</ul>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Créer une liste</span>
+</span></span><span style="display:flex;"><span>fruits <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;pomme&#39;</span>, <span style="color:#e6db74">&#39;banane&#39;</span>, <span style="color:#e6db74">&#39;cerise&#39;</span>, <span style="color:#e6db74">&#39;banane&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Trouver la position de &#39;banane&#39;</span>
+</span></span><span style="display:flex;"><span>indice_banane <span style="color:#f92672">=</span> fruits<span style="color:#f92672">.</span>index(<span style="color:#e6db74">&#39;banane&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;L&#39;indice de l&#39;élément &#39;banane&#39; est : </span><span style="color:#e6db74">{</span>indice_banane<span style="color:#e6db74">}</span><span style="color:#e6db74">. &#39;banane&#39; est donc le </span><span style="color:#e6db74">{</span>indice_banane<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#e6db74">}</span><span style="color:#e6db74">e élément&#34;</span>)</span></span></code></pre></div>
+<p><strong>Résultat</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>L&#39;indice de l&#39;élément &#39;banane&#39; est : 1. &#39;banane&#39; est donc le 2e élément</span></span></code></pre></div>
+<p>Dans cet exemple, la méthode <code>index()</code> retourne l&rsquo;indice de la première occurrence de <code>'banane'</code> dans la liste, qui est <code>1</code>.</p>
+<h4 id="utilisation-avec-les-paramètres-debut-et-fin">Utilisation avec les paramètres debut et fin</h4>
+<p>Vous pouvez également spécifier une plage de recherche en utilisant les paramètres <code>debut</code> et <code>fin</code> :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Trouver l&#39;indice de &#39;banane&#39; après la position 1</span>
+</span></span><span style="display:flex;"><span>index_banane_apres_1 <span style="color:#f92672">=</span> fruits<span style="color:#f92672">.</span>index(<span style="color:#e6db74">&#39;banane&#39;</span>, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;L&#39;indice de &#39;banane&#39; après la position 1 est : </span><span style="color:#e6db74">{</span>index_banane_apres_1<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)</span></span></code></pre></div>
+<p><strong>Résultat</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>L&#39;indice de &#39;banane&#39; après la position 1 est : 3</span></span></code></pre></div>
+<p>Ici, la méthode <code>index()</code> commence la recherche à partir de l&rsquo;indice <code>2</code> et trouve la deuxième occurrence de <code>'banane'</code> à l&rsquo;indice <code>3</code>.</p>
+<h3 id="trier-les-éléments-dune-liste">Trier les éléments d&rsquo;une liste.</h3>
+<p>La méthode <code>ma_liste.sort()</code> en Python est utilisée pour trier les éléments d&rsquo;une liste. Exemples:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># La liste est triée en ordre croissant</span>
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>sort()</span></span></code></pre></div>
+<p><a href="#R-image-255749f266f2555b5d6b55844f0179cc" class="lightbox-link"><img alt="Trace 12" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../trace_12.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-255749f266f2555b5d6b55844f0179cc"><img alt="Trace 12" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../trace_12.png"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># La liste est triée en ordre décroissant</span>
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>sort(reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>) </span></span></code></pre></div>
+<p><a href="#R-image-1cfdca27b6ae401335f34435d2674002" class="lightbox-link"><img alt="Trace 13" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../trace_13.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1cfdca27b6ae401335f34435d2674002"><img alt="Trace 13" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../trace_13.png"></a></p>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Attention
+  </div>
+  <div class="box-content">
+<p>Lorsqu&rsquo;il s&rsquo;agit de chaînes de caractères (<code>str</code>) avec un mélange de majuscules et de minuscules, le tri se fait par défaut en premier sur les <strong>majuscules</strong> et après sur les <strong>minuscules</strong>. Ce comportement vient de leur position dans la <a href="https://www.purebasic.com/french/documentation/reference/ascii.html" rel="external" target="_blank">table ASCII</a>.</p>
+  </div>
+</div>
+<p>Par exemple:</p>
+<p>La liste <strong><code>['Banane', 'ananas', 'Cerise']</code></strong> sera triée en <strong><code>['Banane', 'Cerise', 'ananas']</code></strong>.</p>
+<p>Pour effectuer un tri sans tenir compte de la casse, vous pouvez utiliser le paramètre <code>key</code> avec la fonction <code>str.lower</code>, comme ceci :
+<code>ma_list.sort(key=str.lower)</code>. Cela convertira temporairement chaque élément en minuscules pour le tri, tout en conservant la casse originale dans la liste triée.</p>
+<p>Exemple :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Banane&#39;</span>, <span style="color:#e6db74">&#39;ananas&#39;</span>, <span style="color:#e6db74">&#39;Cerise&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ma_liste<span style="color:#f92672">.</span>sort(key <span style="color:#f92672">=</span> str<span style="color:#f92672">.</span>lower)
+</span></span><span style="display:flex;"><span>print(ma_liste)	<span style="color:#75715e"># Affiche [&#39;ananas&#39;, &#39;Banane&#39;, &#39;Cerise&#39;]</span></span></span></code></pre></div>
+<h3 id="trouver-les-éléments-uniques-dune-liste">Trouver les éléments uniques d&rsquo;une liste.</h3>
+<p>Dans ce cas, on utilise <code>list()</code> et <code>set()</code>, comme dans cet exemple:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ma_liste <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>uniques <span style="color:#f92672">=</span> list(set(ma_liste))
+</span></span><span style="display:flex;"><span>print(uniques)  <span style="color:#75715e"># Affiche [1, 2, 3, 4, 5]</span></span></span></code></pre></div>
+<h3 id="filtrer-les-nombres-pairs-dune-liste">Filtrer les nombres pairs d&rsquo;une liste.</h3>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>L&rsquo;opérateur modulo (<code>%</code>) est utilisé ici pour vérifier si un nombre est divisible par 2 sans reste, ce qui signifie qu&rsquo;il est pair.</p>
+  </div>
+</div>
+<p>Pour extraire les nombres pairs d&rsquo;une liste, en utilisant l&rsquo;opérateur modulo (<code>%</code>), vous pouvez utiliser une boucle pour parcourir la liste et pour chaque élément de la liste vérifier si le nombre est pair. S&rsquo;il l&rsquo;est on l&rsquo;ajoute dans une autre liste comme suit :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nombres <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Liste vide pour stocker les nombres pairs</span>
+</span></span><span style="display:flex;"><span>pairs <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Recherche des nombres pairs</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> nombre <span style="color:#f92672">in</span> nombres:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Si le nombre est pair, on l&#39;ajoute dans la liste &#34;paires&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> nombre <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>        pairs<span style="color:#f92672">.</span>append(nombre)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># On affiche la liste des nombres pairs</span>
+</span></span><span style="display:flex;"><span>print(pairs)  <span style="color:#75715e"># Affiche [2, 4, 6, 8, 10]</span></span></span></code></pre></div>
+<h2 id="dautres-fonctions-ou-méthodes-de-listes">D&rsquo;autres fonctions ou méthodes de listes</h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Fonction</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>max()</code></td>
+          <td style="text-align: left">Retourne la valeur maximum de la liste</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>min()</code></td>
+          <td style="text-align: left">Retourne la valeur minimum de la liste</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>del()</code></td>
+          <td style="text-align: left">Supprime un élément selon sa position</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>extend()</code></td>
+          <td style="text-align: left">Ajoute tous les éléments d&rsquo;une liste dans une autre liste</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>clear()</code></td>
+          <td style="text-align: left">Efface tous les éléments d&rsquo;une liste</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>index()</code></td>
+          <td style="text-align: left">Retourne l&rsquo;indice du premier élément dont la valeur est égale à celle spécifiée</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>insert(position, element)</code></td>
+          <td style="text-align: left">Insert un élément à la position designée</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>reverse()</code></td>
+          <td style="text-align: left">Inverse l&rsquo;ordre des éléments de la liste</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>copy()</code></td>
+          <td style="text-align: left">Retourne une copie superficielle de la liste</td>
+      </tr>
+  </tbody>
+</table>
+<p>Pour voir des exemples de ces fonctions, <a href="../exemples_foncListes.ipynb">cliquez ici</a></p>
+<p><a href="https://www.w3schools.com/python/python_ref_list.asp" rel="external" target="_blank">Référence site w3schools.com</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine6/listes/index.html"><a class="padding" href="/semaine6/listes/index.html">Les Listes</a></li>
+            <li class="" data-nav-id="/semaine6/chaines_caracteres/index.html"><a class="padding" href="/semaine6/chaines_caracteres/index.html">Les chaînes de caractères</a></li>
+            <li class="" data-nav-id="/semaine6/ateliers/index.html"><a class="padding" href="/semaine6/ateliers/index.html">ATELIERS</a></li>
+            <li class="" data-nav-id="/semaine6/pour-le-prochain-cours/index.html"><a class="padding" href="/semaine6/pour-le-prochain-cours/index.html">Pour le prochain cours</a></li></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/semaine6/listes/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

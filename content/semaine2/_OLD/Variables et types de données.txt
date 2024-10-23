@@ -1,0 +1,406 @@
++++
+title = "Variables et types de données"
+weight = 22
++++
+
+![Variable et types de données](../assets/images/variable.jpg?width=25vw).
+
+## Les variables en programmation
+
+{{% notice style=info title=Définition %}}
+Une **variable** est une zone de la mémoire de l'ordinateur dans laquelle une valeur est stockée. Une variable est définie par un nom et sa valeur.
+Vous pouvez imaginer une variable comme une boîte dans laquelle vous pouvez mettre des choses, comme des nombres, du texte, des listes, etc..
+{{% /notice %}}
+
+### Déclaration et initialisation d'une variable
+
+- En Python, la **déclaration** d'une variable et son **initialisation** (c'est-à-dire la première valeur que l'on va stocker dedans) se font en même temps. 
+- En programmation, l'initialisation d'une variable se nomme **l'affectation** de la variable. 
+
+Le symbole `=` est appelé **opérateur d'affectation**. Il permet d'assigner une valeur à une variable. 
+
+{{% notice style=warning title=Attention %}}
+Cet opérateur s'utilise toujours de la droite vers la gauche. Par exemple, dans l'instruction x = 5, Python attribue la valeur située à droite (ici, 5) à la variable située à gauche (ici, x).
+{{% /notice %}}
+
+#### Affectation multiple
+
+- L'affectation multiple consiste à initialiser plusieurs variables sur la même ligne de code. Voici quelques exemples :
+
+Dans ce premier exemple, **a** et **b** se retrouvent avec la **même valeur**.
+
+```python
+# Les variables se retrouvent avec la même valeur
+a = b = 1
+```
+
+Dans ce deuxième exemple, **1** sera affecté à **a** et **2** sera affecté à **b**.
+
+```python
+# Autre méthode d'affectation multiple
+a, b  = 1, 2
+```
+
+### Nomenclature des variables
+
+Les noms de variables doivent suivre certaines règles de syntaxe.
+
+   {{% notice style=warning title=Attention %}}
+   Le nom d'une variable ne doit **JAMAIS** avoir de **lettres accentuées**, **de caractères spéciaux**, **ni d'espaces**.
+   {{% /notice %}}
+
+Les noms doivent être **descriptifs** et donner une indication sur ce que fait la variable.
+
+   {{% notice style=warning title=Attention %}}
+   Par exemple : `min = min + delta`
+
+   il est difficile de savoir rapidement si on travaille avec des **minutes** ou un **minimum** ?
+
+   Soyez le plus explicite possible : `minutes_ecoulees = minutes_ecoulees + delta_minutes`
+   {{% /notice %}}
+
+Les noms de variables peuvent être composés de **lettres** (majuscules et/ou minuscules), de **chiffres** et du **caractère de soulignement** (_), mais ne peuvent pas commencer par un chiffre.  
+Les noms de variables sont sensibles à la casse: `ma_variable ≠ ma_Variable`
+
+   ```python
+   age = 42
+   print(age) # Pas d'erreur ici
+   ```
+   ```python
+   print(Age)
+   ```
+   ```plaintext
+   ---------------------------------------------------------------------------
+   NameError                                 Traceback (most recent call last)
+   Cell In[5], line 1
+   ----> 1 print(Age)
+
+   NameError: name 'Age' is not defined
+   ```
+`Age` est une variable non définie dans cet exemple, une erreur est logiquement affichée.
+
+- Exemples de noms de variables valides:
+	- `ma_variable`
+	- `_ma_variable`
+	- `ma_variable1`
+
+### L'affichage des valeurs
+
+Pour afficher le résultat de nos variables, rien de plus simple, il suffit de mettre le nom de la variable entre les parenthèses :
+
+```python
+# Utiliser la méthode print() pour afficher les résultats
+print(x)
+print(y)
+print(salutations)
+print(suite_nombre)
+print(liste_personnages)
+print(position_lol)
+print(modele_vehicule)
+print(ulti_actif)
+
+```
+
+Lorsque vous exécuterez votre cellule, vous devriez voir le résultat suivant :
+
+```plaintext
+5
+7.5
+Bienvenue dans la faille de l'invocateur !
+[1, 2, 3]
+['Lifeline', 'Fuze', 'Bangalore', 'Pathfinder']
+{'Top': 'Garen', 'ADC': 'Caitlin', 'Supp': 'Leona', 'Mid': 'Lux', 'Jungle': 'Trundle'}
+{'Ford': ['Mustang', 'F150'], 'Chevrolet': ['Camaro', 'Tahoe'], 'Volkswagen': ['Golf', 'Atlas']}
+```
+
+- `print` permet d'afficher le contenu de plusieurs variables (quelque soit leur type) en les séparant par des virgules :
+
+```python
+age = 32
+nom = "Jean"
+print(nom, "a", age, "ans") # Affiche Jean a 32 ans
+```
+
+#### Affichage sur la même ligne
+
+- Par défaut, la fonction `print()` ajoute une nouvelle ligne après chaque appel. Cependant, l'argument `end` permet de modifier ce comportement. 
+
+Voici quelques cas où l'utilisation de l'argument `end` peut être utile :
+
+1. **Éviter les nouvelles lignes :**
+
+- En utilisant `end=''`, on peut éviter cela et continuer l'affichage sur la même ligne.
+
+   ```python
+   for i in range(5):
+       print(i, end=' ')
+   ```
+
+Cela affichera : `0 1 2 3 4` sur une seule ligne.
+
+2. **Ajouter un séparateur personnalisé :**
+
+- On peut utiliser `end` pour ajouter un séparateur personnalisé entre les éléments imprimés. Par exemple, pour ajouter une virgule et un espace :
+
+   ```python
+   for i in range(5):
+       print(i, end=', ')
+   ```
+
+Cela affichera : `0, 1, 2, 3, 4, `.
+
+3. **Concaténer des chaînes de caractères :**
+
+   Lorsqu'on souhaite concaténer plusieurs chaînes de caractères sans ajouter de nouvelle ligne entre elles, `end` est très utile.
+
+   ```python
+   print("Bonjour", end=' ')
+   print("tout", end=' ')
+   print("le", end=' ')
+   print("monde!")
+   ```
+
+Cela affichera : `Bonjour tout le monde!` sur une seule ligne.
+
+ 
+{{% notice info %}}
+On étudiera un peu plus la méthode `print()` la semaine prochaine.
+{{% /notice %}}
+
+
+## Les types de variables
+
+- En programmation, il existe plusieurs types de variables :
+	- les nombres **entiers** (int)
+	- les nombres à virgules dit les **flottants** (float)
+	- les **chaînes de caractères** [(string)](../../Semaine6/chaines_caracteres.md)
+	- les **booléens** (bool)
+	- les **listes** [(list)](../../Semaine6/listes.md)
+	- les **dictionnaires** [(dict)](../../Semaine6/structures_donnees.md/)
+
+Voici quelques exemples illustrés en python :
+
+```python
+# x est un entier
+x = 5
+
+# y est un flottant
+y = 7.5
+
+# salutations est une chaîne de caractères
+salutations = "Bienvenue dans la faille de l'invocateur !"
+
+# ulti_actif est un booléen qui aura pour valeur Vrai ou Faux (Faux dans notre exemple)
+ulti_actif = False
+
+# suite_nombre est une liste / un tableau à une dimension comportant des entiers
+suite_nombre = [1, 2, 3]
+
+# liste_personnage est une liste / un tableau à une dimension comportant des personnages du jeu Apex Legends
+liste_personnages = ["Lifeline", "Fuze", "Bangalore", "Pathfinder"]
+
+# position_lol est un dictionnaire avec comme clé la position des personnages sur la carte et en valeur leur nom.
+position_lol = {'Top': 'Garen',
+                'ADC': 'Caitlin',   
+                'Supp': 'Leona',
+                'Mid': 'Lux',
+                'Jungle': 'Trundle'
+                }
+
+# modele_vehicule est un dictionnaire où la clé est la marque du véhicule et les valeurs sont la liste des modèles.
+modele_vehicule = { 'Ford': ['Mustang', 'F150'],
+                    'Chevrolet': ['Camaro', 'Tahoe'],
+                    'Volkswagen':['Golf', 'Atlas']}
+```
+### Les nombres (entiers et flottants)
+
+- Python reconnaît les entiers et les flottants automatiquement, selon leurs valeurs. 
+
+{{% notice style=warning title=Attention %}}
+En Python, c'est le point qui est utilisé comme séparateur décimal. Ainsi, 3.14 est un nombre reconnu comme un flottant, alors que 3,14 ne l'est pas.
+{{% /notice %}}
+
+**Exemples de nombres**
+
+```Python
+nombre_entier = 10
+nombre_flottant = 10.0 
+```
+
+#### Écriture ou notation scientifique
+
+- On peut écrire des nombres très grands ou très petits avec des puissances de 10 en utilisant le symbole e :
+
+```python
+nombre1 = 1e6 # 1000000.0
+nombre2 = 3.12e-3 # 0.00312
+```
+
+### Les chaines de caractères
+
+- Pour définir une chaîne de caractères, il faut l'entourer de guillemets (doubles `" "` ou simples `' '`) afin d'indiquer à Python le début et la fin de la chaîne de caractères.
+
+
+**Exemples de chaines de caractères**
+
+```Python
+message_accueil = "Bonjour tout le monde!"
+message = 'Comment allez-vous?'
+```
+- Lorsqu’une chaine de caractères contient **plus de deux guillemets simples** ou **plus de deux guillemets doubles**, à l’exécution cela peut causer une **erreur de syntaxe** et **l'arrêt du programme**. comme dans l'exemple ci-dessous:
+
+```python
+message_guillemets_simples = 'Bonjour, comment allez vous aujourd'hui ?'
+message_guillemets_doubles = "Bonjour, comment allez "vous ?"
+print(message_guillemets_simples)
+print(message_guillemets_doubles)
+```
+
+**Le résultat**
+
+![Affichage guillemet en trop](../assets/images/print_trop_guillemets.jpg?width=50vw "Affichage guillemet en trop").
+
+{{% notice note %}}
+**NB:** Remarquez l'absence de l'affichage du deuxième print
+{{% /notice %}}
+
+#### Comment éviter ce problème ?
+
+- Il existe deux solutions:
+
+	1. **Mélanger les types de guillemets** : Utiliser les guillemets doubles pour encadrer la chaine de caractères et le guillemet simple dans sont usage naturel, comme dans le mot **aujour'hui**.
+	2. Il faut **'échapper'** le guillemet qu'on veut qui s'affiche comme un guillemet.
+
+- L'échappement se fait en précédent le guillemet visé par une barre oblique inversée **\ (backslash)**. Comme dans l'exemple suivant:
+
+```python
+message_guillemets = "Bonjour, comment allez vous aujourd'hui ?"
+message_guillemet_echappe = 'Bonjour, comment allez vous aujourd\'hui ?'
+print(message_guillemets)
+print(message_guillemet_echappe)
+```
+**Le résultat**
+
+![Exemple chaines corrigées](../assets/images/print_chaines_corrigees.jpg?width=50vw "Exemple chaines corrigées").
+
+#### La concaténation de chaines de caractères
+
+- La **concaténation** de chaînes en programmation c'est la combinaison de deux chaînes ou plus pour former une seule chaîne. 
+- En Python, cela se fait à l'aide de l'opérateur `+` et elle est simple :**
+	- Vous prenez deux chaînes de caractères.
+	- Vous utilisez l'opérateur `+` pour les joindre.
+	- Python combine les chaînes pour en faire une seule.
+
+**Exemple :**
+
+```python
+# Définir deux chaînes de caractères
+chaine1 = "Bonjour, "
+chaine2 = "monde !"
+
+# Concaténer les chaînes
+chaine_concatenee = chaine1 + chaine2
+
+# Afficher la chaîne concaténée
+print(chaine_concatenee)
+```
+
+**Résultat :**
+```
+Bonjour, monde !
+```
+
+{{% notice style=warning  title=Attention %}}
+Types identiques : Seules les chaînes peuvent être concaténées entre elles. Si vous essayez de concaténer une chaîne avec un autre type de données (comme un entier ou un float), Python renverra une erreur.
+Conversion nécessaire : Pour concaténer une chaîne avec un nombre, vous devez d'abord convertir le nombre en chaîne à l'aide de la fonction `str()`. 
+{{% /notice %}}
+
+
+## Le transtypage (_Casting_) ou la conversion de types
+
+- L'opération de *transtypage* consiste à convertir une variable en un type différent de son type original. 
+- Pour ce faire, il existe différentes méthodes selon le type de données désiré.
+
+	- `int()`: Converti en nombre entier.
+	- `foat()`: Converti en type flottant ou nombre à virgule.
+	- `str()`: Converti en chaine de caractères.
+
+**Exemple**:
+
+```
+x = 10  # entier
+y = "20" # chaine
+
+# y est changé en entier pour l'aditionner à x
+somme = x + int(y)
+```
+Ce code affichera 30
+
+{{%notice style="warning" title="Attention"%}}
+Dans le cas où vous essayez de modifier une variable de type chaîne de caractères vers un entier ou un flottant, une erreur surviendra car la conversion n'est pas possible.
+
+Exemple :
+```python
+float("Valorant")
+```
+```plaintext
+---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+Cell In[3], line 1
+----> 1 float("Valorant")
+
+ValueError: could not convert string to float: 'Valorant'
+```
+{{% /notice%}}
+
+**Question**:
+
+```
+x = "10"
+y = "20"
+somme = x + y
+```
+Quel sera le résultat ?
+
+### Les booléens
+
+- Un **booléen** c'est comme un interrupteur d'éclairage. 
+- Il ne peut avoir que **deux valeurs** :  Vrai (`True`) ou Faux (`False`).
+- Vous pouvez utiliser des variables pour stocker des booléens: 
+
+```python
+est_majeur = True
+parle_francais = False
+```
+
+{{% notice info %}}
+Les booléens sont très important en programmation, car très utilisés dans les structures de contrôle (if, boucles) qu'on étudiera dans deux semaines.
+{{% /notice %}}
+
+### Connaitre le type d'une variable
+
+- La méthode `type()` est une fonction intégrée en Python qui permet de déterminer le type d’une variable. 
+
+- Pour utiliser `type()`, il suffit de mettre le nom de la variable ciblée dans les parenthèses. Par exemple :
+
+```python
+x = 10
+print(type(x))  # Affiche <class 'int'>
+
+y = 10.0
+print(type(y))  # Affiche <class 'float'>
+
+ch = "Bonjour"
+print(type(ch))  # Affiche <class 'str'>
+```
+
+{{% notice info %}}
+On verra plus tard ce que le mot `class` signifie.
+{{% /notice %}}
+
+## Atelier
+
+[Les variables et les types de données](/Semaine2/atelier-variables.ipynb)
+
+
+

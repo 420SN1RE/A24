@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content=".
+Définition des variables Définition Une variable est une zone de la mémoire de l’ordinateur dans laquelle une valeur est stockée. Une variable est définie par un nom et sa valeur. Vous pouvez imaginer une variable comme une boîte dans laquelle vous pouvez mettre des choses, comme des nombres, du texte, des listes, etc..">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Variables et types de données :: 420-SN1-RE">
+    <meta name="twitter:description" content=".
+Définition des variables Définition Une variable est une zone de la mémoire de l’ordinateur dans laquelle une valeur est stockée. Une variable est définie par un nom et sa valeur. Vous pouvez imaginer une variable comme une boîte dans laquelle vous pouvez mettre des choses, comme des nombres, du texte, des listes, etc..">
+    <meta property="og:url" content="https://example.org/semaine2/variables-et-types-de-donn%C3%A9es/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Variables et types de données :: 420-SN1-RE">
+    <meta property="og:description" content=".
+Définition des variables Définition Une variable est une zone de la mémoire de l’ordinateur dans laquelle une valeur est stockée. Une variable est définie par un nom et sa valeur. Vous pouvez imaginer une variable comme une boîte dans laquelle vous pouvez mettre des choses, comme des nombres, du texte, des listes, etc..">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Ordinogramme et introduction à Python">
+    <meta itemprop="name" content="Variables et types de données :: 420-SN1-RE">
+    <meta itemprop="description" content=".
+Définition des variables Définition Une variable est une zone de la mémoire de l’ordinateur dans laquelle une valeur est stockée. Une variable est définie par un nom et sa valeur. Vous pouvez imaginer une variable comme une boîte dans laquelle vous pouvez mettre des choses, comme des nombres, du texte, des listes, etc..">
+    <meta itemprop="wordCount" content="1187">
+    <title>Variables et types de données :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine2/variables-et-types-de-donn%C3%A9es/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#définition-des-variables">Définition des variables</a>
+      <ul>
+        <li><a href="#comment-nommer-une-variable-">Comment nommer une variable ?</a></li>
+        <li><a href="#exemples-de-bonnes-et-de-mauvaises-pratiques">Exemples de bonnes et de mauvaises pratiques</a></li>
+      </ul>
+    </li>
+    <li><a href="#les-commentaires">Les commentaires</a></li>
+    <li><a href="#déclaration-et-assignation">Déclaration et assignation</a>
+      <ul>
+        <li><a href="#assignation-multiple">Assignation multiple</a></li>
+      </ul>
+    </li>
+    <li><a href="#types-de-variables">Types de variables</a>
+      <ul>
+        <li><a href="#le-transtypage-_casting_-ou-la-conversion-de-types">Le transtypage (<em>Casting</em>) ou la conversion de types</a></li>
+      </ul>
+    </li>
+    <li><a href="#les-chaines-de-caractères">Les chaines de caractères</a>
+      <ul>
+        <li><a href="#comment-éviter-ce-problème-">Comment éviter ce problème ?</a></li>
+        <li><a href="#la-concaténation-de-chaines-de-caractères">La concaténation de chaines de caractères</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/semaine2/index.html"><span itemprop="name">Ordinogramme et introduction à Python</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Variables et types de données</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine2/ordinogramme/index.html" title="Ordinogramme (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine2/operateurs-arithm-affichage/index.html" title="Opérateurs arithmétiques et l&#39;affichage (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine2" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="variables-et-types-de-données">Variables et types de données</h1>
+
+<p><a href="#R-image-73268a6b2278d7bf1e17c393804d70bc" class="lightbox-link"><img alt="Variable et types de données" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../variable.jpg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-73268a6b2278d7bf1e17c393804d70bc"><img alt="Variable et types de données" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../variable.jpg?width=25vw"></a>.</p>
+<h2 id="définition-des-variables">Définition des variables</h2>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Définition
+  </div>
+  <div class="box-content">
+<p>Une <strong>variable</strong> est une zone de la mémoire de l&rsquo;ordinateur dans laquelle une valeur est stockée. Une variable est définie par un nom et sa valeur.
+Vous pouvez imaginer une variable comme une boîte dans laquelle vous pouvez mettre des choses, comme des nombres, du texte, des listes, etc..</p>
+  </div>
+</div>
+<h3 id="comment-nommer-une-variable-">Comment nommer une variable ?</h3>
+<p>Pour garantir la lisibilité et la maintenabilité de votre code, il est essentiel de suivre certaines règles de nommage des variables en Python. Voici les principales règles à respecter :</p>
+<ol>
+<li>
+<p><strong>Utiliser des noms significatifs</strong> :</p>
+<ul>
+<li>Choisissez des noms de variables qui décrivent clairement leur contenu ou leur rôle. Par exemple, <code>age</code>, <code>nom_utilisateur</code>, ou <code>total_facture</code> sont des noms explicites.</li>
+</ul>
+</li>
+<li>
+<p><strong>Commencer par une lettre ou un underscore</strong> :</p>
+<ul>
+<li>Les noms de variables doivent commencer par une lettre (a-z, A-Z) ou un underscore (_). Par exemple, <code>nom</code>, <code>_compteur</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Utiliser des lettres, des chiffres et des underscores</strong> :</p>
+<ul>
+<li>Après le premier caractère, vous pouvez utiliser des lettres, des chiffres (0-9) et des underscores. Par exemple, <code>compteur1</code>, <code>total_facture_2024</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Respecter la casse</strong> :</p>
+<ul>
+<li>Python est sensible à la casse, ce qui signifie que <code>variable</code>, <code>Variable</code> et <code>VARIABLE</code> sont trois variables différentes. Utilisez une convention cohérente, comme le snake_case (mots séparés par des underscores) pour les variables : <code>nombre_utilisateurs</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Éviter les mots réservés</strong> :</p>
+<ul>
+<li>Ne pas utiliser les mots réservés de Python comme noms de variables. Par exemple, <code>print</code>, <code>class</code>, <code>for</code>, <code>if</code> sont des mots réservés et ne peuvent pas être utilisés comme noms de variables.</li>
+</ul>
+</li>
+</ol>
+<h3 id="exemples-de-bonnes-et-de-mauvaises-pratiques">Exemples de bonnes et de mauvaises pratiques</h3>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Bonnes pratiques</span>
+</span></span><span style="display:flex;"><span>age_utilisateur
+</span></span><span style="display:flex;"><span>nom_utilisateur
+</span></span><span style="display:flex;"><span>total_facture
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Mauvaises pratiques</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>valise			<span style="color:#75715e"># Commence par un chiffre</span>
+</span></span><span style="display:flex;"><span>total<span style="color:#f92672">-</span>facture		<span style="color:#75715e"># Utilise un tiret au lieu d&#39;un underscore</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span>			<span style="color:#960050;background-color:#1e0010"># </span><span style="color:#a6e22e">Utilise</span> un mot réservé <span style="color:#e6db74">&#39;class&#39;</span>
+</span></span><span style="display:flex;"><span>point equivalence	<span style="color:#75715e"># Contient un espace</span>
+</span></span><span style="display:flex;"><span>opposé			<span style="color:#75715e"># Contient une lettre accentuée</span></span></span></code></pre></div>
+<h2 id="les-commentaires">Les commentaires</h2>
+<p>Les commentaires commencent par le symbole <code>#</code> (dièse).</p>
+<p>Python ignore les commentaires, c’est-à-dire qu’il ne les exécute pas.</p>
+<p>Les commentaires sont utilisés pour :</p>
+<ol>
+<li>Expliquer le code</li>
+<li>Rendre le code plus lisible</li>
+<li>Empêcher l’exécution lors de tests du code</li>
+</ol>
+<h2 id="déclaration-et-assignation">Déclaration et assignation</h2>
+<p>Le symbole <code>=</code> est appelé <strong>opérateur d&rsquo;affectation</strong>. Il permet d&rsquo;assigner une valeur à une variable.</p>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Attention
+  </div>
+  <div class="box-content">
+<p>Cet opérateur s&rsquo;utilise toujours de la droite vers la gauche. Par exemple, dans l&rsquo;instruction x = 5, Python attribue la valeur située à droite (ici, 5) à la variable située à gauche (ici, x).</p>
+  </div>
+</div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>variable <span style="color:#f92672">=</span> valeur</span></span></code></pre></div>
+<p>Par exemple:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>nom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Alice&#34;</span>
+</span></span><span style="display:flex;"><span>prix <span style="color:#f92672">=</span> <span style="color:#ae81ff">19.99</span></span></span></code></pre></div>
+<h3 id="assignation-multiple">Assignation multiple</h3>
+<p>Python permet l’assignation multiple, où vous pouvez assigner des valeurs à plusieurs variables en une seule ligne.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a, b, c <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span></span></span></code></pre></div>
+<p>Vous pouvez également assigner la même valeur à plusieurs variables simultanément.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> y <span style="color:#f92672">=</span> z <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span></span></span></code></pre></div>
+<h2 id="types-de-variables">Types de variables</h2>
+<p>En programmation, il existe plusieurs types de variables :</p>
+<ul>
+<li>les nombres <strong>entiers</strong> (int)</li>
+<li>les nombres à virgules dit les <strong>flottants</strong> (float)</li>
+<li>les <strong>chaînes de caractères</strong> <a href="/semaine6/chaines_caracteres/index.html">(string)</a></li>
+<li>les <strong>booléens</strong> (bool)</li>
+<li>les <strong>listes</strong> <a href="/semaine6/listes/index.html">(list)</a></li>
+<li>les <strong>dictionnaires</strong> <a href="../../Semaine6/structures_donnees.md/">(dict)</a></li>
+</ul>
+<p>Python est un langage à typage dynamique, ce qui signifie que vous n’avez pas besoin de spécifier le type de données lors de la déclaration d’une variable. Le type de la variable est déterminé automatiquement en fonction de la valeur assignée.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>             <span style="color:#75715e"># type int</span>
+</span></span><span style="display:flex;"><span>nom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Robert&#34;</span>       <span style="color:#75715e"># type str</span>
+</span></span><span style="display:flex;"><span>temperature <span style="color:#f92672">=</span> <span style="color:#ae81ff">36.6</span>   <span style="color:#75715e"># type float</span>
+</span></span><span style="display:flex;"><span>est_present <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span>   <span style="color:#75715e"># type bool</span></span></span></code></pre></div>
+<p>La méthode <code>type()</code> est une fonction intégrée en Python qui permet de déterminer le type d’une variable.</p>
+<p>Pour utiliser <code>type()</code>, il suffit de mettre le nom de la variable ciblée dans les parenthèses. Par exemple :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>age <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>
+</span></span><span style="display:flex;"><span>print(type(age))    <span style="color:#75715e"># Affiche &lt;class &#39;int&#39;&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>nom <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Robert&#34;</span>
+</span></span><span style="display:flex;"><span>print(type(nom))    <span style="color:#75715e"># Affiche &lt;class &#39;str&#39;&gt; </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>temperature <span style="color:#f92672">=</span> <span style="color:#ae81ff">36.6</span>
+</span></span><span style="display:flex;"><span>print(type(temperature))     <span style="color:#75715e"># Affiche &lt;class &#39;float&#39;&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>est_present <span style="color:#f92672">=</span> <span style="color:#66d9ef">True</span> 
+</span></span><span style="display:flex;"><span>print(type(est_present))  <span style="color:#75715e"># Affiche &lt;class &#39;bool&#39;&gt;</span></span></span></code></pre></div>
+<h3 id="le-transtypage-_casting_-ou-la-conversion-de-types">Le transtypage (<em>Casting</em>) ou la conversion de types</h3>
+<ul>
+<li>
+<p>L&rsquo;opération de <em>transtypage</em> consiste à convertir une variable en un type différent de son type original.</p>
+</li>
+<li>
+<p>Pour ce faire, il existe différentes méthodes selon le type de données désiré.</p>
+<ul>
+<li><code>int()</code>: Converti en nombre entier.</li>
+<li><code>float()</code>: Converti en type flottant ou nombre à virgule.</li>
+<li><code>str()</code>: Converti en chaine de caractères.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Exemple</strong>:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>x = 10  # entier
+y = &#34;20&#34; # chaine
+
+# y est changé en entier pour l&#39;additionner à x
+somme = x + int(y)</code></pre></div>
+<p>Ce code affichera 30</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p>La fonction <code>int()</code> est couramment utilisée pour convertir un nombre flottant en un entier en le tronquant, c’est-à-dire en supprimant la partie décimale sans arrondir. Par exemple, int(9.9) renverra 9. Il est important de noter que <code>int()</code> ne fait que tronquer le nombre et ne l’arrondit pas. Pour arrondir un flottant à l’entier le plus proche, vous pouvez utiliser la fonction <code>round()</code>.</p>
+  </div>
+</div>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Attention
+  </div>
+  <div class="box-content">
+<p>Dans le cas où vous essayez de modifier une variable de type chaîne de caractères vers un entier ou un flottant, une erreur surviendra car la conversion n&rsquo;est pas possible.</p>
+<p>Exemple :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>float(<span style="color:#e6db74">&#34;Valorant&#34;</span>)</span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>---------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>ValueError                                Traceback (most recent call last)
+</span></span><span style="display:flex;"><span>Cell In[3], line 1
+</span></span><span style="display:flex;"><span>----&gt; 1 float(&#34;Valorant&#34;)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ValueError: could not convert string to float: &#39;Valorant&#39;</span></span></code></pre></div>
+  </div>
+</div>
+<h2 id="les-chaines-de-caractères">Les chaines de caractères</h2>
+<p>Pour définir une chaîne de caractères, il faut l&rsquo;entourer de guillemets (doubles <code>&quot; &quot;</code> ou simples <code>' '</code>) afin d&rsquo;indiquer à Python le début et la fin de la chaîne de caractères.</p>
+<p><strong>Exemples de chaines de caractères</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span>message_accueil <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour tout le monde!&#34;</span>
+</span></span><span style="display:flex;"><span>message <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Comment allez-vous?&#39;</span></span></span></code></pre></div>
+<p>Lorsqu’une chaine de caractères contient <strong>plus de deux guillemets simples</strong> ou <strong>plus de deux guillemets doubles</strong>, à l’exécution cela peut causer une <strong>erreur de syntaxe</strong> et <strong>l&rsquo;arrêt du programme</strong>. comme dans l&rsquo;exemple ci-dessous:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>message_guillemets_simples <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Bonjour, comment allez vous aujourd&#39;</span>hui <span style="color:#960050;background-color:#1e0010">?</span><span style="color:#e6db74">&#39;</span>
+</span></span><span style="display:flex;"><span>message_guillemets_doubles <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour, comment allez &#34;</span>vous <span style="color:#960050;background-color:#1e0010">?</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>print(message_guillemets_simples)
+</span></span><span style="display:flex;"><span>print(message_guillemets_doubles)</span></span></code></pre></div>
+<p><strong>Le résultat</strong></p>
+<p><a href="#R-image-4e439b6aad55d98f0ac2a859c4b83859" class="lightbox-link"><img alt="Affichage guillemet en trop" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../print_trop_guillemets.jpg?width=50vw" style=" height: auto; width: 50vw;" title="Affichage guillemet en trop"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-4e439b6aad55d98f0ac2a859c4b83859"><img alt="Affichage guillemet en trop" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../print_trop_guillemets.jpg?width=50vw" title="Affichage guillemet en trop"></a>.</p>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Note
+  </div>
+  <div class="box-content">
+<p><strong>NB:</strong> Remarquez l&rsquo;absence de l&rsquo;affichage du deuxième print</p>
+  </div>
+</div>
+<h3 id="comment-éviter-ce-problème-">Comment éviter ce problème ?</h3>
+<p>Il existe deux solutions:</p>
+<ol>
+<li><strong>Mélanger les types de guillemets</strong> : Utiliser les guillemets doubles pour encadrer la chaine de caractères et le guillemet simple dans sont usage naturel, comme dans le mot <strong>aujourd&rsquo;hui</strong>.</li>
+<li>Il faut <strong>&lsquo;échapper&rsquo;</strong> le guillemet qu&rsquo;on veut qui s&rsquo;affiche comme un guillemet.</li>
+</ol>
+<p>L&rsquo;échappement se fait en précédent le guillemet visé par une barre oblique inversée <strong>\ (backslash)</strong>. Comme dans l&rsquo;exemple suivant:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>message_guillemets <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour, comment allez vous aujourd&#39;hui ?&#34;</span>
+</span></span><span style="display:flex;"><span>message_guillemet_echappe <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Bonjour, comment allez vous aujourd</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">hui ?&#39;</span>
+</span></span><span style="display:flex;"><span>print(message_guillemets)
+</span></span><span style="display:flex;"><span>print(message_guillemet_echappe)</span></span></code></pre></div>
+<p><strong>Le résultat</strong></p>
+<p><a href="#R-image-725b1dd579f730fd77f6b9501a815183" class="lightbox-link"><img alt="Exemple chaines corrigées" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../print_chaines_corrigees.jpg?width=50vw" style=" height: auto; width: 50vw;" title="Exemple chaines corrigées"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-725b1dd579f730fd77f6b9501a815183"><img alt="Exemple chaines corrigées" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../print_chaines_corrigees.jpg?width=50vw" title="Exemple chaines corrigées"></a>.</p>
+<h3 id="la-concaténation-de-chaines-de-caractères">La concaténation de chaines de caractères</h3>
+<p>La <strong>concaténation</strong> de chaînes en programmation c&rsquo;est la combinaison de deux chaînes ou plus pour former une seule chaîne.
+En Python, cela se fait à l&rsquo;aide de l&rsquo;opérateur <code>+</code> et elle est simple :</p>
+<ul>
+<li>Vous prenez deux chaînes de caractères.</li>
+<li>Vous utilisez l&rsquo;opérateur <code>+</code> pour les joindre.</li>
+<li>Python combine les chaînes pour en faire une seule.</li>
+</ul>
+<p><strong>Exemple :</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Définir deux chaînes de caractères</span>
+</span></span><span style="display:flex;"><span>chaine1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bonjour, &#34;</span>
+</span></span><span style="display:flex;"><span>chaine2 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;monde !&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Concaténer les chaînes</span>
+</span></span><span style="display:flex;"><span>chaine_concatenee <span style="color:#f92672">=</span> chaine1 <span style="color:#f92672">+</span> chaine2
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Afficher la chaîne concaténée</span>
+</span></span><span style="display:flex;"><span>print(chaine_concatenee)</span></span></code></pre></div>
+<p><strong>Résultat :</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0"><code>Bonjour, monde !</code></pre></div>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Attention
+  </div>
+  <div class="box-content">
+<p>Types identiques : Seules les chaînes peuvent être concaténées entre elles. Si vous essayez de concaténer une chaîne avec un autre type de données (comme un entier ou un float), Python renverra une erreur.
+Conversion nécessaire : Pour concaténer une chaîne avec un nombre, vous devez d&rsquo;abord convertir le nombre en chaîne à l&rsquo;aide de la fonction <code>str()</code>.</p>
+  </div>
+</div>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine2/ordinogramme/index.html"><a class="padding" href="/semaine2/ordinogramme/index.html">Ordinogramme</a></li>
+            <li class="active " data-nav-id="/semaine2/variables-et-types-de-donn%C3%A9es/index.html"><a class="padding" href="/semaine2/variables-et-types-de-donn%C3%A9es/index.html">Variables et types de données</a></li>
+            <li class="" data-nav-id="/semaine2/operateurs-arithm-affichage/index.html"><a class="padding" href="/semaine2/operateurs-arithm-affichage/index.html">Opérateurs arithmétiques et l&#39;affichage</a></li>
+            <li class="" data-nav-id="/semaine2/erreurs-arrondi/index.html"><a class="padding" href="/semaine2/erreurs-arrondi/index.html">Nombres flottants et erreurs d&#39;arrondi</a></li>
+            <li class="" data-nav-id="/semaine2/ateliers/index.html"><a class="padding" href="/semaine2/ateliers/index.html">ATELIERS</a></li>
+            <li class="" data-nav-id="/semaine2/pour-le-prochain-cours/index.html"><a class="padding" href="/semaine2/pour-le-prochain-cours/index.html">Pour le prochain cours</a></li></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/semaine2/variables-et-types-de-donn%C3%A9es/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

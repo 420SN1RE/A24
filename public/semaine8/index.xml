@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Les sous-programmes (fonctions) :: 420-SN1-RE</title>
+    <link>https://example.org/semaine8/index.html</link>
+    <description>Objectifs de la leçon Comprendre les rôles et utilités des sous-programmes. Définir des sous-programmes. Utiliser des sous-programmes. Comprendre le passage de paramètres et la portée des variables. Plan de la leçon Quiz récapitulatif: semaines 1 à 6 (20 mins) Fonctions: Rôles et définition. Déclaration. L’appel. Le passage de paramètres. Le retour de valeurs. La portée des variables. Ateliers : Les fonctions et la portée des variables Pour la semaine prochaine</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Les fonctions prédéfinies</title>
+      <link>https://example.org/semaine8/fonctions-predefinies/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine8/fonctions-predefinies/index.html</guid>
+      <description>Les sous-programmes, aussi appelés fonctions, sont des blocs de code réutilisables qui permettent de structurer et d’organiser un programme. Ils facilitent la maintenance et la lisibilité du code.&#xA;Python fourni des fonctions prédéfinies, qui permettent de réaliser des tâches courantes sans avoir à écrire beaucoup de code. Vous en connaissez déjà quelques-unes.&#xA;Quelques fonctions de base print() len() int(), float(), str(), bool() round() etc. Voyons d’autres fonctions prédéfinies utiles.</description>
+    </item>
+    <item>
+      <title>Création et utilisation de fonctions</title>
+      <link>https://example.org/semaine8/les-fonctions/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine8/les-fonctions/index.html</guid>
+      <description>Déclaration des fonctions En Python, une fonction est déclarée avec le mot-clé def suivi du nom de la fonction et des parenthèses (). Les instructions à exécuter sont ensuite écrites sous cette déclaration, indentées d’une tabulation.&#xA;def ma_fonction(): # Bloc de code de la fonction Noe Notez le : après les parenthèses et l’indentation du bloc de code.</description>
+    </item>
+    <item>
+      <title>La portée des variables</title>
+      <link>https://example.org/semaine8/la-portee-des-variables/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine8/la-portee-des-variables/index.html</guid>
+      <description>.&#xA;La portée des variables La portée d’une variable fait référence à l’endroit où une variable est accessible dans le code. En Python, les variables déclarées à l’intérieur d’une fonction sont locales à cette fonction, tandis que les variables déclarées en dehors de toute fonction sont globales.&#xA;Une variable locale pourra être utilisée SEULEMENT à l’intérieur de la fonction dans laquelle elle a été déclarée. Une variable globale pourra être utilisée dans tout le programme. Exemple : On crée utilise une variable globale à l’intérieur de la fonction, sans la redéfinir.</description>
+    </item>
+    <item>
+      <title>ATELIERS</title>
+      <link>https://example.org/semaine8/ateliers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine8/ateliers/index.html</guid>
+      <description>Les fichiers .ipynb sont à nouveau téléchargeables ici. Les fonctions&#xA;La portée des variables</description>
+    </item>
+    <item>
+      <title>Pour le prochain cours</title>
+      <link>https://example.org/semaine8/pour-le-prochain-cours/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine8/pour-le-prochain-cours/index.html</guid>
+      <description>Pour augmenter vos chances de réussite Terminer et soumettre le(s) atelier(s). Réviser la matière vue cette semaine, en vue du quiz qui aura lieu au début du prochain cours (arrivez à l’heure) Lire les notes de cours sur la matière du cours de la semaine 9. Note Si vous étiez présent au cours, posez moi des questions lorsque vous avez de la difficulté. N’attendez pas que la matière se complique.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,208 @@
++++
+title = "Les instructions if elif else OLD"
+weight = 41
++++
+
+![if elif else](../assets/images/if.jpeg?width=25vw)
+
+## Les tests
+
+{{% notice style=info title=Definition %}}
+Les **tests** sont très importants en programmation, car ils permettent à l'ordinateur de prendre des décisions. En programmation, pour coder des tests, on utilise des **structures conditionnelles**.
+{{% /notice %}}
+
+## Les structures conditionnelles
+
+- Elles sont essentielles pour la logique de contrôle dans un programme, car elles permettent d'exécuter différentes actions en fonction de la valeur de certaines variables ou expressions. 
+- En Python, les structures conditionnelles sont les instructions `if` (Si), `elif` (contraction de "else if" qui signifie Sinon Si ), et `else` (Sinon). Voici comment elles fonctionnent :
+
+	- **if** : Cette structure est utilisée pour vérifier si une condition est vraie. Si la condition est vraie, le bloc de code associé à l'`if` est exécuté.
+	- **elif** : Si la condition de l'`if` est fausse, Python vérifie la condition suivante après `elif`. Cela peut être utilisé pour vérifier plusieurs conditions l'une après l'autre.
+	- **else** : Si toutes les conditions précédentes (`if` et `elif`) sont fausses, le bloc de code associé au `else` est exécuté.
+
+## Importance de l'imbrication
+
+{{% notice warning %}}
+Faites bien attention à l'indentation ! Vous devez être très rigoureux sur ce point.
+{{% /notice %}}
+ 
+
+- Pour vous en convaincre, exécutez ces deux exemples de code qui ne sont pas indentés de la même façon : Dans le premier, les deux `print` sont dans le `if`, tandis que dans le deuxième exemple, le deuxième `print` est en dehors du `if`.
+
+```python
+nombres = [4, 5, 6]
+for nb in nombres:
+    if nb == 5:
+        print("Le test est vrai")
+        print(f"car la variable nb vaut {nb}")
+```
+
+Quel est le résultat?
+
+
+```python
+nombres = [4, 5, 6]
+for nb in nombres:
+    if nb == 5:
+        print("Le test est vrai")
+    print(f"car la variable nb vaut {nb}")
+```
+
+Et pour ce deuxième exemple, quel est le résultat?
+
+Voyons maintenant les instructions `if`,`else` et `elif` séparemment.
+
+### L'instruction IF
+
+- L'instruction `if` permet de tester une condition. 
+- **Si la condition est vraie**, le bloc de code associé est exécuté.
+
+**Syntaxe générale :**
+
+```python
+if condition:
+    # bloc de code à exécuter si la condition est vraie
+```
+
+**Exemple :** On souhaite écrire un programme qui affiche le message "Vous êtes majeur." si la valeur de l'âge est plus grande ou égale à 18.
+
+```python
+age = 18
+if age >= 18:
+    print("Vous êtes majeur.")
+```
+
+{{%notice style="note"%}}
+Que se passe t-il si l'âge était inférieur à 18?
+{{% /notice%}}
+
+### L'instruction ELSE
+
+- L'instruction `else` s'utilise avec `if` pour définir un bloc de code à exécuter **si la condition du `if` est fausse**.
+
+**Syntaxe :**
+
+```python
+if condition:
+    # bloc de code à exécuter si la condition est vraie
+else:
+    # bloc de code à exécuter si la condition est fausse
+```
+
+**Exemple :** Reprenons l'exemple précédent, mais cete fois-ci, en plus de l'affichage du message "Vous êtes majeur." lorsque l'âge est supérieur ou égal à 18, on veut que le programme affiche le message "Vous êtes mineur." si la valeur de l'âge est inférieure à 18.
+L'instruction `else` permet de le faire.
+
+
+```python
+age = 16
+if age >= 18:
+    print("Vous êtes majeur.")
+else:
+    print("Vous êtes mineur.")
+```
+
+{{%notice style="note"%}}
+Comment faire pour pouvoir afficher un message différent selon différentes tranches d'âge adultes ?
+{{% /notice%}}
+
+### L'instruction ELIF
+
+- L'instruction `elif` permet de **tester plusieurs conditions**. 
+- Si la condition `if` est fausse, Python vérifie la condition `elif`. 
+- Si la condition `elif` est vraie, le bloc de code associé est exécuté.
+
+**Syntaxe :**
+
+```python
+if condition1:
+    # bloc de code à exécuter si condition1 est vraie
+elif condition2:
+    # bloc de code à exécuter si condition1 est fausse et condition2 est vraie
+else:
+    # bloc de code à exécuter si toutes les conditions précédentes sont fausses
+```
+
+**Exemple :** Cette fois-ci on souhaite que notre programme affiche "Vous êtes un jeune adulte" si l'âge se situe entre 18 et 30, sinon il affiche "Avez-vous des enfants?" si l'âge est supérieur à 30, mais inférieur à 65. Si l'âge est supérieur ou égal à 65, il affiche "Bonne retraite!".
+
+{{% notice tip %}}
+Dans cet exemple, il ne faudra pas seulement vérifier si l'âge est supérieur ou égal à 18. Il faudra vérifier si l'âge et entre 18 et 30 et si ce n'est pas le cas, il faudra vérifier si l'âge est entre 30 et 65, sinon est-il supérieur à 65.
+{{% /notice %}}
+
+
+```python
+age = 36
+if 18 <= age <= 30:
+    print("Vous êtes un jeune adulte")
+elif 30 < age < 65:
+    print("Avez-vous des enfants?")
+elif age >= 65:
+    print("Bonne retraite!")
+else:
+    print("Vous êtes mineur")
+```
+
+## Ordinogramme des structures conditionnelles
+
+### Les instructions IF et ELSE
+
+![ordinogramme if-else](../assets/images/if-else.jpg?width=30vw)
+
+### L'instruction ELIF
+
+![ordinogramme elif](../assets/images/elif.jpg?width=30vw)
+
+## Atelier
+
+[Atelier 13a - if elif else](atelier-structures-cond1.ipynb)
+
+
+## Les opérateurs logiques dans les conditions
+
+- Il est possible de combiner plusieurs conditions avec les opérateurs logiques `and` (ET), `or` (OU), et `not` (NON).
+
+**Exemple :** On veut un programme qui affiche le message "Vous pouvez conduire." si l'âge est supérieur ou égal à 18 **et** que l'utilisateur à son permis de conduire. Sinon, on affiche "Vous ne pouvez pas conduire."
+
+{{% notice tip %}}
+Ici, on va utiliser l'opérateur logique `AND` pour teste l'âge ET la présence du permis.
+{{% /notice %}}
+
+```python
+age = 20
+permis = True # L'utilisateur a son permis
+
+if age >= 18 and permis:
+    print("Vous pouvez conduire.")
+else:
+    print("Vous ne pouvez pas conduire.")
+```
+
+[Atelier 13b - opérateurs logiques](atelier-structures-cond2.ipynb)
+
+## Imbrication de conditions
+
+- Les conditions peuvent être imbriquées, c'est-à-dire qu'on peut mettre une condition dans une autre.
+
+```python
+score = 75
+if score > 50:
+    if score > 70:
+        print("Bien joué !")
+    else:
+        print("Pas mal, mais peut mieux faire.")
+else:
+    print("Il faut travailler d'avantage.")
+
+```
+**Explication**:
+
+1. **Définition de la variable** : `score` est défini avec une valeur de 75.
+2. **Première condition** : Si `score` est supérieur à 50, le programme vérifie une deuxième condition.
+3. **Deuxième condition** : Si `score` est supérieur à 70, le programme affiche "Bien joué !".
+4. **Sinon** : Si `score` est supérieur à 50 mais pas supérieur à 70, le programme affiche "Pas mal, mais peut mieux faire."
+5. **Sinon** : Si `score` n'est pas supérieur à 50, le programme affiche "Il faut travailler davantage."
+
+Dans ce cas, comme `score` est 75, le programme affichera "Bien joué !".
+
+## Atelier
+
+[Atelier sur les structures de contrôle](/Semaine4/atelier-structures-cond3.ipynb)

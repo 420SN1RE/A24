@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Techniques de débogage :: 420-SN1-RE</title>
+    <link>https://example.org/bases/langage-de-prog/debogage/index.html</link>
+    <description>L’importance de savoir déboguer Le code que nous écrivons ne fonctionne pas toujours comme prévu et peut parfois produire des résultats inattendus.&#xA;Lorsqu’un problème survient, il est plus efficace d’utiliser un outil de débogage plutôt que de rester perplexe devant le code.&#xA;Un débogueur permet d’exécuter le code pas à pas pour identifier précisément où se trouve l’erreur et comprendre les corrections nécessaires.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/langage-de-prog/debogage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La trace d&#39;exécution</title>
+      <link>https://example.org/bases/langage-de-prog/debogage/trace/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/debogage/trace/index.html</guid>
+      <description>Qu’est-ce que la trace d’exécution ? La trace d’exécution est un outil, sous forme d’un tableau, qui permet de vérifier le bon fonctionnement d’un algorithme. Elle montre l’évolution des valeurs de chacune des variables tout au long du déroulement de l’algorithme (exécution pas-à-pas).&#xA;Construction du tableau de la trace Les colonnes du tableau correspondent aux variables déclarées dans l’algorithme. Le titre des colonnes est le nom des variables. Le titre des lignes est le numéro des lignes de l’algorithme. Dans une cellule, on inscrira la valeur de la variable correspondante seulement si elle a changé après l’exécution de l’instruction. On peut ajouter une colonne «Console» pour simuler l’affichage à la console. Vidéo explicative: Vidéo explicative sur la trace d’exécution Exemple Prenons l’exemple de cet algorithme simple en supposant que l’utilisateur saisira 5 et 10:</description>
+    </item>
+  </channel>
+</rss>

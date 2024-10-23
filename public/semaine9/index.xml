@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technique de débogage simple :: 420-SN1-RE</title>
+    <link>https://example.org/semaine9/index.html</link>
+    <description>Objectifs de la leçon Comprendre l’importance du débogage Appliquer une technique de débogage simple pour résoudre des bogues courants. Évaluer l’acquisition des éléments de compétence du cours (Examen formatif) Plan de la leçon Quiz: Les fonctions (10 mins) L’importance du débogage dans le développement de logiciels. ~5mins Suivre l’exécution d’un programme simple et identifier les erreurs. ~10mins Aperçu aux outils de débogage disponibles dans VS Code. ~5mins Utilisation des points d’arrêt, de l’inspection des variables et de la navigation dans le code. Pause 5 mins Examen formatif: à faire obligatoirement individuellement et en classe ~120mins Atelier (à faire à la maison): Trouvez l’erreur… et corrigez-la. Pour la semaine prochaine</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Suivre l&#39;exécution du programme</title>
+      <link>https://example.org/semaine9/debogage-print/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine9/debogage-print/index.html</guid>
+      <description>Le code que nous écrivons ne fonctionne pas toujours comme prévu et peut parfois produire des résultats inattendus. Lorsqu’un problème survient, il est plus efficace d’utiliser une technique de débogage plutôt que de rester perplexe devant le code.&#xA;Un débogueur permet d’exécuter le code pas à pas pour identifier précisément où se trouve l’erreur et comprendre les corrections nécessaires. Bien que l’utilisation d’un débogueur demande du temps et des efforts, c’est une compétence essentielle pour tout développeur.</description>
+    </item>
+    <item>
+      <title>EXAMEN FORMATIF (À faire en classe)</title>
+      <link>https://example.org/semaine9/examen-formatif/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine9/examen-formatif/index.html</guid>
+      <description>Durée: 2h00 Les sections (3 questions chacune, sauf indication contraire): Types de variables Boucle for Boucles while Listes Divers (1 question) Fonctions Chaines de caractères Conditions (if-elif-else) Code à composer (2 questions) Bonus</description>
+    </item>
+    <item>
+      <title>ATELIER (À faire à la maison)</title>
+      <link>https://example.org/semaine9/atelier/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine9/atelier/index.html</guid>
+      <description>Trouvez l’erreur…</description>
+    </item>
+  </channel>
+</rss>

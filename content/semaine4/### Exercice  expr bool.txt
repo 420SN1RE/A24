@@ -1,0 +1,29 @@
+### Exercice 5: Déterminer le résultat des expressions booléennes
+
+Utilisez les valeurs suivantes pour les variables :  
+a = True  
+b = False  
+c,d,e = 3,7,3  
+x = w = 10  
+y = z = 5  
+p = q = 4  
+
+#### 5.1  
+exp1 = a and b  
+print(exp1)    # Que va afficher cette ligne ?
+
+#### 5.2
+exp2 = (x > y) or (y > x)  
+print(exp2)    # Que va afficher cette ligne ?
+
+#### 5.3
+exp3 = (c == e) and (d > c)  
+print(exp3)    # Que va afficher cette ligne ?
+
+#### 5.4
+exp4 = not (z > w)  
+print(exp4)    # Que va afficher cette ligne ?
+
+#### 5.5
+exp5 = (p == q) or (p > q)  
+print(exp5)    # Que va afficher cette ligne ?

@@ -1,0 +1,12 @@
++++
+title="Ordinogrammes des boucles"
+weight = 53
++++
+
+## Représentations Graphiques des Structures Répétitives
+
+Les ordinogrammes, également connus sous le nom de diagrammes de flux, sont des outils visuels utilisés pour représenter le flux d'un programme. Ils sont particulièrement utiles pour illustrer le fonctionnement des structures répétitives, comme les boucles `for` et `while`.
+
+
+
+

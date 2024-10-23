@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="Visual Studio Code &amp; Jupyter Notebook Dans ce cours, nous allons utiliser deux outils pour analyser des données scientifiques avec Python. Il s’agit de Visual Studio Code et Jupyter Notebook.
+Visual Studio Code Visual Studio Code est comme un cahier de notes pour écrire du code.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Visual Studio Code & Jupyter :: 420-SN1-RE">
+    <meta name="twitter:description" content="Visual Studio Code &amp; Jupyter Notebook Dans ce cours, nous allons utiliser deux outils pour analyser des données scientifiques avec Python. Il s’agit de Visual Studio Code et Jupyter Notebook.
+Visual Studio Code Visual Studio Code est comme un cahier de notes pour écrire du code.">
+    <meta property="og:url" content="https://example.org/bases/outils/vs-code/vs-code-jupyter/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Visual Studio Code & Jupyter :: 420-SN1-RE">
+    <meta property="og:description" content="Visual Studio Code &amp; Jupyter Notebook Dans ce cours, nous allons utiliser deux outils pour analyser des données scientifiques avec Python. Il s’agit de Visual Studio Code et Jupyter Notebook.
+Visual Studio Code Visual Studio Code est comme un cahier de notes pour écrire du code.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <meta itemprop="name" content="Visual Studio Code & Jupyter :: 420-SN1-RE">
+    <meta itemprop="description" content="Visual Studio Code &amp; Jupyter Notebook Dans ce cours, nous allons utiliser deux outils pour analyser des données scientifiques avec Python. Il s’agit de Visual Studio Code et Jupyter Notebook.
+Visual Studio Code Visual Studio Code est comme un cahier de notes pour écrire du code.">
+    <meta itemprop="wordCount" content="408">
+    <title>Visual Studio Code &amp; Jupyter :: 420-SN1-RE</title>
+    <link href="/bases/outils/vs-code/vs-code-jupyter/index.xml" rel="alternate" type="application/rss+xml" title="Visual Studio Code &amp; Jupyter :: 420-SN1-RE">
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/bases/outils/vs-code/vs-code-jupyter/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#visual-studio-code--jupyter-notebook">Visual Studio Code &amp; Jupyter Notebook</a>
+      <ul>
+        <li><a href="#visual-studio-code">Visual Studio Code</a></li>
+        <li><a href="#jupyter-notebook">Jupyter Notebook</a></li>
+      </ul>
+    </li>
+    <li><a href="#installation-des-outils">Installation des outils</a></li>
+    <li><a href="#tutoriel-pour-vs-code-et-jupyter-notebook">Tutoriel pour VS Code et Jupyter Notebook</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/index.html"><span itemprop="name">Base de connaissances</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/outils/index.html"><span itemprop="name">2. Outils</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/outils/vs-code/index.html"><span itemprop="name">Utilisation de VS Code</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Visual Studio Code &amp; Jupyter</span><meta itemprop="position" content="5"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/outils/vs-code/index.html" title="Utilisation de VS Code (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/outils/vs-code/sauvegarge-automatique/index.html" title="Sauvegarde avec Visual Studio Code (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable bases" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="visual-studio-code--jupyter">Visual Studio Code &amp; Jupyter</h1>
+
+<p><a href="#R-image-77363c5bd44d72427f8460448fa44ba7" class="lightbox-link"><img alt="VSCode" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/bases/outils/vs-code/vs-code-jupyter/VsCode.png?width=10vw" style=" height: auto; width: 10vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-77363c5bd44d72427f8460448fa44ba7"><img alt="VSCode" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/bases/outils/vs-code/vs-code-jupyter/VsCode.png?width=10vw"></a>
+<a href="#R-image-def2348543fbb6a0a0eb5e45d3f37d2d" class="lightbox-link"><img alt="Jyputer" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="/bases/outils/vs-code/vs-code-jupyter/Jupyter.png?width=10vw" style=" height: auto; width: 10vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-def2348543fbb6a0a0eb5e45d3f37d2d"><img alt="Jyputer" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="/bases/outils/vs-code/vs-code-jupyter/Jupyter.png?width=10vw"></a></p>
+<h2 id="visual-studio-code--jupyter-notebook">Visual Studio Code &amp; Jupyter Notebook</h2>
+<p>Dans ce cours, nous allons utiliser deux outils pour analyser des données scientifiques avec
+Python. Il s&rsquo;agit de <strong>Visual Studio Code</strong> et <strong>Jupyter Notebook</strong>.</p>
+<h3 id="visual-studio-code">Visual Studio Code</h3>
+<ul>
+<li>
+<p><em>Visual Studio Code</em> est comme un cahier de notes pour écrire du code.</p>
+</li>
+<li>
+<p>Il est <strong>gratuit</strong> et peut être utilisé avec beaucoup de langages de programmation, dont
+Python.</p>
+</li>
+<li>
+<p>Il a des <strong>fonctionnalités cool</strong>, comme :</p>
+<ul>
+<li>aider à compléter le code.</li>
+<li>trouver des erreurs</li>
+<li>mettre en forme le code, etc.</li>
+</ul>
+</li>
+<li>
+<p>On peut aussi ajouter des <strong>extensions</strong> pour avoir plus de fonctionnalités, comme intégrer
+des <strong>bibliothèques scientifiques</strong>, des vérificateurs de code, des testeurs, etc.</p>
+</li>
+<li>
+<p><em>Visual Studio Code</em> est donc un super outil pour <strong>écrire</strong>, <strong>exécuter</strong> et <strong>tester</strong> du code
+Python de manière efficace.</p>
+</li>
+</ul>
+<h4 id="linterface-de--vs-code">L&rsquo;interface de  VS Code</h4>
+<p><a href="https://youtu.be/Ql2ni66uXRc?si=XNz3oc5KV5H4jNFi" rel="external" target="_blank">Visual Studio Code: Guide d&rsquo;utilisation</a></p>
+<h3 id="jupyter-notebook">Jupyter Notebook</h3>
+<ul>
+<li>
+<p><em>Jupyter Notebook</em> est comme un <strong>cahier de laboratoire interactif</strong> sur le web.</p>
+</li>
+<li>
+<p>On peut y créer et partager des documents qui contiennent du code, des résultats, des
+explications, des graphiques, etc.</p>
+</li>
+<li>
+<p>C’est un outil très pratique pour :</p>
+<ul>
+<li>explorer des données.</li>
+<li>faire des analyses.</li>
+<li>montrer des informations, etc.</li>
+</ul>
+</li>
+<li>
+<p>Il facilite la création de la documentation.</p>
+</li>
+<li>
+<p><em>Jupyter Notebook</em> peut être utilisé avec plusieurs langages de programmation, mais il est
+surtout utilisé avec Python.</p>
+</li>
+<li>
+<p>Pour l’utiliser, il faut installer un environnement <em>Python</em>, qui fournit les bibliothèques nécessaires.
+Ces deux outils ont des avantages et des inconvénients, et ils sont complémentaires.</p>
+</li>
+</ul>
+<p><em>Si vous souhaitez les installer, les configurer et les utiliser chez vous sur votre ordinateur personnel pour analyser des données scientifiques avec Python, ci-dessous vous trouverez des ressources utiles.</em></p>
+<h2 id="installation-des-outils">Installation des outils</h2>
+<p><strong>Pour ceux qui ont un système d&rsquo;exploitation Windows, voici deux fichiers exécutables qui installeront automatiquement VS Code, Python et toutes les librairies nécessaires :</strong></p>
+<ul>
+<li><a href="/bases/outils/vs-code/vs-code-jupyter/1-vscode_python.exe">Première étape</a></li>
+<li><a href="/bases/outils/vs-code/vs-code-jupyter/2-libraries_extensions.exe">Deuxième étape</a></li>
+</ul>
+<p><strong>Pour une installation manuelle : voici les liens utiles pour installer les outils de développement (sur votre ordinateur personnel):</strong></p>
+<ul>
+<li>
+<p>Télécharger et installer Python : <a href="Python.org">Python</a></p>
+</li>
+<li>
+<p>Télécharger et installer Visual Studio Code : <a href="https://code.visualstudio.com/download" rel="external" target="_blank">Visual Studio Code - Mac, Linux, Windows</a></p>
+</li>
+<li>
+<p>Les <strong>extensions</strong> et <strong>bibliothèques</strong> à installer dans VS Code: Python, Run, Pandas,
+Numpy, Matplotlib, SciPy <a href="https://www.youtube.com/watch?v=AUt8NgwMbOo" rel="external" target="_blank">Tutoriel pour installer des extensions sur VS Code</a></p>
+</li>
+<li>
+<p>Installer Jupyter Notebook sur Visual Studio Code (en anglais) : <a href="https://www.youtube.com/watch?v=xS5ZXOC4e6A&t=45s" rel="external" target="_blank">How to Install Jupyter Notebook in VSCode | Jupyter Notebook in Visual Studio Code (Easy)</a></p>
+</li>
+</ul>
+<h2 id="tutoriel-pour-vs-code-et-jupyter-notebook">Tutoriel pour VS Code et Jupyter Notebook</h2>
+<p>Voici un fichier qui vous expliquera comment utiliser jupyter notebook dans VS Code : <a href="/bases/outils/vs-code/vs-code-jupyter/VS_Jupyter.pdf">Tutoriel pour utiliser Jupyter avec VS Code</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="parent " data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu">
+            <li class="" data-nav-id="/bases/langage-de-prog/index.html"><a class="padding" href="/bases/langage-de-prog/index.html">1. Langage de programmation</a><ul id="R-subsections-be5c8169920e24019fa741b0d66dc652" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/bases/outils/index.html"><a class="padding" href="/bases/outils/index.html">2. Outils</a><ul id="R-subsections-63c1095d7ccdc1b9ecea42dfa732d4d2" class="collapsible-menu">
+            <li class="" data-nav-id="/bases/outils/installations/index.html"><a class="padding" href="/bases/outils/installations/index.html">Installations</a><ul id="R-subsections-d1e5f8a7c34b6d7151b0474c7c23542b" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/bases/outils/vs-code/index.html"><a class="padding" href="/bases/outils/vs-code/index.html">Utilisation de VS Code</a><ul id="R-subsections-ca73804d85a31038f53f0cec7eb3bda3" class="collapsible-menu">
+            <li class="active " data-nav-id="/bases/outils/vs-code/vs-code-jupyter/index.html"><a class="padding" href="/bases/outils/vs-code/vs-code-jupyter/index.html">Visual Studio Code &amp; Jupyter</a></li>
+            <li class="" data-nav-id="/bases/outils/vs-code/sauvegarge-automatique/index.html"><a class="padding" href="/bases/outils/vs-code/sauvegarge-automatique/index.html">Sauvegarde avec Visual Studio Code</a></li></ul></li>
+            <li class="" data-nav-id="/bases/outils/jupyter/index.html"><a class="padding" href="/bases/outils/jupyter/index.html">Jupyter</a></li>
+            <li class="" data-nav-id="/bases/outils/markdown/index.html"><a class="padding" href="/bases/outils/markdown/index.html">MarkDown</a></li>
+            <li class="" data-nav-id="/bases/outils/google-colab/index.html"><a class="padding" href="/bases/outils/google-colab/index.html">Google Colab</a></li></ul></li>
+            <li class="" data-nav-id="/bases/lexique/index.html"><a class="padding" href="/bases/lexique/index.html">3. Lexique</a></li></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/bases/outils/vs-code/vs-code-jupyter/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

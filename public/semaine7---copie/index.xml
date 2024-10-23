@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>7. Bibliothèque Pandas :: My New Hugo Site</title>
+    <link>http://localhost:1313/semaine7---copie/index.html</link>
+    <description>Objectifs :&#xA;Utiliser la bibliothèque Pandas pour extraire et filtrer des données scientifiques. Contenu :&#xA;Introduction à Pandas. Manipulation de données avec Pandas. Activités : Exercices pratiques avec Pandas.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/semaine7---copie/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

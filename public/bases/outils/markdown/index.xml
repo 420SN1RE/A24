@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MarkDown :: 420-SN1-RE</title>
+    <link>https://example.org/bases/outils/markdown/index.html</link>
+    <description>Introduction au Markdown dans Jupyter Notebook Markdown est un langage de balisage léger qui vous permet de formater du texte en utilisant une syntaxe simple. Dans Jupyter Notebook, vous pouvez utiliser des cellules Markdown pour ajouter des titres, des listes, des liens, des images, et bien plus encore.&#xA;Comment créer une cellule Markdown Créer une nouvelle cellule : Cliquez sur le bouton “+” dans la barre d’outils pour ajouter une nouvelle cellule. Changer le type de cellule : Cliquez sur le menu déroulant “Code” dans la barre d’outils et sélectionnez “Markdown”. Vous pouvez également utiliser le raccourci clavier Esc puis M. Écrire du texte en Markdown : Tapez votre texte en utilisant la syntaxe Markdown. Exécuter la cellule : Appuyez sur Shift + Enter pour exécuter la cellule et afficher le texte formaté. Les bases du Markdown Titres et sous-titres:</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/outils/markdown/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

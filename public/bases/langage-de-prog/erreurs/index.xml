@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Erreurs communes :: 420-SN1-RE</title>
+    <link>https://example.org/bases/langage-de-prog/erreurs/index.html</link>
+    <description>Au fil des semaines nous aurons l’occasion de localiser et de corriger différentes erreurs (ou bogues). Dans cette section “Erreurs et débogage”, vous trouverez des techniques qui permettent de déboguer vos programmes.&#xA;La méthode Print et le débogage Une erreur de syntaxe signifie que le code n’est pas conforme aux règles de syntaxe du langage. Cela est habituellement détecté immédiatement.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/langage-de-prog/erreurs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Erreurs avec les noms des variables</title>
+      <link>https://example.org/bases/langage-de-prog/erreurs/nomenclature-variables/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/erreurs/nomenclature-variables/index.html</guid>
+      <description>Pourquoi bien nommer les choses ? La raison est simple, on passe plus de temps a lire du code qu’a l’écrire, donc pour se simplifier la tâche de lecture du code, quel que soit le langage de programmation, il est important de bien nommer les différentes variables, méthodes etc.&#xA;Conventions de nommage en python En plus des règles liées au langage qui mèneront à un problème d’exécution (par exemple, un nom de variable ne doit pas commencer par des chiffres), il existe un nombre de convention concernant le nommage en python.</description>
+    </item>
+    <item>
+      <title>Erreurs avec les opérateurs</title>
+      <link>https://example.org/bases/langage-de-prog/erreurs/operateurs/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/erreurs/operateurs/index.html</guid>
+      <description>Les erreurs communes avec les opérateurs Les erreurs avec les opérateurs en Python peuvent être frustrantes, mais avec une attention aux détails et l’utilisation des bonnes pratiques, elles peuvent être évitées. En suivant les astuces mentionnées, vous pouvez écrire du code plus robuste et plus facile à déboguer.&#xA;En Python, les opérateurs arithmétiques, de comparaison et logiques sont essentiels pour manipuler les données et contrôler le flux du programme. Cependant, des erreurs peuvent survenir, surtout pour les débutants.</description>
+    </item>
+    <item>
+      <title>Erreurs lors de la lecture de données au clavier</title>
+      <link>https://example.org/bases/langage-de-prog/erreurs/lecture-donnees/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/erreurs/lecture-donnees/index.html</guid>
+      <description>Les erreurs communes lors de la lecture de données au clavier La lecture de données au clavier en Python peut être source d’erreurs, mais en suivant les bonnes pratiques et en utilisant les astuces mentionnées, vous pouvez éviter ces erreurs et rendre votre code plus robuste.&#xA;La lecture de données au clavier est une tâche courante en Python, souvent réalisée avec la fonction input(). Cependant, des erreurs peuvent survenir, surtout pour les débutants. Explorons les erreurs courantes et voyons comment les éviter et les détecter facilement.</description>
+    </item>
+    <item>
+      <title>Erreurs avec if elif et else</title>
+      <link>https://example.org/bases/langage-de-prog/erreurs/if-else-elif/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/erreurs/if-else-elif/index.html</guid>
+      <description>Les erreurs communes avec les structures if, elif et else Les structures conditionnelles if, elif et else sont fondamentales en programmation pour contrôler le flux d’exécution du programme. Cependant, des erreurs peuvent survenir, surtout pour les débutants. Voici les erreurs courantes et des astuces pour les éviter et les détecter facilement.&#xA;1. Erreurs de syntaxe Erreurs courantes :</description>
+    </item>
+    <item>
+      <title>Erreurs avec la boucle while</title>
+      <link>https://example.org/bases/langage-de-prog/erreurs/while/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/erreurs/while/index.html</guid>
+      <description>Les erreurs communes avec la boucle while La boucle while est une structure de contrôle essentielle en Python, permettant d’exécuter un bloc de code tant qu’une condition est vraie. Cependant, des erreurs peuvent survenir, surtout pour les débutants. Voyons les erreurs courantes et des astuces pour les éviter et les détecter facilement.&#xA;1. Boucles infinies Erreurs courantes :</description>
+    </item>
+    <item>
+      <title>Erreurs avec la boucle for et la fonction range</title>
+      <link>https://example.org/bases/langage-de-prog/erreurs/for-range/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/erreurs/for-range/index.html</guid>
+      <description>Les erreurs communes avec la boucle for et la fonction range() La boucle for et la fonction range() sont des outils puissants en Python pour itérer sur des séquences. Cependant, des erreurs peuvent survenir, surtout pour les débutants. Explorons les erreurs courantes et des astuces pour les éviter et les détecter facilement.</description>
+    </item>
+    <item>
+      <title>Erreurs avec les listes</title>
+      <link>https://example.org/bases/langage-de-prog/erreurs/listes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/erreurs/listes/index.html</guid>
+      <description>Les erreurs communes avec les listes Les listes sont l’une des structures de données les plus utilisées en Python. Cependant, leur utilisation peut parfois mener à des erreurs courantes. Voici un aperçu de ces erreurs et des astuces pour les éviter ou les détecter facilement.&#xA;1. IndexError : Liste hors limites Erreur :</description>
+    </item>
+    <item>
+      <title>Erreurs avec les fonctions</title>
+      <link>https://example.org/bases/langage-de-prog/erreurs/fonctions/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/erreurs/fonctions/index.html</guid>
+      <description>Les fonctions sont des blocs de code essentiels en Python, mais leur utilisation peut parfois entraîner des erreurs, surtout pour les débutants. Voici un aperçu des erreurs les plus courantes et des conseils pour les éviter.&#xA;1. Oublier de définir la fonction avant de l’appeler En Python, une fonction doit être définie avant d’être appelée. Si vous essayez d’appeler une fonction avant sa définition, vous obtiendrez une erreur NameError.</description>
+    </item>
+    <item>
+      <title>Gestion des exceptions</title>
+      <link>https://example.org/bases/langage-de-prog/erreurs/gestionexceptions/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/langage-de-prog/erreurs/gestionexceptions/index.html</guid>
+      <description>La gestion des exceptions Python permet de gérer les exceptions à l’aide des blocs try-except. Cela permet d’attraper les erreurs et de les traiter de manière appropriée sans interrompre l’exécution du programme.&#xA;try: resultat = 10 / 0 except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;) Il est également possible de gérer plusieurs types d’exceptions dans un même bloc try-except.&#xA;try: ma_liste = [1, 2, 3] print(ma_liste[5]) except IndexError: print(&#34;Erreur : index de liste incorrect&#34;) except ZeroDivisionError: print(&#34;Erreur : division par zéro&#34;)</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="Qu’est-ce que pandas ? Pandas est une bibliothèque Python puissante et flexible utilisée pour la manipulation et l’analyse de données. Elle est particulièrement utile pour les scientifiques qui travaillent avec de grandes quantités de données.
+Installation de pandas Avant de commencer, assurez-vous d’avoir pandas installé. Vous pouvez l’installer via pip :
+pip install pandas Importation de pandas Pour utiliser pandas, vous devez d’abord l’importer dans votre script Python :">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Introduction à Pandas :: 420-SN1-RE">
+    <meta name="twitter:description" content="Qu’est-ce que pandas ? Pandas est une bibliothèque Python puissante et flexible utilisée pour la manipulation et l’analyse de données. Elle est particulièrement utile pour les scientifiques qui travaillent avec de grandes quantités de données.
+Installation de pandas Avant de commencer, assurez-vous d’avoir pandas installé. Vous pouvez l’installer via pip :
+pip install pandas Importation de pandas Pour utiliser pandas, vous devez d’abord l’importer dans votre script Python :">
+    <meta property="og:url" content="https://example.org/semaine11/pandas/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Introduction à Pandas :: 420-SN1-RE">
+    <meta property="og:description" content="Qu’est-ce que pandas ? Pandas est une bibliothèque Python puissante et flexible utilisée pour la manipulation et l’analyse de données. Elle est particulièrement utile pour les scientifiques qui travaillent avec de grandes quantités de données.
+Installation de pandas Avant de commencer, assurez-vous d’avoir pandas installé. Vous pouvez l’installer via pip :
+pip install pandas Importation de pandas Pour utiliser pandas, vous devez d’abord l’importer dans votre script Python :">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Pandas et présentation du projet final">
+    <meta itemprop="name" content="Introduction à Pandas :: 420-SN1-RE">
+    <meta itemprop="description" content="Qu’est-ce que pandas ? Pandas est une bibliothèque Python puissante et flexible utilisée pour la manipulation et l’analyse de données. Elle est particulièrement utile pour les scientifiques qui travaillent avec de grandes quantités de données.
+Installation de pandas Avant de commencer, assurez-vous d’avoir pandas installé. Vous pouvez l’installer via pip :
+pip install pandas Importation de pandas Pour utiliser pandas, vous devez d’abord l’importer dans votre script Python :">
+    <meta itemprop="wordCount" content="1027">
+    <title>Introduction à Pandas :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine11/pandas/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#quest-ce-que-pandas-">Qu&rsquo;est-ce que pandas ?</a></li>
+    <li><a href="#installation-de-pandas">Installation de pandas</a></li>
+    <li><a href="#importation-de-pandas">Importation de pandas</a></li>
+    <li><a href="#la-structure-de-données-principale-de-pandas">La structure de données principale de Pandas</a></li>
+    <li><a href="#chargement-des-données-à-partir-dun-fichier-csv">Chargement des données à partir d&rsquo;un fichier CSV</a></li>
+    <li><a href="#affichage-des-données">Affichage des données</a></li>
+    <li><a href="#renommage-de-colonnes">Renommage de colonnes</a></li>
+    <li><a href="#ajout-et-suppression-de-colonnes">Ajout et suppression de colonnes</a></li>
+    <li><a href="#informations-sur-le-dataframe">Informations sur le <em>DataFrame</em></a></li>
+    <li><a href="#statistiques-de-base">Statistiques de base</a></li>
+    <li><a href="#accès-direct-aux-données">Accès direct aux données</a></li>
+    <li><a href="#sélection-et-filtrage-de-données">Sélection et filtrage de données</a>
+      <ul>
+        <li><a href="#grouper-les-données">Grouper les données</a></li>
+      </ul>
+    </li>
+    <li><a href="#les-attributs-index-et-values-des-dataframes">Les attributs index et values des DataFrames</a></li>
+    <li><a href="#conversion-dun-dataframe-en-liste">Conversion d&rsquo;un <em>DataFrame</em> en liste</a>
+      <ul>
+        <li><a href="#propriété-des-valeurs-nan">Propriété des valeurs <em>NaN</em></a></li>
+      </ul>
+    </li>
+    <li><a href="#reconstruction-dun-dataframe">Reconstruction d&rsquo;un <em>DataFrame</em></a></li>
+    <li><a href="#visualisation-des-données">Visualisation des données</a></li>
+    <li><a href="#pause-5-minutes">Pause 5 minutes</a></li>
+    <li><a href="#présentation-du-projet-final-étape-1">Présentation du projet final (Étape 1)</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/semaine11/index.html"><span itemprop="name">Pandas et présentation du projet final</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Introduction à Pandas</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine11/index.html" title="Pandas et présentation du projet final (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine11/projet/index.html" title="Projet final (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine11" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="introduction-à-pandas">Introduction à Pandas</h1>
+
+<p><a href="#R-image-842cf14989de988c5213d7dbab6d8fb9" class="lightbox-link"><img alt="Bibliothèque Pandas" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../pandas.jpg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-842cf14989de988c5213d7dbab6d8fb9"><img alt="Bibliothèque Pandas" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../pandas.jpg?width=25vw"></a></p>
+<h2 id="quest-ce-que-pandas-">Qu&rsquo;est-ce que pandas ?</h2>
+<p>Pandas est une bibliothèque Python puissante et flexible utilisée pour la manipulation et l&rsquo;analyse de données. Elle est particulièrement utile pour les scientifiques qui travaillent avec de grandes quantités de données.</p>
+<h2 id="installation-de-pandas">Installation de pandas</h2>
+<p>Avant de commencer, assurez-vous d&rsquo;avoir pandas installé. Vous pouvez l&rsquo;installer via pip :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install pandas</span></span></code></pre></div>
+<h2 id="importation-de-pandas">Importation de pandas</h2>
+<p>Pour utiliser pandas, vous devez d&rsquo;abord l&rsquo;importer dans votre script Python :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd</span></span></code></pre></div>
+<h2 id="la-structure-de-données-principale-de-pandas">La structure de données principale de Pandas</h2>
+<p>Un <em><strong>DataFrame</strong></em> est une structure de données bidimensionnelle fournie par la bibliothèque pandas en Python. Il ressemble à une feuille de calcul Excel, avec des lignes et des colonnes. Chaque colonne peut contenir des types de données différents (nombres, chaînes de caractères, etc.), ce qui le rend très flexible pour manipuler et analyser des données.</p>
+<h2 id="chargement-des-données-à-partir-dun-fichier-csv">Chargement des données à partir d&rsquo;un fichier CSV</h2>
+<p>Le traitement des fichiers contenant des données est essentiel en programmation Python, en particulier dans le domaine des sciences de données.
+CSV signifie <em><strong>Comma-Separated Values</strong></em> (valeurs séparées par des virgules). C&rsquo;est un format de fichier simple utilisé pour stocker des données tabulaires, comme une feuille de calcul Excel.</p>
+<p>Pandas fourni des fonctionnalités pour lire des fichiers csv ou en créer.</p>
+<p>La première étape pour travailler avec des données est de les charger dans un DataFrame. Supposons que vous avez un fichier CSV nommé <code>data.csv</code> :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;data.csv&#39;</span>)</span></span></code></pre></div>
+<h2 id="affichage-des-données">Affichage des données</h2>
+<p>Une fois les données chargées, vous pouvez les afficher pour avoir un aperçu :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>head()  <span style="color:#75715e"># Affiche les 5 premières lignes du DataFrame</span></span></span></code></pre></div>
+<p><a href="#R-image-7beb6953512557d168f1583c92dfbac7" class="lightbox-link"><img alt="5 premières lignes" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../head.png?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7beb6953512557d168f1583c92dfbac7"><img alt="5 premières lignes" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../head.png?width=25vw"></a></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>tail()  <span style="color:#75715e"># Affiche les 5 dernières lignes du DataFrame</span></span></span></code></pre></div>
+<p><a href="#R-image-ceb42847876fcf304aabcad9a7aa8d10" class="lightbox-link"><img alt="5 dernières lignes" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../tail.png?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ceb42847876fcf304aabcad9a7aa8d10"><img alt="5 dernières lignes" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../tail.png?width=25vw"></a></p>
+<h2 id="renommage-de-colonnes">Renommage de colonnes</h2>
+<p>Les colonnes peuvent être renommées pour une meilleure clarté.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Renommage des colonnes</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>rename(columns<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;Nom&#34;</span>: <span style="color:#e6db74">&#34;Prénom&#34;</span>})
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La colonne Nom modifiée&#34;</span>)
+</span></span><span style="display:flex;"><span>df</span></span></code></pre></div>
+<p><a href="#R-image-3dce5ef895a9ce0361612a541fb2e14c" class="lightbox-link"><img alt="Rename" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../rename.png?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3dce5ef895a9ce0361612a541fb2e14c"><img alt="Rename" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../rename.png?width=25vw"></a></p>
+<h2 id="ajout-et-suppression-de-colonnes">Ajout et suppression de colonnes</h2>
+<p>Pour renommer une ou plusieurs colonnes :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Ajout d&#39;une nouvelle colonne</span>
+</span></span><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Session&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Automne&#34;</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La colonne Session ajoutée&#34;</span>)
+</span></span><span style="display:flex;"><span>df
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Suppression d&#39;une colonne</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>drop(columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Session&#34;</span>])
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;La colonne Session supprimée&#34;</span>)
+</span></span><span style="display:flex;"><span>df</span></span></code></pre></div>
+<p><a href="#R-image-c78ac1aa267e63e7a0f31aaad2e9bc72" class="lightbox-link"><img alt="Session ajoutée" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../session.png?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-c78ac1aa267e63e7a0f31aaad2e9bc72"><img alt="Session ajoutée" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../session.png?width=25vw"></a></p>
+<p><a href="#R-image-e0de97f976621dbd389102ed42d86108" class="lightbox-link"><img alt="Session supprimée" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../session_suppr.png?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-e0de97f976621dbd389102ed42d86108"><img alt="Session supprimée" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../session_suppr.png?width=25vw"></a></p>
+<h2 id="informations-sur-le-dataframe">Informations sur le <em>DataFrame</em></h2>
+<p>Pour obtenir des informations générales sur votre <em>DataFrame</em>, telles que le nombre de lignes et de colonnes, les types de données, etc. :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>info()</span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+</span></span><span style="display:flex;"><span>RangeIndex: 8 entries, 0 to 7
+</span></span><span style="display:flex;"><span>Data columns (total 3 columns):
+</span></span><span style="display:flex;"><span> #   Column  Non-Null Count  Dtype  
+</span></span><span style="display:flex;"><span>---  ------  --------------  -----  
+</span></span><span style="display:flex;"><span> 0   Prénom  8 non-null      object 
+</span></span><span style="display:flex;"><span> 1   Age     8 non-null      int64  
+</span></span><span style="display:flex;"><span> 2   Note    8 non-null      float64
+</span></span><span style="display:flex;"><span>dtypes: float64(1), int64(1), object(1)
+</span></span><span style="display:flex;"><span>memory usage: 324.0+ bytes</span></span></code></pre></div>
+<p>On a bien les types de variables connus : <code>int</code>, <code>float</code>.<code>object</code> fait souvent référence au type <code>str</code>.</p>
+<h2 id="statistiques-de-base">Statistiques de base</h2>
+<p>Pandas offre des méthodes simples pour obtenir des statistiques de base sur vos données :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>describe()  <span style="color:#75715e"># Affiche les statistiques descriptives des colonnes numériques</span></span></span></code></pre></div>
+<p><a href="#R-image-38465587cbc7986ff37cfb6b04a21799" class="lightbox-link"><img alt="describre" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../describe.png?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-38465587cbc7986ff37cfb6b04a21799"><img alt="describre" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../describe.png?width=25vw"></a></p>
+<h2 id="accès-direct-aux-données">Accès direct aux données</h2>
+<p>Vous pouvez accéder directement aux données d&rsquo;une colonne du DataFrame.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#e6db74">&#34;Age&#34;</span>]  <span style="color:#75715e"># Accède aux données de la colonne Age</span></span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>0    25
+</span></span><span style="display:flex;"><span>1    30
+</span></span><span style="display:flex;"><span>2    35
+</span></span><span style="display:flex;"><span>3    42
+</span></span><span style="display:flex;"><span>4    55
+</span></span><span style="display:flex;"><span>5    67
+</span></span><span style="display:flex;"><span>6    37
+</span></span><span style="display:flex;"><span>7    23
+</span></span><span style="display:flex;"><span>Name: Age, dtype: int64</span></span></code></pre></div>
+<h2 id="sélection-et-filtrage-de-données">Sélection et filtrage de données</h2>
+<p>Pour sélectionner des colonnes spécifiques :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df_selection <span style="color:#f92672">=</span> df[[<span style="color:#e6db74">&#39;Colonne1&#39;</span>, <span style="color:#e6db74">&#39;Colonne2&#39;</span>]]  <span style="color:#75715e"># Sélectionne les colonnes &#39;Colonne1&#39; et &#39;Colonne2&#39;</span>
+</span></span><span style="display:flex;"><span>df_selection<span style="color:#f92672">.</span>head()</span></span></code></pre></div>
+<p>Pour filtrer les données selon une condition :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df_filtre <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#39;Colonne&#39;</span>] <span style="color:#f92672">&gt;</span> valeur]  <span style="color:#75715e"># Filtre les lignes où les valeurs de &#39;Colonne&#39; sont supérieures à &#39;valeur&#39;</span>
+</span></span><span style="display:flex;"><span>df_filtre<span style="color:#f92672">.</span>head()</span></span></code></pre></div>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Attention
+  </div>
+  <div class="box-content">
+<p>Dans les chapitres précédents, on utilisait <code>and</code> et <code>or</code> pour combiner des comparaisons. Avec Pandas, il faut utiliser <code>&amp;</code> pour <code>and</code> et <code>|</code> pour <code>or</code>.</p>
+  </div>
+</div>
+<h3 id="grouper-les-données">Grouper les données</h3>
+<p>Le groupement de données permet de calculer des statistiques agrégées pour des sous-ensembles de données.</p>
+<p><a href="#R-image-eb66168a8e8fe91fcc4ab914328c5b06" class="lightbox-link"><img alt="Avant groupe" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../avant_groupe.png?width=30vw" style=" height: auto; width: 30vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-eb66168a8e8fe91fcc4ab914328c5b06"><img alt="Avant groupe" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../avant_groupe.png?width=30vw"></a></p>
+<p>Ci-dessous, voici comment faire, sans utiliser les fonctionnalités avancées de Pandas et en utilisant les notions déjà vues dans ce cours.</p>
+<h4 id="boucler-sur-une-colonne-pour-effectuer-des-groupements">Boucler sur une colonne pour effectuer des groupements</h4>
+<p>Calculons la moyenne pour les étudiants de l&rsquo;automne.</p>
+<ol>
+<li>On <strong>filtre</strong> notre jeu de données en rapport avec les données de la session d&rsquo;Automne.</li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df_automne <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#34;Session&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Automne&#34;</span>]</span></span></code></pre></div>
+<p><a href="#R-image-409e4c1a7aa3831761afa0dd8839364f" class="lightbox-link"><img alt="Groupe Automne" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../automne.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-409e4c1a7aa3831761afa0dd8839364f"><img alt="Groupe Automne" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../automne.png?width=35vw"></a></p>
+<ol start="2">
+<li>On <strong>calcule la moyenne</strong> des notes à l&rsquo;aide d&rsquo;une boucle <code>for</code></li>
+</ol>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>somme_note <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> note <span style="color:#f92672">in</span> df_automne[<span style="color:#e6db74">&#34;Note&#34;</span>]:
+</span></span><span style="display:flex;"><span>   somme_note <span style="color:#f92672">=</span> somme_note <span style="color:#f92672">+</span> note
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>moyenne <span style="color:#f92672">=</span> somme_note <span style="color:#f92672">/</span> len(df_automne)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;La moyenne des étudiants de l&#39;automne est de </span><span style="color:#e6db74">{</span>round(moyenne,<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">%&#34;</span>)</span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>La moyenne des étudiants de l&#39;automne est de 77.97%</span></span></code></pre></div>
+<h2 id="les-attributs-index-et-values-des-dataframes">Les attributs index et values des DataFrames</h2>
+<p>Pour accéder à l&rsquo;index du DataFrame :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>index <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>index
+</span></span><span style="display:flex;"><span>print(index)</span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>RangeIndex(start=0, stop=3, step=1)</span></span></code></pre></div>
+<p>Pour accéder aux valeurs du DataFrame sous forme de tableau :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>valeurs <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>values	<span style="color:#75715e"># Accède à la première ligne sous forme de tableau numPy</span>
+</span></span><span style="display:flex;"><span>print(valeurs)</span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>[[&#39;Aline&#39; 25 85.5]
+</span></span><span style="display:flex;"><span> [&#39;Robert&#39; 30 90.3]
+</span></span><span style="display:flex;"><span> [&#39;Charles&#39; 35 78.9]]</span></span></code></pre></div>
+<h2 id="conversion-dun-dataframe-en-liste">Conversion d&rsquo;un <em>DataFrame</em> en liste</h2>
+<p>La méthode <code>tolist()</code> est utilisée pour convertir un <em>DataFrame</em> en une liste. Chaque ligne du <em>DataFrame</em> sera un élément de la liste. C’est particulièrement utile lorsqu&rsquo;on souhaite manipuler les données sans utilises les méthodes de pandas. Par exemple, pour identifier et modifier les données manquantes (Ex.: <em>None</em> ou <em>NaN</em>).</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Charger les données dans un DataFrame</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;data.csv&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Convertir le DataFrame en liste</span>
+</span></span><span style="display:flex;"><span>liste <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>values<span style="color:#f92672">.</span>tolist()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Remplacer les valeurs manquantes par 0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> ligne <span style="color:#f92672">in</span> liste:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(ligne)):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> ligne[i] <span style="color:#f92672">!=</span> ligne[i]:
+</span></span><span style="display:flex;"><span>            ligne[i] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Afficher la liste modifiée</span>
+</span></span><span style="display:flex;"><span>print(liste)</span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>[[&#39;Aline&#39;, 25, 85.5, &#39;Laval&#39;], [&#39;Robert&#39;, 30, 0, &#39;Laval&#39;], [&#39;Charles&#39;, 35, 78.9, &#39;Montréal&#39;], [&#39;Sophie&#39;, 28, 0, &#39;Québec&#39;], [&#39;Luc&#39;, 22, 88.0, &#39;Sherbrooke&#39;], [&#39;Marie&#39;, 27, 0, &#39;Trois-Rivières&#39;], [&#39;Jean&#39;, 32, 92.3, &#39;Gatineau&#39;], [&#39;Paul&#39;, 29, 0, &#39;Saguenay&#39;], [&#39;Julie&#39;, 24, 81.7, &#39;Drummondville&#39;], [&#39;Marc&#39;, 31, 0, &#39;Longueuil&#39;]]</span></span></code></pre></div>
+<p>La condition <code>if ligne[i] != ligne[i]:</code> fonctionne grâce à une propriété unique des valeurs NaN (Not a Number) en Python. :</p>
+<h3 id="propriété-des-valeurs-nan">Propriété des valeurs <em>NaN</em></h3>
+<p>En Python, et plus généralement dans les langages de programmation, les valeurs <code>NaN</code> ont une propriété spéciale : elles ne sont pas égales à elles-mêmes. Cela signifie que si vous comparez une valeur <code>NaN</code> à elle-même, le résultat sera toujours <code>False</code>.</p>
+<h2 id="reconstruction-dun-dataframe">Reconstruction d&rsquo;un <em>DataFrame</em></h2>
+<p>L&rsquo;utilisation de <code>pd.DataFrame(donnees_nettoyees, columns=dataframe.columns)</code> permet reconstruire un <em>DataFrame</em> nettoyé avec les mêmes colonnes que l’original.</p>
+<h2 id="visualisation-des-données">Visualisation des données</h2>
+<p>Bien que Pandas ne soit pas une bibliothèque de visualisation, il s&rsquo;intègre bien avec Matplotlib pour créer des graphiques simples.</p>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Info
+  </div>
+  <div class="box-content">
+<p>Nous verrons comment utiliser la bibliothèque Matplotlib pour tracer des graphiques, la semaine prochaine.</p>
+  </div>
+</div>
+<p>Pour tout savoir sur Pandas: <a href="https://pandas.pydata.org/" rel="external" target="_blank" title="Pandas">Site officiel Pandas</a>.</p>
+<h2 id="pause-5-minutes">Pause 5 minutes</h2>
+<p><a href="#R-image-f48936089e67313a607afa237f29dbae" class="lightbox-link"><img alt="Pause" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../pause.jpg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f48936089e67313a607afa237f29dbae"><img alt="Pause" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../pause.jpg?width=25vw"></a></p>
+<h2 id="présentation-du-projet-final-étape-1">Présentation du projet final (Étape 1)</h2>
+<p><a href="https://420sn1re.github.io/A24/semaine11/projet/index.html#projet-final" rel="external" target="_blank">Projet final</a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="parent " data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine11/pandas/index.html"><a class="padding" href="/semaine11/pandas/index.html">Introduction à Pandas</a></li>
+            <li class="" data-nav-id="/semaine11/projet/index.html"><a class="padding" href="/semaine11/projet/index.html">Projet final</a></li>
+            <li class="" data-nav-id="/semaine11/atelier/index.html"><a class="padding" href="/semaine11/atelier/index.html">ATELIERS</a></li></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/semaine11/pandas/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

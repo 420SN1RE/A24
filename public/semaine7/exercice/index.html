@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="Objectif : Ces exercices visent à évaluer votre compréhension de la syntaxe de base (variables et types de données, l’interaction avec le programme, les expressions booléennes et les conditions, les boucles, la manipulation des listes des chaînes de caractères.
+En bas de l’énoncé de cet exercice, vous avez des exemples de résultats attendus.
+Exercice 1 Contexte Vous allez créer un programme en Python pour analyser une chaîne de caractères saisie au clavier. Le programme doit compter le nombre de caractères, identifier les caractères uniques et calculer la fréquence de chaque caractère.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Exercices récapitulatifs :: 420-SN1-RE">
+    <meta name="twitter:description" content="Objectif : Ces exercices visent à évaluer votre compréhension de la syntaxe de base (variables et types de données, l’interaction avec le programme, les expressions booléennes et les conditions, les boucles, la manipulation des listes des chaînes de caractères.
+En bas de l’énoncé de cet exercice, vous avez des exemples de résultats attendus.
+Exercice 1 Contexte Vous allez créer un programme en Python pour analyser une chaîne de caractères saisie au clavier. Le programme doit compter le nombre de caractères, identifier les caractères uniques et calculer la fréquence de chaque caractère.">
+    <meta property="og:url" content="https://example.org/semaine7/exercice/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Exercices récapitulatifs :: 420-SN1-RE">
+    <meta property="og:description" content="Objectif : Ces exercices visent à évaluer votre compréhension de la syntaxe de base (variables et types de données, l’interaction avec le programme, les expressions booléennes et les conditions, les boucles, la manipulation des listes des chaînes de caractères.
+En bas de l’énoncé de cet exercice, vous avez des exemples de résultats attendus.
+Exercice 1 Contexte Vous allez créer un programme en Python pour analyser une chaîne de caractères saisie au clavier. Le programme doit compter le nombre de caractères, identifier les caractères uniques et calculer la fréquence de chaque caractère.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Révision des semaines 1 à 6">
+    <meta itemprop="name" content="Exercices récapitulatifs :: 420-SN1-RE">
+    <meta itemprop="description" content="Objectif : Ces exercices visent à évaluer votre compréhension de la syntaxe de base (variables et types de données, l’interaction avec le programme, les expressions booléennes et les conditions, les boucles, la manipulation des listes des chaînes de caractères.
+En bas de l’énoncé de cet exercice, vous avez des exemples de résultats attendus.
+Exercice 1 Contexte Vous allez créer un programme en Python pour analyser une chaîne de caractères saisie au clavier. Le programme doit compter le nombre de caractères, identifier les caractères uniques et calculer la fréquence de chaque caractère.">
+    <meta itemprop="wordCount" content="1082">
+    <title>Exercices récapitulatifs :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine7/exercice/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#contexte">Contexte</a></li>
+    <li><a href="#ce-que-le-programme-doit-faire-">Ce que le programme doit faire :</a></li>
+    <li><a href="#exemple-de-résultats">Exemple de résultats</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#contexte-1">Contexte</a></li>
+    <li><a href="#instructions">Instructions</a></li>
+    <li><a href="#points-à-vérifier-">Points à vérifier :</a></li>
+    <li><a href="#les-jeux-de-tests">Les jeux de tests</a>
+      <ul>
+        <li><a href="#jeu-de-test-1--ajout-et-affichage-de-produits">Jeu de test 1 : Ajout et affichage de produits</a></li>
+        <li><a href="#jeu-de-test-2--recherche-par-nom">Jeu de test 2 : Recherche par nom</a></li>
+        <li><a href="#jeu-de-test-3--recherche-par-prix">Jeu de test 3 : Recherche par prix</a></li>
+        <li><a href="#jeu-de-test-4--entrée-invalide-pour-la-recherche">Jeu de test 4 : Entrée invalide pour la recherche</a></li>
+        <li><a href="#jeu-de-test-5--aucun-produit-trouvé">Jeu de test 5 : Aucun produit trouvé</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/semaine7/index.html"><span itemprop="name">Révision des semaines 1 à 6</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Exercices récapitulatifs</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/chaines/index.html" title="Les chaines de caractères (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine7/pour-le-prochain-cours/index.html" title="Pour le prochain cours (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine7" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="exercices-récapitulatifs">Exercices récapitulatifs</h1>
+
+<p><a href="#R-image-1fb4d0ac4aebdf4231fe4a893df727a7" class="lightbox-link"><img alt="Exos Récapitulatifs" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../exos.jpg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-1fb4d0ac4aebdf4231fe4a893df727a7"><img alt="Exos Récapitulatifs" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../exos.jpg?width=25vw"></a></p>
+<p><strong>Objectif :</strong> Ces exercices visent à évaluer votre compréhension de la syntaxe de base (variables et types de données, l&rsquo;interaction avec le programme, les expressions booléennes et les conditions, les boucles, la manipulation des listes des chaînes de caractères.</p>
+<p>En bas de l&rsquo;énoncé de cet exercice, vous avez des exemples de résultats attendus.</p>
+<h1 id="exercice-1">Exercice 1</h1>
+<h2 id="contexte">Contexte</h2>
+<p>Vous allez créer un programme en Python pour analyser une chaîne de caractères saisie au clavier. Le programme doit compter le nombre de caractères, identifier les caractères uniques et calculer la fréquence de chaque caractère.</p>
+<h2 id="ce-que-le-programme-doit-faire-">Ce que le programme doit faire :</h2>
+<p><strong>Déterminer si l&rsquo;utilisateur a le droit d&rsquo;utiliser le programme</strong></p>
+<ul>
+<li>Demander à l&rsquo;utilisateur d&rsquo;entrer son prénom.</li>
+<li>Demander à l&rsquo;utilisateur d&rsquo;entrer son âge.</li>
+<li>Si l&rsquo;utilisateur à moins de 18 ans, à l&rsquo;aide de <code>f-string</code>, on l&rsquo;informe qu&rsquo;il n&rsquo;a pas le droit d&rsquo;utiliser ce programme et le programme s&rsquo;arrête.</li>
+<li>Si l&rsquo;utilisateur à plus de 18 ans, on lui demande d&rsquo;entrer une phrase au clavier. Par exemple &ldquo;Bonjour tout le monde&rdquo; et l&rsquo;analyse de la phrase se fait.</li>
+</ul>
+<p><strong>Gestion de la chaine de caractères à analyser.</strong></p>
+<ul>
+<li>Utiliser trois listes pour stocker :
+<ol>
+<li>Les caractères de la chaine.</li>
+<li>Les caractères uniques.</li>
+<li>La fréquence de chaque caractère.</li>
+</ol>
+</li>
+</ul>
+<p><strong>Analyse de la chaine de caractères pour déterminer les caractères uniques et la fréquence.</strong></p>
+<ul>
+<li>Utiliser une boucle pour parcourir chaque caractère de la chaîne.</li>
+<li>Utiliser les fonctions et méthodes de listes/chaines:
+<ul>
+<li><code>append()</code> pour ajouter des caractères dans une liste.</li>
+<li><code>lower()</code> pour ne traiter que des caractères en minuscules.</li>
+<li><code>len()</code> pour obtenir la longueur d&rsquo;une chaine ou liste.</li>
+<li><code>index()</code> pour trouver la position (l’indice) d’un élément spécifique dans une liste.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Logique de l&rsquo;analyse</strong></p>
+<ul>
+<li>Créer une liste pour stocker tous les caractères de la chaîne.</li>
+<li>Utiliser une boucle pour ajouter chaque caractère de la chaîne à la liste de caractères.</li>
+<li>Créer une liste pour stocker les caractères uniques.</li>
+<li>Utiliser une liste de fréquence des caractères pour compter la fréquence de chaque caractère.</li>
+<li>Implémentez une condition pour vérifier si un caractère est déjà présent dans la liste des caractères uniques avant de l&rsquo;ajouter.</li>
+<li>Une fois le décompte terminé, à l&rsquo;aide de <code>f-string</code> afficher les résultats (nombre de caractères analysés, liste des caractères uniques)</li>
+</ul>
+<h2 id="exemple-de-résultats">Exemple de résultats</h2>
+<ul>
+<li>Si le prénom saisi est &ldquo;Nathalie&rdquo; et l&rsquo;âge 16</li>
+</ul>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>Bonjour Nathalie, malheureusement, ce programme est réservé aux plus de 18 ans et vous n&#39;avez que 16 ans.</span></span></code></pre></div>
+<ul>
+<li>Si le prénom saisi est &ldquo;Nathalie&rdquo; et l&rsquo;âge 30 et le texte est &ldquo;Bonjour tout le monde&rdquo;</li>
+</ul>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>Nombre de caractères: 21
+</span></span><span style="display:flex;"><span>Caractères uniques: [&#39;b&#39;, &#39;o&#39;, &#39;n&#39;, &#39;j&#39;, &#39;u&#39;, &#39;r&#39;, &#39; &#39;, &#39;t&#39;, &#39;l&#39;, &#39;e&#39;, &#39;m&#39;, &#39;d&#39;]
+</span></span><span style="display:flex;"><span>Fréquence des caractères: [1, 4, 2, 1, 2, 1, 3, 2, 1, 2, 1, 1]</span></span></code></pre></div>
+<h1 id="exercice-2">Exercice 2</h1>
+<h2 id="contexte-1">Contexte</h2>
+<p>Vous allez créer un programme qui gère une liste de produits dans un magasin. Le programme doit permettre à l&rsquo;utilisateur d&rsquo;ajouter des produits, de les afficher, et de rechercher des produits spécifiques en fonction de leur nom ou de leur prix.</p>
+<p>En bas de l&rsquo;énoncé de cet exercice, vous avez des jeux de tests à utiliser pour vous assurer de traiter tous les cas possibles.</p>
+<h2 id="instructions">Instructions</h2>
+<ol>
+<li>
+<p><strong>Variables et types de données</strong> :</p>
+<ul>
+<li>Créez deux listes vides <code>noms_produits</code> et <code>prix_produits</code> pour stocker les noms et les prix des produits respectivement.</li>
+</ul>
+</li>
+<li>
+<p><strong>Entrées au clavier</strong> :</p>
+<ul>
+<li>Demandez à l&rsquo;utilisateur combien de produits il souhaite ajouter.</li>
+<li>Utilisez une boucle pour permettre à l&rsquo;utilisateur d&rsquo;entrer le nom et le prix de chaque produit.</li>
+</ul>
+</li>
+<li>
+<p><strong>Transtypage</strong> :</p>
+<ul>
+<li>Assurez vous de convertir les entrées de l&rsquo;utilisateur en types de données appropriés (par exemple, convertir le prix en nombre flottant).</li>
+</ul>
+</li>
+<li>
+<p><strong>Structures Conditionnelles</strong> :</p>
+<ul>
+<li>Ajoutez une option pour rechercher un produit par son nom ou par son prix.</li>
+<li>Si l&rsquo;utilisateur choisit de rechercher par nom, demandez le nom et affichez les produits correspondants.</li>
+<li>Si l&rsquo;utilisateur choisit de rechercher par prix, demandez le prix et affichez les produits dont le prix est inférieur ou égal à ce montant.</li>
+</ul>
+</li>
+<li>
+<p><strong>Boucles</strong> :</p>
+<ul>
+<li>Utilisez des boucles pour parcourir les listes des produits et afficher les résultats de la recherche.</li>
+</ul>
+</li>
+<li>
+<p><strong>Listes et chaînes de caractères</strong> :</p>
+<ul>
+<li>Affichez la liste complète des produits avec leur nom et leur prix formatés correctement.</li>
+</ul>
+</li>
+</ol>
+<h2 id="points-à-vérifier-">Points à vérifier :</h2>
+<ul>
+<li>Assurez vous que les entrées de l&rsquo;utilisateur sont correctement converties en types de données appropriés.</li>
+<li>Vérifiez que les boucles et les conditions fonctionnent comme prévu.</li>
+<li>Testez le programme avec différents scénarios pour vous assurer qu&rsquo;il gère correctement les entrées et les recherches.</li>
+</ul>
+<h2 id="les-jeux-de-tests">Les jeux de tests</h2>
+<p>Ces jeux de tests devraient vous permettre de vérifier que votre programme fonctionne correctement avec les deux listes séparées.</p>
+<h3 id="jeu-de-test-1--ajout-et-affichage-de-produits">Jeu de test 1 : Ajout et affichage de produits</h3>
+<ol>
+<li>
+<p><strong>Entrées</strong> :</p>
+<ul>
+<li>Nombre de produits : 3</li>
+<li>Produit 1 : Nom = &ldquo;Pomme&rdquo;, Prix = 1.5</li>
+<li>Produit 2 : Nom = &ldquo;Banane&rdquo;, Prix = 0.8</li>
+<li>Produit 3 : Nom = &ldquo;Orange&rdquo;, Prix = 1.2</li>
+</ul>
+</li>
+<li>
+<p><strong>Sortie attendue</strong> :</p>
+<ul>
+<li>Liste des produits :
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>Nom: Pomme, Prix: 1.5
+</span></span><span style="display:flex;"><span>Nom: Banane, Prix: 0.8
+</span></span><span style="display:flex;"><span>Nom: Orange, Prix: 1.2</span></span></code></pre></div>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="jeu-de-test-2--recherche-par-nom">Jeu de test 2 : Recherche par nom</h3>
+<ol>
+<li>
+<p><strong>Entrées</strong> :</p>
+<ul>
+<li>Nombre de produits : 2</li>
+<li>Produit 1 : Nom = &ldquo;Lait&rdquo;, Prix = 2.5</li>
+<li>Produit 2 : Nom = &ldquo;Pain&rdquo;, Prix = 1.0</li>
+<li>Recherche : nom</li>
+<li>Nom à rechercher : &ldquo;Lait&rdquo;</li>
+</ul>
+</li>
+<li>
+<p><strong>Sortie attendue</strong> :</p>
+<ul>
+<li>Produit trouvé :
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>Produit trouvé - Nom: Lait, Prix: 2.5</span></span></code></pre></div>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="jeu-de-test-3--recherche-par-prix">Jeu de test 3 : Recherche par prix</h3>
+<ol>
+<li>
+<p><strong>Entrées</strong> :</p>
+<ul>
+<li>Nombre de produits : 4</li>
+<li>Produit 1 : Nom = &ldquo;Chocolat&rdquo;, Prix = 3.0</li>
+<li>Produit 2 : Nom = &ldquo;Bonbon&rdquo;, Prix = 0.5</li>
+<li>Produit 3 : Nom = &ldquo;Biscuit&rdquo;, Prix = 1.5</li>
+<li>Produit 4 : Nom = &ldquo;Jus&rdquo;, Prix = 2.0</li>
+<li>Recherche : prix</li>
+<li>Prix maximum : 2.0</li>
+</ul>
+</li>
+<li>
+<p><strong>Sortie attendue</strong> :</p>
+<ul>
+<li>Produits trouvés :
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>Produit trouvé - Nom: Bonbon, Prix: 0.5
+</span></span><span style="display:flex;"><span>Produit trouvé - Nom: Biscuit, Prix: 1.5
+</span></span><span style="display:flex;"><span>Produit trouvé - Nom: Jus, Prix: 2.0</span></span></code></pre></div>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="jeu-de-test-4--entrée-invalide-pour-la-recherche">Jeu de test 4 : Entrée invalide pour la recherche</h3>
+<ol>
+<li>
+<p><strong>Entrées</strong> :</p>
+<ul>
+<li>Nombre de produits : 1</li>
+<li>Produit 1 : Nom = &ldquo;Eau&rdquo;, Prix = 0.7</li>
+<li>Recherche : couleur (option invalide)</li>
+</ul>
+</li>
+<li>
+<p><strong>Sortie attendue</strong> :</p>
+<ul>
+<li>Message d&rsquo;erreur :
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>Option de recherche invalide.</span></span></code></pre></div>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="jeu-de-test-5--aucun-produit-trouvé">Jeu de test 5 : Aucun produit trouvé</h3>
+<ol>
+<li>
+<p><strong>Entrées</strong> :</p>
+<ul>
+<li>Nombre de produits : 2</li>
+<li>Produit 1 : Nom = &ldquo;Café&rdquo;, Prix = 3.5</li>
+<li>Produit 2 : Nom = &ldquo;Thé&rdquo;, Prix = 2.5</li>
+<li>Recherche : nom</li>
+<li>Nom à rechercher : &ldquo;Lait&rdquo;</li>
+</ul>
+</li>
+<li>
+<p><strong>Sortie attendue</strong> :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>Aucun produit trouvé (aucune sortie spécifique attendue pour ce cas, mais le programme ne doit pas planter).</span></span></code></pre></div>
+</li>
+</ol>
+<h1 id="exercice-1---version-2">Exercice 1 - Version 2</h1>
+<p>Modifiez le code de l&rsquo;exercice 1 pour que <strong>tant que</strong> l&rsquo;âge de l&rsquo;utilisateur n&rsquo;est pas supérieur ou égal à 18 ans, on lui redemande son age.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine7/python-base/index.html"><a class="padding" href="/semaine7/python-base/index.html">Python: La base</a></li>
+            <li class="" data-nav-id="/semaine7/ordinogramme/index.html"><a class="padding" href="/semaine7/ordinogramme/index.html">Les ordinogrammes</a></li>
+            <li class="" data-nav-id="/semaine7/listes/index.html"><a class="padding" href="/semaine7/listes/index.html">Les listes</a></li>
+            <li class="" data-nav-id="/semaine7/chaines/index.html"><a class="padding" href="/semaine7/chaines/index.html">Les chaines de caractères</a></li>
+            <li class="active " data-nav-id="/semaine7/exercice/index.html"><a class="padding" href="/semaine7/exercice/index.html">Exercices récapitulatifs</a></li>
+            <li class="" data-nav-id="/semaine7/pour-le-prochain-cours/index.html"><a class="padding" href="/semaine7/pour-le-prochain-cours/index.html">Pour le prochain cours</a></li></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/semaine7/exercice/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

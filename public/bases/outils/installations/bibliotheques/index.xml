@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Installation des bibliothèques Python :: 420-SN1-RE</title>
+    <link>https://example.org/bases/outils/installations/bibliotheques/index.html</link>
+    <description>Installation des librairies Python sur Windows 10/11 Python est un langage de programmation puissant et polyvalent, largement utilisé pour l’analyse de données, la visualisation et les calculs scientifiques. Les librairies pandas, matplotlib, numpy et scipy sont parmi les plus populaires pour ces tâches. Ce chapitre vous guidera à travers les étapes nécessaires pour installer ces librairies sur un système Windows 10 ou 11.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/outils/installations/bibliotheques/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

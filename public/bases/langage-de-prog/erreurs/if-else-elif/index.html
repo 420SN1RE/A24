@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="Les erreurs communes avec les structures if, elif et else Les structures conditionnelles if, elif et else sont fondamentales en programmation pour contrôler le flux d’exécution du programme. Cependant, des erreurs peuvent survenir, surtout pour les débutants. Voici les erreurs courantes et des astuces pour les éviter et les détecter facilement.
+1. Erreurs de syntaxe Erreurs courantes :">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Erreurs avec if elif et else :: 420-SN1-RE">
+    <meta name="twitter:description" content="Les erreurs communes avec les structures if, elif et else Les structures conditionnelles if, elif et else sont fondamentales en programmation pour contrôler le flux d’exécution du programme. Cependant, des erreurs peuvent survenir, surtout pour les débutants. Voici les erreurs courantes et des astuces pour les éviter et les détecter facilement.
+1. Erreurs de syntaxe Erreurs courantes :">
+    <meta property="og:url" content="https://example.org/bases/langage-de-prog/erreurs/if-else-elif/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Erreurs avec if elif et else :: 420-SN1-RE">
+    <meta property="og:description" content="Les erreurs communes avec les structures if, elif et else Les structures conditionnelles if, elif et else sont fondamentales en programmation pour contrôler le flux d’exécution du programme. Cependant, des erreurs peuvent survenir, surtout pour les débutants. Voici les erreurs courantes et des astuces pour les éviter et les détecter facilement.
+1. Erreurs de syntaxe Erreurs courantes :">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Base de connaissances">
+    <meta itemprop="name" content="Erreurs avec if elif et else :: 420-SN1-RE">
+    <meta itemprop="description" content="Les erreurs communes avec les structures if, elif et else Les structures conditionnelles if, elif et else sont fondamentales en programmation pour contrôler le flux d’exécution du programme. Cependant, des erreurs peuvent survenir, surtout pour les débutants. Voici les erreurs courantes et des astuces pour les éviter et les détecter facilement.
+1. Erreurs de syntaxe Erreurs courantes :">
+    <meta itemprop="wordCount" content="403">
+    <title>Erreurs avec if elif et else :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/bases/langage-de-prog/erreurs/if-else-elif/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#les-erreurs-communes-avec-les-structures-if-elif-et-else">Les erreurs communes avec les structures <code>if</code>, <code>elif</code> et <code>else</code></a>
+      <ul>
+        <li><a href="#1-erreurs-de-syntaxe">1. Erreurs de syntaxe</a></li>
+        <li><a href="#2-indentation-incorrecte">2. Indentation incorrecte</a></li>
+        <li><a href="#3-conditions-mal-formulées">3. Conditions mal formulées</a></li>
+        <li><a href="#4-oublier-les-cas-elif-et-else">4. Oublier les cas <code>elif</code> et <code>else</code></a></li>
+        <li><a href="#5-conditions-redondantes-ou-contradictoires">5. Conditions redondantes ou contradictoires</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/index.html"><span itemprop="name">Base de connaissances</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/langage-de-prog/index.html"><span itemprop="name">1. Langage de programmation</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/bases/langage-de-prog/erreurs/index.html"><span itemprop="name">Erreurs communes</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Erreurs avec if elif et else</span><meta itemprop="position" content="5"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/langage-de-prog/erreurs/lecture-donnees/index.html" title="Erreurs lors de la lecture de données au clavier (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/bases/langage-de-prog/erreurs/while/index.html" title="Erreurs avec la boucle while (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable bases" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="erreurs-avec-if-elif-et-else">Erreurs avec if elif et else</h1>
+
+<p><a href="#R-image-6f642d3744d78d16fbc5ad45c36d183c" class="lightbox-link"><img alt="Erreurs avec if-elif-else" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../erreur-if.jpeg?width=20vw" style=" height: auto; width: 20vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6f642d3744d78d16fbc5ad45c36d183c"><img alt="Erreurs avec if-elif-else" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../erreur-if.jpeg?width=20vw"></a></p>
+<h2 id="les-erreurs-communes-avec-les-structures-if-elif-et-else">Les erreurs communes avec les structures <code>if</code>, <code>elif</code> et <code>else</code></h2>
+<p>Les structures conditionnelles <code>if</code>, <code>elif</code> et <code>else</code> sont fondamentales en programmation pour contrôler le flux d&rsquo;exécution du programme. Cependant, des erreurs peuvent survenir, surtout pour les débutants. Voici les erreurs courantes et des astuces pour les éviter et les détecter facilement.</p>
+<h3 id="1-erreurs-de-syntaxe">1. Erreurs de syntaxe</h3>
+<p><strong>Erreurs courantes :</strong></p>
+<ul>
+<li><strong>Oublier les deux-points (<code>:</code>)</strong> : Chaque condition <code>if</code>, <code>elif</code> et <code>else</code> doit se terminer par un deux-points.
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> condition
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Code</span></span></span></code></pre></div>
+</li>
+</ul>
+<p><strong>Astuces pour les éviter :</strong></p>
+<ul>
+<li><strong>Relecture du code</strong> : Toujours vérifier que chaque condition se termine par un deux-points.</li>
+<li><strong>Utilisation de l&rsquo;IDE</strong> : Utiliser un environnement de développement intégré (IDE) qui souligne les erreurs syntaxiques.</li>
+</ul>
+<h3 id="2-indentation-incorrecte">2. Indentation incorrecte</h3>
+<p><strong>Erreurs courantes :</strong></p>
+<ul>
+<li><strong>Mauvaise indentation</strong> : Python utilise l&rsquo;indentation pour définir les blocs de code. Une mauvaise indentation peut causer des erreurs <code>IndentationError</code>.
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> condition:
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Condition vraie&#34;</span>)  <span style="color:#75715e"># IndentationError</span></span></span></code></pre></div>
+</li>
+</ul>
+<p><strong>Astuces pour les éviter :</strong></p>
+<ul>
+<li><strong>Utilisation cohérente des espaces ou des tabulations</strong> : Choisir entre espaces et tabulations et s&rsquo;y tenir tout au long du code.</li>
+<li><strong>Configuration de l&rsquo;éditeur</strong> : Configurer l&rsquo;éditeur de texte pour afficher les caractères d&rsquo;espacement et utiliser l&rsquo;indentation automatique.</li>
+</ul>
+<h3 id="3-conditions-mal-formulées">3. Conditions mal formulées</h3>
+<p><strong>Erreurs courantes :</strong></p>
+<ul>
+<li><strong>Utilisation incorrecte des opérateurs de comparaison</strong> : Confondre <code>=</code> et <code>==</code> ou utiliser des opérateurs incorrects.
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>:  <span style="color:#75715e"># SyntaxError</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Code</span></span></span></code></pre></div>
+</li>
+</ul>
+<p><strong>Astuces pour les éviter :</strong></p>
+<ul>
+<li><strong>Relecture du code</strong> : Vérifier que les opérateurs de comparaison sont utilisés correctement.</li>
+<li><strong>Tests unitaires</strong> : Écrire des tests pour vérifier que les conditions fonctionnent comme prévu.</li>
+</ul>
+<h3 id="4-oublier-les-cas-elif-et-else">4. Oublier les cas <code>elif</code> et <code>else</code></h3>
+<p><strong>Erreurs courantes :</strong></p>
+<ul>
+<li><strong>Oublier de couvrir tous les cas possibles</strong> : Ne pas inclure de conditions <code>elif</code> ou <code>else</code> peut entraîner des comportements inattendus.
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> a <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Positif&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> a <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Négatif&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Que se passe-t-il si a == 0 ?</span></span></span></code></pre></div>
+</li>
+</ul>
+<p><strong>Astuces pour les éviter :</strong></p>
+<ul>
+<li><strong>Utilisation de <code>else</code></strong> : Toujours inclure une clause <code>else</code> pour couvrir les cas non spécifiés.
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> a <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Positif&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> a <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Négatif&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Zéro&#34;</span>)</span></span></code></pre></div>
+</li>
+</ul>
+<h3 id="5-conditions-redondantes-ou-contradictoires">5. Conditions redondantes ou contradictoires</h3>
+<p><strong>Erreurs courantes :</strong></p>
+<ul>
+<li><strong>Conditions redondantes</strong> : Vérifier la même condition plusieurs fois ou inclure des conditions qui se contredisent.
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> a <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Positif&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> a <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Toujours positif&#34;</span>)  <span style="color:#75715e"># Condition redondante</span></span></span></code></pre></div>
+</li>
+</ul>
+<p><strong>Astuces pour les éviter :</strong></p>
+<ul>
+<li><strong>Simplification des conditions</strong> : Réduire les conditions redondantes et s&rsquo;assurer qu&rsquo;elles sont mutuellement exclusives.
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> a <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Positif&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">elif</span> a <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Négatif&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Zéro&#34;</span>)</span></span></code></pre></div>
+</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="parent " data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu">
+            <li class="parent " data-nav-id="/bases/langage-de-prog/index.html"><a class="padding" href="/bases/langage-de-prog/index.html">1. Langage de programmation</a><ul id="R-subsections-be5c8169920e24019fa741b0d66dc652" class="collapsible-menu">
+            <li class="" data-nav-id="/bases/langage-de-prog/chaines-caracteres/index.html"><a class="padding" href="/bases/langage-de-prog/chaines-caracteres/index.html">Formatage des chaines</a></li>
+            <li class="alwaysopen " data-nav-id="/bases/langage-de-prog/debogage/index.html"><a class="padding" href="/bases/langage-de-prog/debogage/index.html">Techniques de débogage</a><ul id="R-subsections-3e9c2661746a9ff83626144636af0aab" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/bases/langage-de-prog/erreurs/index.html"><a class="padding" href="/bases/langage-de-prog/erreurs/index.html">Erreurs communes</a><ul id="R-subsections-23a700e31b2f22b689e66a3c24cc7bff" class="collapsible-menu">
+            <li class="" data-nav-id="/bases/langage-de-prog/erreurs/nomenclature-variables/index.html"><a class="padding" href="/bases/langage-de-prog/erreurs/nomenclature-variables/index.html">Erreurs avec les noms des variables</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/erreurs/operateurs/index.html"><a class="padding" href="/bases/langage-de-prog/erreurs/operateurs/index.html">Erreurs avec les opérateurs</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/erreurs/lecture-donnees/index.html"><a class="padding" href="/bases/langage-de-prog/erreurs/lecture-donnees/index.html">Erreurs lors de la lecture de données au clavier</a></li>
+            <li class="active " data-nav-id="/bases/langage-de-prog/erreurs/if-else-elif/index.html"><a class="padding" href="/bases/langage-de-prog/erreurs/if-else-elif/index.html">Erreurs avec if elif et else</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/erreurs/while/index.html"><a class="padding" href="/bases/langage-de-prog/erreurs/while/index.html">Erreurs avec la boucle while</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/erreurs/for-range/index.html"><a class="padding" href="/bases/langage-de-prog/erreurs/for-range/index.html">Erreurs avec la boucle for et la fonction range</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/erreurs/listes/index.html"><a class="padding" href="/bases/langage-de-prog/erreurs/listes/index.html">Erreurs avec les listes</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/erreurs/fonctions/index.html"><a class="padding" href="/bases/langage-de-prog/erreurs/fonctions/index.html">Erreurs avec les fonctions</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/erreurs/gestionexceptions/index.html"><a class="padding" href="/bases/langage-de-prog/erreurs/gestionexceptions/index.html">Gestion des exceptions</a></li></ul></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/fonction-recursive/index.html"><a class="padding" href="/bases/langage-de-prog/fonction-recursive/index.html">Les fonctions récursives</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/listes-de-listes/index.html"><a class="padding" href="/bases/langage-de-prog/listes-de-listes/index.html">Les listes de listes</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/match-case/index.html"><a class="padding" href="/bases/langage-de-prog/match-case/index.html">Match Case</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/poo/index.html"><a class="padding" href="/bases/langage-de-prog/poo/index.html">La programmation orientée objet (POO)</a></li>
+            <li class="" data-nav-id="/bases/langage-de-prog/pandas/pandas/index.html"><a class="padding" href="/bases/langage-de-prog/pandas/pandas/index.html">Pandas (intermédiaire-avancé)</a></li></ul></li>
+            <li class="" data-nav-id="/bases/outils/index.html"><a class="padding" href="/bases/outils/index.html">2. Outils</a><ul id="R-subsections-63c1095d7ccdc1b9ecea42dfa732d4d2" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/bases/lexique/index.html"><a class="padding" href="/bases/lexique/index.html">3. Lexique</a></li></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/bases/langage-de-prog/erreurs/if-else-elif/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

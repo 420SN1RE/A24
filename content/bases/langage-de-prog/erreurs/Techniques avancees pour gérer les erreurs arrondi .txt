@@ -1,0 +1,37 @@
+## Technique simple pour gérer les erreurs d'arrondi
+
+1. **Utiliser la fonction `round()`** :
+     - Vous pouvez utiliser la fonction `round()` pour arrondir les nombres à un certain nombre de décimales.
+```python
+print(round(0.1 + 0.2, 1))  # Affiche 0.3
+```
+2. **Comparer avec une tolérance** :
+     - Lors de la comparaison de flottants, il est préférable d'utiliser une tolérance pour vérifier si les nombres sont "suffisamment proches".
+ ```python
+       import math
+       print(math.isclose(0.1 + 0.2, 0.3))  # Affiche True
+       ```
+   - **Utiliser des Types de Données Alternatifs** :
+     - Pour des calculs nécessitant une précision élevée, vous pouvez utiliser le module `decimal` de Python, qui permet de contrôler la précision des calculs.
+       ```python
+       from decimal import Decimal
+       print(Decimal('0.1') + Decimal('0.2'))  # Affiche 0.3
+       ```
+
+### Exemples Pratiques
+
+```python
+# Exemple d'erreur d'arrondi
+print(0.1 + 0.2)  # Affiche 0.30000000000000004
+
+# Utilisation de round()
+print(round(0.1 + 0.2, 1))  # Affiche 0.3
+
+# Comparaison avec tolérance
+import math
+print(math.isclose(0.1 + 0.2, 0.3))  # Affiche True
+
+# Utilisation du module decimal
+from decimal import Decimal
+print(Decimal('0.1') + Decimal('0.2'))  # Affiche 0.3
+```

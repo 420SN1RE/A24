@@ -1,0 +1,45 @@
+### Les booléens
+
+- Un **booléen** c'est comme un interrupteur d'éclairage. 
+- Il ne peut avoir que **deux valeurs** :  Vrai (`True`) ou Faux (`False`).
+- Vous pouvez utiliser des variables pour stocker des booléens: 
+
+```python
+est_majeur = True
+parle_francais = False
+```
+
+- **NB** : Les booléens sont très important en programmation, car très utilisés dans les structures de contrôle (if, boucles) qu'on étudiera prochainement.
+
+## Connaitre le type d'une variable
+
+{{% notice warning %}}
+On ne peut pas faire d'opérations arithmétiques sur des variables de types différents.
+{{% /notice %}}
+
+- Toujours connaître les types de vos variables !
+- Vous pouvez trouver le type d'une variable en utilisant `type()`. Par exemple:
+
+```python
+x = "100"
+type(x).
+```
+
+====
+
+
+### Les booléens
+
+- Un **booléen** c'est comme un interrupteur d'éclairage. 
+- Il ne peut avoir que **deux valeurs** :  Vrai (`True`) ou Faux (`False`).
+- Vous pouvez utiliser des variables pour stocker des booléens: 
+
+```python
+est_majeur = True
+parle_francais = False
+```
+
+{{% notice info %}}
+Les booléens sont très important en programmation, car très utilisés dans les structures de contrôle (if, boucles) qu'on étudiera dans deux semaines.
+{{% /notice %}}
+

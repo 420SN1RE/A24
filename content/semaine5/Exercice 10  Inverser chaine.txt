@@ -1,0 +1,15 @@
+### Exercice 10 : Inverser chaine
+
+```python
+def inverser_chaine(chaine):
+    chaine_inversee = ""
+    for caractere in chaine:
+        chaine_inversee = caractere + chaine_inversee
+    return chaine_inversee
+
+# Exemple d'utilisation
+texte = "Bonjour"
+print(f"La chaîne inversée de '{texte}' est '{inverser_chaine(texte)}'")
+```
+
+Ce programme définit une fonction `inverser_chaine` qui prend une chaîne de caractères `chaine` en entrée et utilise une boucle `for` pour inverser cette chaîne. Ensuite, il affiche la chaîne inversée de "Bonjour" comme exemple.

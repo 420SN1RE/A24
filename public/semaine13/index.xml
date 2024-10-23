@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NumPy :: 420-SN1-RE</title>
+    <link>http://localhost:1313/semaine13/index.html</link>
+    <description>Objectifs de la leçon Plan de la leçon Quiz: bibliothèque Matplotlib (10 mins) Pause 5 mins Pour la semaine prochaine</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/semaine13/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NumPy</title>
+      <link>http://localhost:1313/semaine13/numpy2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine13/numpy2/index.html</guid>
+      <description>NumPy (Numerical Python) est une bibliothèque pour le calcul scientifique en Python. Elle offre des structures de données (Tableaux et Matrices), des fonctions mathématiques pour manipuler les structures de données.&#xA;Installation Pour installer NumPy, utilisez pip:&#xA;pip install numpy Création et manipulation de Tableaux Création de tableaux:&#xA;import numpy as np # Création d&#39;un tableau 1D a = np.array([1, 2, 3, 4, 5]) # Création d&#39;un tableau 2D (Matrice) b = np.array([[1, 2, 3], [4, 5, 6]]) print(a) print(b) [1 2 3 4 5] [[1 2 3] [4 5 6]] Accès aux éléments:</description>
+    </item>
+    <item>
+      <title>NumPy OLD</title>
+      <link>http://localhost:1313/semaine13/numpy/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine13/numpy/index.html</guid>
+      <description>Qu’est-ce que NumPy? NumPy, ou Numerical Python, est une bibliothèque essentielle pour le calcul scientifique en Python. Elle permet de travailler efficacement avec des tableaux multidimensionnels et offre une large gamme de fonctions mathématiques pour effectuer des opérations sur ces tableaux.&#xA;NumPy permet de :&#xA;Manipuler des données de manière efficace. Effectuer des opérations mathématiques et statistiques avancées. Travailler avec des données multidimensionnelles. Intégrer facilement avec d’autres bibliothèques et outils de data science. Utilisation de NumPy Pour commencer, vous devez importer dans votre script Python :</description>
+    </item>
+    <item>
+      <title>Les nombres aléatoires</title>
+      <link>http://localhost:1313/semaine13/nb_aleatoires/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine13/nb_aleatoires/index.html</guid>
+      <description>La génération de nombres aléatoires est une tâche courante en programmation, utilisée dans des domaines variés comme les jeux, les simulations, et les tests. Python offre plusieurs façons de générer des nombres aléatoires, principalement via le module random.&#xA;Introduction au module random Le module random de Python fournit des fonctions pour générer des nombres pseudo-aléatoires. Pour l’utiliser, vous devez d’abord l’importer :</description>
+    </item>
+    <item>
+      <title>Régression linéaire avec NumPy</title>
+      <link>http://localhost:1313/semaine13/reglin/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/semaine13/reglin/index.html</guid>
+      <description>La régression linéaire est une technique statistique utilisée pour modéliser la relation entre une variable dépendante (souvent notée y) et une ou plusieurs variables indépendantes (notées x). En termes simples, c’est une méthode qui permet de tracer une ligne droite (appelée droite de régression) qui s’ajuste le mieux aux données.&#xA;Calcul de la Régression Linéaire (à la main) Concept de base: La formule de la régression linéaire simple est : [ y = ax + b ] où :</description>
+    </item>
+  </channel>
+</rss>

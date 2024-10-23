@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Les listes et le traitement des chaines de caractères :: 420-SN1-RE</title>
+    <link>https://example.org/semaine6/index.html</link>
+    <description>Objectifs de la leçon Comprendre les concepts de base et fondamentaux des listes Savoir manipuler des listes dans un contexte scientifique Appliquer la logique des boucles avec les listes Utiliser d’autres fonctionnalités courantes des listes Comprendre les notions d’objet et d’encapsulation Plan de la leçon Quiz: Les boucles (10 mins) L’importance des listes en programmation et en contexte scientifique. ~5mins Création, accès, modification, ajout et suppression d’éléments d’une liste. ~15mins Pause 5 minutes. Parcourir les éléments d’une liste. ~10mins Autres manipulations courantes sur les listes ~15mins Faire la somme de tous les éléments d’une liste. Obtenir le nombre d’éléments d’une liste (sa taille ou longueur). Trier les éléments d’une liste. Trouver les éléments uniques d’une liste. Filtrer les nombres pairs d’une liste. Pause 5 minutes. Les chaines de caractères sont des listes ~5mins Les chaines de caractères sont des objets ~5mins Ateliers: Les listes et les chaines de caractères Pour la semaine prochaine.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Les Listes</title>
+      <link>https://example.org/semaine6/listes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine6/listes/index.html</guid>
+      <description>L’importance des listes Les listes sont l’une des structures de données les plus utilisées en Python. Elles permettent de stocker plusieurs éléments de différents types dans une seule variable, ce qui les rend très pratiques pour gérer des collections de données.&#xA;Définition Une liste est une collection ordonnée et modifiable d’éléments. Chaque élément de la liste a une position définie, appelée indice, qui commence à 0 pour le premier élément.</description>
+    </item>
+    <item>
+      <title>Les chaînes de caractères</title>
+      <link>https://example.org/semaine6/chaines_caracteres/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine6/chaines_caracteres/index.html</guid>
+      <description>Quelques rappels sur les chaînes de caractères Une chaîne de caractères est simplement plusieurs caractères regroupés ensemble, entourés de guillemets simples (&#39;) ou doubles (&#34;). Les caractères peuvent être des lettres, chiffres, symboles ou espaces. Les chaines de caractères sont appelées string. Nous pouvons concaténer des chaînes, mais ce n’est pas tout… ##3 Opérations sur les chaines de caractères</description>
+    </item>
+    <item>
+      <title>ATELIERS</title>
+      <link>https://example.org/semaine6/ateliers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine6/ateliers/index.html</guid>
+      <description>Listes: La base&#xA;Listes: En sciences&#xA;Listes: Système solaire&#xA;Les chaînes de caractères</description>
+    </item>
+    <item>
+      <title>Pour le prochain cours</title>
+      <link>https://example.org/semaine6/pour-le-prochain-cours/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine6/pour-le-prochain-cours/index.html</guid>
+      <description>Pour augmenter vos chances de réussite Terminer et soumettre le(s) atelier(s). Réviser la matière vue cette semaine, en vue du quiz qui aura lieu au début du prochain cours (arrivez à l’heure) Réviser la matière du cours depuis le début de la session. Note Si vous étiez présent au cours, posez moi des questions lorsque vous avez de la difficulté. N’attendez pas que la matière se complique.</description>
+    </item>
+  </channel>
+</rss>

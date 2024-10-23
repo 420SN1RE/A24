@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content=".
+Qu’est-ce qu’un programme ? Un programme, ou une application, ou encore un logiciel, est un outil permettant la réalisation de tâches.
+Traitement de texte Envois de messages Prévision météorologique Gestion de stock Montage vidéo Pour réaliser ces tâches, un programme va implémenter un ou plusieurs algorithmes dans un langage de programmation.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Introduction à la programmation :: 420-SN1-RE">
+    <meta name="twitter:description" content=".
+Qu’est-ce qu’un programme ? Un programme, ou une application, ou encore un logiciel, est un outil permettant la réalisation de tâches.
+Traitement de texte Envois de messages Prévision météorologique Gestion de stock Montage vidéo Pour réaliser ces tâches, un programme va implémenter un ou plusieurs algorithmes dans un langage de programmation.">
+    <meta property="og:url" content="https://example.org/semaine1/introduction-la-programmation/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Introduction à la programmation :: 420-SN1-RE">
+    <meta property="og:description" content=".
+Qu’est-ce qu’un programme ? Un programme, ou une application, ou encore un logiciel, est un outil permettant la réalisation de tâches.
+Traitement de texte Envois de messages Prévision météorologique Gestion de stock Montage vidéo Pour réaliser ces tâches, un programme va implémenter un ou plusieurs algorithmes dans un langage de programmation.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Présentations et introduction à la programmation">
+    <meta itemprop="name" content="Introduction à la programmation :: 420-SN1-RE">
+    <meta itemprop="description" content=".
+Qu’est-ce qu’un programme ? Un programme, ou une application, ou encore un logiciel, est un outil permettant la réalisation de tâches.
+Traitement de texte Envois de messages Prévision météorologique Gestion de stock Montage vidéo Pour réaliser ces tâches, un programme va implémenter un ou plusieurs algorithmes dans un langage de programmation.">
+    <meta itemprop="wordCount" content="779">
+    <title>Introduction à la programmation :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine1/introduction-la-programmation/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#quest-ce-quun-programme-">Qu&rsquo;est-ce qu&rsquo;un programme ?</a></li>
+    <li><a href="#quest-ce-quun-algorithme-">Qu&rsquo;est-ce qu&rsquo;un algorithme ?</a></li>
+    <li><a href="#quest-ce-quun-langage-de-programmation-">Qu&rsquo;est-ce qu&rsquo;un langage de programmation ?</a></li>
+    <li><a href="#cycle-de-développement-logiciel">Cycle de développement logiciel</a></li>
+    <li><a href="#pourquoi-python-">Pourquoi Python ?</a></li>
+    <li><a href="#comment-écrire-un-programme-">Comment écrire un programme ?</a>
+      <ul>
+        <li><a href="#visual-studio-code">Visual Studio Code</a></li>
+        <li><a href="#interface-de-visual-studio-code">Interface de Visual Studio Code</a></li>
+        <li><a href="#premier-exemple-de-programme-en-python">Premier exemple de programme en Python</a></li>
+      </ul>
+    </li>
+    <li><a href="#pause-5-minutes">PAUSE 5 minutes</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/semaine1/index.html"><span itemprop="name">Présentations et introduction à la programmation</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Introduction à la programmation</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine1/pr%C3%A9sentation-du-cours/index.html" title="Présentation du cours (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine1/analyse-de-probl%C3%A8mes/index.html" title="Du problème à l&#39;algorithme au programme (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine1" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="introduction-à-la-programmation">Introduction à la programmation</h1>
+
+<p><a href="#R-image-f39695c001862462a3ac54bfc81c6f67" class="lightbox-link"><img alt="Intro à la programmation" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../bases-prog2.jpg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-f39695c001862462a3ac54bfc81c6f67"><img alt="Intro à la programmation" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../bases-prog2.jpg?width=25vw"></a>.</p>
+<h2 id="quest-ce-quun-programme-">Qu&rsquo;est-ce qu&rsquo;un programme ?</h2>
+<p>Un programme, ou une application, ou encore un logiciel, est un <em>outil</em> permettant la réalisation de tâches.</p>
+<ul>
+<li>Traitement de texte</li>
+<li>Envois de messages</li>
+<li>Prévision météorologique</li>
+<li>Gestion de stock</li>
+<li>Montage vidéo</li>
+</ul>
+<p>Pour réaliser ces tâches, un programme va implémenter un ou plusieurs <strong>algorithmes</strong> dans un <strong>langage de programmation</strong>.</p>
+<h2 id="quest-ce-quun-algorithme-">Qu&rsquo;est-ce qu&rsquo;un algorithme ?</h2>
+<ul>
+<li>Un algorithme est une <strong>suite d&rsquo;actions</strong> qui suivent un <strong>ordre précis</strong>.</li>
+<li>Cette suite d&rsquo;actions représente les traitements sur les données.</li>
+<li>Un algorithme doit être <strong>clair</strong> et <strong>précis</strong>.</li>
+<li>Pour aider à concevoir la solution, un algorithme peut être traduit en <a href="/semaine2/ordinogramme/index.html"><strong>ordinogramme</strong></a>.</li>
+</ul>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Attention
+  </div>
+  <div class="box-content">
+<ul>
+<li>Un algorithme <strong>ne s&rsquo;exécute pas</strong>, il représente les étapes que le programme devra faire.
+<ul>
+<li>C&rsquo;est <strong>l&rsquo;implémentation</strong> (le code) avec un langage qui s&rsquo;<strong>exécute</strong>.</li>
+<li>Il peut y avoir plusieurs <strong>implémentations</strong> d&rsquo;un même algorithme.</li>
+</ul>
+</li>
+</ul>
+  </div>
+</div>
+<p><strong>Exemples d&rsquo;algorithmes que vous connaissez déjà :</strong></p>
+<ul>
+<li>Une recette de cuisine.</li>
+<li>Les instructions pour assembler un meuble.</li>
+<li>Les instructions pour préparer un café chaud avec du lait.</li>
+<li>La méthode pour calculer la somme des nombres de 1 à 100.</li>
+<li>Etc.</li>
+</ul>
+<h2 id="quest-ce-quun-langage-de-programmation-">Qu&rsquo;est-ce qu&rsquo;un langage de programmation ?</h2>
+<ul>
+<li>
+<p>Un langage de programmation est un <strong>ensemble de mots clés</strong> et des <strong>règles de syntaxe</strong> qui permettent d&rsquo;écrire un <strong>programme</strong> exécutable par un système informatique.</p>
+</li>
+<li>
+<p><strong>NB:</strong> un système informatique ne comprend que le binaire (0 et 1), un langage de programmation est le meilleur moyen d&rsquo;avoir un langage intelligible pour faire une interface entre l&rsquo;homme et la machine (le binaire).</p>
+</li>
+<li>
+<p>Le rêve ultime est d&rsquo;utiliser le langage naturel (le français par exemple) pour écrire un programme. C&rsquo;est ce qu&rsquo;essaye d&rsquo;entreprendre certaines compagnies d&rsquo;intelligence artificielle. Les résultats pour le moment restent mitigés.</p>
+</li>
+</ul>
+<p>En attendant la réalisation de cette promesse, voici quelques langages couramment utilisés:</p>
+<ul>
+<li><strong>Ex</strong>: Python, C/C++, C#, java, Matlab, &hellip;.</li>
+<li>Langages de programmation les plus populaires : <a href="https://www.tiobe.com/tiobe-index/" rel="external" target="_blank">TIOBE Index</a></li>
+</ul>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Info
+  </div>
+  <div class="box-content">
+<p>Aucun langage n&rsquo;est parfait pour toutes les tâches. On doit choisir le meilleur compromis pour la tâche à accomplir.</p>
+<p>En général les gros logiciels professionnels sont écrit avec plusieurs langages de programmation.</p>
+  </div>
+</div>
+<h2 id="cycle-de-développement-logiciel">Cycle de développement logiciel</h2>
+<p>Le cycle de développement d&rsquo;un logiciel se décompose en plusieurs étapes que nous pouvons retrouver à travers ce schéma :</p>
+<p><a href="#R-image-ce63e1d45a01c3e642acd3a55ae04348" class="lightbox-link"><img alt="Cycle de développement" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../cycle.png" style=" height: auto; width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-ce63e1d45a01c3e642acd3a55ae04348"><img alt="Cycle de développement" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../cycle.png"></a></p>
+<p><a href="https://cisco.goffinet.org/devasc/concepts-dev-developpement-logiciel/" rel="external" target="_blank">Goffinet, F. (2021, 11 novembre). Concepts de développement logiciel.</a></p>
+<p>Le schéma représente un cercle fermé car un logiciel n&rsquo;est jamais complètement fini. Il est en constante évolution dû à des besoins utilisateurs grandissants.</p>
+<h2 id="pourquoi-python-">Pourquoi Python ?</h2>
+<ul>
+<li>
+<p>Ce langage est très utilisé dans la communauté scientifique, car il est facile à prendre en main et il offre une bonne compatibilité avec les autres outils scientifiques. Il est souvent défini comme une colle entre ces outils.</p>
+</li>
+<li>
+<p>Il propose aussi un grand nombre de librairies d&rsquo;analyse scientifique très robustes comme : <a><em>NumPy</em></a>, <a href="/semaine11/pandas/index.html"><em>Pandas</em></a>, <a href="/semaine12/matplotlib/index.html"><em>MatplotLib</em></a>&hellip;</p>
+</li>
+<li>
+<p>Python est un langage interprété orienté objet. Sa syntaxe simple offre une multitude de possibilité de développement. Il est possible de créer <strong>ses propres modules</strong> qui seront ensuite partagés à la communauté.
+Exemple : <a href="https://pypi.org/" rel="external" target="_blank">pipy</a>.</p>
+</li>
+</ul>
+<p>C’est un langage de programmation assez classique, il propose les mécanismes standards suivants :</p>
+<ul>
+<li><strong>Données typées</strong> : entiers, réels, booléens, chaînes de caractères.</li>
+<li><strong>Structures avancées de données</strong> : listes, dictionnaires, classes.</li>
+<li><strong>Séquences d’instructions</strong> : écrire et exécuter une série de commandes sans avoir à intervenir entre les instructions.</li>
+<li><strong>Structures algorithmiques</strong> : branchements conditionnels et boucles.</li>
+<li><strong>Programmation structurée</strong> : utiliser les procédures et fonctions pour mieux organiser son code.</li>
+<li>Appeler plusieurs fichiers d’extension “.py” dans d’autres programmes à l’aide de la commande “import”.</li>
+</ul>
+<p>Il offre aussi l&rsquo;avantage d&rsquo;être un langage <strong>libre</strong> et <strong>open source</strong>.</p>
+<h2 id="comment-écrire-un-programme-">Comment écrire un programme ?</h2>
+<h3 id="visual-studio-code">Visual Studio Code</h3>
+<p><a href="#R-image-6838ef13af60a20c4c492d28d6309db9" class="lightbox-link"><img alt="Logo de VS Code" class="noborder lazy left lightbox noshadow figure-image" loading="lazy" src="../VSCode.png?width=5vw&classes=left" style=" height: auto; width: 5vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-6838ef13af60a20c4c492d28d6309db9"><img alt="Logo de VS Code" class="noborder lazy left lightbox noshadow lightbox-image" loading="lazy" src="../VSCode.png?width=5vw&classes=left"></a></p>
+<p>Dans ce cours, nous allons utiliser un environnement de développement (IDE) pour développer nos programmes d&rsquo;analyse scientifiques avec Python. Il s&rsquo;agit de <a href="../outils/VSCode-Jupyter/_index.md">Visual Studio Code</a>.</p>
+<ul>
+<li>
+<p><em>Visual Studio Code</em> est comme un cahier de notes pour écrire du code.</p>
+</li>
+<li>
+<p>Il est <strong>gratuit</strong> et peut être utilisé avec beaucoup de langages de programmation, dont Python.</p>
+</li>
+<li>
+<p>Il a des fonctionnalités pratiques, comme :</p>
+<ul>
+<li>aider à compléter le code.</li>
+<li>executer le programme en cours de développement.</li>
+<li>trouver des erreurs.</li>
+<li>mettre en forme le code, etc.</li>
+</ul>
+</li>
+<li>
+<p>On peut aussi ajouter des <strong>extensions</strong> pour avoir plus de fonctionnalités, comme intégrer des <strong>bibliothèques scientifiques</strong>, des vérificateurs de code, des testeurs, etc.</p>
+</li>
+</ul>
+<h3 id="interface-de-visual-studio-code">Interface de Visual Studio Code</h3>
+<p><a href="#R-image-5e12af656d7720b682d5a9b8335012c0" class="lightbox-link"><img alt="Interface de VS Code" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../VSCode-GUI.png?width=150vw" style=" height: auto; width: 150vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-5e12af656d7720b682d5a9b8335012c0"><img alt="Interface de VS Code" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../VSCode-GUI.png?width=150vw"></a></p>
+<h3 id="premier-exemple-de-programme-en-python">Premier exemple de programme en Python</h3>
+<p>Exemple de programme simple dans python :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Exemple d&#39;un programme simple qui effectue la somme de 2 nombres</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Données en entrée</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Traitement</span>
+</span></span><span style="display:flex;"><span>somme <span style="color:#f92672">=</span> x <span style="color:#f92672">+</span> y
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Affichage</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;La somme x + y est égale à : &#39;</span>, somme)</span></span></code></pre></div>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Info
+  </div>
+  <div class="box-content">
+<p>Un programme informatique fait ce que vous lui dites de faire, pas ce que vous voulez qu&rsquo;il fasse.</p>
+  </div>
+</div>
+<p>Voyons ensemble comment exécuter ce programme.</p>
+<p><a href="../exemple_programme.py">Exemple à télécharger</a></p>
+<p><a href="../outils/VSCode-Jupyter/_index.md">Outils: VS Code et Jupyter</a></p>
+<h2 id="pause-5-minutes">PAUSE 5 minutes</h2>
+<p><a href="#R-image-a23c5ccba7db3557610ec1addc84e913" class="lightbox-link"><img alt="PAUSE 5 mins" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../pause.jpg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-a23c5ccba7db3557610ec1addc84e913"><img alt="PAUSE 5 mins" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../pause.jpg?width=25vw"></a>.</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="parent " data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine1/pr%C3%A9sentation-du-cours/index.html"><a class="padding" href="/semaine1/pr%C3%A9sentation-du-cours/index.html">Présentation du cours</a></li>
+            <li class="active " data-nav-id="/semaine1/introduction-la-programmation/index.html"><a class="padding" href="/semaine1/introduction-la-programmation/index.html">Introduction à la programmation</a></li>
+            <li class="" data-nav-id="/semaine1/analyse-de-probl%C3%A8mes/index.html"><a class="padding" href="/semaine1/analyse-de-probl%C3%A8mes/index.html">Du problème à l&#39;algorithme au programme</a></li>
+            <li class="" data-nav-id="/semaine1/ateliers/index.html"><a class="padding" href="/semaine1/ateliers/index.html">ATELIERS</a></li>
+            <li class="" data-nav-id="/semaine1/pour-le-prochain-cours/index.html"><a class="padding" href="/semaine1/pour-le-prochain-cours/index.html">Pour le prochain cours</a></li></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/semaine1/introduction-la-programmation/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

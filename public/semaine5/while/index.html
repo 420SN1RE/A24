@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="La boucle WHILE La boucle while permet d’exécuter un bloc de code tant qu’ une condition donnée est vraie.
+La syntaxe de base est la suivante :
+while condition: # bloc de code à exécuter Principe de base: la condition de la boucle while est évaluée avant chaque exécution du bloc de code. Si la condition est vraie, le bloc de code s’exécute. Après chaque exécution, la condition est réévaluée. Ce processus se répète jusqu’à ce que la condition devienne fausse, auquel moment la boucle se termine et le programme continue avec les instructions suivantes.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="La boucle while :: 420-SN1-RE">
+    <meta name="twitter:description" content="La boucle WHILE La boucle while permet d’exécuter un bloc de code tant qu’ une condition donnée est vraie.
+La syntaxe de base est la suivante :
+while condition: # bloc de code à exécuter Principe de base: la condition de la boucle while est évaluée avant chaque exécution du bloc de code. Si la condition est vraie, le bloc de code s’exécute. Après chaque exécution, la condition est réévaluée. Ce processus se répète jusqu’à ce que la condition devienne fausse, auquel moment la boucle se termine et le programme continue avec les instructions suivantes.">
+    <meta property="og:url" content="https://example.org/semaine5/while/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="La boucle while :: 420-SN1-RE">
+    <meta property="og:description" content="La boucle WHILE La boucle while permet d’exécuter un bloc de code tant qu’ une condition donnée est vraie.
+La syntaxe de base est la suivante :
+while condition: # bloc de code à exécuter Principe de base: la condition de la boucle while est évaluée avant chaque exécution du bloc de code. Si la condition est vraie, le bloc de code s’exécute. Après chaque exécution, la condition est réévaluée. Ce processus se répète jusqu’à ce que la condition devienne fausse, auquel moment la boucle se termine et le programme continue avec les instructions suivantes.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Structures répétitives">
+    <meta itemprop="name" content="La boucle while :: 420-SN1-RE">
+    <meta itemprop="description" content="La boucle WHILE La boucle while permet d’exécuter un bloc de code tant qu’ une condition donnée est vraie.
+La syntaxe de base est la suivante :
+while condition: # bloc de code à exécuter Principe de base: la condition de la boucle while est évaluée avant chaque exécution du bloc de code. Si la condition est vraie, le bloc de code s’exécute. Après chaque exécution, la condition est réévaluée. Ce processus se répète jusqu’à ce que la condition devienne fausse, auquel moment la boucle se termine et le programme continue avec les instructions suivantes.">
+    <meta itemprop="wordCount" content="742">
+    <title>La boucle while :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine5/while/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#la-boucle-while">La boucle WHILE</a>
+      <ul>
+        <li><a href="#boucle-while-dans-un-ordinogramme">Boucle WHILE dans un ordinogramme</a></li>
+      </ul>
+    </li>
+    <li><a href="#conditions-et-boucles-infinies">Conditions et boucles infinies</a>
+      <ul>
+        <li><a href="#importance-de-la-condition-de-sortie">Importance de la condition de sortie</a></li>
+      </ul>
+    </li>
+    <li><a href="#affichage-sur-la-même-ligne">Affichage sur la même ligne</a></li>
+    <li><a href="#les-opérateurs-raccourcis">Les opérateurs raccourcis</a></li>
+    <li><a href="#les-opérateurs-dincrémentation-et-de-décrémentation">Les opérateurs d&rsquo;incrémentation et de décrémentation</a>
+      <ul>
+        <li><a href="#exemples-détaillés-">Exemples détaillés :</a></li>
+      </ul>
+    </li>
+    <li><a href="#pause--5-minutes">Pause : 5 minutes</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/semaine5/index.html"><span itemprop="name">Structures répétitives</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">La boucle while</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine5/boucles/index.html" title="Les instructions répétitives (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine5/for/index.html" title="La boucle for et la fonction range (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine5" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="la-boucle-while">La boucle while</h1>
+
+<p><a href="#R-image-7c1dea52c37bbb4a266c781260d842bc" class="lightbox-link"><img alt="Boucle for" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../boucle-while.jpeg?width=20vw" style=" height: auto; width: 20vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7c1dea52c37bbb4a266c781260d842bc"><img alt="Boucle for" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../boucle-while.jpeg?width=20vw"></a></p>
+<h2 id="la-boucle-while">La boucle WHILE</h2>
+<p>La boucle <code>while</code> permet d&rsquo;exécuter un bloc de code <strong>tant qu&rsquo;</strong> une condition donnée est vraie.</p>
+<p>La syntaxe de base est la suivante :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">while</span> condition:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># bloc de code à exécuter</span></span></span></code></pre></div>
+<p><strong>Principe de base</strong>: la condition de la boucle <code>while</code> est évaluée avant chaque exécution du bloc de code. Si la condition est vraie, le bloc de code s&rsquo;exécute. Après chaque exécution, la condition est réévaluée. Ce processus se répète jusqu&rsquo;à ce que la condition devienne fausse, auquel moment la boucle se termine et le programme continue avec les instructions suivantes.</p>
+<div class="box notices cstyle info">
+  <div class="box-label">
+    <i class="fa-fw fas fa-info-circle"></i> Info
+  </div>
+  <div class="box-content">
+<p>La boucle <code>while</code> s&rsquo;utilise, lorsque le nombre d&rsquo;itérations (répétitions) <strong>n&rsquo;est pas</strong> connu d&rsquo;avance..
+Typiquement avec des saisies utilisateurs</p>
+  </div>
+</div>
+<p><strong>Exemple simple :</strong></p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>compteur <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> compteur <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>:
+</span></span><span style="display:flex;"><span>    print(compteur)
+</span></span><span style="display:flex;"><span>    compteur <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>0
+</span></span><span style="display:flex;"><span>1
+</span></span><span style="display:flex;"><span>2
+</span></span><span style="display:flex;"><span>3
+</span></span><span style="display:flex;"><span>4</span></span></code></pre></div>
+<p>Dans cet exemple, la boucle s&rsquo;exécute tant que la valeur de <code>compteur</code> est inférieure à 5.</p>
+<h3 id="boucle-while-dans-un-ordinogramme">Boucle WHILE dans un ordinogramme</h3>
+<p>Pour la boucle <code>while</code>, l&rsquo;ordinogramme commence par une décision basée sur la condition de la boucle. Si la condition est vraie, le flux continue vers les instructions à répéter, puis retourne à la condition initiale.</p>
+<p><strong>Exemple:</strong></p>
+<p><a href="#R-image-7d7034f006ed5797376dc49c4163b73d" class="lightbox-link"><img alt="Ordinogramme WHILE" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../ordino-boucle-WHILE.png?width=35vw" style=" height: auto; width: 35vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-7d7034f006ed5797376dc49c4163b73d"><img alt="Ordinogramme WHILE" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../ordino-boucle-WHILE.png?width=35vw"></a></p>
+<h2 id="conditions-et-boucles-infinies">Conditions et boucles infinies</h2>
+<div class="box notices cstyle warning">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-triangle"></i> Attention
+  </div>
+  <div class="box-content">
+<p>La boucle <code>while</code> nécessite une <strong>condition de sortie</strong> pour éviter les boucles infinies.<br>
+Il est courant d&rsquo;utiliser une variable de contrôle (la variable test) qui est modifiée à chaque <strong>itération</strong> (répétition).</p>
+  </div>
+</div>
+<h3 id="importance-de-la-condition-de-sortie">Importance de la condition de sortie</h3>
+<p><strong>Exemple où la condition de sortie est omise</strong>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Boucle sans la condition de sortie</span>
+</span></span><span style="display:flex;"><span>nombre <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> nombre <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(nombre)</span></span></code></pre></div>
+<p>On obtient ce qu&rsquo;on appelle une <strong>boucle infinie</strong>, car la valeur de <code>nombre</code> reste toujours à 10:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>10
+</span></span><span style="display:flex;"><span>10
+</span></span><span style="display:flex;"><span>10
+</span></span><span style="display:flex;"><span>10
+</span></span><span style="display:flex;"><span>10
+</span></span><span style="display:flex;"><span>10
+</span></span><span style="display:flex;"><span>...</span></span></code></pre></div>
+<div class="box notices cstyle note">
+  <div class="box-label">
+    <i class="fa-fw fas fa-exclamation-circle"></i> Astuce
+  </div>
+  <div class="box-content">
+<p>Dans Jupyter Notebook, pour sortir d’une boucle infinie, il faut cliquer sur l’icône carrée (voir image ci-dessous) dans la barre d’outils pour interrompre le noyau Python (<em>kernel</em>).</p>
+  </div>
+</div>
+<p><a href="#R-image-3f2460bdfd712d09435dc861d4966fa0" class="lightbox-link"><img alt="Arrêt Kernel" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../arret-boucle-infinie.png?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3f2460bdfd712d09435dc861d4966fa0"><img alt="Arrêt Kernel" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../arret-boucle-infinie.png?width=25vw"></a></p>
+<p><strong>Exemple corrigé avec la condition de sortie</strong>:</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Boucle avec condition de sortie</span>
+</span></span><span style="display:flex;"><span>nombre <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> nombre <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>    print(nombre)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Condition de sortie</span>
+</span></span><span style="display:flex;"><span>    nombre <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>10
+</span></span><span style="display:flex;"><span>9
+</span></span><span style="display:flex;"><span>8
+</span></span><span style="display:flex;"><span>7
+</span></span><span style="display:flex;"><span>6
+</span></span><span style="display:flex;"><span>5
+</span></span><span style="display:flex;"><span>4
+</span></span><span style="display:flex;"><span>3
+</span></span><span style="display:flex;"><span>2
+</span></span><span style="display:flex;"><span>1</span></span></code></pre></div>
+<p>Dans cet exemple, l&rsquo;instruction <code>nombre -= 1</code> permet de faire changer (<strong>décrémenter</strong>, ou diminuer) la valeur la variable <code>nombre</code> jusqu&rsquo;à ce qu&rsquo;elle atteigne 0.</p>
+<h2 id="affichage-sur-la-même-ligne">Affichage sur la même ligne</h2>
+<p>Par défaut, la fonction <code>print()</code> ajoute une nouvelle ligne après chaque affichage. On peut changer ce comportement avec le mot clé <code>end</code>.</p>
+<p>Voici quelques cas où l&rsquo;utilisation de <code>end</code> peut être utile :</p>
+<ol>
+<li>
+<p><strong>Éviter les nouvelles lignes :</strong></p>
+<p>En utilisant <code>end=''</code>, on peut éviter cela et continuer l&rsquo;affichage sur la même ligne.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>:
+</span></span><span style="display:flex;"><span>   print(i, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)
+</span></span><span style="display:flex;"><span>   i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div>
+<p>Cela affichera : <code>0 1 2 3 4</code> sur une seule ligne.</p>
+</li>
+<li>
+<p><strong>Ajouter un séparateur personnalisé :</strong></p>
+<p>On peut utiliser <code>end</code> pour ajouter un séparateur personnalisé entre les éléments imprimés. Par exemple, pour ajouter une virgule et un espace :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>:
+</span></span><span style="display:flex;"><span>   print(i, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;, &#39;</span>)
+</span></span><span style="display:flex;"><span>   i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span></span></span></code></pre></div>
+<p>Cela affichera : <code>0, 1, 2, 3, 4, </code>.</p>
+</li>
+</ol>
+<h2 id="les-opérateurs-raccourcis">Les opérateurs raccourcis</h2>
+<p>Voici quelques opérateurs raccourcis en Python :</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Opérateur</strong></th>
+          <th style="text-align: left"><strong>Description</strong></th>
+          <th style="text-align: left"><strong>Exemple</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>+=</code></td>
+          <td style="text-align: left">Addition et assignation</td>
+          <td style="text-align: left"><code>a += 5</code> équivaut à <code>a = a + 5</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>-=</code></td>
+          <td style="text-align: left">Soustraction et assignation</td>
+          <td style="text-align: left"><code>a -= 3</code> équivaut à <code>a = a - 3</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>*=</code></td>
+          <td style="text-align: left">Multiplication et assignation</td>
+          <td style="text-align: left"><code>a *= 2</code> équivaut à <code>a = a * 2</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>/=</code></td>
+          <td style="text-align: left">Division et assignation</td>
+          <td style="text-align: left"><code>a /= 4</code> équivaut à <code>a = a / 4</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>%=</code></td>
+          <td style="text-align: left">Modulo et assignation</td>
+          <td style="text-align: left"><code>a %= 3</code> équivaut à <code>a = a % 3</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>**=</code></td>
+          <td style="text-align: left">Exponentiation et assignation</td>
+          <td style="text-align: left"><code>a **= 2</code> équivaut à <code>a = a ** 2</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>//=</code></td>
+          <td style="text-align: left">Division entière et assignation</td>
+          <td style="text-align: left"><code>a //= 2</code> équivaut à <code>a = a // 2</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>Ces opérateurs sont très pratiques pour simplifier et rendre le code plus lisible.</p>
+<h2 id="les-opérateurs-dincrémentation-et-de-décrémentation">Les opérateurs d&rsquo;incrémentation et de décrémentation</h2>
+<p>Les opérateurs d&rsquo;incrémentation et de décrémentation servent à <strong>augmenter de 1</strong> (incrémenter) ou <strong>diminuer de 1</strong> (décrémenter) des variables numériques (entiers).</p>
+<p>Voici un tableau avec ces opérateurs :</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Opérateur</strong></th>
+          <th style="text-align: left"><strong>Description</strong></th>
+          <th style="text-align: left"><strong>Exemple</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>+=</code></td>
+          <td style="text-align: left">Incrémentation</td>
+          <td style="text-align: left"><code>a += 1</code> équivaut à <code>a = a + 1</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>-=</code></td>
+          <td style="text-align: left">Décrémentation</td>
+          <td style="text-align: left"><code>a -= 1</code> équivaut à <code>a = a - 1</code></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="exemples-détaillés-">Exemples détaillés :</h3>
+<ul>
+<li>
+<p><strong>Incrémentation</strong> :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>  <span style="color:#75715e"># Maintenant, a vaut 6</span></span></span></code></pre></div>
+</li>
+<li>
+<p><strong>Décrémentation</strong> :</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">-=</span> <span style="color:#ae81ff">1</span>  <span style="color:#75715e"># Maintenant, a vaut 4</span></span></span></code></pre></div>
+</li>
+</ul>
+<p>Ces opérateurs sont très utiles pour simplifier les opérations courantes d&rsquo;incrémentation et de décrémentation dans les boucles et autres structures de contrôle.</p>
+<h2 id="pause--5-minutes">Pause : 5 minutes</h2>
+<p><a href="#R-image-3baa941c398ff7e2d425541e7873fe3e" class="lightbox-link"><img alt="Pause" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../pause.jpg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-3baa941c398ff7e2d425541e7873fe3e"><img alt="Pause" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../pause.jpg?width=25vw"></a></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu">
+            <li class="" data-nav-id="/semaine5/boucles/index.html"><a class="padding" href="/semaine5/boucles/index.html">Les instructions répétitives</a></li>
+            <li class="active " data-nav-id="/semaine5/while/index.html"><a class="padding" href="/semaine5/while/index.html">La boucle while</a></li>
+            <li class="" data-nav-id="/semaine5/for/index.html"><a class="padding" href="/semaine5/for/index.html">La boucle for et la fonction range</a></li>
+            <li class="" data-nav-id="/semaine5/controle/index.html"><a class="padding" href="/semaine5/controle/index.html">Le contrôle des boucles</a></li>
+            <li class="" data-nav-id="/semaine5/ateliers/index.html"><a class="padding" href="/semaine5/ateliers/index.html">ATELIERS</a></li>
+            <li class="" data-nav-id="/semaine5/pour-le-prochain-cours/index.html"><a class="padding" href="/semaine5/pour-le-prochain-cours/index.html">Pour le prochain cours</a></li></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/semaine5/while/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

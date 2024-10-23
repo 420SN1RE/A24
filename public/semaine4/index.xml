@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Structures conditionnelles :: 420-SN1-RE</title>
+    <link>https://example.org/semaine4/index.html</link>
+    <description>Objectifs de la leçon Comprendre la base des expressions booléennes. Comprendre les structures conditionnelles if, elif et else. Savoir représenter les structures conditionnelles dans un ordinogramme. Utiliser les instructions if, elif et else. Écrire des conditions utilisant les opérateurs logiques (and, or, not). Savoir tester des nombres à virgule. Implémenter des structures conditionnelles imbriquées. Appliquer les structures conditionnelles dans des cas pratiques. Plan de la leçon Mini-test (40 mins) Les opérateurs et les expressions booléennes. ~10mins Les structures conditionnelles if, elif et else. ~10mins L’ordinogramme de structures conditionnelles. ~5mins Pause 5 minutes. Les opérateurs logiques dans les structures conditionnelles. ~5mins Tests avec les nombres flottants. ~5mins Pause 5 minutes. Atelier: Évaluer des expressions booléennes. Atelier: Utiliser des structures conditionnelles dans des cas simples. Atelier: Tester les nombres à virgule. Pour la semaine prochaine.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/semaine4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Les opérateurs et les expressions booléennes</title>
+      <link>https://example.org/semaine4/expressions-booleennes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/expressions-booleennes/index.html</guid>
+      <description>Les opérateurs de comparaison Les opérateurs de comparaison permettent de comparer des valeurs et de déterminer si une condition est vraie ou fausse.&#xA;Soient a = 10 et b = 3&#xA;Opération (opérateur) Exemple Égalité (==) a == b donne faux (False) Inégalité (!=) a != b donne vrai (True) Supérieur à (&gt;) a &gt; b donne vrai (True) Inférieur à (&lt;) a &lt; b donne faux (False) Supérieur ou égal à (&gt;=) a &gt;= b donne vrai (True) Inférieur ou égal à (&lt;=) a &lt;= b donne faux (False) Les opérateurs logiques Les opérateurs logiques permettent de combiner des expressions booléennes.</description>
+    </item>
+    <item>
+      <title>Les instructions if else elif</title>
+      <link>https://example.org/semaine4/les-structures-conditionnelles/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/les-structures-conditionnelles/index.html</guid>
+      <description>Les tests Definition Les tests sont très importants en programmation car ils permettent à l’ordinateur de prendre des décisions. Pour coder des tests, on utilise des structures conditionnelles.&#xA;Les structures conditionnelles Les structures conditionnelles sont essentielles pour la logique d’un programme. Elles permettent d’exécuter différentes actions en fonction de la valeur de certaines variables ou expressions. En Python, les structures conditionnelles sont if (Si), elif (Sinon Si), et else (Sinon). Voici comment elles fonctionnent :</description>
+    </item>
+    <item>
+      <title>Structures conditionnelles imbriquées</title>
+      <link>https://example.org/semaine4/imbriquees/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/imbriquees/index.html</guid>
+      <description>Les structures conditionnelles imbriquées Les tests peuvent être imbriquées, c’est-à-dire qu’on peut mettre un IF dans une autre.&#xA;La syntaxe générale Exemple&#xA;score = 75 if score &gt; 50: if score &gt; 70: print(&#34;Bien joué !&#34;) else: print(&#34;Pas mal, mais peut mieux faire.&#34;) else: print(&#34;Il faut travailler davantage.&#34;) Dans ce cas, comme score est 75, le programme affichera “Bien joué !”.</description>
+    </item>
+    <item>
+      <title>Tester des nombres flottants</title>
+      <link>https://example.org/semaine4/tests-flottants/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/tests-flottants/index.html</guid>
+      <description>Les bases des nombres à virgule flottante (floats) Rappel: Les nombres à virgule flottante sont des nombres avec des décimales, comme 0.1, 2.5, ou 3.14.&#xA;Attention En Python, ces nombres peuvent parfois être un peu imprécis à cause de la façon dont les ordinateurs les stockent.&#xA;Exemple:&#xA;Imaginez que vous additionnez 0.1 et 0.2. Vous attendez que le résultat soit 0.3, mais en Python, cela peut donner un résultat très légèrement différent, comme 0.30000000000000004. C’est à cause des petites erreurs de calcul. Comment tester les floats correctement Évitez la comparaison directe : Ne comparez pas directement deux floats avec == car cela peut échouer à cause des petites erreurs.</description>
+    </item>
+    <item>
+      <title>ATELIERS</title>
+      <link>https://example.org/semaine4/ateliers/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/ateliers/index.html</guid>
+      <description>Évaluer des expressions booléennes&#xA;Les structures conditionnelles&#xA;Tester les flottants</description>
+    </item>
+    <item>
+      <title>Pour le prochain cours</title>
+      <link>https://example.org/semaine4/pour-le-prochain-cours/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine4/pour-le-prochain-cours/index.html</guid>
+      <description>Pour augmenter vos chances de réussite Terminer et soumettre l’atelier #4. Réviser la matière vue cette semaine, en vue du quiz qui aura lieu au début du prochain cours (arrivez à l’heure) Lire les notes de cours sur la matière du cours de la semaine 5. Note Si vous étiez présent au cours, posez moi des questions lorsque vous avez de la difficulté. N’attendez pas que la matière se complique.</description>
+    </item>
+  </channel>
+</rss>

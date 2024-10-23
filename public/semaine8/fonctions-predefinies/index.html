@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.135.0">
+    <meta name="generator" content="Relearn 7.0.1+72a875f1db967152c77914cff4d53f8fcee0e619">
+    <meta name="description" content="Les sous-programmes, aussi appelés fonctions, sont des blocs de code réutilisables qui permettent de structurer et d’organiser un programme. Ils facilitent la maintenance et la lisibilité du code.
+Python fourni des fonctions prédéfinies, qui permettent de réaliser des tâches courantes sans avoir à écrire beaucoup de code. Vous en connaissez déjà quelques-unes.
+Quelques fonctions de base print() len() int(), float(), str(), bool() round() etc. Voyons d’autres fonctions prédéfinies utiles.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Les fonctions prédéfinies :: 420-SN1-RE">
+    <meta name="twitter:description" content="Les sous-programmes, aussi appelés fonctions, sont des blocs de code réutilisables qui permettent de structurer et d’organiser un programme. Ils facilitent la maintenance et la lisibilité du code.
+Python fourni des fonctions prédéfinies, qui permettent de réaliser des tâches courantes sans avoir à écrire beaucoup de code. Vous en connaissez déjà quelques-unes.
+Quelques fonctions de base print() len() int(), float(), str(), bool() round() etc. Voyons d’autres fonctions prédéfinies utiles.">
+    <meta property="og:url" content="https://example.org/semaine8/fonctions-predefinies/index.html">
+    <meta property="og:site_name" content="420-SN1-RE">
+    <meta property="og:title" content="Les fonctions prédéfinies :: 420-SN1-RE">
+    <meta property="og:description" content="Les sous-programmes, aussi appelés fonctions, sont des blocs de code réutilisables qui permettent de structurer et d’organiser un programme. Ils facilitent la maintenance et la lisibilité du code.
+Python fourni des fonctions prédéfinies, qui permettent de réaliser des tâches courantes sans avoir à écrire beaucoup de code. Vous en connaissez déjà quelques-unes.
+Quelques fonctions de base print() len() int(), float(), str(), bool() round() etc. Voyons d’autres fonctions prédéfinies utiles.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Les sous-programmes (fonctions)">
+    <meta itemprop="name" content="Les fonctions prédéfinies :: 420-SN1-RE">
+    <meta itemprop="description" content="Les sous-programmes, aussi appelés fonctions, sont des blocs de code réutilisables qui permettent de structurer et d’organiser un programme. Ils facilitent la maintenance et la lisibilité du code.
+Python fourni des fonctions prédéfinies, qui permettent de réaliser des tâches courantes sans avoir à écrire beaucoup de code. Vous en connaissez déjà quelques-unes.
+Quelques fonctions de base print() len() int(), float(), str(), bool() round() etc. Voyons d’autres fonctions prédéfinies utiles.">
+    <meta itemprop="wordCount" content="487">
+    <title>Les fonctions prédéfinies :: 420-SN1-RE</title>
+    <link href="/images/favicon.png?1729694420" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1729694420" rel="stylesheet">
+    <link href="/css/auto-complete.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1729694420" rel="stylesheet">
+    <link href="/css/fonts.css?1729694420" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1729694420" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1729694420" rel="stylesheet">
+    <link href="/css/theme-auto.css?1729694420" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-auto.css?1729694420" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1729694420" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1729694420"></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/example.org';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      // variant stuff
+      window.variants && variants.init( [ 'auto' ] );
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/semaine8/fonctions-predefinies/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#quelques-fonctions-de-base">Quelques fonctions de base</a></li>
+    <li><a href="#les-fonctions-mathématiques">Les fonctions mathématiques</a>
+      <ul>
+        <li><a href="#la-fonction-abs">La fonction <code>abs()</code></a></li>
+        <li><a href="#la-fonction-sqrt">La fonction <code>sqrt()</code></a></li>
+        <li><a href="#la-fonction-log">La fonction <code>log()</code></a></li>
+        <li><a href="#la-fonction-exp">La fonction <code>exp()</code></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Programmation en sciences</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/semaine8/index.html"><span itemprop="name">Les sous-programmes (fonctions)</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Les fonctions prédéfinies</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine8/index.html" title="Les sous-programmes (fonctions) (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/semaine8/les-fonctions/index.html" title="Création et utilisation de fonctions (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable semaine8" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="les-fonctions-prédéfinies">Les fonctions prédéfinies</h1>
+
+<p><a href="#R-image-d9aa56fd5e7abd5d7f7a29efa0e3be1a" class="lightbox-link"><img alt="Fonctions prédéfinies" class="noborder lazy lightbox noshadow figure-image" loading="lazy" src="../fn-predefinies.jpeg?width=25vw" style=" height: auto; width: 25vw;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-d9aa56fd5e7abd5d7f7a29efa0e3be1a"><img alt="Fonctions prédéfinies" class="noborder lazy lightbox noshadow lightbox-image" loading="lazy" src="../fn-predefinies.jpeg?width=25vw"></a></p>
+<p>Les sous-programmes, aussi appelés <code>fonctions</code>, sont des blocs de <strong>code réutilisables</strong> qui permettent de structurer et d&rsquo;organiser un programme. Ils facilitent la maintenance et la lisibilité du code.</p>
+<p>Python fourni des fonctions prédéfinies, qui permettent de réaliser des tâches courantes sans avoir à écrire beaucoup de code. Vous en connaissez déjà quelques-unes.</p>
+<h2 id="quelques-fonctions-de-base">Quelques fonctions de base</h2>
+<ul>
+<li><code>print()</code></li>
+<li><code>len()</code></li>
+<li><code>int()</code>, <code>float()</code>, <code>str()</code>, <code>bool()</code></li>
+<li><code>round()</code></li>
+<li>etc.</li>
+</ul>
+<p>Voyons d&rsquo;autres fonctions prédéfinies utiles.</p>
+<h2 id="les-fonctions-mathématiques">Les fonctions mathématiques</h2>
+<h3 id="la-fonction-abs">La fonction <code>abs()</code></h3>
+<p>La fonction <code>abs()</code> retourne la valeur absolue d&rsquo;un nombre.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(abs(<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>))  <span style="color:#75715e"># Affiche 5</span></span></span></code></pre></div>
+<p>Pour utiliser certaines fonctions, vous devez d&rsquo;abord importer le module math dans votre code.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math</span></span></code></pre></div>
+<h3 id="la-fonction-sqrt">La fonction <code>sqrt()</code></h3>
+<p>La fonction <code>math.sqrt(x)</code> retourne la racine carrée de <code>x</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul de la racine carrée de 16</span>
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>sqrt(<span style="color:#ae81ff">16</span>)
+</span></span><span style="display:flex;"><span>print(resultat)  <span style="color:#75715e"># Affiche 4.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul de la racine carrée de 2</span>
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>sqrt(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>print(resultat)  <span style="color:#75715e"># Affiche environ 1.4142135623730951</span></span></span></code></pre></div>
+<h3 id="la-fonction-log">La fonction <code>log()</code></h3>
+<p>La fonction <code>math.log(x, base)</code> retourne le logarithme de <code>x</code> dans la base spécifiée. Si la base n&rsquo;est pas spécifiée, elle utilise la base naturelle <code>e</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Logarithme naturel de 2</span>
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>log(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>print(resultat)  <span style="color:#75715e"># Affiche 0.6931471805599453</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Logarithme de 8 en base 2</span>
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>log(<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>print(resultat)  <span style="color:#75715e"># Affiche 3.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Logarithme de 100 en base 10</span>
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>log(<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>print(resultat)  <span style="color:#75715e"># Affiche 2.0</span></span></span></code></pre></div>
+<h3 id="la-fonction-exp">La fonction <code>exp()</code></h3>
+<p>La fonction <code>math.exp(x)</code> retourne <code>e</code> (la base des logarithmes naturels) élevé à la puissance <code>x</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> math
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul de e^1</span>
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>exp(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>print(resultat)  <span style="color:#75715e"># Affiche 2.718281828459045</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul de e^2</span>
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>exp(<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>print(resultat)  <span style="color:#75715e"># Affiche 7.3890560989306495</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Calcul de e^0</span>
+</span></span><span style="display:flex;"><span>resultat <span style="color:#f92672">=</span> math<span style="color:#f92672">.</span>exp(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>print(resultat)  <span style="color:#75715e"># Affiche 1.0</span></span></span></code></pre></div>
+<p>Le nombre <code>e</code> est la base des logarithmes naturels, c&rsquo;est-à-dire le nombre défini par <code>ln(e) = 1</code>. Cette constante mathématique, également appelée nombre d&rsquo;Euler ou constante de Néper vaut environ 2,71828. <code>ln</code> est le logarithme naturel.</p>
+<p>Voici un tableau récapitulatif de quelques fonctions mathématiques prédéfinies en Python :</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left"><strong>Fonction</strong></th>
+          <th style="text-align: left"><strong>Description</strong></th>
+          <th style="text-align: left"><strong>Exemple</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>abs(x)</code></td>
+          <td style="text-align: left">Retourne la valeur absolue de <code>x</code>.</td>
+          <td style="text-align: left"><code>abs(-7) -&gt; 7</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>round(x, n)</code></td>
+          <td style="text-align: left">Arrondit <code>x</code> à <code>n</code> décimales.</td>
+          <td style="text-align: left"><code>round(3.14159, 2) -&gt; 3.14</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>max(iterable)</code></td>
+          <td style="text-align: left">Retourne le plus grand élément d&rsquo;un itérable.</td>
+          <td style="text-align: left"><code>max([1, 2, 3]) -&gt; 3</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>min(iterable)</code></td>
+          <td style="text-align: left">Retourne le plus petit élément d&rsquo;un itérable.</td>
+          <td style="text-align: left"><code>min([1, 2, 3]) -&gt; 1</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>sum(iterable)</code></td>
+          <td style="text-align: left">Retourne la somme des éléments d&rsquo;un itérable.</td>
+          <td style="text-align: left"><code>sum([1, 2, 3]) -&gt; 6</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>pow(x, y)</code></td>
+          <td style="text-align: left">Retourne <code>x</code> élevé à la puissance <code>y</code>.</td>
+          <td style="text-align: left"><code>pow(2, 3) -&gt; 8</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>divmod(x, y)</code></td>
+          <td style="text-align: left">Retourne le quotient et le reste de la division de <code>x</code> par <code>y</code>.</td>
+          <td style="text-align: left"><code>divmod(9, 4) -&gt; (2, 1)</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>math.sqrt(x)</code></td>
+          <td style="text-align: left">Retourne la racine carrée de <code>x</code>.</td>
+          <td style="text-align: left"><code>math.sqrt(16) -&gt; 4.0</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>math.exp(x)</code></td>
+          <td style="text-align: left">Retourne <code>e</code> élevé à la puissance <code>x</code>.</td>
+          <td style="text-align: left"><code>math.exp(2) -&gt; 7.3890560989306495</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>math.log(x, base)</code></td>
+          <td style="text-align: left">Retourne le logarithme de <code>x</code> dans la base spécifiée.</td>
+          <td style="text-align: left"><code>math.log(8, 2) -&gt; 3.0</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>math.sin(x)</code></td>
+          <td style="text-align: left">Retourne le sinus de <code>x</code> (en radians).</td>
+          <td style="text-align: left"><code>math.sin(math.pi/2) -&gt; 1.0</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>math.cos(x)</code></td>
+          <td style="text-align: left">Retourne le cosinus de <code>x</code> (en radians).</td>
+          <td style="text-align: left"><code>math.cos(0) -&gt; 1.0</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>math.tan(x)</code></td>
+          <td style="text-align: left">Retourne la tangente de <code>x</code> (en radians).</td>
+          <td style="text-align: left"><code>math.tan(math.pi/4) -&gt; 1.0</code></td>
+      </tr>
+  </tbody>
+</table>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<a href="/">
+    <img src="/images/logoSN.png">
+</a>
+
+        </div>
+        <script>
+          window.index_js_url="/searchindex.js?1729694420";
+        </script>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1729694420" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1729694420" defer></script>
+        <script src="/js/search.js?1729694420" defer></script>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+        </ul>
+        <hr class="padding">
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div id="R-topics">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/semaine1/index.html"><a class="padding" href="/semaine1/index.html"><b>1. </b>Présentations et introduction à la programmation</a><ul id="R-subsections-20d4c42569d1627779ee44b6583d9fff" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine2/index.html"><a class="padding" href="/semaine2/index.html"><b>2. </b>Ordinogramme et introduction à Python</a><ul id="R-subsections-4e5f775c17b6891cd6aaf9f25b1480ae" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine3/index.html"><a class="padding" href="/semaine3/index.html"><b>3. </b>Interagir avec le programme</a><ul id="R-subsections-6750c0e977a5840c83523381713bebd3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine4/index.html"><a class="padding" href="/semaine4/index.html"><b>4. </b>Structures conditionnelles</a><ul id="R-subsections-f7f83e23654166c690eaa11074e62be6" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine5/index.html"><a class="padding" href="/semaine5/index.html"><b>5. </b>Structures répétitives</a><ul id="R-subsections-99cc03288fe111f6985bc24576eebcf0" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine6/index.html"><a class="padding" href="/semaine6/index.html"><b>6. </b>Les listes et le traitement des chaines de caractères</a><ul id="R-subsections-7e92b4e7dedce658ee34c5d5d4fb4f12" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine7/index.html"><a class="padding" href="/semaine7/index.html"><b>7. </b>Révision des semaines 1 à 6</a><ul id="R-subsections-190bbd037751991eb4a36c4e11ec0817" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/semaine8/index.html"><a class="padding" href="/semaine8/index.html"><b>8. </b>Les sous-programmes (fonctions)</a><ul id="R-subsections-d20bff156061ee65dd7d9c1ce9251494" class="collapsible-menu">
+            <li class="active " data-nav-id="/semaine8/fonctions-predefinies/index.html"><a class="padding" href="/semaine8/fonctions-predefinies/index.html">Les fonctions prédéfinies</a></li>
+            <li class="" data-nav-id="/semaine8/les-fonctions/index.html"><a class="padding" href="/semaine8/les-fonctions/index.html">Création et utilisation de fonctions</a></li>
+            <li class="" data-nav-id="/semaine8/la-portee-des-variables/index.html"><a class="padding" href="/semaine8/la-portee-des-variables/index.html">La portée des variables</a></li>
+            <li class="" data-nav-id="/semaine8/ateliers/index.html"><a class="padding" href="/semaine8/ateliers/index.html">ATELIERS</a></li>
+            <li class="" data-nav-id="/semaine8/pour-le-prochain-cours/index.html"><a class="padding" href="/semaine8/pour-le-prochain-cours/index.html">Pour le prochain cours</a></li></ul></li>
+            <li class="" data-nav-id="/semaine9/index.html"><a class="padding" href="/semaine9/index.html"><b>9. </b>Technique de débogage simple</a><ul id="R-subsections-cd4ce9ce7b3def299d43c43350bce163" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine10/index.html"><a class="padding" href="/semaine10/index.html"><b>10. </b>Examen</a></li>
+            <li class="" data-nav-id="/semaine11/index.html"><a class="padding" href="/semaine11/index.html"><b>11. </b>Pandas et présentation du projet final</a><ul id="R-subsections-595dc7ec7f52b32b85dc2316b75f9b78" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/semaine12/index.html"><a class="padding" href="/semaine12/index.html"><b>12. </b>Matplotlib</a><ul id="R-subsections-dfff59d13baad32a26fb4920f1eb7cc3" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/solutions-ateliers/index.html"><a class="padding" href="/solutions-ateliers/index.html">Solutions des ateliers</a></li>
+            <li class="" data-nav-id="/bases/index.html"><a class="padding" href="/bases/index.html">Base de connaissances</a><ul id="R-subsections-c2de1e9e7b3daa64c183089f2cba1c5b" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/exercices-supplementaires/index.html"><a class="padding" href="/exercices-supplementaires/index.html">Exercices supplémentaires (Semaines 1 à 6)</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="R-menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="R-select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-language"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-language">Language</label>
+                    <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/semaine8/fonctions-predefinies/index.html" lang="en-us" selected></option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="R-select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-paint-brush"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="R-select-variant">Theme</label>
+                    <select id="R-select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="R-select-variant-auto" value="auto" selected>Auto</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fa-fw fas fa-history"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="R-footer" class="footerFooter showFooter">
+        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1729694420" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1729694420" defer></script>
+    <script src="/js/theme.js?1729694420" defer></script>
+  </body>
+</html>

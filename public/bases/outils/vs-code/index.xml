@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Utilisation de VS Code :: 420-SN1-RE</title>
+    <link>https://example.org/bases/outils/vs-code/index.html</link>
+    <description>Visual Studio Code &amp; Jupyter Sauvegarde avec Visual Studio Code</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/outils/vs-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visual Studio Code &amp; Jupyter</title>
+      <link>https://example.org/bases/outils/vs-code/vs-code-jupyter/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/outils/vs-code/vs-code-jupyter/index.html</guid>
+      <description>Visual Studio Code &amp; Jupyter Notebook Dans ce cours, nous allons utiliser deux outils pour analyser des données scientifiques avec Python. Il s’agit de Visual Studio Code et Jupyter Notebook.&#xA;Visual Studio Code Visual Studio Code est comme un cahier de notes pour écrire du code.</description>
+    </item>
+    <item>
+      <title>Sauvegarde avec Visual Studio Code</title>
+      <link>https://example.org/bases/outils/vs-code/sauvegarge-automatique/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/bases/outils/vs-code/sauvegarge-automatique/index.html</guid>
+      <description>Sur cette page, vous trouverez les étapes pour sauvegarder vos programmes dans VS Code.&#xA;Sauvegarde automatique Si un rond est présent à droit du nom du fichier dans l’onglet en haut, c’est que votre travail n’est PAS sauvegardé (comme dans l’exemple ci-dessous).</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sauvegarde avec Visual Studio Code :: 420-SN1-RE</title>
+    <link>https://example.org/bases/outils/vs-code/sauvegarge-automatique/index.html</link>
+    <description>Sur cette page, vous trouverez les étapes pour sauvegarder vos programmes dans VS Code.&#xA;Sauvegarde automatique Si un rond est présent à droit du nom du fichier dans l’onglet en haut, c’est que votre travail n’est PAS sauvegardé (comme dans l’exemple ci-dessous).</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://example.org/bases/outils/vs-code/sauvegarge-automatique/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
