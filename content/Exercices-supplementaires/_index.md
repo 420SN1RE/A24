@@ -9,3 +9,8 @@ Dans le document **Exercices-supplémentaires.pdf**, vous trouverez une trentain
 Les exercices sont regroupés selon leur difficulté (facile, moyenne et difficile)
 
 Vous pouvez télécharger le document [ICI](./Exercices-supplementaires.pdf)
+
+
+{{% notice style="blue" title="Info" %}}
+Il n'y a pas de corrigé pour ces exercices
+{{% /notice %}}
