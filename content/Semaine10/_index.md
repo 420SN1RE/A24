@@ -12,7 +12,7 @@ Vous **DEVREZ OBLIGATOIREMENT** utiliser les ordinateurs du cégep. Pour ce fair
 
 ### Matière
 
-- Semaine 1 à 8 inclusivement.
+- Semaine 2 (sauf Ordinogramme) à 8 inclusivement.
 
 ### Poids de l'examen
 
@@ -22,6 +22,7 @@ Vous **DEVREZ OBLIGATOIREMENT** utiliser les ordinateurs du cégep. Pour ce fair
 
 - 2 feuilles 8.5 x 11 recto-verso.
 - 1 crayon et 1 feuille vierge comme feuille brouillon.
+- Vous pouvez avoir des écouteurs pendant l'examen
 
 ### Format de l'examen
 
