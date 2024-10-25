@@ -3,7 +3,7 @@ title = "Les nombres aléatoires"
 weight = 7
 +++
 
-![Aleatoire](../nb_aleatoire.jpeg?width=18vw)
+![Aleatoire](./nb_aleatoire.jpeg?width=18vw)
 
 
 La génération de nombres aléatoires est une tâche courante en programmation, utilisée dans des domaines variés comme les jeux, les simulations, et les tests. Python offre plusieurs façons de générer des nombres aléatoires, principalement via le module `random`.
