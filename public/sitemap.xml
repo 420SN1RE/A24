@@ -307,13 +307,16 @@
     <loc>https://example.org/exercices-supplementaires/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/outils/vs-code/vs-code-jupyter/index.html</loc>
+    <loc>https://example.org/bases/outils/vs-code/deboggueur/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/bases/outils/google-colab/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/outils/vs-code/sauvegarge-automatique/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/outils/google-colab/index.html</loc>
+    <loc>https://example.org/bases/outils/vs-code/vs-code-jupyter/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/index.html</loc>

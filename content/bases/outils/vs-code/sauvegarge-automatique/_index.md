@@ -1,6 +1,6 @@
 +++
 title = 'Sauvegarde avec Visual Studio Code'
-weight =  192
+weight =  193
 +++
 
 ![Sauvegarde automatique dans VS code](./auto-save.jpeg?width=25vw)

@@ -12,7 +12,7 @@ Vous **DEVREZ OBLIGATOIREMENT** utiliser les ordinateurs du cégep. Pour ce fair
 
 ### Matière
 
-- Semaine 1 à 9 inclusivement.
+- Semaine 1 à 8 inclusivement.
 
 ### Poids de l'examen
 

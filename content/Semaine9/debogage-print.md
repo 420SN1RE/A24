@@ -124,7 +124,10 @@ Visual Studio Code offre une gamme d'outils de débogage puissants et intégrés
 
 Ces outils facilitent l'identification et la correction des erreurs dans le code, rendant le processus de développement plus efficace et moins stressant.
 
-[Le Débogeur de VS Code en action](https://youtu.be/b4p-SBjHh28?si=C8bff51TX5xS6g-O)
+[Le Débogueur de VS Code en action](https://youtu.be/b4p-SBjHh28?si=C8bff51TX5xS6g-O)
+
+[Bases de connaissances](https://420sn1re.github.io/A24/bases/outils/vs-code/deboggueur/index.html)
+
 
 ## Pause 5 minutes
 
