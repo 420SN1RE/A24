@@ -1,6 +1,6 @@
 +++
 title = "Les nombres aléatoires"
-weight = 132
+weight = 7
 +++
 
 ![Aleatoire](../nb_aleatoire.jpeg?width=18vw)

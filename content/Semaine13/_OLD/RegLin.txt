@@ -6,75 +6,93 @@ weight = 132
 ![Régression linéaire](../regLineaire.png?width=20vw)
 
 
-La régression linéaire est une technique statistique utilisée pour modéliser la relation entre une variable dépendante (souvent notée `y`) et une ou plusieurs variables indépendantes (notées `x`). En termes simples, c'est une méthode qui permet de tracer une ligne droite (appelée droite de régression) qui s'ajuste le mieux aux données.
+La régression linéaire est une technique statistique utilisée pour modéliser la relation entre une variable dépendante (souvent notée `y`) et une ou plusieurs variables indépendantes (notées `x`). 
+
+En termes simples, c'est une méthode qui permet de tracer une ligne droite (appelée droite de régression) qui s'ajuste le mieux aux données.
 
 ## Calcul de la Régression Linéaire (à la main)
 
-1. **Concept de base**:
-   La formule de la régression linéaire simple est :
-   \[
-   y = ax + b
-   \]
-   où :
+### Concept de base
+   
+La formule de la régression linéaire simple est : `y = ax + b` où :
    - `y` est la variable dépendante.
    - `x` est la variable indépendante.
    - `a` est la pente de la ligne.
    - `b` est l'ordonnée à l'origine (le point où la ligne coupe l'axe des y).
 
-2. **Calcul de `a` et `b`**:
-   Pour trouver les valeurs de `a` et `b`, on utilise les formules suivantes :
-   \[
-   a = \frac{n(\sum xy) - (\sum x)(\sum y)}{n(\sum x^2) - (\sum x)^2}
-   \]
-   \[
-   b = \frac{(\sum y)(\sum x^2) - (\sum x)(\sum xy)}{n(\sum x^2) - (\sum x)^2}
-   \]
-   où \(n\) est le nombre de points de données.
+### Calculs de la pente et de l'ordonnée à l'origine
 
-3. **Exemple en Python**:
+Pour trouver les valeurs de `a` et `b`, on utilise les formules suivantes :
 
-   ```python
-   # Données
-   x = [1, 2, 3, 4, 5]
-   y = [2, 3, 5, 7, 11]
+```math
+$$ a = \frac{n(\sum xy) - (\sum x)(\sum y)}{n(\sum x^2) - (\sum x)^2} $$
 
-   # Calcul des paramètres
-   n = len(x)
-   sum_x = sum(x)
-   sum_y = sum(y)
-   sum_x_sq = sum([i**2 for i in x])
-   sum_xy = sum([x[i]*y[i] for i in range(n)])
+$$ b = \frac{(\sum y)(\sum x^2) - (\sum x)(\sum xy)}{n(\sum x^2) - (\sum x)^2} $$
+```
 
-   a = (n * sum_xy - sum_x * sum_y) / (n * sum_x_sq - sum_x**2)
-   b = (sum_y * sum_x_sq - sum_x * sum_xy) / (n * sum_x_sq - sum_x**2)
 
-   print(f'Pente (a): {a}')
-   print(f'Ordonnée à l\'origine (b): {b}')
-   ```
+où `n` est le nombre de points de données.
 
-## Calcul de la Régression Linéaire avec NumPy
 
-NumPy simplifie grandement le processus de calcul des paramètres de la régression linéaire. Voici comment :
+### Exemple en Python
 
-1. **Utilisation de NumPy**:
-   ```python
-   import numpy as np
+```python
+# Données
+x = [1, 2, 3, 4, 5]
+y = [2, 3, 5, 7, 11]
 
-   # Données
-   x = np.array([1, 2, 3, 4, 5])
-   y = np.array([2, 3, 5, 7, 11])
+# Calcul des paramètres
+n = len(x)
+sum_x = sum(x)
+sum_y = sum(y)
 
-   # Calcul des paramètres
-   A = np.vstack([x, np.ones(len(x))]).T
-   a, b = np.linalg.lstsq(A, y, rcond=None)[0]
+sum_x_carre = 0
+for i in x:
+    sum_x_carre += i**2
 
-   print(f'Pente (a): {a}')
-   print(f'Ordonnée à l\'origine (b): {b}')
-   ```
+sum_xy = 0
+for i in range(n):
+    sum_xy += x[i] * y[i]
 
-### Exercices Pratiques
+a = (n * sum_xy - sum_x * sum_y) / (n * sum_x_carre - sum_x**2)
+b = (sum_y * sum_x_carre - sum_x * sum_xy) / (n * sum_x_carre - sum_x**2)
 
-#### Exercice 1: Régression linéaire en biologie
+print(f'Pente (a): {a}')
+print(f'Ordonnée à l\'origine (b): {b}')
+```
+
+```plaintext
+Pente (a): 2.2
+Ordonnée à l'origine (b): -1.0
+```
+
+## Calcul de la régression linéaire avec NumPy
+
+NumPy simplifie grandement le processus de calcul des paramètres de la régression linéaire.
+
+### Utilisation de NumPy
+
+```python
+import numpy as np
+
+# Données
+x = np.array([1, 2, 3, 4, 5])
+y = np.array([2, 3, 5, 7, 11])
+
+# Calcul des paramètres
+A = np.vstack([x, np.ones(len(x))]).T
+a, b = np.linalg.lstsq(A, y, rcond=None)[0]
+
+print(f'Pente (a): {round(a,1)}')
+print(f'Ordonnée à l\'origine (b): {round(b,1)}')
+```
+
+```plaintext
+Pente (a): 2.2
+Ordonnée à l'origine (b): -1.0
+```
+
+### Exemple
 
 **Objectif**: Trouver la relation entre la concentration d'un nutriment dans le sol et la croissance des plantes.
 

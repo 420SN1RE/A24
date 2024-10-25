@@ -67,6 +67,9 @@
     <loc>https://example.org/bases/langage-de-prog/erreurs/listes/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/bases/langage-de-prog/nombres-aleatoires/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/fonctions/index.html</loc>
   </url>
   <url>
@@ -271,16 +274,13 @@
     <loc>https://example.org/semaine12/atelier/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine13/numpy2/index.html</loc>
+    <loc>https://example.org/semaine13/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine13/numpy/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/semaine13/nb_aleatoires/index.html</loc>
-  </url>
-  <url>
-    <loc>https://example.org/semaine13/reglin/index.html</loc>
+    <loc>https://example.org/semaine13/atelier/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/solutions-ateliers/index.html</loc>

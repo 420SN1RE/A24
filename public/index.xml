@@ -92,6 +92,13 @@
       <description>Objectifs de la leçon Comprendre les bases de la bibliothèque Matplotlib. Apprendre à créer des graphiques simples et personnalisés. Interpréter les résultats de graphiques pour des applications en sciences. Plan de la leçon Quiz: Bibliothèque Pandas (10 mins) La création et la personnalisation de graphiques simples. Traçage de graphiques en ligne Ajout d’éléments de graphique (titres, légendes, marqueurs, etc.) Pause 5 mins Les sous graphiques et les graphiques multiples La sauvegarde d’un graphique en format image (png) Les types de graphiques Pause 5 mins Ateliers Pour la semaine prochaine</description>
     </item>
     <item>
+      <title>NumPy</title>
+      <link>https://example.org/semaine13/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine13/index.html</guid>
+      <description>Objectifs de la leçon Comprendre les bases de NumPy Manipuler les tableaux NumPy Effectuer des opérations mathématiques et statistiques avec NumPy Travailler avec des tableaux multidimensionnels Plan de la leçon Quiz: bibliothèque Matplotlib (10 mins) Qu’est-ce que NumPy et pourquoi l’utiliser. Décrire les avantages de NumPy par rapport aux listes Python Créer des tableaux NumPy. Accéder aux éléments et modifier les valeurs dans un tableau NumPy. Pause 5 mins Utiliser les fonctions mathématiques et statistiques. Créer et manipuler des tableaux à plusieurs dimensions. Pause 5 mins Atelier Pour la semaine prochaine</description>
+    </item>
+    <item>
       <title>Solutions des ateliers</title>
       <link>https://example.org/solutions-ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
