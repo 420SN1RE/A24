@@ -6,12 +6,12 @@ weight = 131
 ![NumPy](../numpy.jpg?width=18vw)
 
 
-## Qu'est-ce que Numpy?
+## Qu'est-ce que NumPy?
 
 **NumPy** (*Numerical Python*) est une bibliothèque pour le langage Python, ajoutant le support de grands tableaux ainsi qu'une large collection de fonctions mathématiques de haut niveau pour les opérer.\
 C'est une bibliothèque essentielle pour la science des données.
 
-NumPy est un module Python qui s'importe comme tous les autres. De ce fait, il nous suffit d'écrire et d'exécuter le code ci-dessous dans une cellule sur Jupyter Notebook afin d'importer cette librairie.
+NumPy est un module Python qui s'importe comme tous les autres.
 
 ```python
 import numpy as np
@@ -79,7 +79,7 @@ np.ndim(tab_2d) # Affiche 2 comme le nombre de dimensions de notre tableau
 
 ### Accès indicé et découpage du tableau
 
-##### *1. Accès indicé*
+#### *1. Accès indicé*
 
 Comme tous tableaux, il est possible d'accéder aux éléments à l'aide des **index**.
 
@@ -103,13 +103,13 @@ De ce fait, si je souhaite accéder à la première "case" de mon tableau :
 print(tab_2d[0][0]) # Affiche 5
 ```
 
-#####  *2. Découpage du tableau*
+####  *2. Découpage du tableau*
 
 Il faut savoir qu'un tableau comporte des **axes** (axis).
 
 ![axes](../axis.JPG)
 
-Nous avons vu que lorsque nous utilisons la fonction shape(), le premier élément correspond aux lignes et le deuxième aux colonnes du tableau.
+Nous avons vu que lorsque nous utilisons la fonction `shape()`, le premier élément correspond aux lignes et le deuxième aux colonnes du tableau.
 De ce fait, l'axe 0 correspond aux lignes et l'axe 1 aux colonnes de mon tableau.
 
 
@@ -117,13 +117,13 @@ De ce fait, l'axe 0 correspond aux lignes et l'axe 1 aux colonnes de mon tableau
 print(tab_2d[:, 0]) # Affiche [5 7 8] soit la première colonne
 ```
 
-![acces colonne](../acces_colonne.JPG)
+![accès colonne](../acces_colonne.JPG)
 
 ```python
 print(tab_2d[0, :]) # Affiche [5 4 2 8] soit la première ligne
 ```
 
-![acces ligne](../acces_ligne.JPG)
+![accès ligne](../acces_ligne.JPG)
 
 ```python
 print(tab_2d[:, 0:2]) # # Affiche [[5 4][7 10][8 7]]
@@ -137,14 +137,14 @@ print(tab_2d[0:2, :]) # Affiche [[5 4 2 8][7 10 3 5]]
 
 ![multi ligne](../multi_ligne.JPG)
 
-#####  *3. Indexation booléenne*
+####  *3. Indexation booléenne*
 
 L'indexation booléenne consiste à interroger notre tableau pour qu'il nous retourne "Vrai" ou "Faux" sous la forme d'un masque booléen. Par la suite, nous pourrons effectuer des modifications basées sur celui-ci.
 
 ```python
 print(tab_2d < 7)
 ```
-```python {style=witchhazel}
+```python
 [[ True  True  True False]
  [False False  True  True]
  [False False  True  True]]
@@ -158,7 +158,6 @@ print(tab_2d)
 ```
 
 ![test inf7](../test_inf_7.JPG)
-
 
 Il est aussi possible d'effectuer des tests multiples.
 
@@ -177,7 +176,7 @@ NumPy se dote d'un certains nombres de fonctions qui vont nous permettre d'effec
 
 ### Mathématiques
 
-#####  *1. Somme*
+####  *1. Somme*
 
 ```python
 tab_2d = np.array([[5, 4, 2, 8],[7, 10, 3, 5][8, 7, 4, 1]])
@@ -196,13 +195,13 @@ np.sum(tab_2d, axis=1) # Affiche [19, 25, 20] soit la somme des lignes
 
 Cette technique pourra être utilisée pour les fonctions suivantes.
 
-#####  *2. Produit*
+####  *2. Produit*
 
 ```python
 np.prod(tab_2d) # Affiche 75264000
 ```
 
-#####  *3. Sinus*
+####  *3. Sinus*
 
 ```python
 np.sin(tab_2d)
@@ -214,7 +213,7 @@ np.sin(tab_2d)
 [ 0.98935825,  0.6569866 , -0.7568025 ,  0.84147098]]
 ```
 
-#####  *4. Exponentiel*
+####  *4. Exponentiel*
 
 ```python
 np.exp(tab_2d)
@@ -228,35 +227,34 @@ np.exp(tab_2d)
 
 ### Statistiques
 
-#####  *1. Moyenne*
+####  *1. Moyenne*
 
 ```python
 np.mean(tab_2d) # Affiche 5.33
 ```
 
-
-#####  *2. Médiane*
+####  *2. Médiane*
 
 ```python
 np.median(tab_2d) # Affiche 5
 ```
 
 
-#####  *3. Variance*
+####  *3. Variance*
 
 ```python
 np.var(tab_2d) # Affiche 6.722222222222222
 ```
 
 
-#####  *4. Ecart type*
+####  *4. Ecart type*
 
 ```python
 np.std(tab_2d) # Affiche 2.592724864350674
 ```
 
 
-#####  *5. Coefficient de corrélation*
+####  *5. Coefficient de corrélation*
 
 ```python
 np.mean(tab_2d)
@@ -270,7 +268,7 @@ np.mean(tab_2d)
 
 ### Diverses
 
-#####  *1. Valeurs uniques*
+####  *1. Valeurs uniques*
 
 La fonction suivante permet de retourner les valeurs uniques de notres tableaux et de compter le nombre d'occurences de ces valeurs.
 
@@ -283,7 +281,7 @@ array([ 1,  2,  3,  4,  5,  7,  8, 10]),
 array([1, 1, 1, 2, 2, 2, 2, 1], dtype=int64)
 ```
 
-##### *2. Importer un jeu de données*
+#### *2. Importer un jeu de données*
 
 Dans la majorité des cas, vous travaillerez avec des données qui vous seront fournies.
 Ils existent des fonctions qui vous permettent de charger ces données.
