@@ -10,9 +10,11 @@ weight = 100
 Vous **DEVREZ OBLIGATOIREMENT** utiliser les ordinateurs du cégep. Pour ce faire, au préalable, vous devrez vous assurer que vous **êtes en mesure de vous connecter** sur ces ordinateurs et sur **Moodle**. Autrement, il n'y aura **AUCUNE** reprise possible.
 {{% /notice %}}
 
-### Matière
+### Matière : semaine 2 à 8 inclusivement
 
-- Semaine 2 (sauf Ordinogramme) à 8 inclusivement.
+**SAUF**:
+ - Semaine 2: Ordinogramme ; nombres flottants et erreurs d'arrondi 
+ - Semaine 4: Tester de nombres flottants
 
 ### Poids de l'examen
 
@@ -21,7 +23,7 @@ Vous **DEVREZ OBLIGATOIREMENT** utiliser les ordinateurs du cégep. Pour ce fair
 ### Documentation permise
 
 - 2 feuilles 8.5 x 11 recto-verso.
-- 1 crayon et 1 feuille vierge comme feuille brouillon.
+- 1 crayon/stylo et 1 feuille vierge comme feuille brouillon.
 - Vous pouvez avoir des écouteurs pendant l'examen
 
 ### Format de l'examen

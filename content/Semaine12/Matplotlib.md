@@ -55,7 +55,7 @@ plt.show()
 | `plt.plot(x, y)`       | Crée un graphique en ligne avec les valeurs de `x` et `y`.                  |
 | `plt.show()`           | Affiche le graphique créé.                                                  |
 
-![graphe 1](../graphe1.png?width=30vw)
+![graphe 1](../graphe1.png?width=50vw)
 
 ### Ajout de titres
 
@@ -86,7 +86,7 @@ plt.show()
 | `plt.xlabel("L'axe X")` | Ajoute une étiquette à l'axe des abscisses (x) avec le texte "L'axe X".     |
 | `plt.ylabel("L'axe Y")` | Ajoute une étiquette à l'axe des ordonnées (y) avec le texte "L'axe Y".     |
 
-![graphe 2](../graphe2.png?width=30vw)
+![graphe 2](../graphe2.png?width=50vw)
 
 ### Personnalisation des styles de ligne et des couleurs
 
@@ -115,7 +115,7 @@ plt.show()
 |------------------------|-----------------------------------------------------------------------------|
 | `plt.plot(x, y, color='green', linestyle='--', marker='o')` | Crée un graphique en ligne avec les valeurs de `x` et `y`, en utilisant des paramètres supplémentaires pour personnaliser l'apparence de la ligne : `color='green'` pour la couleur verte, `linestyle='--'` pour une ligne en pointillés, et `marker='o'` pour des marqueurs en forme de cercle sur chaque point de données. |
 
-![graphe 3](../graphe3.png?width=30vw)
+![graphe 3](../graphe3.png?width=50vw)
 
 **Liste de marqueurs**
 
@@ -161,7 +161,7 @@ plt.legend()
 plt.show()
 ```
 
-![graphe 6](../graphe6.png?width=30vw)
+![graphe 6](../graphe6.png?width=50vw)
 
 ## Définir les étiquettes de graduations des axes x et y
 
@@ -191,7 +191,7 @@ plt.show()
 | `plt.yticks`         | Définit ou obtient les étiquettes des graduations de l’axe y. |
 
 
-![graphe 8](../graphe8.png?width=30vw)
+![graphe 8](../graphe8.png?width=50vw)
 
 
 ## Pause 5 minutes
@@ -234,7 +234,7 @@ plt.show()
 | `plt.subplot(2, 1, 2)` | Crée un sous-graphique dans une grille de 2 lignes et 1 colonne, et place ce sous-graphique dans la deuxième position (en bas). Cela permet de créer plusieurs graphiques dans une seule figure. |
 | `plt.tight_layout()`   | Ajuste automatiquement les paramètres des sous-graphiques pour qu'ils s'adaptent proprement à la zone de la figure, en évitant les chevauchements entre les étiquettes, les titres et les axes. |
 
-![graphe 4](../graphe4.png?width=30vw)
+![graphe 4](../graphe4.png?width=50vw)
 
 ## Sauvegarde du graphique
 
@@ -266,7 +266,7 @@ plt.show()
 |------------------------------|-----------------------------------------------------------------------------|
 | `plt.savefig`                | Enregistre le graphique actuel dans le fichier spécifié. Le format du fichier peut être `PNG`, `JPG`, `PDF`, `SVG`, etc. On peut inclure un chemin pour spécifier où enregistrer le fichier.                 |                     
 
-![graphe 5](../graphe5.png?width=30vw)
+![graphe 5](../graphe5.png?width=50vw)
 
 ## Les différents types de graphiques
 
@@ -291,7 +291,7 @@ plt.show()
 | `plt.hist`           | Fonction pour créer un histogramme à partir des données fournies.                               |
 |            | `donnees`: Les données à analyser et à représenter sous forme d'histogramme. `bins=5`le nombre de barres dans l'histogramme. `range=(1, 5)` la plage de valeurs à inclure dans l'histogramme. `density=False`: Si `True`, l'histogramme affiche une densité de probabilité plutôt que le nombre brut d'observations. `cumulative=False` Si `True`, l'histogramme est cumulatif, affichant la somme des fréquences jusqu'à chaque point. `color='green'`et `edgecolor='black'`couleurs des barres de l'histogramme et des contours des barres.                         |
 
-![Histogramme](../matplotlib-histo.png?width=30vw)
+![Histogramme](../matplotlib-histo.png?width=50vw)
 
 ### Graphique en barres
 
@@ -312,7 +312,7 @@ plt.show()
 |----------------|-----------------------------------------------------------------------------|
 | `plt.bar`      | Fonction pour créer un diagramme à barres. `categories`: la liste des catégories ou étiquettes pour chaque barre. `valeurs`: La liste des valeurs correspondant à la hauteur de chaque barre.  |                                 
 
-![Graphique en barres](../matplotlib-barres.png?width=30vw)
+![Graphique en barres](../matplotlib-barres.png?width=50vw)
 
 #### Différence entre un histogramme et un graphique en barres
 
@@ -347,7 +347,7 @@ Voici une explication simple des deux méthodes `plt.pie` et `plt.axis('equal')`
 | `plt.pie`                  | Fonction pour créer un graphique circulaire (camembert). `tailles`: Les valeurs déterminant la taille de chaque secteur (portion) du camembert. `explode=secteur`:   Liste déterminant quelle portion est décalée (mise en avant). `labels=etiquettes`: Étiquettes pour chaque secteur, décrivant ce que chaque portion représente. `colors`:  Liste des couleurs utilisées pour chaque secteur. `autopct='%1.1f%%'`: Affiche le pourcentage de chaque secteur à l'intérieur de celui-ci, formaté à une décimale près. `shadow=True`:  Ajoute une ombre au graphique pour un effet de profondeur. `startangle=140`: Angle de départ pour le premier secteur. 
 |`plt.axis('equal')` | Assure que le graphique est parfaitement circulaire en réglant les axes x et y à la même échelle.                              |
 
-![Graphique en secteurs](../matplotlib-secteur.png?width=30vw)
+![Graphique en secteurs](../matplotlib-secteur.png?width=50vw)
 
 ### Graphique en nuages de points
 
@@ -368,7 +368,7 @@ plt.show()
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | `plt.scatter`                 |  utilisée pour tracer un graphique en nuage de points. **`x` et `y`** : les coordonnées des points sur le graphique. - **`s=tailles`** : L'argument `s` définit la taille des marqueurs de chaque point. Cela peut être une valeur unique qui s'applique à tous les points, ou une liste de valeurs qui spécifie une taille différente pour chaque point. 
 
-![Graphique en nuage](../matplotlib-nuage.png?width=30vw)
+![Graphique en nuage](../matplotlib-nuage.png?width=50vw)
 
 
 ## Quelques méthodes
