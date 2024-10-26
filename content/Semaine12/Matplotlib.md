@@ -112,8 +112,8 @@ plt.show()
 ```
 
 | Méthode       | Description                                                                 |
-|------------------------|-----------------------------------------------------------------------------|
-| `plt.plot(x, y, color='green', linestyle='--', marker='o')` | Crée un graphique en ligne avec les valeurs de `x` et `y`, en utilisant des paramètres supplémentaires pour personnaliser l'apparence de la ligne : `color='green'` pour la couleur verte, `linestyle='--'` pour une ligne en pointillés, et `marker='o'` pour des marqueurs en forme de cercle sur chaque point de données. |
+|---------------|-----------------------------------------------------------------------------|
+| `plt.plot(x, y,`<br>`color='green',`<br>`linestyle='--',`<br>`marker='o')` | Crée un graphique en ligne avec les valeurs de `x` et `y`, en utilisant des paramètres supplémentaires pour personnaliser l'apparence de la ligne : `color='green'` pour la couleur verte, `linestyle='--'` pour une ligne en pointillés, et `marker='o'` pour des marqueurs en forme de cercle sur chaque point de données. |
 
 ![graphe 3](../graphe3.png?width=50vw)
 
