@@ -12,9 +12,9 @@ Vous **DEVREZ OBLIGATOIREMENT** utiliser les ordinateurs du cégep. Pour ce fair
 
 ### Matière : semaine 2 à 8 inclusivement
 
-**SAUF**:
- - Semaine 2: Ordinogramme ; nombres flottants et erreurs d'arrondi 
- - Semaine 4: Tester de nombres flottants
+**SAUF**:  
+ - Semaine 2: Ordinogramme ; nombres flottants et erreurs d'arrondi  
+ - Semaine 4: Tester de nombres flottants  
 
 ### Poids de l'examen
 
