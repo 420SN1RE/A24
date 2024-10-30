@@ -20,11 +20,12 @@ weight = 110
 	- Extraction des données de fichiers CSV.
 	- Création de Series et de *DataFrames*.
 	- Accès aux données d'un *DataFrame*.
+	- Modification des valeurs manquantes.
 - Pause 5 mins
 	- Ajout, suppression et renommage de colonnes.
 	- Sélection et filtrage de données.
 	- Calcul de statistiques descriptives.
-	- Conversion d'un *DataFrame* en liste et modification des valeurs manquantes
+	- Conversion d'un *DataFrame* en liste
 - Pause 5 mins
 	- Présentation du Projet Final (Partie 1) - À VENIR
 - Atelier

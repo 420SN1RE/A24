@@ -1,0 +1,43 @@
+# ENLEVER ???
+## Conversion d'un *DataFrame* en liste
+
+La méthode `tolist()` est utilisée pour convertir un *DataFrame* en une liste. Chaque ligne du *DataFrame* sera un élément de la liste. C’est particulièrement utile lorsqu'on souhaite manipuler les données sans utiliser le dataframe. Par exemple, pour identifier et modifier les données manquantes (Ex.: *None* ou *NaN*).
+
+{{%notice style="warning" title="Attention"%}}
+**NB**: Le DataFrame **n'est pas modifié**, seule la liste le sera.
+{{% /notice%}}
+
+```python
+import pandas as pd
+
+# Charger les données dans un DataFrame
+df = pd.read_csv('data.csv')
+
+# Convertir le DataFrame en liste
+liste = df.values.tolist()
+
+# Remplacer les valeurs manquantes par 0
+for ligne in liste:
+    for i in range(len(ligne)):
+        if ligne[i] != ligne[i]:
+            ligne[i] = 0
+
+# Afficher la liste modifiée
+print(liste)
+```
+
+```plaintext
+[['Aline', 25, 85.5, 'Laval'], ['Robert', 30, 0, 'Laval'], ['Charles', 35, 78.9, 'Montréal'], ['Sophie', 28, 0, 'Québec'], ['Luc', 22, 88.0, 'Sherbrooke'], ['Marie', 27, 0, 'Trois-Rivières'], ['Jean', 32, 92.3, 'Gatineau'], ['Paul', 29, 0, 'Saguenay'], ['Julie', 24, 81.7, 'Drummondville'], ['Marc', 31, 0, 'Longueuil']]
+```
+
+La condition `if ligne[i] != ligne[i]:` fonctionne grâce à une propriété unique des valeurs NaN (Not a Number) en Python. :
+
+### Propriété des valeurs *NaN*
+
+En Python, et plus généralement dans les langages de programmation, les valeurs `NaN` ont une propriété spéciale : elles ne sont pas égales à elles-mêmes. Cela signifie que si vous comparez une valeur `NaN` à elle-même, le résultat sera toujours `False`.
+
+## Reconstruction d'un *DataFrame*
+
+L'utilisation de `pd.DataFrame(donnees_nettoyees, columns=dataframe.columns)` permet reconstruire un *DataFrame* nettoyé avec les mêmes colonnes que l’original.
+
+# STOP ENLEVER
