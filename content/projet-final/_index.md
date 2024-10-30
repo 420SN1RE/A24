@@ -24,13 +24,14 @@ Le projet doit être fait **individuellement** (évaluation et préparation).
 {{% /notice %}}
 
 Le projet comporte 4 étapes :
-- Étape 1 : Extraction et nettoyage des données (Semaine 11)
-- Étape 2 : Affichage des données (Semaine 12)
-- Étape 3 : Analyse des données (Semaine 13)
-- Étape 4 : Rédaction du rapport en programmation lettrée. (Semaine 14)
+- Étape 1 : Importer, préparer les données et extraire des informations clés (Semaine 11)
+- Étape 2 : Visualiser les données sous forme de graphiques, pour en faciliter l'interprétation (Semaine 12)
+- Étape 3 : Analyser les résultats et en tirer des conclusions (Semaine 13-14)
 
 Semaine 15: **Évaluation (40%)**
 
 # Mise en situation - En construction
+
+Voir sur Moodle
 
 ![En construction](./construction.jpg?width=25vw)

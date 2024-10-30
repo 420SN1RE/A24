@@ -71,6 +71,13 @@
       <description>Objectifs de la leçon Comprendre l’importance du débogage Appliquer une technique de débogage simple pour résoudre des bogues courants. Évaluer l’acquisition des éléments de compétence du cours (Examen formatif) Plan de la leçon Quiz: Les fonctions (10 mins) L’importance du débogage dans le développement de logiciels. ~5mins Suivre l’exécution d’un programme simple et identifier les erreurs. ~10mins Aperçu aux outils de débogage disponibles dans VS Code. ~5mins Utilisation des points d’arrêt, de l’inspection des variables et de la navigation dans le code. Pause 5 mins Examen formatif: à faire obligatoirement individuellement et en classe ~120mins Atelier (à faire à la maison): Trouvez l’erreur… et corrigez-la. Pour la semaine prochaine</description>
     </item>
     <item>
+      <title>Résumés des notions évaluées à l&#39;examen</title>
+      <link>https://example.org/revision/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/revision/index.html</guid>
+      <description>Menu Variables, interaction et types de variables (inclut input(), print(), str(), int(), float(), bool(), list()) Expressions booléennes et structures conditionnelles (inclut and, or, not, if, elif, else) Boucle while (inclut break et continue) Boucle for (inclut range(), break et continue) Listes Chaines de caractères Fonctions (inclut def, return)</description>
+    </item>
+    <item>
       <title>Examen</title>
       <link>https://example.org/semaine10/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

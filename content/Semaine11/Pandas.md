@@ -187,6 +187,36 @@ print(f"La moyenne des étudiants de l'automne est de {round(moyenne,2)}%")
 La moyenne des étudiants de l'automne est de 77.97%
 ```
 
+## Identification des données manquantes dans un dataframe
+
+L'utilisation de `isna` dans Pandas est très simple et pratique pour identifier les données manquantes dans un DataFrame.
+
+La fonction `isna()` retourne un DataFrame de la même taille que l'original, mais avec des valeurs booléennes (`True` ou `False`). Chaque valeur `True` indique la présence d'une donnée manquante (comme `NaN`), tandis que `False` indique que la donnée est présente.
+
+```python
+import pandas as pd
+
+# Exemple de DataFrame avec des valeurs manquantes
+data = {'A': [1, 2, NaN, 4],
+        'B': [NaN, 2, 3, 4],
+        'C': [1, NaN, NaN, 4]}
+df = pd.DataFrame(data)
+
+# Utilisation de isna() pour identifier les valeurs manquantes
+donnees_manquantes = df.isna()
+
+print(donnees_manquantes)
+```
+```plaintext
+       A      B      C
+0  False   True  False
+1  False  False   True
+2   True  False   True
+3  False  False  False
+```
+
+Dans cet exemple, `donnees_manquantes` sera un DataFrame où chaque `True` indique une valeur manquante dans le DataFrame original.
+
 ## Les attributs index et values des DataFrames
 
 Pour accéder à l'index du DataFrame :
@@ -211,42 +241,25 @@ print(valeurs)
  ['Charles' 35 78.9]]
 ```
 
-## Conversion d'un *DataFrame* en liste
+### Fonctions les plus utiles avec un DataFrame
 
-La méthode `tolist()` est utilisée pour convertir un *DataFrame* en une liste. Chaque ligne du *DataFrame* sera un élément de la liste. C’est particulièrement utile lorsqu'on souhaite manipuler les données sans utilises les méthodes de pandas. Par exemple, pour identifier et modifier les données manquantes (Ex.: *None* ou *NaN*).
+| Fonction           | Description                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| `df.head(n)`        | Affiche les premières `n` lignes du DataFrame.                                   |
+| `df.tail(n)`        | Affiche les dernières  `n` lignes du DataFrame.                                   |
+| `df.describe()`    | Fournit des statistiques descriptives pour les colonnes numériques.          |
+| `df.info()`        | Affiche un résumé concis du DataFrame, y compris le type de données et les valeurs manquantes. |
+| `df.shape`         | Renvoie les dimensions du DataFrame (nombre de lignes et de colonnes).       |
+| `df.columns`       | Affiche les noms des colonnes du DataFrame.                                  |
+| `df.dtypes`        | Affiche les types de données de chaque colonne.                              |
+| `df.isnull()`      | Renvoie un DataFrame de la même forme indiquant les valeurs manquantes.      |
+| `df.isna()` 	     | Renvoie un DataFrame de la même taille que l'original, mais avec `True` à la place d'une donnée manquante (comme `NaN`)|
+| `df.dropna()`      | Supprime les lignes ou les colonnes contenant des valeurs manquantes.        |
+| `df.fillna()`      | Remplit les valeurs manquantes avec une valeur spécifiée.                    |
+| `df.sort_values()` | Trie les valeurs d'une ou plusieurs colonnes.                                |
+| `df.merge()`       | Fusionne deux DataFrames en fonction d'une ou plusieurs colonnes clés.       |
+| `df.apply()`       | Applique une fonction à chaque élément d'une colonne ou d'un DataFrame.      |
 
-```python
-import pandas as pd
-
-# Charger les données dans un DataFrame
-df = pd.read_csv('data.csv')
-
-# Convertir le DataFrame en liste
-liste = df.values.tolist()
-
-# Remplacer les valeurs manquantes par 0
-for ligne in liste:
-    for i in range(len(ligne)):
-        if ligne[i] != ligne[i]:
-            ligne[i] = 0
-
-# Afficher la liste modifiée
-print(liste)
-```
-
-```plaintext
-[['Aline', 25, 85.5, 'Laval'], ['Robert', 30, 0, 'Laval'], ['Charles', 35, 78.9, 'Montréal'], ['Sophie', 28, 0, 'Québec'], ['Luc', 22, 88.0, 'Sherbrooke'], ['Marie', 27, 0, 'Trois-Rivières'], ['Jean', 32, 92.3, 'Gatineau'], ['Paul', 29, 0, 'Saguenay'], ['Julie', 24, 81.7, 'Drummondville'], ['Marc', 31, 0, 'Longueuil']]
-```
-
-La condition `if ligne[i] != ligne[i]:` fonctionne grâce à une propriété unique des valeurs NaN (Not a Number) en Python. :
-
-### Propriété des valeurs *NaN*
-
-En Python, et plus généralement dans les langages de programmation, les valeurs `NaN` ont une propriété spéciale : elles ne sont pas égales à elles-mêmes. Cela signifie que si vous comparez une valeur `NaN` à elle-même, le résultat sera toujours `False`.
-
-## Reconstruction d'un *DataFrame*
-
-L'utilisation de `pd.DataFrame(donnees_nettoyees, columns=dataframe.columns)` permet reconstruire un *DataFrame* nettoyé avec les mêmes colonnes que l’original.
 
 ## Visualisation des données
 

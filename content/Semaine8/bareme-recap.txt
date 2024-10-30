@@ -1,0 +1,52 @@
+Écrire un programme qui demande à l’utilisateur d’entrer un premier nombre pour initialiser une variable. Ensuite, le programme continuer à demander à l'utilisateur des nombres et diviser resultat par chaque nombre entré, jusqu’à ce que l’utilisateur entre zéro. Une fois que zéro est entré, le programme doit afficher le résultat final de toutes les divisions successives.
+
+Écrire un programme qui demande à l’utilisateur d’entrer des nombres jusqu’à ce qu’il entre 0, puis affiche le résultat final de la division de resultat par chaque nombre entré.
+
+
+Groupe 6 Q1 (35)
+
+Sarah Boularas 0 
+Danae-Kiriaki Papadopoulos  0
+Anjana Pratheep 0 
+Maëlle Parisé 0 
+Maryam El-Bissani 0 
+Olivia Antoine 0
+
+concept et syntaxe du input 4 pts
+conversion sortie input     3 pts
+arrondi                     1 pt
+utilisation de f-strings    2 pts
+
+
+Groupe 6 Q2
+
+Tommy-Lee Tabet 4
+Lucrece Jiongo Kenfack 0
+Sarah Boularas 0
+Rayane Bouaddou 2
+Gabriel Hodge 0
+Rebecca Philips 0
+Danae-Kiriaki Papadopoulos 0
+Anjana Pratheep 0
+Maëlle Parisé 0 
+Olivia Antoine 2
+Safwan Makhdad 0
+
+
+concept et syntaxe de la boucle	for	4 pts
+logique du code				4 pts
+utilisation de f-string			2 pts
+
+===
+
+Sarah Boularas 0 
+Danae-Kiriaki Papadopoulos 0
+Anjana Pratheep 0
+Maëlle Parisé 0
+Olivia Antoine 2
+Meryam Arifa  3 55%
+Safwan Makhdad 55%
+
+
+Comprennent as les absences, et les évaluation sommatives sont en classe
+

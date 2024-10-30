@@ -22,6 +22,9 @@
     <loc>https://example.org/bases/outils/installations/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/revision/categorie1/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/langage-de-prog/debogage/index.html</loc>
   </url>
   <url>
@@ -29,6 +32,9 @@
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/operateurs/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/revision/categorie2/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/biopython/intro/index.html</loc>
@@ -46,7 +52,13 @@
     <loc>https://example.org/bases/langage-de-prog/erreurs/lecture-donnees/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/revision/categorie3/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/if-else-elif/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/revision/categorie4/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/fonction-recursive/index.html</loc>
@@ -55,16 +67,25 @@
     <loc>https://example.org/bases/langage-de-prog/erreurs/while/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/revision/categorie5/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/langage-de-prog/listes-de-listes/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/for-range/index.html</loc>
   </url>
   <url>
+    <loc>https://example.org/revision/categorie6/index.html</loc>
+  </url>
+  <url>
     <loc>https://example.org/bases/langage-de-prog/match-case/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/erreurs/listes/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/revision/categorie7/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/bases/langage-de-prog/nombres-aleatoires/index.html</loc>
@@ -242,6 +263,9 @@
   </url>
   <url>
     <loc>https://example.org/semaine9/examen-formatif/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/revision/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine9/atelier/index.html</loc>
