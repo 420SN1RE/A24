@@ -1,6 +1,6 @@
 +++
 title = "Calcul d'une droite de régression linéaire avec NumPy"
-weight = 11
+weight = 134
 +++
 
 

@@ -1,6 +1,6 @@
 +++
 title = "ATELIER"
-weight = 132
+weight = 135
 +++
 
 [La bibliothèque NumPy](../atelier-numpy.ipynb)

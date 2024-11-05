@@ -388,8 +388,55 @@ plt.show()
 | `fig = plt.figure(figsize=(width, height)`| `figsize` : Une tuple (largeur, hauteur) en pouces, définissant la taille de la figure.|
 | `plt.grid()`            |  Afficher ou masquer la grille quadrillée sur un graphique.              |
 
+## Les paramètres des méthodes de traçage
+
+- Voici un tableau listant les paramètres des méthodes `plot`, `hist`, `scatter`, `pie` avec leurs descriptions :
+
+| Méthode  | Paramètre          | Description                                                                 |
+|----------|--------------------|-----------------------------------------------------------------------------|
+| `plot`   | `x`                | Données pour l'axe des x.                                                   |
+|          | `y`                | Données pour l'axe des y.                                                   |
+|          | `color`            | Couleur de la ligne.                                                        |
+|          | `linestyle`        | Style de la ligne (par exemple, '-', '--', '-.', ':').                       |
+|          | `linewidth`        | Largeur de la ligne.                                                        |
+|          | `marker`           | Marqueur pour les points de données (par exemple, 'o', 's', '^').            |
+|          | `label`            | Étiquette pour la légende.                                                  |
+|          | `alpha`            | Transparence de la ligne (0.0 à 1.0).                                       |
+| `hist`   | `x`                | Données pour l'histogramme.                                                 |
+|          | `bins`             | Nombre de bacs (bins) ou séquence définissant les bacs.                     |
+|          | `range`            | Plage des valeurs à inclure.                                                |
+|          | `density`          | Si True, normalise l'histogramme.                                           |
+|          | `cumulative`       | Si True, affiche un histogramme cumulatif.                                  |
+|          | `color`            | Couleur des barres de l'histogramme.                                        |
+|          | `label`            | Étiquette pour la légende.                                                  |
+|          | `alpha`            | Transparence des barres (0.0 à 1.0).                                        |
+| `scatter`| `x`                | Données pour l'axe des x.                                                   |
+|          | `y`                | Données pour l'axe des y.                                                   |
+|          | `s`                | Taille des marqueurs.                                                       |
+|          | `c`                | Couleur des marqueurs.                                                      |
+|          | `marker`           | Style des marqueurs (par exemple, 'o', 's', '^').                           |
+|          | `alpha`            | Transparence des marqueurs (0.0 à 1.0).                                     |
+|          | `label`            | Étiquette pour la légende.                                                  |
+| `pie`    | `x`                | Données pour les parts du graphique en secteurs.                            |
+|          | `labels`           | Étiquettes pour chaque part.                                                |
+|          | `colors`           | Couleurs des parts.                                                         |
+|          | `autopct`          | Format des pourcentages affichés (par exemple, '%1.1f%%').                  |
+|          | `shadow`           | Si True, ajoute une ombre.                                                  |
+|          | `explode`          | Décale une part du centre (par exemple, [0, 0.1, 0, 0]).                    |
+|          | `startangle`       | Angle de départ pour le premier secteur.                                    |
+|          | `radius`           | Rayon du graphique en secteurs.                                             |
+|          | `counterclock`     | Si True, les secteurs sont tracés dans le sens antihoraire.                 |
+|          | `pctdistance`      | Distance du centre pour les étiquettes de pourcentage.                      |
 
 Pour tout savoir sur Matplotlib: [Site officiel Matplotlib](https://matplotlib.org/stable/ "Matplotlib").
+
+## Liste de couleurs
+### Couleurs de bases
+![Base](../sphx_glr_named_colors_001.webp)
+
+### Couleurs type CSS
+![Avancé](../sphx_glr_named_colors_003.webp)
+
 
 ## Pause 5 minutes
 

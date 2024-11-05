@@ -1,0 +1,18 @@
+-0.3832505904385446
+-0.5564013690642153
+
+    """
+    
+While difficile: capture d'écran du code est rectangle rouge
+
+Ecrivez le code manquant à la ligne 2 qui permet de répondre au problème suivant :
+Le programme doit continuer à demander un nombre tant que celui-ci n'est pas à la fois impair et supérieur ou égal à 10.
+===
+À coder
+  - indication nb de lignes
+    - Règles pour l'indentation : Appuyez  4 fois sur la barre espace pour une tabulation.
+    - Indice : Environ 5 à 7 lignes suffisent pour résoudre ce programme.
+    - Ne créez pas de fonction, résolvez simplement le problème.
+
+En-tête des catégories???
+

@@ -1,6 +1,6 @@
 +++
 title = "NumPy"
-weight = 131
+weight = 130
 +++
 
 ![NumPy](../numpy.jpg?width=18vw)

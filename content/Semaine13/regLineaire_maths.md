@@ -1,7 +1,6 @@
 +++
 title = "La régression linéaire (mathématiquement)"
-weight = 10
-draft = true
+weight = 133
 +++
 
 Le calcul d'une droite de régression linéaire consiste à trouver la meilleure droite qui passe à travers un ensemble de points de données. Cette droite est souvent exprimée par l'équation `(y = ax + b)`, où `a` est la pente et `b` est l'ordonnée à l'origine. Voici comment on peut calculer ces coefficients de manière mathématique.

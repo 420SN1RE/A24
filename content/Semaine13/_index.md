@@ -11,6 +11,7 @@ weight = 130
 - Manipuler les tableaux NumPy
 - Effectuer des opérations mathématiques et statistiques avec NumPy
 - Travailler avec des tableaux multidimensionnels
+- Utiliser NumPy pour calculer créer une droite de régression linéaire
 
 ## Plan de la leçon
 
@@ -23,5 +24,6 @@ weight = 130
 - Utiliser les fonctions mathématiques et statistiques.
 - Créer et manipuler des tableaux à plusieurs dimensions.
 - Pause 5 mins
+- La régression linéaire (mathématiquement et avec NumPy)
 - Atelier
 - Pour la semaine prochaine
