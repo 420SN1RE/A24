@@ -103,9 +103,6 @@
     <loc>https://example.org/semaine1/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/bases/langage-de-prog/reg-lineaire/reglineaire_numpy/index.html</loc>
-  </url>
-  <url>
     <loc>https://example.org/semaine1/pr%C3%A9sentation-du-cours/index.html</loc>
   </url>
   <url>
@@ -302,6 +299,12 @@
   </url>
   <url>
     <loc>https://example.org/semaine13/numpy/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine13/reglineaire_maths/index.html</loc>
+  </url>
+  <url>
+    <loc>https://example.org/semaine13/reglineaire_numpy/index.html</loc>
   </url>
   <url>
     <loc>https://example.org/semaine13/atelier/index.html</loc>

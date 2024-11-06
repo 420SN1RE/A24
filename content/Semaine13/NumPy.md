@@ -263,29 +263,26 @@ La fonction `corrcoef()` de NumPy calcule le coefficient de corrélation de Pear
 
 #### Comment utiliser corrcoef() ?
 
-1. **Préparer les données** : 
-	- Vous avez besoin de deux ensembles de données `x`, `y` sous forme de tableaux NumPy.
-2. **Calculer le coefficient de corrélation** :
-   	- Utilisez `np.corrcoef()` pour calculer le coefficient de corrélation. Cette fonction retourne une matrice de corrélation.
+1. **Préparer les données** : Vous avez besoin de deux ensembles de données `x`, `y` sous forme de tableaux NumPy.
+2. **Calculer le coefficient de corrélation** : Utilisez `np.corrcoef()` pour calculer le coefficient de corrélation. Cette fonction retourne une matrice de corrélation.
 
-   ```python
-   correlation_matrix = np.corrcoef(x, y)
-   ```
-3. **Interpréter les résultats** :
-   	- La matrice de corrélation est une matrice 2x2 où les valeurs diagonales sont toujours 1 (car une variable est parfaitement corrélée avec elle-même) et les valeurs hors diagonale sont les coefficients de corrélation entre les variables.
+```python
+correlation_matrix = np.corrcoef(x, y)
+```
+3. **Interpréter les résultats** : La matrice de corrélation est une matrice 2x2 où les valeurs diagonales sont toujours 1 (car une variable est parfaitement corrélée avec elle-même) et les valeurs hors diagonale sont les coefficients de corrélation entre les variables.
 
-   ```python
-   print(correlation_matrix)
-   ```
+```python
+print(correlation_matrix)
+```
 
-   Par exemple, si `correlation_matrix` est :
+Par exemple, si `correlation_matrix` est :
 
-   ```plaintext
-   [[1.         0.8       ]
-    [0.8        1.        ]]
-   ```
+```plaintext
+[[1.         0.8       ]
+ [0.8        1.        ]]
+```
 
-   Cela signifie que le coefficient de corrélation entre `x` et `y` est 0.8, indiquant une forte corrélation positive.
+Cela signifie que le coefficient de corrélation entre `x` et `y` est 0.8, indiquant une forte corrélation positive.
 
 #### Interprétation du coefficient de corrélation :
 
