@@ -13,8 +13,8 @@ Le calcul d'une droite de régression linéaire consiste à trouver la meilleure
 2. **Formules pour les coefficients** :
    Les coefficients `a` (pente) et `b` (ordonnée à l'origine) sont calculés à l'aide des formules suivantes :
    ```math
-   - Pente : `$$[ a = \frac{n(\sum xy) - (\sum x)(\sum y)}{n(\sum x^2) - (\sum x)^2} ]$$`
-   - Ordonnée à l’origine : `$$[ b = \frac{(\sum y) - a(\sum x)}{n} ]$$`
+   - Pente : `$$ a = \frac{n(\sum xy) - (\sum x)(\sum y)}{n(\sum x^2) - (\sum x)^2}$$`
+   - Ordonnée à l’origine : `$$ b = \frac{(\sum y) - a(\sum x)}{n}$$`
    ```
 Ces formules permettent de calculer les coefficients `a` et `b` de la droite de régression linéaire, où :
 

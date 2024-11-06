@@ -106,7 +106,7 @@ Data columns (total 3 columns):
 dtypes: float64(1), int64(1), object(1)
 memory usage: 324.0+ bytes
 ```
-On a bien les types de variables connus : `int`, `float`.`object` fait souvent référence au type `str`.
+On a bien les types de variables connus : `int`, `float`, `object` fait souvent référence au type `str`.
 
 ## Statistiques de base
 

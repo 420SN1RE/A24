@@ -37,7 +37,7 @@ En effet, NumPy a été développé de sorte que les calculs soient plus rapides
 
 Ici, nous allons manipuler des tableaux à 1 et 2 dimensions.
 
-### Création d'un tableau à 1 dimension : np.array()
+## Création d'un tableau à 1 dimension : np.array()
 
 ```python
 # Tableau à une dimension
@@ -47,7 +47,7 @@ print(tab_1d)
 
 ![tab 1D](../tab_1d.JPG)
 
-### Création d'un tableau à 2 dimensions : np.array()
+## Création d'un tableau à 2 dimensions : np.array()
 
 ```python
 # Tableau à deux dimension
@@ -57,7 +57,7 @@ print(tab_2d)
 
 ![tab 2D](../tab_2d.JPG)
 
-### Quelques fonctions utiles pour notre tableau : np.shape(), np.size(), np.dim()
+## Quelques fonctions utiles pour notre tableau : np.shape(), np.size(), np.dim()
 
 Pour connaître la forme de notre tableau :
 ```python
@@ -77,9 +77,9 @@ Pour connaître la dimension de notre tableau :
 np.ndim(tab_2d) # Affiche 2 comme le nombre de dimensions de notre tableau
 ```
 
-### Accès indicé et découpage du tableau
+## Accès indicé et découpage du tableau
 
-#### *1. Accès indicé*
+### *1. Accès indicé*
 
 Comme tous tableaux, il est possible d'accéder aux éléments à l'aide des **index**.
 
@@ -103,7 +103,7 @@ De ce fait, si je souhaite accéder à la première "case" de mon tableau :
 print(tab_2d[0][0]) # Affiche 5
 ```
 
-####  *2. Découpage du tableau*
+###  *2. Découpage du tableau*
 
 Il faut savoir qu'un tableau comporte des **axes** (axis).
 
@@ -137,7 +137,7 @@ print(tab_2d[0:2, :]) # Affiche [[5 4 2 8][7 10 3 5]]
 
 ![multi ligne](../multi_ligne.JPG)
 
-####  *3. Indexation booléenne*
+###  *3. Indexation booléenne*
 
 L'indexation booléenne consiste à interroger notre tableau pour qu'il nous retourne "Vrai" ou "Faux" sous la forme d'un masque booléen. Par la suite, nous pourrons effectuer des modifications basées sur celui-ci.
 
@@ -159,24 +159,30 @@ print(tab_2d)
 
 ![test inf7](../test_inf_7.JPG)
 
-Il est aussi possible d'effectuer des tests multiples.
+
+## Conversion d'un DataFrame en tableau NumPy
 
 ```python
-tab_2d = np.array([[5, 4, 2, 8],[7, 10, 3, 5][8, 7, 4, 1]])
-tab_2d[(tab_2d < 7) & (tab_2d > 3)] = 3
-print(tab_2d)
+df = pd.DataFrame(donnees)
+
+# Extraction des données d'une colonne du DataFrame, et création d'un tableau Numpy
+tableau = df['colonne'].to_numpy()
 ```
 
-![test inf7 sup3](../test_inf7_sup3.JPG)
+## Filtrer des données d'un DataFrame et convertir en tableau NumPy
 
+```python
+df = pd.DataFrame(donnees)
 
-## Quelques fonctions mathématiques, de statistiques simples et diverses
+# Filtre sur une colonne du DataFrame et création d'un tableau Numpy
+tableau = df['colonne' > valeur]['colonne'].to_numpy()
+```
 
-NumPy se dote d'un certains nombres de fonctions qui vont nous permettre d'effectuer des statistiques sur tableau.
+NumPy se dote d'un certains nombres de fonctions qui vont nous permettre d'effectuer des statistiques sur un tableau.
 
-### Mathématiques
+## Fonctions mathématiques
 
-####  *1. Somme*
+###  *1. Somme*
 
 ```python
 tab_2d = np.array([[5, 4, 2, 8],[7, 10, 3, 5][8, 7, 4, 1]])
@@ -195,13 +201,13 @@ np.sum(tab_2d, axis=1) # Affiche [19, 25, 20] soit la somme des lignes
 
 Cette technique pourra être utilisée pour les fonctions suivantes.
 
-####  *2. Produit*
+###  *2. Produit*
 
 ```python
 np.prod(tab_2d) # Affiche 75264000
 ```
 
-####  *3. Sinus*
+###  *3. Sinus*
 
 ```python
 np.sin(tab_2d)
@@ -213,7 +219,7 @@ np.sin(tab_2d)
 [ 0.98935825,  0.6569866 , -0.7568025 ,  0.84147098]]
 ```
 
-####  *4. Exponentiel*
+###  *4. Exponentiel*
 
 ```python
 np.exp(tab_2d)
@@ -225,52 +231,76 @@ np.exp(tab_2d)
 [2.98095799e+03, 1.09663316e+03, 5.45981500e+01, 2.71828183e+00]]
 ```
 
-### Statistiques
+## Fonctions statistiques
 
-####  *1. Moyenne*
+###  *1. Moyenne*
 
 ```python
 np.mean(tab_2d) # Affiche 5.33
 ```
 
-####  *2. Médiane*
+###  *2. Médiane*
 
 ```python
 np.median(tab_2d) # Affiche 5
 ```
 
-
-####  *3. Variance*
+###  *3. Variance*
 
 ```python
 np.var(tab_2d) # Affiche 6.722222222222222
 ```
 
-
-####  *4. Ecart type*
+###  *4. Ecart type*
 
 ```python
 np.std(tab_2d) # Affiche 2.592724864350674
 ```
 
+###  *5. Coefficient de corrélation et son interprétation*
 
-####  *5. Coefficient de corrélation*
+La fonction `corrcoef()` de NumPy calcule le coefficient de corrélation de Pearson entre deux ensembles de données. Ce coefficient mesure la force et la direction de la relation linéaire entre deux variables.
 
-```python
-np.mean(tab_2d)
-```
+#### Comment utiliser corrcoef() ?
 
-```plaintext
-[[ 1.        ,  0.1004662 , -0.46380072],
-[ 0.1004662 ,  1.        ,  0.63540406],
-[-0.46380072,  0.63540406,  1.        ]]
-```
+1. **Préparer les données** : 
+	- Vous avez besoin de deux ensembles de données `x`, `y` sous forme de tableaux NumPy.
+2. **Calculer le coefficient de corrélation** :
+   	- Utilisez `np.corrcoef()` pour calculer le coefficient de corrélation. Cette fonction retourne une matrice de corrélation.
 
-### Diverses
+   ```python
+   correlation_matrix = np.corrcoef(x, y)
+   ```
+3. **Interpréter les résultats** :
+   	- La matrice de corrélation est une matrice 2x2 où les valeurs diagonales sont toujours 1 (car une variable est parfaitement corrélée avec elle-même) et les valeurs hors diagonale sont les coefficients de corrélation entre les variables.
 
-####  *1. Valeurs uniques*
+   ```python
+   print(correlation_matrix)
+   ```
 
-La fonction suivante permet de retourner les valeurs uniques de notres tableaux et de compter le nombre d'occurences de ces valeurs.
+   Par exemple, si `correlation_matrix` est :
+
+   ```plaintext
+   [[1.         0.8       ]
+    [0.8        1.        ]]
+   ```
+
+   Cela signifie que le coefficient de corrélation entre `x` et `y` est 0.8, indiquant une forte corrélation positive.
+
+#### Interprétation du coefficient de corrélation :
+
+- **1** : Corrélation parfaite positive
+- **0** : Aucune corrélation
+- **-1** : Corrélation parfaite négative
+- **Entre 0 et 1** : Corrélation positive (plus proche de 1, plus forte est la corrélation)
+- **Entre 0 et -1** : Corrélation négative (plus proche de -1, plus forte est la corrélation)
+
+
+## Fonctions diverses
+
+###  *1. Valeurs uniques*
+
+La fonction suivante permet de retourner les valeurs uniques de notre tableaux et de compter le nombre d'occurrences de ces valeurs.
 
 ```python
 np.unique(tab_2d, return_counts=True)
@@ -281,7 +311,7 @@ array([ 1,  2,  3,  4,  5,  7,  8, 10]),
 array([1, 1, 1, 2, 2, 2, 2, 1], dtype=int64)
 ```
 
-#### *2. Importer un jeu de données*
+### *2. Importer un jeu de données*
 
 Dans la majorité des cas, vous travaillerez avec des données qui vous seront fournies.
 Ils existent des fonctions qui vous permettent de charger ces données.
@@ -292,11 +322,6 @@ Voici un exemple avec un fichier contenant des données météo très simplifié
 data = np.loadtxt("data.csv", delimiter=',', skiprows=1)
 print(data)
 ```
-
-Les arguments à passer sont :
-- le nom du fichier
-- le délimiteur (à vérifier en ouvrant votre fichier)
-- étant donné que notre première ligne est composée de caractère, nous faisons abstraction de celle-ci. Numpy ne prend pas en charge la gestion des données numériques.
 
 ```plaintext
 [[ 1  0 10]
@@ -309,6 +334,15 @@ Les arguments à passer sont :
 ```
 
 Nous retrouvons notre tableau à deux dimensions avec les données chargées dans notre variable data.
+
+Les arguments à passer sont :
+- le nom du fichier
+- le délimiteur (à vérifier en ouvrant votre fichier)
+- étant donné que notre première ligne est composée de caractère, nous faisons abstraction de celle-ci. 
+
+{{% notice note %}}
+NumPy ne prend pas en charge la gestion des données numériques.
+{{% /notice %}}
 
 ## Liste non exhaustive de fonctions
 
