@@ -191,11 +191,11 @@ print(f"La moyenne des étudiants de l'automne est de {round(moyenne,2)}%")
 La moyenne des étudiants de l'automne est de 77.97%
 ```
 
-## Identification des données manquantes dans un dataframe
+## Identification des données manquantes dans un DataFrame
 
 L'utilisation de `isna` dans Pandas est très simple et pratique pour identifier les données manquantes dans un DataFrame.
 
-La fonction `isna()` retourne un DataFrame de la même taille que l'original, mais avec des valeurs booléennes (`True` ou `False`). Chaque valeur `True` indique la présence d'une donnée manquante (comme `NaN`), tandis que `False` indique que la donnée est présente.
+La fonction `isna()` retourne un DataFrame de la même taille que l'original, mais avec des valeurs booléennes (`True` ou `False`). Chaque valeur `True` indique la présence d'une donnée manquante (comme `NaN` = *Not a number*), tandis que `False` indique que la donnée est présente.
 
 ```python
 import pandas as pd
@@ -220,6 +220,29 @@ print(donnees_manquantes)
 ```
 
 Dans cet exemple, `donnees_manquantes` sera un DataFrame où chaque `True` indique une valeur manquante dans le DataFrame original.
+
+## Compter le nombre de valeurs manquantes par colonne
+
+La fonction `sum()` permet de connaitre le nombre de valeur nulles pour chaque colonne d'un *DataFrame*
+
+```python
+data = {'A': [1, 2, NaN, 4],
+        'B': [NaN, 2, 3, 4],
+        'C': [1, NaN, NaN, 4]}
+
+df = pd.DataFrame(data)
+
+# Utilisation de isna() et sum() pour identifier les valeurs manquantes
+nombre_donnees_manquantes = df.isna().sum()
+
+print(nombre_donnees_manquantes)
+```
+```plaintext
+A    1
+B    1
+C    2
+dtype: int64
+```
 
 ## Les attributs index et values des DataFrames
 
@@ -285,6 +308,8 @@ En Python, et plus généralement dans les langages de programmation, les valeur
 ## Reconstruction d'un *DataFrame*
 
 L'utilisation de `pd.DataFrame(donnees_nettoyees, columns=dataframe.columns)` permet reconstruire un *DataFrame* nettoyé avec les mêmes colonnes que l’original.
+
+Ici `donnees_nettoyees` c'est la liste des données où les valeurs manquantes ont été remplacées et `dataframe` est le dataframe original. 
 
 ## Fonctions les plus utiles avec un DataFrame
 
