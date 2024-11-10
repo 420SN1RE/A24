@@ -1,18 +1,11 @@
 -0.3832505904385446
 -0.5564013690642153
 
-    """
-    
-While difficile: capture d'écran du code est rectangle rouge
 
-Ecrivez le code manquant à la ligne 2 qui permet de répondre au problème suivant :
-Le programme doit continuer à demander un nombre tant que celui-ci n'est pas à la fois impair et supérieur ou égal à 10.
+Arsenal Diane Dufresne
+Ch@quej0urestnouveaupourmoi.
 ===
-À coder
-  - indication nb de lignes
-    - Règles pour l'indentation : Appuyez  4 fois sur la barre espace pour une tabulation.
-    - Indice : Environ 5 à 7 lignes suffisent pour résoudre ce programme.
-    - Ne créez pas de fonction, résolvez simplement le problème.
 
-En-tête des catégories???
+Contexte Les maladies cardiovasculaires (MCV) sont la première cause de décès dans le monde, entraînant environ 17,9 millions de décès chaque année, ce qui représente 31 % de tous les décès mondiaux. Quatre décès sur cinq dus aux MCV sont causés par des crises cardiaques et des accidents vasculaires cérébraux, et un tiers de ces décès surviennent prématurément chez des personnes de moins de 70 ans. L’insuffisance cardiaque est un événement courant causé par les MCV et ce jeu de données contient 11 caractéristiques qui peuvent être utilisées pour prédire une possible maladie cardiaque.
 
+Les personnes atteintes de maladies cardiovasculaires ou à haut risque cardiovasculaire (en raison de la présence d’un ou plusieurs facteurs de risque tels que l’hypertension, le diabète, l’hyperlipidémie ou une maladie déjà établie) ont besoin d’une détection et d’une gestion précoces, où un modèle d’apprentissage automatique peut être d’une grande aide.

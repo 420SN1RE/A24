@@ -313,10 +313,10 @@ Ici `donnees_nettoyees` c'est la liste des données où les valeurs manquantes o
 
 ## Fonctions les plus utiles avec un DataFrame
 
-| Fonction           | Description                                                                 |
-|--------------------|-----------------------------------------------------------------------------|
-| `df.head(n)`        | Affiche les premières `n` lignes du DataFrame.                                   |
-| `df.tail(n)`        | Affiche les dernières  `n` lignes du DataFrame.                                   |
+| Fonction           | Description                                                                  |
+|--------------------|------------------------------------------------------------------------------|
+| `df.head(n)`       | Affiche les premières `n` lignes du DataFrame.                               |
+| `df.tail(n)`       | Affiche les dernières  `n` lignes du DataFrame.                              |
 | `df.describe()`    | Fournit des statistiques descriptives pour les colonnes numériques.          |
 | `df.info()`        | Affiche un résumé concis du DataFrame, y compris le type de données et les valeurs manquantes. |
 | `df.shape`         | Renvoie les dimensions du DataFrame (nombre de lignes et de colonnes).       |

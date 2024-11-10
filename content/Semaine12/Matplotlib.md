@@ -324,6 +324,10 @@ En résumé, un histogramme montre la distribution d'un ensemble de données con
 
 ### Graphique en secteurs
 
+{{% notice style=warning title=Attention %}}
+Un graphique en secteurs ne peut pas contenir des valeurs négatives. Avant de créer le graphique il faut filtrer les données pour ne garder que les données positives.
+{{% /notice %}}
+
 ```python
 import matplotlib.pyplot as plt
 
@@ -348,6 +352,46 @@ Voici une explication simple des deux méthodes `plt.pie` et `plt.axis('equal')`
 |`plt.axis('equal')` | Assure que le graphique est parfaitement circulaire en réglant les axes x et y à la même échelle.                              |
 
 ![Graphique en secteurs](../matplotlib-secteur.png?width=50vw)
+
+#### Ajouter une légende à un graphique en secteur
+
+Ajouter une légende à un graphique en secteur est assez simple avec matplotlib.
+
+1. **Créer le graphique en secteur** :
+   - Utilise la fonction `plt.pie()` pour créer le graphique en secteur.
+2. **Capturer les éléments du graphique** :
+   - La fonction `plt.pie()` peut renvoyer des objets que tu peux utiliser pour créer la légende. Par exemple, tu peux capturer les "secteurs" (les parts du camembert) et les "étiquettes".
+3. **Ajouter la légende** :
+   - Utilise la fonction `plt.legend()` pour ajouter la légende au graphique. Tu peux spécifier les éléments capturés et leur position.
+
+Voici un exemple de code :
+
+```python
+import matplotlib.pyplot as plt
+
+# Données
+etiquettes = ['A', 'B', 'C', 'D']
+tailles = [15, 30, 45, 10]
+secteur = (0, 0.1, 0, 0)  # Décale le deuxième secteur
+
+# Créer le graphique en secteur
+plt.figure(figsize=(10, 7))
+secteurs, texts, autotexts = plt.pie(tailles, labels=etiquettes, autopct='%1.1f%%', startangle=140)
+
+# Ajouter une légende
+plt.legend(secteurs, etiquettes, title="Légende", loc="center left", bbox_to_anchor=(1, 0, 0.5, 1))
+
+# Ajouter un titre
+plt.title('Graphique en secteurs')
+
+# Afficher le graphique
+plt.show()
+```
+
+### Explication :
+- **`secteurs, etiquettes, autotexts = plt.pie(...)`** : Cette ligne crée le graphique en secteur et capture les éléments nécessaires pour la légende.
+
+![Graphique en secteurs avec légende](../matplotlib-secteur-legende.png?width=50vw)
 
 ### Graphique en nuages de points
 
