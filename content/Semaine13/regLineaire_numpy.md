@@ -86,3 +86,5 @@ plt.title("Régression linéaire")
 plt.legend()
 plt.show()
 ```
+
+![Régression linéaire](../regression.png?width=40vw)

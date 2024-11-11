@@ -1,0 +1,4 @@
+| `df.min()`         | Renvoie les valeurs minimales de chaque colonne d'un DataFrame.              |
+| `df.max ()`        | Renvoie les valeurs maximales de chaque colonne d'un DataFrame.              |
+| `df.min()`         | Renvoie les valeurs minimales de chaque colonne d'un DataFrame.              |
+| `df.unique`        | Renvoie les éléments uniques d'un DataFrame.                                 |
