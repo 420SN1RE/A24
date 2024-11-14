@@ -1,0 +1,69 @@
++++
+title = "Coefficients d'un polynôme et Coefficient de corrélation"
+weight = 135
+draft = true
++++
+
+## Les coefficients d'un polynôme
+
+### Qu'est-ce qu'un polynôme ?
+
+Un polynôme est une expression mathématique composée de variables (souvent notées `x`) et de coefficients, combinées en utilisant uniquement l'addition, la soustraction et la multiplication. Les variables dans un polynôme sont élevées à des puissances entières non négatives.
+
+**Exemple de polynôme :**
+$$ P(x) = 3x^2 + 2x + 1 $$
+
+Dans cet exemple :
+- $$ 3x^2 $$ est un terme avec `x` élevé à la puissance 2 (coefficient 3).
+- $$ 2x $$ est un terme avec `x` élevé à la puissance 1 (coefficient 2).
+- $$ 1 $$ est un terme constant (coefficient 1).
+
+Les polynômes peuvent être de différents degrés, déterminés par la plus grande puissance de \(x\) dans l'expression. Par exemple, le polynôme ci-dessus est de degré 2.
+
+### `np.polyfit()`
+`np.polyfit()` est utilisé pour ajuster une fonction polynomiale à un ensemble de données. En d'autres termes, il trouve les coefficients d'un polynôme qui s'ajuste le mieux aux données fournies.
+
+**Exemple :**
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Données d'exemple
+x = np.array([0, 1, 2, 3, 4])
+y = np.array([1, 3, 7, 13, 21])
+
+# Ajustement d'un polynôme de degré 2 (quadratique)
+coefficients = np.polyfit(x, y, 2)
+print(coefficients)  # Affiche les coefficients du polynôme
+
+# Utilisation des coefficients pour créer une fonction polynomiale
+polynomial = np.poly1d(coefficients)
+
+# Tracé des données et du polynôme ajusté
+plt.scatter(x, y, color='red')
+plt.plot(x, polynomial(x), color='blue')
+plt.show()
+```
+Dans cet exemple, `np.polyfit()` ajuste un polynôme de degré 2 aux données `x` et `y`.
+
+### `np.corrcoef()`
+`np.corrcoef()` calcule le coefficient de corrélation entre deux ensembles de données. Ce coefficient mesure la force et la direction de la relation linéaire entre deux variables.
+
+**Exemple :**
+```python
+import numpy as np
+
+# Données d'exemple
+x = np.array([1, 2, 3, 4, 5])
+y = np.array([2, 4, 6, 8, 10])
+
+# Calcul du coefficient de corrélation
+correlation_matrix = np.corrcoef(x, y)
+print(correlation_matrix)
+```
+Dans cet exemple, `np.corrcoef()` calcule la matrice de corrélation entre `x` et `y`. La valeur dans la matrice indique la force de la corrélation (ici, elle sera 1 car `y` est une fonction linéaire parfaite de `x`).
+
+### En résumé :
+- **`np.polyfit()`** : Utilisé pour ajuster un polynôme à des données.
+- **`np.corrcoef()`** : Utilisé pour calculer le coefficient de corrélation entre deux ensembles de données.
+

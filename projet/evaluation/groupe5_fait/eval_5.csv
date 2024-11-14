@@ -1,0 +1,501 @@
+Country,Year,Temperature
+China,2004,36.31
+Italy,2009,35.11
+Spain,2017,7.87
+Canada,2003,-7.45
+Japan,1963,19.44
+Japan,1970,33.24
+Spain,1990,31.94
+Germany,1980,16.29
+Spain,1978,20.06
+Canada,1975,-0.04
+Canada,1991,21.98
+Canada,1973,18.68
+Australia,1962,30.64
+China,1994,11.81
+Canada,1975,15.83
+Japan,1996,21.88
+Germany,1981,20.98
+Australia,1970,3.74
+China,2014,14.82
+Germany,1973,37.65
+Canada,1967,-0.14
+Canada,2011,22.1
+Germany,2019,39.9
+United States,1972,32.79
+Canada,1969,9.55
+Australia,2003,34.08
+Italy,1960,19.78
+Italy,1975,37.7
+Australia,1982,12.9
+Australia,1989,29.93
+Australia,1991,22.67
+Japan,2003,-6.49
+United Kingdom,1993,15.58
+France,1984,36.2
+Australia,2013,18.58
+China,2007,33.21
+Australia,1961,11.22
+Australia,1980,-6.93
+Australia,2007,14.49
+Spain,1996,-6.1
+Japan,1989,-7.43
+Japan,2003,18.0
+United States,1972,8.39
+China,,19.83
+Australia,2013,37.78
+Italy,1992,36.4
+France,1994,4.08
+Italy,1996,-3.74
+United States,2004,27.09
+China,1965,18.32
+Australia,1986,6.39
+United States,2013,17.6
+United Kingdom,1991,-6.08
+Canada,1998,35.5
+China,1960,36.68
+Canada,2022,4.41
+United States,1969,31.49
+United States,1985,32.07
+Canada,1993,22.09
+Japan,2020,6.34
+United Kingdom,2008,31.73
+Australia,2007,13.9
+China,1964,3.71
+Canada,2016,27.79
+Japan,1969,27.83
+United States,1991,27.54
+Canada,1974,12.69
+Japan,1963,5.07
+China,2006,1.22
+United States,2015,22.77
+Spain,1986,17.48
+United States,1989,-1.91
+Italy,2002,16.35
+France,1978,21.21
+Italy,1984,4.43
+Spain,1969,39.97
+Germany,2011,13.02
+United Kingdom,2014,30.77
+Japan,1962,-2.89
+Canada,1992,-1.26
+Spain,2012,21.63
+Italy,1996,30.25
+France,1961,-0.72
+Germany,2011,1.3
+China,2002,4.51
+China,2017,19.58
+United States,1967,13.03
+Italy,1961,16.63
+Italy,1986,-9.74
+France,2019,10.69
+France,1998,-8.81
+Italy,2019,37.77
+Canada,2002,16.65
+Italy,1985,39.13
+Japan,2003,26.3
+China,2015,21.79
+Spain,2009,0.46
+China,1974,20.21
+United Kingdom,1975,11.05
+Australia,2014,14.92
+Japan,2007,-4.17
+Italy,1994,39.75
+France,1986,37.01
+China,1977,11.08
+Australia,1975,32.31
+France,1992,23.34
+Italy,1969,30.15
+Spain,2022,21.66
+United Kingdom,1960,-7.65
+United States,1978,5.54
+Australia,1977,28.94
+United Kingdom,1976,-4.78
+Germany,1966,11.52
+United Kingdom,1978,39.6
+Germany,1961,28.5
+France,1975,38.62
+Germany,2021,28.86
+Canada,1967,17.89
+United States,1977,4.91
+Australia,1978,-0.09
+Germany,2000,3.71
+United States,2005,15.51
+United Kingdom,1977,33.63
+Australia,1996,-9.51
+United States,1991,5.84
+Canada,2011,-0.52
+Spain,2017,-0.33
+China,1972,39.55
+Canada,2007,0.46
+Spain,1964,25.6
+Japan,2021,-6.09
+Australia,1975,7.65
+United States,2018,2.82
+United Kingdom,2013,1.78
+China,1975,-6.58
+United States,2000,17.95
+United Kingdom,1974,38.98
+United Kingdom,1980,39.83
+Canada,2006,-7.9
+Spain,2022,13.74
+China,1964,9.92
+China,,17.61
+China,1978,11.9
+Germany,1971,20.02
+China,2017,25.5
+United Kingdom,1997,14.38
+Canada,1999,-9.76
+Germany,2010,1.96
+Australia,2010,32.66
+Japan,1992,-4.39
+Germany,2000,27.46
+Australia,1977,23.02
+Australia,2003,7.94
+China,1984,4.22
+United States,2017,34.02
+Japan,1968,27.76
+Australia,2019,4.67
+Spain,1977,11.61
+United States,2009,1.13
+United States,1970,7.16
+Italy,1978,0.73
+Spain,2018,36.25
+Canada,2017,16.35
+Spain,1979,14.32
+United States,1992,13.83
+Spain,2018,33.73
+Germany,1979,38.19
+France,2016,18.13
+France,1995,17.44
+China,2020,36.58
+Italy,1973,-1.99
+United States,2009,-0.81
+Japan,1965,-9.51
+Canada,2001,6.49
+Spain,1997,25.33
+China,1965,4.52
+Italy,2011,32.51
+Australia,1973,-7.75
+China,2022,-0.64
+Italy,1998,-3.82
+Germany,2009,39.15
+Germany,2006,-7.15
+Australia,2010,3.2
+Canada,1989,7.72
+Australia,1964,-8.58
+Canada,1995,22.74
+France,2019,-7.23
+Japan,2014,23.69
+Italy,2002,6.07
+Australia,2022,3.2
+Germany,,27.33
+Germany,1983,31.83
+United States,1998,-9.72
+Australia,2009,2.07
+Canada,2017,34.42
+Spain,2022,26.32
+Italy,1971,-0.0
+China,1963,-8.23
+China,2002,-9.0
+Germany,1963,17.47
+Spain,1969,18.33
+Australia,2001,18.55
+Canada,1990,35.18
+Spain,1977,-1.03
+Germany,1969,-9.31
+United Kingdom,2008,2.0
+Canada,1999,18.67
+France,2022,4.65
+Japan,1992,14.08
+United Kingdom,2012,35.97
+United States,1962,6.52
+Germany,2014,5.77
+Spain,1983,19.82
+Japan,1991,5.4
+Germany,2012,-8.11
+Australia,1976,11.49
+Australia,1993,21.66
+Canada,1999,39.83
+Italy,1963,25.5
+United Kingdom,2018,11.94
+Spain,1995,25.1
+Italy,1992,-8.54
+Canada,1996,29.8
+United States,1968,-4.41
+China,1972,26.08
+Japan,2006,39.34
+France,1975,32.96
+China,1973,33.71
+United Kingdom,2016,19.01
+China,1981,19.13
+United Kingdom,1978,29.91
+United Kingdom,1984,39.4
+Canada,1999,28.97
+Italy,2010,8.73
+China,1995,3.31
+France,1960,-0.03
+Germany,2015,14.42
+United States,1995,3.04
+Australia,1965,-9.68
+Australia,2007,32.92
+China,2009,18.41
+Canada,1987,32.26
+United States,2019,3.57
+Canada,,24.71
+Australia,1990,28.4
+Japan,1989,11.08
+Australia,1960,-2.56
+Spain,1971,34.86
+Canada,1964,-5.2
+China,1981,8.37
+Italy,1991,-7.62
+Italy,1971,38.03
+Spain,2011,-1.36
+Australia,1977,35.45
+Japan,1985,10.24
+Spain,1984,21.02
+Canada,1998,33.02
+United Kingdom,2018,4.99
+China,1975,30.5
+Japan,1969,33.56
+China,1987,20.11
+Spain,1976,29.22
+United Kingdom,2004,8.69
+Spain,1965,13.31
+Japan,1985,26.26
+United Kingdom,1980,26.52
+Canada,1998,3.78
+United States,1961,28.15
+Spain,1986,24.02
+France,1963,-3.29
+Japan,2022,7.74
+United Kingdom,1990,17.5
+Canada,2015,18.14
+Spain,1962,3.23
+United States,2005,34.03
+United Kingdom,1981,11.79
+United States,1961,20.68
+France,1979,-1.82
+Japan,1964,20.15
+Italy,1997,-4.52
+Italy,2001,-3.96
+China,1989,29.4
+Italy,2004,7.25
+China,2006,36.6
+Canada,1965,1.62
+France,2015,-6.12
+China,2018,18.83
+Australia,1982,-2.99
+Germany,2005,8.84
+United Kingdom,1992,16.65
+Japan,1968,7.36
+Japan,2006,-0.85
+China,2003,37.76
+France,1994,0.5
+Spain,2005,10.82
+France,1980,20.23
+Germany,2010,4.61
+Germany,1998,12.03
+United States,1984,11.94
+Canada,1964,37.64
+United States,1967,39.94
+China,2008,-6.01
+United Kingdom,2005,26.44
+Italy,2021,-7.27
+Italy,1994,20.92
+China,1983,11.42
+Italy,2005,6.08
+France,1978,-3.56
+China,1970,31.32
+France,1961,12.82
+Italy,2004,27.33
+Japan,1962,-8.64
+France,1993,2.96
+United States,1978,-5.43
+United States,2020,11.82
+China,1972,17.87
+Australia,2021,12.07
+Italy,1989,5.11
+China,1987,-0.77
+Australia,2018,11.8
+Italy,1981,14.67
+Spain,1976,16.91
+United States,1979,37.26
+Japan,2009,36.28
+United States,1994,-8.5
+China,2010,1.2
+Italy,1992,-4.39
+Australia,1970,17.66
+United States,1991,-5.3
+Spain,2017,16.31
+Japan,2012,9.32
+France,1987,-9.69
+Germany,1985,-0.92
+United Kingdom,1984,20.16
+France,1968,3.69
+Italy,2007,13.78
+United Kingdom,2014,32.13
+United States,1967,15.13
+China,2012,37.11
+Germany,2008,-9.09
+Germany,2015,19.22
+United States,1985,14.38
+Italy,1981,36.93
+United Kingdom,1997,3.34
+United Kingdom,1984,-1.07
+Germany,1978,37.84
+Canada,1975,-2.78
+China,1975,24.92
+Canada,2001,18.01
+Japan,1990,1.19
+China,2013,1.09
+France,1989,6.14
+United States,2004,33.43
+Spain,2016,-4.72
+Japan,1972,17.75
+Spain,1984,0.83
+China,1975,-9.35
+France,1991,-1.17
+Germany,1962,28.44
+Germany,2005,26.78
+Germany,2000,2.57
+United Kingdom,1982,22.73
+United Kingdom,2012,5.3
+United Kingdom,1996,6.1
+United Kingdom,2016,26.1
+United Kingdom,1998,26.97
+Canada,1986,24.72
+United Kingdom,1994,2.77
+Spain,1991,35.1
+United Kingdom,1970,-3.82
+Italy,2001,29.9
+France,1970,21.02
+China,1964,38.27
+China,1998,-7.4
+Canada,1976,7.53
+United Kingdom,1964,19.95
+Spain,2006,5.74
+Italy,1991,-7.98
+China,1970,31.04
+United Kingdom,1962,15.4
+France,1997,8.37
+France,1962,24.39
+Germany,2006,10.17
+China,1991,33.1
+France,1997,27.84
+China,1970,-3.06
+United States,2016,-2.08
+United States,2014,-6.42
+China,2004,5.56
+Spain,2001,-0.21
+Italy,1966,29.77
+Germany,2017,12.95
+Australia,1976,17.39
+Italy,2017,26.17
+Australia,1995,-6.66
+Canada,1981,29.57
+Australia,2000,-9.93
+Canada,1996,-9.36
+Australia,1977,9.22
+France,1984,31.28
+China,1992,37.48
+China,1964,26.78
+China,1992,25.17
+United Kingdom,2006,-4.54
+France,2009,5.51
+United States,1972,22.77
+United States,2019,11.61
+United States,1980,39.5
+Italy,2013,-7.05
+United States,1992,36.86
+Italy,1991,14.83
+Canada,2001,10.6
+France,2016,16.42
+China,2003,16.45
+Spain,1964,0.71
+Australia,1974,24.09
+Australia,2000,16.34
+Italy,1980,2.67
+Spain,2001,28.56
+Canada,1997,28.82
+China,1995,2.87
+Australia,1984,28.62
+China,1976,14.45
+Germany,1987,13.86
+Canada,1986,32.16
+United States,2005,7.31
+Germany,1992,28.69
+Canada,1974,16.13
+Germany,1998,36.6
+United States,2012,8.72
+United Kingdom,2015,17.42
+United Kingdom,1974,0.79
+United States,1969,10.81
+China,1961,20.0
+Australia,1983,25.91
+China,1963,6.37
+China,1998,27.07
+United States,1989,16.64
+Italy,2008,36.48
+United Kingdom,2006,-8.56
+Italy,1990,-4.58
+United States,2017,2.95
+Spain,2013,-7.63
+France,2002,14.25
+Canada,1971,25.61
+Japan,1990,6.75
+Australia,1978,28.3
+Germany,1983,-0.11
+France,1987,4.74
+Japan,1979,18.87
+Canada,1973,36.66
+Japan,2021,-0.66
+Japan,2020,18.5
+China,1963,-6.71
+France,1966,22.58
+Germany,2003,30.84
+China,2010,29.16
+Canada,1994,12.65
+Germany,2003,-6.05
+Germany,2011,21.88
+Japan,2010,11.27
+Japan,2015,-4.76
+Italy,1974,32.6
+Canada,2020,25.84
+France,1997,27.89
+Japan,2007,24.64
+United States,1960,20.62
+Italy,2019,23.82
+China,1975,-7.88
+United States,1978,-8.16
+Spain,1987,14.61
+United States,2018,-5.76
+China,2007,7.31
+United Kingdom,1965,37.82
+Australia,1961,-5.09
+Italy,1991,3.35
+Germany,1963,2.86
+Canada,2009,7.26
+Australia,1977,-2.01
+United Kingdom,2008,-3.86
+Japan,2020,32.28
+Spain,2021,16.65
+Canada,1978,26.68
+France,1989,17.41
+China,1990,-9.63
+France,1973,20.7
+France,2008,23.54
+Spain,2020,14.59
+Germany,2002,21.29
+China,2022,6.02
+France,2006,6.39
+France,1978,14.79
+Italy,1993,9.71
+United Kingdom,1994,12.24
+Italy,1971,1.01
+Australia,2014,22.67
+Spain,1980,32.28
+Australia,2018,21.06
+Canada,1976,12.47
+Australia,1973,29.69
