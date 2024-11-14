@@ -106,6 +106,13 @@
       <description>Objectifs de la leçon Comprendre les bases de NumPy Manipuler les tableaux NumPy Effectuer des opérations mathématiques et statistiques avec NumPy Travailler avec des tableaux multidimensionnels Utiliser NumPy pour calculer créer une droite de régression linéaire Plan de la leçon Quiz: bibliothèque Matplotlib (10 mins) Qu’est-ce que NumPy et pourquoi l’utiliser. Décrire les avantages de NumPy par rapport aux listes Python Créer des tableaux NumPy. Accéder aux éléments et modifier les valeurs dans un tableau NumPy. Pause 5 mins Utiliser les fonctions mathématiques et statistiques. Créer et manipuler des tableaux à plusieurs dimensions. Pause 5 mins La régression linéaire (mathématiquement et avec NumPy) Atelier Pour la semaine prochaine</description>
     </item>
     <item>
+      <title>Évaluation du projet final</title>
+      <link>https://example.org/semaine15/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/semaine15/index.html</guid>
+      <description>Évaluation Lors de l’évaluation (examen semaine 15), votre programme devra être terminé et fonctionnel avant la dernière séance de cours. Votre programme devra être déposé sur Moodle avant la date limite (voir Moodle pour la date limite pour votre groupe).&#xA;Le jeu de données sera different de celui du projet, mais le type de questions/code sera similaire.&#xA;Un fichier .ipynb vous sera fourni, dans lequel vous devrez compléter des parties de code. Il sera interdit de modifier les éléments de code déjà présents, sous peine de 0 pour la partie modifiée.</description>
+    </item>
+    <item>
       <title>Solutions des ateliers</title>
       <link>https://example.org/solutions-ateliers/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

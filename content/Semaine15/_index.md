@@ -3,7 +3,6 @@ chapter = false
 pre = "<b>15. </b>"
 title = "Évaluation du projet final"
 weight = 150
-draft = true
 +++
 
 ## Évaluation
@@ -24,7 +23,7 @@ draft = true
 
 1. Les documents suivants à télécharger et imprimer avant l'examen:
  - [cheatsheet Pandas](./cheatsheetPandas.pdf)
- - [cheatsheet Matplotlib](à venir)
+ - [cheatsheet Matplotlib](./cheatsheetMatplotlib.pdf)
  - [cheatsheet NumPy](./cheatsheetNumPy.pdf)
 
 2. Une feuille recto-verso
