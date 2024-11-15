@@ -68,6 +68,15 @@ df
 
 ![Rename](../rename.png?width=25vw)
 
+{{%notice style="note"%}}
+S'il fallait renommer plus d'une colonne, il suffirait de stocker les noms des colonnes à modifier dans une liste (`liste1`) et les noms des nouveaux noms dans une autre liste (`liste2`) et à l'aide d'une boucle `for`, on parcours 1 à 1 chaque nom des deux listes pour les modifier. Par exemple:
+
+```python
+for i in range(len(liste1)):
+    df = df.rename(columns={liste1[i]: liste2[i]})
+```
+{{% /notice%}}
+
 ## Ajout et suppression de colonnes
 
 Pour renommer une ou plusieurs colonnes :
@@ -81,6 +90,12 @@ df
 df = df.drop(columns=["Session"])
 print("La colonne Session supprimée")
 df
+
+# Supprimer plus d'une colonne
+df = df.drop(['B', 'D'], axis=1)
+
+# Dans cet exemple, les colonnes 'B' et 'D' sont supprimées du DataFrame. 
+# La clé est d'utiliser axis=1 pour indiquer que vous souhaitez supprimer des colonnes (et non des lignes).
 ```
 
 ![Session ajoutée](../session.png?width=25vw)
@@ -153,6 +168,7 @@ df_filtre.head()
 
 {{%notice style="warning" title="Attention"%}}
 Dans les chapitres précédents, on utilisait `and` et `or` pour combiner des comparaisons. Avec Pandas, il faut utiliser `&` pour `and` et `|` pour `or`.
+Sur les claviers du cégep, pour obtenir le caractère `|`, faites `SHIFT + #`, pour le caractère `&`, faites `SHIFT + 7`
 {{% /notice%}}
 
 ## Pause 5 minutes
@@ -285,6 +301,9 @@ df = pd.read_csv('data.csv')
 # Convertir le DataFrame en liste
 liste = df.values.tolist()
 
+# Afficher la liste avant la modification des données
+print("Liste avant:", liste)
+
 # Remplacer les valeurs manquantes par 0
 for ligne in liste:
     for i in range(len(ligne)):
@@ -292,11 +311,13 @@ for ligne in liste:
             ligne[i] = 0
 
 # Afficher la liste modifiée
-print(liste)
+print("Liste après:", liste)
 ```
 
 ```plaintext
-[['Aline', 25, 85.5, 'Laval'], ['Robert', 30, 0, 'Laval'], ['Charles', 35, 78.9, 'Montréal'], ['Sophie', 28, 0, 'Québec'], ['Luc', 22, 88.0, 'Sherbrooke'], ['Marie', 27, 0, 'Trois-Rivières'], ['Jean', 32, 92.3, 'Gatineau'], ['Paul', 29, 0, 'Saguenay'], ['Julie', 24, 81.7, 'Drummondville'], ['Marc', 31, 0, 'Longueuil']]
+Liste avant: [['Aline', 25, 85.5, 'Laval'], ['Robert', 30, nan, 'Laval'], ['Charles', 35, 78.9, 'Montréal'], ['Sophie', 28, nan, 'Québec'], ['Luc', 22, 88.0, 'Sherbrooke'], ['Marie', 27, nan, 'Trois-Rivières'], ['Jean', 32, 92.3, 'Gatineau'], ['Paul', 29, nan, 'Saguenay'], ['Julie', 24, 81.7, 'Drummondville'], ['Marc', 31, nan, 'Longueuil']]
+
+Liste après: [['Aline', 25, 85.5, 'Laval'], ['Robert', 30, 0, 'Laval'], ['Charles', 35, 78.9, 'Montréal'], ['Sophie', 28, 0, 'Québec'], ['Luc', 22, 88.0, 'Sherbrooke'], ['Marie', 27, 0, 'Trois-Rivières'], ['Jean', 32, 92.3, 'Gatineau'], ['Paul', 29, 0, 'Saguenay'], ['Julie', 24, 81.7, 'Drummondville'], ['Marc', 31, 0, 'Longueuil']]
 ```
 
 La condition `if ligne[i] != ligne[i]:` fonctionne grâce à une propriété unique des valeurs NaN (Not a Number) en Python. :
@@ -307,9 +328,10 @@ En Python, et plus généralement dans les langages de programmation, les valeur
 
 ## Reconstruction d'un *DataFrame*
 
-L'utilisation de `pd.DataFrame(donnees_nettoyees, columns=dataframe.columns)` permet reconstruire un *DataFrame* nettoyé avec les mêmes colonnes que l’original.
+Supposons un dataframe nommé `df_sale` où il manque des données.
+La variable `liste_propre` est la variable qui représente la liste où les données manquantes ont été remplacées.
 
-Ici `donnees_nettoyees` c'est la liste des données où les valeurs manquantes ont été remplacées et `dataframe` est le dataframe original. 
+L'utilisation de `pd.DataFrame(liste_propre, columns=df_sale.columns)` permet reconstruire un *DataFrame* nettoyé avec les mêmes colonnes que l’original.
 
 ## Fonctions les plus utiles avec un DataFrame
 
@@ -324,11 +346,7 @@ Ici `donnees_nettoyees` c'est la liste des données où les valeurs manquantes o
 | `df.dtypes`        | Affiche les types de données de chaque colonne.                              |
 | `df.isnull()`      | Renvoie un DataFrame de la même forme indiquant les valeurs manquantes.      |
 | `df.isna()` 	     | Renvoie un DataFrame de la même taille que l'original, mais avec `True` à la place d'une donnée manquante (comme `NaN`)|
-| `df.dropna()`      | Supprime les lignes ou les colonnes contenant des valeurs manquantes.        |
-| `df.fillna()`      | Remplit les valeurs manquantes avec une valeur spécifiée.                    |
 | `df.sort_values()` | Trie les valeurs d'une ou plusieurs colonnes.                                |
-| `df.merge()`       | Fusionne deux DataFrames en fonction d'une ou plusieurs colonnes clés.       |
-| `df.apply()`       | Applique une fonction à chaque élément d'une colonne ou d'un DataFrame.      |
 
 
 ## Visualisation des données
