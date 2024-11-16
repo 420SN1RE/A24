@@ -71,27 +71,27 @@ python get-pip.py
 
 **Étape 1** : Ouvrir votre dossier de projet dans Visual Studio Code
 
-![Dossier](ouvrir_dossier.png?width=25vw)
+![Dossier](ouvrir_dossier.png?width=40vw)
 
 **Étape 2** : Ouvrir le **Terminal**
 
 Dans Visual Studio Code, cliquer sur l'onglet `Terminal` en haut de l'écran, puis sur `Nouveau terminal`. 
 
-![Nouveau Terminal](terminal.png?width=25vw)
+![Nouveau Terminal](terminal.png?width=40vw)
 
 Cela ouvrira une nouvelle fenêtre de terminal en bas de l'écran.
 
-![Terminal](new_terminal.png?width=25vw)
+![Terminal](new_terminal.png?width=40vw)
 
 **Étape 3** : Installer les bibliothèques
 
-Dans la fenêtre du Terminal (en bas de l'écran), taper la commande suivante pour installer les trois bibliothèques :
-
-![Commande pip](pip.png?width=25vw)
+Dans la fenêtre du **Terminal** (en bas de l'écran), taper la commande suivante, suivie de **`Enter`** pour installer les trois bibliothèques :
 
 ```bash
 pip install pandas matplotlib numpy
 ```
+
+![Commande pip](pip.png)
 
 Cela téléchargera et installera les dernières versions des bibliothèques.
 
