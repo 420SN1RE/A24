@@ -1,134 +1,71 @@
 +++
-title = "Suivre l'exécution du programme"
+title = "Savoir déboguer un programme"
 weight = 91
 +++
 
+
 ![debogage avec print](../debogage-print.jpeg?width=25vw)
 
+## Comment trouver où sont les erreurs dans notre code ?
 
-Le code que nous écrivons ne fonctionne pas toujours comme prévu et peut parfois produire des résultats inattendus. Lorsqu’un problème survient, il est plus efficace d’utiliser une technique de débogage plutôt que de rester perplexe devant le code. 
+### Étape 1: Lire et comprendre les erreurs
 
-Un débogueur permet d’exécuter le code pas à pas pour identifier précisément où se trouve l’erreur et comprendre les corrections nécessaires. Bien que l’utilisation d’un débogueur demande du temps et des efforts, c’est une compétence essentielle pour tout développeur.
+- Lorsque vous exécutez une cellule et qu'une erreur se produit, un message d'erreur s'affiche. Lisez attentivement ce message pour comprendre ce qui ne va pas. Les messages d'erreur fournissent souvent des informations précieuses sur la nature de l'erreur et l'endroit où elle s'est produite dans le code.
 
-## L’importance du débogage
+### Étape 2: Identifier le type d'erreur
 
-Le débogage est une étape très importante dans le développement de logiciels. Il permet de détecter et de corriger les erreurs dans le code, garantissant ainsi que le programme fonctionne comme prévu. Sans débogage, les bugs peuvent entraîner des comportements inattendus, des plantages ou des résultats incorrects. Voici quelques raisons pour lesquelles le débogage est essentiel :
+- Les erreurs Python courantes incluent les erreurs de syntaxe, les erreurs de type, et les erreurs d'attribut. Par exemple:
+   - **SyntaxError**: Il y a une faute de syntaxe dans votre code.
+   - **TypeError**: Vous essayez d'utiliser une opération sur un type de données incorrect.
+   - **AttributeError**: Vous essayez d'accéder à un attribut qui n'existe pas pour un objet donné.
 
-- **Assurer la fiabilité** : Un code sans bogues est plus fiable et offre une meilleure expérience utilisateur.
-- **Améliorer la performance** : Le débogage permet d'identifier et de corriger les inefficacités dans le code.
-- **Faciliter la maintenance** : Un code bien débogué est plus facile à comprendre et à maintenir.
-- **Apprentissage et amélioration** : Le processus de débogage aide les développeurs à mieux comprendre le fonctionnement de leur code et à améliorer leurs compétences en programmation.
+### Étape 3: Utiliser la fonction `print()` pour déboguer 
 
-## Analyse du problème avant le code
+- La fonction `print()` est un outil simple mais puissant pour comprendre ce qui se passe dans votre code. Voici comment l'utiliser:
+   - **Imprimer des variables**: Ajoutez des instructions `print()` pour afficher les valeurs des variables à différents points de votre code. Cela vous permet de vérifier si les variables contiennent les valeurs attendues.
+   - **Tracer l'exécution du code**: Utilisez `print()` pour afficher des messages à différents endroits de votre code afin de suivre l'exécution du programme. Par exemple, vous pouvez imprimer un message au début et à la fin d'une boucle pour voir combien de fois elle s'exécute.
+   - **Vérifier les conditions**: Utilisez `print()` pour afficher les résultats des conditions `if` et `else` afin de vérifier si les branches de votre code s'exécutent comme prévu.
 
-Avant de déboguer un programme, il est crucial revoir les hypothèses faites pour prévoir les résultats. Des hypothèses incorrectes peuvent compliquer l’identification des problèmes. 
+## Exemple de débogage avec `print()`
 
-### Quelques conseils
-
-- Il est important de repérer les fautes de frappe, et de considérer les modifications récentes du code. 
-
-- Comprendre l’intention du code, surtout s’il a été écrit par quelqu’un d’autre, est également essentiel. 
-
-- Commencer par un petit segment de code fonctionnel et tester progressivement peut faciliter la correction des erreurs. 
-
-- Remettre en question ses hypothèses peut réduire le temps nécessaire pour identifier et corriger les problèmes.
-
-
-## Suivre la trace à l'aide de la méthode print()
-
-En utilisant la méthode `print()`, vous pouvez facilement suivre l'exécution de votre programme et identifier les erreurs. Cette technique est particulièrement utile pour les débutants en programmation, car elle permet de visualiser le comportement du code en temps réel.
-
-En insérant des instructions `print()` à des endroits stratégiques du code, vous pouvez suivre l'évolution des variables et comprendre le flux d'exécution du programme. Voici comment appliquer cette technique pour résoudre des bugs courants.
-
-### Exemple 1 : Boucles imbriquées
+Supposons que vous avez le code suivant qui ne fonctionne pas comme prévu:
 
 ```python
-def multiplication(n):
-    for i in range(1, n + 1):
-        for j in range(1, n + 1):
-            print(f"{i} * {j} = {i * j}")
-        print("Fin de la ligne", i)
+def addition(a, b):
+    result = a + b
+    return result
 
-# Test
-multiplication(3)
+x = 5
+y = "10"
+print(addition(x, y))
 ```
 
-Pour déboguer ce code, vous pouvez ajouter des instructions `print()` pour vérifier les valeurs de `i` et `j` à chaque itération :
+Ce code produira une `TypeError` car vous essayez d'ajouter un entier (`int`) et une chaîne de caractères (`str`). Pour déboguer ce code, vous pouvez ajouter des instructions `print()`:
 
 ```python
-def multiplication(n):
-    for i in range(1, n + 1):
-        for j in range(1, n + 1):
-            print(f"i = {i}, j = {j}")
-            print(f"{i} * {j} = {i * j}")
-        print("Fin de la ligne", i)
+def addition(a, b):
+    print(f"a: {a}, b: {b}")  # Imprimer les valeurs des paramètres
+    result = a + b
+    print(f"result: {result}")  # Imprimer le résultat avant de le retourner
+    return result
 
-# Test
-multiplication(3)
+x = 5
+y = "10"
+print(f"x: {x}, y: {y}")  # Imprimer les valeurs avant l'appel de la fonction
+print(addition(x, y))
 ```
 
-### Exemple 2 : Conditions imbriquées
+En exécutant ce code, vous verrez les valeurs des variables et comprendrez pourquoi l'erreur se produit. Vous pouvez ensuite corriger l'erreur en convertissant `y` en entier:
 
 ```python
-def pair_impair(num):
-    if num > 0:
-        if num % 2 == 0:
-            print("Le nombre est positif et pair")
-        else:
-            print("Le nombre est positif et impair")
-    elif num == 0:
-        print("Le nombre est zéro")
-    else:
-        if num % 2 == 0:
-            print("Le nombre est négatif et pair")
-        else:
-            print("Le nombre est négatif et impair")
+def addition(a, b):
+    print(f"a: {a}, b: {b}")
+    result = a + b
+    print(f"result: {result}")
+    return result
 
-# Test
-pair_impair(4)
-pair_impair(-3)
-pair_impair(0)
+x = 5
+y = int("10")  # Convertir y en entier
+print(f"x: {x}, y: {y}")
+print(addition(x, y))
 ```
-
-Pour déboguer ce code, vous pouvez ajouter des instructions `print()` pour vérifier la valeur de `num` et les conditions visitées :
-
-```python
-def pair_impair(num):
-    print(f"Vérification du nombre : {num}")
-    if num > 0:
-        print("Le nombre est positif")
-        if num % 2 == 0:
-            print("Le nombre est positif et pair")
-        else:
-            print("Le nombre est positif et impair")
-    elif num == 0:
-        print("Le nombre est zéro")
-    else:
-        print("Le nombre est négatif")
-        if num % 2 == 0:
-            print("Le nombre est négatif et pair")
-        else:
-            print("Le nombre est négatif et impair")
-
-# Test
-pair_impair(4)
-pair_impair(-3)
-pair_impair(0)
-```
-
-## Le débogueur intégré à Visual Studio Code
-
-Visual Studio Code offre une gamme d'outils de débogage puissants et intégrés. Parmi ces outils, on trouve :
-- le débogueur intégré qui permet de définir des **points d'arrêt** (*breakpoints*), de surveiller les variables, et de parcourir le code pas à pas. 
-- des extensions spécifiques pour améliorer les capacités de débogage, telles que l'extension Python pour le débogage de scripts Python
-
-Ces outils facilitent l'identification et la correction des erreurs dans le code, rendant le processus de développement plus efficace et moins stressant.
-
-[Le Débogueur de VS Code en action](https://youtu.be/b4p-SBjHh28?si=C8bff51TX5xS6g-O)
-
-[Bases de connaissances](https://420sn1re.github.io/A24/bases/outils/vs-code/deboggueur/index.html)
-
-
-## Pause 5 minutes
-
-![Pause](../pause.jpg?width=25vw)
