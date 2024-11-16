@@ -19,3 +19,10 @@ https://NDesmangles.github.io.
 git remote add origin https://github.com/420SN1RE/A24.git
 git branch -M main
 git push -u origin main
+
+
+
+
+hugo new semaine1/first-page/_index.md
+hugo new first-chapter/second-page/index.md
+hugo new first-chapter/third-page.md

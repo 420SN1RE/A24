@@ -6,9 +6,9 @@ weight = 1.3
 ![Installation Python](install-lib.png?width=25vw)
 
 
-## Installation des librairies Python sur Windows 10/11
+## Installation des bibliothèques Python sur Windows 10/11
 
-Python est un langage de programmation puissant et polyvalent, largement utilisé pour l'analyse de données, la visualisation et les calculs scientifiques. Les librairies `pandas`, `matplotlib`, `numpy` et `scipy` sont parmi les plus populaires pour ces tâches. Ce chapitre vous guidera à travers les étapes nécessaires pour installer ces librairies sur un système Windows 10 ou 11.
+Python est un langage de programmation puissant et polyvalent, largement utilisé pour l'analyse de données, la visualisation et les calculs scientifiques. Les bibliothèques `pandas`, `matplotlib`, `numpy` et `scipy` sont parmi les plus populaires pour ces tâches. Ce chapitre vous guidera à travers les étapes nécessaires pour installer ces bibliothèques sur un système Windows 10 ou 11.
 
 ### Prérequis
 
@@ -55,7 +55,7 @@ Pour ouvrir l'invite de commande en tant qu'administrateur, faites un clic droit
 
 ### Étape 2 : Installation de pip
 
-`pip` est le gestionnaire de paquets de Python, utilisé pour installer et gérer les librairies Python. Si vous avez installé Python 3.4 ou une version ultérieure, `pip` est déjà inclus. Pour vérifier si `pip` est installé, dans l'invite de commande (CMD) tapez :
+`pip` est le gestionnaire de paquets de Python, utilisé pour installer et gérer les bibliothèques Python. Si vous avez installé Python 3.4 ou une version ultérieure, `pip` est déjà inclus. Pour vérifier si `pip` est installé, dans l'invite de commande (CMD) tapez :
 
 ```sh
 pip --version
@@ -67,33 +67,62 @@ Si `pip` n'est pas installé, vous pouvez l'installer en téléchargeant le scri
 python get-pip.py
 ```
 
-### Étape 3 : Installation des librairies
+## Installation des bibliothèques Python sur Visual Studio Code sur Windows
 
-Une fois `pip` installé, vous pouvez installer les librairies `pandas`, `matplotlib`, `numpy` et `scipy` en utilisant les commandes suivantes dans l'invite de commande :
+**Étape 1** : Ouvrir votre dossier de projet dans Visual Studio Code
 
-```sh
-pip install pandas
-pip install matplotlib
-pip install numpy
-pip install scipy
+![Dossier](ouvrir_dossier.png?width=25vw)
+
+**Étape 2** : Ouvrir le **Terminal**
+
+Dans Visual Studio Code, cliquer sur l'onglet `Terminal` en haut de l'écran, puis sur `Nouveau terminal`. 
+
+![Nouveau Terminal](terminal.png?width=25vw)
+
+Cela ouvrira une nouvelle fenêtre de terminal en bas de l'écran.
+
+![Terminal](new_terminal.png?width=25vw)
+
+**Étape 3** : Installer les bibliothèques
+
+Dans la fenêtre du Terminal (en bas de l'écran), taper la commande suivante pour installer les trois bibliothèques :
+
+![Commande pip](pip.png?width=25vw)
+
+```bash
+pip install pandas matplotlib numpy
 ```
 
-### Étape 4 : Vérification de l'installation
+Cela téléchargera et installera les dernières versions des bibliothèques.
 
-Pour vérifier que les librairies ont été correctement installées, vous pouvez ouvrir une session Python interactive en tapant `python` dans l'invite de commande, puis essayer d'importer chaque librairie :
+
+## Installation des bibliothèques Python sur Visual Studio Code sur Mac
+
+La seule différence est dans la commande `pip`. Au lieu de `pip`, il faut écrire `pip3`.
+
+```bash
+pip3 install pandas matplotlib numpy
+```
+
+## Vérification de l'installation
+
+Pour vérifier que les bibliothèques ont été correctement installées, vous pouvez importer les bibliothèques dans votre code, puis vérifier les versions installées :
 
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-import scipy
+
+pd.__version__
+plt.__version__
+np.__version__
 ```
-Si aucune erreur n'est affichée, cela signifie que les librairies ont été installées avec succès.
+Si aucune erreur n'est affichée, cela signifie que les bibliothèques ont été installées avec succès.
 
 ## Résolution des problèmes courants
 
 - **Problème : `pip` n'est pas reconnu comme une commande interne ou externe.**
-  - Solution : Assurez-vous que le chemin vers le dossier `Scripts` de Python est ajouté à la variable d'environnement PATH.
+  - Solution : Assurez vous que le chemin vers le dossier `Scripts` de Python est ajouté à la variable d'environnement PATH.
 
 - **Problème : Erreur d'installation due à des permissions.**
   - Solution : Exécutez l'invite de commande en tant qu'administrateur.
