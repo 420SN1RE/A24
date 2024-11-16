@@ -7,7 +7,7 @@ weight = 121
 
 Matplotlib est une bibliothèque de visualisation de données en Python qui permet de créer une grande variété de graphiques.
 
-## Installation de Matplotlib (déjà fait sur les ordinateurs du cégep)
+## Installation de Matplotlib
 
 Avant de commencer, assurez vous d'avoir Matplotlib installé. Vous pouvez l'installer via pip :
 
@@ -279,7 +279,7 @@ import matplotlib.pyplot as plt
 
 donnees = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5]
 
-plt.hist(donnees, bins=5, range=(1, 5), density=False, cumulative=False, color='green', edgecolor='black')
+plt.hist(donnees, bins=5, range=(1, 5), color='green', edgecolor='black')
 plt.xlabel('Valeurs')
 plt.ylabel('Fréquence')
 plt.title('Histogramme')
@@ -289,7 +289,7 @@ plt.show()
 | Méthode              | Description                                                                                     |
 |----------------------|-------------------------------------------------------------------------------------------------|
 | `plt.hist`           | Fonction pour créer un histogramme à partir des données fournies.                               |
-|            | `donnees`: Les données à analyser et à représenter sous forme d'histogramme. `bins=5`le nombre de barres dans l'histogramme. `range=(1, 5)` la plage de valeurs à inclure dans l'histogramme. `density=False`: Si `True`, l'histogramme affiche une densité de probabilité plutôt que le nombre brut d'observations. `cumulative=False` Si `True`, l'histogramme est cumulatif, affichant la somme des fréquences jusqu'à chaque point. `color='green'`et `edgecolor='black'`couleurs des barres de l'histogramme et des contours des barres.                         |
+|            | `donnees`: Les données à analyser et à représenter sous forme d'histogramme. `bins=5`le nombre de barres dans l'histogramme. `range=(1, 5)` la plage de valeurs à inclure dans l'histogramme. `color='green'`et `edgecolor='black'`couleurs des barres de l'histogramme et des contours des barres.                         |
 
 ![Histogramme](../matplotlib-histo.png?width=50vw)
 
@@ -344,11 +344,11 @@ plt.title('Graphique en secteurs')
 plt.show()
 ```
 
-Voici une explication simple des deux méthodes `plt.pie` et `plt.axis('equal')` dans Matplotlib, présentée sous forme de tableau :
+Voici une explication simple des deux méthodes `plt.pie` et `plt.axis('equal')` dans Matplotlib:
 
 | Méthode                    | Description                                                                                                           |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| `plt.pie`                  | Fonction pour créer un graphique circulaire (camembert). `tailles`: Les valeurs déterminant la taille de chaque secteur (portion) du camembert. `explode=secteur`:   Liste déterminant quelle portion est décalée (mise en avant). `labels=etiquettes`: Étiquettes pour chaque secteur, décrivant ce que chaque portion représente. `colors`:  Liste des couleurs utilisées pour chaque secteur. `autopct='%1.1f%%'`: Affiche le pourcentage de chaque secteur à l'intérieur de celui-ci, formaté à une décimale près. `shadow=True`:  Ajoute une ombre au graphique pour un effet de profondeur. `startangle=140`: Angle de départ pour le premier secteur. 
+| `plt.pie`                  | Fonction pour créer un graphique circulaire (camembert). `tailles`: Les valeurs déterminant la taille de chaque secteur (portion) de la tarte. `explode=secteur`:   Liste déterminant quelle portion est décalée (mise en avant). `labels=etiquettes`: Étiquettes pour chaque secteur, décrivant ce que chaque portion représente. `colors`:  Liste des couleurs utilisées pour chaque secteur. `autopct='%1.1f%%'`: Affiche le pourcentage de chaque secteur à l'intérieur de celui-ci, formaté à une décimale près. `shadow=True`:  Ajoute une ombre au graphique pour un effet de profondeur. `startangle=140`: Angle de départ pour le premier secteur. 
 |`plt.axis('equal')` | Assure que le graphique est parfaitement circulaire en réglant les axes x et y à la même échelle.                              |
 
 ![Graphique en secteurs](../matplotlib-secteur.png?width=50vw)
@@ -360,9 +360,9 @@ Ajouter une légende à un graphique en secteur est assez simple avec matplotlib
 1. **Créer le graphique en secteur** :
    - Utilise la fonction `plt.pie()` pour créer le graphique en secteur.
 2. **Capturer les éléments du graphique** :
-   - La fonction `plt.pie()` peut renvoyer des objets que tu peux utiliser pour créer la légende. Par exemple, tu peux capturer les "secteurs" (les parts du camembert) et les "étiquettes".
+   - La fonction `plt.pie()` peut renvoyer des objets qu'on peut utiliser pour créer la légende. Par exemple, les "secteurs" et les "étiquettes".
 3. **Ajouter la légende** :
-   - Utilise la fonction `plt.legend()` pour ajouter la légende au graphique. Tu peux spécifier les éléments capturés et leur position.
+   - Utilise la fonction `plt.legend()` pour ajouter la légende au graphique et spécifier les éléments capturés et leur position.
 
 Voici un exemple de code :
 
@@ -390,6 +390,14 @@ plt.show()
 
 ### Explication :
 - **`secteurs, etiquettes, autotexts = plt.pie(...)`** : Cette ligne crée le graphique en secteur et capture les éléments nécessaires pour la légende.
+- La fonction `bbox_to_anchor` est utilisée pour positionner la légende d'un graphique en dehors de la zone de tracé principale. Ici, bbox_to_anchor=(1, 0, 0.5, 1), signifie que la légende sera placée à droite du graphique. Voici une explication détaillée des paramètres :
+
+	- 1: La légende est placée à une unité à droite de la zone de tracé.
+	- 0: La légende est alignée en bas de la zone de tracé.
+	- 0.5: La largeur de la boîte englobante de la légende est de 0.5 unités.
+	- 1: La hauteur de la boîte englobante de la légende est de 1 unité.
+
+Cela permet de positionner la légende de manière précise et flexible, en particulier lorsque l'on souhaite qu'elle ne chevauche pas le graphique lui-même.
 
 ![Graphique en secteurs avec légende](../matplotlib-secteur-legende.png?width=50vw)
 
@@ -400,8 +408,8 @@ import matplotlib.pyplot as plt
 
 x = [1, 2, 3, 4, 5]
 y = [2, 3, 5, 7, 11]
-tailles = [20, 50, 80, 200, 500]
-plt.scatter(x, y, s=tailles)
+
+plt.scatter(x, y)
 plt.xlabel('Axe x')
 plt.ylabel('Axe y')
 plt.title('Graphique en nuage de points')
@@ -410,7 +418,7 @@ plt.show()
 
 | Méthode                    | Description                                                                                                           |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| `plt.scatter`                 |  utilisée pour tracer un graphique en nuage de points. **`x` et `y`** : les coordonnées des points sur le graphique. - **`s=tailles`** : L'argument `s` définit la taille des marqueurs de chaque point. Cela peut être une valeur unique qui s'applique à tous les points, ou une liste de valeurs qui spécifie une taille différente pour chaque point. 
+| `plt.scatter`              |  utilisée pour tracer un graphique en nuage de points. **`x` et `y`** : les coordonnées des points sur le graphique. 
 
 ![Graphique en nuage](../matplotlib-nuage.png?width=50vw)
 
