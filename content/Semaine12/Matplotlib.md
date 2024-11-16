@@ -389,8 +389,13 @@ plt.show()
 ```
 
 ### Explication :
+
 - **`secteurs, etiquettes, autotexts = plt.pie(...)`** : Cette ligne crée le graphique en secteur et capture les éléments nécessaires pour la légende.
-- La fonction `bbox_to_anchor` est utilisée pour positionner la légende d'un graphique en dehors de la zone de tracé principale. Ici, bbox_to_anchor=(1, 0, 0.5, 1), signifie que la légende sera placée à droite du graphique. Voici une explication détaillée des paramètres :
+
+- **secteurs** : représentent chaque segment de la tarte. On peut les utiliser pour personnaliser l'apparence de chaque segment, comme changer la couleur, ajouter des bordures, etc.
+- **etiquettes** : Ce sont les étiquettes de chaque segment, généralement les noms des catégories. On peut les utiliser pour personnaliser les étiquettes, comme changer la police, la taille, la couleur, etc.
+- **autotexts** : les textes automatiques ajoutés à chaque segment, souvent utilisés pour afficher les pourcentages. On peut les utiliser pour personnaliser ces textes, comme changer la couleur, la taille, la position, etc.
+- La **fonction `bbox_to_anchor`** est utilisée pour positionner la légende d'un graphique en dehors de la zone de tracé principale. Ici, bbox_to_anchor=(1, 0, 0.5, 1), signifie que la légende sera placée à droite du graphique. Voici une explication détaillée des paramètres :
 
 	- 1: La légende est placée à une unité à droite de la zone de tracé.
 	- 0: La légende est alignée en bas de la zone de tracé.
