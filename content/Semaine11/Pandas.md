@@ -347,6 +347,7 @@ L'utilisation de `pd.DataFrame(liste_propre, columns=df_sale.columns)` permet re
 | `df.isnull()`      | Renvoie un DataFrame de la même forme indiquant les valeurs manquantes.      |
 | `df.isna()` 	     | Renvoie un DataFrame de la même taille que l'original, mais avec `True` à la place d'une donnée manquante (comme `NaN`)|
 | `df.sort_values()` | Trie les valeurs d'une ou plusieurs colonnes.                                |
+| `df.value_count()` | Compter les occurrences uniques des valeurs dans une colonne du DataFrame. |
 
 
 ## Visualisation des données

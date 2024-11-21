@@ -375,6 +375,7 @@ NumPy est doté d'une grande quantité de fonction permettant de gérer des tabl
 | `np.sort()`           | Tri le tableau                                                               | `np.sort(arr)`                                 |
 | `np.sum()`            | Calcule la somme des éléments d'un tableau.                                  | `total = np.sum(arr)`                          |
 | `np.mean()`           | Calcule la moyenne des éléments d'un tableau.                                | `mean = np.mean(arr)`                          |
+| `np.median()`         | Calcule la médianne des éléments d'un tableau.                               | `mediane = np.median(arr)`                     |
 | `np.std()`            | Calcule l'écart-type des éléments d'un tableau.                              | `ecart_type = np.std(arr)`                     |
 | `np.var()`            | Calcule la variance des éléments d'un tableau.                               | `variance = np.var(arr)`                       |
 | `np.size()`           | Renvoie le nombre d'éléments dans le tableau.                                | `taille = np.size(arr)`                        |

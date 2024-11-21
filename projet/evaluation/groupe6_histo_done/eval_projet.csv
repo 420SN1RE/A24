@@ -8,7 +8,7 @@ Japan,1970,33.24
 Spain,1990,31.94
 Germany,1980,16.29
 Spain,1978,20.06
-Canada,1975,
+Canada,1975,-0.04
 Canada,1991,21.98
 Canada,1973,18.68
 Australia,1962,30.64
@@ -19,7 +19,7 @@ Germany,1981,20.98
 Australia,1970,3.74
 China,2014,14.82
 Germany,1973,37.65
-Canada,1967,
+Canada,1967,-0.14
 Canada,2011,22.1
 Germany,2019,39.9
 United States,1972,32.79
@@ -118,16 +118,16 @@ France,1975,38.62
 Germany,2021,28.86
 Canada,1967,17.89
 United States,1977,4.91
-Australia,1978,-0.09
+Australia,1978,
 Germany,2000,3.71
 United States,2005,15.51
 United Kingdom,1977,33.63
 Australia,1996,-9.51
 United States,1991,5.84
-Canada,2011,
-Spain,2017,-0.33
+Canada,2011,-0.52
+Spain,2017,
 China,1972,39.55
-Canada,2007,
+Canada,2007,0.46
 Spain,1964,25.6
 Japan,2021,-6.09
 Australia,1975,7.65
@@ -170,14 +170,14 @@ France,2016,18.13
 France,1995,17.44
 China,2020,36.58
 Italy,1973,-1.99
-United States,2009,-0.81
+United States,2009,
 Japan,1965,-9.51
 Canada,2001,6.49
 Spain,1997,25.33
 China,1965,4.52
 Italy,2011,32.51
 Australia,1973,-7.75
-China,2022,-0.64
+China,2022,
 Italy,1998,-3.82
 Germany,2009,39.15
 Germany,2006,-7.15
@@ -395,8 +395,8 @@ Australia,1976,17.39
 Italy,2017,26.17
 Australia,1995,-6.66
 Canada,1981,29.57
-Australia,2000,-9.93
-Canada,1996,-9.36
+Australia,2000,-10.93
+Canada,1996,-10.36
 Australia,1977,9.22
 France,1984,31.28
 China,1992,37.48
@@ -446,7 +446,7 @@ France,2002,14.25
 Canada,1971,25.61
 Japan,1990,6.75
 Australia,1978,28.3
-Germany,1983,-0.11
+Germany,1983,
 France,1987,4.74
 Japan,1979,18.87
 Canada,1973,36.66

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="fileupload">
+    <name>
+      <text>Déposer une image PNG</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Veuillez déposer une image au format PNG illustrant le concept X.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <responseformat>plain</responseformat>
+    <responsefieldlines>15</responsefieldlines>
+    <attachments>1</attachments>
+    <attachmentsrequired>1</attachmentsrequired>
+    <responsefilename>image.png</responsefilename>
+    <responsefiletypes>.png</responsefiletypes>
+  </question>
+</quiz>
