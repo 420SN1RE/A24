@@ -45,7 +45,7 @@ nd_array = np.array([10,20,30,40,50,60])
 
 print(f"{nd_array[3]}")
 print(f"{nd_array[3:5]}, {type(nd_array[3:5])}")
-```python
+```
 
 ```plaintext
 40
