@@ -290,8 +290,9 @@ print(tableau)
 NumPy offre une fonction pour utiliser des polynômes de degré n, la fonction `np.poly1d()`. Elle prend un paramètre un tableau qui contient les coefficients du polynôme par ordre décroissant de puissance.
 
 Pour générer le polynôme suivant dans NumPy:
-
+```math
 $$ y = x^2 + x - 2 $$
+```
 
 Il faut utiliser la liste de coéfficients [1, 1, -2], on obtient alors le code suivant:
 
@@ -323,7 +324,7 @@ plt.show()
 ![Polynome](../polynome.jpg?width=30vw)
 
 
-## Les coefficient de corrélation
+## Le coefficient de corrélation
 
 La fonction `corrcoef()` de NumPy calcule le coefficient de corrélation de Pearson entre deux ensembles de données. Ce coefficient mesure la force et la direction de la relation linéaire entre deux variables.
 

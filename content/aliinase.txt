@@ -1,0 +1,13 @@
++++
+title="Test"
+weight = 2
+draft = True
++++
+
+1. **Alliinase**:
+   - **Réaction enzymatique**: 
+     $$ {Composés soufrés} \xrightarrow{{Alliinase}} {Acide sulfénique}$$
+   - **Transformation rapide**:
+     $$ {Acide sulfénique} \rightarrow \text{Thiosulfinates}$$
+
+
