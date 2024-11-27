@@ -230,7 +230,7 @@ print(nd_array_4)
 [ 20  40  60  80 100 120]
 ```
 
-{{% notice style=waring title=Attention %}}
+{{% notice style=warning title=Attention %}}
 Si vous faites ces opérations avec une liste python, vous obtiendrez une erreur, votre code ne s’exécutera pas.
 {{% /notice  %}}
 
