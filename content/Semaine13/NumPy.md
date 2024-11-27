@@ -36,9 +36,9 @@ pip install numpy
 
 ## Les tableaux NumPy
 
-Avec NumPy, il existe un équivalent plus puissant des listes python, les `ndarray`. Comme les listes, il est possible d’accéder aux valeurs du tableau avec des `[]`, il est également possible de faire des tableau a plusieurs dimensions.
+Avec NumPy, il existe un équivalent plus puissant des listes python, les `ndarray`. Comme les listes, il est possible d’accéder aux valeurs du tableau avec des `[]`, il est également possible de faire des tableaux à plusieurs dimensions.
 
-Ces tableaux sont généralement construit à partir de liste python.
+Ces tableaux sont généralement construit à partir d'une liste python.
 
 ```python
 nd_array = np.array([10,20,30,40,50,60])
