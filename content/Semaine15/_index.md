@@ -29,6 +29,11 @@ weight = 150
 ## Documentation permise
 
 1. Les documents suivants à télécharger et imprimer avant l'examen:
+
+{{% button href="./cheatsheetPandas.pdf" icon="fas fa-download" %}}Téléchager 'cheatsheet Pandas'{{% /button %}}
+{{% button href="./cheatsheetMatplotlib.pdf" icon="fas fa-download" %}}Téléchager 'cheatsheet Matplotlib'{{% /button %}}
+{{% button href="./cheatsheetNumPy.pdf" icon="fas fa-download" %}}Téléchager 'cheatsheet NumPy'{{% /button %}}
+
  - [cheatsheet Pandas](./cheatsheetPandas.pdf)
  - [cheatsheet Matplotlib](./cheatsheetMatplotlib.pdf)
  - [cheatsheet NumPy](./cheatsheetNumPy.pdf)
