@@ -1,13 +1,10 @@
-﻿Produit,Mois,Ventes
-Produit A,Janvier,200
-Produit A,Février,220
-Produit A,Mars,250
-Produit A,Avril,230
-Produit A,Mai,240
-Produit A,Juin,260
-Produit A,Juillet,270
-Produit A,Août,280
-Produit A,Septembre,290
-Produit A,Octobre,300
-Produit A,Novembre,310
-Produit A,Décembre,320
+﻿Produit,Ventes
+Produit A,200
+Produit A,220
+Produit A,250
+Produit B,180
+Produit B,210
+Produit B,230
+Produit C,190
+Produit C,200
+Produit C,210
