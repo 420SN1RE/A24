@@ -26,8 +26,8 @@ L'objectif de cet exercice est de pratiquer les concepts de création de listes 
 1. Créer une liste des produits uniques:
 	- À partir de la colonne 'Produit' du dataframe, créez une liste des produits uniques.
 
-2. Créer un dataframe contenant les produits et leurs ventes:
-	- Sélectionnez les colonnes 'Produit' et 'Ventes' du dataframe et convertissez-les en une liste de listes.
+2. Créer une liste contenant les produits et leurs ventes:
+	- Sélectionnez les colonnes 'Produit' et 'Ventes' du dataframe et convertissez-les en une liste (le résultat sera une liste de liste [ [sous-liste1], [sous-liste2],...[sous-listeX] ]).
 
 3. Calculer la vente moyenne pour chaque produit:
 	- Parcourez la liste des produits uniques un produit à la fois.
