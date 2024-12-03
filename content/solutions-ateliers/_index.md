@@ -54,3 +54,5 @@ weight = 170
 
 [Semaine 12 - Matplotlib](correction-atelier-matplotlib.ipynb)
 
+[Semaine 13 - NumPy](correction-atelier-numpy.ipynb)
+
