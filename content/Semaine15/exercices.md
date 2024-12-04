@@ -79,16 +79,12 @@ L'objectif de cet exercice est de pratiquer les concepts de filtrage de données
 - [Fichier Jupyter Notebook](../etudiants.ipynb)
 
 **Instructions**
-1. Filtrer les données pour un étudiant spécifique:
-	- Utilisez les données fournies pour filtrer les scores d'un étudiant spécifique, par exemple, 'Étudiant 1'.
+1. Filtrer les données pour l'Étudiant 1.
 
-2. Calculer le score moyen de l'étudiant:
-	- Parcourez les données filtrées pour calculer la somme des scores de l'étudiant.
+2. Parcourt les scores de cet étudiant pour trouver le score maximum.
 
-3. Calculez la moyenne des scores de l'étudiant sur la période donnée.
-
-4. Afficher le score moyen de l'étudiant:
-	- Affichez le score moyen de l'étudiant sous la forme: "Le score moyen de l'étudiant X est de Y".
+3. Affiche la matière dans laquelle cet étudiant a obtenu le meilleur score.
+	- Affichez le score moyen de l'étudiant sous la forme: "La matière où l'Étudiant 1 a obtenu le meilleur score est X".
 
 **Résultat attendu**
 ```plaintext
