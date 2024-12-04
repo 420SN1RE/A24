@@ -81,10 +81,12 @@ L'objectif de cet exercice est de pratiquer les concepts de filtrage de données
 **Instructions**
 1. Filtrer les données pour l'Étudiant 1.
 
-2. Parcourt les scores de cet étudiant pour trouver le score maximum.
+2. Parcourir les scores de cet étudiant pour trouver le score maximum.
 
-3. Affiche la matière dans laquelle cet étudiant a obtenu le meilleur score.
-	- Affichez le score moyen de l'étudiant sous la forme: "La matière où l'Étudiant 1 a obtenu le meilleur score est X".
+3. Trouver la matière correspondant au score maximum.
+
+4. Afficher la matière dans laquelle cet étudiant a obtenu le meilleur score.
+	- Affichez la matière de ce score sous la forme: "La matière où l'Étudiant 1 a obtenu le meilleur score est X".
 
 **Résultat attendu**
 ```plaintext
