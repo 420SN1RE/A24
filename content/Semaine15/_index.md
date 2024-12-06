@@ -33,15 +33,19 @@ weight = 150
 {{% button href="./cheatsheetPandas.pdf" icon="fas fa-download" %}}Téléchager 'cheatsheet Pandas'{{% /button %}}
 {{% button href="./cheatsheetMatplotlib.pdf" icon="fas fa-download" %}}Téléchager 'cheatsheet Matplotlib'{{% /button %}}
 {{% button href="./cheatsheetNumPy.pdf" icon="fas fa-download" %}}Téléchager 'cheatsheet NumPy'{{% /button %}}
+{{% button href="./preparation_exam.pdf" icon="fas fa-download" %}}Téléchager 'Préparation Examen'{{% /button %}}
 
  - [cheatsheet Pandas](./cheatsheetPandas.pdf)
  - [cheatsheet Matplotlib](./cheatsheetMatplotlib.pdf)
  - [cheatsheet NumPy](./cheatsheetNumPy.pdf)
+ - [Préparation examen](./preparation_exam.pdf)
 
 2. Une feuille recto-verso
 
 3. Visual Studio Code
 
 4. Votre fichier du projet
+
+5. Vos fichiers des 3 exercices Pandas
 
 [^1]: Les étudiants du Service d'aide à l'apprentissage **(SAA)** pourront faire l'examen dans la salle de classe **ET** bénéficier de leur temps supplémentaire.
