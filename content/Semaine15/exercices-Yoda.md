@@ -26,7 +26,7 @@ L'objectif de cet exercice est de pratiquer les concepts de création de listes 
 1. Créer une liste des produits uniques:
 	- À partir de la colonne 'Produit' du dataframe, créez une liste des produits uniques.
 
-2. Créer une liste (de liste) contenant les produits et leurs ventes:
+2. Créer une liste contenant les produits et leurs ventes:
 	- Sélectionnez les colonnes 'Produit' et 'Ventes' du dataframe et convertissez-les en une liste (le résultat sera une liste de liste [ [sous-liste1], [sous-liste2],...[sous-listeX] ]).
 
 3. Calculer la vente moyenne pour chaque produit:
@@ -79,16 +79,14 @@ L'objectif de cet exercice est de pratiquer les concepts de filtrage de données
 - [Fichier Jupyter Notebook](../etudiants.ipynb)
 
 **Instructions**
-1. Filtrer les données pour un étudiant spécifique:
-	- Utilisez les données fournies pour filtrer les scores d'un étudiant spécifique, par exemple, 'Étudiant 1'.
+1. Filtrer les données pour l'Étudiant 1.
 
-2. Calculer le score moyen de l'étudiant:
-	- Parcourez les données filtrées pour calculer la somme des scores de l'étudiant.
+2. Parcourir les scores de cet étudiant pour trouver le score maximum.
 
-3. Calculez la moyenne des scores de l'étudiant sur la période donnée.
+3. Trouver la matière correspondant au score maximum.
 
-4. Afficher le score moyen de l'étudiant:
-	- Affichez le score moyen de l'étudiant sous la forme: "Le score moyen de l'étudiant X est de Y".
+4. Afficher la matière dans laquelle cet étudiant a obtenu le meilleur score.
+	- Affichez la matière de ce score sous la forme: "La matière où l'Étudiant 1 a obtenu le meilleur score est X".
 
 **Résultat attendu**
 ```plaintext
