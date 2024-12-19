@@ -34,13 +34,13 @@ La plupart des questions demandent du code pour pouvoir y répondre.
 ## À remettre
 
 - Vous devrez remettre **un seul fichier Jupyter Notebook (.ipynb)** contenant tout le code, les analyses et les visualisations et **le fichier de données (.csv)**.
-- **À la fin de chaque séance**, vous devez remettre votre travail (fichiers .ipynb et .csv) dans la boîte de remise prévue à cet effet sur Moodle.
+- **À la fin de chaque séance**, vous devez remettre votre travail (fichiers .ipynb et .csv)** dans la boîte de remise prévue à cet effet sur Moodle.
 - Vous pourrez continuer à travailler sur votre projet entre chaque séance, mais **la boite de remise sera fermée**. 
-- Ces remises sont des points de contrôle.
+- Ces remises sont des points de contrôle et si absentes, cela invalidera la remise finale du projet.
 
 ## Évaluation
 
 Lors de l’évaluation (**examen semaine 15**), votre programme **devra être terminé et fonctionnel** avant la dernière séance de cours. Votre programme devra être déposé sur Moodle avant la date limite (voir Moodle pour la date limite pour votre groupe).
 
-Lors de l'évaluation, il vous sera demandé de modifier ou d'ajouter certaines fonctionnalités à votre programme. Vous aurez des questions se rattachant au projet, mais avec un autre jeu de données. Vous serez amenez à répondre à des questions dans Moodle. Le programme remis à la fin de cette évaluation sera évalué. Lors de l'évaluation, vous n'aurez pas accès à des ressources extérieures (Internet ou collègues). 
+Lors de l'évaluation, il vous sera demandé certaines fonctionnalités similaires à celles du projet, mais avec un autre jeu de données. Vous serez amenez à répondre à des questions dans Moodle. Le programme remis à la fin de cette évaluation sera évalué. Lors de l'évaluation, vous n'aurez pas accès à des ressources extérieures (Internet ou collègues). 
 Le projet doit être fait individuellement (évaluation et préparation).
