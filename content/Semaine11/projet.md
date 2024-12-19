@@ -34,9 +34,9 @@ La plupart des questions demandent du code pour pouvoir y répondre.
 ## À remettre
 
 - Vous devrez remettre **un seul fichier Jupyter Notebook (.ipynb)** contenant tout le code, les analyses et les visualisations et **le fichier de données (.csv)**.
-- **À la fin de chaque séance**, vous devez remettre votre travail (fichiers .ipynb et .csv)** dans la boîte de remise prévue à cet effet sur Moodle.
+- **À la fin de chaque séance**, vous devez remettre **votre travail (fichiers .ipynb)** dans la boîte de remise prévue à cet effet sur Moodle.
 - Vous pourrez continuer à travailler sur votre projet entre chaque séance, mais **la boite de remise sera fermée**. 
-- Ces remises sont des points de contrôle et si absentes, cela invalidera la remise finale du projet.
+- Ces remises sont des points de contrôle et si absentes, cela invalidera la remise finale du projet ainsi que l'examen.
 
 ## Évaluation
 
